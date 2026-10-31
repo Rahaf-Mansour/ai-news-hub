@@ -1,0 +1,102 @@
+import { describe, expect, it } from 'vitest'
+import type { Item } from '../types'
+import { countUnread, EMPTY_FILTER, filterItems } from './filter'
+import { formatStars, relativeDate } from './format'
+import { selectToday } from './today'
+
+const NOW = new Date('2026-10-31T06:00:00Z')
+let n = 0
+const item = (over: Partial<Item> = {}): Item => ({
+  id: `i${++n}`, title: 'Title', url: `https://x.test/${n}`, sourceId: `s${n}`, sourceName: 'Source',
+  tier: 'editorial', type: 'article', publishedAt: '2026-10-30T12:00:00.000Z', firstSeenAt: '2026-10-30T12:00:00.000Z',
+  roles: ['se'], tagMethod: 'rules', summary: '', summaryBy: 'feed', score: 1, ...over,
+})
+
+describe('selectToday', () => {
+  it('returns at most 8 items with the highest-scored as lead', () => {
+    const items = Array.from({ length: 20 }, (_, i) => item({ score: i }))
+    const view = selectToday(items, NOW)
+    expect(view.count).toBe(8)
+    expect(view.lead?.score).toBe(19)
+    expect(view.windowLabel).toBe('48 hours')
+  })
+
+  it('represents every role that has news, even when one role has higher scores', () => {
+    const se = Array.from({ length: 10 }, (_, i) => item({ roles: ['se'], score: 10 + i }))
+    const qa = item({ roles: ['qa'], score: 1 })
+    const pm = item({ roles: ['pm'], score: 1 })
+    const view = selectToday([...se, qa, pm], NOW)
+    const shown = [view.lead, ...view.groups.flatMap((g) => g.items)]
+    expect(shown).toContain(qa)
+    expect(shown).toContain(pm)
+  })
+
+  it('caps each role at three items when other roles have news', () => {
+    const claude = Array.from({ length: 8 }, () => item({ roles: ['claude'], score: 50 }))
+    const others = Array.from({ length: 8 }, (_, i) => item({ roles: [(['se', 'pm', 'qa'] as const)[i % 3]], score: i }))
+    const view = selectToday([...claude, ...others], NOW)
+    const shown = [view.lead!, ...view.groups.flatMap((g) => g.items)]
+    expect(shown.filter((i) => i.roles[0] === 'claude')).toHaveLength(3)
+    expect(view.count).toBe(8)
+  })
+
+  it('takes at most one item per source when there is enough choice', () => {
+    const busy = Array.from({ length: 6 }, () => item({ sourceId: 'busy', score: 50 }))
+    const others = Array.from({ length: 6 }, (_, i) => item({ score: i }))
+    const view = selectToday([...busy, ...others], NOW)
+    const shown = [view.lead!, ...view.groups.flatMap((g) => g.items)]
+    expect(shown.filter((i) => i.sourceId === 'busy')).toHaveLength(1)
+  })
+
+  it('widens to 7 days on a quiet day and groups Claude first', () => {
+    const items = [
+      item({ roles: ['qa'], publishedAt: '2026-10-27T00:00:00Z', score: 9 }),
+      item({ roles: ['claude'], publishedAt: '2026-10-26T00:00:00Z', score: 3 }),
+      item({ roles: ['claude'], publishedAt: '2026-10-25T00:00:00Z', score: 2 }),
+    ]
+    const view = selectToday(items, NOW)
+    expect(view.windowLabel).toBe('7 days')
+    expect(view.groups[0].role).toBe('claude')
+  })
+
+  it('handles an empty feed', () => {
+    expect(selectToday([], NOW)).toMatchObject({ lead: null, groups: [], count: 0 })
+  })
+})
+
+describe('filterItems', () => {
+  const a = item({ title: 'Cypress adds cy.prompt', roles: ['qa'], tier: 'official', type: 'release' })
+  const b = item({ title: 'PRD templates with Claude', roles: ['pm', 'claude'], summary: 'Discovery work' })
+  const all = [a, b]
+
+  it('filters by role tab', () => {
+    expect(filterItems(all, 'qa', EMPTY_FILTER, new Set(), new Set())).toEqual([a])
+  })
+  it('searches title and summary, requiring every word', () => {
+    expect(filterItems(all, null, { ...EMPTY_FILTER, query: 'claude discovery' }, new Set(), new Set())).toEqual([b])
+    expect(filterItems(all, null, { ...EMPTY_FILTER, query: 'claude cypress' }, new Set(), new Set())).toEqual([])
+  })
+  it('filters by tier, type, unread and saved', () => {
+    expect(filterItems(all, null, { ...EMPTY_FILTER, tiers: ['official'] }, new Set(), new Set())).toEqual([a])
+    expect(filterItems(all, null, { ...EMPTY_FILTER, types: ['article'] }, new Set(), new Set())).toEqual([b])
+    expect(filterItems(all, null, { ...EMPTY_FILTER, show: 'unread' }, new Set([a.id]), new Set())).toEqual([b])
+    expect(filterItems(all, null, { ...EMPTY_FILTER, show: 'saved' }, new Set(), new Set([a.id]))).toEqual([a])
+  })
+  it('counts unread per role', () => {
+    expect(countUnread(all, new Set([a.id]))).toBe(1)
+    expect(countUnread(all, new Set([a.id]), 'qa')).toBe(0)
+  })
+})
+
+describe('format', () => {
+  it('formats star counts compactly', () => {
+    expect(formatStars(154027)).toBe('154k')
+    expect(formatStars(9727)).toBe('9.7k')
+    expect(formatStars(2000)).toBe('2k')
+    expect(formatStars(167)).toBe('167')
+  })
+  it('formats recent dates relatively', () => {
+    expect(relativeDate('2026-10-31T05:00:00Z', NOW)).toBe('1h ago')
+    expect(relativeDate('2026-10-31T05:50:00Z', NOW)).toBe('10m ago')
+  })
+})
