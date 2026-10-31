@@ -6,7 +6,15 @@ import type { Repo, ReposFile, Role } from '../types'
 
 const STALE_DAYS = 120
 
-export function Repos({ data, now, query }: { data: ReposFile | null; now: Date; query: string }) {
+interface Props {
+  data: ReposFile | null
+  now: Date
+  query: string
+  savedIds: ReadonlySet<string>
+  onToggleSave: (repo: Repo) => void
+}
+
+export function Repos({ data, now, query, savedIds, onToggleSave }: Props) {
   const [role, setRole] = useState<Role | null>(null)
   const repos = useMemo(
     () =>
@@ -63,7 +71,7 @@ export function Repos({ data, now, query }: { data: ReposFile | null; now: Date;
           </thead>
           <tbody>
             {repos.map((repo) => (
-              <RepoRow key={repo.fullName} repo={repo} now={now} />
+              <RepoRow key={repo.fullName} repo={repo} now={now} saved={savedIds.has(repo.fullName)} onToggleSave={onToggleSave} />
             ))}
           </tbody>
         </table>
@@ -75,7 +83,7 @@ export function Repos({ data, now, query }: { data: ReposFile | null; now: Date;
   )
 }
 
-function RepoRow({ repo, now }: { repo: Repo; now: Date }) {
+function RepoRow({ repo, now, saved, onToggleSave }: { repo: Repo; now: Date; saved: boolean; onToggleSave: (r: Repo) => void }) {
   const stale = repo.lastCommit && now.getTime() - Date.parse(repo.lastCommit) > STALE_DAYS * 86_400_000
   return (
     <tr data-cy="repo-row" data-repo={repo.fullName}>
@@ -94,6 +102,18 @@ function RepoRow({ repo, now }: { repo: Repo; now: Date }) {
             </span>
           ))}
           {repo.license && <span className="mono" style={{ color: 'var(--ink-3)' }}>{repo.license}</span>}
+          <div className="item__actions">
+            <button
+              type="button"
+              className="icon-btn"
+              aria-pressed={saved}
+              onClick={() => onToggleSave(repo)}
+              data-cy="repo-save"
+              aria-label={saved ? `Remove ${repo.fullName} from Saved` : `Save ${repo.fullName}`}
+            >
+              {saved ? '★ Saved' : '☆ Save'}
+            </button>
+          </div>
         </div>
       </td>
       <td className="num mono" data-cy="repo-stars">

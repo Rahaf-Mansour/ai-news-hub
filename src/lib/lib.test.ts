@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import type { Item, Repo } from '../types'
 import { countUnread, EMPTY_FILTER, filterItems, matchesRepo, matchesStep } from './filter'
 import { formatStars, relativeDate } from './format'
+import { savedMarkdown } from './saved'
 import { selectToday } from './today'
 
 const NOW = new Date('2026-10-31T06:00:00Z')
@@ -76,11 +77,12 @@ describe('filterItems', () => {
     expect(filterItems(all, null, { ...EMPTY_FILTER, query: 'claude discovery' }, new Set(), new Set())).toEqual([b])
     expect(filterItems(all, null, { ...EMPTY_FILTER, query: 'claude cypress' }, new Set(), new Set())).toEqual([])
   })
-  it('filters by tier, type, unread and saved', () => {
+  it('filters by tier, type, hide-read and saved-only, and combines the last two', () => {
     expect(filterItems(all, null, { ...EMPTY_FILTER, tiers: ['official'] }, new Set(), new Set())).toEqual([a])
     expect(filterItems(all, null, { ...EMPTY_FILTER, types: ['article'] }, new Set(), new Set())).toEqual([b])
-    expect(filterItems(all, null, { ...EMPTY_FILTER, show: 'unread' }, new Set([a.id]), new Set())).toEqual([b])
-    expect(filterItems(all, null, { ...EMPTY_FILTER, show: 'saved' }, new Set(), new Set([a.id]))).toEqual([a])
+    expect(filterItems(all, null, { ...EMPTY_FILTER, hideRead: true }, new Set([a.id]), new Set())).toEqual([b])
+    expect(filterItems(all, null, { ...EMPTY_FILTER, savedOnly: true }, new Set(), new Set([a.id]))).toEqual([a])
+    expect(filterItems(all, null, { ...EMPTY_FILTER, hideRead: true, savedOnly: true }, new Set([a.id]), new Set([a.id]))).toEqual([])
   })
   it('counts unread per role', () => {
     expect(countUnread(all, new Set([a.id]))).toBe(1)
@@ -106,6 +108,22 @@ describe('matchesRepo and matchesStep', () => {
     expect(matchesStep(step, 'QA in the AI era', 'cypress english')).toBe(true)
     expect(matchesStep(step, 'QA in the AI era', 'era')).toBe(true)
     expect(matchesStep(step, 'QA in the AI era', 'playwright')).toBe(false)
+  })
+})
+
+describe('savedMarkdown', () => {
+  it('lists saved items, repos and steps under headings, escaping brackets in titles', () => {
+    const md = savedMarkdown(
+      [item({ title: 'Claude [beta] notes', url: 'https://a.test/x', sourceName: 'Anthropic News' })],
+      [{ fullName: 'o/r', url: 'https://github.com/o/r', why: 'Useful.', roles: ['qa'] }],
+      [{ title: 'Evals 101', url: 'https://e.test', source: 'Anthropic', why: 'w', track: 'QA' }],
+    )
+    expect(md).toContain('- [Claude \\[beta\\] notes](https://a.test/x) — Anthropic News')
+    expect(md).toContain('### Repos\n- [o/r](https://github.com/o/r) — Useful.')
+    expect(md).toContain('### Learning steps\n- [Evals 101](https://e.test) — Anthropic')
+  })
+  it('is empty when nothing is saved', () => {
+    expect(savedMarkdown([], [], [])).toBe('')
   })
 })
 
