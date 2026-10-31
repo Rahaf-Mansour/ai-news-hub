@@ -1,7 +1,7 @@
 import type { Item, RawItem, Role, SourceConfig, TrustTier } from '../src/types'
 import { canonicalUrl, itemId, titleSimilarity } from './normalize'
 import { ruleAreas, ruleRoles, sortRoles } from './tagger'
-import { truncate } from './text'
+import { stripLeadingEmoji, truncate } from './text'
 
 export const SUMMARY_MAX = 180
 
@@ -39,7 +39,7 @@ export function toItem(raw: RawItem, source: SourceConfig, now: Date): { item: I
       firstSeenAt: now.toISOString(),
       roles,
       tagMethod,
-      summary: truncate(raw.excerpt ?? '', SUMMARY_MAX),
+      summary: truncate(stripLeadingEmoji(raw.excerpt ?? ''), SUMMARY_MAX),
       summaryBy: 'feed',
       discussionUrl: raw.discussionUrl,
       score: 0,
@@ -142,5 +142,7 @@ export function retag(item: Item, source: SourceConfig | undefined): Item {
     roles = sortRoles([...source.roles, ...matched])
     if (!roles.length) roles = sortRoles(source.fallbackRoles ?? item.roles)
   }
-  return { ...item, roles, areas: ruleAreas(item.title, item.summary, roles, source?.areas) }
+  // Summary clean-up also applies to items archived before it existed.
+  const summary = stripLeadingEmoji(item.summary)
+  return { ...item, summary, roles, areas: ruleAreas(item.title, summary, roles, source?.areas) }
 }

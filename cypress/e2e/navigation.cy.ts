@@ -31,6 +31,27 @@ describe('Navigation and page structure', () => {
     })
   })
 
+  it('hides "Why it matters" lines when the LLM step did not run', () => {
+    cy.fixture('items.json').then((items) => {
+      cy.visitHub({ itemsBody: { ...items, llmEnabled: false } })
+    })
+    cy.get('[data-cy=item-summary]').should('exist')
+    cy.get('[data-cy=item-why]').should('not.exist')
+  })
+
+  it('reopens the last tab when the address has no hash', () => {
+    cy.visitHub()
+    cy.get('[data-cy=tab-pm]').click()
+    cy.visitHub()
+    cy.get('[data-cy=tab-pm]').should('have.attr', 'aria-current', 'page')
+    // A hash in the address still wins over the remembered tab.
+    cy.window().then((win) => {
+      win.location.hash = 'qa'
+    })
+    cy.reload()
+    cy.get('[data-cy=tab-qa]').should('have.attr', 'aria-current', 'page')
+  })
+
   it('switches tabs, updates the URL hash and filters the feed by role', () => {
     cy.visitHub()
     cy.feed().find('[data-cy=item]').should('have.length', 13)

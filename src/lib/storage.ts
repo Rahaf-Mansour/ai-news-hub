@@ -14,6 +14,7 @@ export const KEYS = {
   lastVisit: 'hub:lastVisit',
   learn: 'hub:learn',
   learnTrack: 'hub:learnTrack',
+  lastTab: 'hub:lastTab',
 } as const
 
 export function getItem(key: string): string | null {

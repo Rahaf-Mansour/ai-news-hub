@@ -3,7 +3,7 @@
 A daily, role-tagged digest of AI news, Claude releases and learning resources, read through five lenses: **Claude**, **QA**, **product management**, **full-stack** and **AI dev tools & agents** (SE). Open it each morning to see what changed for your role.
 
 - **Today**: the 5–8 most important items from the last 48 hours, one lead story plus role groups.
-- **Tabs**: All · Claude · Full-stack · SE · PM · QA · Saved · Repos · Learn, with unread counts, search and filters. QA splits into Manual & exploratory · Automation · Testing AI; Full-stack into Frontend · Backend.
+- **Tabs**: All · Claude · Full-stack · SE · PM · QA · Saved · Repos · Learn, with unread counts, search (matches highlighted in titles) and filters; with no hash in the address, the tab you used last reopens. QA splits into Manual & exploratory · Automation · Testing AI; Full-stack into Frontend · Backend.
 - **Claude**: a release timeline checked against Anthropic's own pages, plus the Claude feed.
 - **Repos**: 32 repos with stars and last push from the GitHub API, or "not verified".
 - **Learn**: three ordered tracks, *AI-enabled Producer*, *QA in the AI era* and *AI for full-stack engineers*, with progress you can tick off.
