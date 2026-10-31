@@ -1,0 +1,103 @@
+name: Daily update
+
+on:
+  schedule:
+    - cron: '30 5 * * *' # 05:30 UTC every day
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: daily-update-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write # to commit the day's data back to the repo
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      # Only scheduled and manual runs fetch new data; pushes and PRs test what is committed.
+      - name: Fetch sources
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: npm run ingest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # built in; lifts the GitHub API rate limit for repo stars
+          ENABLE_LLM: ${{ vars.ENABLE_LLM }} # off unless you set the repo variable to "true"
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }} # empty until you add it; the build works without it
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npx tsc -b && npx tsc -p cypress/tsconfig.json
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Build
+        run: npm run build
+
+      - name: Cypress E2E
+        uses: cypress-io/github-action@v6
+        with:
+          install: false
+          start: npm run preview
+          wait-on: 'http://localhost:4173'
+
+      - name: Upload Cypress screenshots on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+          if-no-files-found: ignore
+
+      # Tests passed: keep today's data in git so the archive persists.
+      - name: Commit data
+        if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data public/data
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "Data: daily run $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Upload site for GitHub Pages
+        if: vars.ENABLE_PAGES_DEPLOY == 'true' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  # Off until you set the repository variable ENABLE_PAGES_DEPLOY=true
+  # (Settings → Secrets and variables → Actions → Variables) and choose
+  # "GitHub Actions" as the Pages source.
+  deploy:
+    needs: build
+    if: vars.ENABLE_PAGES_DEPLOY == 'true' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
