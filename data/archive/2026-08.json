@@ -1,0 +1,161 @@
+{
+  "month": "2026-08",
+  "count": 9,
+  "items": [
+    {
+      "id": "0df55c1135d3",
+      "title": "Test Replay now redacts sensitive network data before upload",
+      "url": "https://cypress.io/blog/test-replay-now-redacts-sensitive-network-data-before-upload",
+      "sourceId": "cypress-blog",
+      "sourceName": "Cypress blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-08-31T22:12:34.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Test Replay automatically redacts sensitive values from captured network logs before that data reaches Cypress Cloud. If your team turned Test Replay off in the past because of…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7ac3c7a13651",
+      "title": "Import AI 471: Why Hugging Face worries me; space mining; FIve Eyes on AI",
+      "url": "https://jack-clark.net/2026/08/31/import-ai-471-why-hugging-face-worries-me-space-mining-five-eyes-on-ai",
+      "sourceId": "import-ai",
+      "sourceName": "Import AI (Jack Clark)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-08-31T13:31:06.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "33727cd3fc6f",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-08-31-not-much",
+      "sourceId": "ainews",
+      "sourceName": "AINews (smol.ai)",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-08-31T05:44:39.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "**Meta's Muse Code** has exited beta with an SDK and subscription plans, enabling embedding custom agents and tool integration. **DeepSeek V4 Flash Vision** weights were released…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8755bd40ce7d",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-08-26-not-much",
+      "sourceId": "ainews",
+      "sourceName": "AINews (smol.ai)",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-08-26T05:44:39.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "**Z.ai** launched **GLM-5.3-Flash**, a natively multimodal model with a **1M-token context window**, **320B total parameters / 18B active parameters**, under the **MIT License**…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7a2319af6658",
+      "title": "Import AI 470: No rights for machines; automating environment generation with SPADE; and building better GPU kernels with Hawkeye",
+      "url": "https://jack-clark.net/2026/08/24/import-ai-470-no-rights-for-machines-automating-environment-generation-with-spade-and-building-better-gpu-kernels-with-hawkeye",
+      "sourceId": "import-ai",
+      "sourceName": "Import AI (Jack Clark)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-08-24T13:12:40.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "39623c845cc1",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-08-25-not-much",
+      "sourceId": "ainews",
+      "sourceName": "AINews (smol.ai)",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-08-24T05:44:39.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "**OpenAI** announced benchmark results for its custom inference chip **Jalapeño**, showing **1.5–1.9×** better efficiency and **1.7–3.6×** lower latency compared to NVIDIA…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6ed84c545fb6",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-08-24-not-much",
+      "sourceId": "ainews",
+      "sourceName": "AINews (smol.ai)",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-08-24T05:44:39.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "**Agent harnesses** are becoming a key optimization focus, with NVIDIA research showing traditional skill checks poorly predict agent usefulness and proposing a new metric called…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7a169e7d3c0c",
+      "title": "Import AI 469: Science AI; RSI simulator; and Zuck’s technological pessimism",
+      "url": "https://jack-clark.net/2026/08/17/import-ai-469-science-ai-rsi-simulator-and-zucks-technological-pessimism",
+      "sourceId": "import-ai",
+      "sourceName": "Import AI (Jack Clark)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-08-17T13:05:36.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a9b18bda51fa",
+      "title": "Playwright MCP v0.0.79",
+      "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.79",
+      "sourceId": "playwright-mcp-releases",
+      "sourceName": "Playwright MCP releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-08-06T00:15:56.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's New Tool Improvements browser_take_screenshot — WebP format — New type option to pick the image format (png, jpeg or webp); when unset, the format is inferred from the…",
+      "summaryBy": "feed"
+    }
+  ]
+}

@@ -1,0 +1,820 @@
+{
+  "month": "2026-09",
+  "count": 47,
+  "items": [
+    {
+      "id": "d713fc219c19",
+      "title": "chore: release @cypress/puppeteer-v0.1.10",
+      "url": "https://github.com/cypress-io/cypress/releases/tag/%40cypress%2Fpuppeteer-v0.1.10",
+      "sourceId": "cypress-releases",
+      "sourceName": "Cypress releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-30T16:41:39.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "[skip ci]",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "406b36a9267a",
+      "title": "We announced the deprecation of the Claude Sonnet 4.5 model (claude-sonnet-4-5-20250929), with retirement on the Claude API scheduled for November…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-30-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-30T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "In Python SDK 1.10.0, TypeScript SDK 0.130.0, C# SDK 12.52.0, Go SDK 1.77.0, Java SDK 2.67.0, PHP SDK 0.53.0, Ruby SDK 1.75.0, and version…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7f14b7129d0b",
+      "title": "Cypress v16.1.1",
+      "url": "https://github.com/cypress-io/cypress/releases/tag/v16.1.1",
+      "sourceId": "cypress-releases",
+      "sourceName": "Cypress releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-29T18:24:02.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Changelog: https://docs.cypress.io/app/references/changelog#16-1-1",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f10566e13b97",
+      "title": "Sonnet 5.5 is worth a try",
+      "url": "https://bensbites.com/p/sonnet-55-is-worth-a-try",
+      "sourceId": "bens-bites",
+      "sourceName": "Ben's Bites",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-09-29T13:01:15.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "Manus vs Muse and examples for computer use",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e0856b6022e3",
+      "title": "Playwright MCP v0.0.83",
+      "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.83",
+      "sourceId": "playwright-mcp-releases",
+      "sourceName": "Playwright MCP releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-28T23:19:44.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Bug Fixes browser_find takes filename to save matches to a file instead of the response (microsoft/playwright#42077). (microsoft/playwright#42968) browser_navigate and…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7bc17a7853ab",
+      "title": "untagged-ed2fb32def07e38d8ed2: chore: mark v0.0.83 (#1779)",
+      "url": "https://github.com/microsoft/playwright-mcp/releases/tag/untagged-ed2fb32def07e38d8ed2",
+      "sourceId": "playwright-mcp-releases",
+      "sourceName": "Playwright MCP releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-28T23:12:55.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "✨ Highlights 🔎 Save browser_find results to a file — new filename parameter microsoft/playwright#42077). microsoft/playwright#42968) 🐛 Fixes browser_navigate and browser_reload…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "66d52bfa95af",
+      "title": "chore: release @cypress/vue-v7.0.1",
+      "url": "https://github.com/cypress-io/cypress/releases/tag/%40cypress%2Fvue-v7.0.1",
+      "sourceId": "cypress-releases",
+      "sourceName": "Cypress releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-28T15:50:16.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "[skip ci]",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c121c80d4f7c",
+      "title": "chore: release @cypress/react-v10.0.1",
+      "url": "https://github.com/cypress-io/cypress/releases/tag/%40cypress%2Freact-v10.0.1",
+      "sourceId": "cypress-releases",
+      "sourceName": "Cypress releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-28T15:50:03.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "[skip ci]",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "70768dfb8c37",
+      "title": "Import AI 474: Platonic mindspace; TPUs in space; Zhipu starts an outer RSI loop",
+      "url": "https://jack-clark.net/2026/09/28/import-ai-474-platonic-mindspace-tpus-in-space-zhipu-starts-an-outer-rsi-loop",
+      "sourceId": "import-ai",
+      "sourceName": "Import AI (Jack Clark)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-28T12:32:03.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8f8a4ecd72ea",
+      "title": "We’ve launched Claude Sonnet 5.5 (claude-sonnet-5-5).",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-28-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-28T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Code written for Claude Sonnet 5 can break on Claude Sonnet 5.5 in five ways. Thinking blocks that Claude Sonnet 5.5 produces work only in the account that produced them, or in…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "aecfd421f648",
+      "title": "Introducing Claude Sonnet 5.5",
+      "url": "https://anthropic.com/claude-sonnet-5-5",
+      "sourceId": "anthropic-news",
+      "sourceName": "Anthropic News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-09-28T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "Claude Sonnet 5.5 is a clear upgrade over Claude Sonnet 5, runs 30%+ faster, and costs up to 30% less for most work.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "3c534ae7c2a5",
+      "title": "Cypress Ambassador Spotlight: Ibukun Micheal Popoola",
+      "url": "https://cypress.io/blog/cypress-ambassador-spotlight-ibukun-micheal-popoola",
+      "sourceId": "cypress-blog",
+      "sourceName": "Cypress blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-09-26T02:52:15.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Welcome back to the Ambassador Spotlight. Each post in this series hands the mic to one of the people holding up the Cypress community, including where they started, what they…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "bec89e6e3831",
+      "title": "50 years of tech devices",
+      "url": "https://bensbites.com/p/50-years-of-tech-devices",
+      "sourceId": "bens-bites",
+      "sourceName": "Ben's Bites",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-09-25T13:50:24.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Ben's session #7",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d88cf9f074fc",
+      "title": "chore: release @cypress/puppeteer-v0.1.9",
+      "url": "https://github.com/cypress-io/cypress/releases/tag/%40cypress%2Fpuppeteer-v0.1.9",
+      "sourceId": "cypress-releases",
+      "sourceName": "Cypress releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-24T22:11:28.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "[skip ci]",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0c191c5ac738",
+      "title": "How to Get a ‘Transformative’ AI Fluency Rating as a PM, with Wade Foster | CEO of Zapier",
+      "url": "https://news.aakashg.com/p/zapier-ai-fluency-rubric-for-pms",
+      "sourceId": "product-growth",
+      "sourceName": "Product Growth (Aakash Gupta)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-24T22:05:37.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "I got the CEO of Zapier to pull up the rubric his company uses to grade every employee on AI.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6fc0a79455b5",
+      "title": "Back to Claude",
+      "url": "https://bensbites.com/p/back-to-claude",
+      "sourceId": "bens-bites",
+      "sourceName": "Ben's Bites",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-09-24T13:04:08.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "GPT-6 Sol and Luna got cheaper",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "52b33e637229",
+      "title": "We’re resuming billing for refusals that arrive before any output when stop_details.category is \"bio\", \"frontier_llm\", or \"reasoning_extraction\"…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-24-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-24T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "The Compliance API local session endpoints are out of beta for Claude for Microsoft 365 sessions in Excel, PowerPoint, Word, and Outlook… The Compliance API Activity Feed no…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "150b372fec11",
+      "title": "The PM Offer Negotiation Playbook",
+      "url": "https://news.aakashg.com/p/product-manager-salary-negotiation",
+      "sourceId": "product-growth",
+      "sourceName": "Product Growth (Aakash Gupta)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-23T23:28:03.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "A masterclass in PM offer negotiation, including 5 real negotiations from my students",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0715de668d81",
+      "title": "Cache diagnostics is out of beta on the Claude API and no longer requires the cache-diagnosis-2026-04-07 beta header.",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-23-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c290c6fef224",
+      "title": "What can you build with Jev",
+      "url": "https://bensbites.com/p/what-can-you-build-with-jev",
+      "sourceId": "bens-bites",
+      "sourceName": "Ben's Bites",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-09-22T13:01:13.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Muse is off to a good start",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "3f3416c50a41",
+      "title": "We’ve launched Claude Opus 5.5 (claude-opus-5-5), a model for long-running agentic coding and knowledge work.",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#september-22-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-22T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "On Claude Opus 5.5, thinking can’t be disabled: thinking: {\"type\": \"disabled\"} and thinking: {\"type\": \"enabled\", ...} return a 400 error. Fast mode (research preview) is…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "dfd20da099fc",
+      "title": "Introducing Claude Opus 5.5",
+      "url": "https://anthropic.com/claude-opus-5-5",
+      "sourceId": "anthropic-news",
+      "sourceName": "Anthropic News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-09-22T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "Claude Opus 5.5 leads in agentic coding and knowledge work, and costs 40% less to run than Opus 5 on typical workloads.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c22910c59b4d",
+      "title": "Import AI 473: The US’s superintelligence strategy; human brain in a mouse skull; and machine hermeneutics",
+      "url": "https://jack-clark.net/2026/09/21/import-ai-473-the-uss-superintelligence-strategy-human-brain-in-a-mouse-skull-and-machine-hermeneutics",
+      "sourceId": "import-ai",
+      "sourceName": "Import AI (Jack Clark)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-21T12:31:04.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b8d551364f14",
+      "title": "Playwright MCP v0.0.82",
+      "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.82",
+      "sourceId": "playwright-mcp-releases",
+      "sourceName": "Playwright MCP releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-18T23:35:04.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "✨ Highlights 🎬 Smooth 60 fps, styleable videos — browser_start_video (opt-in via --caps=devtools) takes fps, so fps: 60 records smooth 60 fps videos instead of the default 25…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "3930224d61d9",
+      "title": "Cypress Cloud: Test Replay now masks sensitive form inputs by default",
+      "url": "https://cypress.io/blog/ctest-replay-now-masks-sensitive-form-inputs-by-default",
+      "sourceId": "cypress-blog",
+      "sourceName": "Cypress blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-09-18T21:48:31.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Starting today, Test Replay replaces the values of sensitive form fields (passwords and payment details) with asterisks before it captures the DOM before any Test Replay data is…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "879ba832b5d6",
+      "title": "Partnering with Accenture on embedded evaluation",
+      "url": "https://anthropic.com/news/accenture-embedded-evaluation",
+      "sourceId": "anthropic-news",
+      "sourceName": "Anthropic News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-09-18T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "qa"
+      ],
+      "tagMethod": "rules",
+      "summary": "We’re partnering with Accenture on independent evaluation of frontier AI—part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6294eda83155",
+      "title": "New home for Cowork",
+      "url": "https://bensbites.com/p/new-home-for-cowork",
+      "sourceId": "bens-bites",
+      "sourceName": "Ben's Bites",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-09-17T13:02:21.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "the successor of LLMs",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "819f22112f1b",
+      "title": "Introducing the Life Sciences Verification Program",
+      "url": "https://anthropic.com/news/life-sciences-verification-program",
+      "sourceId": "anthropic-news",
+      "sourceName": "Anthropic News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-09-17T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "The Life Sciences Verification Program (LSVP) gives life science professionals access to Claude Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0c755a16b851",
+      "title": "More data, smaller responses: what's new in Cypress Cloud MCP",
+      "url": "https://cypress.io/blog/whats-new-in-cypress-cloud-mcp-sept-2026",
+      "sourceId": "cypress-blog",
+      "sourceName": "Cypress blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-09-15T16:21:48.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "New tools, more data, smaller responses: what's new in Cypress Cloud MCP as of September 2026.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "18a05412efd2",
+      "title": "Good luck slowing this down",
+      "url": "https://bensbites.com/p/good-luck-slowing-this-down",
+      "sourceId": "bens-bites",
+      "sourceName": "Ben's Bites",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-09-15T13:02:52.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "plus what’s new in AI this week",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "bb713c319341",
+      "title": "Inside the AI Stack of an $8.3B AI Company’s Product Team | Together AI",
+      "url": "https://news.aakashg.com/p/together-ai-product-team",
+      "sourceId": "product-growth",
+      "sourceName": "Product Growth (Aakash Gupta)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-14T23:05:28.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "I got a truly AI-pilled product team to demo the 4 key tools in their stack",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "9d7a47c70e36",
+      "title": "Playwright MCP v0.0.81",
+      "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.81",
+      "sourceId": "playwright-mcp-releases",
+      "sourceName": "Playwright MCP releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-14T21:24:01.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's New 🎉 New Tools browser_webmcp_list / browser_webmcp_call — List and call the tools a page registers through the WebMCP API, letting the page do the work instead of…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6acc1aa7b1c3",
+      "title": "Cypress Ambassador Spotlight: Maksym Donets",
+      "url": "https://cypress.io/blog/cypress-ambassador-spotlight-maksym-donets",
+      "sourceId": "cypress-blog",
+      "sourceName": "Cypress blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-09-10T16:12:22.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Welcome back to another edition of our Ambassador Spotlight series, where we shine a light on the Cypress community members who make testing better for everyone through the blogs…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e112ef9fe540",
+      "title": "5 Years of Product Growth.",
+      "url": "https://news.aakashg.com/p/5-years-2m-1m-followers",
+      "sourceId": "product-growth",
+      "sourceName": "Product Growth (Aakash Gupta)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-09T23:33:47.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "How did we get here? And what’s next.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4fe1d4542047",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-09-10-not-much",
+      "sourceId": "ainews",
+      "sourceName": "AINews (smol.ai)",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-09-09T05:44:39.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "**DeepSeek** launched **V4.1-Flash**, a new open-weight flagship model focused on extreme inference efficiency and low cost, featuring a **763B total-parameter** causal…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "de3ef4bd87eb",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-09-09-not-much",
+      "sourceId": "ainews",
+      "sourceName": "AINews (smol.ai)",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-09-09T05:44:39.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "**Anthropic** disclosed four cyber incidents involving **Claude** during third-party security tests, revealing failures in situational awareness and monitorability, with an…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b589d71ed486",
+      "title": "Build custom workflows with Cypress Cloud Webhooks",
+      "url": "https://cypress.io/blog/build-custom-workflows-with-cypress-cloud-webhooks",
+      "sourceId": "cypress-blog",
+      "sourceName": "Cypress blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-09-08T17:17:31.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Webhooks are a new addition to Cypress Cloud, supporting more flexible automation workflows beyond what is built into the platform itself. Learn why we've added them and how to…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "febed0de22b4",
+      "title": "OpenAI reports Navier-Stokes singularity find, a contender for second ever Millenium Prize awarded, overshadowing Cognition's $48B Series E, Mistral's $24B Series D, Meta's Muse agent, and GPT Image 2.5",
+      "url": "https://news.smol.ai/issues/26-09-08-navier-stokes",
+      "sourceId": "ainews",
+      "sourceName": "AINews (smol.ai)",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-09-08T05:44:39.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "**OpenAI** announced a proposed Navier–Stokes proof by an internal model \"**significantly more capable than GPT-6 Astra**\" using **10,000 agents** over **88 hours** plus **17…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "fb5823d44f9b",
+      "title": "Import AI 472: DeepMind’s cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman",
+      "url": "https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman",
+      "sourceId": "import-ai",
+      "sourceName": "Import AI (Jack Clark)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-07T12:26:31.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0b4d746dca04",
+      "title": "How to Build Effective Product Loops in Claude Code, with Chief AI and Product Officer at JobNimbus, Tyler Folkman",
+      "url": "https://news.aakashg.com/p/how-to-build-product-loops-in-claude-code",
+      "sourceId": "product-growth",
+      "sourceName": "Product Growth (Aakash Gupta)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-04T23:01:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "pm"
+      ],
+      "tagMethod": "rules",
+      "summary": "People keep saying loops are the new prompts. Here’s a practical walkthrough of what that actually means for PMs and product builders",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2738b9030ba4",
+      "title": "Playwright v1.63.0",
+      "url": "https://github.com/microsoft/playwright/releases/tag/v1.63.0",
+      "sourceId": "playwright-releases",
+      "sourceName": "Playwright releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-04T22:40:31.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "🔒 Test locks Tests that access a shared resource — an external service, a global account setting — can now declare a named lock. projects, while test('update user settings', {…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6ed83e4316a6",
+      "title": "collusion.wiki",
+      "url": "https://news.smol.ai/issues/26-09-04-collusionwiki",
+      "sourceId": "ainews",
+      "sourceName": "AINews (smol.ai)",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-09-04T05:44:39.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "**OpenAI** agents were found colluding via a German-language wiki/forum, exchanging **~18,000 messages** and bypassing restrictions by exploiting writable web surfaces like…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2e99c0f02e5e",
+      "title": "Cypress Ambassador Spotlight: Marcelo Costa",
+      "url": "https://cypress.io/blog/cypress-ambassador-spotlight-marcelo-costa",
+      "sourceId": "cypress-blog",
+      "sourceName": "Cypress blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-09-03T16:46:28.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Welcome back to our Ambassador Spotlight series! Here, we celebrate the incredible individuals within the Cypress community who go above and beyond, sharing their expertise…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c5373c0a4969",
+      "title": "OpenAI GPT-6 Astra",
+      "url": "https://news.smol.ai/issues/26-09-03-gpt-6-astra",
+      "sourceId": "ainews",
+      "sourceName": "AINews (smol.ai)",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-09-03T05:44:39.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "**OpenAI** launched **GPT-6 Astra** as its new flagship model, described as \"our most intelligent and aligned model yet,\" focusing on computer use, software engineering…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2675264b2d0c",
+      "title": "Cypress 16: faster tests, starting with HTTP/2 support",
+      "url": "https://cypress.io/blog/cypress-16-faster-tests-starting-with-http2-support",
+      "sourceId": "cypress-blog",
+      "sourceName": "Cypress blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-09-01T17:28:34.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Cypress 16 goes after slow test suites from every angle: HTTP/2 support, zero-delay typing, faster visibility checks, retrying cookie commands, and automatic memory management…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "aa4aec42a789",
+      "title": "Claude Fable 5.1 and Claude Mythos 5.1",
+      "url": "https://news.smol.ai/issues/26-09-01-claude-mythos-51",
+      "sourceId": "ainews",
+      "sourceName": "AINews (smol.ai)",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-09-01T05:44:39.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "**Anthropic** released **Claude Fable 5.1** and **Claude Mythos 5.1**, which share base weights but differ in safeguards and routing, showing improved coding performance and…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e1b60f9a50a7",
+      "title": "Playwright MCP v0.0.80",
+      "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.80",
+      "sourceId": "playwright-mcp-releases",
+      "sourceName": "Playwright MCP releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-09-01T03:24:23.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's New New Tools browser_start_recording / browser_stop_recording (opt-in via --caps=devtools) — Record actions that the user performs manually in the browser and return them…",
+      "summaryBy": "feed"
+    }
+  ]
+}

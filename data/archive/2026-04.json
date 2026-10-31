@@ -1,0 +1,59 @@
+{
+  "month": "2026-04",
+  "count": 3,
+  "items": [
+    {
+      "id": "a1140e83a26d",
+      "title": "An update on recent Claude Code quality reports",
+      "url": "https://anthropic.com/research/april-23-postmortem",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-04-23T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6e52c1657398",
+      "title": "Scaling Managed Agents: Decoupling the brain from the hands",
+      "url": "https://anthropic.com/research/managed-agents",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-04-08T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d12bfde5c035",
+      "title": "Playwright v1.59.1",
+      "url": "https://github.com/microsoft/playwright/releases/tag/v1.59.1",
+      "sourceId": "playwright-releases",
+      "sourceName": "Playwright releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-04-01T20:39:14.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Bug Fixes [Windows] Reverted hiding console window when spawning browser processes, which caused regressions including broken codegen, --ui and show commands (#39990)",
+      "summaryBy": "feed"
+    }
+  ]
+}

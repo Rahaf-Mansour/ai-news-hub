@@ -1,0 +1,59 @@
+{
+  "month": "2025-10",
+  "count": 3,
+  "items": [
+    {
+      "id": "11d57a9b30e1",
+      "title": "Reinforcement Learning with Verifiable Rewards Makes Models Faster, Not Smarter",
+      "url": "https://promptfoo.dev/blog/rlvr-explained",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-10-24T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "RLVR trains reasoning models with programmatic verifiers instead of human labels. Recent research suggests most gains come from search compression rather than new capabilities…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2bb5122a6239",
+      "title": "Beyond permission prompts: making Claude Code more secure and autonomous",
+      "url": "https://anthropic.com/research/claude-code-sandboxing",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-10-20T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2b00d16d1978",
+      "title": "Equipping agents for the real world with Agent Skills",
+      "url": "https://anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-10-16T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    }
+  ]
+}

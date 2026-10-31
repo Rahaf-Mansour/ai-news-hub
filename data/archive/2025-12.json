@@ -1,0 +1,91 @@
+{
+  "month": "2025-12",
+  "count": 5,
+  "items": [
+    {
+      "id": "44366f62b8aa",
+      "title": "Building a Security Scanner for LLM Apps",
+      "url": "https://promptfoo.dev/blog/building-a-security-scanner-for-llm-apps",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-12-16T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "We built a GitHub Action that scans pull requests for LLM-specific vulnerabilities. Learn why traditional security tools miss these issues and how we trace data flows to find…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "837efe16eae3",
+      "title": "How AI Regulation Changed in 2025",
+      "url": "https://promptfoo.dev/blog/ai-regulation-2025",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-12-15T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Why AI compliance questions multiplied in 2025. A field guide to federal procurement, state laws, EU AI Act deadlines, and what practitioners need to prepare.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "841ab8589c57",
+      "title": "Why Attack Success Rate (ASR) Isn't Comparable Across Jailbreak Papers Without a Shared Threat Model",
+      "url": "https://promptfoo.dev/blog/asr-not-portable-metric",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-12-12T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Attack Success Rate (ASR) is the most commonly reported metric for LLM red teaming, but it changes with attempt budget, prompt sets, and judge choice. Here's how to interpret ASR…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "ebd1bbfbd610",
+      "title": "GPT-5.2 Initial Trust and Safety Assessment",
+      "url": "https://promptfoo.dev/blog/gpt-5.2-trust-safety-assessment",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-12-11T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Day-0 red team results for GPT-5.2. 4,229 probes across 43 risk categories. Baseline safety holds at 96%, but jailbreaks drop it to as low as 22%.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "fedaddfcc384",
+      "title": "Your model upgrade just broke your agent's safety",
+      "url": "https://promptfoo.dev/blog/model-upgrades-break-agent-safety",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-12-08T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Model upgrades can change refusal, instruction-following, and tool-use behavior. Here's how to prevent safety regressions in agentic apps.",
+      "summaryBy": "feed"
+    }
+  ]
+}

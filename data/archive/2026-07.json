@@ -1,0 +1,59 @@
+{
+  "month": "2026-07",
+  "count": 3,
+  "items": [
+    {
+      "id": "aee52c5bd411",
+      "title": "Playwright v1.62.1",
+      "url": "https://github.com/microsoft/playwright/releases/tag/v1.62.1",
+      "sourceId": "playwright-releases",
+      "sourceName": "Playwright releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-07-30T16:35:55.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Bug Fixes #41989 [Regression]: tsconfig \"extends\" bare specifier isn't resolved via node_modules walk-up like tsc (fatal since 1.62) #41998 [Regression]: directory-form tsconfig…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "99fcf59120ce",
+      "title": "Playwright v1.62.0",
+      "url": "https://github.com/microsoft/playwright/releases/tag/v1.62.0",
+      "sourceId": "playwright-releases",
+      "sourceName": "Playwright releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-07-24T22:26:13.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "🧱 New component testing model Component testing moves to a stories and galleries model. story wraps your component in one specific scenario — hard-coded props, mock data…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "21766b439832",
+      "title": "Playwright MCP v0.0.78",
+      "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.78",
+      "sourceId": "playwright-mcp-releases",
+      "sourceName": "Playwright MCP releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-07-09T19:12:15.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's New New Tools browser_find — Search the accessibility snapshot of the current page for text or a regular expression. Returns matching snapshot nodes with a few lines of…",
+      "summaryBy": "feed"
+    }
+  ]
+}

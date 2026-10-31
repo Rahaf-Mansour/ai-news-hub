@@ -1,0 +1,77 @@
+{
+  "month": "2026-05",
+  "count": 4,
+  "items": [
+    {
+      "id": "7e0853ecb963",
+      "title": "How we contain Claude across products",
+      "url": "https://anthropic.com/research/how-we-contain-claude",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-05-25T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "245e1241d2e4",
+      "title": "Playwright v1.59.0",
+      "url": "https://github.com/microsoft/playwright/releases/tag/v1.59.0",
+      "sourceId": "playwright-releases",
+      "sourceName": "Playwright releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-05-22T09:25:11.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "🎬 Screencast New page.screencast API provides a unified interface for capturing page content with: Screencast recordings Action annotations Visual overlays Real-time frame…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "ec7cec0c0fec",
+      "title": "Playwright v1.60.0",
+      "url": "https://github.com/microsoft/playwright/releases/tag/v1.60.0",
+      "sourceId": "playwright-releases",
+      "sourceName": "Playwright releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-05-11T19:08:18.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "🌐 HAR recording on Tracing tracing.startHar() / tracing.stopHar() expose HAR recording as a first-class tracing API, with the same content, mode and urlFilter options as…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1da95881a82b",
+      "title": "Playwright MCP v0.0.75",
+      "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.75",
+      "sourceId": "playwright-mcp-releases",
+      "sourceName": "Playwright MCP releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-05-07T23:08:37.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Bug Fixes Serialize shared browser launch in --isolated mode (#40709) Forward browser-level CDP commands in extension mode (#40706)",
+      "summaryBy": "feed"
+    }
+  ]
+}

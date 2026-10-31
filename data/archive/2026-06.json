@@ -1,0 +1,77 @@
+{
+  "month": "2026-06",
+  "count": 4,
+  "items": [
+    {
+      "id": "177fcc411e07",
+      "title": "Playwright MCP v0.0.77",
+      "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.77",
+      "sourceId": "playwright-mcp-releases",
+      "sourceName": "Playwright MCP releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-06-29T23:06:50.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's New Tool Improvements browser_take_screenshot — scale option — Choose between CSS-pixel screenshots (smaller, device-consistent) and device-pixel screenshots (high…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e430a10aa309",
+      "title": "Playwright v1.61.1",
+      "url": "https://github.com/microsoft/playwright/releases/tag/v1.61.1",
+      "sourceId": "playwright-releases",
+      "sourceName": "Playwright releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-06-23T19:47:55.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Bug Fixes #41365 [Bug]: Expect.Extend matcher with same name as default matcher in same expect instance overrides default matchers implementation to custom matcher #41351 [Bug]…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "cc29ffb20608",
+      "title": "Playwright v1.61.0",
+      "url": "https://github.com/microsoft/playwright/releases/tag/v1.61.0",
+      "sourceId": "playwright-releases",
+      "sourceName": "Playwright releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-06-15T10:05:19.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "🔑 WebAuthn passkeys New Credentials virtual authenticator, available via browserContext.credentials, lets tests register passkeys and answer navigator.credentials.create() /…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d60a00f27f29",
+      "title": "Playwright MCP v0.0.76",
+      "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.76",
+      "sourceId": "playwright-mcp-releases",
+      "sourceName": "Playwright MCP releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-06-10T00:14:20.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's New New Tools browser_video_show_actions / browser_video_hide_actions — Overlay action annotations on the recorded video, or hide them again (#40914) Tool Improvements…",
+      "summaryBy": "feed"
+    }
+  ]
+}

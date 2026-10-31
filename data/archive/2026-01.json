@@ -1,0 +1,25 @@
+{
+  "month": "2026-01",
+  "count": 1,
+  "items": [
+    {
+      "id": "5374d7a16cad",
+      "title": "Demystifying evals for AI agents",
+      "url": "https://anthropic.com/research/demystifying-evals-for-ai-agents",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-01-09T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    }
+  ]
+}
