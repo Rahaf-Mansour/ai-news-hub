@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { AppBar, type TabDef } from './components/AppBar'
+import { BackToTop } from './components/BackToTop'
 import { Feed } from './components/Feed'
 import type { ItemActions } from './components/ItemCard'
 import { Learn } from './components/Learn'
@@ -207,6 +208,7 @@ export default function App() {
           </aside>
         </div>
       </main>
+      <BackToTop focusTarget={searchRef} />
       <footer className="footer">
         <div className="wrap">
           <p>
