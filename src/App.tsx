@@ -5,6 +5,7 @@ import { Feed } from './components/Feed'
 import type { ItemActions } from './components/ItemCard'
 import { Learn } from './components/Learn'
 import { Masthead, type ThemeChoice } from './components/Masthead'
+import { NextRefresh } from './components/NextRefresh'
 import { ClaudeTimeline, ModelWatch, RunLog } from './components/Rail'
 import { Repos } from './components/Repos'
 import { Today } from './components/Today'
@@ -164,6 +165,7 @@ export default function App() {
         now={now}
         theme={theme}
         onTheme={changeTheme}
+        runExtra={items && <NextRefresh generatedAt={items.generatedAt} />}
       />
       <AppBar
         tabs={tabs}
