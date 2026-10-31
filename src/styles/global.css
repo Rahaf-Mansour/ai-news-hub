@@ -1071,6 +1071,35 @@ details.panel[open] summary::after {
   border-color: var(--ink);
 }
 
+/* Back to top: clears the iPhone home indicator and side bars. */
+.back-to-top {
+  position: fixed;
+  right: calc(16px + env(safe-area-inset-right, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index: 8;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+.back-to-top--visible {
+  opacity: 1;
+  transform: none;
+}
+.back-to-top:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 /* ── Motion ─────────────────────────────────────────────── */
 @keyframes rise {
   from {
