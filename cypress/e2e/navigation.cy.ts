@@ -52,6 +52,24 @@ describe('Navigation and page structure', () => {
     cy.get('[data-cy=tab-qa]').should('have.attr', 'aria-current', 'page')
   })
 
+  it('moves between tabs with Back and Forward', () => {
+    cy.visitHub()
+    cy.get('[data-cy=tab-all]').should('have.attr', 'aria-current', 'page')
+    cy.get('[data-cy=tab-repos]').click().should('have.attr', 'aria-current', 'page')
+    cy.go('back')
+    cy.get('[data-cy=tab-all]').should('have.attr', 'aria-current', 'page')
+    cy.go('forward')
+    cy.get('[data-cy=tab-repos]').should('have.attr', 'aria-current', 'page')
+  })
+
+  it('goes Back to the tab restored from last time', () => {
+    cy.visitHub({ storage: { 'hub:lastTab': 'pm' } })
+    cy.location('hash').should('eq', '#pm')
+    cy.get('[data-cy=tab-qa]').click().should('have.attr', 'aria-current', 'page')
+    cy.go('back')
+    cy.get('[data-cy=tab-pm]').should('have.attr', 'aria-current', 'page')
+  })
+
   it('switches tabs, updates the URL hash and filters the feed by role', () => {
     cy.visitHub()
     cy.feed().find('[data-cy=item]').should('have.length', 13)

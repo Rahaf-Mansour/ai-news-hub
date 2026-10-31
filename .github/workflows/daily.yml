@@ -43,7 +43,7 @@ jobs:
         run: npm run lint
 
       - name: Typecheck
-        run: npx tsc -b && npx tsc -p cypress/tsconfig.json
+        run: npm run typecheck
 
       - name: Unit tests
         run: npm test
@@ -77,6 +77,8 @@ jobs:
             echo "No data changes."
           else
             git commit -m "Data: daily run $(date -u +%Y-%m-%d)"
+            # Something may have been merged to main during the run.
+            git pull --rebase origin main
             git push
           fi
 
@@ -86,9 +88,9 @@ jobs:
         with:
           path: dist
 
-  # Off until you set the repository variable ENABLE_PAGES_DEPLOY=true
-  # (Settings → Secrets and variables → Actions → Variables) and choose
-  # "GitHub Actions" as the Pages source.
+  # Runs only when the repository variable ENABLE_PAGES_DEPLOY is 'true'
+  # (Settings → Secrets and variables → Actions → Variables) and Pages uses
+  # "GitHub Actions" as its source. Both are set for this repo; a fork starts off.
   deploy:
     needs: build
     if: vars.ENABLE_PAGES_DEPLOY == 'true' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'

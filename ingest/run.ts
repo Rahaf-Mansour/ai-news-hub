@@ -61,7 +61,7 @@ export async function runIngest(opts: RunOptions): Promise<RunResult> {
       const raw = await fetchSource(source, fetchText, now)
       return { source, raw, status: statusOf(source, true, started, started, raw.length) }
     } catch (err) {
-      const message = (err as Error).message.slice(0, 300)
+      const message = String((err as Error)?.message ?? err).slice(0, 300)
       return { source, raw: [] as RawItem[], status: statusOf(source, false, started, lastSuccessOf(source.id), 0, message) }
     }
   })
@@ -70,6 +70,11 @@ export async function runIngest(opts: RunOptions): Promise<RunResult> {
   }
   const statuses = fetched.map((f) => f.status)
   const failed = statuses.filter((s) => !s.ok)
+  // Never wipe the published data (or spend LLM calls) when every source failed: likely a network problem.
+  if (failed.length === sources.length) {
+    log('Every source failed; leaving existing data untouched.')
+    return { ok: 0, failed, items: 0, newItems: 0 }
+  }
 
   // 2. Build items and merge with the archive.
   const unplaced = new Set<string>()
@@ -103,11 +108,7 @@ export async function runIngest(opts: RunOptions): Promise<RunResult> {
     log('LLM step off (set ENABLE_LLM=true and ANTHROPIC_API_KEY to turn it on)')
   }
 
-  // 4. Write. Never wipe the published data when every source failed (likely a network problem).
-  if (failed.length === sources.length) {
-    log('Every source failed; leaving existing data untouched.')
-    return { ok: 0, failed, items: 0, newItems: 0 }
-  }
+  // 4. Write.
   const months = writeArchive(archiveDir, merged)
   // Collapse runs of patch releases for reading only (after the archive is written, so it keeps them all).
   recent = collapsePatchReleases(recent)

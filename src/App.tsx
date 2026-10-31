@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { AppBar, type TabDef } from './components/AppBar'
 import { BackToTop } from './components/BackToTop'
-import { BookIcon, ChevronLeftIcon, ChevronRightIcon, CodeIcon, GitHubIcon, LinkedInIcon, RepoIcon } from './components/Icons'
+import { BookIcon, ChevronLeftIcon, CodeIcon, GitHubIcon, LinkedInIcon, RepoIcon } from './components/Icons'
 import { AUTHOR_LINKS, AUTHOR_NAME } from './content/author'
 import { FacetToggle } from './components/FacetToggle'
 import { Feed } from './components/Feed'
@@ -19,6 +19,7 @@ import { ROLE_LABEL } from './lib/roles'
 import { toSavedRepo, type SavedItem, type SavedRepo, type SavedStep } from './lib/saved'
 import { getItem, KEYS, setItem, useStoredRecords, useStoredSet } from './lib/storage'
 import { selectToday } from './lib/today'
+import { DAILY_RUN_UTC } from './lib/schedule'
 import type { Area, ItemsFile, ReposFile, Role, SourcesStatusFile } from './types'
 
 type Tab = 'all' | Role | 'saved' | 'repos' | 'learn'
@@ -53,10 +54,16 @@ const FACETS: Partial<Record<Role, { label: string; options: { id: Area; label: 
   },
 }
 
+const tabFromToken = (token: string | null): Tab => (TABS.find((t) => t.id === token)?.id ?? 'all') as Tab
+const hashToken = () => window.location.hash.replace(/^#/, '')
+
 /** The tab in the URL hash; with no hash, the tab open last time (or All). */
-const tabFromHash = (): Tab => {
-  const token = window.location.hash.replace(/^#/, '') || getItem(KEYS.lastTab)
-  return (TABS.find((t) => t.id === token)?.id ?? 'all') as Tab
+const initialTab = (): Tab => {
+  if (hashToken()) return tabFromToken(hashToken())
+  const last = tabFromToken(getItem(KEYS.lastTab))
+  // Put a restored tab in the address, so an empty hash always means All and Back works.
+  if (last !== 'all') window.history.replaceState(null, '', `#${last}`)
+  return last
 }
 
 const prefersReducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false
@@ -70,6 +77,8 @@ async function loadJson<T>(path: string): Promise<T | null> {
   }
 }
 
+const RUN_TIME_UTC = [DAILY_RUN_UTC.hour, DAILY_RUN_UTC.minute].map((n) => String(n).padStart(2, '0')).join(':')
+
 const OS_DARK = '(prefers-color-scheme: dark)'
 const osTheme = (): Theme => (window.matchMedia?.(OS_DARK).matches ? 'dark' : 'light')
 
@@ -79,7 +88,7 @@ export default function App() {
   const [repos, setRepos] = useState<ReposFile | null>(null)
   const [status, setStatus] = useState<SourcesStatusFile | null>(null)
   const [loadError, setLoadError] = useState(false)
-  const [tab, setTab] = useState<Tab>(tabFromHash)
+  const [tab, setTab] = useState<Tab>(initialTab)
   const [query, setQuery] = useState('')
   // Each role tab remembers its own facet (QA: Manual / Automation / Testing AI…).
   const [facetByTab, setFacetByTab] = useState<Partial<Record<Tab, Area | 'all'>>>({})
@@ -98,6 +107,10 @@ export default function App() {
     setItem(KEYS.rail, railOpen ? 'closed' : null)
     setRailOpen(!railOpen)
   }
+  // With the panel closed, every full-width band (masthead, app bar, Today, footer) keeps clear of the edge tab.
+  useEffect(() => {
+    document.documentElement.classList.toggle('rail-closed', !railOpen)
+  }, [railOpen])
   const theme = chosenTheme ?? systemTheme
   // Items first seen after the previous visit get the "+" marker for this whole session.
   const [newSince] = useState<string | null>(() => getItem(KEYS.lastVisit))
@@ -149,7 +162,7 @@ export default function App() {
   useEffect(() => setItem(KEYS.lastTab, tab), [tab])
 
   useEffect(() => {
-    const onHash = () => setTab(tabFromHash())
+    const onHash = () => setTab(tabFromToken(hashToken()))
     window.addEventListener('hashchange', onHash)
     return () => window.removeEventListener('hashchange', onHash)
   }, [])
@@ -283,7 +296,7 @@ export default function App() {
         placeholder={current.placeholder}
         inputRef={searchRef}
         barRef={barRef}
-        onTabClick={() => (scrollOnTabChange.current = true)}
+        onTabClick={(id) => (scrollOnTabChange.current = id !== tab)}
       />
       <main>
         {loadError && (
@@ -325,7 +338,7 @@ export default function App() {
                   savedSteps.clear()
                   setToast({ id: Date.now(), text: 'Cleared all saved' })
                 }}
-                onCopied={(n) => setToast({ id: Date.now(), text: `Copied ${n} links` })}
+                onCopied={(n) => setToast({ id: Date.now(), text: `Copied ${n} ${n === 1 ? 'link' : 'links'}` })}
                 {...actions}
               />
             )}
@@ -349,6 +362,11 @@ export default function App() {
             )}
           </div>
           <aside className={`rail${railOpen ? '' : ' rail--closed'}`} aria-label="Model watch and sources" data-cy="rail">
+            {/*
+              One button, styled per layout (see CSS): a "Hide panel" pill above the open panel and a tab
+              on the right edge when it is closed on wide screens; a full-width bar with a short
+              description on phones and tablets, where the panel stacks under the content.
+            */}
             <button
               type="button"
               className="rail-toggle"
@@ -356,19 +374,18 @@ export default function App() {
               aria-expanded={railOpen}
               aria-controls="rail-panels"
               data-cy="rail-toggle"
-              title={railOpen ? 'Hide this panel to give the feed the full width' : 'Show Model watch and the source run log'}
+              title={railOpen ? 'Hide this panel to give the content the full width' : 'Show model leaderboards and the status of every source'}
             >
-              {railOpen ? (
-                <>
-                  Hide panel <ChevronRightIcon />
-                </>
-              ) : (
-                <>
-                  <ChevronLeftIcon /> Model watch
-                </>
-              )}
+              <ChevronLeftIcon className="rail-toggle__chev" />
+              <span className="rail-toggle__text">
+                <span className="rail-toggle__title">Model watch &amp; sources</span>
+                <span className="rail-toggle__desc" data-cy="rail-toggle-desc">
+                  Leaderboards for comparing models{status ? `, and the status of all ${status.sources.length} sources` : ''}
+                </span>
+              </span>
+              <span className="rail-toggle__state">{railOpen ? 'Hide panel' : 'Show'}</span>
             </button>
-            {/* Always rendered: on narrow screens the panel stacks under the content and cannot be closed (see CSS). */}
+            {/* Always rendered, so the toggle always has a target; CSS hides it while the panel is closed. */}
             <div id="rail-panels" className="rail__panels" data-cy="rail-panels">
               <ModelWatch />
               <RunLog status={status} now={now} />
@@ -406,7 +423,7 @@ export default function App() {
             <section>
               <h2>How it works</h2>
               <p>
-                Every morning at 05:30 UTC the hub checks {status ? status.sources.length : 'dozens of'} sources: vendor blogs and release notes,
+                Every morning at {RUN_TIME_UTC} UTC the hub checks {status ? status.sources.length : 'dozens of'} sources: vendor blogs and release notes,
                 newsletters and Hacker News. What’s new is sorted into five lenses, and each item is labelled Official, Editorial or Community so
                 you know how far to trust it.
               </p>

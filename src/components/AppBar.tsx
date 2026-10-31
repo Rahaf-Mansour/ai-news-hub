@@ -74,8 +74,11 @@ export function AppBar({ tabs, current, query, onQuery, placeholder, inputRef, b
   return (
     <nav className="appbar" aria-label="Search and sections" ref={barRef} data-cy="app-bar">
       <div className="wrap appbar__inner">
-        <label className="search">
-          <span className="sr-only">Search</span>
+        {/* A div, not a label: the clear button inside must not be part of the input's label. */}
+        <div className="search">
+          <label htmlFor="search" className="sr-only">
+            Search
+          </label>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
             <circle cx="7" cy="7" r="5" stroke="currentColor" strokeWidth="1.6" />
             <path d="m11 11 3.5 3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
@@ -115,7 +118,7 @@ export function AppBar({ tabs, current, query, onQuery, placeholder, inputRef, b
               /
             </kbd>
           )}
-        </label>
+        </div>
         <div className={`tabs-wrap${moreRight ? ' tabs-wrap--more' : ''}`}>
           <ul className="tabs" role="list" ref={listRef} data-cy="tabs">
             {tabs.map((t, i) => (

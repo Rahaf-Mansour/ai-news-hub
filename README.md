@@ -1,13 +1,15 @@
 # AI News & Learning Hub
 
+**Live:** https://rahaf-mansour.github.io/ai-news-hub/
+
 A daily, role-tagged digest of AI news, Claude releases and learning resources, read through five lenses: **Claude**, **QA**, **product management**, **full-stack** and **AI dev tools & agents** (SE). Open it each morning to see what changed for your role.
 
-- **Today**: the 5–8 most important items from the last 48 hours, one lead story plus role groups.
+- **Today**: the 5–8 most important items from the last 48 hours (the last 7 days on a quiet day), one lead story plus role groups.
 - **Tabs**: All · Claude · Full-stack · SE · PM · QA · Saved · Repos · Learn, with unread counts, search (matches highlighted in titles) and filters; with no hash in the address, the tab you used last reopens. QA splits into Manual & exploratory · Automation · Testing AI; Full-stack into Frontend · Backend.
 - **Claude**: a release timeline checked against Anthropic's own pages, plus the Claude feed.
 - **Repos**: 37 hand-picked repos (the list changes only when `ingest/repos.config.ts` does). Stars, last push, license and archived state are re-read from the GitHub API every day; if a lookup fails, the card keeps its last verified numbers marked "as of <date>", and a repo never verified shows "not verified".
 - **Learn**: four ordered tracks, *Learn Claude* (Claude Academy courses from Claude 101 to agents), *AI-enabled Producer*, *QA in the AI era* and *AI for full-stack engineers*, with progress you can tick off.
-- **Model watch**: links out to Arena, Artificial Analysis and Epoch AI (no scraped numbers).
+- **Model watch & sources**: a side panel with links to Arena, Artificial Analysis and Epoch AI (no scraped numbers) and the run log of every source from the last fetch. Hide it to give the content the full width; the choice is remembered.
 
 Static site (Vite + React + TypeScript). Data refreshes once a day through GitHub Actions. No server, no database, no analytics.
 
@@ -28,8 +30,8 @@ Other scripts:
 | `npm test` | Vitest unit tests for ingestion, tagging, dedupe, scoring, Today selection and filters |
 | `npm run cy:run` | Serves the built site from `dist/` on :4173 and runs the Cypress E2E suite headless (run `npm run build` first) |
 | `npm run cy:open` | Cypress in interactive mode (start `npm run preview` first) |
-| `npm run lint` / `npm run typecheck` | ESLint / TypeScript |
-| `npm run ci` | Lint, unit tests, build and Cypress, the same order the workflow uses |
+| `npm run lint` / `npm run typecheck` | ESLint / TypeScript (the app, the ingest code and the Cypress specs) |
+| `npm run ci` | Lint, typecheck, unit tests, build and Cypress, the same order the workflow uses |
 
 ## How the daily job works
 
@@ -92,7 +94,7 @@ ENABLE_LLM=true ANTHROPIC_API_KEY=sk-ant-... npm run ingest
 
 ## Deploy to GitHub Pages
 
-Deployment is **off** until you turn it on:
+Deployment is gated so a fork does not publish by accident. In this repo it is **on** (since 2026-10-31): every push to `main` and every daily run deploys after the tests pass. To turn it on in a fork:
 1. Settings → Pages → Source: **GitHub Actions**.
 2. Settings → Secrets and variables → Actions → *Variables*: add `ENABLE_PAGES_DEPLOY` = `true`.
 
@@ -100,7 +102,7 @@ The next run (or a manual "Run workflow") builds and deploys. The site uses rela
 
 ## Test hooks (`data-cy`)
 
-Every element a test needs has a `data-cy` attribute: kebab-case, named after what it is, never after its look. Page-level hooks appear once (`search`, `masthead`, `footer`, `rail`, `feed`). Repeated elements share a hook and carry a second attribute that makes each one unique:
+Every element a test needs has a `data-cy` attribute: kebab-case, named after what it is, never after its look. Page-level hooks appear once (`search`, `masthead`, `footer`, `rail`, `rail-toggle`, `feed`). Repeated elements share a hook and carry a second attribute that makes each one unique:
 
 | Element | Hook | Unique by |
 |---|---|---|
@@ -117,12 +119,13 @@ Example: `cy.get('[data-cy=item][data-id=fx-lenny] [data-cy=toggle-read]')`.
 
 ## Design choices
 
-- **Concept: a daily run report.** The masthead reads like a test-run summary ("✓ 23 sources passed · 156 items · +12 new since your last visit"), because the data really is a daily run, and the test-report idiom is familiar to the engineers and testers who read it. A diff-style **+** in the gutter marks items first seen since your last visit.
+- **Concept: a daily run report.** The masthead reads like a test-run summary ("✓ 56 sources passed · 227 items · 30 days · +12 new since your last visit"), because the data really is a daily run, and the test-report idiom is familiar to the engineers and testers who read it. A diff-style **+** in the gutter marks items first seen since your last visit.
 - **Type.** *Bricolage Grotesque* (display; variable width and optical size) for the wordmark and headlines, *Literata* (a reading serif built for screens) for summaries, and *JetBrains Mono* for dates, tiers and counts. All from Google Fonts with system fallbacks.
 - **Color.** Bright paper with an indigo accent and violet and teal partners; the hero has a soft mesh of all three and the lead story a gradient border. Each lens has its own hue (Claude clay, Full-stack blue, SE cyan, PM amber, QA green) on tab dots and filled active tabs, card spines, Today's column headers and Learn's progress. Each role has two tones: a vivid one for spines, dots and bars, and a darker one for text and filled pills, so every text pair passes WCAG AA in both themes. Tier badges are pills: Official indigo, Editorial violet, Community orange. Dark mode is designed separately (deep navy, lifted tints), not inverted. It follows the OS setting on a first visit; the Light/Dark toggle then overrides it and is remembered.
 - **Trust tier badges** are coloured pills that always carry the word (Official, Editorial, Community), so colour is never the only signal.
 - **Motion.** One short staggered rise on Today when the page loads, a small hover lift on cards, plus link underline and read-state transitions. All motion is off under `prefers-reduced-motion`.
-- **Mobile.** One column, sticky section tabs that scroll sideways, and no horizontal page scroll (covered by a Cypress test).
+- **Side panel.** On wide screens Model watch & sources sits beside the content; hidden, it leaves a small tab on the right edge and the content widens and stays centered, with nothing moving vertically. Below 1021px it stacks under the content behind a full-width bar that says what it holds.
+- **Mobile.** One column, a compact run strip, sticky section tabs that scroll sideways (a fade and an arrow show there are more), and no horizontal page scroll (covered by Cypress tests at 375px).
 - Avoided on purpose: dashboard tiles, gradient heroes, and the cream-paper-plus-serif "newspaper" look that most generated editorial sites use.
 
 ## Privacy and licensing
@@ -130,7 +133,7 @@ Example: `cy.get('[data-cy=item][data-id=fx-lenny] [data-cy=toggle-read]')`.
 - No analytics, cookies or third-party scripts. The only external request is the Google Fonts stylesheet.
 - Read state, bookmarks, learning progress and theme live in `localStorage` in your browser only.
 - Every item links to its source. The site stores and shows **titles, links and one-line summaries only**, never article bodies. With the LLM on, summaries are written by the model. **With it off, the summary is the publisher's own feed description cut to 400 characters and shown as a few lines**, which the footer says. To show titles only instead, set `summary: ''` in `toItem()` in `ingest/build.ts`.
-- Repo licenses are shown when GitHub reports one. Non-commercial ones are flagged (Product-Manager-Skills is CC BY-NC-SA 4.0; qodo-cover is AGPL-3.0).
+- Repo licenses are shown when GitHub reports one. Licenses with conditions worth knowing are flagged: Product-Manager-Skills is CC BY-NC-SA 4.0 (non-commercial only) and qodo-cover is AGPL-3.0 (copyleft, including for network use).
 
 ## Known limitations
 
@@ -140,7 +143,7 @@ Example: `cy.get('[data-cy=item][data-id=fx-lenny] [data-cy=toggle-read]')`.
 - **"Last push" is GitHub's `pushed_at`** (any branch), a close proxy for the last commit, at one API call per repo.
 - **Ranking is rule-based** (tier, recency, Claude and launch boosts). It does not learn from what you read.
 - **Read state is per browser.** It doesn't sync across devices, and clearing site data resets it.
-- **HN coverage is narrow by design.** Three searches, each with a title filter and a points threshold, so off-topic stories stay out but some relevant ones will be missed.
+- **HN coverage is narrow by design.** Four searches (Claude, testing, product, full-stack), each with a title filter and a points threshold, so off-topic stories stay out but some relevant ones will be missed.
 - **Fact-checked once.** The Claude timeline and Learn links were checked on 2026-10-31. The timeline is hand-maintained in `src/content/claudeTimeline.ts` and is not updated by the daily job.
 
 ## Verification notes (2026-10-31)
@@ -156,7 +159,7 @@ Live GitHub star counts differed a lot from third-party trackers (for example op
 ```
 ingest/            daily pipeline (Node + tsx)
   sources.ts       the 56 feed sources
-  repos.config.ts  the 27 watched repos
+  repos.config.ts  the 37 watched repos
   adapters/        rss, github-releases, anthropic HTML, release notes, HN
   build.ts         raw → item, dedupe, score
   tagger.ts        keyword rules

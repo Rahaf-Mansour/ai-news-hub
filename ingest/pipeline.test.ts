@@ -82,6 +82,13 @@ describe('toItem', () => {
     expect(SUMMARY_MAX).toBeLessThanOrEqual(400) // a few lines, never an article body
     expect(item.summary.endsWith('…')).toBe(true)
   })
+  it('tags from the stored summary, so the next run’s retag keeps the same roles', () => {
+    const src = source({ fallbackRoles: ['pm'] })
+    // "Cypress" appears only past the summary cut.
+    const { item } = toItem({ title: 'Weekly notes', url: 'https://x.test/f', publishedAt: null, excerpt: `${'word '.repeat(100)}Cypress component testing` }, src, NOW)
+    expect(item.roles).toEqual(['pm'])
+    expect(retag(item, src).roles).toEqual(item.roles)
+  })
 })
 
 describe('dedupe', () => {

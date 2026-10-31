@@ -27,7 +27,8 @@ export function NextRefresh({ generatedAt }: { generatedAt: string | null }) {
   return (
     <span data-cy="next-refresh" title={NOTE}>
       Next refresh:{' '}
-      <time dateTime={run.toISOString()}>{formatRunTime(run)}</time> your time (in {formatCountdown(run.getTime() - now.getTime())})
+      <time dateTime={run.toISOString()}>{formatRunTime(run)}</time>
+      <span className="run__opt"> your time</span> (in {formatCountdown(run.getTime() - now.getTime())})
     </span>
   )
 }
