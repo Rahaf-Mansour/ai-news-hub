@@ -27,7 +27,13 @@ export interface SourceConfig {
   /** The URL the pipeline actually fetches. */
   feedUrl: string
   type: SourceType
+  /** Roles every item from this source gets (a focused source such as the Cypress blog). */
   roles: Role[]
+  /**
+   * For general sources (newsletters covering everything): roles to use only
+   * when neither the keyword rules nor the LLM could place an item.
+   */
+  fallbackRoles?: Role[]
   tier: TrustTier
   kind: FetchKind
   /** Keep at most this many of the newest entries per run. */
