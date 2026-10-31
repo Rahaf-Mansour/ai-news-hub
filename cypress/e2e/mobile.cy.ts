@@ -52,10 +52,47 @@ describe('Mobile layout', () => {
     })
   })
 
-  it('stacks Model watch under the content with no hide button, even if it was closed on a wide screen', () => {
-    cy.visitHub({ storage: { 'hub:rail': 'closed' } })
-    cy.get('[data-cy=rail-toggle]').should('not.be.visible')
-    cy.get('[data-cy=model-watch]').scrollIntoView().should('be.visible')
+  it('stacks Model watch under the content, with a toggle that hides and shows it', () => {
+    cy.get('[data-cy=rail-toggle]').scrollIntoView().should('be.visible').and('have.attr', 'aria-expanded', 'true')
+    cy.get('[data-cy=rail-toggle]').should(($b) => {
+      // An ordinary button above the panel (not the fixed edge tab used on wide screens), big enough to tap.
+      expect(getComputedStyle($b[0]).position).to.eq('static')
+      expect($b[0].getBoundingClientRect().height).to.be.at.least(44)
+    })
+    cy.get('[data-cy=model-watch]').should('be.visible')
+    cy.get('[data-cy=rail-toggle]').click().should('have.attr', 'aria-expanded', 'false').and('contain', 'Model watch')
+    cy.get('[data-cy=model-watch]').should('not.be.visible')
+    cy.get('[data-cy=rail-toggle]').click()
+    cy.get('[data-cy=model-watch]').should('be.visible')
+  })
+
+  it('shows the open tab in full when the page opens on a tab past the edge, never under the arrow', () => {
+    // beforeEach already opened the page: set the hash and reload so it opens on Learn.
+    cy.window().then((win) => {
+      win.location.hash = 'learn'
+    })
+    cy.reload()
+    cy.get('[data-cy=panel-learn]').should('exist')
+    cy.window().then((win) => {
+      cy.get('[data-cy=tab-learn]').should(($t) => {
+        const r = $t[0].getBoundingClientRect()
+        expect(r.left).to.be.at.least(0)
+        expect(r.right).to.be.at.most(win.document.documentElement.clientWidth)
+      })
+      cy.get('body').then(($b) => {
+        const arrow = $b.find('[data-cy=tabs-more]')[0]
+        if (arrow) cy.get('[data-cy=tab-learn]').should(($t) => expect($t[0].getBoundingClientRect().right).to.be.at.most(arrow.getBoundingClientRect().left))
+      })
+    })
+  })
+
+  it('lets Learn tracks fill the single column on a tablet', () => {
+    cy.viewport(900, 1000)
+    cy.get('[data-cy=tab-learn]').click()
+    cy.get('#content').then(($p) => {
+      const inner = $p[0].getBoundingClientRect().width - parseFloat(getComputedStyle($p[0]).paddingLeft) - parseFloat(getComputedStyle($p[0]).paddingRight)
+      cy.get('.track').should(($t) => expect($t[0].getBoundingClientRect().width).to.be.closeTo(inner, 2))
+    })
   })
 
   it('stacks Today into a single column', () => {
