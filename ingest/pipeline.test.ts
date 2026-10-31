@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest'
 import type { Item, SourceConfig } from '../src/types'
-import { collapsePatchReleases, dedupe, retag, score, toItem } from './build'
+import { collapsePatchReleases, dedupe, retag, score, SUMMARY_MAX, toItem } from './build'
 import { enrichItems, llmEnabled, type Enricher } from './llm'
 import { canonicalUrl, titleSimilarity } from './normalize'
 import { fetchRepos } from './repos'
@@ -78,7 +78,8 @@ describe('toItem', () => {
   })
   it('cuts long feed text to a short summary (no article bodies)', () => {
     const { item } = toItem({ title: 'Long', url: 'https://x.test/d', publishedAt: null, excerpt: 'word '.repeat(200) }, source(), NOW)
-    expect(item.summary.length).toBeLessThanOrEqual(180)
+    expect(item.summary.length).toBeLessThanOrEqual(SUMMARY_MAX)
+    expect(SUMMARY_MAX).toBeLessThanOrEqual(400) // a few lines, never an article body
     expect(item.summary.endsWith('…')).toBe(true)
   })
 })

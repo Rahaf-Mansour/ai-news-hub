@@ -97,19 +97,33 @@ describe('Page layout: sticky app bar', () => {
     cy.get('[data-cy=tab-learn]').should('be.visible')
   })
 
-  it('closes the Model watch panel so the content fills the full width, and remembers it', () => {
+  it('closes the Model watch panel without moving the content, and the text fills the freed width', () => {
     cy.visitHub()
-    cy.feed().then(($f) => {
-      const before = $f[0].getBoundingClientRect().width
-      cy.get('[data-cy=rail-toggle]').should('have.attr', 'aria-expanded', 'true').click()
-      cy.get('[data-cy=model-watch]').should('not.exist')
-      cy.feed().should(($g) => expect($g[0].getBoundingClientRect().width).to.be.greaterThan(before + 100))
-      // No empty side column: the feed reaches the right edge of the page, where the reopen button sits.
-      cy.get('#content').then(($page) => {
-        const pageRight = $page[0].getBoundingClientRect().right - parseFloat(getComputedStyle($page[0]).paddingRight)
-        cy.feed().should(($g) => expect($g[0].getBoundingClientRect().right).to.be.closeTo(pageRight, 2))
-        cy.get('[data-cy=rail-toggle]').should(($b) => expect($b[0].getBoundingClientRect().right).to.be.closeTo(pageRight, 2))
+    cy.get('[data-cy=feed-toolbar]').then(($t) => {
+      const docTop = (el: Element) => el.getBoundingClientRect().top + el.ownerDocument.defaultView!.scrollY
+      const toolbarTop = docTop($t[0])
+      cy.feed().then(($f) => {
+        const feedBefore = $f[0].getBoundingClientRect().width
+        cy.get('[data-cy=feed] [data-cy=item-summary]').first().then(($s) => {
+          const summaryBefore = $s[0].getBoundingClientRect().width
+          cy.get('[data-cy=rail-toggle]').should('have.attr', 'aria-expanded', 'true').click()
+          cy.get('[data-cy=model-watch]').should('not.be.visible')
+          // No gap opens above the content: the toolbar stays exactly where it was.
+          cy.get('[data-cy=feed-toolbar]').should(($t2) => expect(docTop($t2[0])).to.be.closeTo(toolbarTop, 1))
+          cy.feed().should(($g) => expect($g[0].getBoundingClientRect().width).to.be.greaterThan(feedBefore + 200))
+          // Summaries drop their reading measure and use the extra width.
+          cy.get('[data-cy=feed] [data-cy=item-summary]').first().should(($s2) => expect($s2[0].getBoundingClientRect().width).to.be.greaterThan(summaryBefore + 200))
+        })
       })
+    })
+    // The reopen button is a tab on the right edge of the window, clear of the content.
+    cy.window().then((win) => {
+      cy.get('[data-cy=rail-toggle]').should(($b) => {
+        const r = $b[0].getBoundingClientRect()
+        expect(getComputedStyle($b[0]).position).to.eq('fixed')
+        expect(r.right).to.be.closeTo(win.document.documentElement.clientWidth, 1)
+      })
+      cy.feed().then(($g) => cy.get('[data-cy=rail-toggle]').should(($b) => expect($b[0].getBoundingClientRect().left).to.be.at.least($g[0].getBoundingClientRect().right)))
     })
     cy.reload()
     cy.get('[data-cy=rail-toggle]').should('have.attr', 'aria-expanded', 'false').and('contain', 'Model watch').click()
