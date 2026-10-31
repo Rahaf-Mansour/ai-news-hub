@@ -161,19 +161,18 @@ button {
   white-space: nowrap;
 }
 
-/* ── Masthead ───────────────────────────────────────────── */
-.masthead {
-  border-bottom: 1px solid var(--rule);
-}
+/* ── Masthead: run strip + compact hero ─────────────────── */
 .masthead__run {
+  border-bottom: 1px dashed var(--rule);
+  color: var(--ink-2);
+}
+.run__inner {
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem 1.25rem;
   align-items: center;
   justify-content: space-between;
-  padding-block: 0.7rem;
-  border-bottom: 1px dashed var(--rule);
-  color: var(--ink-2);
+  padding-block: 0.55rem;
 }
 .run__summary {
   display: flex;
@@ -187,12 +186,15 @@ button {
 .run__fail {
   color: var(--warn);
 }
-.masthead__main {
+.hero__inner {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 1rem 2rem;
-  align-items: end;
-  padding-block: 1.6rem 1.4rem;
+  align-items: center;
+  padding-block: 1.25rem 1.1rem;
+}
+.hero__title {
+  min-width: 0;
 }
 .wordmark {
   margin: 0;
@@ -209,37 +211,56 @@ button {
   font-weight: 500;
 }
 .tagline {
-  margin: 0.7rem 0 0;
+  margin: 0.55rem 0 0;
   max-width: 52ch;
   color: var(--ink-2);
   font-style: italic;
   font-size: var(--step-1);
   line-height: 1.4;
 }
-.masthead__side {
+.hero__side {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 0.6rem;
 }
-.unread-total {
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(5.5rem, auto));
+  gap: 0.5rem;
+  margin: 0;
+}
+.stat {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--surface);
+  min-width: 0;
+}
+.stat dt {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+.stat dd {
+  margin: 0.15rem 0 0;
   font-family: var(--font-display);
   font-size: var(--step-2);
   font-weight: 700;
   line-height: 1;
   font-variant-numeric: tabular-nums;
 }
-.unread-total small {
-  display: block;
-  margin-top: 0.25rem;
-  text-align: right;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 400;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--ink-3);
+.stat__short {
+  display: none;
 }
+.stat--accent dd { color: var(--accent); }
+.stat--new dd { color: var(--new); }
+.stat--gold dd { color: var(--role-pm); }
+.stat--teal dd { color: var(--role-se); }
+.stat--warn dd { color: var(--warn); }
 
 .theme-toggle {
   display: inline-flex;
@@ -541,14 +562,69 @@ button {
   color: var(--accent);
 }
 
-/* ── Sections ───────────────────────────────────────────── */
-.sections {
+/* ── App bar: search + sections, sticky ─────────────────── */
+.appbar {
   position: sticky;
   top: env(safe-area-inset-top, 0px);
   z-index: 5;
   background: color-mix(in srgb, var(--paper) 92%, transparent);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--rule);
+  border-block: 1px solid var(--rule);
+}
+.appbar__inner {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem 1rem;
+  padding-block: 0.45rem;
+}
+.appbar .search {
+  flex: 0 1 320px;
+}
+.appbar .tabs {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+/* Content and Today start just below the sticky bar when scrolled to. */
+#content,
+.today {
+  scroll-margin-top: calc(var(--appbar-h, 64px) + env(safe-area-inset-top, 0px));
+}
+.search__clear,
+.search__hint {
+  position: absolute;
+  right: 0.45rem;
+  top: 50%;
+  translate: 0 -50%;
+}
+.search__clear {
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 0;
+  border-radius: 50%;
+  background: var(--sunk);
+  color: var(--ink-2);
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.search__clear:hover {
+  color: var(--ink);
+}
+.search__hint {
+  padding: 0 0.4rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  pointer-events: none;
+}
+/* The browser's own clear button would double up with ours. */
+.search input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
 }
 body::before {
   content: '';
@@ -649,7 +725,7 @@ body::before {
 }
 .search input {
   width: 100%;
-  padding: 0.6rem 0.8rem 0.6rem 2.1rem;
+  padding: 0.55rem 2.4rem 0.55rem 2.1rem;
   border: 1px solid var(--rule-strong);
   border-radius: var(--radius);
   background: var(--surface);
@@ -949,8 +1025,7 @@ details.panel[open] summary::after {
   font-weight: 650;
   text-decoration: none;
 }
-.step__title::before {
-  content: counter(step, decimal-leading-zero) ' ';
+.step__num {
   font-family: var(--font-mono);
   font-weight: 400;
   font-size: 0.75rem;
@@ -1027,6 +1102,30 @@ details.panel[open] summary::after {
   .page {
     grid-template-columns: minmax(0, 1fr);
   }
+  .hero__inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hero__side {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+/* Phones and narrow tablets: search row on top, tabs as a scrolling pill row beneath. */
+@media (max-width: 760px) {
+  .appbar__inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.15rem;
+    padding-block: 0.4rem 0;
+  }
+  .appbar .search {
+    flex: none;
+  }
+  .appbar .tab {
+    padding-block: 0.6rem 0.55rem;
+  }
 }
 @media (max-width: 760px) {
   .today__groups {
@@ -1034,16 +1133,31 @@ details.panel[open] summary::after {
   }
 }
 @media (max-width: 640px) {
-  .masthead__main {
-    grid-template-columns: minmax(0, 1fr);
+  .stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.35rem;
+    width: 100%;
   }
-  .masthead__side {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  .stat {
+    padding: 0.4rem 0.5rem;
   }
-  .unread-total small {
-    text-align: left;
+  .stat dd {
+    font-size: var(--step-1);
+  }
+  /* Short labels on phones; the long one stays for screen readers. */
+  .stat__long {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .stat__short {
+    display: inline;
+  }
+  .hero__inner {
+    padding-block: 0.9rem 0.8rem;
   }
   .lead {
     padding: 1.1rem 1rem 1.2rem;

@@ -45,6 +45,18 @@ describe('Navigation and page structure', () => {
     }
   })
 
+  it('shows Today only on the All tab; other tabs start with their own section', () => {
+    cy.visitHub()
+    cy.get('[data-cy=today]').should('be.visible')
+    for (const tab of ['claude', 'qa', 'repos', 'learn']) {
+      cy.get(`[data-cy=tab-${tab}]`).click()
+      cy.get('[data-cy=today]').should('not.exist')
+      cy.get(`[data-cy=panel-${tab}]`).should('be.visible')
+    }
+    cy.get('[data-cy=tab-all]').click()
+    cy.get('[data-cy=today]').should('be.visible')
+  })
+
   it('opens the tab named in the hash on load, and shows the Claude timeline there', () => {
     cy.visitHub({ hash: 'claude' })
     cy.get('[data-cy=tab-claude]').should('have.attr', 'aria-current', 'page')

@@ -1,5 +1,6 @@
 import { MODEL_WATCH } from '../content/modelWatch'
 import { CLAUDE_TIMELINE } from '../content/claudeTimeline'
+import { matchesWords } from '../lib/filter'
 import { fullDate, relativeDate, shortDate } from '../lib/format'
 import { TIER_LABEL } from '../lib/roles'
 import type { SourcesStatusFile } from '../types'
@@ -54,12 +55,21 @@ export function RunLog({ status, now }: { status: SourcesStatusFile | null; now:
   )
 }
 
-export function ClaudeTimeline() {
+export function ClaudeTimeline({ query }: { query: string }) {
+  const entries = CLAUDE_TIMELINE.filter((e) => matchesWords([e.title, e.detail], query))
+  if (query && entries.length === 0) return null
   return (
     <details className="timeline" open data-cy="claude-timeline">
-      <summary>Claude in 2026: releases at a glance</summary>
+      <summary>
+        Claude in 2026: releases at a glance
+        {query && (
+          <span className="mono" style={{ fontWeight: 400, color: 'var(--ink-3)', marginLeft: '0.5rem' }} data-cy="timeline-count">
+            {entries.length} of {CLAUDE_TIMELINE.length} match
+          </span>
+        )}
+      </summary>
       <ol>
-        {CLAUDE_TIMELINE.map((e) => (
+        {entries.map((e) => (
           <li key={`${e.date}-${e.title}`}>
             <time className="mono" dateTime={e.date}>
               {shortDate(`${e.date}T12:00:00Z`)}
