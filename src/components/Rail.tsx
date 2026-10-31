@@ -12,8 +12,8 @@ export function ModelWatch() {
       <p>Leaderboards change weekly and disagree with each other, so this page links out instead of copying their numbers.</p>
       <ul className="watch">
         {MODEL_WATCH.map((m) => (
-          <li key={m.name}>
-            <a href={m.url} target="_blank" rel="noopener noreferrer">
+          <li key={m.name} data-cy="model-watch-entry" data-model={m.name}>
+            <a href={m.url} target="_blank" rel="noopener noreferrer" data-cy="model-watch-link">
               {m.name} ↗
             </a>
             <p>{m.what}</p>
@@ -38,8 +38,8 @@ export function RunLog({ status, now }: { status: SourcesStatusFile | null; now:
       <p style={{ marginTop: '0.6rem' }}>Last fetch time per source. A failed source is skipped and keeps its older items.</p>
       <ul className="runlog">
         {status.sources.map((s) => (
-          <li key={s.id} data-cy="source-row" title={s.error ? `Error: ${s.error}` : `${TIER_LABEL[s.tier]} · ${s.count} items`}>
-            <span className={s.ok ? 'ok' : 'bad'} aria-label={s.ok ? 'Fetched' : 'Failed'}>
+          <li key={s.id} data-cy="source-row" data-source={s.id} title={s.error ? `Error: ${s.error}` : `${TIER_LABEL[s.tier]} · ${s.count} items`}>
+            <span className={s.ok ? 'ok' : 'bad'} aria-label={s.ok ? 'Fetched' : 'Failed'} data-cy="source-status">
               {s.ok ? '✓' : '✗'}
             </span>
             <a href={s.url} target="_blank" rel="noopener noreferrer">
@@ -70,18 +70,18 @@ export function ClaudeTimeline({ query }: { query: string }) {
       </summary>
       <ol>
         {entries.map((e) => (
-          <li key={`${e.date}-${e.title}`}>
+          <li key={`${e.date}-${e.title}`} data-cy="timeline-entry" data-date={e.date}>
             <time className="mono" dateTime={e.date}>
               {shortDate(`${e.date}T12:00:00Z`)}
             </time>
             <div>
               <h3>
-                <a href={e.url} target="_blank" rel="noopener noreferrer">
+                <a href={e.url} target="_blank" rel="noopener noreferrer" data-cy="timeline-link">
                   {e.title}
                 </a>
               </h3>
               <p>{e.detail}</p>
-              {e.correction && <p className="correction">{e.correction}</p>}
+              {e.correction && <p className="correction" data-cy="timeline-correction">{e.correction}</p>}
             </div>
           </li>
         ))}

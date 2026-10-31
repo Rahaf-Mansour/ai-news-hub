@@ -27,10 +27,10 @@ export function Masthead({ items, status, unread, newCount, savedCount, now, the
   const today = now.toLocaleDateString('en-US', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })
 
   return (
-    <header className="masthead">
+    <header className="masthead" data-cy="masthead">
       <div className="masthead__run mono">
         <div className="wrap run__inner">
-          <span>{today}</span>
+          <span data-cy="run-date">{today}</span>
           <span className="run__summary" data-cy="run-summary">
             {items && (
               <span>
@@ -55,14 +55,14 @@ export function Masthead({ items, status, unread, newCount, savedCount, now, the
       <div className="hero">
         <div className="wrap hero__inner">
           <div className="hero__title">
-            <h1 className="wordmark">
+            <h1 className="wordmark" data-cy="wordmark">
               AI News <span className="wordmark__amp">&amp;</span> <span className="wordmark__accent">Learning</span> Hub
             </h1>
             {byline}
-            <p className="tagline">What changed in AI today, read through five lenses: Claude, QA, product, full-stack and AI dev tools.</p>
+            <p className="tagline" data-cy="tagline">What changed in AI today, read through five lenses: Claude, QA, product, full-stack and AI dev tools.</p>
           </div>
           <div className="hero__side">
-            <dl className="stats">
+            <dl className="stats" data-cy="stats">
               <Stat icon={<InboxIcon />} label="Unread" value={unread} cy="unread-total" tone="accent" />
               <Stat icon={<SparkleIcon />} label="New since last visit" short="New" value={newCount} cy="stat-new" tone="new" />
               <Stat icon={<StarIcon />} label="Saved" value={savedCount} cy="stat-saved" tone="gold" />

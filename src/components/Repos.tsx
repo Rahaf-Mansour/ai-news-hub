@@ -40,7 +40,7 @@ export function Repos({ data, now, query, savedIds, onToggleSave }: Props) {
       </div>
       <div className="toolbar">
         <div className="filters" role="group" aria-label="Filter repos by role">
-          <button type="button" className="toggle" aria-pressed={role === null} onClick={() => setRole(null)}>
+          <button type="button" className="toggle" aria-pressed={role === null} onClick={() => setRole(null)} data-cy="repos-role-all">
             All
           </button>
           {ROLE_ORDER.map((r) => (
@@ -93,7 +93,7 @@ function RepoCard({ repo, now, checkedToday, saved, onToggleSave }: CardProps) {
   return (
     <li className={`repo-card role-${primaryRole(repo.roles)}`} data-cy="repo-row" data-repo={repo.fullName}>
       <div className="repo-card__head">
-        <a className="repo-name" href={repo.url} target="_blank" rel="noopener noreferrer">
+        <a className="repo-name" href={repo.url} target="_blank" rel="noopener noreferrer" data-cy="repo-name">
           {repo.fullName}
         </a>
         <button
@@ -107,7 +107,7 @@ function RepoCard({ repo, now, checkedToday, saved, onToggleSave }: CardProps) {
           {saved ? '★ Saved' : '☆ Save'}
         </button>
       </div>
-      <p className="repo-why">{repo.why}</p>
+      <p className="repo-why" data-cy="repo-why">{repo.why}</p>
       <dl className="repo-stats mono">
         <div>
           <dt>
@@ -127,12 +127,12 @@ function RepoCard({ repo, now, checkedToday, saved, onToggleSave }: CardProps) {
             <ClockIcon width={13} height={13} />
             <span className="sr-only">Last push</span>
           </dt>
-          <dd>{repo.lastCommit ? shortDate(repo.lastCommit) : <span className="unverified">not verified</span>}</dd>
+          <dd data-cy="repo-last-push">{repo.lastCommit ? shortDate(repo.lastCommit) : <span className="unverified">not verified</span>}</dd>
         </div>
         {repo.license && (
           <div>
             <dt className="sr-only">License</dt>
-            <dd>{repo.license}</dd>
+            <dd data-cy="repo-license">{repo.license}</dd>
           </div>
         )}
         {repo.verifiedAt && !checkedToday && (
@@ -145,11 +145,11 @@ function RepoCard({ repo, now, checkedToday, saved, onToggleSave }: CardProps) {
         )}
       </dl>
       <div className="repo-card__foot">
-        {repo.archived && <span className="flag">Archived</span>}
-        {stale && <span className="flag">Quiet {STALE_DAYS}+ days</span>}
-        {repo.note && <span className="flag">{repo.note}</span>}
+        {repo.archived && <span className="flag" data-cy="repo-archived">Archived</span>}
+        {stale && <span className="flag" data-cy="repo-quiet">Quiet {STALE_DAYS}+ days</span>}
+        {repo.note && <span className="flag" data-cy="repo-note">{repo.note}</span>}
         {repo.roles.map((r) => (
-          <span key={r} className={`chip role-${r}`}>
+          <span key={r} className={`chip role-${r}`} data-cy="role-chip" data-role={r}>
             {ROLE_LABEL[r]}
           </span>
         ))}

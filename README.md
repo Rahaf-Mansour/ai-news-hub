@@ -6,7 +6,7 @@ A daily, role-tagged digest of AI news, Claude releases and learning resources, 
 - **Tabs**: All · Claude · Full-stack · SE · PM · QA · Saved · Repos · Learn, with unread counts, search (matches highlighted in titles) and filters; with no hash in the address, the tab you used last reopens. QA splits into Manual & exploratory · Automation · Testing AI; Full-stack into Frontend · Backend.
 - **Claude**: a release timeline checked against Anthropic's own pages, plus the Claude feed.
 - **Repos**: 32 hand-picked repos (the list changes only when `ingest/repos.config.ts` does). Stars, last push, license and archived state are re-read from the GitHub API every day; if a lookup fails, the card keeps its last verified numbers marked "as of <date>", and a repo never verified shows "not verified".
-- **Learn**: three ordered tracks, *AI-enabled Producer*, *QA in the AI era* and *AI for full-stack engineers*, with progress you can tick off.
+- **Learn**: four ordered tracks, *Learn Claude* (Claude Academy courses from Claude 101 to agents), *AI-enabled Producer*, *QA in the AI era* and *AI for full-stack engineers*, with progress you can tick off.
 - **Model watch**: links out to Arena, Artificial Analysis and Epoch AI (no scraped numbers).
 
 Static site (Vite + React + TypeScript). Data refreshes once a day through GitHub Actions. No server, no database, no analytics.
@@ -97,6 +97,23 @@ Deployment is **off** until you turn it on:
 2. Settings → Secrets and variables → Actions → *Variables*: add `ENABLE_PAGES_DEPLOY` = `true`.
 
 The next run (or a manual "Run workflow") builds and deploys. The site uses relative paths and hash links (`#qa`, `#repos`), so it works at `https://<user>.github.io/<repo>/` with no extra configuration.
+
+## Test hooks (`data-cy`)
+
+Every element a test needs has a `data-cy` attribute: kebab-case, named after what it is, never after its look. Page-level hooks appear once (`search`, `masthead`, `footer`, `rail`, `feed`). Repeated elements share a hook and carry a second attribute that makes each one unique:
+
+| Element | Hook | Unique by |
+|---|---|---|
+| News item | `item` (inside: `item-title`, `item-source`, `item-date`, `item-link`, `item-summary`, `toggle-read`, `toggle-save`) | `data-id` |
+| Role chip | `role-chip` | `data-role` |
+| Tab / tab count | `tab-<id>` / `tab-count-<id>` | the id in the hook |
+| Repo card | `repo-row` (inside: `repo-name`, `repo-stars`, `repo-last-push`, `repo-license`, `repo-save`) | `data-repo` |
+| Learning track / step | `track-<id>` / `learn-step` (inside: `step-link`, `step-done`, `step-save`) | `data-track` / `data-step` |
+| Source in the run log | `source-row` | `data-source` |
+| Model watch link | `model-watch-entry` | `data-model` |
+| Claude timeline entry | `timeline-entry` | `data-date` |
+
+Example: `cy.get('[data-cy=item][data-id=fx-lenny] [data-cy=toggle-read]')`.
 
 ## Design choices
 
