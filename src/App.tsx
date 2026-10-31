@@ -403,11 +403,39 @@ export default function App() {
               </li>
             </ul>
           </div>
-          <p>
-            Every item links to its original source. This page shows titles, links and one-line summaries only, never article text. Without the
-            optional LLM step, a summary is the publisher’s own feed description, shortened.
+          <div className="about" data-cy="about">
+            <section>
+              <h2>How it works</h2>
+              <p>
+                Every morning at 05:30 UTC the hub checks {status ? status.sources.length : 'dozens of'} sources: vendor blogs and release notes,
+                newsletters and Hacker News. What’s new is sorted into five lenses, and each item is labelled Official, Editorial or Community so
+                you know how far to trust it.
+              </p>
+            </section>
+            <section>
+              <h2>Straight to the source</h2>
+              <p>
+                You get a title, a short summary and a link to the original, never the article itself.{' '}
+                {items?.llmEnabled
+                  ? 'Summaries and “Why it matters” lines are written by an AI model from each item’s title and opening lines.'
+                  : 'Each summary is the publisher’s own description, trimmed to a line or two.'}
+              </p>
+            </section>
+            <section>
+              <h2>Private by design</h2>
+              <p>
+                No sign-up, no analytics, no cookies. What you read, save and tick off in Learn is kept in this browser only, so it doesn’t follow
+                you to other devices. The only outside request is for the fonts.
+              </p>
+            </section>
+          </div>
+          <p className="about__cta">
+            Spotted a broken link, or know a source worth adding?{' '}
+            <a href={`${AUTHOR_LINKS.repo}/issues`} target="_blank" rel="noopener noreferrer" data-cy="about-issues">
+              Open an issue on GitHub
+            </a>
+            .
           </p>
-          <p>No analytics, cookies or tracking. Read, saved and learning progress stay in this browser.</p>
         </div>
       </footer>
     </>

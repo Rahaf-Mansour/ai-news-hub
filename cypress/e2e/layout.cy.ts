@@ -34,6 +34,14 @@ describe('Page layout: sticky app bar', () => {
     cy.get('.byline').should('contain', 'by Rahaf Mansour')
   })
 
+  it('explains the site to a first-time visitor in the footer', () => {
+    cy.visitHub()
+    cy.get('[data-cy=about] h2').then(($h) => expect([...$h].map((h) => h.textContent)).to.deep.eq(['How it works', 'Straight to the source', 'Private by design']))
+    // Source count comes from the run status (3 in the fixture); the LLM is on in the fixture, so the AI wording shows.
+    cy.get('[data-cy=about]').should('contain', 'checks 3 sources').and('contain', 'written by an AI model').and('contain', 'No sign-up, no analytics, no cookies')
+    cy.get('[data-cy=about-issues]').should('have.attr', 'href', 'https://github.com/Rahaf-Mansour/ai-news-hub/issues')
+  })
+
   it('shows when the next automatic refresh is, with a countdown', () => {
     cy.visitHub() // clock: Oct 31 08:00 UTC → next run Nov 1 05:30 UTC
     cy.get('[data-cy=next-refresh]')
