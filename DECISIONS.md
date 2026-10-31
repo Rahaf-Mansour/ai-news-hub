@@ -6,7 +6,7 @@
 
 I built a separate pipeline instead, for four reasons:
 
-- **Language.** Horizon is Python. The owner of this hub works in JavaScript/TypeScript and Cypress every day, and the brief asked for something she can understand and maintain. A pipeline in the same language as the site and the tests means one toolchain, one test runner and one set of types (`src/types.ts`, shared by the ingest code and the UI).
+- **Language.** Horizon is Python. This hub is maintained by people who work in JavaScript/TypeScript and Cypress every day, and it should be easy for them, and for contributors from the same world, to understand and change. A pipeline in the same language as the site and the tests means one toolchain, one test runner and one set of types (`src/types.ts`, shared by the ingest code and the UI).
 - **The hard part is the curation, not the plumbing.** The value here is the role lens (Claude / SE / PM / QA), the trust tiers and the Claude-specific sources. Horizon scores general tech news on one scale and outputs English and Chinese. Adapting it would mean rewriting its prompts, its output and its site, which would leave little of the original.
 - **The pipeline is small.** Five adapters, a tagger, dedupe, the LLM step and a runner come to about 1,200 lines of TypeScript plus tests. Owning them costs less than tracking an upstream fork.
 - **Deterministic first.** Keyword rules place most items for free, and the brief asked for the LLM only as a fallback behind an environment variable. Horizon's design is LLM-first.
@@ -18,10 +18,10 @@ Borrowed from Horizon: dedupe before any LLM call, a cheap model for the bulk st
 Both would work. I chose Vite + React because:
 
 - **Every interactive requirement is client-side:** search, tier and type filters, tabs, read/bookmark state, unread counts and learning progress. In Astro all of that would be one large React island anyway, so Astro's static-first strength would barely be used.
-- **Familiarity.** The owner already knows React, and Vite also runs Vitest, so the app and the unit tests share a config.
+- **Familiarity.** React is the most widely known UI library for likely contributors, and Vite also runs Vitest, so the app and the unit tests share a config.
 - **Simple hosting.** The site is one static page that fetches `data/items.json`. Tabs are hash links (`#qa`), so GitHub Pages needs no 404 fallback, and `base: './'` makes the build work under any repo path.
 
-What we give up: no content in the HTML before JavaScript runs, which doesn't matter for a personal reader that nobody indexes.
+What we give up: no content in the HTML before JavaScript runs, so search engines and link previews see little of the feed. The page's `<meta>` description and Open Graph tags cover link previews; if search indexing ever matters, pre-rendering Today at build time would be the fix.
 
 ## 3. Trust tiers
 

@@ -1,6 +1,6 @@
 # AI News & Learning Hub
 
-A daily, role-tagged digest of AI news, Claude releases and learning resources, read through four lenses: **Claude**, **QA**, **product management** and **software engineering**. Built for one reader (a Producer with a QA automation background) to open every morning.
+A daily, role-tagged digest of AI news, Claude releases and learning resources, read through four lenses: **Claude**, **QA**, **product management** and **software engineering**. Open it each morning to see what changed for your role.
 
 - **Today**: the 5–8 most important items from the last 48 hours, one lead story plus role groups.
 - **Tabs**: All · Claude · SE · PM · QA · Repos · Learn, with unread counts, search and filters.
@@ -75,7 +75,7 @@ For a repo in the **Repos** tab, add `{ fullName, why, roles, note? }` to `inges
 The site builds and works without a key. With the LLM on, each run sends up to 60 new items (title, source and a 300-character excerpt) to **Claude Haiku 5.5** in batches of 20. It uses structured output and `effort: low`, and the response adds:
 
 - a one-sentence summary in its own words (replacing the feed excerpt),
-- a "Why it matters" line written for this reader,
+- a "Why it matters" line for people in the item's roles,
 - roles for items the keyword rules could not place.
 
 Items keep their LLM text in the archive, so each item is processed once. If a call fails or is declined, those items stay as they were. At Haiku 5.5's list price this is well under a cent a day.
@@ -100,7 +100,7 @@ The next run (or a manual "Run workflow") builds and deploys. The site uses rela
 
 ## Design choices
 
-- **Concept: a daily run report.** The masthead reads like a test-run summary ("✓ 23 sources passed · 156 items · +12 new since your last visit"), because the reader's background is QA and the data really is a daily run. A diff-style **+** in the gutter marks items first seen since your last visit.
+- **Concept: a daily run report.** The masthead reads like a test-run summary ("✓ 23 sources passed · 156 items · +12 new since your last visit"), because the data really is a daily run, and the test-report idiom is familiar to the engineers and testers who read it. A diff-style **+** in the gutter marks items first seen since your last visit.
 - **Type.** *Bricolage Grotesque* (display; variable width and optical size) for the wordmark and headlines, *Literata* (a reading serif built for screens) for summaries, and *JetBrains Mono* for dates, tiers and counts. All from Google Fonts with system fallbacks.
 - **Color.** Cool paper and ink-navy with one cobalt accent, kept for the lead kicker, links on hover and active tabs. Each role has its own muted hue (Claude rust, SE teal, PM ochre, QA green) on chips, group headings and tab underlines. Dark mode is designed separately (deep navy, lifted role hues), not inverted. It follows the OS setting, and a System → Light → Dark toggle overrides it.
 - **Trust tier badges** use shape as well as words: filled square for official, half-filled for editorial, dotted circle for community.
