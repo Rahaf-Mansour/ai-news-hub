@@ -35,8 +35,9 @@ jobs:
         run: npm run ingest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # built in; lifts the GitHub API rate limit for repo stars
-          ENABLE_LLM: ${{ vars.ENABLE_LLM }} # off unless you set the repo variable to "true"
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }} # empty until you add it; the build works without it
+          # The LLM step is off for this public repo by choice: no API key is
+          # stored here. It can still run locally (see README).
+          ENABLE_LLM: 'false'
 
       - name: Lint
         run: npm run lint
