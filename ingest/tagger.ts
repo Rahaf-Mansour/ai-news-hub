@@ -45,7 +45,7 @@ export const RULES: Record<Role, RegExp[]> = {
   fs: [
     /\b(full[- ]?stack|frontend|front-end|backend|back-end|web apps?|web development)\b/i,
     /\bReact\b/, // case-sensitive: "how agents react" is a verb
-    /\b(next\.?js|vue|nuxt|svelte(kit)?|angular|astro|remix|vite|tailwind|css|html|web components?|design systems?|core web vitals|webgpu|browser apis?|generative ui|v0|bolt\.new|lovable)\b/i,
+    /\b(next\.?js|vue|nuxt|svelte(kit)?|angular|astro|remix|vite|tailwind|css|html|web components?|design systems?|core web vitals|webgpu|browser apis?|generative ui|v0(?![.\d])|bolt\.new|lovable)\b/i,
     /\b(node\.?js|deno|bun|express|nestjs|fastify|graphql|grpc|rest apis?|api design|serverless|edge functions?|postgres(ql)?|sql|redis|kafka|microservices|kubernetes|docker)\b/i,
     /\b(ai sdk|vercel ai|langchain(\.?js)?|mastra|llamaindex|streaming ui|tool calling|structured outputs?|embeddings|vector (db|database|store)s?|pgvector|rag)\b/i,
   ],
@@ -73,7 +73,7 @@ export const AREA_RULES: Record<Area, { role: Role; pattern: RegExp }> = {
   frontend: {
     role: 'fs',
     pattern:
-      /\b(react|next\.?js|vue|nuxt|svelte(kit)?|angular|astro|remix|vite|tailwind|css|html|dom|web components?|frontend|front-end|ui components?|design systems?|accessibility|core web vitals|v0|bolt\.new|lovable|generative ui|streaming ui|browser apis?|webgpu)\b/gi,
+      /\b(react|next\.?js|vue|nuxt|svelte(kit)?|angular|astro|remix|vite|tailwind|css|html|dom|web components?|frontend|front-end|ui components?|design systems?|accessibility|core web vitals|v0(?![.\d])|bolt\.new|lovable|generative ui|streaming ui|browser apis?|webgpu)\b/gi,
   },
   backend: {
     role: 'fs',

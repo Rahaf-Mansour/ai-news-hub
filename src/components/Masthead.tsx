@@ -1,12 +1,9 @@
 import type { ReactNode } from 'react'
-import { AlertIcon, CheckCircleIcon, InboxIcon, SparkleIcon, StarIcon } from './Icons'
+import { AlertIcon, CheckCircleIcon, InboxIcon, MoonIcon, SparkleIcon, StarIcon, SunIcon } from './Icons'
 import { fullDate, relativeDate } from '../lib/format'
 import type { ItemsFile, SourcesStatusFile } from '../types'
 
-export type ThemeChoice = 'system' | 'light' | 'dark'
-
-const NEXT: Record<ThemeChoice, ThemeChoice> = { system: 'light', light: 'dark', dark: 'system' }
-const LABEL: Record<ThemeChoice, string> = { system: 'System', light: 'Light', dark: 'Dark' }
+export type Theme = 'light' | 'dark'
 
 interface Props {
   items: ItemsFile | null
@@ -15,14 +12,15 @@ interface Props {
   newCount: number
   savedCount: number
   now: Date
-  theme: ThemeChoice
-  onTheme: (t: ThemeChoice) => void
+  /** The theme in use: the reader's choice, or the OS setting until they make one. */
+  theme: Theme
+  onToggleTheme: () => void
   /** Extra run-strip content (next refresh), rendered after "Updated". */
   runExtra?: ReactNode
   byline?: ReactNode
 }
 
-export function Masthead({ items, status, unread, newCount, savedCount, now, theme, onTheme, runExtra, byline }: Props) {
+export function Masthead({ items, status, unread, newCount, savedCount, now, theme, onToggleTheme, runExtra, byline }: Props) {
   const ok = status?.sources.filter((s) => s.ok).length ?? 0
   const total = status?.sources.length ?? 0
   const failed = total - ok
@@ -80,12 +78,13 @@ export function Masthead({ items, status, unread, newCount, savedCount, now, the
             <button
               type="button"
               className="theme-toggle"
-              onClick={() => onTheme(NEXT[theme])}
+              onClick={onToggleTheme}
               data-cy="theme-toggle"
-              aria-label={`Theme: ${LABEL[theme]}. Switch to ${LABEL[NEXT[theme]]}.`}
+              aria-label={theme === 'dark' ? 'Dark theme. Switch to light.' : 'Light theme. Switch to dark.'}
+              title={theme === 'dark' ? 'Switch to the light theme' : 'Switch to the dark theme'}
             >
-              <span className="theme-toggle__dot" aria-hidden="true" />
-              {LABEL[theme]}
+              {theme === 'dark' ? <MoonIcon /> : <SunIcon />}
+              {theme === 'dark' ? 'Dark' : 'Light'}
             </button>
           </div>
         </div>

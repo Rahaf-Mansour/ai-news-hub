@@ -15,6 +15,7 @@ export const KEYS = {
   learn: 'hub:learn',
   learnTrack: 'hub:learnTrack',
   lastTab: 'hub:lastTab',
+  rail: 'hub:rail',
 } as const
 
 export function getItem(key: string): string | null {
@@ -60,7 +61,8 @@ export function useStoredSet(key: string) {
   const toggle = useCallback((id: string) => update((s) => (s.has(id) ? s.delete(id) : s.add(id))), [update])
   const add = useCallback((ids: string[]) => update((s) => ids.forEach((id) => s.add(id))), [update])
   const remove = useCallback((id: string) => update((s) => s.delete(id)), [update])
-  return { set, toggle, add, remove }
+  const removeMany = useCallback((ids: string[]) => update((s) => ids.forEach((id) => s.delete(id))), [update])
+  return { set, toggle, add, remove, removeMany }
 }
 
 export interface SavedEntry<T> {

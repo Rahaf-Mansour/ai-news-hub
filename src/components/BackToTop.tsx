@@ -19,12 +19,18 @@ export function BackToTop({ focusTarget }: { focusTarget: RefObject<HTMLInputEle
     // Focus once the scroll has landed, without triggering another scroll. On a slow
     // device the smooth scroll may still be running after 1.5 s: finish it with a jump
     // first, because moving focus would cancel it halfway down the page.
+    // Hide the button once landed rather than waiting for a final scroll event, which
+    // slow machines can coalesce away.
     const started = performance.now()
+    const land = () => {
+      setVisible(false)
+      focusTarget.current?.focus({ preventScroll: true })
+    }
     const settle = () => {
-      if (window.scrollY <= 1) focusTarget.current?.focus({ preventScroll: true })
+      if (window.scrollY <= 1) land()
       else if (performance.now() - started > 1500) {
         window.scrollTo({ top: 0, behavior: 'auto' })
-        focusTarget.current?.focus({ preventScroll: true })
+        land()
       } else requestAnimationFrame(settle)
     }
     requestAnimationFrame(settle)

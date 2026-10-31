@@ -44,6 +44,17 @@ describe('Read and bookmark state', () => {
     cy.feed().find('[data-id=fx-lenny] [data-cy=read-pill]').should('have.text', 'Read')
   })
 
+  it('offers "Mark unread" on a read item, and marks everything shown as unread', () => {
+    cy.visitHub({ storage: { 'hub:read': JSON.stringify(['fx-lenny', 'fx-hn-pm']) } })
+    cy.feed().find('[data-id=fx-lenny] [data-cy=toggle-read]').should('have.text', 'Mark unread').click()
+    cy.feed().find('[data-id=fx-lenny] [data-cy=toggle-read]').should('have.text', 'Mark read')
+    cy.feed().find('[data-id=fx-lenny]').should('have.attr', 'data-read', 'false')
+    cy.get('[data-cy=tab-pm]').click()
+    cy.get('[data-cy=mark-all-unread]').should('have.text', 'Mark 1 shown as unread').click()
+    cy.get('[data-cy=tab-count-pm]').should('have.text', '2')
+    cy.get('[data-cy=mark-all-unread]').should('not.exist')
+  })
+
   it('hides read items with "Hide read", and marks everything shown as read', () => {
     cy.visitHub({ storage: { 'hub:read': JSON.stringify(['fx-haiku', 'fx-old']) } })
     cy.get('[data-cy=hide-read]').check({ force: true })

@@ -5,7 +5,7 @@ import { enrichItems, llmEnabled, type Enricher } from './llm'
 import { canonicalUrl, titleSimilarity } from './normalize'
 import { fetchRepos } from './repos'
 import { ruleAreas, ruleRoles } from './tagger'
-import { stripLeadingEmoji } from './text'
+import { stripLeadingEmoji, stripTitlePrefix } from './text'
 
 const NOW = new Date('2026-10-31T06:00:00Z')
 
@@ -164,6 +164,17 @@ describe('fetchRepos', () => {
     expect(failures[0]).toContain('HTTP 403')
   })
 
+  it('keeps the last verified numbers and their date when today\'s call fails', async () => {
+    const before = { fullName: 'o/r', why: 'w', roles: ['qa' as const], url: 'https://github.com/o/r', stars: 900, lastCommit: '2026-10-20T00:00:00Z', archived: false, license: 'MIT', verifiedAt: '2026-10-30T05:30:00.000Z' }
+    const failing = async () => ({ ok: false, status: 403, json: async () => ({}) })
+    const { repos, failures } = await fetchRepos([{ fullName: 'o/r', why: 'w', roles: ['qa'] }], NOW, undefined, failing, [before])
+    expect(repos[0]).toMatchObject({ stars: 900, license: 'MIT', verifiedAt: '2026-10-30T05:30:00.000Z' })
+    expect(failures).toHaveLength(1)
+    // A repo that was never verified still shows "not verified".
+    const never = await fetchRepos([{ fullName: 'o/r', why: 'w', roles: ['qa'] }], NOW, undefined, failing, [{ ...before, stars: null, verifiedAt: null }])
+    expect(never.repos[0]).toMatchObject({ stars: null, verifiedAt: null })
+  })
+
   it('treats NOASSERTION as no known license', async () => {
     const { repos } = await fetchRepos([{ fullName: 'o/r', why: 'w', roles: ['pm'] }], NOW, undefined, async () => ok({ stargazers_count: 1, license: { spdx_id: 'NOASSERTION' } }))
     expect(repos[0].license).toBeNull()
@@ -225,6 +236,30 @@ describe('stripLeadingEmoji', () => {
     const { item: fresh } = toItem({ title: 'T', url: 'https://x.test/e', publishedAt: null, excerpt: '🚀 Launch notes' }, source({}), new Date('2026-10-31T00:00:00Z'))
     expect(fresh.summary).toBe('Launch notes')
     expect(retag(item({ summary: '✨ Old summary' }), undefined).summary).toBe('Old summary')
+  })
+})
+
+describe('stripTitlePrefix', () => {
+  it('drops a summary\'s opening copy of the title and the separator after it', () => {
+    expect(stripTitlePrefix('GitHub Octoverse 2026 I\'m at GitHub Universe today', 'GitHub Octoverse 2026')).toBe('I\'m at GitHub Universe today')
+    expect(stripTitlePrefix('Claude Code GitHub Action v1.0 - Now Generally Available!', 'Claude Code GitHub Action v1.0')).toBe('Now Generally Available!')
+  })
+  it('leaves summaries that only share a few words, and very short titles', () => {
+    expect(stripTitlePrefix('Release notes for the week', 'Release notes for October')).toBe('Release notes for the week')
+    expect(stripTitlePrefix('v1.2 adds things', 'v1.2')).toBe('v1.2 adds things')
+  })
+})
+
+describe('Release noise in tagging', () => {
+  it('does not read "v0.0.84" as Vercel\'s v0', () => {
+    expect(ruleRoles('Playwright MCP v0.0.84')).not.toContain('fs')
+    expect(ruleRoles('v0 now builds full apps')).toContain('fs')
+  })
+  it('lets only the title add roles to a release, not its changelog', () => {
+    const rel = source({ id: 'vitest-releases', type: 'release', kind: 'github-releases', roles: ['qa'] })
+    const raw = { title: 'Vitest v5.0.5', url: 'https://x.test/v', publishedAt: null, excerpt: 'Bug fixes by Hiroshi Ogawa and Claude Opus 5.5 in #11578' }
+    expect(toItem(raw, rel, new Date('2026-10-31T00:00:00Z')).item.roles).toEqual(['qa'])
+    expect(retag(item({ title: 'Vitest v5.0.5', summary: raw.excerpt, roles: ['qa', 'claude'], tagMethod: 'rules' }), rel).roles).toEqual(['qa'])
   })
 })
 

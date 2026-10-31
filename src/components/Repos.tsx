@@ -26,6 +26,8 @@ export function Repos({ data, now, query, savedIds, onToggleSave }: Props) {
   )
   if (!data) return <p className="empty">Repo data is not available yet. Run the daily job to fetch it.</p>
   const verified = data.repos.filter((r) => r.verifiedAt).length
+  // Numbers kept from an earlier run because today's GitHub call failed.
+  const carried = data.repos.filter((r) => r.verifiedAt && r.verifiedAt.slice(0, 10) !== data.generatedAt.slice(0, 10)).length
 
   return (
     <section aria-labelledby="repos-heading" data-cy="repos">
@@ -33,6 +35,7 @@ export function Repos({ data, now, query, savedIds, onToggleSave }: Props) {
         <h2 id="repos-heading">Repos</h2>
         <p className="mono" data-cy="repos-verified">
           {verified} of {data.repos.length} verified on GitHub · {shortDate(data.generatedAt)}
+          {carried > 0 && ` · ${carried} from an earlier check`}
         </p>
       </div>
       <div className="toolbar">
@@ -59,7 +62,14 @@ export function Repos({ data, now, query, savedIds, onToggleSave }: Props) {
       )}
       <ul className="repo-grid" hidden={repos.length === 0}>
         {repos.map((repo) => (
-          <RepoCard key={repo.fullName} repo={repo} now={now} saved={savedIds.has(repo.fullName)} onToggleSave={onToggleSave} />
+          <RepoCard
+            key={repo.fullName}
+            repo={repo}
+            now={now}
+            checkedToday={repo.verifiedAt?.slice(0, 10) === data.generatedAt.slice(0, 10)}
+            saved={savedIds.has(repo.fullName)}
+            onToggleSave={onToggleSave}
+          />
         ))}
       </ul>
       <p className="mono" style={{ color: 'var(--ink-3)', marginTop: '0.75rem' }}>
@@ -69,7 +79,16 @@ export function Repos({ data, now, query, savedIds, onToggleSave }: Props) {
   )
 }
 
-function RepoCard({ repo, now, saved, onToggleSave }: { repo: Repo; now: Date; saved: boolean; onToggleSave: (r: Repo) => void }) {
+interface CardProps {
+  repo: Repo
+  now: Date
+  /** False when today's GitHub call failed and the numbers come from an earlier run. */
+  checkedToday: boolean
+  saved: boolean
+  onToggleSave: (r: Repo) => void
+}
+
+function RepoCard({ repo, now, checkedToday, saved, onToggleSave }: CardProps) {
   const stale = repo.lastCommit && now.getTime() - Date.parse(repo.lastCommit) > STALE_DAYS * 86_400_000
   return (
     <li className={`repo-card role-${primaryRole(repo.roles)}`} data-cy="repo-row" data-repo={repo.fullName}>
@@ -114,6 +133,14 @@ function RepoCard({ repo, now, saved, onToggleSave }: { repo: Repo; now: Date; s
           <div>
             <dt className="sr-only">License</dt>
             <dd>{repo.license}</dd>
+          </div>
+        )}
+        {repo.verifiedAt && !checkedToday && (
+          <div>
+            <dt className="sr-only">Checked</dt>
+            <dd className="repo-stats__asof" data-cy="repo-asof">
+              as of {shortDate(repo.verifiedAt)}
+            </dd>
           </div>
         )}
       </dl>

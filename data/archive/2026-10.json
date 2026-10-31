@@ -1,7 +1,41 @@
 {
   "month": "2026-10",
-  "count": 213,
+  "count": 215,
   "items": [
+    {
+      "id": "9b666c8337f7",
+      "title": "🧠 Community Wisdom: The biggest sources of interruptions for PMs, hiring junior PMs with case studies vs. behavioral interviews, building a product harness for AI-driven development, and more",
+      "url": "https://lennysnewsletter.com/p/community-wisdom-the-biggest-sources",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-31T16:14:41.000Z",
+      "firstSeenAt": "2026-10-31T16:59:50.519Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Community Wisdom 304",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "18eadc7cf156",
+      "title": "Agents Prompt People: Using Agents for Long-Horizon Financial Work",
+      "url": "https://latent.space/p/arca",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-31T16:05:00.000Z",
+      "firstSeenAt": "2026-10-31T16:59:50.519Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Arca's head of AI discusses persistent memory, the benefits of a custom harness, and agentic workflows that span days.",
+      "summaryBy": "feed"
+    },
     {
       "id": "9d3720fd2e8f",
       "title": "Playwright MCP v0.0.84",
