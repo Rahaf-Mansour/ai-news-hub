@@ -348,7 +348,7 @@ export default function App() {
               />
             )}
           </div>
-          <aside className={`rail${railOpen ? '' : ' rail--closed'}`} aria-label="Model watch and sources">
+          <aside className={`rail${railOpen ? '' : ' rail--closed'}`} aria-label="Model watch and sources" data-cy="rail">
             <button
               type="button"
               className="rail-toggle"
@@ -379,7 +379,7 @@ export default function App() {
       </main>
       <BackToTop focusTarget={searchRef} />
       <Toast toast={toast} onDone={clearToast} />
-      <footer className="footer">
+      <footer className="footer" data-cy="footer">
         <div className="wrap">
           <div className="credit" data-cy="author-credit">
             <p className="credit__name">
@@ -387,17 +387,17 @@ export default function App() {
             </p>
             <ul className="credit__links">
               <li>
-                <a href={AUTHOR_LINKS.github} target="_blank" rel="noopener noreferrer">
+                <a href={AUTHOR_LINKS.github} target="_blank" rel="noopener noreferrer" data-cy="author-github">
                   <GitHubIcon /> GitHub
                 </a>
               </li>
               <li>
-                <a href={AUTHOR_LINKS.linkedin} target="_blank" rel="noopener noreferrer">
+                <a href={AUTHOR_LINKS.linkedin} target="_blank" rel="noopener noreferrer" data-cy="author-linkedin">
                   <LinkedInIcon /> LinkedIn
                 </a>
               </li>
               <li>
-                <a href={AUTHOR_LINKS.repo} target="_blank" rel="noopener noreferrer">
+                <a href={AUTHOR_LINKS.repo} target="_blank" rel="noopener noreferrer" data-cy="author-source">
                   <CodeIcon /> View source
                 </a>
               </li>

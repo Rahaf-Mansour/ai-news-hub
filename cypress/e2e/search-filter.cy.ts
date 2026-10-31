@@ -124,18 +124,30 @@ describe('Search and filters', () => {
 
   it('shows one learning track at a time, with a picker, and every track while searching', () => {
     cy.get('[data-cy=tab-learn]').click()
-    cy.get('[data-cy=learn]').should('contain', 'Three tracks')
-    cy.get('[data-cy=track-picker] button').should('have.length', 3)
-    cy.get('[data-cy=track-producer]').should('exist')
+    cy.get('[data-cy=learn]').should('contain', 'Four tracks')
+    cy.get('[data-cy=track-picker] button').should('have.length', 4)
+    cy.get('[data-cy=track-claude]').should('exist')
     cy.get('[data-cy=track-pick-fullstack]').click().should('have.attr', 'aria-pressed', 'true')
     cy.get('[data-cy=track-fullstack]').should('contain', 'AI for full-stack engineers')
-    cy.get('[data-cy=track-producer]').should('not.exist')
+    cy.get('[data-cy=track-claude]').should('not.exist')
     cy.reload()
     cy.get('[data-cy=track-fullstack]').should('exist')
     cy.get('[data-cy=search]').type('evals')
     cy.get('[data-cy=track-picker]').should('not.exist')
     cy.get('[data-cy=track-qa]').should('exist')
     cy.get('[data-cy=track-fullstack]').should('exist')
+  })
+
+  it('opens on the Learn Claude track: Claude Academy courses from first chat to agents', () => {
+    cy.get('[data-cy=tab-learn]').click()
+    cy.get('[data-cy=track-pick-claude]').should('have.attr', 'aria-pressed', 'true')
+    cy.get('[data-cy=track-claude] [data-cy=track-progress]').should('have.text', '0 of 18 done')
+    cy.get('[data-cy=track-claude] [data-cy=step-section]').then(($s) =>
+      expect([...$s].map((s) => s.textContent)).to.deep.eq(['Start here', 'Everyday Claude', 'Claude Code', 'Build on the platform', 'Agents in depth']),
+    )
+    cy.get('[data-cy=learn-step][data-step=claude-101] [data-cy=step-meta]').should('have.text', 'Claude Academy · 2.5 hr')
+    cy.get('[data-cy=learn-step][data-step=claude-subagents] [data-cy=step-meta]').should('have.text', 'Claude Academy · 45 min')
+    cy.get('[data-cy=track-claude] [data-cy=learn-step]').first().should('contain', 'Claude 101').find('a').should('have.attr', 'href', 'https://academy.claude.com/courses/claude-101')
   })
 
   it('groups the QA learning track into labelled sections', () => {

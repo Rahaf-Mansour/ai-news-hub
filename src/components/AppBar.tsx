@@ -107,7 +107,7 @@ export function AppBar({ tabs, current, query, onQuery, placeholder, inputRef, b
           )}
         </label>
         <div className={`tabs-wrap${moreRight ? ' tabs-wrap--more' : ''}`}>
-          <ul className="tabs" role="list" ref={listRef}>
+          <ul className="tabs" role="list" ref={listRef} data-cy="tabs">
             {tabs.map((t, i) => (
               <Fragment key={t.id}>
                 {t.group === 'library' && tabs[i - 1]?.group !== 'library' && <li className="tabs__sep" aria-hidden="true" />}

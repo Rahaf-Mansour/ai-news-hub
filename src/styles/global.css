@@ -840,8 +840,13 @@ body::before {
   flex-direction: column;
   gap: 1.75rem;
 }
+/* Panel closed: the content takes the full width; the reopen button sits in a slim row above it. */
 .page--wide {
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 0.5rem;
+}
+.rail--closed {
+  order: -1;
 }
 .rail-toggle {
   align-self: flex-end;
