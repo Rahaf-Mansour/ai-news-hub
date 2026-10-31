@@ -100,8 +100,10 @@ describe('Page layout: sticky app bar', () => {
   it('closes the Model watch panel without moving the content, and the text fills the freed width', () => {
     cy.visitHub()
     cy.get('[data-cy=feed-toolbar]').then(($t) => {
-      const docTop = (el: Element) => el.getBoundingClientRect().top + el.ownerDocument.defaultView!.scrollY
-      const toolbarTop = docTop($t[0])
+      // Distance from the top of the content area to the toolbar: a gap above the content would grow it.
+      // (Relative, so it does not depend on Today or fonts finishing layout above the page.)
+      const offsetInPage = (el: Element) => el.getBoundingClientRect().top - el.ownerDocument.getElementById('content')!.getBoundingClientRect().top
+      const toolbarTop = offsetInPage($t[0])
       cy.feed().then(($f) => {
         const feedBefore = $f[0].getBoundingClientRect().width
         cy.get('[data-cy=feed] [data-cy=item-summary]').first().then(($s) => {
@@ -109,7 +111,7 @@ describe('Page layout: sticky app bar', () => {
           cy.get('[data-cy=rail-toggle]').should('have.attr', 'aria-expanded', 'true').click()
           cy.get('[data-cy=model-watch]').should('not.be.visible')
           // No gap opens above the content: the toolbar stays exactly where it was.
-          cy.get('[data-cy=feed-toolbar]').should(($t2) => expect(docTop($t2[0])).to.be.closeTo(toolbarTop, 1))
+          cy.get('[data-cy=feed-toolbar]').should(($t2) => expect(offsetInPage($t2[0])).to.be.closeTo(toolbarTop, 1))
           cy.feed().should(($g) => expect($g[0].getBoundingClientRect().width).to.be.greaterThan(feedBefore + 200))
           // Summaries drop their reading measure and use the extra width.
           cy.get('[data-cy=feed] [data-cy=item-summary]').first().should(($s2) => expect($s2[0].getBoundingClientRect().width).to.be.greaterThan(summaryBefore + 200))
