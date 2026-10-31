@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T14:09:19.862Z",
+  "generatedAt": "2026-10-31T15:25:49.118Z",
   "sources": [
     {
       "id": "anthropic-news",
@@ -8,8 +8,8 @@
       "tier": "official",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:19.862Z",
-      "lastSuccess": "2026-10-31T14:09:19.862Z",
+      "lastFetched": "2026-10-31T15:25:49.118Z",
+      "lastSuccess": "2026-10-31T15:25:49.118Z",
       "count": 22
     },
     {
@@ -19,8 +19,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:19.870Z",
-      "lastSuccess": "2026-10-31T14:09:19.870Z",
+      "lastFetched": "2026-10-31T15:25:49.151Z",
+      "lastSuccess": "2026-10-31T15:25:49.151Z",
       "count": 20
     },
     {
@@ -30,8 +30,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:19.871Z",
-      "lastSuccess": "2026-10-31T14:09:19.871Z",
+      "lastFetched": "2026-10-31T15:25:49.152Z",
+      "lastSuccess": "2026-10-31T15:25:49.152Z",
       "count": 20
     },
     {
@@ -41,8 +41,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:19.872Z",
-      "lastSuccess": "2026-10-31T14:09:19.872Z",
+      "lastFetched": "2026-10-31T15:25:49.153Z",
+      "lastSuccess": "2026-10-31T15:25:49.153Z",
       "count": 10
     },
     {
@@ -52,9 +52,9 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:19.873Z",
-      "lastSuccess": "2026-10-31T14:09:19.873Z",
-      "count": 10
+      "lastFetched": "2026-10-31T15:25:49.154Z",
+      "lastSuccess": "2026-10-31T15:25:49.154Z",
+      "count": 3
     },
     {
       "id": "cypress-blog",
@@ -63,8 +63,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:19.873Z",
-      "lastSuccess": "2026-10-31T14:09:19.873Z",
+      "lastFetched": "2026-10-31T15:25:49.155Z",
+      "lastSuccess": "2026-10-31T15:25:49.155Z",
       "count": 15
     },
     {
@@ -74,9 +74,9 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:20.091Z",
-      "lastSuccess": "2026-10-31T14:09:20.091Z",
-      "count": 10
+      "lastFetched": "2026-10-31T15:25:49.596Z",
+      "lastSuccess": "2026-10-31T15:25:49.596Z",
+      "count": 3
     },
     {
       "id": "playwright-releases",
@@ -85,8 +85,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:20.142Z",
-      "lastSuccess": "2026-10-31T14:09:20.142Z",
+      "lastFetched": "2026-10-31T15:25:49.668Z",
+      "lastSuccess": "2026-10-31T15:25:49.668Z",
       "count": 10
     },
     {
@@ -96,8 +96,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:20.228Z",
-      "lastSuccess": "2026-10-31T14:09:20.228Z",
+      "lastFetched": "2026-10-31T15:25:49.699Z",
+      "lastSuccess": "2026-10-31T15:25:49.699Z",
       "count": 10
     },
     {
@@ -107,8 +107,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:20.272Z",
-      "lastSuccess": "2026-10-31T14:09:20.272Z",
+      "lastFetched": "2026-10-31T15:25:49.834Z",
+      "lastSuccess": "2026-10-31T15:25:49.834Z",
       "count": 15
     },
     {
@@ -118,8 +118,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:20.283Z",
-      "lastSuccess": "2026-10-31T14:09:20.283Z",
+      "lastFetched": "2026-10-31T15:25:49.848Z",
+      "lastSuccess": "2026-10-31T15:25:49.848Z",
       "count": 3
     },
     {
@@ -129,9 +129,86 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:20.358Z",
-      "lastSuccess": "2026-10-31T14:09:20.358Z",
+      "lastFetched": "2026-10-31T15:25:50.033Z",
+      "lastSuccess": "2026-10-31T15:25:50.033Z",
       "count": 1
+    },
+    {
+      "id": "webdriverio-blog",
+      "name": "WebdriverIO blog",
+      "url": "https://webdriver.io/blog",
+      "tier": "official",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T15:25:50.104Z",
+      "lastSuccess": "2026-10-31T15:25:50.104Z",
+      "count": 5
+    },
+    {
+      "id": "selenium-releases",
+      "name": "Selenium releases",
+      "url": "https://github.com/SeleniumHQ/selenium/releases",
+      "tier": "official",
+      "type": "release",
+      "ok": true,
+      "lastFetched": "2026-10-31T15:25:50.373Z",
+      "lastSuccess": "2026-10-31T15:25:50.373Z",
+      "count": 2
+    },
+    {
+      "id": "vitest-releases",
+      "name": "Vitest releases",
+      "url": "https://github.com/vitest-dev/vitest/releases",
+      "tier": "official",
+      "type": "release",
+      "ok": true,
+      "lastFetched": "2026-10-31T15:25:50.438Z",
+      "lastSuccess": "2026-10-31T15:25:50.438Z",
+      "count": 3
+    },
+    {
+      "id": "appium-releases",
+      "name": "Appium releases",
+      "url": "https://github.com/appium/appium/releases",
+      "tier": "official",
+      "type": "release",
+      "ok": true,
+      "lastFetched": "2026-10-31T15:25:50.475Z",
+      "lastSuccess": "2026-10-31T15:25:50.475Z",
+      "count": 2
+    },
+    {
+      "id": "testguild",
+      "name": "TestGuild",
+      "url": "https://testguild.com/",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T15:25:50.559Z",
+      "lastSuccess": "2026-10-31T15:25:50.559Z",
+      "count": 8
+    },
+    {
+      "id": "satisfice",
+      "name": "Satisfice (James Bach)",
+      "url": "https://www.satisfice.com/blog",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T15:25:50.653Z",
+      "lastSuccess": "2026-10-31T15:25:50.653Z",
+      "count": 5
+    },
+    {
+      "id": "developsense",
+      "name": "DevelopSense (Michael Bolton)",
+      "url": "https://developsense.com/blog",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T15:25:50.939Z",
+      "lastSuccess": "2026-10-31T15:25:50.939Z",
+      "count": 5
     },
     {
       "id": "simon-willison",
@@ -140,8 +217,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:20.562Z",
-      "lastSuccess": "2026-10-31T14:09:20.562Z",
+      "lastFetched": "2026-10-31T15:25:50.996Z",
+      "lastSuccess": "2026-10-31T15:25:50.996Z",
       "count": 15
     },
     {
@@ -151,8 +228,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:20.617Z",
-      "lastSuccess": "2026-10-31T14:09:20.617Z",
+      "lastFetched": "2026-10-31T15:25:51.122Z",
+      "lastSuccess": "2026-10-31T15:25:51.122Z",
       "count": 15
     },
     {
@@ -162,8 +239,8 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:20.633Z",
-      "lastSuccess": "2026-10-31T14:09:20.633Z",
+      "lastFetched": "2026-10-31T15:25:51.298Z",
+      "lastSuccess": "2026-10-31T15:25:51.298Z",
       "count": 10
     },
     {
@@ -173,8 +250,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:20.734Z",
-      "lastSuccess": "2026-10-31T14:09:20.734Z",
+      "lastFetched": "2026-10-31T15:25:51.579Z",
+      "lastSuccess": "2026-10-31T15:25:51.579Z",
       "count": 15
     },
     {
@@ -184,8 +261,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:20.816Z",
-      "lastSuccess": "2026-10-31T14:09:20.816Z",
+      "lastFetched": "2026-10-31T15:25:51.695Z",
+      "lastSuccess": "2026-10-31T15:25:51.695Z",
       "count": 15
     },
     {
@@ -195,8 +272,8 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:20.899Z",
-      "lastSuccess": "2026-10-31T14:09:20.899Z",
+      "lastFetched": "2026-10-31T15:25:52.003Z",
+      "lastSuccess": "2026-10-31T15:25:52.003Z",
       "count": 15
     },
     {
@@ -206,8 +283,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:20.910Z",
-      "lastSuccess": "2026-10-31T14:09:20.910Z",
+      "lastFetched": "2026-10-31T15:25:52.123Z",
+      "lastSuccess": "2026-10-31T15:25:52.123Z",
       "count": 10
     },
     {
@@ -217,8 +294,8 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:20.995Z",
-      "lastSuccess": "2026-10-31T14:09:20.995Z",
+      "lastFetched": "2026-10-31T15:25:52.492Z",
+      "lastSuccess": "2026-10-31T15:25:52.492Z",
       "count": 10
     },
     {
@@ -228,9 +305,9 @@
       "tier": "community",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:21.063Z",
-      "lastSuccess": "2026-10-31T14:09:21.063Z",
-      "count": 9
+      "lastFetched": "2026-10-31T15:25:52.558Z",
+      "lastSuccess": "2026-10-31T15:25:52.558Z",
+      "count": 10
     },
     {
       "id": "hn-testing",
@@ -239,9 +316,9 @@
       "tier": "community",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:21.079Z",
-      "lastSuccess": "2026-10-31T14:09:21.079Z",
-      "count": 0
+      "lastFetched": "2026-10-31T15:25:52.615Z",
+      "lastSuccess": "2026-10-31T15:25:52.615Z",
+      "count": 1
     },
     {
       "id": "hn-product",
@@ -250,8 +327,8 @@
       "tier": "community",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T14:09:21.102Z",
-      "lastSuccess": "2026-10-31T14:09:21.102Z",
+      "lastFetched": "2026-10-31T15:25:52.634Z",
+      "lastSuccess": "2026-10-31T15:25:52.634Z",
       "count": 1
     }
   ]

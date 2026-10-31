@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T14:09:19.862Z",
+  "generatedAt": "2026-10-31T15:25:49.118Z",
   "repos": [
     {
       "fullName": "anthropics/claude-code",
@@ -9,11 +9,11 @@
       ],
       "why": "Watch the CHANGELOG and issues: the fastest signal of Claude Code feature changes.",
       "url": "https://github.com/anthropics/claude-code",
-      "stars": 154032,
+      "stars": 154042,
       "lastCommit": "2026-10-31T01:01:35Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "anthropics/skills",
@@ -24,11 +24,11 @@
       ],
       "why": "Official Agent Skills, including docx/pdf/pptx/xlsx: the template for writing your own.",
       "url": "https://github.com/anthropics/skills",
-      "stars": 185731,
+      "stars": 185753,
       "lastCommit": "2026-10-28T19:20:39Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "anthropics/claude-cookbooks",
@@ -38,11 +38,11 @@
       ],
       "why": "Official notebooks for tool use, caching, sub-agents, skills and memory.",
       "url": "https://github.com/anthropics/claude-cookbooks",
-      "stars": 53994,
+      "stars": 53996,
       "lastCommit": "2026-10-29T20:02:54Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "anthropics/claude-code-action",
@@ -57,7 +57,7 @@
       "lastCommit": "2026-10-31T01:05:49Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "anthropics/prompt-eng-interactive-tutorial",
@@ -68,11 +68,11 @@
       ],
       "why": "Hands-on prompt engineering course from Anthropic; a good first week.",
       "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
-      "stars": 38950,
+      "stars": 38952,
       "lastCommit": "2026-08-28T05:31:39Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "anthropics/courses",
@@ -82,11 +82,11 @@
       ],
       "why": "API fundamentals through prompt evaluation. Still useful as reference.",
       "url": "https://github.com/anthropics/courses",
-      "stars": 22952,
+      "stars": 22954,
       "lastCommit": "2026-08-28T09:37:03Z",
       "archived": true,
       "license": null,
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "hesreallyhim/awesome-claude-code",
@@ -96,11 +96,11 @@
       ],
       "why": "The main Claude Code resource list: skills, hooks, agents and tooling.",
       "url": "https://github.com/hesreallyhim/awesome-claude-code",
-      "stars": 56966,
-      "lastCommit": "2026-10-31T12:08:06Z",
+      "stars": 56967,
+      "lastCommit": "2026-10-31T15:05:40Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "dair-ai/Prompt-Engineering-Guide",
@@ -115,7 +115,7 @@
       "lastCommit": "2026-03-11T20:09:13Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "microsoft/playwright-mcp",
@@ -125,11 +125,11 @@
       ],
       "why": "De facto way to give an agent a browser through the accessibility tree, not screenshots.",
       "url": "https://github.com/microsoft/playwright-mcp",
-      "stars": 38890,
-      "lastCommit": "2026-10-31T01:18:01Z",
+      "stars": 38895,
+      "lastCommit": "2026-10-31T15:20:06Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "microsoft/playwright-cli",
@@ -140,10 +140,10 @@
       "why": "Microsoft now recommends it over MCP for coding agents: far fewer tokens per session.",
       "url": "https://github.com/microsoft/playwright-cli",
       "stars": 14820,
-      "lastCommit": "2026-10-31T01:40:45Z",
+      "lastCommit": "2026-10-31T15:21:49Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "browserbase/stagehand",
@@ -156,7 +156,7 @@
       "lastCommit": "2026-10-30T23:33:45Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "browser-use/browser-use",
@@ -165,11 +165,11 @@
       ],
       "why": "Most-starred AI browser agent (Python). An autonomous loop, not deterministic tests.",
       "url": "https://github.com/browser-use/browser-use",
-      "stars": 119641,
+      "stars": 119647,
       "lastCommit": "2026-10-31T01:18:25Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "promptfoo/promptfoo",
@@ -179,11 +179,11 @@
       ],
       "why": "YAML evals and red-teaming for LLM features: QA for the AI you ship.",
       "url": "https://github.com/promptfoo/promptfoo",
-      "stars": 26668,
+      "stars": 26669,
       "lastCommit": "2026-10-31T09:22:08Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "confident-ai/deepeval",
@@ -196,7 +196,7 @@
       "lastCommit": "2026-10-29T10:36:04Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "qodo-ai/qodo-cover",
@@ -211,7 +211,7 @@
       "lastCommit": "2026-04-05T12:27:16Z",
       "archived": false,
       "license": "AGPL-3.0",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "tugkanboz/awesome-ai-testing",
@@ -224,7 +224,7 @@
       "lastCommit": "2026-10-27T20:10:05Z",
       "archived": false,
       "license": "CC0-1.0",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "phuryn/pm-skills",
@@ -237,7 +237,7 @@
       "lastCommit": "2026-10-29T19:09:57Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "deanpeters/Product-Manager-Skills",
@@ -247,11 +247,11 @@
       "why": "Skills that do PM work and coach you on the frameworks behind it.",
       "note": "CC BY-NC-SA 4.0: non-commercial use only",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
-      "stars": 7805,
+      "stars": 7806,
       "lastCommit": "2026-10-16T01:51:12Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "dend/awesome-product-management",
@@ -264,7 +264,7 @@
       "lastCommit": "2026-09-07T22:44:09Z",
       "archived": false,
       "license": "CC0-1.0",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "The-PR-Agent/pr-agent",
@@ -274,11 +274,11 @@
       ],
       "why": "Open-source AI PR reviewer for GitHub, GitLab, Bitbucket and Azure DevOps.",
       "url": "https://github.com/The-PR-Agent/pr-agent",
-      "stars": 13826,
+      "stars": 13829,
       "lastCommit": "2026-10-31T13:05:05Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "anomalyco/opencode",
@@ -287,11 +287,11 @@
       ],
       "why": "Most-starred open terminal agent; model-agnostic, a reference for multi-provider design.",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 223467,
-      "lastCommit": "2026-10-31T10:11:10Z",
+      "stars": 223484,
+      "lastCommit": "2026-10-31T15:19:27Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "openai/codex",
@@ -300,11 +300,11 @@
       ],
       "why": "OpenAI's terminal agent; its sandboxing approach is worth comparing.",
       "url": "https://github.com/openai/codex",
-      "stars": 132396,
+      "stars": 132417,
       "lastCommit": "2026-10-31T00:12:36Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "google-gemini/gemini-cli",
@@ -313,11 +313,11 @@
       ],
       "why": "Free tier makes it easy to compare against Claude Code.",
       "url": "https://github.com/google-gemini/gemini-cli",
-      "stars": 108642,
+      "stars": 108646,
       "lastCommit": "2026-10-31T01:19:31Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "cline/cline",
@@ -326,11 +326,11 @@
       ],
       "why": "VS Code-native agent that asks permission at each step.",
       "url": "https://github.com/cline/cline",
-      "stars": 71095,
-      "lastCommit": "2026-10-31T02:37:13Z",
+      "stars": 71100,
+      "lastCommit": "2026-10-31T15:06:32Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "Aider-AI/aider",
@@ -339,11 +339,11 @@
       ],
       "why": "Best git hygiene: every AI change is its own reviewable commit.",
       "url": "https://github.com/Aider-AI/aider",
-      "stars": 49848,
+      "stars": 49849,
       "lastCommit": "2026-05-22T14:02:20Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "OpenHands/OpenHands",
@@ -353,11 +353,11 @@
       ],
       "why": "Autonomous issue-to-PR agent in a Docker sandbox: the \"agent in CI\" pattern.",
       "url": "https://github.com/OpenHands/OpenHands",
-      "stars": 92333,
+      "stars": 92339,
       "lastCommit": "2026-10-31T13:21:25Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     },
     {
       "fullName": "Thysrael/Horizon",
@@ -370,7 +370,7 @@
       "lastCommit": "2026-10-31T00:02:52Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-10-31T14:09:19.862Z"
+      "verifiedAt": "2026-10-31T15:25:49.118Z"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "count": 47,
+  "count": 50,
   "items": [
     {
       "id": "d713fc219c19",
@@ -105,6 +105,23 @@
       ],
       "tagMethod": "source",
       "summary": "✨ Highlights 🔎 Save browser_find results to a file — new filename parameter microsoft/playwright#42077). microsoft/playwright#42968) 🐛 Fixes browser_navigate and browser_reload…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "471201eb0b17",
+      "title": "On Bottlenecks",
+      "url": "https://developsense.com/blog/2026/09/on-bottlenecks",
+      "sourceId": "developsense",
+      "sourceName": "DevelopSense (Michael Bolton)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-28T18:03:41.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "This post originally appeared on LinkedIn. Language is the bottleneck. We need to be able to understand each other and ourselves if we want good things, or if we want other…",
       "summaryBy": "feed"
     },
     {
@@ -329,6 +346,41 @@
       ],
       "tagMethod": "source",
       "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "48e4c51abd33",
+      "title": "Responsible Quality Engineering",
+      "url": "https://satisfice.com/blog/archives/488069",
+      "sourceId": "satisfice",
+      "sourceName": "Satisfice (James Bach)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-23T05:39:31.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Let’s talk about responsible quality engineering (RQE). Quality engineering is not testing, although it may require testing. Also, most “quality engineers” don’t do quality…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "32ea7abd5f67",
+      "title": "The Perfect Job For Me",
+      "url": "https://satisfice.com/blog/archives/488204",
+      "sourceId": "satisfice",
+      "sourceName": "Satisfice (James Bach)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-23T03:36:07.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Consider a large company that wants to make the best use of AI, while maintaining control over it, so that it can run itself profitably, compete effectively, and avoid disastrous…",
       "summaryBy": "feed"
     },
     {

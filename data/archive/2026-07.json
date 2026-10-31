@@ -1,6 +1,6 @@
 {
   "month": "2026-07",
-  "count": 3,
+  "count": 5,
   "items": [
     {
       "id": "aee52c5bd411",
@@ -35,6 +35,40 @@
       ],
       "tagMethod": "rules",
       "summary": "🧱 New component testing model Component testing moves to a stories and galleries model. story wraps your component in one specific scenario — hard-coded props, mock data…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e43466111ca5",
+      "title": "Some Class Recordings Are Available",
+      "url": "https://satisfice.com/blog/archives/488173",
+      "sourceId": "satisfice",
+      "sourceName": "Satisfice (James Bach)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-07-24T12:34:19.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "For the foreseeable future, I will not be scheduling public classes on my own behalf. I am still available for private classes, and I will even do public classes as long as long…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "9df490a376c0",
+      "title": "Just the Facts, Please",
+      "url": "https://developsense.com/blog/2026/07/just-the-facts-please",
+      "sourceId": "developsense",
+      "sourceName": "DevelopSense (Michael Bolton)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-07-21T17:08:48.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "It might okay for an organization to use LLMs in technical support — to parse a request for content, and then provide links to curated answers, call services that can provide…",
       "summaryBy": "feed"
     },
     {
