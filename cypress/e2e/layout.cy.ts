@@ -16,7 +16,7 @@ describe('Page layout: sticky app bar', () => {
   it('shows a back-to-top button after scrolling, which returns to the top and focuses search', () => {
     cy.visitHub()
     cy.get('[data-cy=back-to-top]').should('not.be.visible')
-    cy.feed().find('[data-cy=item]').should('have.length', 10)
+    cy.feed().find('[data-cy=item]').should('have.length', 11)
     cy.scrollTo(0, 1500)
     cy.window().its('scrollY').should('be.greaterThan', 600)
     cy.get('[data-cy=back-to-top]').should('be.visible').and('have.attr', 'aria-label', 'Back to top').click()

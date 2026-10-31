@@ -1,10 +1,10 @@
 import { describe, expect, it, vi } from 'vitest'
 import type { Item, SourceConfig } from '../src/types'
-import { dedupe, score, toItem } from './build'
+import { collapsePatchReleases, dedupe, retag, score, toItem } from './build'
 import { enrichItems, llmEnabled, type Enricher } from './llm'
 import { canonicalUrl, titleSimilarity } from './normalize'
 import { fetchRepos } from './repos'
-import { ruleRoles } from './tagger'
+import { ruleAreas, ruleRoles } from './tagger'
 
 const NOW = new Date('2026-10-31T06:00:00Z')
 
@@ -166,5 +166,56 @@ describe('fetchRepos', () => {
   it('treats NOASSERTION as no known license', async () => {
     const { repos } = await fetchRepos([{ fullName: 'o/r', why: 'w', roles: ['pm'] }], NOW, undefined, async () => ok({ stargazers_count: 1, license: { spdx_id: 'NOASSERTION' } }))
     expect(repos[0].license).toBeNull()
+  })
+})
+
+describe('QA areas and wider QA rules', () => {
+  it('places manual and exploratory testing in QA', () => {
+    expect(ruleRoles('Writing better exploratory test charters')).toEqual(['qa'])
+    expect(ruleRoles('WebdriverIO v10 is out')).toEqual(['qa'])
+  })
+  it('tags QA areas from the title, or from two different excerpt terms', () => {
+    expect(ruleAreas('Exploratory testing with session-based charters', '', ['qa'])).toEqual(['manual'])
+    expect(ruleAreas('Playwright 1.60 ships test agents', '', ['qa'])).toEqual(['automation', 'ai-testing'])
+    expect(ruleAreas('Weekly notes', 'We wrote evals and used promptfoo for red teaming.', ['qa'])).toEqual(['ai-testing'])
+    expect(ruleAreas('Weekly notes', 'One mention of cypress only.', ['qa'])).toEqual([])
+  })
+  it('only adds areas inside roles the item already has', () => {
+    expect(ruleAreas('Exploratory testing tips', '', ['pm'])).toEqual([])
+  })
+})
+
+describe('collapsePatchReleases', () => {
+  const rel = (id: string, title: string, day: number, sourceId = 'cca') =>
+    item({ id, title, sourceId, type: 'release', publishedAt: `2026-10-${String(day).padStart(2, '0')}T00:00:00.000Z`, summary: 'Notes' })
+
+  it('keeps the newest patch of a minor version and notes how many earlier ones there were', () => {
+    const out = collapsePatchReleases([rel('a', 'Claude Code Action v1.0.258', 20), rel('b', 'Claude Code Action v1.0.266', 30), rel('c', 'Claude Code Action v1.0.260', 25)])
+    expect(out.map((i) => i.id)).toEqual(['b'])
+    expect(out[0].summary).toBe('Notes (+2 earlier patches)')
+  })
+  it('keeps different minor versions, different sources and non-releases apart', () => {
+    const out = collapsePatchReleases([
+      rel('a', 'Tool v1.0.1', 20),
+      rel('b', 'Tool v1.1.0', 21),
+      rel('c', 'Tool v1.0.2', 22, 'other'),
+      item({ id: 'd', title: 'Article about v1.0.3', type: 'article' }),
+    ])
+    expect(out.map((i) => i.id).sort()).toEqual(['a', 'b', 'c', 'd'])
+  })
+})
+
+describe('retag', () => {
+  const src = (over: Partial<SourceConfig>) => source({ id: 'cca', roles: ['claude', 'se'], ...over })
+  it('applies the current source roles to an archived item, dropping a role the source no longer has', () => {
+    const old = item({ sourceId: 'cca', roles: ['claude', 'se', 'qa'], tagMethod: 'source', title: 'Claude Code Action v1.0.266', summary: '' })
+    expect(retag(old, src({})).roles).toEqual(['claude', 'se'])
+  })
+  it('keeps LLM-assigned roles and items whose source was removed', () => {
+    expect(retag(item({ roles: ['pm'], tagMethod: 'llm' }), src({})).roles).toEqual(['pm'])
+    expect(retag(item({ roles: ['pm'] }), undefined).roles).toEqual(['pm'])
+  })
+  it('recomputes areas', () => {
+    expect(retag(item({ roles: ['qa'], title: 'Exploratory testing heuristics', tagMethod: 'source' }), source({ roles: ['qa'] })).areas).toEqual(['manual'])
   })
 })

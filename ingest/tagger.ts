@@ -1,5 +1,5 @@
 import { ROLE_ORDER } from '../src/lib/roles'
-import type { Role } from '../src/types'
+import type { Area, Role } from '../src/types'
 
 /**
  * Keyword rules per role. A match in the title places the item on its own;
@@ -34,13 +34,49 @@ export const RULES: Record<Role, RegExp[]> = {
     /\b(prototyp\w*|vibe coding|ai products?|ai-native products?)\b/i,
   ],
   qa: [
-    /\b(qa|quality assurance|tester\w*|testing|test automation|test cases?)\b/i,
-    /\b(cypress|playwright|selenium|webdriver|puppeteer|stagehand)\b/i,
+    /\b(qa|quality assurance|quality engineering|tester\w*|testing|test automation|test cases?)\b/i,
+    /\b(cypress|playwright|selenium|webdriver(io)?|appium|puppeteer|testcafe|stagehand|vitest|jest|k6)\b/i,
     /\b(e2e|end-to-end|flaky|regression|unit tests?|test coverage)\b/i,
     /\b(evals?|evaluations?|llm-as-a?-judge|red[- ]?team\w*|promptfoo|deepeval)\b/i,
     /\b(self-healing|browser automation|accessibility|visual regression)\b/i,
+    /\b(exploratory|test charters?|session-based|test design|test strategy|test plans?|usability testing|acceptance testing|uat)\b/i,
     /\bbugs?\b/i,
   ],
+}
+
+/**
+ * Facets inside a role, for the sub-toggles (QA: Manual & exploratory ·
+ * Automation · Testing AI). Same rule as roles: a title match, or two
+ * different matched terms in the excerpt.
+ */
+export const AREA_RULES: Record<Area, { role: Role; pattern: RegExp }> = {
+  manual: {
+    role: 'qa',
+    pattern:
+      /\b(manual testing|exploratory( testing)?|test charters?|session-based|heuristics?|test design|test strategy|test plans?|bug reports?|usability testing|acceptance testing|uat|risk-based testing|test oracles?)\b/gi,
+  },
+  automation: {
+    role: 'qa',
+    pattern: /\b(cypress|playwright|selenium|webdriver(io)?|appium|puppeteer|testcafe|vitest|jest|k6|e2e|end-to-end|flaky|ci|test automation)\b/gi,
+  },
+  'ai-testing': {
+    role: 'qa',
+    pattern: /\b(evals?|llm-as-a?-judge|red[- ]?team\w*|promptfoo|deepeval|self-healing|agentic testing|test agents?|ai tests?|testing ai)\b/gi,
+  },
+  // Full-stack areas are added with the full-stack role.
+  frontend: { role: 'se', pattern: /(?!)/g },
+  backend: { role: 'se', pattern: /(?!)/g },
+}
+
+const distinctMatches = (pattern: RegExp, text: string) => new Set((text.match(pattern) ?? []).map((m) => m.toLowerCase())).size
+
+/** Areas for an item, only within roles it already has. */
+export function ruleAreas(title: string, excerpt: string, roles: Role[]): Area[] {
+  return (Object.keys(AREA_RULES) as Area[]).filter((area) => {
+    const { role, pattern } = AREA_RULES[area]
+    if (!roles.includes(role)) return false
+    return distinctMatches(pattern, title) > 0 || distinctMatches(pattern, excerpt) >= 2
+  })
 }
 
 export function ruleRoles(title: string, excerpt = ''): Role[] {

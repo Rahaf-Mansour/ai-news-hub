@@ -4,13 +4,13 @@ describe('Search and filters', () => {
   it('searches titles and summaries as you type', () => {
     cy.get('[data-cy=search]').type('self-healing')
     cy.feed().find('[data-cy=item]').should('have.length', 1).and('contain', 'cy.prompt adds self-healing selectors')
-    cy.get('[data-cy=result-count]').should('have.text', '1 of 10 items')
+    cy.get('[data-cy=result-count]').should('have.text', '1 of 11 items')
 
     cy.get('[data-cy=search]').clear().type('prompt')
     cy.feed().find('[data-cy=item]').should('have.length', 2)
 
     cy.get('[data-cy=search]').clear()
-    cy.feed().find('[data-cy=item]').should('have.length', 10)
+    cy.feed().find('[data-cy=item]').should('have.length', 11)
   })
 
   it('hides Today while searching so results come first', () => {
@@ -48,7 +48,7 @@ describe('Search and filters', () => {
     cy.get('[data-cy=search]').type('prompt')
     cy.get('[data-cy=search-clear]').click()
     cy.get('[data-cy=search]').should('have.value', '').and('be.focused')
-    cy.feed().find('[data-cy=item]').should('have.length', 10)
+    cy.feed().find('[data-cy=item]').should('have.length', 11)
   })
 
   it('changes the placeholder per tab', () => {
@@ -87,6 +87,28 @@ describe('Search and filters', () => {
     cy.get('[data-cy=claude-timeline] li').should('have.length', 1)
   })
 
+  it('filters the QA tab by area: manual & exploratory, automation, testing AI', () => {
+    cy.get('[data-cy=tab-qa]').click()
+    cy.get('[data-cy=facet-all]').should('have.attr', 'aria-pressed', 'true').and('contain', '4')
+    cy.get('[data-cy=facet-manual]').click()
+    cy.feed().find('[data-cy=item]').should('have.length', 1).and('contain', 'Exploratory test charters')
+    cy.get('[data-cy=facet-automation]').click()
+    cy.feed().find('[data-cy=item]').should('have.length', 2)
+    cy.get('[data-cy=facet-ai-testing]').click()
+    cy.feed().find('[data-cy=item]').should('have.length', 2)
+    cy.get('[data-cy=facet-all]').click()
+    cy.feed().find('[data-cy=item]').should('have.length', 4)
+    cy.get('[data-cy=tab-pm]').click()
+    cy.get('[data-cy=facets]').should('not.exist')
+  })
+
+  it('groups the QA learning track into labelled sections', () => {
+    cy.get('[data-cy=tab-learn]').click()
+    cy.get('[data-cy=track-qa]').should('contain', 'QA in the AI era')
+    cy.get('[data-cy=track-qa] [data-cy=step-section]').first().should('have.text', 'AI for manual & exploratory testers')
+    cy.get('[data-cy=track-qa] [data-cy=step-section]').should('contain', 'Playwright + AI').and('contain', 'Testing AI features')
+  })
+
   it('filters by trust tier and type, and combines them', () => {
     cy.get('[data-cy=tier-official]').click().should('have.attr', 'aria-pressed', 'true')
     cy.feed().find('[data-cy=item]').should('have.length', 4)
@@ -94,7 +116,7 @@ describe('Search and filters', () => {
     cy.feed().find('[data-cy=item]').should('have.length', 2)
     cy.get('[data-cy=tier-official]').click()
     cy.get('[data-cy=type-release]').click()
-    cy.feed().find('[data-cy=item]').should('have.length', 10)
+    cy.feed().find('[data-cy=item]').should('have.length', 11)
   })
 
   it('filters community items so only the HN post remains', () => {
