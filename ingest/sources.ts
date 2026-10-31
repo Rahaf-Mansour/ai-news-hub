@@ -240,6 +240,7 @@ export const SOURCES: SourceConfig[] = [
     tier: 'community',
     kind: 'hn',
     hn: { query: 'Claude Anthropic', minPoints: 50 },
+    titleFilter: String.raw`\b(claude|anthropic)\b`,
   },
   {
     id: 'hn-testing',
@@ -250,7 +251,8 @@ export const SOURCES: SourceConfig[] = [
     roles: ['qa'],
     tier: 'community',
     kind: 'hn',
-    hn: { query: 'Playwright Cypress testing AI', minPoints: 20 },
+    hn: { query: 'Playwright Cypress testing QA evals', minPoints: 20 },
+    titleFilter: String.raw`\b(test(s|ing)?|qa|cypress|playwright|selenium|e2e|end-to-end|evals?|flaky)\b`,
   },
   {
     id: 'hn-product',
@@ -261,7 +263,9 @@ export const SOURCES: SourceConfig[] = [
     roles: ['pm'],
     tier: 'community',
     kind: 'hn',
-    hn: { query: 'product management AI', minPoints: 30 },
+    hn: { query: 'product manager management PRD roadmap', minPoints: 30 },
+    // The filter is case-insensitive, so "PM" is left out (it would match "3 pm").
+    titleFilter: String.raw`\b(product manag\w*|PRDs?|roadmaps?|product sense|product teams?)\b`,
   },
 ]
 

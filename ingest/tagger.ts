@@ -27,10 +27,10 @@ export const RULES: Record<Role, RegExp[]> = {
   pm: [
     /\bproduct (manag\w*|managers?|sense|strategy|discovery|leaders?)\b/i,
     /\bPMs?\b/, // case-sensitive: "3 pm" is a time, "PMs" are people
-    /\b(prd|roadmap\w*|okrs?|go-to-market|gtm|pricing|monetiz\w*)\b/i,
-    /\b(user research|customer\w*|interviews?|adoption|retention|activation|growth)\b/i,
-    /\b(launch\w*|strategy|startup\w*|founders?|enterprise\w*|business)\b/i,
-    /\b(prototyp\w*|vibe coding|ai product)\b/i,
+    /\b(prds?|roadmap\w*|okrs?|go-to-market|gtm|monetiz\w*|product[- ]market fit|pmf)\b/i,
+    /\b(user research|customer (discovery|interviews?|feedback)|user interviews?|product analytics|retention|activation)\b/i,
+    /\b(product launch\w*|product strategy|product teams?|product leaders?|roadmapping)\b/i,
+    /\b(prototyp\w*|vibe coding|ai products?|ai-native products?)\b/i,
   ],
   qa: [
     /\b(qa|quality assurance|tester\w*|testing|test automation|test cases?)\b/i,

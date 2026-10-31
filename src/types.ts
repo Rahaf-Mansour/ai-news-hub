@@ -44,6 +44,8 @@ export interface SourceConfig {
   hn?: { query: string; minPoints: number }
   /** For 'github-releases': drop pre-release / nightly tags matching this pattern. */
   skipTitlePattern?: string
+  /** Keep only items whose title matches this pattern (case-insensitive). Used to keep HN searches on topic. */
+  titleFilter?: string
 }
 
 /** What an adapter returns before normalising, dedupe and tagging. */

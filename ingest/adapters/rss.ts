@@ -27,8 +27,7 @@ export async function parseFeed(xml: string): Promise<RawItem[]> {
  */
 export function labelRelease(item: RawItem, product: string, skipTitlePattern?: string): RawItem | null {
   if (skipTitlePattern && new RegExp(skipTitlePattern, 'i').test(item.title)) return null
-  const title = item.title.toLowerCase().includes(product.toLowerCase())
-    ? item.title
-    : `${product} ${item.title}`
-  return { ...item, title }
+  // Only bare versions ("v2.1.30", "1.60.0") get the prefix; named releases already read well.
+  const bareVersion = /^v?\d+(\.\d+)*([-+.][\w.]+)?$/i.test(item.title.trim())
+  return { ...item, title: bareVersion ? `${product} ${item.title.trim()}` : item.title }
 }
