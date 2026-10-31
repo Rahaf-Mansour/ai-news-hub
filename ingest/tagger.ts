@@ -1,3 +1,4 @@
+import { ROLE_ORDER } from '../src/lib/roles'
 import type { Role } from '../src/types'
 
 /**
@@ -41,8 +42,6 @@ export const RULES: Record<Role, RegExp[]> = {
     /\bbugs?\b/i,
   ],
 }
-
-export const ROLE_ORDER: Role[] = ['claude', 'qa', 'pm', 'se']
 
 export function ruleRoles(title: string, excerpt = ''): Role[] {
   const roles: Role[] = []
