@@ -1,0 +1,60 @@
+{
+  "month": "2025-09",
+  "count": 3,
+  "items": [
+    {
+      "id": "6c7620b883bd",
+      "title": "Effective context engineering for AI agents",
+      "url": "https://anthropic.com/research/effective-context-engineering-for-ai-agents",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-09-29T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4d609a0055f9",
+      "title": "A postmortem of three recent issues",
+      "url": "https://anthropic.com/research/a-postmortem-of-three-recent-issues",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-09-17T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "bbe672effc1d",
+      "title": "Writing effective tools for agents — with agents",
+      "url": "https://anthropic.com/research/writing-tools-for-agents",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-09-11T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    }
+  ]
+}

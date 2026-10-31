@@ -1,0 +1,42 @@
+{
+  "month": "2025-06",
+  "count": 2,
+  "items": [
+    {
+      "id": "95202066eb4b",
+      "title": "Desktop Extensions: One-click MCP server installation for Claude Desktop",
+      "url": "https://anthropic.com/research/desktop-extensions",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-06-26T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "480c6b5fec03",
+      "title": "Confidential Inference via Trusted Virtual Machines",
+      "url": "https://anthropic.com/research/confidential-inference-trusted-vms",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-06-18T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    }
+  ]
+}

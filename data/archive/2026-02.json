@@ -1,0 +1,60 @@
+{
+  "month": "2026-02",
+  "count": 3,
+  "items": [
+    {
+      "id": "0ba787c8704d",
+      "title": "Indirect Prompt Injection in Web-Browsing Agents",
+      "url": "https://promptfoo.dev/blog/indirect-prompt-injection-web-agents",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-02-06T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Test if AI browsing agents follow malicious instructions or leak data with the indirect-web-pwn strategy.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d4e3545714cc",
+      "title": "Quantifying infrastructure noise in agentic coding evals",
+      "url": "https://anthropic.com/research/infrastructure-noise",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-02-05T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e579ba7e7766",
+      "title": "Building a C compiler with a team of parallel Claudes",
+      "url": "https://anthropic.com/research/building-c-compiler",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-02-05T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    }
+  ]
+}

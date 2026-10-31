@@ -1,0 +1,130 @@
+{
+  "month": "2026-03",
+  "count": 7,
+  "items": [
+    {
+      "id": "9e2496479beb",
+      "title": "How we built Claude Code auto mode: a safer way to skip permissions",
+      "url": "https://anthropic.com/research/claude-code-auto-mode",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-03-25T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "76beb245aa13",
+      "title": "Harness design for long-running application development",
+      "url": "https://anthropic.com/research/harness-design-long-running-apps",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-03-24T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Engineering",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a33816e14c93",
+      "title": "OpenClaw at Work: Prompt Injection Risks",
+      "url": "https://promptfoo.dev/blog/openclaw-at-work",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "In a controlled lab, a malicious webpage got OpenClaw to enumerate tools, read local documents, write artifacts, and send unauthorized messages to loopback sinks.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7957e63e716a",
+      "title": "McKinsey's Lilli Looks More Like an API Security Failure Than a Model Jailbreak",
+      "url": "https://promptfoo.dev/blog/mckinsey-lilli-appsec-vs-ai-jailbreak",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-03-10T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Public reporting points to exposed API surface, unsafe SQL construction, and broken object-level authorization. The AI layer changed the blast radius.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "acc14dc9ca0f",
+      "title": "Promptfoo is joining OpenAI",
+      "url": "https://promptfoo.dev/blog/promptfoo-joining-openai",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-03-09T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Promptfoo has agreed to be acquired by OpenAI. The open-source project will continue as Ian Webster and Michael D'Angelo begin a new chapter.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4536545d3d74",
+      "title": "Eval awareness in Claude Opus 4.6’s BrowseComp performance",
+      "url": "https://anthropic.com/research/eval-awareness-browsecomp",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-03-06T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6e03700cd147",
+      "title": "Open-Sourcing ModelAudit: Security Scanner for ML Model Files",
+      "url": "https://promptfoo.dev/blog/open-sourcing-modelaudit",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-03-03T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Promptfoo ModelAudit scans 42+ ML model formats for unsafe loading behaviors, known CVEs, and suspicious artifacts. Now MIT-licensed and open source.",
+      "summaryBy": "feed"
+    }
+  ]
+}

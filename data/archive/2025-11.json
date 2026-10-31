@@ -1,0 +1,129 @@
+{
+  "month": "2025-11",
+  "count": 7,
+  "items": [
+    {
+      "id": "37c30bdb4772",
+      "title": "Real-Time Fact Checking for LLM Outputs",
+      "url": "https://promptfoo.dev/blog/llm-search-rubric-assertions",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-11-28T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Promptfoo now supports web search in assertions, so you can verify time-sensitive information like stock prices, weather, and case citations during testing.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2a20ac03b01e",
+      "title": "Effective harnesses for long-running agents",
+      "url": "https://anthropic.com/research/effective-harnesses-for-long-running-agents",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-11-26T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "79ac20338862",
+      "title": "Introducing advanced tool use on the Claude Developer Platform",
+      "url": "https://anthropic.com/research/advanced-tool-use",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-11-24T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "56222718ceaf",
+      "title": "How to replicate the Claude Code attack with Promptfoo",
+      "url": "https://promptfoo.dev/blog/claude-code-attack",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-11-17T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "qa"
+      ],
+      "tagMethod": "rules",
+      "summary": "A recent cyber espionage campaign revealed how state actors weaponized Anthropic's Claude Code - not through traditional hacking, but by convincing the AI itself to carry out…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8b5f58b0345e",
+      "title": "Will agents hack everything?",
+      "url": "https://promptfoo.dev/blog/will-agents-hack-everything",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-11-14T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "The first state-level AI cyberattack raises hard questions: Can we stop AI agents from helping attackers? Should we?",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "95595ecc41d1",
+      "title": "When AI becomes the attacker: The rise of AI-orchestrated cyberattacks",
+      "url": "https://promptfoo.dev/blog/anthropic-threat-intelligence-vibe-hacking",
+      "sourceId": "promptfoo-blog",
+      "sourceName": "promptfoo blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-11-10T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Google's November 2025 discovery of PROMPTFLUX and PROMPTSTEAL confirms Anthropic's August threat intelligence findings on AI-orchestrated attacks. Learn about vibe hacking…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "700f1f41af23",
+      "title": "Code execution with MCP: Building more efficient agents",
+      "url": "https://anthropic.com/research/code-execution-with-mcp",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-11-04T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    }
+  ]
+}

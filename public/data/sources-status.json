@@ -1,0 +1,258 @@
+{
+  "generatedAt": "2026-10-31T13:32:17.830Z",
+  "sources": [
+    {
+      "id": "anthropic-news",
+      "name": "Anthropic News",
+      "url": "https://www.anthropic.com/news",
+      "tier": "official",
+      "type": "news",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:17.831Z",
+      "lastSuccess": "2026-10-31T13:32:17.831Z",
+      "count": 22
+    },
+    {
+      "id": "anthropic-engineering",
+      "name": "Anthropic Engineering",
+      "url": "https://www.anthropic.com/engineering",
+      "tier": "official",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:17.880Z",
+      "lastSuccess": "2026-10-31T13:32:17.880Z",
+      "count": 20
+    },
+    {
+      "id": "claude-release-notes",
+      "name": "Claude Platform release notes",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "tier": "official",
+      "type": "release",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:17.881Z",
+      "lastSuccess": "2026-10-31T13:32:17.881Z",
+      "count": 20
+    },
+    {
+      "id": "claude-code-releases",
+      "name": "Claude Code releases",
+      "url": "https://github.com/anthropics/claude-code/releases",
+      "tier": "official",
+      "type": "release",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:17.883Z",
+      "lastSuccess": "2026-10-31T13:32:17.883Z",
+      "count": 10
+    },
+    {
+      "id": "claude-code-action-releases",
+      "name": "Claude Code Action releases",
+      "url": "https://github.com/anthropics/claude-code-action/releases",
+      "tier": "official",
+      "type": "release",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:17.884Z",
+      "lastSuccess": "2026-10-31T13:32:17.884Z",
+      "count": 10
+    },
+    {
+      "id": "cypress-blog",
+      "name": "Cypress blog",
+      "url": "https://www.cypress.io/blog",
+      "tier": "official",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:17.886Z",
+      "lastSuccess": "2026-10-31T13:32:17.886Z",
+      "count": 15
+    },
+    {
+      "id": "cypress-releases",
+      "name": "Cypress releases",
+      "url": "https://github.com/cypress-io/cypress/releases",
+      "tier": "official",
+      "type": "release",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:18.397Z",
+      "lastSuccess": "2026-10-31T13:32:18.397Z",
+      "count": 10
+    },
+    {
+      "id": "playwright-releases",
+      "name": "Playwright releases",
+      "url": "https://github.com/microsoft/playwright/releases",
+      "tier": "official",
+      "type": "release",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:18.440Z",
+      "lastSuccess": "2026-10-31T13:32:18.440Z",
+      "count": 10
+    },
+    {
+      "id": "playwright-mcp-releases",
+      "name": "Playwright MCP releases",
+      "url": "https://github.com/microsoft/playwright-mcp/releases",
+      "tier": "official",
+      "type": "release",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:18.489Z",
+      "lastSuccess": "2026-10-31T13:32:18.489Z",
+      "count": 10
+    },
+    {
+      "id": "promptfoo-blog",
+      "name": "promptfoo blog",
+      "url": "https://www.promptfoo.dev/blog/",
+      "tier": "official",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:18.573Z",
+      "lastSuccess": "2026-10-31T13:32:18.573Z",
+      "count": 15
+    },
+    {
+      "id": "promptfoo-releases",
+      "name": "promptfoo releases",
+      "url": "https://github.com/promptfoo/promptfoo/releases",
+      "tier": "official",
+      "type": "release",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:18.577Z",
+      "lastSuccess": "2026-10-31T13:32:18.577Z",
+      "count": 3
+    },
+    {
+      "id": "stagehand-releases",
+      "name": "Stagehand releases",
+      "url": "https://github.com/browserbase/stagehand/releases",
+      "tier": "official",
+      "type": "release",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:18.755Z",
+      "lastSuccess": "2026-10-31T13:32:18.755Z",
+      "count": 1
+    },
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "url": "https://simonwillison.net/",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:19.092Z",
+      "lastSuccess": "2026-10-31T13:32:19.092Z",
+      "count": 15
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "url": "https://www.latent.space/",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:19.103Z",
+      "lastSuccess": "2026-10-31T13:32:19.103Z",
+      "count": 15
+    },
+    {
+      "id": "ainews",
+      "name": "AINews (smol.ai)",
+      "url": "https://news.smol.ai/",
+      "tier": "editorial",
+      "type": "news",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:19.334Z",
+      "lastSuccess": "2026-10-31T13:32:19.334Z",
+      "count": 10
+    },
+    {
+      "id": "lennys-newsletter",
+      "name": "Lenny's Newsletter",
+      "url": "https://www.lennysnewsletter.com/",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:19.354Z",
+      "lastSuccess": "2026-10-31T13:32:19.354Z",
+      "count": 15
+    },
+    {
+      "id": "product-growth",
+      "name": "Product Growth (Aakash Gupta)",
+      "url": "https://www.news.aakashg.com/",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:19.387Z",
+      "lastSuccess": "2026-10-31T13:32:19.387Z",
+      "count": 15
+    },
+    {
+      "id": "bens-bites",
+      "name": "Ben's Bites",
+      "url": "https://www.bensbites.com/",
+      "tier": "editorial",
+      "type": "news",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:19.401Z",
+      "lastSuccess": "2026-10-31T13:32:19.401Z",
+      "count": 15
+    },
+    {
+      "id": "import-ai",
+      "name": "Import AI (Jack Clark)",
+      "url": "https://jack-clark.net/",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:19.634Z",
+      "lastSuccess": "2026-10-31T13:32:19.634Z",
+      "count": 10
+    },
+    {
+      "id": "tldr-ai",
+      "name": "TLDR AI",
+      "url": "https://tldr.tech/ai",
+      "tier": "editorial",
+      "type": "news",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:19.737Z",
+      "lastSuccess": "2026-10-31T13:32:19.737Z",
+      "count": 10
+    },
+    {
+      "id": "hn-claude",
+      "name": "Hacker News · Claude",
+      "url": "https://news.ycombinator.com/",
+      "tier": "community",
+      "type": "news",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:19.828Z",
+      "lastSuccess": "2026-10-31T13:32:19.828Z",
+      "count": 9
+    },
+    {
+      "id": "hn-testing",
+      "name": "Hacker News · Testing",
+      "url": "https://news.ycombinator.com/",
+      "tier": "community",
+      "type": "news",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:20.010Z",
+      "lastSuccess": "2026-10-31T13:32:20.010Z",
+      "count": 0
+    },
+    {
+      "id": "hn-product",
+      "name": "Hacker News · Product",
+      "url": "https://news.ycombinator.com/",
+      "tier": "community",
+      "type": "news",
+      "ok": true,
+      "lastFetched": "2026-10-31T13:32:20.096Z",
+      "lastSuccess": "2026-10-31T13:32:20.096Z",
+      "count": 1
+    }
+  ]
+}
