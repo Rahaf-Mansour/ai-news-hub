@@ -55,7 +55,7 @@ jobs:
         with:
           install: false
           start: npm run preview
-          wait-on: 'http://localhost:4173'
+          wait-on: 'http://127.0.0.1:4173'
 
       - name: Upload Cypress screenshots on failure
         if: failure()

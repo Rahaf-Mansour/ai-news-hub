@@ -10,14 +10,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview --port 4173 --strictPort",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
     "ingest": "tsx ingest/run.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "eslint .",
     "typecheck": "tsc -b",
     "cy:open": "cypress open",
-    "cy:run": "start-server-and-test preview http://localhost:4173 \"cypress run\"",
+    "cy:run": "start-server-and-test preview http://127.0.0.1:4173 \"cypress run\"",
     "ci": "npm run lint && npm test && npm run build && npm run cy:run"
   },
   "dependencies": {
