@@ -1,0 +1,20 @@
+{
+  "hits": [
+    {
+      "objectID": "41000001",
+      "title": "Show HN: A fixture tool that drives Playwright from Claude",
+      "url": "https://example.com/fixture-tool",
+      "created_at": "2026-10-30T09:15:00Z",
+      "points": 212
+    },
+    {
+      "objectID": "41000002",
+      "title": "Ask HN: How do you test LLM features?",
+      "url": null,
+      "created_at": "2026-10-30T07:00:00Z",
+      "points": 64,
+      "story_text": "Curious about evals"
+    },
+    { "objectID": "41000003", "url": "https://example.com/no-title" }
+  ]
+}

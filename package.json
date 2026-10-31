@@ -33,6 +33,7 @@
     "@vitejs/plugin-react": "^6.1.2",
     "cheerio": "^1.2.0",
     "cypress": "^16.2.1",
+    "domhandler": "^6.0.1",
     "eslint": "^9.39.5",
     "eslint-plugin-react-hooks": "^7.1.1",
     "globals": "^17.13.0",
