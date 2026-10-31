@@ -108,6 +108,9 @@ describe('Page layout: sticky app bar', () => {
         const feedBefore = $f[0].getBoundingClientRect().width
         cy.get('[data-cy=feed] [data-cy=item-summary]').first().then(($s) => {
           const summaryBefore = $s[0].getBoundingClientRect().width
+          // Open on a wide screen: a small "Hide panel" pill, without the title or description.
+          cy.get('[data-cy=rail-toggle] .rail-toggle__state').should('be.visible').and('have.text', 'Hide panel')
+          cy.get('[data-cy=rail-toggle] .rail-toggle__title').should('not.be.visible')
           cy.get('[data-cy=rail-toggle]').should('have.attr', 'aria-expanded', 'true').click()
           cy.get('[data-cy=model-watch]').should('not.be.visible')
           // No gap opens above the content: the toolbar stays exactly where it was.
@@ -127,8 +130,12 @@ describe('Page layout: sticky app bar', () => {
       })
       cy.feed().then(($g) => cy.get('[data-cy=rail-toggle]').should(($b) => expect($b[0].getBoundingClientRect().left).to.be.at.least($g[0].getBoundingClientRect().right)))
     })
+    // Closed: the edge tab names the panel and nothing else.
+    cy.get('[data-cy=rail-toggle] .rail-toggle__title').should('be.visible').and('have.text', 'Model watch & sources')
+    cy.get('[data-cy=rail-toggle] .rail-toggle__state').should('not.be.visible')
+    cy.get('[data-cy=rail-toggle-desc]').should('not.be.visible')
     cy.reload()
-    cy.get('[data-cy=rail-toggle]').should('have.attr', 'aria-expanded', 'false').and('contain', 'Model watch').click()
+    cy.get('[data-cy=rail-toggle]').should('have.attr', 'aria-expanded', 'false').click()
     cy.get('[data-cy=model-watch]').should('be.visible')
   })
 
@@ -145,17 +152,46 @@ describe('Page layout: sticky app bar', () => {
       expect(left).to.be.closeTo(right, 1)
     })
     cy.feed().then(($f) => cy.get('[data-cy=rail-toggle]').should(($b) => expect($b[0].getBoundingClientRect().left).to.be.at.least($f[0].getBoundingClientRect().right)))
+    // Nor does it cover anything in the bands above the content (hero stats, theme toggle, tabs, Today).
+    const clear = (target: string) =>
+      cy.get(target).then(($els) =>
+        cy.get('[data-cy=rail-toggle]').should(($b) => {
+          const tab = $b[0].getBoundingClientRect()
+          for (const el of $els) {
+            const r = el.getBoundingClientRect()
+            const overlaps = r.right > tab.left && r.left < tab.right && r.bottom > tab.top && r.top < tab.bottom
+            expect(overlaps, `${target} under the edge tab`).to.eq(false)
+          }
+        }),
+      )
+    for (const target of ['[data-cy=stats]', '[data-cy=theme-toggle]', '[data-cy=tabs]']) clear(target)
+    cy.get('[data-cy=today]').scrollIntoView()
+    clear('[data-cy=today] [data-cy=item]')
+  })
+
+  it('lets Learn fill the single column just below the side-panel breakpoint, so it stays centered', () => {
+    cy.viewport(1015, 800)
+    cy.visitHub({ hash: 'learn', storage: { 'hub:rail': 'closed' } })
+    cy.get('[data-cy=panel-learn]').then(($p) => {
+      cy.get('[data-cy=track-claude]').should(($t) => {
+        const p = $p[0].getBoundingClientRect()
+        const t = $t[0].getBoundingClientRect()
+        expect(t.left).to.be.closeTo(p.left, 1)
+        expect(t.right).to.be.closeTo(p.right, 1)
+      })
+    })
   })
 
   it('scrolls a clicked section to just below the sticky bar', () => {
     cy.visitHub()
+    // Start far down, so the test fails if the click does not scroll at all.
+    cy.scrollTo(0, 2500)
     cy.get('[data-cy=tab-qa]').click()
-    cy.get('[data-cy=app-bar]').then(($bar) => {
-      const barBottom = $bar[0].getBoundingClientRect().bottom
-      cy.get('[data-cy=panel-qa]').should(($panel) => {
-        const top = $panel[0].getBoundingClientRect().top
-        expect(top).to.be.within(barBottom - 2, barBottom + 48)
-      })
+    cy.get('[data-cy=panel-qa]').should(($panel) => {
+      const bar = $panel[0].ownerDocument.querySelector('[data-cy=app-bar]')!.getBoundingClientRect()
+      expect(bar.top).to.be.closeTo(0, 1)
+      const top = $panel[0].getBoundingClientRect().top
+      expect(top).to.be.within(bar.bottom - 2, bar.bottom + 48)
     })
   })
 })

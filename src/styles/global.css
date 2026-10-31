@@ -847,65 +847,9 @@ body::before {
   gap: 1.75rem;
 }
 /*
-  Panel closed (wide screens only): the content takes the whole width and the
-  reopen button becomes a tab fixed to the right edge, so nothing in the page
-  moves. Below 1021px the panel stacks under the content and stays open.
+  The panel toggle is one button with an icon, a title, a description and a
+  state word; each layout shows the parts it needs.
 */
-@media (min-width: 1021px) {
-  .page--wide {
-    grid-template-columns: minmax(0, 1fr);
-    row-gap: 0;
-    /*
-      Keep the content clear of the edge tab when the window leaves no outer
-      margin, by the same amount on both sides so the column stays centered.
-    */
-    --tab-clearance: calc(44px - max(0px, (100vw - 1240px) / 2));
-    padding-left: max(var(--gutter), var(--tab-clearance));
-    padding-right: max(var(--gutter-r), var(--tab-clearance));
-  }
-  .rail--closed .rail__panels {
-    display: none;
-  }
-  .rail--closed .rail-toggle {
-    position: fixed;
-    top: calc(env(safe-area-inset-top, 0px) + var(--appbar-h, 64px) + 1.5rem);
-    right: env(safe-area-inset-right, 0px);
-    z-index: 6;
-    writing-mode: vertical-rl;
-    gap: 0.5rem;
-    padding: 0.85rem 0.45rem;
-    border-right: 0;
-    border-radius: 10px 0 0 10px;
-    box-shadow: var(--shadow);
-  }
-  /* With the panel closed, text uses the extra width instead of a fixed reading measure. */
-  .page--wide .item__summary,
-  .page--wide .item__why,
-  .page--wide .tracks {
-    max-width: none;
-  }
-}
-/*
-  Narrow screens: one column, so the panel sits under the content. The toggle
-  stays an ordinary button above it (a fixed tab would cover text on a phone);
-  closing the panel leaves just that button.
-*/
-@media (max-width: 1020px) {
-  .rail--closed .rail__panels {
-    display: none;
-  }
-  /* A comfortable touch target on phones. */
-  .rail .rail-toggle {
-    min-height: 44px;
-    padding-inline: 1rem;
-  }
-  /* A single column has no side panel to make room for: let text and tracks use it. */
-  .item__summary,
-  .item__why,
-  .tracks {
-    max-width: none;
-  }
-}
 .rail-toggle {
   align-self: flex-end;
   display: inline-flex;
@@ -924,6 +868,125 @@ body::before {
 .rail-toggle:hover {
   color: var(--ink);
   border-color: var(--ink-3);
+}
+.rail-toggle__chev {
+  flex: none;
+}
+.rail-toggle__desc {
+  display: none;
+}
+/*
+  Wide screens. Open: a small "Hide panel ›" pill above the panel. Closed: the
+  content takes the whole width and the button becomes a tab fixed to the right
+  edge ("‹ Model watch & sources"), so nothing in the page moves.
+*/
+@media (min-width: 1021px) {
+  .rail-toggle[aria-expanded='true'] .rail-toggle__text {
+    display: none;
+  }
+  .rail-toggle[aria-expanded='true'] .rail-toggle__chev {
+    order: 1;
+    rotate: 180deg;
+  }
+  .rail-toggle[aria-expanded='false'] .rail-toggle__state {
+    display: none;
+  }
+  .page--wide {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0;
+  }
+  /*
+    Keep every band (masthead, app bar, Today, content, footer) clear of the
+    edge tab when the window leaves no outer margin, by the same amount on both
+    sides so everything stays centered. App.tsx sets .rail-closed on <html>.
+  */
+  .rail-closed .wrap {
+    --tab-clearance: calc(44px - max(0px, (100vw - 1240px) / 2));
+    padding-left: max(var(--gutter), var(--tab-clearance));
+    padding-right: max(var(--gutter-r), var(--tab-clearance));
+  }
+  .rail--closed .rail__panels {
+    display: none;
+  }
+  .rail--closed .rail-toggle {
+    position: fixed;
+    top: calc(env(safe-area-inset-top, 0px) + var(--appbar-h, 64px) + 1.5rem);
+    right: env(safe-area-inset-right, 0px);
+    z-index: 6;
+    writing-mode: vertical-rl;
+    gap: 0.55rem;
+    padding: 0.85rem 0.45rem;
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+    box-shadow: var(--shadow);
+    color: var(--ink);
+    font-weight: 600;
+  }
+  /* With the panel closed, text uses the extra width instead of a fixed reading measure. */
+  .page--wide .item__summary,
+  .page--wide .item__why,
+  .page--wide .tracks {
+    max-width: none;
+  }
+}
+/*
+  Phones and tablets: one column, so the panel sits under the content. The
+  toggle is a full-width bar that says what the panel holds (a fixed tab would
+  cover text on a phone); closing the panel leaves just that bar.
+*/
+@media (max-width: 1020px) {
+  .rail--closed .rail__panels {
+    display: none;
+  }
+  .rail .rail-toggle {
+    align-self: stretch;
+    justify-content: space-between;
+    gap: 0.75rem;
+    min-height: 44px;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-card);
+    text-align: left;
+    white-space: normal;
+  }
+  .rail-toggle__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    flex: 1;
+    min-width: 0;
+  }
+  .rail-toggle__title {
+    font-family: var(--font-display);
+    font-size: var(--step-0);
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .rail-toggle .rail-toggle__desc {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--ink-2);
+  }
+  .rail-toggle__state {
+    flex: none;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  /* The chevron follows the state word and points down (show) or up (hide). */
+  .rail-toggle__chev {
+    order: 1;
+    rotate: -90deg;
+    color: var(--accent);
+  }
+  .rail-toggle[aria-expanded='true'] .rail-toggle__chev {
+    rotate: 90deg;
+  }
+  /* A single column has no side panel to make room for: let text and tracks use it. */
+  .item__summary,
+  .item__why,
+  .page .tracks {
+    max-width: none;
+  }
 }
 .panel h2 {
   margin: 0 0 0.6rem;
@@ -1770,7 +1833,7 @@ details.panel[open] summary::after {
   .appbar__inner {
     flex-direction: column;
     align-items: stretch;
-    gap: 0.15rem;
+    gap: 0.5rem;
     padding-block: 0.4rem 0;
   }
   .appbar .search {
@@ -1810,6 +1873,22 @@ details.panel[open] summary::after {
   }
 }
 @media (max-width: 640px) {
+  /* Phones: a smaller, tighter run strip, so the date and run facts take two or three short lines. */
+  .masthead__run {
+    font-size: 0.7rem;
+  }
+  /* The date and the run facts flow as one wrapping row instead of two blocks. */
+  .run__inner {
+    justify-content: flex-start;
+    gap: 0.15rem 0.75rem;
+    padding-block: 0.45rem;
+  }
+  .run__summary {
+    display: contents;
+  }
+  .run__opt {
+    display: none;
+  }
   .stats {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0.35rem;

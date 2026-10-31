@@ -39,8 +39,9 @@ export function RunLog({ status, now }: { status: SourcesStatusFile | null; now:
       <ul className="runlog">
         {status.sources.map((s) => (
           <li key={s.id} data-cy="source-row" data-source={s.id} title={s.error ? `Error: ${s.error}` : `${TIER_LABEL[s.tier]} · ${s.count} items`}>
-            <span className={s.ok ? 'ok' : 'bad'} aria-label={s.ok ? 'Fetched' : 'Failed'} data-cy="source-status">
-              {s.ok ? '✓' : '✗'}
+            <span className={s.ok ? 'ok' : 'bad'} data-cy="source-status">
+              <span aria-hidden="true">{s.ok ? '✓' : '✗'}</span>
+              <span className="sr-only">{s.ok ? 'Fetched' : 'Failed'}</span>
             </span>
             <a href={s.url} target="_blank" rel="noopener noreferrer">
               {s.name}

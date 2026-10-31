@@ -19,7 +19,9 @@ const ruleText = (excerpt: string, source: SourceConfig) => (source.type === 're
  */
 export function toItem(raw: RawItem, source: SourceConfig, now: Date): { item: Item; needsLlm: boolean } {
   const url = canonicalUrl(raw.url, source.kind === 'claude-release-notes')
-  const matched = ruleRoles(raw.title, ruleText(raw.excerpt ?? '', source))
+  const summary = truncate(stripTitlePrefix(stripLeadingEmoji(raw.excerpt ?? ''), raw.title), SUMMARY_MAX)
+  // The rules read the stored summary, the same text retag() reads, so roles stay stable from day to day.
+  const matched = ruleRoles(raw.title, ruleText(summary, source))
   let roles: Role[] = sortRoles([...source.roles, ...matched])
   let tagMethod: Item['tagMethod'] = matched.some((r) => !source.roles.includes(r)) ? 'rules' : 'source'
   let needsLlm = false
@@ -46,7 +48,7 @@ export function toItem(raw: RawItem, source: SourceConfig, now: Date): { item: I
       firstSeenAt: now.toISOString(),
       roles,
       tagMethod,
-      summary: truncate(stripTitlePrefix(stripLeadingEmoji(raw.excerpt ?? ''), raw.title), SUMMARY_MAX),
+      summary,
       summaryBy: 'feed',
       discussionUrl: raw.discussionUrl,
       score: 0,

@@ -1,4 +1,4 @@
-const USER_AGENT = 'ai-news-hub/0.1 (personal daily digest; +https://github.com/)'
+const USER_AGENT = 'ai-news-hub/1.0 (daily AI news digest; +https://github.com/Rahaf-Mansour/ai-news-hub)'
 
 export interface FetchOptions {
   timeoutMs?: number

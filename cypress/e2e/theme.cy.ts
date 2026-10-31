@@ -1,12 +1,17 @@
 const LIGHT_BG = 'rgb(246, 247, 251)'
 const DARK_BG = 'rgb(11, 16, 32)'
 
-/** Emulate the OS colour-scheme preference through the Chrome DevTools Protocol (Chromium browsers only). */
+/**
+ * Emulate the OS colour-scheme preference through the Chrome DevTools Protocol (Chromium browsers only).
+ * Queued with cy.then so Cypress waits for it before the next command (a visit) runs.
+ */
 const emulateScheme = (value: 'light' | 'dark' | '') =>
-  Cypress.automation('remote:debugger:protocol', {
-    command: 'Emulation.setEmulatedMedia',
-    params: { features: [{ name: 'prefers-color-scheme', value }] },
-  })
+  cy.then(() =>
+    Cypress.automation('remote:debugger:protocol', {
+      command: 'Emulation.setEmulatedMedia',
+      params: { features: [{ name: 'prefers-color-scheme', value }] },
+    }),
+  )
 
 describe('Light and dark theme', () => {
   afterEach(() => {

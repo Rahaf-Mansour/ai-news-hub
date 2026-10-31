@@ -7,7 +7,7 @@ describe('Read and bookmark state', () => {
 
   it('marks an item read, updates the unread counts, and keeps it after a reload', () => {
     cy.visitHub()
-    cy.feed().find('[data-id=fx-lenny] [data-cy=toggle-read]').click().should('have.attr', 'aria-pressed', 'true')
+    cy.feed().find('[data-id=fx-lenny] [data-cy=toggle-read]').click().should('have.text', 'Mark unread')
     cy.feed().find('[data-id=fx-lenny]').should('have.attr', 'data-read', 'true')
     cy.get('[data-cy=unread-total]').should('contain', '12')
     cy.get('[data-cy=tab-count-pm]').should('have.text', '1')
@@ -126,7 +126,7 @@ describe('Read and bookmark state', () => {
     cy.window().then((win) => cy.stub(win.navigator.clipboard, 'writeText').as('copy').resolves())
     cy.get('[data-cy=copy-links]').click()
     cy.get('@copy').should('have.been.calledOnce').its('firstCall.args.0').should('contain', '- [Introducing Claude Haiku 5.5](https://example.com/fixture/haiku)')
-    cy.get('[data-cy=toast]').should('contain', 'Copied 1 links')
+    cy.get('[data-cy=toast]').should('contain', 'Copied 1 link').and('not.contain', 'links')
 
     cy.get('[data-cy=clear-saved]').click()
     cy.get('[data-cy=clear-no]').click()
