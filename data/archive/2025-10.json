@@ -1,6 +1,6 @@
 {
   "month": "2025-10",
-  "count": 3,
+  "count": 4,
   "items": [
     {
       "id": "11d57a9b30e1",
@@ -53,6 +53,23 @@
       ],
       "tagMethod": "source",
       "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6f5f7f467356",
+      "title": "React Conf 2025 Recap",
+      "url": "https://react.dev/blog/2025/10/16/react-conf-2025-recap",
+      "sourceId": "react-blog",
+      "sourceName": "React blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-10-16T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Last week we hosted React Conf 2025, in this post, we summarize the talks and announcements from the event...",
       "summaryBy": "feed"
     }
   ]

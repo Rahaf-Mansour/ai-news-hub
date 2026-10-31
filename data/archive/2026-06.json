@@ -14,6 +14,7 @@
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "source",
@@ -84,6 +85,7 @@
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "source",

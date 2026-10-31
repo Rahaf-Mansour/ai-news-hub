@@ -1,6 +1,6 @@
 {
   "month": "2026-08",
-  "count": 10,
+  "count": 11,
   "items": [
     {
       "id": "0df55c1135d3",
@@ -157,6 +157,23 @@
       "summaryBy": "feed"
     },
     {
+      "id": "918b9fb5bc7d",
+      "title": "New EU Guidelines For AI Labelling",
+      "url": "https://smashingmagazine.com/2026/08/eu-guidelines-ai-labelling",
+      "sourceId": "smashing",
+      "sourceName": "Smashing Magazine",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-08-13T10:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "New EU guidelines, why AI sparkles aren’t enough, when AI labels are required, and what the rules mean for AI-powered features and products.",
+      "summaryBy": "feed"
+    },
+    {
       "id": "a9b18bda51fa",
       "title": "Playwright MCP v0.0.79",
       "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.79",
@@ -168,6 +185,7 @@
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "source",
