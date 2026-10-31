@@ -23,6 +23,24 @@ describe('Page layout: sticky app bar', () => {
     cy.get('[data-cy=back-to-top]').should('not.be.visible')
   })
 
+  it('shows when the next automatic refresh is, with a countdown', () => {
+    cy.visitHub() // clock: Oct 31 08:00 UTC → next run Nov 1 05:30 UTC
+    cy.get('[data-cy=next-refresh]')
+      .should('contain', 'Next refresh:')
+      .and('contain', 'your time')
+      .and('contain', '(in 21h 30m)')
+      .and('have.attr', 'title')
+      .and('contain', 'can be delayed')
+    cy.get('[data-cy=next-refresh] time').should('have.attr', 'datetime', '2026-11-01T05:30:00.000Z')
+  })
+
+  it('warns when the last refresh is more than 30 hours old', () => {
+    cy.fixture('items.json').then((items) => {
+      cy.visitHub({ itemsBody: { ...items, generatedAt: '2026-10-29T05:00:00.000Z' } })
+    })
+    cy.get('[data-cy=next-refresh]').should('contain', 'Last refresh is late').find('a').should('contain', 'check the Actions tab')
+  })
+
   it('scrolls a clicked section to just below the sticky bar', () => {
     cy.visitHub()
     cy.get('[data-cy=tab-qa]').click()

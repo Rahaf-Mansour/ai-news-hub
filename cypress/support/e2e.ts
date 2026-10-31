@@ -8,6 +8,8 @@ interface HubVisitOptions {
   lastVisit?: string
   storage?: Record<string, string>
   itemsFixture?: string | null
+  /** Serve this body for items.json instead of a fixture file. */
+  itemsBody?: unknown
 }
 
 declare global {
@@ -23,7 +25,9 @@ declare global {
 }
 
 Cypress.Commands.add('visitHub', (options: HubVisitOptions = {}) => {
-  if (options.itemsFixture === null) {
+  if (options.itemsBody) {
+    cy.intercept('GET', '**/data/items.json', { body: options.itemsBody }).as('items')
+  } else if (options.itemsFixture === null) {
     cy.intercept('GET', '**/data/items.json', { statusCode: 404, body: 'Not found' }).as('items')
   } else {
     cy.intercept('GET', '**/data/items.json', { fixture: options.itemsFixture ?? 'items.json' }).as('items')
