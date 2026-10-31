@@ -79,7 +79,7 @@ export function Saved({ items, repos, steps, query, onUnsaveRepo, onUnsaveStep, 
           {fallbackText && (
             <label className="copy-fallback">
               Your browser blocked copying. Select the text below and copy it:
-              <textarea id="saved-markdown" readOnly value={fallbackText} rows={6} onFocus={(e) => e.target.select()} autoFocus />
+              <textarea id="saved-markdown" data-cy="copy-fallback" readOnly value={fallbackText} rows={6} onFocus={(e) => e.target.select()} autoFocus />
             </label>
           )}
           {query && shown === 0 && (
@@ -102,14 +102,14 @@ export function Saved({ items, repos, steps, query, onUnsaveRepo, onUnsaveStep, 
               <h3>Repos <span className="mono">{shownRepos.length}</span></h3>
               <ul className="saved-list">
                 {shownRepos.map((e) => (
-                  <li key={e.id}>
+                  <li key={e.id} data-cy="saved-repo" data-repo={e.id}>
                     <div>
                       <a className="repo-name" href={e.data.url} target="_blank" rel="noopener noreferrer">
                         {e.data.fullName}
                       </a>
                       <p className="repo-why">{e.data.why}</p>
                     </div>
-                    <button type="button" className="icon-btn" aria-pressed="true" onClick={() => onUnsaveRepo(e.id)} aria-label={`Remove ${e.data.fullName} from Saved`}>
+                    <button type="button" className="icon-btn" aria-pressed="true" onClick={() => onUnsaveRepo(e.id)} data-cy="saved-repo-remove" aria-label={`Remove ${e.data.fullName} from Saved`}>
                       ★ Saved
                     </button>
                   </li>
@@ -123,7 +123,7 @@ export function Saved({ items, repos, steps, query, onUnsaveRepo, onUnsaveStep, 
               <h3>Learning steps <span className="mono">{shownSteps.length}</span></h3>
               <ul className="saved-list">
                 {shownSteps.map((e) => (
-                  <li key={e.id}>
+                  <li key={e.id} data-cy="saved-step" data-step={e.id}>
                     <div>
                       <a className="repo-name" href={e.data.url} target="_blank" rel="noopener noreferrer">
                         {e.data.title}
@@ -132,7 +132,7 @@ export function Saved({ items, repos, steps, query, onUnsaveRepo, onUnsaveStep, 
                         <span className="mono">{e.data.track} · {e.data.source}</span>
                       </p>
                     </div>
-                    <button type="button" className="icon-btn" aria-pressed="true" onClick={() => onUnsaveStep(e.id)} aria-label={`Remove ${e.data.title} from Saved`}>
+                    <button type="button" className="icon-btn" aria-pressed="true" onClick={() => onUnsaveStep(e.id)} data-cy="saved-step-remove" aria-label={`Remove ${e.data.title} from Saved`}>
                       ★ Saved
                     </button>
                   </li>

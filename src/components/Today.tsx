@@ -9,7 +9,7 @@ export function Today({ view, ...actions }: { view: TodayView } & ItemActions) {
     <section className="today" aria-labelledby="today-heading" data-cy="today">
       <div className="wrap">
         <div className="section-head">
-          <h2 id="today-heading">Today</h2>
+          <h2 id="today-heading" data-cy="today-heading">Today</h2>
           <p className="mono" data-cy="today-window">
             {view.count} that matter from the last {view.windowLabel}
           </p>
@@ -19,10 +19,10 @@ export function Today({ view, ...actions }: { view: TodayView } & ItemActions) {
         ) : (
           <div className="today__grid">
             <ItemCard item={view.lead} variant="lead" {...actions} />
-            <div className="today__groups">
+            <div className="today__groups" data-cy="today-groups">
               {view.groups.map((group) => (
                 <div key={group.role} className={`role-group role-${group.role}`} data-cy={`today-group-${group.role}`}>
-                  <h3>{ROLE_NAME[group.role]}</h3>
+                  <h3 data-cy="today-group-heading">{ROLE_NAME[group.role]}</h3>
                   {group.items.map((item) => (
                     <ItemCard key={item.id} item={item} index={index++} {...actions} />
                   ))}

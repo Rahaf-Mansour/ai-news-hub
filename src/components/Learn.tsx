@@ -3,6 +3,9 @@ import { TRACKS, type LearnStep } from '../content/learn'
 import { matchesStep } from '../lib/filter'
 import { getItem, KEYS, setItem, useStoredSet } from '../lib/storage'
 
+/** 45 → "45 min", 150 → "2.5 hr" (the way Claude Academy writes course lengths). */
+const formatLength = (minutes: number) => (minutes < 60 ? `${minutes} min` : `${Math.round((minutes / 60) * 2) / 2} hr`)
+
 const NUMBER_WORDS = ['No', 'One', 'Two', 'Three', 'Four', 'Five']
 
 const initialTrack = () => {
@@ -70,18 +73,18 @@ export function Learn({ query, savedIds, onToggleSave }: Props) {
           const completed = completedIn(track.steps)
           const hours = Math.round(track.steps.reduce((sum, s) => sum + s.minutes, 0) / 30) / 2
           return (
-            <article key={track.id} className={`track role-${track.role}`} data-cy={`track-${track.id}`}>
+            <article key={track.id} className={`track role-${track.role}`} data-cy={`track-${track.id}`} data-track={track.id}>
               <div className="track__head">
                 <div>
-                  <h2>{track.name}</h2>
-                  <p className="track__for">{track.for}</p>
-                  <p className="mono" style={{ color: 'var(--ink-3)', margin: 0 }}>
+                  <h2 data-cy="track-name">{track.name}</h2>
+                  <p className="track__for" data-cy="track-for">{track.for}</p>
+                  <p className="mono" style={{ color: 'var(--ink-3)', margin: 0 }} data-cy="track-length">
                     {track.steps.length} steps · about {hours} hours
                   </p>
                 </div>
                 <ProgressRing done={completed} total={track.steps.length} />
               </div>
-              <div className="progress" aria-hidden="true">
+              <div className="progress" aria-hidden="true" data-cy="track-progress-bar">
                 <span style={{ width: `${(completed / track.steps.length) * 100}%` }} />
               </div>
               <p className="mono" style={{ margin: 0 }} data-cy="track-progress">
@@ -92,7 +95,7 @@ export function Learn({ query, savedIds, onToggleSave }: Props) {
                   {steps.length} of {track.steps.length} steps match
                 </p>
               )}
-              <ol className="steps">
+              <ol className="steps" data-cy="track-steps">
                 {steps.map(({ step, index }, i) => {
                   const isDone = done.set.has(step.id)
                   const newSection = step.section && step.section !== steps[i - 1]?.step.section
@@ -103,23 +106,28 @@ export function Learn({ query, savedIds, onToggleSave }: Props) {
                         {step.section}
                       </li>
                     )}
-                    <li className={`step${isDone ? ' step--done' : ''}`} data-cy="learn-step">
+                    <li className={`step${isDone ? ' step--done' : ''}`} data-cy="learn-step" data-step={step.id}>
                       <input
                         id={`step-${step.id}`}
                         type="checkbox"
                         checked={isDone}
                         onChange={() => done.toggle(step.id)}
                         aria-label={`Mark "${step.title}" as done`}
+                        data-cy="step-done"
                       />
                       <div>
-                        <a className="step__title" href={step.url} target="_blank" rel="noopener noreferrer">
+                        <a className="step__title" href={step.url} target="_blank" rel="noopener noreferrer" data-cy="step-link">
                           <span className="step__num">{String(index + 1).padStart(2, '0')}</span> {step.title}
                         </a>
-                        <div className="mono" style={{ color: 'var(--ink-3)' }}>
-                          {step.source} · {step.minutes} min
+                        <div className="mono" style={{ color: 'var(--ink-3)' }} data-cy="step-meta">
+                          {step.source} · {formatLength(step.minutes)}
                         </div>
-                        <p>{step.why}</p>
-                        {step.note && <p className="mono" style={{ color: 'var(--warn)' }}>{step.note}</p>}
+                        <p data-cy="step-why">{step.why}</p>
+                        {step.note && (
+                          <p className="mono" style={{ color: 'var(--warn)' }} data-cy="step-note">
+                            {step.note}
+                          </p>
+                        )}
                       </div>
                       <button
                         type="button"
@@ -136,7 +144,7 @@ export function Learn({ query, savedIds, onToggleSave }: Props) {
                   )
                 })}
               </ol>
-              <p className="mono" style={{ color: 'var(--ink-2)', marginTop: '0.75rem' }}>
+              <p className="mono" style={{ color: 'var(--ink-2)', marginTop: '0.75rem' }} data-cy="track-outcome">
                 Outcome: {track.outcome}
               </p>
             </article>
@@ -152,7 +160,7 @@ function ProgressRing({ done, total }: { done: number; total: number }) {
   const r = 22
   const circumference = 2 * Math.PI * r
   return (
-    <div className="ring" aria-hidden="true">
+    <div className="ring" aria-hidden="true" data-cy="track-ring">
       <svg viewBox="0 0 52 52" width="56" height="56">
         <circle className="ring__track" cx="26" cy="26" r={r} />
         <circle
