@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T16:59:50.519Z",
+  "generatedAt": "2026-10-31T19:39:14.403Z",
   "sources": [
     {
       "id": "anthropic-news",
@@ -8,8 +8,8 @@
       "tier": "official",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:50.520Z",
-      "lastSuccess": "2026-10-31T16:59:50.520Z",
+      "lastFetched": "2026-10-31T19:39:14.405Z",
+      "lastSuccess": "2026-10-31T19:39:14.405Z",
       "count": 22
     },
     {
@@ -19,8 +19,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:50.550Z",
-      "lastSuccess": "2026-10-31T16:59:50.550Z",
+      "lastFetched": "2026-10-31T19:39:14.494Z",
+      "lastSuccess": "2026-10-31T19:39:14.494Z",
       "count": 20
     },
     {
@@ -30,8 +30,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:50.551Z",
-      "lastSuccess": "2026-10-31T16:59:50.551Z",
+      "lastFetched": "2026-10-31T19:39:14.496Z",
+      "lastSuccess": "2026-10-31T19:39:14.496Z",
       "count": 20
     },
     {
@@ -41,8 +41,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:50.552Z",
-      "lastSuccess": "2026-10-31T16:59:50.552Z",
+      "lastFetched": "2026-10-31T19:39:14.497Z",
+      "lastSuccess": "2026-10-31T19:39:14.497Z",
       "count": 10
     },
     {
@@ -52,8 +52,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:50.553Z",
-      "lastSuccess": "2026-10-31T16:59:50.553Z",
+      "lastFetched": "2026-10-31T19:39:14.500Z",
+      "lastSuccess": "2026-10-31T19:39:14.500Z",
       "count": 3
     },
     {
@@ -63,8 +63,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:50.554Z",
-      "lastSuccess": "2026-10-31T16:59:50.554Z",
+      "lastFetched": "2026-10-31T19:39:14.502Z",
+      "lastSuccess": "2026-10-31T19:39:14.502Z",
       "count": 15
     },
     {
@@ -74,8 +74,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:50.916Z",
-      "lastSuccess": "2026-10-31T16:59:50.916Z",
+      "lastFetched": "2026-10-31T19:39:15.140Z",
+      "lastSuccess": "2026-10-31T19:39:15.140Z",
       "count": 3
     },
     {
@@ -85,8 +85,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:50.978Z",
-      "lastSuccess": "2026-10-31T16:59:50.978Z",
+      "lastFetched": "2026-10-31T19:39:15.346Z",
+      "lastSuccess": "2026-10-31T19:39:15.346Z",
       "count": 10
     },
     {
@@ -96,8 +96,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:51.023Z",
-      "lastSuccess": "2026-10-31T16:59:51.023Z",
+      "lastFetched": "2026-10-31T19:39:15.404Z",
+      "lastSuccess": "2026-10-31T19:39:15.404Z",
       "count": 10
     },
     {
@@ -107,8 +107,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:51.121Z",
-      "lastSuccess": "2026-10-31T16:59:51.121Z",
+      "lastFetched": "2026-10-31T19:39:15.444Z",
+      "lastSuccess": "2026-10-31T19:39:15.444Z",
       "count": 15
     },
     {
@@ -118,8 +118,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:51.221Z",
-      "lastSuccess": "2026-10-31T16:59:51.221Z",
+      "lastFetched": "2026-10-31T19:39:15.475Z",
+      "lastSuccess": "2026-10-31T19:39:15.475Z",
       "count": 3
     },
     {
@@ -129,8 +129,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:51.478Z",
-      "lastSuccess": "2026-10-31T16:59:51.478Z",
+      "lastFetched": "2026-10-31T19:39:15.781Z",
+      "lastSuccess": "2026-10-31T19:39:15.781Z",
       "count": 1
     },
     {
@@ -140,8 +140,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:51.489Z",
-      "lastSuccess": "2026-10-31T16:59:51.489Z",
+      "lastFetched": "2026-10-31T19:39:16.168Z",
+      "lastSuccess": "2026-10-31T19:39:16.168Z",
       "count": 5
     },
     {
@@ -151,8 +151,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:51.654Z",
-      "lastSuccess": "2026-10-31T16:59:51.654Z",
+      "lastFetched": "2026-10-31T19:39:16.348Z",
+      "lastSuccess": "2026-10-31T19:39:16.348Z",
       "count": 2
     },
     {
@@ -162,8 +162,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:51.758Z",
-      "lastSuccess": "2026-10-31T16:59:51.758Z",
+      "lastFetched": "2026-10-31T19:39:16.397Z",
+      "lastSuccess": "2026-10-31T19:39:16.397Z",
       "count": 3
     },
     {
@@ -173,8 +173,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:51.879Z",
-      "lastSuccess": "2026-10-31T16:59:51.879Z",
+      "lastFetched": "2026-10-31T19:39:16.494Z",
+      "lastSuccess": "2026-10-31T19:39:16.494Z",
       "count": 2
     },
     {
@@ -184,8 +184,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:51.958Z",
-      "lastSuccess": "2026-10-31T16:59:51.958Z",
+      "lastFetched": "2026-10-31T19:39:16.521Z",
+      "lastSuccess": "2026-10-31T19:39:16.521Z",
       "count": 8
     },
     {
@@ -195,8 +195,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:51.996Z",
-      "lastSuccess": "2026-10-31T16:59:51.996Z",
+      "lastFetched": "2026-10-31T19:39:16.626Z",
+      "lastSuccess": "2026-10-31T19:39:16.626Z",
       "count": 5
     },
     {
@@ -206,8 +206,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:52.240Z",
-      "lastSuccess": "2026-10-31T16:59:52.240Z",
+      "lastFetched": "2026-10-31T19:39:16.668Z",
+      "lastSuccess": "2026-10-31T19:39:16.668Z",
       "count": 5
     },
     {
@@ -217,8 +217,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:52.361Z",
-      "lastSuccess": "2026-10-31T16:59:52.361Z",
+      "lastFetched": "2026-10-31T19:39:16.956Z",
+      "lastSuccess": "2026-10-31T19:39:16.956Z",
       "count": 5
     },
     {
@@ -228,8 +228,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:52.550Z",
-      "lastSuccess": "2026-10-31T16:59:52.550Z",
+      "lastFetched": "2026-10-31T19:39:17.035Z",
+      "lastSuccess": "2026-10-31T19:39:17.035Z",
       "count": 5
     },
     {
@@ -239,8 +239,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:52.614Z",
-      "lastSuccess": "2026-10-31T16:59:52.614Z",
+      "lastFetched": "2026-10-31T19:39:17.267Z",
+      "lastSuccess": "2026-10-31T19:39:17.267Z",
       "count": 5
     },
     {
@@ -250,8 +250,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:52.904Z",
-      "lastSuccess": "2026-10-31T16:59:52.904Z",
+      "lastFetched": "2026-10-31T19:39:18.766Z",
+      "lastSuccess": "2026-10-31T19:39:18.766Z",
       "count": 0
     },
     {
@@ -261,8 +261,8 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:53.122Z",
-      "lastSuccess": "2026-10-31T16:59:53.122Z",
+      "lastFetched": "2026-10-31T19:39:18.777Z",
+      "lastSuccess": "2026-10-31T19:39:18.777Z",
       "count": 4
     },
     {
@@ -272,8 +272,8 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:53.231Z",
-      "lastSuccess": "2026-10-31T16:59:53.231Z",
+      "lastFetched": "2026-10-31T19:39:18.877Z",
+      "lastSuccess": "2026-10-31T19:39:18.877Z",
       "count": 4
     },
     {
@@ -283,8 +283,8 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:54.363Z",
-      "lastSuccess": "2026-10-31T16:59:54.363Z",
+      "lastFetched": "2026-10-31T19:39:18.949Z",
+      "lastSuccess": "2026-10-31T19:39:18.949Z",
       "count": 4
     },
     {
@@ -294,8 +294,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:54.376Z",
-      "lastSuccess": "2026-10-31T16:59:54.376Z",
+      "lastFetched": "2026-10-31T19:39:19.224Z",
+      "lastSuccess": "2026-10-31T19:39:19.224Z",
       "count": 5
     },
     {
@@ -305,8 +305,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:54.388Z",
-      "lastSuccess": "2026-10-31T16:59:54.388Z",
+      "lastFetched": "2026-10-31T19:39:19.261Z",
+      "lastSuccess": "2026-10-31T19:39:19.261Z",
       "count": 5
     },
     {
@@ -316,8 +316,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:54.603Z",
-      "lastSuccess": "2026-10-31T16:59:54.603Z",
+      "lastFetched": "2026-10-31T19:39:19.358Z",
+      "lastSuccess": "2026-10-31T19:39:19.358Z",
       "count": 5
     },
     {
@@ -327,8 +327,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:54.666Z",
-      "lastSuccess": "2026-10-31T16:59:54.666Z",
+      "lastFetched": "2026-10-31T19:39:19.393Z",
+      "lastSuccess": "2026-10-31T19:39:19.393Z",
       "count": 15
     },
     {
@@ -338,8 +338,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:54.702Z",
-      "lastSuccess": "2026-10-31T16:59:54.702Z",
+      "lastFetched": "2026-10-31T19:39:19.725Z",
+      "lastSuccess": "2026-10-31T19:39:19.725Z",
       "count": 15
     },
     {
@@ -349,8 +349,8 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:54.878Z",
-      "lastSuccess": "2026-10-31T16:59:54.878Z",
+      "lastFetched": "2026-10-31T19:39:19.735Z",
+      "lastSuccess": "2026-10-31T19:39:19.735Z",
       "count": 10
     },
     {
@@ -360,8 +360,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:54.999Z",
-      "lastSuccess": "2026-10-31T16:59:54.999Z",
+      "lastFetched": "2026-10-31T19:39:19.758Z",
+      "lastSuccess": "2026-10-31T19:39:19.758Z",
       "count": 15
     },
     {
@@ -371,8 +371,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:55.050Z",
-      "lastSuccess": "2026-10-31T16:59:55.050Z",
+      "lastFetched": "2026-10-31T19:39:20.056Z",
+      "lastSuccess": "2026-10-31T19:39:20.056Z",
       "count": 15
     },
     {
@@ -382,8 +382,8 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:55.132Z",
-      "lastSuccess": "2026-10-31T16:59:55.132Z",
+      "lastFetched": "2026-10-31T19:39:20.141Z",
+      "lastSuccess": "2026-10-31T19:39:20.141Z",
       "count": 15
     },
     {
@@ -393,8 +393,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:55.270Z",
-      "lastSuccess": "2026-10-31T16:59:55.270Z",
+      "lastFetched": "2026-10-31T19:39:20.281Z",
+      "lastSuccess": "2026-10-31T19:39:20.281Z",
       "count": 10
     },
     {
@@ -404,9 +404,174 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:55.452Z",
-      "lastSuccess": "2026-10-31T16:59:55.452Z",
+      "lastFetched": "2026-10-31T19:39:20.686Z",
+      "lastSuccess": "2026-10-31T19:39:20.686Z",
       "count": 10
+    },
+    {
+      "id": "dotnet-blog",
+      "name": ".NET Blog",
+      "url": "https://devblogs.microsoft.com/dotnet/",
+      "tier": "official",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:20.697Z",
+      "lastSuccess": "2026-10-31T19:39:20.697Z",
+      "count": 5
+    },
+    {
+      "id": "semantic-kernel-blog",
+      "name": "Semantic Kernel & Agent Framework",
+      "url": "https://devblogs.microsoft.com/semantic-kernel/",
+      "tier": "official",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:20.726Z",
+      "lastSuccess": "2026-10-31T19:39:20.726Z",
+      "count": 3
+    },
+    {
+      "id": "andrew-lock",
+      "name": ".NET Escapades (Andrew Lock)",
+      "url": "https://andrewlock.net/",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:20.739Z",
+      "lastSuccess": "2026-10-31T19:39:20.739Z",
+      "count": 3
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring blog",
+      "url": "https://spring.io/blog",
+      "tier": "official",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:20.767Z",
+      "lastSuccess": "2026-10-31T19:39:20.767Z",
+      "count": 2
+    },
+    {
+      "id": "supabase-blog",
+      "name": "Supabase blog",
+      "url": "https://supabase.com/blog",
+      "tier": "official",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:21.049Z",
+      "lastSuccess": "2026-10-31T19:39:21.049Z",
+      "count": 3
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare blog",
+      "url": "https://blog.cloudflare.com/",
+      "tier": "official",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:21.156Z",
+      "lastSuccess": "2026-10-31T19:39:21.156Z",
+      "count": 3
+    },
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/",
+      "tier": "official",
+      "type": "news",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:21.167Z",
+      "lastSuccess": "2026-10-31T19:39:21.167Z",
+      "count": 5
+    },
+    {
+      "id": "google-ai-blog",
+      "name": "Google AI blog",
+      "url": "https://blog.google/technology/ai/",
+      "tier": "official",
+      "type": "news",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:21.176Z",
+      "lastSuccess": "2026-10-31T19:39:21.176Z",
+      "count": 5
+    },
+    {
+      "id": "huggingface-blog",
+      "name": "Hugging Face blog",
+      "url": "https://huggingface.co/blog",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:21.255Z",
+      "lastSuccess": "2026-10-31T19:39:21.255Z",
+      "count": 5
+    },
+    {
+      "id": "github-blog",
+      "name": "GitHub blog",
+      "url": "https://github.blog/",
+      "tier": "official",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:21.295Z",
+      "lastSuccess": "2026-10-31T19:39:21.295Z",
+      "count": 3
+    },
+    {
+      "id": "hamel",
+      "name": "Hamel Husain",
+      "url": "https://hamel.dev/",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:21.311Z",
+      "lastSuccess": "2026-10-31T19:39:21.311Z",
+      "count": 3
+    },
+    {
+      "id": "eugene-yan",
+      "name": "Eugene Yan",
+      "url": "https://eugeneyan.com/",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:21.526Z",
+      "lastSuccess": "2026-10-31T19:39:21.526Z",
+      "count": 3
+    },
+    {
+      "id": "embrace-the-red",
+      "name": "Embrace The Red (Johann Rehberger)",
+      "url": "https://embracethered.com/blog/",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:21.558Z",
+      "lastSuccess": "2026-10-31T19:39:21.558Z",
+      "count": 3
+    },
+    {
+      "id": "svpg",
+      "name": "SVPG (Marty Cagan)",
+      "url": "https://www.svpg.com/articles/",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:21.646Z",
+      "lastSuccess": "2026-10-31T19:39:21.646Z",
+      "count": 3
+    },
+    {
+      "id": "product-talk",
+      "name": "Product Talk (Teresa Torres)",
+      "url": "https://www.producttalk.org/",
+      "tier": "editorial",
+      "type": "article",
+      "ok": true,
+      "lastFetched": "2026-10-31T19:39:21.664Z",
+      "lastSuccess": "2026-10-31T19:39:21.664Z",
+      "count": 3
     },
     {
       "id": "hn-claude",
@@ -415,8 +580,8 @@
       "tier": "community",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:55.816Z",
-      "lastSuccess": "2026-10-31T16:59:55.816Z",
+      "lastFetched": "2026-10-31T19:39:21.676Z",
+      "lastSuccess": "2026-10-31T19:39:21.676Z",
       "count": 10
     },
     {
@@ -426,8 +591,8 @@
       "tier": "community",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:55.850Z",
-      "lastSuccess": "2026-10-31T16:59:55.850Z",
+      "lastFetched": "2026-10-31T19:39:21.857Z",
+      "lastSuccess": "2026-10-31T19:39:21.857Z",
       "count": 1
     },
     {
@@ -437,8 +602,8 @@
       "tier": "community",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:55.889Z",
-      "lastSuccess": "2026-10-31T16:59:55.889Z",
+      "lastFetched": "2026-10-31T19:39:21.872Z",
+      "lastSuccess": "2026-10-31T19:39:21.872Z",
       "count": 1
     },
     {
@@ -448,8 +613,8 @@
       "tier": "community",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-10-31T16:59:55.991Z",
-      "lastSuccess": "2026-10-31T16:59:55.991Z",
+      "lastFetched": "2026-10-31T19:39:21.887Z",
+      "lastSuccess": "2026-10-31T19:39:21.887Z",
       "count": 0
     }
   ]
