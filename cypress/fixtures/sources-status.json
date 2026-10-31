@@ -1,0 +1,8 @@
+{
+  "generatedAt": "2026-10-31T05:30:00.000Z",
+  "sources": [
+    { "id": "anthropic-news", "name": "Anthropic News", "url": "https://www.anthropic.com/news", "tier": "official", "type": "news", "ok": true, "lastFetched": "2026-10-31T05:30:00.000Z", "lastSuccess": "2026-10-31T05:30:00.000Z", "count": 22 },
+    { "id": "cypress-blog", "name": "Cypress blog", "url": "https://www.cypress.io/blog", "tier": "official", "type": "article", "ok": true, "lastFetched": "2026-10-31T05:30:00.000Z", "lastSuccess": "2026-10-31T05:30:00.000Z", "count": 15 },
+    { "id": "latent-space", "name": "Latent Space", "url": "https://www.latent.space/", "tier": "editorial", "type": "article", "ok": false, "lastFetched": "2026-10-31T05:30:00.000Z", "lastSuccess": "2026-10-30T05:30:00.000Z", "count": 0, "error": "HTTP 503" }
+  ]
+}
