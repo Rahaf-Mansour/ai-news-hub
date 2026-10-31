@@ -86,7 +86,9 @@ describe('Navigation and page structure', () => {
 
   it('shows repos with verified stars, "not verified" when unknown, and an archived flag', () => {
     cy.visitHub({ hash: 'repos' })
-    cy.get('[data-cy=repos-verified]').should('contain', '2 of 3 verified')
+    cy.get('[data-cy=repos-verified]').should('contain', '2 of 3 verified').and('contain', '1 from an earlier check')
+    cy.get('[data-repo="anthropics/courses"] [data-cy=repo-asof]').should('have.text', 'as of Oct 30, 2026')
+    cy.get('[data-repo="anthropics/claude-code"] [data-cy=repo-asof]').should('not.exist')
     cy.get('[data-repo="anthropics/claude-code"] [data-cy=repo-stars]').should('have.text', '≈154k')
     cy.get('[data-repo="microsoft/playwright-mcp"] [data-cy=repo-stars]').should('have.text', 'not verified')
     cy.get('[data-repo="anthropics/courses"]').should('contain', 'Archived')

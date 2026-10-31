@@ -60,6 +60,31 @@ describe('Page layout: sticky app bar', () => {
     cy.get('[data-cy=tier]').first().should('have.css', 'border-radius', '999px')
   })
 
+  it('shows every section tab on one row on a laptop screen, library tabs after a divider', () => {
+    cy.visitHub()
+    cy.get('[data-cy=tabs-more]').should('not.exist')
+    cy.get('.tabs__sep').should('have.length', 1)
+    cy.get('[data-cy=app-bar] .tab').then(($tabs) => {
+      const tops = new Set([...$tabs].map((t) => Math.round(t.getBoundingClientRect().top)))
+      expect(tops.size).to.eq(1)
+      for (const t of $tabs) expect(t.getBoundingClientRect().right).to.be.at.most(Cypress.config('viewportWidth'))
+    })
+    cy.get('[data-cy=tab-learn]').should('be.visible')
+  })
+
+  it('closes the Model watch panel to widen the feed, and remembers it', () => {
+    cy.visitHub()
+    cy.feed().then(($f) => {
+      const before = $f[0].getBoundingClientRect().width
+      cy.get('[data-cy=rail-toggle]').should('have.attr', 'aria-expanded', 'true').click()
+      cy.get('[data-cy=model-watch]').should('not.exist')
+      cy.feed().should(($g) => expect($g[0].getBoundingClientRect().width).to.be.greaterThan(before + 100))
+    })
+    cy.reload()
+    cy.get('[data-cy=rail-toggle]').should('have.attr', 'aria-expanded', 'false').and('contain', 'Model watch').click()
+    cy.get('[data-cy=model-watch]').should('be.visible')
+  })
+
   it('scrolls a clicked section to just below the sticky bar', () => {
     cy.visitHub()
     cy.get('[data-cy=tab-qa]').click()

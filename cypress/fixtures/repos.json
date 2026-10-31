@@ -2,19 +2,45 @@
   "generatedAt": "2026-10-31T05:30:00.000Z",
   "repos": [
     {
-      "fullName": "anthropics/claude-code", "why": "Watch the CHANGELOG.", "roles": ["claude", "se"],
-      "url": "https://github.com/anthropics/claude-code", "stars": 154027, "lastCommit": "2026-10-31T00:00:00Z",
-      "archived": false, "license": null, "verifiedAt": "2026-10-31T05:30:00.000Z"
+      "fullName": "anthropics/claude-code",
+      "why": "Watch the CHANGELOG.",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "url": "https://github.com/anthropics/claude-code",
+      "stars": 154027,
+      "lastCommit": "2026-10-31T00:00:00Z",
+      "archived": false,
+      "license": null,
+      "verifiedAt": "2026-10-31T05:30:00.000Z"
     },
     {
-      "fullName": "microsoft/playwright-mcp", "why": "Give an agent a browser.", "roles": ["qa", "se"],
-      "url": "https://github.com/microsoft/playwright-mcp", "stars": null, "lastCommit": null,
-      "archived": null, "license": null, "verifiedAt": null
+      "fullName": "microsoft/playwright-mcp",
+      "why": "Give an agent a browser.",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "stars": null,
+      "lastCommit": null,
+      "archived": null,
+      "license": null,
+      "verifiedAt": null
     },
     {
-      "fullName": "anthropics/courses", "why": "API fundamentals.", "roles": ["claude"],
-      "url": "https://github.com/anthropics/courses", "stars": 22951, "lastCommit": "2026-08-28T00:00:00Z",
-      "archived": true, "license": null, "verifiedAt": "2026-10-31T05:30:00.000Z"
+      "fullName": "anthropics/courses",
+      "why": "API fundamentals.",
+      "roles": [
+        "claude"
+      ],
+      "url": "https://github.com/anthropics/courses",
+      "stars": 22951,
+      "lastCommit": "2026-08-28T00:00:00Z",
+      "archived": true,
+      "license": null,
+      "verifiedAt": "2026-10-30T05:30:00.000Z"
     }
   ]
 }

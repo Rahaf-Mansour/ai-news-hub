@@ -87,3 +87,54 @@ export function ClockIcon(props: SVGProps<SVGSVGElement>) {
     </Outline>
   )
 }
+
+export function SunIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <Outline {...props}>
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+    </Outline>
+  )
+}
+
+export function MoonIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <Outline {...props}>
+      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+    </Outline>
+  )
+}
+
+export function BookIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <Outline {...props}>
+      <path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z" />
+      <path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z" />
+    </Outline>
+  )
+}
+
+export function RepoIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <Outline {...props}>
+      <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+      <path d="M9 7h6" />
+    </Outline>
+  )
+}
+
+export function ChevronRightIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <Outline {...props}>
+      <path d="m9 18 6-6-6-6" />
+    </Outline>
+  )
+}
+
+export function ChevronLeftIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <Outline {...props}>
+      <path d="m15 18-6-6 6-6" />
+    </Outline>
+  )
+}
