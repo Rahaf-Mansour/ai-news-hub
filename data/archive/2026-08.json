@@ -1,6 +1,6 @@
 {
   "month": "2026-08",
-  "count": 11,
+  "count": 12,
   "items": [
     {
       "id": "0df55c1135d3",
@@ -51,6 +51,23 @@
       ],
       "tagMethod": "rules",
       "summary": "**Meta's Muse Code** has exited beta with an SDK and subscription plans, enabling embedding custom agents and tool integration. **DeepSeek V4 Flash Vision** weights were released…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0620f79b66d9",
+      "title": "Breaking Claude Code Opus 5 Auto Mode",
+      "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode",
+      "sourceId": "embrace-the-red",
+      "sourceName": "Embrace The Red (Johann Rehberger)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-08-27T04:00:00.000Z",
+      "firstSeenAt": "2026-10-31T19:39:14.403Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "In this post, we explore how a simple website summary request hijacks Claude Code Opus 5 in Auto Mode and achieves code execution with 60-80% attack success rate using a small sample size. This is interesting because a third-party evaluation commissioned by Anthropic showed a 0.00% prompt injection attack success rate for Opus 5 in Auto Mode. Auto Mode Is Now the Default in Claude Code Auto Mode…",
       "summaryBy": "feed"
     },
     {
