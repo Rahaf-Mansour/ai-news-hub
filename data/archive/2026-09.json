@@ -1,7 +1,25 @@
 {
   "month": "2026-09",
-  "count": 54,
+  "count": 61,
   "items": [
+    {
+      "id": "2d180c745903",
+      "title": "From SELECT to SYSADMIN with SQL Copilot (CVE-2026-65669)",
+      "url": "https://embracethered.com/blog/posts/2026/from-select-to-sysadmin-sql-copilot-bluehat-asia",
+      "sourceId": "embrace-the-red",
+      "sourceName": "Embrace The Red (Johann Rehberger)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-30T21:00:40.000Z",
+      "firstSeenAt": "2026-10-31T19:39:14.403Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Two weeks back I presented at BlueHat Asia 2026 about my research on Microsoft’s Copilot in SSMS, the SQL Server Management Studio. This post is a write up about the talk, which covered CVE-2026-65669, a SQL Server Elevation of Privilege Vulnerability rated critical by Microsoft. So, make sure your installations are up-to-date. The slides of the presentation can be found here. BlueHat Asia 2026…",
+      "summaryBy": "feed"
+    },
     {
       "id": "d713fc219c19",
       "title": "chore: release @cypress/puppeteer-v0.1.10",
@@ -35,6 +53,25 @@
       ],
       "tagMethod": "source",
       "summary": "In Python SDK 1.10.0, TypeScript SDK 0.130.0, C# SDK 12.52.0, Go SDK 1.77.0, Java SDK 2.67.0, PHP SDK 0.53.0, Ruby SDK 1.75.0, and version…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "77544766b84c",
+      "title": "Claude’s new auto eval tool",
+      "url": "https://hamel.dev/blog/posts/claude-auto-evals",
+      "sourceId": "hamel",
+      "sourceName": "Hamel Husain",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-30T07:00:00.000Z",
+      "firstSeenAt": "2026-10-31T19:39:14.403Z",
+      "roles": [
+        "claude",
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Anthropic released new eval tooling for Claude Code. Their claude-api plugin now includes a new build_eval and hill-climb command that helps you build evals, check the graders, and improve your application against them. I usually don’t review eval tools because software changes so often that reviews have a short shelf life. But a first-party tool from Anthropic is likely to influence how people…",
       "summaryBy": "feed"
     },
     {
@@ -265,6 +302,23 @@
       "summaryBy": "feed"
     },
     {
+      "id": "6cce79a0466b",
+      "title": "Experts Lead Experts",
+      "url": "https://svpg.com/experts-lead-experts",
+      "sourceId": "svpg",
+      "sourceName": "SVPG (Marty Cagan)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-25T18:17:29.000Z",
+      "firstSeenAt": "2026-10-31T19:39:14.403Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "We are still early in the journey to learn the long-term impact of AI, but one trend that continues to capture attention is that managers and other leaders will be much less important, and that all we really need are skilled individual contributor builders. We’ve all seen the headlines about companies pushing for fewer managers... The post Experts Lead Experts appeared first on Silicon Valley…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "bec89e6e3831",
       "title": "50 years of tech devices",
       "url": "https://bensbites.com/p/50-years-of-tech-devices",
@@ -313,6 +367,24 @@
       ],
       "tagMethod": "source",
       "summary": "I got the CEO of Zapier to pull up the rubric his company uses to grade every employee on AI.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "26a9af99053d",
+      "title": "What’s new in Microsoft Agent Framework: Interactive experiences, memory, and resilient execution",
+      "url": "https://devblogs.microsoft.com/agent-framework/interactive-experiences-memory-and-resilient-execution",
+      "sourceId": "semantic-kernel-blog",
+      "sourceName": "Semantic Kernel & Agent Framework",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-09-24T15:00:14.000Z",
+      "firstSeenAt": "2026-10-31T19:39:14.403Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "An agent that answers a question is a starting point. An agent that completes useful work needs more: an interface users can interact with, memory beyond the current conversation, an appropriate environment for executing code, and a way to recover when work is interrupted. Recent Microsoft Agent Framework updates address those needs across .NET and […] The post What’s new in Microsoft Agent…",
       "summaryBy": "feed"
     },
     {
@@ -492,6 +564,41 @@
       "summaryBy": "feed"
     },
     {
+      "id": "201aa60c0b8e",
+      "title": "Foundry hosted agent isolation with Microsoft Agent Framework",
+      "url": "https://devblogs.microsoft.com/agent-framework/foundry-hosted-agent-isolation-with-microsoft-agent-framework",
+      "sourceId": "semantic-kernel-blog",
+      "sourceName": "Semantic Kernel & Agent Framework",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-09-22T10:14:52.000Z",
+      "firstSeenAt": "2026-10-31T19:39:14.403Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Foundry hosted agent isolation exposes two independent controls. User isolation identifies whose data may be used. At the same time, Foundry hosted session isolation identifies where code and files continue to live. For each control, Foundry can resolve the value or the application can provide it. Therefore, the available choices support direct callers, trusted middle […] The post Foundry hosted…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "269ed48ff75c",
+      "title": "Experimental support for Device Bound Session Credentials (DBSC) in ASP.NET Core: Exploring the .NET 11 preview - Part 8",
+      "url": "https://andrewlock.net/exploring-the-dotnet-11-preview-8-experimental-support-for-device-bound-session-credentials-in-aspnetcore",
+      "sourceId": "andrew-lock",
+      "sourceName": ".NET Escapades (Andrew Lock)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-22T10:00:00.000Z",
+      "firstSeenAt": "2026-10-31T19:39:14.403Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "In this post I look at the new experimental support for DBSC provided by the Microsoft.AspNetCore.Authentication.DeviceBoundSessions package",
+      "summaryBy": "feed"
+    },
+    {
       "id": "c22910c59b4d",
       "title": "Import AI 473: The US’s superintelligence strategy; human brain in a mouse skull; and machine hermeneutics",
       "url": "https://jack-clark.net/2026/09/21/import-ai-473-the-uss-superintelligence-strategy-human-brain-in-a-mouse-skull-and-machine-hermeneutics",
@@ -560,6 +667,27 @@
       ],
       "tagMethod": "rules",
       "summary": "We’re partnering with Accenture on independent evaluation of frontier AI—part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b8fcb7456281",
+      "title": "AI Evals: Everything You Need to Know",
+      "url": "https://hamel.dev/blog/posts/evals-faq",
+      "sourceId": "hamel",
+      "sourceName": "Hamel Husain",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-09-18T07:00:00.000Z",
+      "firstSeenAt": "2026-10-31T19:39:14.403Z",
+      "roles": [
+        "claude",
+        "qa",
+        "pm",
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "This document curates the most common questions Shreya and I received while teaching 5,000+ engineers and PMs AI Evals. Warning: These are sharp opinions about what works in most cases. They are not universal truths. Use your judgment. How to use this FAQ Browse the questions that interest you, or choose a guide below for a curated reading path through the FAQs and related articles. Where are…",
       "summaryBy": "feed"
     },
     {
