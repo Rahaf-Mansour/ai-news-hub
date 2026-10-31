@@ -202,6 +202,49 @@
       "score": 2.5
     },
     {
+      "id": "fx-react",
+      "title": "React 19.3 ships the Activity API",
+      "url": "https://example.com/fixture/react",
+      "sourceId": "react-blog",
+      "sourceName": "React blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-30T14:00:00.000Z",
+      "firstSeenAt": "2026-10-31T05:30:00.000Z",
+      "roles": [
+        "fs"
+      ],
+      "areas": [
+        "frontend"
+      ],
+      "tagMethod": "source",
+      "summary": "Keep hidden UI mounted and prerender screens the user is likely to open next.",
+      "summaryBy": "feed",
+      "score": 4.5
+    },
+    {
+      "id": "fx-pgvector",
+      "title": "RAG on Postgres with pgvector, end to end",
+      "url": "https://example.com/fixture/pgvector",
+      "sourceId": "node-weekly",
+      "sourceName": "Node Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-29T12:00:00.000Z",
+      "firstSeenAt": "2026-10-29T13:00:00.000Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "areas": [
+        "backend"
+      ],
+      "tagMethod": "rules",
+      "summary": "Embeddings in a Postgres column, retrieval as a tool call from a Node API.",
+      "summaryBy": "feed",
+      "score": 2
+    },
+    {
       "id": "fx-old",
       "title": "An older engineering essay",
       "url": "https://example.com/fixture/old",

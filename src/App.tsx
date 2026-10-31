@@ -25,7 +25,8 @@ type Tab = 'all' | Role | 'saved' | 'repos' | 'learn'
 const TABS: { id: Tab; label: string; role: Role | null; placeholder: string }[] = [
   { id: 'all', label: 'All', role: null, placeholder: 'Search all news…' },
   { id: 'claude', label: ROLE_LABEL.claude, role: 'claude', placeholder: 'Search Claude news and releases…' },
-  { id: 'se', label: ROLE_LABEL.se, role: 'se', placeholder: 'Search SE news…' },
+  { id: 'fs', label: ROLE_LABEL.fs, role: 'fs', placeholder: 'Search full-stack news…' },
+  { id: 'se', label: ROLE_LABEL.se, role: 'se', placeholder: 'Search AI dev tools news…' },
   { id: 'pm', label: ROLE_LABEL.pm, role: 'pm', placeholder: 'Search PM news…' },
   { id: 'qa', label: ROLE_LABEL.qa, role: 'qa', placeholder: 'Search QA news…' },
   { id: 'saved', label: 'Saved', role: null, placeholder: 'Search saved…' },
@@ -41,6 +42,13 @@ const FACETS: Partial<Record<Role, { label: string; options: { id: Area; label: 
       { id: 'manual', label: 'Manual & exploratory' },
       { id: 'automation', label: 'Automation' },
       { id: 'ai-testing', label: 'Testing AI' },
+    ],
+  },
+  fs: {
+    label: 'Full-stack area',
+    options: [
+      { id: 'frontend', label: 'Frontend' },
+      { id: 'backend', label: 'Backend' },
     ],
   },
 }

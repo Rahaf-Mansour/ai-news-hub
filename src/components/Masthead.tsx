@@ -60,7 +60,7 @@ export function Masthead({ items, status, unread, newCount, savedCount, now, the
               AI News <span className="wordmark__amp">&amp;</span> <span className="wordmark__accent">Learning</span> Hub
             </h1>
             {byline}
-            <p className="tagline">What changed in AI today, read through four lenses: Claude, QA, product and engineering.</p>
+            <p className="tagline">What changed in AI today, read through five lenses: Claude, QA, product, full-stack and AI dev tools.</p>
           </div>
           <div className="hero__side">
             <dl className="stats">

@@ -142,5 +142,5 @@ export function retag(item: Item, source: SourceConfig | undefined): Item {
     roles = sortRoles([...source.roles, ...matched])
     if (!roles.length) roles = sortRoles(source.fallbackRoles ?? item.roles)
   }
-  return { ...item, roles, areas: ruleAreas(item.title, item.summary, roles) }
+  return { ...item, roles, areas: ruleAreas(item.title, item.summary, roles, source?.areas) }
 }

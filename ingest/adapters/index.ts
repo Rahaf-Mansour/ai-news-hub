@@ -12,36 +12,42 @@ export const releaseSkipPattern = (custom?: string) => (custom ? `${PRERELEASE}|
 
 /** Fetch one source and return its newest raw items. Throws on any failure; the runner isolates it. */
 export async function fetchSource(source: SourceConfig, fetchText: TextFetcher, now: Date): Promise<RawItem[]> {
-  let items: RawItem[]
+  let parsed: RawItem[]
 
   switch (source.kind) {
     case 'rss':
-      items = await parseFeed(await fetchText(source.feedUrl))
+    case 'github-releases':
+      parsed = await parseFeed(await fetchText(source.feedUrl))
       break
-    case 'github-releases': {
-      const product = source.name.replace(/ releases$/i, '')
-      items = (await parseFeed(await fetchText(source.feedUrl)))
-        .map((i) => labelRelease(i, product, releaseSkipPattern(source.skipTitlePattern)))
-        .filter((i): i is RawItem => i !== null)
-      break
-    }
     case 'anthropic-cards':
-      items = parseAnthropicCards(await fetchText(source.feedUrl), source.feedUrl, source.hrefPattern ?? '.')
+      parsed = parseAnthropicCards(await fetchText(source.feedUrl), source.feedUrl, source.hrefPattern ?? '.')
       break
     case 'claude-release-notes':
-      items = parseReleaseNotes(await fetchText(source.feedUrl), source.feedUrl)
+      parsed = parseReleaseNotes(await fetchText(source.feedUrl), source.feedUrl)
       break
     case 'hn': {
       if (!source.hn) throw new Error(`Source ${source.id} is kind "hn" but has no hn config`)
-      items = parseHn(await fetchText(buildHnUrl(source.feedUrl, source.hn.query, source.hn.minPoints, now)))
+      parsed = parseHn(await fetchText(buildHnUrl(source.feedUrl, source.hn.query, source.hn.minPoints, now)))
       break
     }
     default:
       throw new Error(`Unknown source kind: ${(source as SourceConfig).kind}`)
   }
 
-  if (!items.length && source.kind !== 'hn') {
+  // Checked before filtering: a release feed whose newest entries are all canaries is healthy, just quiet.
+  if (!parsed.length && source.kind !== 'hn') {
     throw new Error('Fetched OK but parsed 0 items (markup or feed format may have changed)')
+  }
+  let items = parsed
+  if (source.kind === 'github-releases') {
+    const product = source.name.replace(/ releases$/i, '')
+    items = items
+      .map((i) => labelRelease(i, product, releaseSkipPattern(source.skipTitlePattern)))
+      .filter((i): i is RawItem => i !== null)
+  }
+  if (source.linkFilter) {
+    const links = new RegExp(source.linkFilter)
+    items = items.filter((i) => links.test(i.url))
   }
   if (source.titleFilter) {
     const filter = new RegExp(source.titleFilter, 'i')
