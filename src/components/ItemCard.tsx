@@ -88,9 +88,9 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
               aria-pressed={isRead}
               onClick={() => onToggleRead(item.id)}
               data-cy="toggle-read"
-              title={isRead ? 'Mark as unread again' : 'Marks this as read and removes it from the unread counts'}
+              title={isRead ? 'Marks this as unread again and adds it back to the unread counts' : 'Marks this as read and removes it from the unread counts'}
             >
-              {isRead ? '✓ Read' : 'Mark read'}
+              {isRead ? 'Mark unread' : 'Mark read'}
             </button>
             <button
               type="button"

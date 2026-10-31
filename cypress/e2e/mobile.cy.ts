@@ -31,6 +31,27 @@ describe('Mobile layout', () => {
     })
   })
 
+  it('hints that more sections are off screen, and the arrow brings them in', () => {
+    cy.get('[data-cy=tabs-more]').should('be.visible')
+    cy.window().then((win) => {
+      const width = win.innerWidth
+      cy.get('[data-cy=tab-learn]').then(($l) => expect($l[0].getBoundingClientRect().left).to.be.greaterThan(width))
+      // Each tap scrolls most of a screen; keep tapping while the arrow is there.
+      const tapUntilEnd = (left: number): void => {
+        if (left === 0) return
+        cy.get('body').then(($b) => {
+          if (!$b.find('[data-cy=tabs-more]').length) return
+          cy.get('[data-cy=tabs-more]').click()
+          cy.wait(400)
+          tapUntilEnd(left - 1)
+        })
+      }
+      tapUntilEnd(5)
+      cy.get('[data-cy=tab-learn]').should(($l) => expect($l[0].getBoundingClientRect().right).to.be.at.most(width))
+      cy.get('[data-cy=tabs-more]').should('not.exist')
+    })
+  })
+
   it('stacks Today into a single column', () => {
     cy.get('.today__groups')
       .should('have.css', 'grid-template-columns')

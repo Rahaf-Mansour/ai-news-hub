@@ -34,6 +34,14 @@ describe('Page layout: sticky app bar', () => {
     cy.get('.byline').should('contain', 'by Rahaf Mansour')
   })
 
+  it('explains the site to a first-time visitor in the footer', () => {
+    cy.visitHub()
+    cy.get('[data-cy=about] h2').then(($h) => expect([...$h].map((h) => h.textContent)).to.deep.eq(['How it works', 'Straight to the source', 'Private by design']))
+    // Source count comes from the run status (3 in the fixture); the LLM is on in the fixture, so the AI wording shows.
+    cy.get('[data-cy=about]').should('contain', 'checks 3 sources').and('contain', 'written by an AI model').and('contain', 'No sign-up, no analytics, no cookies')
+    cy.get('[data-cy=about-issues]').should('have.attr', 'href', 'https://github.com/Rahaf-Mansour/ai-news-hub/issues')
+  })
+
   it('shows when the next automatic refresh is, with a countdown', () => {
     cy.visitHub() // clock: Oct 31 08:00 UTC → next run Nov 1 05:30 UTC
     cy.get('[data-cy=next-refresh]')
@@ -58,6 +66,31 @@ describe('Page layout: sticky app bar', () => {
     cy.feed().find('[data-id=fx-react]').should('have.class', 'role-fs').and('have.css', 'border-left-color', 'rgb(37, 99, 235)')
     cy.get('[data-cy=tab-fs]').should('have.css', 'background-color', 'rgb(29, 78, 216)').and('have.css', 'color', 'rgb(255, 255, 255)')
     cy.get('[data-cy=tier]').first().should('have.css', 'border-radius', '999px')
+  })
+
+  it('shows every section tab on one row on a laptop screen, library tabs after a divider', () => {
+    cy.visitHub()
+    cy.get('[data-cy=tabs-more]').should('not.exist')
+    cy.get('.tabs__sep').should('have.length', 1)
+    cy.get('[data-cy=app-bar] .tab').then(($tabs) => {
+      const tops = new Set([...$tabs].map((t) => Math.round(t.getBoundingClientRect().top)))
+      expect(tops.size).to.eq(1)
+      for (const t of $tabs) expect(t.getBoundingClientRect().right).to.be.at.most(Cypress.config('viewportWidth'))
+    })
+    cy.get('[data-cy=tab-learn]').should('be.visible')
+  })
+
+  it('closes the Model watch panel to widen the feed, and remembers it', () => {
+    cy.visitHub()
+    cy.feed().then(($f) => {
+      const before = $f[0].getBoundingClientRect().width
+      cy.get('[data-cy=rail-toggle]').should('have.attr', 'aria-expanded', 'true').click()
+      cy.get('[data-cy=model-watch]').should('not.exist')
+      cy.feed().should(($g) => expect($g[0].getBoundingClientRect().width).to.be.greaterThan(before + 100))
+    })
+    cy.reload()
+    cy.get('[data-cy=rail-toggle]').should('have.attr', 'aria-expanded', 'false').and('contain', 'Model watch').click()
+    cy.get('[data-cy=model-watch]').should('be.visible')
   })
 
   it('scrolls a clicked section to just below the sticky bar', () => {

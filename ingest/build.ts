@@ -1,9 +1,16 @@
 import type { Item, RawItem, Role, SourceConfig, TrustTier } from '../src/types'
 import { canonicalUrl, itemId, titleSimilarity } from './normalize'
 import { ruleAreas, ruleRoles, sortRoles } from './tagger'
-import { stripLeadingEmoji, truncate } from './text'
+import { stripLeadingEmoji, stripTitlePrefix, truncate } from './text'
 
 export const SUMMARY_MAX = 180
+
+/**
+ * The text the role rules read besides the title. Release notes are changelogs full of
+ * PR titles and co-author credits ("…and Claude Opus 5.5 in #11578"), so for releases
+ * only the title can add a role beyond the source's own.
+ */
+const ruleText = (excerpt: string, source: SourceConfig) => (source.type === 'release' ? '' : excerpt)
 
 /**
  * Turn an adapter's raw item into a site item: canonical URL, tags from the
@@ -12,7 +19,7 @@ export const SUMMARY_MAX = 180
  */
 export function toItem(raw: RawItem, source: SourceConfig, now: Date): { item: Item; needsLlm: boolean } {
   const url = canonicalUrl(raw.url, source.kind === 'claude-release-notes')
-  const matched = ruleRoles(raw.title, raw.excerpt)
+  const matched = ruleRoles(raw.title, ruleText(raw.excerpt ?? '', source))
   let roles: Role[] = sortRoles([...source.roles, ...matched])
   let tagMethod: Item['tagMethod'] = matched.some((r) => !source.roles.includes(r)) ? 'rules' : 'source'
   let needsLlm = false
@@ -39,7 +46,7 @@ export function toItem(raw: RawItem, source: SourceConfig, now: Date): { item: I
       firstSeenAt: now.toISOString(),
       roles,
       tagMethod,
-      summary: truncate(stripLeadingEmoji(raw.excerpt ?? ''), SUMMARY_MAX),
+      summary: truncate(stripTitlePrefix(stripLeadingEmoji(raw.excerpt ?? ''), raw.title), SUMMARY_MAX),
       summaryBy: 'feed',
       discussionUrl: raw.discussionUrl,
       score: 0,
@@ -138,11 +145,11 @@ export function collapsePatchReleases(items: Item[]): Item[] {
 export function retag(item: Item, source: SourceConfig | undefined): Item {
   let roles = item.roles
   if (source && item.tagMethod !== 'llm') {
-    const matched = ruleRoles(item.title, item.summary)
+    const matched = ruleRoles(item.title, ruleText(item.summary, source))
     roles = sortRoles([...source.roles, ...matched])
     if (!roles.length) roles = sortRoles(source.fallbackRoles ?? item.roles)
   }
   // Summary clean-up also applies to items archived before it existed.
-  const summary = stripLeadingEmoji(item.summary)
+  const summary = stripTitlePrefix(stripLeadingEmoji(item.summary), item.title)
   return { ...item, summary, roles, areas: ruleAreas(item.title, summary, roles, source?.areas) }
 }

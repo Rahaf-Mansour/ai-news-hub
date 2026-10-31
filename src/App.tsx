@@ -1,13 +1,13 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { AppBar, type TabDef } from './components/AppBar'
 import { BackToTop } from './components/BackToTop'
-import { CodeIcon, GitHubIcon, LinkedInIcon } from './components/Icons'
+import { BookIcon, ChevronLeftIcon, ChevronRightIcon, CodeIcon, GitHubIcon, LinkedInIcon, RepoIcon } from './components/Icons'
 import { AUTHOR_LINKS, AUTHOR_NAME } from './content/author'
 import { FacetToggle } from './components/FacetToggle'
 import { Feed } from './components/Feed'
 import type { ItemActions } from './components/ItemCard'
 import { Learn } from './components/Learn'
-import { Masthead, type ThemeChoice } from './components/Masthead'
+import { Masthead, type Theme } from './components/Masthead'
 import { NextRefresh } from './components/NextRefresh'
 import { ClaudeTimeline, ModelWatch, RunLog } from './components/Rail'
 import { Repos } from './components/Repos'
@@ -70,10 +70,8 @@ async function loadJson<T>(path: string): Promise<T | null> {
   }
 }
 
-function applyTheme(theme: ThemeChoice) {
-  if (theme === 'system') delete document.documentElement.dataset.theme
-  else document.documentElement.dataset.theme = theme
-}
+const OS_DARK = '(prefers-color-scheme: dark)'
+const osTheme = (): Theme => (window.matchMedia?.(OS_DARK).matches ? 'dark' : 'light')
 
 export default function App() {
   const [now] = useState(() => new Date())
@@ -88,10 +86,19 @@ export default function App() {
   const facet = facetByTab[tab] ?? 'all'
   const setFacet = (value: Area | 'all') => setFacetByTab((m) => ({ ...m, [tab]: value }))
   const [filter, setFilter] = useState<FilterState>(EMPTY_FILTER)
-  const [theme, setTheme] = useState<ThemeChoice>(() => {
+  // Follows the OS until the reader picks Light or Dark; that choice is then remembered.
+  const [chosenTheme, setChosenTheme] = useState<Theme | null>(() => {
     const saved = getItem(KEYS.theme)
-    return saved === 'light' || saved === 'dark' ? saved : 'system'
+    return saved === 'light' || saved === 'dark' ? saved : null
   })
+  const [systemTheme, setSystemTheme] = useState<Theme>(osTheme)
+  // The right-hand panel (Model watch, Sources) can be closed to give the feed the full width.
+  const [railOpen, setRailOpen] = useState(() => getItem(KEYS.rail) !== 'closed')
+  const toggleRail = () => {
+    setItem(KEYS.rail, railOpen ? 'closed' : null)
+    setRailOpen(!railOpen)
+  }
+  const theme = chosenTheme ?? systemTheme
   // Items first seen after the previous visit get the "+" marker for this whole session.
   const [newSince] = useState<string | null>(() => getItem(KEYS.lastVisit))
   const read = useStoredSet(KEYS.read)
@@ -178,11 +185,20 @@ export default function App() {
     return () => window.removeEventListener('keydown', onKey)
   }, [])
 
-  const changeTheme = useCallback((t: ThemeChoice) => {
-    setTheme(t)
-    applyTheme(t)
-    setItem(KEYS.theme, t === 'system' ? null : t)
+  useEffect(() => {
+    const mq = window.matchMedia?.(OS_DARK)
+    if (!mq) return
+    const onChange = () => setSystemTheme(osTheme())
+    mq.addEventListener('change', onChange)
+    return () => mq.removeEventListener('change', onChange)
   }, [])
+
+  const toggleTheme = useCallback(() => {
+    const next: Theme = theme === 'dark' ? 'light' : 'dark'
+    setChosenTheme(next)
+    document.documentElement.dataset.theme = next
+    setItem(KEYS.theme, next)
+  }, [theme])
 
   const all = useMemo(() => items?.items ?? [], [items])
   const today = useMemo(() => selectToday(all, now), [all, now])
@@ -224,8 +240,10 @@ export default function App() {
 
   const tabs: TabDef[] = TABS.map((t) =>
     t.id === 'saved'
-      ? { id: t.id, label: t.label, icon: <span className="tab__star" aria-hidden="true">★</span>, count: savedTotal, countLabel: `${savedTotal} saved` }
-      : {
+      ? { id: t.id, label: t.label, group: 'library', icon: <span className="tab__star" aria-hidden="true">★</span>, count: savedTotal, countLabel: `${savedTotal} saved` }
+      : t.id === 'repos' || t.id === 'learn'
+        ? { id: t.id, label: t.label, group: 'library', icon: t.id === 'repos' ? <RepoIcon /> : <BookIcon /> }
+        : {
           id: t.id,
           label: t.label,
           color: t.role ?? undefined,
@@ -246,7 +264,7 @@ export default function App() {
         savedCount={savedTotal}
         now={now}
         theme={theme}
-        onTheme={changeTheme}
+        onToggleTheme={toggleTheme}
         runExtra={items && <NextRefresh generatedAt={items.generatedAt} />}
         byline={
           <p className="byline">
@@ -277,7 +295,7 @@ export default function App() {
         )}
         {showToday && <Today view={today} {...actions} />}
 
-        <div className="wrap page" ref={contentRef} id="content">
+        <div className={`wrap page${railOpen ? '' : ' page--wide'}`} ref={contentRef} id="content">
           <div style={{ minWidth: 0 }} data-cy={`panel-${tab}`}>
             {tab === 'claude' && <ClaudeTimeline query={query} />}
             {isFeed && (
@@ -287,6 +305,7 @@ export default function App() {
                 filter={feedFilter}
                 setFilter={(f) => setFilter({ ...f, query: '' })}
                 onMarkAllRead={read.add}
+                onMarkAllUnread={read.removeMany}
                 label={current.id === 'all' ? 'All items' : current.label}
                 facets={facets}
                 {...actions}
@@ -329,9 +348,32 @@ export default function App() {
               />
             )}
           </div>
-          <aside className="rail">
-            <ModelWatch />
-            <RunLog status={status} now={now} />
+          <aside className={`rail${railOpen ? '' : ' rail--closed'}`} aria-label="Model watch and sources">
+            <button
+              type="button"
+              className="rail-toggle"
+              onClick={toggleRail}
+              aria-expanded={railOpen}
+              aria-controls="rail-panels"
+              data-cy="rail-toggle"
+              title={railOpen ? 'Hide this panel to give the feed the full width' : 'Show Model watch and the source run log'}
+            >
+              {railOpen ? (
+                <>
+                  Hide panel <ChevronRightIcon />
+                </>
+              ) : (
+                <>
+                  <ChevronLeftIcon /> Model watch
+                </>
+              )}
+            </button>
+            {railOpen && (
+              <div id="rail-panels" className="rail__panels">
+                <ModelWatch />
+                <RunLog status={status} now={now} />
+              </div>
+            )}
           </aside>
         </div>
       </main>
@@ -361,11 +403,39 @@ export default function App() {
               </li>
             </ul>
           </div>
-          <p>
-            Every item links to its original source. This page shows titles, links and one-line summaries only, never article text. Without the
-            optional LLM step, a summary is the publisher’s own feed description, shortened.
+          <div className="about" data-cy="about">
+            <section>
+              <h2>How it works</h2>
+              <p>
+                Every morning at 05:30 UTC the hub checks {status ? status.sources.length : 'dozens of'} sources: vendor blogs and release notes,
+                newsletters and Hacker News. What’s new is sorted into five lenses, and each item is labelled Official, Editorial or Community so
+                you know how far to trust it.
+              </p>
+            </section>
+            <section>
+              <h2>Straight to the source</h2>
+              <p>
+                You get a title, a short summary and a link to the original, never the article itself.{' '}
+                {items?.llmEnabled
+                  ? 'Summaries and “Why it matters” lines are written by an AI model from each item’s title and opening lines.'
+                  : 'Each summary is the publisher’s own description, trimmed to a line or two.'}
+              </p>
+            </section>
+            <section>
+              <h2>Private by design</h2>
+              <p>
+                No sign-up, no analytics, no cookies. What you read, save and tick off in Learn is kept in this browser only, so it doesn’t follow
+                you to other devices. The only outside request is for the fonts.
+              </p>
+            </section>
+          </div>
+          <p className="about__cta">
+            Spotted a broken link, or know a source worth adding?{' '}
+            <a href={`${AUTHOR_LINKS.repo}/issues`} target="_blank" rel="noopener noreferrer" data-cy="about-issues">
+              Open an issue on GitHub
+            </a>
+            .
           </p>
-          <p>No analytics, cookies or tracking. Read, saved and learning progress stay in this browser.</p>
         </div>
       </footer>
     </>

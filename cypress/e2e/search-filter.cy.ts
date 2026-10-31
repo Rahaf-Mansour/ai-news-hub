@@ -156,6 +156,17 @@ describe('Search and filters', () => {
     cy.feed().find('[data-cy=item]').should('have.length', 13)
   })
 
+  it('clears the Saved, tier and type filters with "All"', () => {
+    cy.get('[data-cy=filter-all]').should('have.attr', 'aria-pressed', 'true')
+    cy.get('[data-cy=tier-official]').click()
+    cy.get('[data-cy=type-release]').click()
+    cy.get('[data-cy=filter-all]').should('have.attr', 'aria-pressed', 'false')
+    cy.feed().find('[data-cy=item]').should('have.length', 2)
+    cy.get('[data-cy=filter-all]').click().should('have.attr', 'aria-pressed', 'true')
+    cy.get('[data-cy=tier-official]').should('have.attr', 'aria-pressed', 'false')
+    cy.feed().find('[data-cy=item]').should('have.length', 13)
+  })
+
   it('filters community items so only the HN post remains', () => {
     cy.get('[data-cy=tier-community]').click()
     cy.feed().find('[data-cy=item]').should('have.length', 1).and('contain', 'HN discussion')

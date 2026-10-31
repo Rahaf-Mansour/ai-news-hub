@@ -45,6 +45,13 @@ export function stripLeadingEmoji(value: string): string {
   return value.replace(/^(?:[\p{Extended_Pictographic}\p{Emoji_Modifier}\p{Regional_Indicator}\s]|\u200d|\ufe0f)+/u, '')
 }
 
+/** Many feeds open the summary with the title again; drop that repeat ("Octoverse 2026 I'm at…" → "I'm at…"). */
+export function stripTitlePrefix(summary: string, title: string): string {
+  const t = title.trim().toLowerCase()
+  if (t.length < 8 || !summary.toLowerCase().startsWith(t)) return summary
+  return summary.slice(t.length).replace(/^[\s\-–—:|.,]+/, '')
+}
+
 /** Cut at a word boundary and add an ellipsis. */
 export function truncate(value: string, max: number): string {
   if (value.length <= max) return value

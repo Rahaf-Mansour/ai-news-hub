@@ -5,7 +5,7 @@ A daily, role-tagged digest of AI news, Claude releases and learning resources, 
 - **Today**: the 5–8 most important items from the last 48 hours, one lead story plus role groups.
 - **Tabs**: All · Claude · Full-stack · SE · PM · QA · Saved · Repos · Learn, with unread counts, search (matches highlighted in titles) and filters; with no hash in the address, the tab you used last reopens. QA splits into Manual & exploratory · Automation · Testing AI; Full-stack into Frontend · Backend.
 - **Claude**: a release timeline checked against Anthropic's own pages, plus the Claude feed.
-- **Repos**: 32 repos with stars and last push from the GitHub API, or "not verified".
+- **Repos**: 32 hand-picked repos (the list changes only when `ingest/repos.config.ts` does). Stars, last push, license and archived state are re-read from the GitHub API every day; if a lookup fails, the card keeps its last verified numbers marked "as of <date>", and a repo never verified shows "not verified".
 - **Learn**: three ordered tracks, *AI-enabled Producer*, *QA in the AI era* and *AI for full-stack engineers*, with progress you can tick off.
 - **Model watch**: links out to Arena, Artificial Analysis and Epoch AI (no scraped numbers).
 
@@ -42,7 +42,7 @@ Other scripts:
 5. **LLM (optional).** See below.
 6. **Score and write.** Items are scored by trust tier, recency, Claude relevance and launches (routine patch releases score lower) and written to:
    - `data/archive/YYYY-MM.json`: the full history, one file per month, committed to git.
-   - `public/data/items.json`: the last 30 days, which the site loads.
+   - `public/data/items.json`: the last 30 days by publish date, which the site loads. Older items drop off the site on the next daily run but stay in the archive; anything you saved stays in your Saved tab.
    - `public/data/repos.json` and `public/data/sources-status.json`.
 7. **Test, then commit.** Lint, typecheck, Vitest, build and Cypress must pass before the day's data is committed back to `main`.
 
@@ -102,7 +102,7 @@ The next run (or a manual "Run workflow") builds and deploys. The site uses rela
 
 - **Concept: a daily run report.** The masthead reads like a test-run summary ("✓ 23 sources passed · 156 items · +12 new since your last visit"), because the data really is a daily run, and the test-report idiom is familiar to the engineers and testers who read it. A diff-style **+** in the gutter marks items first seen since your last visit.
 - **Type.** *Bricolage Grotesque* (display; variable width and optical size) for the wordmark and headlines, *Literata* (a reading serif built for screens) for summaries, and *JetBrains Mono* for dates, tiers and counts. All from Google Fonts with system fallbacks.
-- **Color.** Bright paper with an indigo accent and violet and teal partners; the hero has a soft mesh of all three and the lead story a gradient border. Each lens has its own hue (Claude clay, Full-stack blue, SE cyan, PM amber, QA green) on tab dots and filled active tabs, card spines, Today's column headers and Learn's progress. Each role has two tones: a vivid one for spines, dots and bars, and a darker one for text and filled pills, so every text pair passes WCAG AA in both themes. Tier badges are pills: Official indigo, Editorial violet, Community orange. Dark mode is designed separately (deep navy, lifted tints), not inverted. It follows the OS setting, and a System → Light → Dark toggle overrides it.
+- **Color.** Bright paper with an indigo accent and violet and teal partners; the hero has a soft mesh of all three and the lead story a gradient border. Each lens has its own hue (Claude clay, Full-stack blue, SE cyan, PM amber, QA green) on tab dots and filled active tabs, card spines, Today's column headers and Learn's progress. Each role has two tones: a vivid one for spines, dots and bars, and a darker one for text and filled pills, so every text pair passes WCAG AA in both themes. Tier badges are pills: Official indigo, Editorial violet, Community orange. Dark mode is designed separately (deep navy, lifted tints), not inverted. It follows the OS setting on a first visit; the Light/Dark toggle then overrides it and is remembered.
 - **Trust tier badges** are coloured pills that always carry the word (Official, Editorial, Community), so colour is never the only signal.
 - **Motion.** One short staggered rise on Today when the page loads, a small hover lift on cards, plus link underline and read-state transitions. All motion is off under `prefers-reduced-motion`.
 - **Mobile.** One column, sticky section tabs that scroll sideways, and no horizontal page scroll (covered by a Cypress test).

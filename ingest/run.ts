@@ -116,7 +116,8 @@ export async function runIngest(opts: RunOptions): Promise<RunResult> {
   writeJson(join(publicDir, 'items.json'), itemsFile)
   writeJson(join(publicDir, 'sources-status.json'), { generatedAt: now.toISOString(), sources: statuses } satisfies SourcesStatusFile)
 
-  const { repos, failures } = await fetchRepos(REPOS, now, env.GITHUB_TOKEN, opts.fetchJson)
+  const previousRepos = readJson<ReposFile>(join(publicDir, 'repos.json'))?.repos ?? []
+  const { repos, failures } = await fetchRepos(REPOS, now, env.GITHUB_TOKEN, opts.fetchJson, previousRepos)
   for (const f of failures) log(`repo not verified: ${f}`)
   writeJson(join(publicDir, 'repos.json'), { generatedAt: now.toISOString(), repos } satisfies ReposFile)
 
