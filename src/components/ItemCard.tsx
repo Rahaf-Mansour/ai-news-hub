@@ -85,7 +85,6 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
             <button
               type="button"
               className="icon-btn"
-              aria-pressed={isRead}
               onClick={() => onToggleRead(item.id)}
               data-cy="toggle-read"
               title={isRead ? 'Marks this as unread again and adds it back to the unread counts' : 'Marks this as read and removes it from the unread counts'}
@@ -99,7 +98,7 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
               onClick={() => onToggleSave(item)}
               data-cy="toggle-save"
               title={isSaved ? 'Remove from Saved' : 'Keep this in the Saved tab (stays in this browser)'}
-              aria-label={isSaved ? `Remove bookmark: ${item.title}` : `Bookmark: ${item.title}`}
+              aria-label={`Save: ${item.title}`}
             >
               {isSaved ? '★ Saved' : '☆ Save'}
             </button>

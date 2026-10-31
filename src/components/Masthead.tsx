@@ -47,7 +47,11 @@ export function Masthead({ items, status, unread, newCount, savedCount, now, the
                 {failed > 0 && <span className="run__fail">✗ {failed} failed</span>}
               </>
             )}
-            {items && <span>{items.items.length} items · 30 days</span>}
+            {items && (
+              <span>
+                {items.items.length} items · {items.windowDays} days
+              </span>
+            )}
             {newCount > 0 && <span className="run__pass">+{newCount} new since your last visit</span>}
           </span>
         </div>
@@ -104,7 +108,7 @@ interface StatProps {
 
 function Stat({ icon, label, short, value, cy, tone }: StatProps) {
   return (
-    <div className={`stat stat--${tone}`} data-cy={cy} aria-live="polite">
+    <div className={`stat stat--${tone}`} data-cy={cy}>
       <dt>
         {icon}
         {short ? (

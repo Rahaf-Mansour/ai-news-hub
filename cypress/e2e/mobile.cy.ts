@@ -14,10 +14,20 @@ describe('Mobile layout', () => {
     })
   })
 
-  it('keeps the app bar short: search row on top, tabs beneath', () => {
+  it('keeps the app bar short: search row on top, tabs beneath with room between them', () => {
     cy.get('[data-cy=app-bar]').then(($bar) => expect($bar[0].getBoundingClientRect().height).to.be.at.most(112))
     cy.get('[data-cy=search]').then(($s) => {
-      cy.get('[data-cy=tab-all]').then(($t) => expect($t[0].getBoundingClientRect().top).to.be.greaterThan($s[0].getBoundingClientRect().bottom))
+      cy.get('[data-cy=tab-all]').then(($t) => expect($t[0].getBoundingClientRect().top - $s[0].getBoundingClientRect().bottom).to.be.at.least(8))
+    })
+  })
+
+  it('keeps the run strip compact: the date and "Updated" share a line, the next refresh fits on one', () => {
+    cy.get('[data-cy=run-date]').then(($d) => {
+      cy.get('[data-cy=last-updated]').should(($u) => expect($u[0].getBoundingClientRect().top).to.be.closeTo($d[0].getBoundingClientRect().top, 2))
+    })
+    cy.get('[data-cy=next-refresh]').should(($n) => {
+      expect(parseFloat(getComputedStyle($n[0]).fontSize)).to.be.at.most(12)
+      expect($n[0].getClientRects()).to.have.length(1)
     })
   })
 
@@ -52,15 +62,22 @@ describe('Mobile layout', () => {
     })
   })
 
-  it('stacks Model watch under the content, with a toggle that hides and shows it', () => {
+  it('stacks Model watch & sources under the content, behind a full-width bar that says what it holds', () => {
     cy.get('[data-cy=rail-toggle]').scrollIntoView().should('be.visible').and('have.attr', 'aria-expanded', 'true')
     cy.get('[data-cy=rail-toggle]').should(($b) => {
       // An ordinary button above the panel (not the fixed edge tab used on wide screens), big enough to tap.
       expect(getComputedStyle($b[0]).position).to.eq('static')
       expect($b[0].getBoundingClientRect().height).to.be.at.least(44)
     })
+    cy.feed().then(($f) =>
+      cy.get('[data-cy=rail-toggle]').should(($b) => expect($b[0].getBoundingClientRect().width).to.be.closeTo($f[0].getBoundingClientRect().width, 1)),
+    )
+    cy.get('[data-cy=rail-toggle]').should('contain', 'Model watch & sources')
+    cy.get('[data-cy=rail-toggle-desc]').should('be.visible').and('contain', 'all 3 sources')
+    cy.get('[data-cy=rail-toggle] .rail-toggle__state').should('be.visible').and('have.text', 'Hide panel')
     cy.get('[data-cy=model-watch]').should('be.visible')
-    cy.get('[data-cy=rail-toggle]').click().should('have.attr', 'aria-expanded', 'false').and('contain', 'Model watch')
+    cy.get('[data-cy=rail-toggle]').click().should('have.attr', 'aria-expanded', 'false')
+    cy.get('[data-cy=rail-toggle] .rail-toggle__state').should('have.text', 'Show')
     cy.get('[data-cy=model-watch]').should('not.be.visible')
     cy.get('[data-cy=rail-toggle]').click()
     cy.get('[data-cy=model-watch]').should('be.visible')

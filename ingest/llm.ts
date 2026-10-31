@@ -23,7 +23,7 @@ const EnrichmentSchema = z.object({
   items: z.array(
     z.object({
       id: z.string(),
-      roles: z.array(z.enum(['claude', 'se', 'pm', 'qa'])),
+      roles: z.array(z.enum(['claude', 'qa', 'pm', 'fs', 'se'])),
       summary: z.string(),
       why: z.string(),
     }),
@@ -35,11 +35,12 @@ export type Enricher = (batch: LlmInput[]) => Promise<LlmOutput[]>
 
 const SYSTEM = `You label AI news items for a public daily digest.
 
-Its readers are working software people (engineers, product managers and testers) who want to know what changed in AI for their role. The digest has four lenses:
+Its readers are working software people (engineers, product managers and testers) who want to know what changed in AI for their role. The digest has five lenses:
 - claude: Claude models, Claude Code, Anthropic products and API changes
-- se: software engineering with AI (coding agents, SDKs, developer tooling)
+- se: AI dev tools and agents (coding agents, AI IDEs, MCP, agent SDKs)
 - pm: product management with AI (discovery, PRDs, strategy, adoption, AI product sense)
 - qa: testing and quality (test automation, Cypress/Playwright, evals for LLM features, AI test tools)
+- fs: full-stack engineering, building AI features into web apps (frontend, backend, AI SDKs, RAG, vector search, .NET/Java/Node)
 
 For each item you get a title, a source name and a short excerpt. Return, for every item, using its id:
 - roles: the lenses it is genuinely useful for (one or more; most items fit one or two).
