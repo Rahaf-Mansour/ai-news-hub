@@ -23,6 +23,15 @@ describe('Page layout: sticky app bar', () => {
     cy.get('[data-cy=back-to-top]').should('not.be.visible')
   })
 
+  it('credits the author in the footer and the hero, with working profile links', () => {
+    cy.visitHub()
+    cy.get('[data-cy=author-credit]').should('contain', 'Designed & built by Rahaf Mansour')
+    cy.get('[data-cy=author-credit] a[href="https://github.com/Rahaf-Mansour"]').should('have.attr', 'target', '_blank')
+    cy.get('[data-cy=author-credit] a[href="https://www.linkedin.com/in/rahafmansour/"]').should('contain', 'LinkedIn')
+    cy.get('[data-cy=author-credit] a[href="https://github.com/Rahaf-Mansour/ai-news-hub"]').should('contain', 'View source')
+    cy.get('.byline').should('contain', 'by Rahaf Mansour')
+  })
+
   it('shows when the next automatic refresh is, with a countdown', () => {
     cy.visitHub() // clock: Oct 31 08:00 UTC → next run Nov 1 05:30 UTC
     cy.get('[data-cy=next-refresh]')

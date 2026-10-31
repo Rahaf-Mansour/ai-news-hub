@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { AppBar, type TabDef } from './components/AppBar'
 import { BackToTop } from './components/BackToTop'
+import { CodeIcon, GitHubIcon, LinkedInIcon } from './components/Icons'
+import { AUTHOR_LINKS, AUTHOR_NAME } from './content/author'
 import { Feed } from './components/Feed'
 import type { ItemActions } from './components/ItemCard'
 import { Learn } from './components/Learn'
@@ -166,6 +168,14 @@ export default function App() {
         theme={theme}
         onTheme={changeTheme}
         runExtra={items && <NextRefresh generatedAt={items.generatedAt} />}
+        byline={
+          <p className="byline">
+            by{' '}
+            <a href={AUTHOR_LINKS.github} target="_blank" rel="noopener noreferrer">
+              {AUTHOR_NAME}
+            </a>
+          </p>
+        }
       />
       <AppBar
         tabs={tabs}
@@ -213,6 +223,28 @@ export default function App() {
       <BackToTop focusTarget={searchRef} />
       <footer className="footer">
         <div className="wrap">
+          <div className="credit" data-cy="author-credit">
+            <p className="credit__name">
+              Designed &amp; built by <strong>{AUTHOR_NAME}</strong>
+            </p>
+            <ul className="credit__links">
+              <li>
+                <a href={AUTHOR_LINKS.github} target="_blank" rel="noopener noreferrer">
+                  <GitHubIcon /> GitHub
+                </a>
+              </li>
+              <li>
+                <a href={AUTHOR_LINKS.linkedin} target="_blank" rel="noopener noreferrer">
+                  <LinkedInIcon /> LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href={AUTHOR_LINKS.repo} target="_blank" rel="noopener noreferrer">
+                  <CodeIcon /> View source
+                </a>
+              </li>
+            </ul>
+          </div>
           <p>
             Every item links to its original source. This page shows titles, links and one-line summaries only, never article text. Without the
             optional LLM step, a summary is the publisher’s own feed description, shortened.
