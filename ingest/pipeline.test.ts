@@ -5,6 +5,7 @@ import { enrichItems, llmEnabled, type Enricher } from './llm'
 import { canonicalUrl, titleSimilarity } from './normalize'
 import { fetchRepos } from './repos'
 import { ruleAreas, ruleRoles } from './tagger'
+import { stripLeadingEmoji } from './text'
 
 const NOW = new Date('2026-10-31T06:00:00Z')
 
@@ -206,6 +207,24 @@ describe('Full-stack role and areas', () => {
     expect(ruleAreas('Security releases', '', ['fs'], ['backend'])).toEqual(['backend'])
     expect(ruleAreas('Security releases', '', ['qa'], ['backend'])).toEqual([])
     expect(retag(item({ roles: ['fs'], title: 'This week', tagMethod: 'source' }), source({ roles: ['fs'], areas: ['backend'] })).areas).toEqual(['backend'])
+  })
+})
+
+describe('stripLeadingEmoji', () => {
+  it('drops emoji and spaces at the start of a summary, including ZWJ sequences and flags', () => {
+    expect(stripLeadingEmoji('🎉 Claude Code GitHub Action v1.0 is out')).toBe('Claude Code GitHub Action v1.0 is out')
+    expect(stripLeadingEmoji('✨ Highlights 👥 Separate sessions')).toBe('Highlights 👥 Separate sessions')
+    expect(stripLeadingEmoji('👩‍💻🇬🇧 Notes')).toBe('Notes')
+  })
+  it('keeps text that starts with a digit, a symbol or a word', () => {
+    expect(stripLeadingEmoji('3 new rules')).toBe('3 new rules')
+    expect(stripLeadingEmoji('#1 tip: test first')).toBe('#1 tip: test first')
+    expect(stripLeadingEmoji('Plain text')).toBe('Plain text')
+  })
+  it('is applied to new items and to archived ones when they are retagged', () => {
+    const { item: fresh } = toItem({ title: 'T', url: 'https://x.test/e', publishedAt: null, excerpt: '🚀 Launch notes' }, source({}), new Date('2026-10-31T00:00:00Z'))
+    expect(fresh.summary).toBe('Launch notes')
+    expect(retag(item({ summary: '✨ Old summary' }), undefined).summary).toBe('Old summary')
   })
 })
 

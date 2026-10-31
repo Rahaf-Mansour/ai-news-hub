@@ -13,6 +13,13 @@ describe('Search and filters', () => {
     cy.feed().find('[data-cy=item]').should('have.length', 13)
   })
 
+  it('highlights the searched words in titles', () => {
+    cy.get('[data-cy=search]').type('self-healing cy.prompt')
+    cy.feed().find('[data-cy=item-link] mark').should('have.length', 2).first().should('have.text', 'cy.prompt')
+    cy.get('[data-cy=search]').clear()
+    cy.feed().find('mark').should('not.exist')
+  })
+
   it('hides Today while searching so results come first', () => {
     cy.get('[data-cy=today]').should('be.visible')
     cy.get('[data-cy=search]').type('haiku')

@@ -2,12 +2,17 @@ import type { CSSProperties } from 'react'
 import { fullDate, relativeDate } from '../lib/format'
 import { primaryRole, ROLE_LABEL, TIER_HELP, TIER_LABEL } from '../lib/roles'
 import type { Item } from '../types'
+import { Highlight } from './Highlight'
 
 export interface ItemActions {
   read: ReadonlySet<string>
   saved: ReadonlySet<string>
   newSince: string | null
   now: Date
+  /** The current search, highlighted in titles. */
+  highlight: string
+  /** "Why it matters" lines only exist when the LLM step ran; hide stale ones otherwise. */
+  showWhy: boolean
   onOpen: (id: string) => void
   onToggleRead: (id: string) => void
   /** Gets the whole item so a snapshot can be kept with the bookmark. */
@@ -20,7 +25,7 @@ interface Props extends ItemActions {
   index?: number
 }
 
-export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSince, now, onOpen, onToggleRead, onToggleSave }: Props) {
+export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSince, now, highlight, showWhy, onOpen, onToggleRead, onToggleSave }: Props) {
   const isRead = read.has(item.id)
   const isSaved = saved.has(item.id)
   const isNew = !isRead && newSince !== null && item.firstSeenAt > newSince
@@ -51,7 +56,7 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
         </div>
         <Heading className="item__title">
           <a href={item.url} target="_blank" rel="noopener noreferrer" onClick={() => onOpen(item.id)} data-cy="item-link">
-            {item.title}
+            <Highlight text={item.title} query={highlight} />
           </a>
         </Heading>
         {item.summary && (
@@ -59,7 +64,7 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
             {item.summary}
           </p>
         )}
-        {item.whyItMatters && (
+        {showWhy && item.whyItMatters && (
           <p className="item__why" data-cy="item-why">
             <b>Why it matters</b>
             {item.whyItMatters}

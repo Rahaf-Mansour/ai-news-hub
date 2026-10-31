@@ -28,6 +28,7 @@
   --teal-ink: #0f766e;
   --orange-ink: #b03a0a;
   --gold: #d97706;
+  --mark: #fde68a;
   --new: #166c38;
   --warn: #b4441a;
   --on-role: #ffffff;
@@ -85,6 +86,7 @@
     --teal-ink: #4fd8c8;
     --orange-ink: #fb9a5b;
     --gold: #f8c057;
+    --mark: #5b4410;
     --new: #6fdc96;
     --warn: #f6a07a;
     --on-role: #0b1020;
@@ -124,6 +126,7 @@
   --teal-ink: #4fd8c8;
   --orange-ink: #fb9a5b;
   --gold: #f8c057;
+  --mark: #5b4410;
   --new: #6fdc96;
   --warn: #f6a07a;
   --on-role: #0b1020;
@@ -425,7 +428,13 @@ button {
   line-height: 1.12;
   font-variation-settings: 'wdth' 88, 'opsz' 72;
 }
-.lead .item__summary {
+.lead mark {
+  padding: 0 0.1em;
+  border-radius: 3px;
+  background: var(--mark);
+  color: inherit;
+}
+.item__summary {
   font-size: var(--step-1);
 }
 .today__groups {

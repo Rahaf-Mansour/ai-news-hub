@@ -53,8 +53,9 @@ const FACETS: Partial<Record<Role, { label: string; options: { id: Area; label: 
   },
 }
 
+/** The tab in the URL hash; with no hash, the tab open last time (or All). */
 const tabFromHash = (): Tab => {
-  const token = window.location.hash.replace(/^#/, '')
+  const token = window.location.hash.replace(/^#/, '') || getItem(KEYS.lastTab)
   return (TABS.find((t) => t.id === token)?.id ?? 'all') as Tab
 }
 
@@ -138,6 +139,8 @@ export default function App() {
     setItem(KEYS.saved, null)
   }, [items, addSavedItems])
 
+  useEffect(() => setItem(KEYS.lastTab, tab), [tab])
+
   useEffect(() => {
     const onHash = () => setTab(tabFromHash())
     window.addEventListener('hashchange', onHash)
@@ -212,6 +215,8 @@ export default function App() {
     saved: savedItems.ids,
     newSince,
     now,
+    highlight: query,
+    showWhy: items?.llmEnabled ?? false,
     onOpen: (id) => read.add([id]),
     onToggleRead: read.toggle,
     onToggleSave: (item) => notifySaved(savedItems.toggle(item.id, item)),
