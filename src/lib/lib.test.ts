@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import type { Item } from '../types'
-import { countUnread, EMPTY_FILTER, filterItems } from './filter'
+import type { Item, Repo } from '../types'
+import { countUnread, EMPTY_FILTER, filterItems, matchesRepo, matchesStep } from './filter'
 import { formatStars, relativeDate } from './format'
 import { selectToday } from './today'
 
@@ -85,6 +85,27 @@ describe('filterItems', () => {
   it('counts unread per role', () => {
     expect(countUnread(all, new Set([a.id]))).toBe(1)
     expect(countUnread(all, new Set([a.id]), 'qa')).toBe(0)
+  })
+})
+
+describe('matchesRepo and matchesStep', () => {
+  const repo: Repo = {
+    fullName: 'microsoft/playwright-mcp', why: 'Give an agent a browser.', roles: ['qa', 'se'], note: 'Apache licensed',
+    url: 'u', stars: 1, lastCommit: null, archived: false, license: 'Apache-2.0', verifiedAt: null,
+  }
+  it('matches repo name, why line, license and role labels, every word required', () => {
+    expect(matchesRepo(repo, 'playwright')).toBe(true)
+    expect(matchesRepo(repo, 'agent browser')).toBe(true)
+    expect(matchesRepo(repo, 'apache-2.0')).toBe(true)
+    expect(matchesRepo(repo, 'qa')).toBe(true)
+    expect(matchesRepo(repo, 'playwright cypress')).toBe(false)
+    expect(matchesRepo(repo, '')).toBe(true)
+  })
+  const step = { id: 's', title: 'cy.prompt basics', url: 'u', source: 'Cypress blog', minutes: 5, why: 'Plain English tests.' }
+  it('matches step title, source, why and the track name', () => {
+    expect(matchesStep(step, 'QA in the AI era', 'cypress english')).toBe(true)
+    expect(matchesStep(step, 'QA in the AI era', 'era')).toBe(true)
+    expect(matchesStep(step, 'QA in the AI era', 'playwright')).toBe(false)
   })
 })
 

@@ -1,16 +1,29 @@
 import { TRACKS } from '../content/learn'
+import { matchesStep } from '../lib/filter'
 import { KEYS, useStoredSet } from '../lib/storage'
 
-export function Learn() {
+export function Learn({ query }: { query: string }) {
   const done = useStoredSet(KEYS.learn)
+  const visible = TRACKS.map((track) => ({
+    track,
+    steps: track.steps.map((step, index) => ({ step, index })).filter(({ step }) => matchesStep(step, track.name, query)),
+  })).filter((t) => t.steps.length > 0)
+
   return (
     <section aria-labelledby="learn-heading" data-cy="learn">
       <div className="section-head">
         <h2 id="learn-heading">Learn</h2>
-        <p>Two tracks, in order. Tick a step when you finish it; progress stays in this browser.</p>
+        <p>
+          {TRACKS.length === 2 ? 'Two' : TRACKS.length} tracks, in order. Tick a step when you finish it; progress stays in this browser.
+        </p>
       </div>
+      {visible.length === 0 && (
+        <p className="empty" data-cy="no-results">
+          No steps match “{query}”. Clear the search to see every track.
+        </p>
+      )}
       <div className="tracks">
-        {TRACKS.map((track) => {
+        {visible.map(({ track, steps }) => {
           const completed = track.steps.filter((s) => done.set.has(s.id)).length
           const hours = Math.round(track.steps.reduce((sum, s) => sum + s.minutes, 0) / 30) / 2
           return (
@@ -26,11 +39,16 @@ export function Learn() {
               <p className="mono" style={{ margin: 0 }} data-cy="track-progress">
                 {completed} of {track.steps.length} done
               </p>
+              {query && steps.length < track.steps.length && (
+                <p className="mono" style={{ color: 'var(--ink-3)', margin: '0.4rem 0 0' }} data-cy="track-matches">
+                  {steps.length} of {track.steps.length} steps match
+                </p>
+              )}
               <ol className="steps">
-                {track.steps.map((step) => {
+                {steps.map(({ step, index }) => {
                   const isDone = done.set.has(step.id)
                   return (
-                    <li key={step.id} className={`step${isDone ? ' step--done' : ''}`}>
+                    <li key={step.id} className={`step${isDone ? ' step--done' : ''}`} data-cy="learn-step">
                       <input
                         id={`step-${step.id}`}
                         type="checkbox"
@@ -40,7 +58,7 @@ export function Learn() {
                       />
                       <div>
                         <a className="step__title" href={step.url} target="_blank" rel="noopener noreferrer">
-                          {step.title}
+                          <span className="step__num">{String(index + 1).padStart(2, '0')}</span> {step.title}
                         </a>
                         <div className="mono" style={{ color: 'var(--ink-3)' }}>
                           {step.source} · {step.minutes} min

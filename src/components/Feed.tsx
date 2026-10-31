@@ -33,22 +33,6 @@ export function Feed({ items, total, filter, setFilter, onMarkAllRead, label, ..
   return (
     <section aria-label={`${label} feed`} data-cy="feed">
       <div className="toolbar">
-        <label className="search">
-          <span className="sr-only">Search {label}</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <circle cx="7" cy="7" r="5" stroke="currentColor" strokeWidth="1.6" />
-            <path d="m11 11 3.5 3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-          </svg>
-          <input
-            id="search"
-            type="search"
-            placeholder={`Search ${label.toLowerCase()}: titles, summaries, sources`}
-            value={filter.query}
-            onChange={(e) => setFilter({ ...filter, query: e.target.value })}
-            data-cy="search"
-            autoComplete="off"
-          />
-        </label>
         <div className="filters" role="group" aria-label="Show">
           {SHOW.map((s) => (
             <button
@@ -108,7 +92,7 @@ export function Feed({ items, total, filter, setFilter, onMarkAllRead, label, ..
 
       {items.length === 0 ? (
         <p className="empty" data-cy="no-results">
-          No items match. Clear the search or turn off a filter.
+          {filter.query ? `No items match “${filter.query}”.` : 'No items match.'} Clear the search or turn off a filter.
         </p>
       ) : (
         <div>

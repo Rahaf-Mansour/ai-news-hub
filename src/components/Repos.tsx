@@ -1,18 +1,19 @@
 import { useMemo, useState } from 'react'
+import { matchesRepo } from '../lib/filter'
 import { formatStars, shortDate } from '../lib/format'
 import { ROLE_LABEL, ROLE_ORDER } from '../lib/roles'
 import type { Repo, ReposFile, Role } from '../types'
 
 const STALE_DAYS = 120
 
-export function Repos({ data, now }: { data: ReposFile | null; now: Date }) {
+export function Repos({ data, now, query }: { data: ReposFile | null; now: Date; query: string }) {
   const [role, setRole] = useState<Role | null>(null)
   const repos = useMemo(
     () =>
       (data?.repos ?? [])
-        .filter((r) => !role || r.roles.includes(role))
+        .filter((r) => (!role || r.roles.includes(role)) && matchesRepo(r, query))
         .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1)),
-    [data, role],
+    [data, role, query],
   )
   if (!data) return <p className="empty">Repo data is not available yet. Run the daily job to fetch it.</p>
   const verified = data.repos.filter((r) => r.verifiedAt).length
@@ -37,7 +38,17 @@ export function Repos({ data, now }: { data: ReposFile | null; now: Date }) {
           ))}
         </div>
       </div>
-      <div className="repo-table-wrap">
+      <div className="result-line mono" aria-live="polite">
+        <span data-cy="repos-count">
+          {repos.length} of {data.repos.length} repos
+        </span>
+      </div>
+      {repos.length === 0 && (
+        <p className="empty" data-cy="no-results">
+          No repos match{query ? ` “${query}”` : ''}. Clear the search or pick another role.
+        </p>
+      )}
+      <div className="repo-table-wrap" hidden={repos.length === 0}>
         <table className="repo-table">
           <thead>
             <tr>

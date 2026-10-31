@@ -14,6 +14,13 @@ describe('Mobile layout', () => {
     })
   })
 
+  it('keeps the app bar short: search row on top, tabs beneath', () => {
+    cy.get('[data-cy=app-bar]').then(($bar) => expect($bar[0].getBoundingClientRect().height).to.be.at.most(112))
+    cy.get('[data-cy=search]').then(($s) => {
+      cy.get('[data-cy=tab-all]').then(($t) => expect($t[0].getBoundingClientRect().top).to.be.greaterThan($s[0].getBoundingClientRect().bottom))
+    })
+  })
+
   it('stacks Today into a single column', () => {
     cy.get('.today__groups')
       .should('have.css', 'grid-template-columns')
