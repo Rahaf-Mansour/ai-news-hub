@@ -36,7 +36,7 @@ Other scripts:
 `.github/workflows/daily.yml` runs at **05:30 UTC** every day (and on demand from the Actions tab):
 
 1. **Fetch.** `ingest/run.ts` fetches the 41 sources in `ingest/sources.ts`, six at a time, each with a 20-second timeout. A source that fails is logged, recorded in `public/data/sources-status.json` with its error and last success, and skipped. The run fails only if *every* source fails, and then it leaves the published data untouched.
-2. **Normalize.** URLs are canonicalized (https, no `www.`, tracking params removed, sorted query). Feed text is cut to a 180-character summary; article bodies are never stored.
+2. **Normalize.** URLs are canonicalized (https, no `www.`, tracking params removed, sorted query). Feed text is cut to a summary of at most 400 characters, shown as three lines (more fit when the side panel is hidden); article bodies are never stored.
 3. **Tag.** Keyword rules in `ingest/tagger.ts` assign Claude / QA / PM / Full-stack / SE, plus areas inside QA and Full-stack (a title match, or two different terms in the summary). Focused sources (the Cypress blog, Claude Code releases) always carry their own roles; general newsletters only fall back to a default role when no rule matches, and those items are marked for the LLM.
 4. **Dedupe.** The same canonical URL, or near-identical titles (token Jaccard ≥ 0.85) from different sources within three days, merge into one item. The higher trust tier wins; roles are combined and a Hacker News discussion link is kept.
 5. **LLM (optional).** See below.
@@ -129,7 +129,7 @@ Example: `cy.get('[data-cy=item][data-id=fx-lenny] [data-cy=toggle-read]')`.
 
 - No analytics, cookies or third-party scripts. The only external request is the Google Fonts stylesheet.
 - Read state, bookmarks, learning progress and theme live in `localStorage` in your browser only.
-- Every item links to its source. The site stores and shows **titles, links and one-line summaries only**, never article bodies. With the LLM on, summaries are written by the model. **With it off, the summary is the publisher's own feed description cut to 180 characters**, which the footer says. To show titles only instead, set `summary: ''` in `toItem()` in `ingest/build.ts`.
+- Every item links to its source. The site stores and shows **titles, links and one-line summaries only**, never article bodies. With the LLM on, summaries are written by the model. **With it off, the summary is the publisher's own feed description cut to 400 characters and shown as a few lines**, which the footer says. To show titles only instead, set `summary: ''` in `toItem()` in `ingest/build.ts`.
 - Repo licenses are shown when GitHub reports one. Non-commercial ones are flagged (Product-Manager-Skills is CC BY-NC-SA 4.0; qodo-cover is AGPL-3.0).
 
 ## Known limitations

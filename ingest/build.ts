@@ -3,7 +3,7 @@ import { canonicalUrl, itemId, titleSimilarity } from './normalize'
 import { ruleAreas, ruleRoles, sortRoles } from './tagger'
 import { stripLeadingEmoji, stripTitlePrefix, truncate } from './text'
 
-export const SUMMARY_MAX = 180
+export const SUMMARY_MAX = 400
 
 /**
  * The text the role rules read besides the title. Release notes are changelogs full of

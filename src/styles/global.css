@@ -548,6 +548,12 @@ button {
   max-width: var(--measure);
   color: var(--ink-2);
   overflow-wrap: anywhere;
+  /* Summaries are stored up to 400 characters; show three lines, so a wider column shows more of them. */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
 }
 .item__why {
   margin: 0.5rem 0 0;
@@ -840,13 +846,44 @@ body::before {
   flex-direction: column;
   gap: 1.75rem;
 }
-/* Panel closed: the content takes the full width; the reopen button sits in a slim row above it. */
-.page--wide {
-  grid-template-columns: minmax(0, 1fr);
-  row-gap: 0.5rem;
+/*
+  Panel closed (wide screens only): the content takes the whole width and the
+  reopen button becomes a tab fixed to the right edge, so nothing in the page
+  moves. Below 1021px the panel stacks under the content and stays open.
+*/
+@media (min-width: 1021px) {
+  .page--wide {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0;
+    /* Keep the content clear of the edge tab when the window leaves no outer margin. */
+    padding-right: max(var(--gutter-r), calc(48px - max(0px, (100vw - 1240px) / 2)));
+  }
+  .rail--closed .rail__panels {
+    display: none;
+  }
+  .rail--closed .rail-toggle {
+    position: fixed;
+    top: calc(env(safe-area-inset-top, 0px) + var(--appbar-h, 64px) + 1.5rem);
+    right: env(safe-area-inset-right, 0px);
+    z-index: 6;
+    writing-mode: vertical-rl;
+    gap: 0.5rem;
+    padding: 0.85rem 0.45rem;
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+    box-shadow: var(--shadow);
+  }
+  /* With the panel closed, text uses the extra width instead of a fixed reading measure. */
+  .page--wide .item__summary,
+  .page--wide .item__why,
+  .page--wide .tracks {
+    max-width: none;
+  }
 }
-.rail--closed {
-  order: -1;
+@media (max-width: 1020px) {
+  .rail .rail-toggle {
+    display: none;
+  }
 }
 .rail-toggle {
   align-self: flex-end;
@@ -1787,5 +1824,10 @@ details.panel[open] summary::after {
   }
   .item__actions {
     margin-left: 0;
+  }
+  /* Narrow column: one more line of summary. */
+  .item__summary {
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
   }
 }

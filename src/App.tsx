@@ -368,12 +368,11 @@ export default function App() {
                 </>
               )}
             </button>
-            {railOpen && (
-              <div id="rail-panels" className="rail__panels">
-                <ModelWatch />
-                <RunLog status={status} now={now} />
-              </div>
-            )}
+            {/* Always rendered: on narrow screens the panel stacks under the content and cannot be closed (see CSS). */}
+            <div id="rail-panels" className="rail__panels" data-cy="rail-panels">
+              <ModelWatch />
+              <RunLog status={status} now={now} />
+            </div>
           </aside>
         </div>
       </main>
@@ -418,7 +417,7 @@ export default function App() {
                 You get a title, a short summary and a link to the original, never the article itself.{' '}
                 {items?.llmEnabled
                   ? 'Summaries and “Why it matters” lines are written by an AI model from each item’s title and opening lines.'
-                  : 'Each summary is the publisher’s own description, trimmed to a line or two.'}
+                  : 'Each summary is the publisher’s own description, trimmed to a few lines.'}
               </p>
             </section>
             <section>
