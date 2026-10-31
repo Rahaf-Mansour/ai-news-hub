@@ -44,15 +44,25 @@ export function AppBar({ tabs, current, query, onQuery, placeholder, inputRef, b
     }
   }, [])
 
-  // Keep the open tab in view when it changes (a hash link, or the remembered tab on load).
+  // Keep the open tab in view when it changes (a hash link, or the remembered tab on load), leaving
+  // room for the "›" arrow. Tab widths change after the first render (counts arrive with the data,
+  // the mono font for them loads late), so it re-checks whenever any tab is resized.
   useEffect(() => {
-    const active = listRef.current?.querySelector<HTMLElement>('[aria-current="page"]')
-    if (!active || !listRef.current) return
     const list = listRef.current
-    const left = active.offsetLeft - list.offsetLeft
-    if (left < list.scrollLeft || left + active.offsetWidth > list.scrollLeft + list.clientWidth) {
-      list.scrollTo({ left: Math.max(0, left - 16) })
+    if (!list) return
+    const ARROW_ROOM = 48
+    const reveal = () => {
+      const active = list.querySelector<HTMLElement>('[aria-current="page"]')
+      if (!active) return
+      const l = list.getBoundingClientRect()
+      const a = active.getBoundingClientRect()
+      if (a.left < l.left) list.scrollLeft += a.left - l.left - 16
+      else if (a.right > l.right - ARROW_ROOM) list.scrollLeft += a.right - (l.right - ARROW_ROOM)
     }
+    reveal()
+    const ro = new ResizeObserver(reveal)
+    list.querySelectorAll('.tab').forEach((tab) => ro.observe(tab))
+    return () => ro.disconnect()
   }, [current])
 
   const scrollMore = () =>
