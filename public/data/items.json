@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T13:32:17.830Z",
+  "generatedAt": "2026-10-31T14:09:19.862Z",
   "llmEnabled": false,
   "windowDays": 30,
   "items": [
@@ -19,7 +19,7 @@
       "tagMethod": "source",
       "summary": "It turns out you cannot have your cake AND eat it",
       "summaryBy": "feed",
-      "score": 5.16
+      "score": 5.1
     },
     {
       "id": "974417e7a49a",
@@ -39,7 +39,7 @@
       "tagMethod": "source",
       "summary": "🎉 Claude Code GitHub Action v1.0 - Now Generally Available! We're excited to announce the v1.0 release of Claude Code GitHub Action! This major release brings significant…",
       "summaryBy": "feed",
-      "score": 7.33
+      "score": 7.28
     },
     {
       "id": "ef8717c59fcc",
@@ -59,7 +59,7 @@
       "tagMethod": "source",
       "summary": "Full Changelog: v1.0.265...v1.0.266",
       "summaryBy": "feed",
-      "score": 4.83
+      "score": 4.78
     },
     {
       "id": "1ac62f843edf",
@@ -78,7 +78,7 @@
       "tagMethod": "source",
       "summary": "What's changed Added CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off Added pooled group budgets to the Claude apps gateway: one monthly budget that a…",
       "summaryBy": "feed",
-      "score": 4.83
+      "score": 4.78
     },
     {
       "id": "1ad66cf690a9",
@@ -97,7 +97,7 @@
       "summary": "90 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50311311",
-      "score": 5.18
+      "score": 5.14
     },
     {
       "id": "4e2c9c66b20a",
@@ -115,7 +115,7 @@
       "tagMethod": "source",
       "summary": "dbreunig/nesformer Inspired by qwenputer by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B…",
       "summaryBy": "feed",
-      "score": 4.6
+      "score": 4.55
     },
     {
       "id": "1da35e307aba",
@@ -134,7 +134,7 @@
       "summary": "56 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50309534",
-      "score": 3.47
+      "score": 3.43
     },
     {
       "id": "b329cc4aaa4c",
@@ -153,7 +153,7 @@
       "summary": "312 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50307219",
-      "score": 4.79
+      "score": 4.75
     },
     {
       "id": "9b894388109d",
@@ -172,7 +172,7 @@
       "summary": "110 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50304358",
-      "score": 4.6
+      "score": 4.57
     },
     {
       "id": "16b93e4bcaff",
@@ -191,7 +191,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 8.47
+      "score": 8.43
     },
     {
       "id": "7e2aaf184ac3",
@@ -210,7 +210,7 @@
       "summary": "655 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50302334",
-      "score": 4.42
+      "score": 4.39
     },
     {
       "id": "a510883f6a1b",
@@ -230,7 +230,7 @@
       "summary": "399 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50301983",
-      "score": 5.38
+      "score": 5.35
     },
     {
       "id": "371b1e06db16",
@@ -248,7 +248,7 @@
       "tagMethod": "rules",
       "summary": "Mistral’s open-weight release, frontier monitoring, and the day’s AI Twitter and Reddit recaps.",
       "summaryBy": "feed",
-      "score": 3.78
+      "score": 3.75
     },
     {
       "id": "bf5aaab63512",
@@ -268,7 +268,7 @@
       "summary": "923 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50300683",
-      "score": 4.22
+      "score": 4.19
     },
     {
       "id": "746b667bc457",
@@ -288,7 +288,7 @@
       "tagMethod": "source",
       "summary": "Full Changelog: v1.0.264...v1.0.265",
       "summaryBy": "feed",
-      "score": 3.46
+      "score": 3.43
     },
     {
       "id": "d820d0beaa38",
@@ -307,7 +307,7 @@
       "tagMethod": "source",
       "summary": "What's changed Added permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission mode Added an…",
       "summaryBy": "feed",
-      "score": 3.45
+      "score": 3.43
     },
     {
       "id": "bf60815ae1a8",
@@ -325,7 +325,7 @@
       "tagMethod": "source",
       "summary": "How to ace PM interview presentations and take-home homework in the AI era: who assigns it, two worked examples, the AI toolkit and the process.",
       "summaryBy": "feed",
-      "score": 3.45
+      "score": 3.42
     },
     {
       "id": "a7c615ba377d",
@@ -343,7 +343,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 3.41
+      "score": 3.39
     },
     {
       "id": "32e3919a0587",
@@ -361,7 +361,7 @@
       "tagMethod": "rules",
       "summary": "API credits benefit for eligible ChatGPT subscriptions Earlier this month Anthropic announced a generous new benefit for their Max and Team subscriptions: $100, $200, and $500…",
       "summaryBy": "feed",
-      "score": 3.36
+      "score": 3.34
     },
     {
       "id": "849640f5ae5b",
@@ -380,7 +380,7 @@
       "summary": "52 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50294486",
-      "score": 3.74
+      "score": 3.72
     },
     {
       "id": "11ef932bb8b9",
@@ -399,7 +399,7 @@
       "summary": "124 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50292727",
-      "score": 3.67
+      "score": 3.65
     },
     {
       "id": "a80dd20eaec8",
@@ -418,7 +418,7 @@
       "tagMethod": "rules",
       "summary": "How I Built the Most AI-Pilled Company in the World Don't be put off by the clickbait headline, this piece by Jacob Sansbury describing how they are building Spawn is a…",
       "summaryBy": "feed",
-      "score": 4.66
+      "score": 4.64
     },
     {
       "id": "e3d51db105fb",
@@ -436,7 +436,7 @@
       "tagMethod": "source",
       "summary": "Welcome back to another Ambassador Spotlight. Every post in this series introduces you to one of the people quietly holding up the Cypress community, including where they…",
       "summaryBy": "feed",
-      "score": 4.14
+      "score": 4.12
     },
     {
       "id": "2df0e95472f6",
@@ -454,7 +454,7 @@
       "tagMethod": "source",
       "summary": "A new decoy counting benchmark exposes a gap between seeing and reasoning. Elorian’s Glimpse tries to bridge it by thinking with images.",
       "summaryBy": "feed",
-      "score": 3.13
+      "score": 3.11
     },
     {
       "id": "502de87809f2",
@@ -472,7 +472,7 @@
       "tagMethod": "source",
       "summary": "every product i use should just be a headless mcp, that feeds into an agent, where i never have to think about anything underneath. except for our product, of course. in our…",
       "summaryBy": "feed",
-      "score": 3.07
+      "score": 3.05
     },
     {
       "id": "1db3248c2d10",
@@ -490,7 +490,7 @@
       "tagMethod": "source",
       "summary": "Let’s think about what we’re doing here",
       "summaryBy": "feed",
-      "score": 3.07
+      "score": 3.05
     },
     {
       "id": "785566fd3377",
@@ -509,7 +509,7 @@
       "tagMethod": "source",
       "summary": "The Usage and Cost API is now a legacy API, and so are the usage_report, cost_report, user_usage_report, and user_cost_report endpoints of…",
       "summaryBy": "feed",
-      "score": 6.51
+      "score": 6.49
     },
     {
       "id": "8266ea920e51",
@@ -527,7 +527,7 @@
       "tagMethod": "source",
       "summary": "Google’s new frontier model leads independent evals, with access initially limited to trusted defenders.",
       "summaryBy": "feed",
-      "score": 3.85
+      "score": 3.84
     },
     {
       "id": "271134257c4a",
@@ -546,7 +546,7 @@
       "summary": "584 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50284255",
-      "score": 3.3
+      "score": 3.29
     },
     {
       "id": "6c9d1ecb20b3",
@@ -564,7 +564,7 @@
       "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.72
+      "score": 2.71
     },
     {
       "id": "52ced88a57d9",
@@ -582,7 +582,7 @@
       "tagMethod": "source",
       "summary": "In general, LLM performance is incredibly multidimensional. There's no guarantee of a fixed ordering where the model that is best at math is also the model that's best at jokes…",
       "summaryBy": "feed",
-      "score": 2.71
+      "score": 2.7
     },
     {
       "id": "a075480e28a0",
@@ -600,7 +600,7 @@
       "tagMethod": "source",
       "summary": "Paul Copplestone and Ant Wilson on building the backend for AI agents",
       "summaryBy": "feed",
-      "score": 2.64
+      "score": 2.63
     },
     {
       "id": "94bdedac0696",
@@ -618,7 +618,7 @@
       "tagMethod": "rules",
       "summary": "GitHub Octoverse 2026 I'm at GitHub Universe today (GitHub gave me a free ticket through their \"GitHub Stars\" program). EVP Jay Parikh just announced this year's Octoverse…",
       "summaryBy": "feed",
-      "score": 2.59
+      "score": 2.58
     },
     {
       "id": "b270b12b1531",
@@ -636,7 +636,7 @@
       "tagMethod": "source",
       "summary": "Changelog: https://docs.cypress.io/app/references/changelog#16-2-1",
       "summaryBy": "feed",
-      "score": 1.09
+      "score": 1.08
     },
     {
       "id": "d63165261460",
@@ -655,7 +655,7 @@
       "tagMethod": "rules",
       "summary": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective…",
       "summaryBy": "feed",
-      "score": 4.05
+      "score": 4.04
     },
     {
       "id": "1bc68abe765f",
@@ -674,25 +674,7 @@
       "tagMethod": "rules",
       "summary": "Listen now | 🎙️ I ranked Grok Bot, Dot, Muse, and Claude Duet across 9 real tasks—and the scores told me which agent runs my work and which runs my life",
       "summaryBy": "feed",
-      "score": 4.02
-    },
-    {
-      "id": "c517821d0281",
-      "title": "AI for Science expands to foundations and research institutions",
-      "url": "https://anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
-      "sourceId": "anthropic-news",
-      "sourceName": "Anthropic News",
-      "tier": "official",
-      "type": "news",
-      "publishedAt": "2026-10-28T12:00:00.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude"
-      ],
-      "tagMethod": "source",
-      "summary": "We’re highlighting 20 scientific foundations, institutions, and research groups around the world that we’ve partnered with in an expansion of our AI for Science program.",
-      "summaryBy": "feed",
-      "score": 5.02
+      "score": 4.01
     },
     {
       "id": "c05b1aa80117",
@@ -711,7 +693,25 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 5.02
+      "score": 5.01
+    },
+    {
+      "id": "c517821d0281",
+      "title": "AI for Science expands to foundations and research institutions",
+      "url": "https://anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "sourceId": "anthropic-news",
+      "sourceName": "Anthropic News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-10-28T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "We’re highlighting 20 scientific foundations, institutions, and research groups around the world that we’ve partnered with in an expansion of our AI for Science program.",
+      "summaryBy": "feed",
+      "score": 5.01
     },
     {
       "id": "d957b57aa1e6",
@@ -729,7 +729,7 @@
       "tagMethod": "source",
       "summary": "If your work does not benefit from current AI tooling, that is a finding, not a failing. Document why, share it with your community of peers, bring it to your manager, and work…",
       "summaryBy": "feed",
-      "score": 2.49
+      "score": 2.48
     },
     {
       "id": "625efce5713d",
@@ -747,7 +747,7 @@
       "tagMethod": "rules",
       "summary": "Since coding is solved, why code for the job?",
       "summaryBy": "feed",
-      "score": 3.98
+      "score": 3.97
     },
     {
       "id": "8c63067a2b44",
@@ -785,7 +785,7 @@
       "tagMethod": "source",
       "summary": "What's Changed docs: use claude-plugins-official in plugin examples by @mhegazy in #1932 Full Changelog: v1.0.263...v1.0.264",
       "summaryBy": "feed",
-      "score": 2.34
+      "score": 2.33
     },
     {
       "id": "3fa83c67bd72",
@@ -804,7 +804,7 @@
       "tagMethod": "source",
       "summary": "What's changed Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid Added click to send…",
       "summaryBy": "feed",
-      "score": 2.34
+      "score": 2.33
     },
     {
       "id": "f376eece8b40",
@@ -822,7 +822,7 @@
       "tagMethod": "source",
       "summary": "Game Boy Color on My Conference Badge I'm at GitHub Universe this week and, similar to last year , the conference badge is a full-blown color screen computer. I've been hacking…",
       "summaryBy": "feed",
-      "score": 2.33
+      "score": 2.32
     },
     {
       "id": "80e5637a67e1",
@@ -877,7 +877,7 @@
       "tagMethod": "rules",
       "summary": "How to set up and run an offline coding agent using OpenCode, Ollama and Qwen.",
       "summaryBy": "feed",
-      "score": 2.29
+      "score": 2.28
     },
     {
       "id": "5708d0664828",
@@ -913,7 +913,7 @@
       "tagMethod": "source",
       "summary": "We are expanding our partnership with the General Services Administration (GSA) through a new agreement that gives government partners a 40% discount on Claude Enterprise, Claude…",
       "summaryBy": "feed",
-      "score": 4.77
+      "score": 4.76
     },
     {
       "id": "95af72b561e4",
@@ -1043,7 +1043,7 @@
       "tagMethod": "source",
       "summary": "Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech…",
       "summaryBy": "feed",
-      "score": 2.17
+      "score": 2.16
     },
     {
       "id": "a5c52806e2d7",
@@ -1136,7 +1136,7 @@
       "tagMethod": "rules",
       "summary": "Watch now (30 mins) | 🎙️ Reddit’s principal UX engineer shows how a custom Figma MCP and Cursor pipeline takes any designer from blank slate to shareable, production-shaped…",
       "summaryBy": "feed",
-      "score": 2.14
+      "score": 2.13
     },
     {
       "id": "8a77e646571b",
@@ -1154,7 +1154,7 @@
       "tagMethod": "source",
       "summary": "Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A…",
       "summaryBy": "feed",
-      "score": 4.64
+      "score": 4.63
     },
     {
       "id": "8b1ad81c7872",
@@ -1623,6 +1623,24 @@
       "score": 5.51
     },
     {
+      "id": "6eda137552a5",
+      "title": "Open call for guest investigators in the life sciences",
+      "url": "https://anthropic.com/news/open-call-guest-investigators-life-sciences",
+      "sourceId": "anthropic-news",
+      "sourceName": "Anthropic News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-10-22T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects.",
+      "summaryBy": "feed",
+      "score": 4.51
+    },
+    {
       "id": "cc012b1e3b75",
       "title": "Donating Agent Skills to the Agentic AI Foundation",
       "url": "https://anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
@@ -1638,24 +1656,6 @@
       ],
       "tagMethod": "rules",
       "summary": "We’re donating Agent Skills, the open standard that gives AI agents specialized knowledge and workflows, to the Agentic AI Foundation. More than 70 agent platforms, including…",
-      "summaryBy": "feed",
-      "score": 4.51
-    },
-    {
-      "id": "6eda137552a5",
-      "title": "Open call for guest investigators in the life sciences",
-      "url": "https://anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "sourceId": "anthropic-news",
-      "sourceName": "Anthropic News",
-      "tier": "official",
-      "type": "news",
-      "publishedAt": "2026-10-22T12:00:00.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude"
-      ],
-      "tagMethod": "source",
-      "summary": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects.",
       "summaryBy": "feed",
       "score": 4.51
     },
@@ -1792,24 +1792,6 @@
       "score": 1.51
     },
     {
-      "id": "fac04cd6a26e",
-      "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-      "url": "https://anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-      "sourceId": "anthropic-news",
-      "sourceName": "Anthropic News",
-      "tier": "official",
-      "type": "news",
-      "publishedAt": "2026-10-21T12:00:00.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude"
-      ],
-      "tagMethod": "source",
-      "summary": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades…",
-      "summaryBy": "feed",
-      "score": 4.5
-    },
-    {
       "id": "5f37ecbcd331",
       "title": "The new SDK and CLI versions also have breaking changes that don’t depend on the API version, and they are licensed under Apache 2.0 instead of the…",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-21-2026",
@@ -1825,6 +1807,24 @@
       ],
       "tagMethod": "source",
       "summary": "We’ve released API version 2026-10-21. We’ve released new versions of the client SDKs and the ant CLI that send API version 2026-10-21 by default: Python SDK 2.0.0, TypeScript……",
+      "summaryBy": "feed",
+      "score": 4.5
+    },
+    {
+      "id": "fac04cd6a26e",
+      "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+      "url": "https://anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "sourceId": "anthropic-news",
+      "sourceName": "Anthropic News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-10-21T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades…",
       "summaryBy": "feed",
       "score": 4.5
     },
@@ -2599,20 +2599,21 @@
       "score": 5.5
     },
     {
-      "id": "d40aae393b58",
-      "title": "2026 Usage Policy update",
-      "url": "https://anthropic.com/news/2026-usage-policy-update",
-      "sourceId": "anthropic-news",
-      "sourceName": "Anthropic News",
+      "id": "0b2b6437e99d",
+      "title": "The Compliance API chat endpoints now also return chats from the unified Claude experience, in beta for Claude Enterprise organizations, with your…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-8-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
       "tier": "official",
-      "type": "news",
+      "type": "release",
       "publishedAt": "2026-10-08T12:00:00.000Z",
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
-        "claude"
+        "claude",
+        "se"
       ],
       "tagMethod": "source",
-      "summary": "We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.",
+      "summary": "The Compliance API can now download Claude Docs documents as Word files, in beta.",
       "summaryBy": "feed",
       "score": 4.5
     },
@@ -2635,21 +2636,20 @@
       "score": 4.5
     },
     {
-      "id": "0b2b6437e99d",
-      "title": "The Compliance API chat endpoints now also return chats from the unified Claude experience, in beta for Claude Enterprise organizations, with your…",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-8-2026",
-      "sourceId": "claude-release-notes",
-      "sourceName": "Claude Platform release notes",
+      "id": "d40aae393b58",
+      "title": "2026 Usage Policy update",
+      "url": "https://anthropic.com/news/2026-usage-policy-update",
+      "sourceId": "anthropic-news",
+      "sourceName": "Anthropic News",
       "tier": "official",
-      "type": "release",
+      "type": "news",
       "publishedAt": "2026-10-08T12:00:00.000Z",
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
-        "claude",
-        "se"
+        "claude"
       ],
       "tagMethod": "source",
-      "summary": "The Compliance API can now download Claude Docs documents as Word files, in beta.",
+      "summary": "We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.",
       "summaryBy": "feed",
       "score": 4.5
     },
@@ -2764,24 +2764,6 @@
       "score": 2
     },
     {
-      "id": "eb1569caa0b7",
-      "title": "Expanding the Cyber Verification Program",
-      "url": "https://anthropic.com/news/cyber-verification-program",
-      "sourceId": "anthropic-news",
-      "sourceName": "Anthropic News",
-      "tier": "official",
-      "type": "news",
-      "publishedAt": "2026-10-06T12:00:00.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude"
-      ],
-      "tagMethod": "source",
-      "summary": "We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying…",
-      "summaryBy": "feed",
-      "score": 4.5
-    },
-    {
       "id": "59c0eca2c28f",
       "title": "We’ve added capabilities.server_tools to the Models API.",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-6-2026",
@@ -2797,6 +2779,24 @@
       ],
       "tagMethod": "source",
       "summary": "",
+      "summaryBy": "feed",
+      "score": 4.5
+    },
+    {
+      "id": "eb1569caa0b7",
+      "title": "Expanding the Cyber Verification Program",
+      "url": "https://anthropic.com/news/cyber-verification-program",
+      "sourceId": "anthropic-news",
+      "sourceName": "Anthropic News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-10-06T12:00:00.000Z",
+      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying…",
       "summaryBy": "feed",
       "score": 4.5
     },
