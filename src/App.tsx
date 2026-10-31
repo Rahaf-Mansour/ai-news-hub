@@ -10,20 +10,24 @@ import { Masthead, type ThemeChoice } from './components/Masthead'
 import { NextRefresh } from './components/NextRefresh'
 import { ClaudeTimeline, ModelWatch, RunLog } from './components/Rail'
 import { Repos } from './components/Repos'
+import { Saved } from './components/Saved'
+import { Toast, type ToastMessage } from './components/Toast'
 import { Today } from './components/Today'
 import { countUnread, EMPTY_FILTER, filterItems, type FilterState } from './lib/filter'
 import { ROLE_LABEL } from './lib/roles'
-import { getItem, KEYS, setItem, useStoredSet } from './lib/storage'
+import { toSavedRepo, type SavedItem, type SavedRepo, type SavedStep } from './lib/saved'
+import { getItem, KEYS, setItem, useStoredRecords, useStoredSet } from './lib/storage'
 import { selectToday } from './lib/today'
 import type { ItemsFile, ReposFile, Role, SourcesStatusFile } from './types'
 
-type Tab = 'all' | Role | 'repos' | 'learn'
+type Tab = 'all' | Role | 'saved' | 'repos' | 'learn'
 const TABS: { id: Tab; label: string; role: Role | null; placeholder: string }[] = [
   { id: 'all', label: 'All', role: null, placeholder: 'Search all news…' },
   { id: 'claude', label: ROLE_LABEL.claude, role: 'claude', placeholder: 'Search Claude news and releases…' },
   { id: 'se', label: ROLE_LABEL.se, role: 'se', placeholder: 'Search SE news…' },
   { id: 'pm', label: ROLE_LABEL.pm, role: 'pm', placeholder: 'Search PM news…' },
   { id: 'qa', label: ROLE_LABEL.qa, role: 'qa', placeholder: 'Search QA news…' },
+  { id: 'saved', label: 'Saved', role: null, placeholder: 'Search saved…' },
   { id: 'repos', label: 'Repos', role: null, placeholder: 'Search repos…' },
   { id: 'learn', label: 'Learn', role: null, placeholder: 'Search learning steps…' },
 ]
@@ -65,7 +69,15 @@ export default function App() {
   // Items first seen after the previous visit get the "+" marker for this whole session.
   const [newSince] = useState<string | null>(() => getItem(KEYS.lastVisit))
   const read = useStoredSet(KEYS.read)
-  const saved = useStoredSet(KEYS.saved)
+  const savedItems = useStoredRecords<SavedItem>(KEYS.savedItems)
+  const savedRepos = useStoredRecords<SavedRepo>(KEYS.savedRepos)
+  const savedSteps = useStoredRecords<SavedStep>(KEYS.savedSteps)
+  const savedTotal = savedItems.ids.size + savedRepos.ids.size + savedSteps.ids.size
+  const [toast, setToast] = useState<ToastMessage | null>(null)
+  const clearToast = useCallback(() => setToast(null), [])
+  const notifySaved = useCallback((nowSaved: boolean) => {
+    setToast({ id: Date.now(), text: nowSaved ? 'Saved' : 'Removed from Saved', view: nowSaved })
+  }, [])
 
   const searchRef = useRef<HTMLInputElement>(null)
   const barRef = useRef<HTMLElement>(null)
@@ -85,6 +97,21 @@ export default function App() {
     })
     setItem(KEYS.lastVisit, now.toISOString())
   }, [now])
+
+  // One-time move from the old saved format (ids only) to snapshots that outlive the 30-day feed.
+  const { addMany: addSavedItems } = savedItems
+  useEffect(() => {
+    if (!items) return
+    const legacy = getItem(KEYS.saved)
+    if (!legacy) return
+    try {
+      const ids = new Set<string>(JSON.parse(legacy))
+      addSavedItems(items.items.filter((i) => ids.has(i.id)).map((i) => [i.id, i] as [string, SavedItem]))
+    } catch {
+      // Unreadable old data: nothing to migrate.
+    }
+    setItem(KEYS.saved, null)
+  }, [items, addSavedItems])
 
   useEffect(() => {
     const onHash = () => setTab(tabFromHash())
@@ -133,27 +160,34 @@ export default function App() {
   const today = useMemo(() => selectToday(all, now), [all, now])
   const current = TABS.find((t) => t.id === tab)!
   const feedFilter = useMemo(() => ({ ...filter, query }), [filter, query])
-  const visible = useMemo(() => filterItems(all, current.role, feedFilter, read.set, saved.set), [all, current.role, feedFilter, read.set, saved.set])
+  const visible = useMemo(
+    () => filterItems(all, current.role, feedFilter, read.set, savedItems.ids),
+    [all, current.role, feedFilter, read.set, savedItems.ids],
+  )
   const newCount = useMemo(() => (newSince ? all.filter((i) => i.firstSeenAt > newSince).length : 0), [all, newSince])
 
   const actions: ItemActions = {
     read: read.set,
-    saved: saved.set,
+    saved: savedItems.ids,
     newSince,
     now,
     onOpen: (id) => read.add([id]),
     onToggleRead: read.toggle,
-    onToggleSave: saved.toggle,
+    onToggleSave: (item) => notifySaved(savedItems.toggle(item.id, item)),
   }
 
-  const tabs: TabDef[] = TABS.map((t) => ({
-    id: t.id,
-    label: t.label,
-    color: t.role ?? undefined,
-    count: t.role || t.id === 'all' ? countUnread(all, read.set, t.role) : null,
-  }))
+  const tabs: TabDef[] = TABS.map((t) =>
+    t.id === 'saved'
+      ? { id: t.id, label: t.label, icon: <span className="tab__star" aria-hidden="true">★</span>, count: savedTotal, countLabel: `${savedTotal} saved` }
+      : {
+          id: t.id,
+          label: t.label,
+          color: t.role ?? undefined,
+          count: t.role || t.id === 'all' ? countUnread(all, read.set, t.role) : null,
+        },
+  )
 
-  const isFeed = tab !== 'repos' && tab !== 'learn'
+  const isFeed = tab !== 'repos' && tab !== 'learn' && tab !== 'saved'
   const showToday = tab === 'all' && !query && !loadError && items
 
   return (
@@ -163,7 +197,7 @@ export default function App() {
         status={status}
         unread={countUnread(all, read.set)}
         newCount={newCount}
-        savedCount={saved.set.size}
+        savedCount={savedTotal}
         now={now}
         theme={theme}
         onTheme={changeTheme}
@@ -211,8 +245,42 @@ export default function App() {
                 {...actions}
               />
             )}
-            {tab === 'repos' && <Repos data={repos} now={now} query={query} />}
-            {tab === 'learn' && <Learn query={query} />}
+            {tab === 'saved' && (
+              <Saved
+                items={savedItems.list}
+                repos={savedRepos.list}
+                steps={savedSteps.list}
+                query={query}
+                onUnsaveRepo={savedRepos.remove}
+                onUnsaveStep={savedSteps.remove}
+                onClearAll={() => {
+                  savedItems.clear()
+                  savedRepos.clear()
+                  savedSteps.clear()
+                  setToast({ id: Date.now(), text: 'Cleared all saved' })
+                }}
+                onCopied={(n) => setToast({ id: Date.now(), text: `Copied ${n} links` })}
+                {...actions}
+              />
+            )}
+            {tab === 'repos' && (
+              <Repos
+                data={repos}
+                now={now}
+                query={query}
+                savedIds={savedRepos.ids}
+                onToggleSave={(r) => notifySaved(savedRepos.toggle(r.fullName, toSavedRepo(r)))}
+              />
+            )}
+            {tab === 'learn' && (
+              <Learn
+                query={query}
+                savedIds={savedSteps.ids}
+                onToggleSave={(s, track) =>
+                  notifySaved(savedSteps.toggle(s.id, { title: s.title, url: s.url, source: s.source, why: s.why, track }))
+                }
+              />
+            )}
           </div>
           <aside className="rail">
             <ModelWatch />
@@ -221,6 +289,7 @@ export default function App() {
         </div>
       </main>
       <BackToTop focusTarget={searchRef} />
+      <Toast toast={toast} onDone={clearToast} />
       <footer className="footer">
         <div className="wrap">
           <div className="credit" data-cy="author-credit">

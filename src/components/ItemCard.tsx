@@ -10,7 +10,8 @@ export interface ItemActions {
   now: Date
   onOpen: (id: string) => void
   onToggleRead: (id: string) => void
-  onToggleSave: (id: string) => void
+  /** Gets the whole item so a snapshot can be kept with the bookmark. */
+  onToggleSave: (item: Item) => void
 }
 
 interface Props extends ItemActions {
@@ -42,6 +43,11 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
             {relativeDate(item.publishedAt, now)}
           </time>
           {isNew && <span className="sr-only">New since your last visit</span>}
+          {isRead && (
+            <span className="pill pill--read" data-cy="read-pill">
+              Read
+            </span>
+          )}
         </div>
         <Heading className="item__title">
           <a href={item.url} target="_blank" rel="noopener noreferrer" onClick={() => onOpen(item.id)} data-cy="item-link">
@@ -77,6 +83,7 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
               aria-pressed={isRead}
               onClick={() => onToggleRead(item.id)}
               data-cy="toggle-read"
+              title={isRead ? 'Mark as unread again' : 'Marks this as read and removes it from the unread counts'}
             >
               {isRead ? '✓ Read' : 'Mark read'}
             </button>
@@ -84,8 +91,9 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
               type="button"
               className="icon-btn"
               aria-pressed={isSaved}
-              onClick={() => onToggleSave(item.id)}
+              onClick={() => onToggleSave(item)}
               data-cy="toggle-save"
+              title={isSaved ? 'Remove from Saved' : 'Keep this in the Saved tab (stays in this browser)'}
               aria-label={isSaved ? `Remove bookmark: ${item.title}` : `Bookmark: ${item.title}`}
             >
               {isSaved ? '★ Saved' : '☆ Save'}

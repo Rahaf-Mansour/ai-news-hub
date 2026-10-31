@@ -1004,15 +1004,13 @@ details.panel[open] summary::after {
   margin: 0.75rem 0 0;
   padding: 0;
   list-style: none;
-  counter-reset: step;
 }
 .step {
   display: grid;
-  grid-template-columns: 1.6rem minmax(0, 1fr);
+  grid-template-columns: 1.6rem minmax(0, 1fr) auto;
   gap: 0.6rem;
   padding-block: 0.75rem;
   border-top: 1px solid var(--rule);
-  counter-increment: step;
 }
 .step input {
   width: 1.1rem;
@@ -1123,6 +1121,172 @@ details.panel[open] summary::after {
 }
 .btn:hover {
   border-color: var(--ink);
+}
+
+/* ── Saved, read state, toast ───────────────────────────── */
+.switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-2);
+}
+.switch input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+.switch__track {
+  position: relative;
+  width: 2rem;
+  height: 1.1rem;
+  border-radius: 999px;
+  background: var(--rule-strong);
+  transition: background-color 150ms ease;
+}
+.switch__track::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(1.1rem - 4px);
+  height: calc(1.1rem - 4px);
+  border-radius: 50%;
+  background: var(--surface);
+  transition: transform 150ms ease;
+}
+.switch input:checked + .switch__track {
+  background: var(--accent);
+}
+.switch input:checked + .switch__track::after {
+  transform: translateX(0.9rem);
+}
+.switch input:focus-visible + .switch__track {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.toggle--saved[aria-pressed='true'] {
+  border-color: var(--role-pm);
+  background: var(--role-pm);
+  color: var(--paper);
+}
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0.45rem;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+.pill--read {
+  background: var(--sunk);
+  color: var(--ink-3);
+}
+.tab__star {
+  color: var(--role-pm);
+}
+.saved-tools {
+  margin-bottom: 1rem;
+}
+.confirm {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--warn);
+}
+.btn--danger {
+  border-color: var(--warn);
+  color: var(--warn);
+}
+.copy-fallback {
+  display: grid;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--ink-2);
+}
+.copy-fallback textarea {
+  width: 100%;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  padding: 0.5rem;
+}
+.saved-group {
+  margin-bottom: 1.75rem;
+}
+.saved-group h3 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin: 0 0 0.25rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--ink);
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+}
+.saved-group h3 .mono {
+  color: var(--ink-3);
+  font-weight: 400;
+}
+.saved-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.saved-list li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.75rem;
+  border-bottom: 1px solid var(--rule);
+}
+.saved-list li > div {
+  min-width: 0;
+}
+.step__save {
+  align-self: start;
+  font-size: 1rem;
+}
+.toast-region {
+  position: fixed;
+  left: 50%;
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  z-index: 20;
+  translate: -50% 0;
+  pointer-events: none;
+}
+.toast {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.6rem 0.9rem 0.6rem 1rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: var(--shadow);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  pointer-events: auto;
+  animation: rise 200ms ease both;
+}
+.toast a {
+  color: var(--paper);
+  font-weight: 600;
+  text-underline-offset: 3px;
 }
 
 /* Back to top: clears the iPhone home indicator and side bars. */

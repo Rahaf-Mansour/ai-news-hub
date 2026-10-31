@@ -42,6 +42,8 @@ Cypress.Commands.add('visitHub', (options: HubVisitOptions = {}) => {
     },
   })
   cy.wait('@items')
+  // Wait for the first render so tests that scroll measure a full-height page.
+  if (options.itemsFixture !== null) cy.get('[data-cy^=panel-]').should('exist')
 })
 
 Cypress.Commands.add('feed', () => cy.get('[data-cy=feed]'))

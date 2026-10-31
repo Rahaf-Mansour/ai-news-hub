@@ -1,8 +1,14 @@
-import { TRACKS } from '../content/learn'
+import { TRACKS, type LearnStep } from '../content/learn'
 import { matchesStep } from '../lib/filter'
 import { KEYS, useStoredSet } from '../lib/storage'
 
-export function Learn({ query }: { query: string }) {
+interface Props {
+  query: string
+  savedIds: ReadonlySet<string>
+  onToggleSave: (step: LearnStep, trackName: string) => void
+}
+
+export function Learn({ query, savedIds, onToggleSave }: Props) {
   const done = useStoredSet(KEYS.learn)
   const visible = TRACKS.map((track) => ({
     track,
@@ -66,6 +72,16 @@ export function Learn({ query }: { query: string }) {
                         <p>{step.why}</p>
                         {step.note && <p className="mono" style={{ color: 'var(--warn)' }}>{step.note}</p>}
                       </div>
+                      <button
+                        type="button"
+                        className="icon-btn step__save"
+                        aria-pressed={savedIds.has(step.id)}
+                        onClick={() => onToggleSave(step, track.name)}
+                        data-cy="step-save"
+                        aria-label={savedIds.has(step.id) ? `Remove "${step.title}" from Saved` : `Save "${step.title}"`}
+                      >
+                        {savedIds.has(step.id) ? '★' : '☆'}
+                      </button>
                     </li>
                   )
                 })}

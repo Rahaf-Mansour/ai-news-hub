@@ -2,16 +2,15 @@ import type { LearnStep } from '../content/learn'
 import type { Item, Repo, Role, SourceType, TrustTier } from '../types'
 import { ROLE_LABEL } from './roles'
 
-export type ShowFilter = 'all' | 'unread' | 'saved'
-
 export interface FilterState {
   query: string
   tiers: TrustTier[]
   types: SourceType[]
-  show: ShowFilter
+  hideRead: boolean
+  savedOnly: boolean
 }
 
-export const EMPTY_FILTER: FilterState = { query: '', tiers: [], types: [], show: 'all' }
+export const EMPTY_FILTER: FilterState = { query: '', tiers: [], types: [], hideRead: false, savedOnly: false }
 
 export function queryWords(query: string): string[] {
   return query.toLowerCase().split(/\s+/).filter(Boolean)
@@ -52,8 +51,8 @@ export function filterItems(
       (!role || i.roles.includes(role)) &&
       (!filter.tiers.length || filter.tiers.includes(i.tier)) &&
       (!filter.types.length || filter.types.includes(i.type)) &&
-      (filter.show !== 'unread' || !read.has(i.id)) &&
-      (filter.show !== 'saved' || saved.has(i.id)) &&
+      (!filter.hideRead || !read.has(i.id)) &&
+      (!filter.savedOnly || saved.has(i.id)) &&
       matchesQuery(i, filter.query),
   )
 }
