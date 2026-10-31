@@ -1,12 +1,12 @@
 # AI News & Learning Hub
 
-A daily, role-tagged digest of AI news, Claude releases and learning resources, read through four lenses: **Claude**, **QA**, **product management** and **software engineering**. Open it each morning to see what changed for your role.
+A daily, role-tagged digest of AI news, Claude releases and learning resources, read through five lenses: **Claude**, **QA**, **product management**, **full-stack** and **AI dev tools & agents** (SE). Open it each morning to see what changed for your role.
 
 - **Today**: the 5–8 most important items from the last 48 hours, one lead story plus role groups.
-- **Tabs**: All · Claude · SE · PM · QA · Repos · Learn, with unread counts, search and filters.
+- **Tabs**: All · Claude · Full-stack · SE · PM · QA · Saved · Repos · Learn, with unread counts, search and filters. QA splits into Manual & exploratory · Automation · Testing AI; Full-stack into Frontend · Backend.
 - **Claude**: a release timeline checked against Anthropic's own pages, plus the Claude feed.
-- **Repos**: 27 repos with stars and last push from the GitHub API, or "not verified".
-- **Learn**: two ordered tracks, *AI-enabled Producer* and *QA to AI testing*, with progress you can tick off.
+- **Repos**: 32 repos with stars and last push from the GitHub API, or "not verified".
+- **Learn**: three ordered tracks, *AI-enabled Producer*, *QA in the AI era* and *AI for full-stack engineers*, with progress you can tick off.
 - **Model watch**: links out to Arena, Artificial Analysis and Epoch AI (no scraped numbers).
 
 Static site (Vite + React + TypeScript). Data refreshes once a day through GitHub Actions. No server, no database, no analytics.
@@ -35,9 +35,9 @@ Other scripts:
 
 `.github/workflows/daily.yml` runs at **05:30 UTC** every day (and on demand from the Actions tab):
 
-1. **Fetch.** `ingest/run.ts` fetches the 23 sources in `ingest/sources.ts`, six at a time, each with a 20-second timeout. A source that fails is logged, recorded in `public/data/sources-status.json` with its error and last success, and skipped. The run fails only if *every* source fails, and then it leaves the published data untouched.
+1. **Fetch.** `ingest/run.ts` fetches the 41 sources in `ingest/sources.ts`, six at a time, each with a 20-second timeout. A source that fails is logged, recorded in `public/data/sources-status.json` with its error and last success, and skipped. The run fails only if *every* source fails, and then it leaves the published data untouched.
 2. **Normalize.** URLs are canonicalized (https, no `www.`, tracking params removed, sorted query). Feed text is cut to a 180-character summary; article bodies are never stored.
-3. **Tag.** Keyword rules in `ingest/tagger.ts` assign Claude / SE / PM / QA. Focused sources (the Cypress blog, Claude Code releases) always carry their own roles; general newsletters only fall back to a default role when no rule matches, and those items are marked for the LLM.
+3. **Tag.** Keyword rules in `ingest/tagger.ts` assign Claude / QA / PM / Full-stack / SE, plus areas inside QA and Full-stack (a title match, or two different terms in the summary). Focused sources (the Cypress blog, Claude Code releases) always carry their own roles; general newsletters only fall back to a default role when no rule matches, and those items are marked for the LLM.
 4. **Dedupe.** The same canonical URL, or near-identical titles (token Jaccard ≥ 0.85) from different sources within three days, merge into one item. The higher trust tier wins; roles are combined and a Hacker News discussion link is kept.
 5. **LLM (optional).** See below.
 6. **Score and write.** Items are scored by trust tier, recency, Claude relevance and launches (routine patch releases score lower) and written to:
@@ -102,7 +102,7 @@ The next run (or a manual "Run workflow") builds and deploys. The site uses rela
 
 - **Concept: a daily run report.** The masthead reads like a test-run summary ("✓ 23 sources passed · 156 items · +12 new since your last visit"), because the data really is a daily run, and the test-report idiom is familiar to the engineers and testers who read it. A diff-style **+** in the gutter marks items first seen since your last visit.
 - **Type.** *Bricolage Grotesque* (display; variable width and optical size) for the wordmark and headlines, *Literata* (a reading serif built for screens) for summaries, and *JetBrains Mono* for dates, tiers and counts. All from Google Fonts with system fallbacks.
-- **Color.** Cool paper and ink-navy with one cobalt accent, kept for the lead kicker, links on hover and active tabs. Each role has its own muted hue (Claude rust, SE teal, PM ochre, QA green) on chips, group headings and tab underlines. Dark mode is designed separately (deep navy, lifted role hues), not inverted. It follows the OS setting, and a System → Light → Dark toggle overrides it.
+- **Color.** Cool paper and ink-navy with one cobalt accent, kept for the lead kicker, links on hover and active tabs. Each role has its own muted hue (Claude rust, SE teal, PM ochre, QA green, Full-stack blue) on chips, group headings and tab underlines. Dark mode is designed separately (deep navy, lifted role hues), not inverted. It follows the OS setting, and a System → Light → Dark toggle overrides it.
 - **Trust tier badges** use shape as well as words: filled square for official, half-filled for editorial, dotted circle for community.
 - **Motion.** One short staggered rise on Today when the page loads, plus link underline and read-state transitions. All motion is off under `prefers-reduced-motion`.
 - **Mobile.** One column, sticky section tabs that scroll sideways, and no horizontal page scroll (covered by a Cypress test).
@@ -138,7 +138,7 @@ Live GitHub star counts differed a lot from third-party trackers (for example op
 
 ```
 ingest/            daily pipeline (Node + tsx)
-  sources.ts       the 23 feed sources
+  sources.ts       the 41 feed sources
   repos.config.ts  the 27 watched repos
   adapters/        rss, github-releases, anthropic HTML, release notes, HN
   build.ts         raw → item, dedupe, score

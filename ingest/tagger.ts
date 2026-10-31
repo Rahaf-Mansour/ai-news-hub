@@ -42,11 +42,18 @@ export const RULES: Record<Role, RegExp[]> = {
     /\b(exploratory|test charters?|session-based|test design|test strategy|test plans?|usability testing|acceptance testing|uat)\b/i,
     /\bbugs?\b/i,
   ],
+  fs: [
+    /\b(full[- ]?stack|frontend|front-end|backend|back-end|web apps?|web development)\b/i,
+    /\bReact\b/, // case-sensitive: "how agents react" is a verb
+    /\b(next\.?js|vue|nuxt|svelte(kit)?|angular|astro|remix|vite|tailwind|css|html|web components?|design systems?|core web vitals|webgpu|browser apis?|generative ui|v0|bolt\.new|lovable)\b/i,
+    /\b(node\.?js|deno|bun|express|nestjs|fastify|graphql|grpc|rest apis?|api design|serverless|edge functions?|postgres(ql)?|sql|redis|kafka|microservices|kubernetes|docker)\b/i,
+    /\b(ai sdk|vercel ai|langchain(\.?js)?|mastra|llamaindex|streaming ui|tool calling|structured outputs?|embeddings|vector (db|database|store)s?|pgvector|rag)\b/i,
+  ],
 }
 
 /**
  * Facets inside a role, for the sub-toggles (QA: Manual & exploratory ·
- * Automation · Testing AI). Same rule as roles: a title match, or two
+ * Automation · Testing AI; Full-stack: Frontend · Backend). Same rule as roles: a title match, or two
  * different matched terms in the excerpt.
  */
 export const AREA_RULES: Record<Area, { role: Role; pattern: RegExp }> = {
@@ -63,19 +70,26 @@ export const AREA_RULES: Record<Area, { role: Role; pattern: RegExp }> = {
     role: 'qa',
     pattern: /\b(evals?|llm-as-a?-judge|red[- ]?team\w*|promptfoo|deepeval|self-healing|agentic testing|test agents?|ai tests?|testing ai)\b/gi,
   },
-  // Full-stack areas are added with the full-stack role.
-  frontend: { role: 'se', pattern: /(?!)/g },
-  backend: { role: 'se', pattern: /(?!)/g },
+  frontend: {
+    role: 'fs',
+    pattern:
+      /\b(react|next\.?js|vue|nuxt|svelte(kit)?|angular|astro|remix|vite|tailwind|css|html|dom|web components?|frontend|front-end|ui components?|design systems?|accessibility|core web vitals|v0|bolt\.new|lovable|generative ui|streaming ui|browser apis?|webgpu)\b/gi,
+  },
+  backend: {
+    role: 'fs',
+    pattern:
+      /\b(node(\.?js)?|deno|bun|express|nestjs|fastify|backend|back-end|api design|rest apis?|graphql|grpc|serverless|edge functions?|databases?|postgres(ql)?|sql|redis|vector (db|database|store)s?|pgvector|rag|embeddings|queues?|kafka|microservices|kubernetes|docker|observability)\b/gi,
+  },
 }
 
 const distinctMatches = (pattern: RegExp, text: string) => new Set((text.match(pattern) ?? []).map((m) => m.toLowerCase())).size
 
-/** Areas for an item, only within roles it already has. */
-export function ruleAreas(title: string, excerpt: string, roles: Role[]): Area[] {
+/** Areas for an item, only within roles it already has. `defaults` are the source's own areas. */
+export function ruleAreas(title: string, excerpt: string, roles: Role[], defaults: Area[] = []): Area[] {
   return (Object.keys(AREA_RULES) as Area[]).filter((area) => {
     const { role, pattern } = AREA_RULES[area]
     if (!roles.includes(role)) return false
-    return distinctMatches(pattern, title) > 0 || distinctMatches(pattern, excerpt) >= 2
+    return defaults.includes(area) || distinctMatches(pattern, title) > 0 || distinctMatches(pattern, excerpt) >= 2
   })
 }
 

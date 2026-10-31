@@ -32,6 +32,14 @@ describe('selectToday', () => {
     expect(shown).toContain(pm)
   })
 
+  it('gives every one of the five lenses a slot, Full-stack included', () => {
+    const se = Array.from({ length: 10 }, (_, i) => item({ roles: ['se'], score: 10 + i }))
+    const lenses = (['claude', 'qa', 'pm', 'fs'] as const).map((r) => item({ roles: [r], score: 1 }))
+    const view = selectToday([...se, ...lenses], NOW)
+    // The lead is the top SE item; the groups still show every lens, in display order.
+    expect(view.groups.map((g) => g.role)).toEqual(['claude', 'qa', 'pm', 'fs', 'se'])
+  })
+
   it('caps each role at three items when other roles have news', () => {
     const claude = Array.from({ length: 8 }, () => item({ roles: ['claude'], score: 50 }))
     const others = Array.from({ length: 8 }, (_, i) => item({ roles: [(['se', 'pm', 'qa'] as const)[i % 3]], score: i }))

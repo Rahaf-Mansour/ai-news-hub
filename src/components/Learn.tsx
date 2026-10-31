@@ -1,7 +1,14 @@
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { TRACKS, type LearnStep } from '../content/learn'
 import { matchesStep } from '../lib/filter'
-import { KEYS, useStoredSet } from '../lib/storage'
+import { getItem, KEYS, setItem, useStoredSet } from '../lib/storage'
+
+const NUMBER_WORDS = ['No', 'One', 'Two', 'Three', 'Four', 'Five']
+
+const initialTrack = () => {
+  const stored = getItem(KEYS.learnTrack)
+  return TRACKS.some((t) => t.id === stored) ? (stored as string) : TRACKS[0].id
+}
 
 interface Props {
   query: string
@@ -11,19 +18,48 @@ interface Props {
 
 export function Learn({ query, savedIds, onToggleSave }: Props) {
   const done = useStoredSet(KEYS.learn)
-  const visible = TRACKS.map((track) => ({
-    track,
-    steps: track.steps.map((step, index) => ({ step, index })).filter(({ step }) => matchesStep(step, track.name, query)),
-  })).filter((t) => t.steps.length > 0)
+  const [active, setActive] = useState(initialTrack)
+  const pick = (id: string) => {
+    setActive(id)
+    setItem(KEYS.learnTrack, id)
+  }
+  const completedIn = (steps: LearnStep[]) => steps.filter((s) => done.set.has(s.id)).length
+
+  // One track at a time; a search shows matches from every track.
+  const visible = TRACKS.filter((track) => query || track.id === active)
+    .map((track) => ({
+      track,
+      steps: track.steps.map((step, index) => ({ step, index })).filter(({ step }) => matchesStep(step, track.name, query)),
+    }))
+    .filter((t) => t.steps.length > 0)
 
   return (
     <section aria-labelledby="learn-heading" data-cy="learn">
       <div className="section-head">
         <h2 id="learn-heading">Learn</h2>
         <p>
-          {TRACKS.length === 2 ? 'Two' : TRACKS.length} tracks, in order. Tick a step when you finish it; progress stays in this browser.
+          {NUMBER_WORDS[TRACKS.length] ?? TRACKS.length} tracks, in order. Tick a step when you finish it; progress stays in this browser.
         </p>
       </div>
+      {!query && (
+        <div className="facets facets--tracks" role="group" aria-label="Learning track" data-cy="track-picker">
+          {TRACKS.map((track) => (
+            <button
+              key={track.id}
+              type="button"
+              className="facet"
+              aria-pressed={track.id === active}
+              onClick={() => pick(track.id)}
+              data-cy={`track-pick-${track.id}`}
+            >
+              {track.name}
+              <span className="facet__count">
+                {completedIn(track.steps)}/{track.steps.length}
+              </span>
+            </button>
+          ))}
+        </div>
+      )}
       {visible.length === 0 && (
         <p className="empty" data-cy="no-results">
           No steps match “{query}”. Clear the search to see every track.
@@ -31,7 +67,7 @@ export function Learn({ query, savedIds, onToggleSave }: Props) {
       )}
       <div className="tracks">
         {visible.map(({ track, steps }) => {
-          const completed = track.steps.filter((s) => done.set.has(s.id)).length
+          const completed = completedIn(track.steps)
           const hours = Math.round(track.steps.reduce((sum, s) => sum + s.minutes, 0) / 30) / 2
           return (
             <article key={track.id} className="track" data-cy={`track-${track.id}`}>

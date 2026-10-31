@@ -4,13 +4,13 @@ describe('Search and filters', () => {
   it('searches titles and summaries as you type', () => {
     cy.get('[data-cy=search]').type('self-healing')
     cy.feed().find('[data-cy=item]').should('have.length', 1).and('contain', 'cy.prompt adds self-healing selectors')
-    cy.get('[data-cy=result-count]').should('have.text', '1 of 11 items')
+    cy.get('[data-cy=result-count]').should('have.text', '1 of 13 items')
 
     cy.get('[data-cy=search]').clear().type('prompt')
     cy.feed().find('[data-cy=item]').should('have.length', 2)
 
     cy.get('[data-cy=search]').clear()
-    cy.feed().find('[data-cy=item]').should('have.length', 11)
+    cy.feed().find('[data-cy=item]').should('have.length', 13)
   })
 
   it('hides Today while searching so results come first', () => {
@@ -48,7 +48,7 @@ describe('Search and filters', () => {
     cy.get('[data-cy=search]').type('prompt')
     cy.get('[data-cy=search-clear]').click()
     cy.get('[data-cy=search]').should('have.value', '').and('be.focused')
-    cy.feed().find('[data-cy=item]').should('have.length', 11)
+    cy.feed().find('[data-cy=item]').should('have.length', 13)
   })
 
   it('changes the placeholder per tab', () => {
@@ -102,8 +102,38 @@ describe('Search and filters', () => {
     cy.get('[data-cy=facets]').should('not.exist')
   })
 
+  it('filters the Full-stack tab by frontend and backend', () => {
+    cy.get('[data-cy=tab-fs]').click()
+    cy.get('[data-cy=search]').should('have.attr', 'placeholder', 'Search full-stack news…')
+    cy.get('[data-cy=facet-all]').should('contain', '2')
+    cy.get('[data-cy=facet-frontend]').click()
+    cy.feed().find('[data-cy=item]').should('have.length', 1).and('contain', 'React 19.3')
+    cy.get('[data-cy=facet-backend]').click()
+    cy.feed().find('[data-cy=item]').should('have.length', 1).and('contain', 'pgvector')
+    // An item can sit in both Full-stack and AI dev tools.
+    cy.get('[data-cy=tab-se]').click()
+    cy.feed().find('[data-id=fx-pgvector]').should('exist')
+  })
+
+  it('shows one learning track at a time, with a picker, and every track while searching', () => {
+    cy.get('[data-cy=tab-learn]').click()
+    cy.get('[data-cy=learn]').should('contain', 'Three tracks')
+    cy.get('[data-cy=track-picker] button').should('have.length', 3)
+    cy.get('[data-cy=track-producer]').should('exist')
+    cy.get('[data-cy=track-pick-fullstack]').click().should('have.attr', 'aria-pressed', 'true')
+    cy.get('[data-cy=track-fullstack]').should('contain', 'AI for full-stack engineers')
+    cy.get('[data-cy=track-producer]').should('not.exist')
+    cy.reload()
+    cy.get('[data-cy=track-fullstack]').should('exist')
+    cy.get('[data-cy=search]').type('evals')
+    cy.get('[data-cy=track-picker]').should('not.exist')
+    cy.get('[data-cy=track-qa]').should('exist')
+    cy.get('[data-cy=track-fullstack]').should('exist')
+  })
+
   it('groups the QA learning track into labelled sections', () => {
     cy.get('[data-cy=tab-learn]').click()
+    cy.get('[data-cy=track-pick-qa]').click()
     cy.get('[data-cy=track-qa]').should('contain', 'QA in the AI era')
     cy.get('[data-cy=track-qa] [data-cy=step-section]').first().should('have.text', 'AI for manual & exploratory testers')
     cy.get('[data-cy=track-qa] [data-cy=step-section]').should('contain', 'Playwright + AI').and('contain', 'Testing AI features')
@@ -111,12 +141,12 @@ describe('Search and filters', () => {
 
   it('filters by trust tier and type, and combines them', () => {
     cy.get('[data-cy=tier-official]').click().should('have.attr', 'aria-pressed', 'true')
-    cy.feed().find('[data-cy=item]').should('have.length', 4)
+    cy.feed().find('[data-cy=item]').should('have.length', 5)
     cy.get('[data-cy=type-release]').click()
     cy.feed().find('[data-cy=item]').should('have.length', 2)
     cy.get('[data-cy=tier-official]').click()
     cy.get('[data-cy=type-release]').click()
-    cy.feed().find('[data-cy=item]').should('have.length', 11)
+    cy.feed().find('[data-cy=item]').should('have.length', 13)
   })
 
   it('filters community items so only the HN post remains', () => {

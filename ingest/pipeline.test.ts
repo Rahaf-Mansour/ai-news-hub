@@ -185,6 +185,30 @@ describe('QA areas and wider QA rules', () => {
   })
 })
 
+describe('Full-stack role and areas', () => {
+  it('places frontend, backend and AI-in-the-stack titles in Full-stack', () => {
+    expect(ruleRoles('React 19.3 ships the Activity API')).toContain('fs')
+    expect(ruleRoles('RAG on Postgres with pgvector')).toContain('fs')
+    expect(ruleRoles('Streaming UI with the AI SDK')).toContain('fs')
+  })
+  it('does not treat the verb "react" or a bare "rest" as full-stack', () => {
+    expect(ruleRoles('How models react to long prompts')).not.toContain('fs')
+    expect(ruleRoles('The rest of the year in AI')).not.toContain('fs')
+  })
+  it('tags frontend and backend areas, an item can carry both', () => {
+    expect(ruleAreas('Next.js 16.5 with Tailwind', '', ['fs'])).toEqual(['frontend'])
+    expect(ruleAreas('Node.js 26 LTS and Postgres 19', '', ['fs'])).toEqual(['backend'])
+    expect(ruleAreas('Full-stack RAG: React front, pgvector back', '', ['fs'])).toEqual(['frontend', 'backend'])
+    expect(ruleAreas('Weekly', 'A note on Redis and one on queues.', ['fs'])).toEqual(['backend'])
+    expect(ruleAreas('React tips', '', ['se'])).toEqual([])
+  })
+  it("adds a source's own areas inside its roles", () => {
+    expect(ruleAreas('Security releases', '', ['fs'], ['backend'])).toEqual(['backend'])
+    expect(ruleAreas('Security releases', '', ['qa'], ['backend'])).toEqual([])
+    expect(retag(item({ roles: ['fs'], title: 'This week', tagMethod: 'source' }), source({ roles: ['fs'], areas: ['backend'] })).areas).toEqual(['backend'])
+  })
+})
+
 describe('collapsePatchReleases', () => {
   const rel = (id: string, title: string, day: number, sourceId = 'cca') =>
     item({ id, title, sourceId, type: 'release', publishedAt: `2026-10-${String(day).padStart(2, '0')}T00:00:00.000Z`, summary: 'Notes' })

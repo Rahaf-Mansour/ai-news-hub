@@ -13,6 +13,7 @@ export const KEYS = {
   theme: 'hub:theme',
   lastVisit: 'hub:lastVisit',
   learn: 'hub:learn',
+  learnTrack: 'hub:learnTrack',
 } as const
 
 export function getItem(key: string): string | null {
