@@ -33,9 +33,9 @@ describe('Navigation and page structure', () => {
 
   it('switches tabs, updates the URL hash and filters the feed by role', () => {
     cy.visitHub()
-    cy.feed().find('[data-cy=item]').should('have.length', 10)
+    cy.feed().find('[data-cy=item]').should('have.length', 11)
 
-    const expected: Record<string, number> = { claude: 2, se: 5, pm: 2, qa: 3 }
+    const expected: Record<string, number> = { claude: 2, se: 5, pm: 2, qa: 4 }
     for (const [tab, count] of Object.entries(expected)) {
       cy.get(`[data-cy=tab-${tab}]`).click()
       cy.location('hash').should('eq', `#${tab}`)
@@ -75,11 +75,11 @@ describe('Navigation and page structure', () => {
 
   it('tracks learning progress and keeps it after a reload', () => {
     cy.visitHub({ hash: 'learn' })
-    cy.get('[data-cy=track-qa] [data-cy=track-progress]').should('have.text', '0 of 9 done')
+    cy.get('[data-cy=track-qa] [data-cy=track-progress]').should('have.text', '0 of 18 done')
     cy.get('#step-qa-cypress-ai').check()
-    cy.get('[data-cy=track-qa] [data-cy=track-progress]').should('have.text', '1 of 9 done')
+    cy.get('[data-cy=track-qa] [data-cy=track-progress]').should('have.text', '1 of 18 done')
     cy.reload()
-    cy.get('[data-cy=track-qa] [data-cy=track-progress]').should('have.text', '1 of 9 done')
+    cy.get('[data-cy=track-qa] [data-cy=track-progress]').should('have.text', '1 of 18 done')
   })
 
   it('links out to the three model leaderboards and lists per-source fetch status', () => {

@@ -42,7 +42,7 @@ export interface SourceConfig {
   hrefPattern?: string
   /** For 'hn': Algolia query and point threshold. */
   hn?: { query: string; minPoints: number }
-  /** For 'github-releases': drop pre-release / nightly tags matching this pattern. */
+  /** For 'github-releases': drop titles matching this pattern, in addition to pre-release/nightly tags (always skipped). */
   skipTitlePattern?: string
   /** Keep only items whose title matches this pattern (case-insensitive). Used to keep HN searches on topic. */
   titleFilter?: string
@@ -57,6 +57,9 @@ export interface RawItem {
   discussionUrl?: string
 }
 
+/** Sub-areas used for the facet toggles: QA (manual / automation / testing AI) and, later, full-stack. */
+export type Area = 'manual' | 'automation' | 'ai-testing' | 'frontend' | 'backend'
+
 export interface Item {
   id: string
   title: string
@@ -68,6 +71,8 @@ export interface Item {
   publishedAt: string
   firstSeenAt: string
   roles: Role[]
+  /** Facets inside a role (keyword rules). Absent on items from before this field existed. */
+  areas?: Area[]
   /** How the roles were assigned: keyword rules, the source's defaults, or the LLM. */
   tagMethod: 'rules' | 'source' | 'llm'
   summary: string

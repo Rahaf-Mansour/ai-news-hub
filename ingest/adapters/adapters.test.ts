@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest'
 import type { SourceConfig } from '../../src/types'
 import { parseAnthropicCards, parseReleaseNotes } from './anthropic'
 import { buildHnUrl, parseHn } from './hn'
-import { fetchSource } from './index'
+import { fetchSource, releaseSkipPattern } from './index'
 import { labelRelease, parseFeed } from './rss'
 
 const fixture = (name: string) => readFileSync(new URL(`../__fixtures__/${name}`, import.meta.url), 'utf8')
@@ -130,6 +130,13 @@ describe('fetchSource', () => {
   it('labels releases, drops skipped tags and sorts newest first', async () => {
     const items = await fetchSource(source, async () => fixture('github-releases.atom'), new Date())
     expect(items.map((i) => i.title)).toEqual(['Tool v2.1.30'])
+  })
+
+  it('adds a source skip pattern to the pre-release rule instead of replacing it', () => {
+    const re = new RegExp(releaseSkipPattern('^chore: release'), 'i')
+    expect(re.test('chore: release @cypress/webpack-dev-server')).toBe(true)
+    expect(re.test('v15.6.0-beta.1')).toBe(true)
+    expect(re.test('v15.6.0')).toBe(false)
   })
 
   it('skips pre-releases by default when no pattern is configured', async () => {

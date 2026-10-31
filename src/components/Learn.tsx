@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { TRACKS, type LearnStep } from '../content/learn'
 import { matchesStep } from '../lib/filter'
 import { KEYS, useStoredSet } from '../lib/storage'
@@ -51,10 +52,17 @@ export function Learn({ query, savedIds, onToggleSave }: Props) {
                 </p>
               )}
               <ol className="steps">
-                {steps.map(({ step, index }) => {
+                {steps.map(({ step, index }, i) => {
                   const isDone = done.set.has(step.id)
+                  const newSection = step.section && step.section !== steps[i - 1]?.step.section
                   return (
-                    <li key={step.id} className={`step${isDone ? ' step--done' : ''}`} data-cy="learn-step">
+                    <Fragment key={step.id}>
+                    {newSection && (
+                      <li className="step-section" data-cy="step-section">
+                        {step.section}
+                      </li>
+                    )}
+                    <li className={`step${isDone ? ' step--done' : ''}`} data-cy="learn-step">
                       <input
                         id={`step-${step.id}`}
                         type="checkbox"
@@ -83,6 +91,7 @@ export function Learn({ query, savedIds, onToggleSave }: Props) {
                         {savedIds.has(step.id) ? '★' : '☆'}
                       </button>
                     </li>
+                    </Fragment>
                   )
                 })}
               </ol>

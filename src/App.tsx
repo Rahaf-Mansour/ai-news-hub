@@ -3,6 +3,7 @@ import { AppBar, type TabDef } from './components/AppBar'
 import { BackToTop } from './components/BackToTop'
 import { CodeIcon, GitHubIcon, LinkedInIcon } from './components/Icons'
 import { AUTHOR_LINKS, AUTHOR_NAME } from './content/author'
+import { FacetToggle } from './components/FacetToggle'
 import { Feed } from './components/Feed'
 import type { ItemActions } from './components/ItemCard'
 import { Learn } from './components/Learn'
@@ -18,7 +19,7 @@ import { ROLE_LABEL } from './lib/roles'
 import { toSavedRepo, type SavedItem, type SavedRepo, type SavedStep } from './lib/saved'
 import { getItem, KEYS, setItem, useStoredRecords, useStoredSet } from './lib/storage'
 import { selectToday } from './lib/today'
-import type { ItemsFile, ReposFile, Role, SourcesStatusFile } from './types'
+import type { Area, ItemsFile, ReposFile, Role, SourcesStatusFile } from './types'
 
 type Tab = 'all' | Role | 'saved' | 'repos' | 'learn'
 const TABS: { id: Tab; label: string; role: Role | null; placeholder: string }[] = [
@@ -31,6 +32,18 @@ const TABS: { id: Tab; label: string; role: Role | null; placeholder: string }[]
   { id: 'repos', label: 'Repos', role: null, placeholder: 'Search repos…' },
   { id: 'learn', label: 'Learn', role: null, placeholder: 'Search learning steps…' },
 ]
+
+/** Sub-filters inside a role tab, matched against an item's `areas`. */
+const FACETS: Partial<Record<Role, { label: string; options: { id: Area; label: string }[] }>> = {
+  qa: {
+    label: 'QA area',
+    options: [
+      { id: 'manual', label: 'Manual & exploratory' },
+      { id: 'automation', label: 'Automation' },
+      { id: 'ai-testing', label: 'Testing AI' },
+    ],
+  },
+}
 
 const tabFromHash = (): Tab => {
   const token = window.location.hash.replace(/^#/, '')
@@ -61,6 +74,10 @@ export default function App() {
   const [loadError, setLoadError] = useState(false)
   const [tab, setTab] = useState<Tab>(tabFromHash)
   const [query, setQuery] = useState('')
+  // Each role tab remembers its own facet (QA: Manual / Automation / Testing AI…).
+  const [facetByTab, setFacetByTab] = useState<Partial<Record<Tab, Area | 'all'>>>({})
+  const facet = facetByTab[tab] ?? 'all'
+  const setFacet = (value: Area | 'all') => setFacetByTab((m) => ({ ...m, [tab]: value }))
   const [filter, setFilter] = useState<FilterState>(EMPTY_FILTER)
   const [theme, setTheme] = useState<ThemeChoice>(() => {
     const saved = getItem(KEYS.theme)
@@ -160,9 +177,25 @@ export default function App() {
   const today = useMemo(() => selectToday(all, now), [all, now])
   const current = TABS.find((t) => t.id === tab)!
   const feedFilter = useMemo(() => ({ ...filter, query }), [filter, query])
-  const visible = useMemo(
+  const facetDef = current.role ? FACETS[current.role] : undefined
+  const roleItems = useMemo(
     () => filterItems(all, current.role, feedFilter, read.set, savedItems.ids),
     [all, current.role, feedFilter, read.set, savedItems.ids],
+  )
+  const visible = useMemo(
+    () => (facetDef && facet !== 'all' ? roleItems.filter((i) => i.areas?.includes(facet)) : roleItems),
+    [roleItems, facetDef, facet],
+  )
+  const facets = facetDef && (
+    <FacetToggle
+      label={facetDef.label}
+      options={[
+        { id: 'all', label: 'All', count: roleItems.length },
+        ...facetDef.options.map((o) => ({ ...o, count: roleItems.filter((i) => i.areas?.includes(o.id)).length })),
+      ]}
+      value={facet}
+      onChange={setFacet}
+    />
   )
   const newCount = useMemo(() => (newSince ? all.filter((i) => i.firstSeenAt > newSince).length : 0), [all, newSince])
 
@@ -242,6 +275,7 @@ export default function App() {
                 setFilter={(f) => setFilter({ ...f, query: '' })}
                 onMarkAllRead={read.add}
                 label={current.id === 'all' ? 'All items' : current.label}
+                facets={facets}
                 {...actions}
               />
             )}

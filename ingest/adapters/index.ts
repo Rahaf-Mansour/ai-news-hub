@@ -4,8 +4,11 @@ import { parseAnthropicCards, parseReleaseNotes } from './anthropic'
 import { buildHnUrl, parseHn } from './hn'
 import { labelRelease, parseFeed } from './rss'
 
-/** Default for release feeds: skip alpha/beta/rc/dev/nightly builds ("4.4.0a0.dev1662", "v1.61.0-beta"). */
+/** Always skipped in release feeds: alpha/beta/rc/dev/nightly builds ("4.4.0a0.dev1662", "v1.61.0-beta"). */
 const PRERELEASE = String.raw`(alpha|beta|canary|nightly|next|\brc\d*\b|\.dev\d*|\d(a|b|rc)\d)`
+
+/** A source's own skip pattern adds to the pre-release rule rather than replacing it. */
+export const releaseSkipPattern = (custom?: string) => (custom ? `${PRERELEASE}|(${custom})` : PRERELEASE)
 
 /** Fetch one source and return its newest raw items. Throws on any failure; the runner isolates it. */
 export async function fetchSource(source: SourceConfig, fetchText: TextFetcher, now: Date): Promise<RawItem[]> {
@@ -18,7 +21,7 @@ export async function fetchSource(source: SourceConfig, fetchText: TextFetcher, 
     case 'github-releases': {
       const product = source.name.replace(/ releases$/i, '')
       items = (await parseFeed(await fetchText(source.feedUrl)))
-        .map((i) => labelRelease(i, product, source.skipTitlePattern ?? PRERELEASE))
+        .map((i) => labelRelease(i, product, releaseSkipPattern(source.skipTitlePattern)))
         .filter((i): i is RawItem => i !== null)
       break
     }

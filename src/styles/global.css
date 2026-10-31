@@ -1257,6 +1257,57 @@ details.panel[open] summary::after {
 .saved-list li > div {
   min-width: 0;
 }
+.step-section {
+  margin-top: 1rem;
+  padding: 0.35rem 0;
+  border-top: 2px solid var(--role-qa);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--role-qa);
+  list-style: none;
+}
+.facets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.9rem;
+  padding: 0.3rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--sunk);
+  width: fit-content;
+  max-width: 100%;
+}
+.facet {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.8rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.facet:hover {
+  color: var(--ink);
+}
+.facet[aria-pressed='true'] {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+}
+.facet__count {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--ink-3);
+}
 .step__save {
   align-self: start;
   font-size: 1rem;
