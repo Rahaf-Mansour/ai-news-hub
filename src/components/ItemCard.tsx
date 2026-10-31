@@ -34,17 +34,17 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
 
   return (
     <article className={classes} style={{ '--i': index } as CSSProperties} data-cy="item" data-id={item.id} data-read={isRead}>
-      <div className="item__gutter" aria-hidden="true" title={isNew ? 'New since your last visit' : undefined}>
+      <div className="item__gutter" aria-hidden="true" title={isNew ? 'New since your last visit' : undefined} data-cy="item-new-marker">
         {isNew ? '+' : ''}
       </div>
       <div className="item__body">
-        {variant === 'lead' && <div className="lead__kicker">Lead · {ROLE_LABEL[item.roles[0]]}</div>}
-        <div className="item__meta mono">
-          <span className="item__source">{item.sourceName}</span>
+        {variant === 'lead' && <div className="lead__kicker" data-cy="lead-kicker">Lead · {ROLE_LABEL[item.roles[0]]}</div>}
+        <div className="item__meta mono" data-cy="item-meta">
+          <span className="item__source" data-cy="item-source">{item.sourceName}</span>
           <span className={`tier tier--${item.tier}`} title={TIER_HELP[item.tier]} data-cy="tier">
             {TIER_LABEL[item.tier]}
           </span>
-          <time dateTime={item.publishedAt} title={fullDate(item.publishedAt)}>
+          <time dateTime={item.publishedAt} title={fullDate(item.publishedAt)} data-cy="item-date">
             {relativeDate(item.publishedAt, now)}
           </time>
           {isNew && <span className="sr-only">New since your last visit</span>}
@@ -54,7 +54,7 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
             </span>
           )}
         </div>
-        <Heading className="item__title">
+        <Heading className="item__title" data-cy="item-title">
           <a href={item.url} target="_blank" rel="noopener noreferrer" onClick={() => onOpen(item.id)} data-cy="item-link">
             <Highlight text={item.title} query={highlight} />
           </a>
@@ -70,18 +70,18 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
             {item.whyItMatters}
           </p>
         )}
-        <div className="item__foot">
+        <div className="item__foot" data-cy="item-roles">
           {item.roles.map((r) => (
-            <span key={r} className={`chip role-${r}`} data-cy="role-chip">
+            <span key={r} className={`chip role-${r}`} data-cy="role-chip" data-role={r}>
               {ROLE_LABEL[r]}
             </span>
           ))}
           {item.discussionUrl && item.discussionUrl !== item.url && (
-            <a className="text-link" href={item.discussionUrl} target="_blank" rel="noopener noreferrer">
+            <a className="text-link" data-cy="item-discussion" href={item.discussionUrl} target="_blank" rel="noopener noreferrer">
               HN discussion
             </a>
           )}
-          <div className="item__actions">
+          <div className="item__actions" data-cy="item-actions">
             <button
               type="button"
               className="icon-btn"

@@ -34,7 +34,7 @@ export function Feed({ items, total, filter, setFilter, onMarkAllRead, onMarkAll
   return (
     <section aria-label={`${label} feed`} data-cy="feed">
       {facets}
-      <div className="toolbar">
+      <div className="toolbar" data-cy="feed-toolbar">
         <label className="switch" title="Hide items you have opened or marked as read">
           <input
             id="hide-read"
@@ -66,7 +66,7 @@ export function Feed({ items, total, filter, setFilter, onMarkAllRead, onMarkAll
         >
           ★ Saved only
         </button>
-        <div className="filters" role="group" aria-label="Trust tier">
+        <div className="filters" role="group" aria-label="Trust tier" data-cy="tier-filters">
           {TIERS.map((t) => (
             <button
               key={t}
@@ -80,7 +80,7 @@ export function Feed({ items, total, filter, setFilter, onMarkAllRead, onMarkAll
             </button>
           ))}
         </div>
-        <div className="filters" role="group" aria-label="Type">
+        <div className="filters" role="group" aria-label="Type" data-cy="type-filters">
           {TYPES.map((t) => (
             <button
               key={t.id}
@@ -96,7 +96,7 @@ export function Feed({ items, total, filter, setFilter, onMarkAllRead, onMarkAll
         </div>
       </div>
 
-      <div className="result-line mono" aria-live="polite">
+      <div className="result-line mono" aria-live="polite" data-cy="feed-result-line">
         <span data-cy="result-count">
           {items.length} of {total} items
         </span>
@@ -119,7 +119,7 @@ export function Feed({ items, total, filter, setFilter, onMarkAllRead, onMarkAll
           {filter.query ? `No items match “${filter.query}”.` : 'No items match.'} Clear the search or turn off a filter.
         </p>
       ) : (
-        <div>
+        <div data-cy="feed-list">
           {items.map((item) => (
             <ItemCard key={item.id} item={item} {...actions} />
           ))}

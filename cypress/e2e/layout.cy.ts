@@ -34,6 +34,23 @@ describe('Page layout: sticky app bar', () => {
     cy.get('.byline').should('contain', 'by Rahaf Mansour')
   })
 
+  it('gives page-level test hooks one element each, and repeated ones a unique key', () => {
+    cy.visitHub()
+    for (const hook of ['masthead', 'wordmark', 'stats', 'search', 'tabs', 'app-bar', 'feed', 'feed-toolbar', 'feed-list', 'rail', 'footer', 'theme-toggle']) {
+      cy.get(`[data-cy=${hook}]`).should('have.length', 1)
+    }
+    cy.get('[data-cy=feed] [data-cy=item]').then(($items) => {
+      const ids = [...$items].map((i) => i.getAttribute('data-id'))
+      expect(new Set(ids).size).to.eq(ids.length)
+    })
+    cy.get('[data-cy=source-row]').then(($rows) => {
+      const ids = [...$rows].map((r) => r.getAttribute('data-source'))
+      expect(ids.every(Boolean) && new Set(ids).size === ids.length).to.eq(true)
+    })
+    cy.get('[data-cy=tab-learn]').click()
+    cy.get('[data-cy=learn-step]').each(($s) => expect($s.attr('data-step')).to.match(/^[a-z0-9-]+$/))
+  })
+
   it('explains the site to a first-time visitor in the footer', () => {
     cy.visitHub()
     cy.get('[data-cy=about] h2').then(($h) => expect([...$h].map((h) => h.textContent)).to.deep.eq(['How it works', 'Straight to the source', 'Private by design']))
@@ -80,13 +97,19 @@ describe('Page layout: sticky app bar', () => {
     cy.get('[data-cy=tab-learn]').should('be.visible')
   })
 
-  it('closes the Model watch panel to widen the feed, and remembers it', () => {
+  it('closes the Model watch panel so the content fills the full width, and remembers it', () => {
     cy.visitHub()
     cy.feed().then(($f) => {
       const before = $f[0].getBoundingClientRect().width
       cy.get('[data-cy=rail-toggle]').should('have.attr', 'aria-expanded', 'true').click()
       cy.get('[data-cy=model-watch]').should('not.exist')
       cy.feed().should(($g) => expect($g[0].getBoundingClientRect().width).to.be.greaterThan(before + 100))
+      // No empty side column: the feed reaches the right edge of the page, where the reopen button sits.
+      cy.get('#content').then(($page) => {
+        const pageRight = $page[0].getBoundingClientRect().right - parseFloat(getComputedStyle($page[0]).paddingRight)
+        cy.feed().should(($g) => expect($g[0].getBoundingClientRect().right).to.be.closeTo(pageRight, 2))
+        cy.get('[data-cy=rail-toggle]').should(($b) => expect($b[0].getBoundingClientRect().right).to.be.closeTo(pageRight, 2))
+      })
     })
     cy.reload()
     cy.get('[data-cy=rail-toggle]').should('have.attr', 'aria-expanded', 'false').and('contain', 'Model watch').click()
