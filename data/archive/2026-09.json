@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "count": 50,
+  "count": 54,
   "items": [
     {
       "id": "d713fc219c19",
@@ -38,6 +38,23 @@
       "summaryBy": "feed"
     },
     {
+      "id": "e67441db3010",
+      "title": "Chrome 156 beta",
+      "url": "https://developer.chrome.com/blog/chrome-156-beta?hl=en",
+      "sourceId": "chrome-devs",
+      "sourceName": "Chrome for Developers",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-09-30T07:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Chrome 156 is now in Beta. Check out the release notes.",
+      "summaryBy": "feed"
+    },
+    {
       "id": "7f14b7129d0b",
       "title": "Cypress v16.1.1",
       "url": "https://github.com/cypress-io/cypress/releases/tag/v16.1.1",
@@ -72,6 +89,24 @@
       "summaryBy": "feed"
     },
     {
+      "id": "ea34f1c20059",
+      "title": "HTML-in-Canvas updates: Iterating toward a better Web API",
+      "url": "https://developer.chrome.com/blog/html-in-canvas-ot-changes?hl=en",
+      "sourceId": "chrome-devs",
+      "sourceName": "Chrome for Developers",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-09-29T07:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Chrome 150 and 155 introduce essential ergonomic updates, renaming, and API refinements to the HTML-in-Canvas experimental API.",
+      "summaryBy": "feed"
+    },
+    {
       "id": "e0856b6022e3",
       "title": "Playwright MCP v0.0.83",
       "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.83",
@@ -83,6 +118,7 @@
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "source",
@@ -101,6 +137,7 @@
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "source",
@@ -314,6 +351,25 @@
       "summaryBy": "feed"
     },
     {
+      "id": "62d7e86665f9",
+      "title": "12 Node built-ins that replace npm packages",
+      "url": "https://nodeweekly.com/issues/642",
+      "sourceId": "node-weekly",
+      "sourceName": "Node Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "qa",
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​642 — September 24, 2026 Read on the Web ⚠️ We're taking a week off next week, so we'll be back on Thursday, October 8. __ Your editor, Peter Cooper Node.js Built-ins That…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "150b372fec11",
       "title": "The PM Offer Negotiation Playbook",
       "url": "https://news.aakashg.com/p/product-manager-salary-negotiation",
@@ -464,6 +520,7 @@
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "source",
@@ -603,6 +660,7 @@
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "source",
@@ -675,6 +733,23 @@
       ],
       "tagMethod": "rules",
       "summary": "**Anthropic** disclosed four cyber incidents involving **Claude** during third-party security tests, revealing failures in situational awareness and monitorability, with an…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "ae47a5f4e507",
+      "title": "React 19.3",
+      "url": "https://react.dev/blog/2026/09/09/react-19-3",
+      "sourceId": "react-blog",
+      "sourceName": "React blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "React 19.3 adds new features like View Transitions, Fragment Refs, browser(), Trusted Types, and more.",
       "summaryBy": "feed"
     },
     {
@@ -862,6 +937,7 @@
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "source",

@@ -1,7 +1,24 @@
 {
   "month": "2026-02",
-  "count": 4,
+  "count": 5,
   "items": [
+    {
+      "id": "26107d7712d2",
+      "title": "The React Foundation: A New Home for React Hosted by the Linux Foundation",
+      "url": "https://react.dev/blog/2026/02/24/the-react-foundation",
+      "sourceId": "react-blog",
+      "sourceName": "React blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-02-24T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "The React Foundation has officially launched, hosted by the Linux Foundation.",
+      "summaryBy": "feed"
+    },
     {
       "id": "0ba787c8704d",
       "title": "Indirect Prompt Injection in Web-Browsing Agents",

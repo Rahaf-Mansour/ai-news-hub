@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "count": 183,
+  "count": 213,
   "items": [
     {
       "id": "9d3720fd2e8f",
@@ -14,6 +14,7 @@
       "firstSeenAt": "2026-10-31T15:25:49.118Z",
       "roles": [
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "source",
@@ -183,6 +184,23 @@
       "discussionUrl": "https://news.ycombinator.com/item?id=50307219"
     },
     {
+      "id": "8492851df22e",
+      "title": "The Pulse: Anthropic kills the coding interview",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-anthropic-kills-the-coding",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-30T16:37:51.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "AI is rendering the Leetcode-style interview pointless and now Anthropic has deleted it from its interview loop. Also: details of incident.io’s AI spend, Microsoft’s exit offer…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "9b894388109d",
       "title": "Anthropic Cracking Down on Video Game Rewrites",
       "url": "https://twitter.com/chasmmmmmmmmmmm/status/2116062991686721968",
@@ -199,6 +217,23 @@
       "summary": "110 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50304358"
+    },
+    {
+      "id": "6db6c0a822f4",
+      "title": "Introducing Geist Serif",
+      "url": "https://vercel.com/blog/introducing-geist-serif",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-30T13:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Geist started as a monospace typeface for developers, built for the editors and terminals where they spend their day doing their work. From there it grew into Geist Sans for…",
+      "summaryBy": "feed"
     },
     {
       "id": "16b93e4bcaff",
@@ -290,6 +325,24 @@
       "summary": "923 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50300683"
+    },
+    {
+      "id": "50643e98e194",
+      "title": "Simplifying runtime caching on Vercel",
+      "url": "https://vercel.com/blog/simplifying-runtime-caching-on-vercel",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-30T04:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Today, we’re bringing Data Cache into Runtime Cache, giving developers one product for data caching across frameworks and APIs. If you use Next.js caching or , you won’t need to…",
+      "summaryBy": "feed"
     },
     {
       "id": "746b667bc457",
@@ -503,6 +556,23 @@
       "discussionUrl": "https://news.ycombinator.com/item?id=50290668"
     },
     {
+      "id": "739e0b5535e3",
+      "title": "Bliki: LLM Voice",
+      "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-29T14:28:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Sometimes when I read a post, I get the growing feeling that I'm reading the output of an LLM. I can't necessarily define why, although there are the common tells (it's not the…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "502de87809f2",
       "title": "Quoting Ben Hylak",
       "url": "https://simonwillison.net/2026/Oct/29/ben-hylak",
@@ -534,6 +604,40 @@
       ],
       "tagMethod": "source",
       "summary": "Let’s think about what we’re doing here",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e73b1e188559",
+      "title": "Why are good developers so wary of agentic development?",
+      "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-29T13:50:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "TL;DR Good developers’ caution about agentic development comes from knowing that built isn’t the same as working in production. I’ve been surprised by how many excellent…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "22a42169ff91",
+      "title": "Software engineering at Google & CS education with Titus Winters",
+      "url": "https://newsletter.pragmaticengineer.com/p/software-engineering-at-google-and",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-29T13:37:13.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Titus Winters shares lessons from engineering at Google’s scale and explores how AI is reshaping developer productivity and computer science education.",
       "summaryBy": "feed"
     },
     {
@@ -624,6 +728,24 @@
       "summaryBy": "feed"
     },
     {
+      "id": "6fccf9ebb2ca",
+      "title": "Node security releases to fix a Brotli flaw",
+      "url": "https://nodeweekly.com/issues/645",
+      "sourceId": "node-weekly",
+      "sourceName": "Node Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​645 — October 29, 2026 Read on the Web Node.js 26 'Lithium' Is Now the Active LTS Line — Node.js 26.13.0 promotes Node 26 to long-term support, with updates through April 2029…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "52ced88a57d9",
       "title": "Quoting Ted Sanders",
       "url": "https://simonwillison.net/2026/Oct/28/ted-sanders",
@@ -707,6 +829,23 @@
       ],
       "tagMethod": "rules",
       "summary": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c9ff3900c5bd",
+      "title": "Fragments: October 28",
+      "url": "https://martinfowler.com/fragments/2026-10-28.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-28T12:55:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Andrej Karpathy sees a widening gap in how people see LLM capabilities. The general public has mostly not interacted with these systems. When they have, it looks like a derpy…",
       "summaryBy": "feed"
     },
     {
@@ -797,6 +936,42 @@
       "summaryBy": "feed"
     },
     {
+      "id": "4365c098a53f",
+      "title": "Introducing Virtual Models on AI Gateway",
+      "url": "https://vercel.com/blog/ai-gateway-virtual-models",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-28T07:25:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Today, we are introducing on .Virtual ModelsAI Gateway Virtual Models are an abstraction of the model string and configurations your apps and developers use. With a single…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1cbf72ccb707",
+      "title": "Introducing Vercel CI",
+      "url": "https://vercel.com/blog/introducing-vercel-ci",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-28T07:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Coding agents are opening more pull requests than ever, and each one waits on CI before anyone can review or merge it. Most CI systems run the entire workflow on every push, even…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "8c63067a2b44",
       "title": "Genie 4 worlds 🌍, Frontier Code 2 👨‍💻, AI drug discovery 🧬",
       "url": "https://tldr.tech/ai/2026-10-28",
@@ -811,6 +986,25 @@
       ],
       "tagMethod": "source",
       "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f7a4aef484bd",
+      "title": "The spyware hiding in old script tags",
+      "url": "https://frontendfoc.us/issues/764",
+      "sourceId": "frontend-focus",
+      "sourceName": "Frontend Focus",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "qa",
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "🚀 Frontend Focus #​764 — October 28, 2026 | Read on the web 🖼️ HTML-in-Canvas: Interactive DOM Inside 2D, WebGL and WebGPU Canvases — Arriving in stable Chrome next week, this…",
       "summaryBy": "feed"
     },
     {
@@ -920,6 +1114,23 @@
       "summaryBy": "feed"
     },
     {
+      "id": "3bd3315ede2e",
+      "title": "AI SRE: what is it, how could it change on-call – and does it work?",
+      "url": "https://newsletter.pragmaticengineer.com/p/ai-sre",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-27T16:19:22.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "“AI SRE” is fast becoming a trending term fueled by flashy demos from vendors, but has an AI SRE ever really been on-call while engineers slept? Deepdive",
+      "summaryBy": "feed"
+    },
+    {
       "id": "6dd70bb9a79d",
       "title": "Coding From the Himalayas With an Offline AI Agent",
       "url": "https://latent.space/p/offline-coding",
@@ -1005,6 +1216,24 @@
       "summaryBy": "feed"
     },
     {
+      "id": "a654f105f1b2",
+      "title": "ElevenLabs on AI Gateway",
+      "url": "https://vercel.com/blog/elevenlabs-on-ai-gateway",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-27T07:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Vercel and are partnering to bring 14 ElevenLabs models to . To celebrate the launch, all ElevenLabs models are 50% off on AI Gateway for the first 14 days, through November…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "1b61c80d904e",
       "title": "appium@3.9.0",
       "url": "https://github.com/appium/appium/releases/tag/appium%403.9.0",
@@ -1036,6 +1265,25 @@
       ],
       "tagMethod": "source",
       "summary": "3.0.2 (2026-10-27) Note: Version bump only for package @appium/universal-xml-plugin",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "cc496bdee7e3",
+      "title": "Rebuilding the original GTA engine in JavaScript",
+      "url": "https://javascriptweekly.com/issues/808",
+      "sourceId": "javascript-weekly",
+      "sourceName": "JavaScript Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-27T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "qa",
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​808 — October 27, 2026 Read on the Web JavaScript Weekly TanStack AI 1.0: The Vendor-Neutral AI Toolkit Goes Stable — TanStack's framework-agnostic AI toolkit reaches 1.0, with…",
       "summaryBy": "feed"
     },
     {
@@ -1510,6 +1758,7 @@
       "roles": [
         "claude",
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "rules",
@@ -1654,6 +1903,23 @@
       ],
       "tagMethod": "source",
       "summary": "Elastic GPUs, sandbox growth, and the economics of the agent cloud",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c4f0d40ba70c",
+      "title": "The Pulse: Time to rethink software security because of AI?",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-do-we-need-to-rethink-software",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-22T14:08:21.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "A month’s worth of security breaches in a single day – will things get worse before they improve? Also: Anthropic accused of version control “rip off”, and more",
       "summaryBy": "feed"
     },
     {
@@ -1852,6 +2118,40 @@
       "summaryBy": "feed"
     },
     {
+      "id": "28a12ec0950e",
+      "title": "The revised rules of engineering management with Will Larson",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-revised-rules-of-engineering",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-21T16:58:21.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Will Larson, CTO of Imprint, explores how AI and shifting industry expectations are changing engineering management, career ladders, and the path from engineer to CTO.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "50744548848c",
+      "title": "Fragments: October 21",
+      "url": "https://martinfowler.com/fragments/2026-10-21.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-21T16:51:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Gergely Orosz is frustrated at those that entered his explicitly “No AI” essay competition and used AI. He goes on to say: When I start to suspect some part is AI about someone I…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "6157dba50759",
       "title": "chore: release @cypress/webpack-dev-server-v6.1.1",
       "url": "https://github.com/cypress-io/cypress/releases/tag/%40cypress%2Fwebpack-dev-server-v6.1.1",
@@ -1919,6 +2219,26 @@
       ],
       "tagMethod": "source",
       "summary": "What's changed Fixed claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables Fixed an API error being replaced by…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b696f256588a",
+      "title": "Ten CSS features worth voting for",
+      "url": "https://frontendfoc.us/issues/763",
+      "sourceId": "frontend-focus",
+      "sourceName": "Frontend Focus",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "claude",
+        "qa",
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "🚀 Frontend Focus #​763 — October 21, 2026 | Read on the web Everyone's Interop 2027 Wishlists Last week we shared that you can now rank the Interop web platform proposals for…",
       "summaryBy": "feed"
     },
     {
@@ -2024,6 +2344,25 @@
       ],
       "tagMethod": "source",
       "summary": "Inference hooks are out of beta for Claude Enterprise organizations. We’ve added organization webhooks to the Admin API, in beta with the webhooks-2026-10-07 beta header. (+3 more)",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "29771c08c7db",
+      "title": "The up to 8x faster Rust port of TypeScript",
+      "url": "https://javascriptweekly.com/issues/807",
+      "sourceId": "javascript-weekly",
+      "sourceName": "JavaScript Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "qa",
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​807 — October 20, 2026 Read on the Web JavaScript Weekly tsrs: Cloudflare and VoidZero's Rust Port of TypeScript — A Rust port of the Go-based TypeScript 7 compiler, built with…",
       "summaryBy": "feed"
     },
     {
@@ -2184,6 +2523,23 @@
       "summaryBy": "feed"
     },
     {
+      "id": "2b3bef51034d",
+      "title": "Is Your Organization Messing Up AI Adoption?",
+      "url": "https://smashingmagazine.com/2026/10/is-your-organization-messing-up-ai-adoption",
+      "sourceId": "smashing",
+      "sourceName": "Smashing Magazine",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-16T10:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "What can digital transformation teach us about AI adoption? Paul Boag revisits his book Digital Adaptation to show how lessons from the past can help organizations navigate the…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "5b818df8262a",
       "title": "Model PM: The Complete Guide",
       "url": "https://news.aakashg.com/p/model-pm",
@@ -2213,6 +2569,7 @@
       "roles": [
         "claude",
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "rules",
@@ -2230,7 +2587,8 @@
       "publishedAt": "2026-10-15T14:36:29.000Z",
       "firstSeenAt": "2026-10-31T15:25:49.118Z",
       "roles": [
-        "qa"
+        "qa",
+        "fs"
       ],
       "tagMethod": "source",
       "summary": "🐞 Bug Fixes mocker: Harden manual and redirect mocks [backport to v4] - by @sheremet-va in #11580 (b8253) View changes on GitHub",
@@ -2252,6 +2610,23 @@
       ],
       "tagMethod": "rules",
       "summary": "Claude Code writes better Cypress tests when it knows your conventions, can check its work in a live session, and can see your run history. Learn how to set up Cypress AI Skills…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b774389cd364",
+      "title": "When Software Meets Hardware",
+      "url": "https://martinfowler.com/articles/software-meets-hardware.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-15T13:25:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "When software meets hardware, engineering principles remain largely the same, but the sensible defaults often change. Kuldeep Singh describes our experience modernizing a large…",
       "summaryBy": "feed"
     },
     {
@@ -2304,6 +2679,25 @@
       ],
       "tagMethod": "source",
       "summary": "Fast mode is out of research preview for Claude Opus 5.5, and you no longer need to request access. We’ve added capabilities.thinking.types.between_tools to the Models API. (+1…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4da7b2fec966",
+      "title": "The NodeConf EU 2026 talks are online",
+      "url": "https://nodeweekly.com/issues/644",
+      "sourceId": "node-weekly",
+      "sourceName": "Node Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "qa",
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​644 — October 15, 2026 Read on the Web 📝 We're taking next week off and will be back on Thursday, October 29. __ Peter Cooper, your editor Skia Canvas 4.0: A Fast Canvas…",
       "summaryBy": "feed"
     },
     {
@@ -2513,6 +2907,24 @@
       "summaryBy": "feed"
     },
     {
+      "id": "f19f5dba36aa",
+      "title": "The best way to use icons in Web UIs",
+      "url": "https://frontendfoc.us/issues/762",
+      "sourceId": "frontend-focus",
+      "sourceName": "Frontend Focus",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "🚀 Frontend Focus #​762 — October 14, 2026 | Read on the web What the iPhone Duo Means for Web Development — The Duo is out next week, so Darius fired up the simulator to try the…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "0f61566b90ea",
       "title": "Vitest v5.0.4",
       "url": "https://github.com/vitest-dev/vitest/releases/tag/v5.0.4",
@@ -2525,6 +2937,7 @@
       "roles": [
         "claude",
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "rules",
@@ -2581,6 +2994,25 @@
       ],
       "tagMethod": "source",
       "summary": "Engineering",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f6d938f73806",
+      "title": "Ryan Dahl: 'Why reimplement Node? It works.'",
+      "url": "https://javascriptweekly.com/issues/806",
+      "sourceId": "javascript-weekly",
+      "sourceName": "JavaScript Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-13T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "claude",
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​806 — October 13, 2026 Read on the Web JavaScript Weekly Deno is Joining Cloudflare (But…) — Maybe David Bushell saw the writing on the wall, as the Deno team isn't joining…",
       "summaryBy": "feed"
     },
     {
@@ -2859,6 +3291,25 @@
       "summaryBy": "feed"
     },
     {
+      "id": "51b78f5dfabd",
+      "title": "When worker threads beat processes for Node efficiency",
+      "url": "https://nodeweekly.com/issues/643",
+      "sourceId": "node-weekly",
+      "sourceName": "Node Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "claude",
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​643 — October 8, 2026 Read on the Web 📝 We're back after taking last week off – you didn't miss an issue :-) If you want one neat thing to check out today, look for the voice…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "3d34d7f1f226",
       "title": "Playwright v1.64.0",
       "url": "https://github.com/microsoft/playwright/releases/tag/v1.64.0",
@@ -2926,6 +3377,41 @@
       ],
       "tagMethod": "source",
       "summary": "We’ve lowered the price of prompt cache reads on Claude Sonnet 5.5 from $0.20 USD to $0.10 USD per million tokens: 0.05x the base input… Code written for Claude Haiku 4.5 can…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "479aaebbebb5",
+      "title": "What's New in WebGPU (Chrome 155-156)",
+      "url": "https://developer.chrome.com/blog/new-in-webgpu-155-156?hl=en",
+      "sourceId": "chrome-devs",
+      "sourceName": "Chrome for Developers",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-07T07:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "WGSL fragment_depth extension, texture compression unaligned, srgb-linear and display-p3-linear color spaces, snorm10-10-10-2 vertex format, and more.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4f9db2000bd3",
+      "title": "JPEG XL finally ships in Chrome",
+      "url": "https://frontendfoc.us/issues/761",
+      "sourceId": "frontend-focus",
+      "sourceName": "Frontend Focus",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-07T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "🚀 Frontend Focus #​761 — October 7, 2026 | Read on the web How Fast is the Web? Exploring Billions of Real-User Measurements — A new free BigQuery dataset of anonymized real…",
       "summaryBy": "feed"
     },
     {
@@ -3015,6 +3501,42 @@
       "summaryBy": "feed"
     },
     {
+      "id": "fdf357d360df",
+      "title": "Shipping JPEG XL in Chrome",
+      "url": "https://developer.chrome.com/blog/jpeg-xl-in-chrome?hl=en",
+      "sourceId": "chrome-devs",
+      "sourceName": "Chrome for Developers",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-06T07:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "JPEG XL offers better compression than JPEG, built-in HDR support, lossless JPEG transcoding, and more.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "029de2814874",
+      "title": "Why don't more developers 'use the platform'?",
+      "url": "https://javascriptweekly.com/issues/805",
+      "sourceId": "javascript-weekly",
+      "sourceName": "JavaScript Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-06T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "claude",
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​805 — October 6, 2026 Read on the Web JavaScript Weekly Why Don't More Developers 'Use the Platform'? — A thoughtful look at why we often rebuild what browsers already offer…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "63f5e2a286a5",
       "title": "n8n CEO: Why we aren’t dead, how to build great AI products, and what I look for in an AI PM",
       "url": "https://news.aakashg.com/p/n8n-vs-claude-code",
@@ -3082,6 +3604,23 @@
       ],
       "tagMethod": "source",
       "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b14c04dba8be",
+      "title": "Email verification updates, October 2026",
+      "url": "https://developer.chrome.com/blog/email-verification-october-2026?hl=en",
+      "sourceId": "chrome-devs",
+      "sourceName": "Chrome for Developers",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-05T07:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Updates to the Email Verification origin trial, including Android support, third-party origin trials, optional kid handling, and Sec-Fetch-Dest header changes.",
       "summaryBy": "feed"
     },
     {
