@@ -20,6 +20,6 @@ export default tseslint.config(
   },
   {
     files: ['cypress/**/*.ts'],
-    rules: { '@typescript-eslint/no-namespace': 'off' },
+    languageOptions: { globals: { ...globals.mocha, cy: 'readonly', Cypress: 'readonly', expect: 'readonly' } },
   },
 )
