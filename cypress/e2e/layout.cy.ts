@@ -130,6 +130,21 @@ describe('Page layout: sticky app bar', () => {
     cy.get('[data-cy=model-watch]').should('be.visible')
   })
 
+  it('keeps the content centered with the panel hidden on a mid-size window', () => {
+    cy.viewport(1100, 800)
+    cy.visitHub({ storage: { 'hub:rail': 'closed' } })
+    cy.get('#content').should(($p) => {
+      const el = $p[0]
+      const r = el.getBoundingClientRect()
+      const cs = getComputedStyle(el)
+      const vw = el.ownerDocument.documentElement.clientWidth
+      const left = r.left + parseFloat(cs.paddingLeft)
+      const right = vw - r.right + parseFloat(cs.paddingRight)
+      expect(left).to.be.closeTo(right, 1)
+    })
+    cy.feed().then(($f) => cy.get('[data-cy=rail-toggle]').should(($b) => expect($b[0].getBoundingClientRect().left).to.be.at.least($f[0].getBoundingClientRect().right)))
+  })
+
   it('scrolls a clicked section to just below the sticky bar', () => {
     cy.visitHub()
     cy.get('[data-cy=tab-qa]').click()

@@ -215,6 +215,15 @@ describe('Full-stack role and areas', () => {
     expect(ruleAreas('Weekly', 'A note on Redis and one on queues.', ['fs'])).toEqual(['backend'])
     expect(ruleAreas('React tips', '', ['se'])).toEqual([])
   })
+  it('recognises .NET, C# and Java backends without matching domains or JavaScript', () => {
+    expect(ruleRoles('What is new in .NET 11 and C# 15')).toContain('fs')
+    expect(ruleRoles('Semantic Kernel adds MCP tools')).toContain('fs')
+    expect(ruleAreas('ASP.NET Core minimal APIs with Entity Framework', '', ['fs'])).toEqual(['backend'])
+    expect(ruleAreas('Spring AI 2.1 brings your own embeddings', '', ['fs'])).toEqual(['backend'])
+    expect(ruleAreas('Blazor gets streaming rendering', '', ['fs'])).toEqual(['frontend'])
+    expect(ruleRoles('Moving example.net to a new host')).not.toContain('fs')
+    expect(ruleAreas('Three JavaScript tips', '', ['fs'])).toEqual([])
+  })
   it("adds a source's own areas inside its roles", () => {
     expect(ruleAreas('Security releases', '', ['fs'], ['backend'])).toEqual(['backend'])
     expect(ruleAreas('Security releases', '', ['qa'], ['backend'])).toEqual([])
