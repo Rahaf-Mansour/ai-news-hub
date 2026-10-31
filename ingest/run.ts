@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 import type { Item, ItemsFile, RawItem, ReposFile, SourceConfig, SourcesStatusFile, SourceStatus } from '../src/types'
 import { fetchSource } from './adapters'
 import { loadArchive, readJson, writeArchive, writeJson } from './archive'
-import { dedupe, score, toItem } from './build'
+import { collapsePatchReleases, dedupe, retag, score, toItem } from './build'
 import { fetchText as defaultFetchText, type TextFetcher } from './http'
 import { createClaudeEnricher, enrichItems, llmEnabled, type Enricher } from './llm'
 import { fetchRepos, type JsonFetcher } from './repos'
@@ -88,8 +88,10 @@ export async function runIngest(opts: RunOptions): Promise<RunResult> {
 
   // 3. Score the reading window and, if enabled, enrich it.
   const cutoff = now.getTime() - WINDOW_DAYS * 86_400_000
+  const sourceById = new Map(sources.map((s) => [s.id, s]))
   let recent = merged
     .filter((i) => Date.parse(i.publishedAt) >= cutoff)
+    .map((i) => retag(i, sourceById.get(i.sourceId)))
     .map((i) => ({ ...i, score: score(i, now) }))
 
   const useLlm = llmEnabled(env)
@@ -107,6 +109,8 @@ export async function runIngest(opts: RunOptions): Promise<RunResult> {
     return { ok: 0, failed, items: 0, newItems: 0 }
   }
   const months = writeArchive(archiveDir, merged)
+  // Collapse runs of patch releases for reading only (after the archive is written, so it keeps them all).
+  recent = collapsePatchReleases(recent)
   recent.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.score - a.score)
   const itemsFile: ItemsFile = { generatedAt: now.toISOString(), llmEnabled: useLlm, windowDays: WINDOW_DAYS, items: recent }
   writeJson(join(publicDir, 'items.json'), itemsFile)

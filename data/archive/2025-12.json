@@ -1,6 +1,6 @@
 {
   "month": "2025-12",
-  "count": 5,
+  "count": 7,
   "items": [
     {
       "id": "44366f62b8aa",
@@ -54,6 +54,23 @@
       "summaryBy": "feed"
     },
     {
+      "id": "4dc7b60b9342",
+      "title": "Denial of Service and Source Code Exposure in React Server Components",
+      "url": "https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components",
+      "sourceId": "react-blog",
+      "sourceName": "React blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-12-11T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Security researchers have found and disclosed two additional vulnerabilities in React Server Components while attempting to exploit the patches in last week’s critical…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "ebd1bbfbd610",
       "title": "GPT-5.2 Initial Trust and Safety Assessment",
       "url": "https://promptfoo.dev/blog/gpt-5.2-trust-safety-assessment",
@@ -85,6 +102,23 @@
       ],
       "tagMethod": "source",
       "summary": "Model upgrades can change refusal, instruction-following, and tool-use behavior. Here's how to prevent safety regressions in agentic apps.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "208a065e1e59",
+      "title": "Critical Security Vulnerability in React Server Components",
+      "url": "https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components",
+      "sourceId": "react-blog",
+      "sourceName": "React blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2025-12-03T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "There is an unauthenticated remote code execution vulnerability in React Server Components. A fix has been published in versions 19.0.1, 19.1.2, and 19.2.1. We recommend…",
       "summaryBy": "feed"
     }
   ]

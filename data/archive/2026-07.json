@@ -1,6 +1,6 @@
 {
   "month": "2026-07",
-  "count": 3,
+  "count": 8,
   "items": [
     {
       "id": "aee52c5bd411",
@@ -17,6 +17,40 @@
       ],
       "tagMethod": "source",
       "summary": "Bug Fixes #41989 [Regression]: tsconfig \"extends\" bare specifier isn't resolved via node_modules walk-up like tsc (fatal since 1.62) #41998 [Regression]: directory-form tsconfig…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "bc003bc540eb",
+      "title": "The Bull And Bear Case For Digital Design In The Age Of AI",
+      "url": "https://smashingmagazine.com/2026/07/bull-and-bear-case-digital-design-age-ai",
+      "sourceId": "smashing",
+      "sourceName": "Smashing Magazine",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-07-29T13:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "As AI reshapes product design, it could give designers greater autonomy or expose the gaps that autonomy makes harder to hide. Exploring both the bull and bear cases, Andy Budd…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "eec6f05f565a",
+      "title": "Thinking Outside The Box: Digital Design In The AI Era",
+      "url": "https://smashingmagazine.com/2026/07/digital-design-ai-era",
+      "sourceId": "smashing",
+      "sourceName": "Smashing Magazine",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-07-28T10:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Many of the AI tools we interact with take the form of text boxes. But what if there was a different way to interact with AI? Oleksii Hrzhehorzhevskyi explores a different…",
       "summaryBy": "feed"
     },
     {
@@ -38,6 +72,57 @@
       "summaryBy": "feed"
     },
     {
+      "id": "e43466111ca5",
+      "title": "Some Class Recordings Are Available",
+      "url": "https://satisfice.com/blog/archives/488173",
+      "sourceId": "satisfice",
+      "sourceName": "Satisfice (James Bach)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-07-24T12:34:19.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "For the foreseeable future, I will not be scheduling public classes on my own behalf. I am still available for private classes, and I will even do public classes as long as long…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "9df490a376c0",
+      "title": "Just the Facts, Please",
+      "url": "https://developsense.com/blog/2026/07/just-the-facts-please",
+      "sourceId": "developsense",
+      "sourceName": "DevelopSense (Michael Bolton)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-07-21T17:08:48.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "It might okay for an organization to use LLMs in technical support — to parse a request for content, and then provide links to curated answers, call services that can provide…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "69f7244101d8",
+      "title": "No, People Don’t Want More AI In Their Life",
+      "url": "https://smashingmagazine.com/2026/07/people-dont-want-more-ai",
+      "sourceId": "smashing",
+      "sourceName": "Smashing Magazine",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-07-15T10:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Many companies assume everyone craves new AI features. But the reality is that most people don't want more AI — at least not in the way most AI leaders envision it. Brought to…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "21766b439832",
       "title": "Playwright MCP v0.0.78",
       "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.78",
@@ -49,6 +134,7 @@
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "source",

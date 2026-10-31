@@ -24,6 +24,13 @@ export const REPOS: RepoConfig[] = [
   { fullName: 'qodo-ai/qodo-cover', roles: ['qa', 'se'], why: 'AI unit-test generation aimed at raising coverage in CI.', note: 'AGPL-3.0 license' },
   { fullName: 'tugkanboz/awesome-ai-testing', roles: ['qa'], why: 'Best map of AI testing tools: NL authoring, self-healing, LLM-as-judge, visual AI.' },
 
+  // Full-stack: AI features in web apps
+  { fullName: 'vercel/ai', roles: ['fs', 'se'], why: 'The AI SDK: streaming, tool calling and structured output in TypeScript, with React hooks for the UI.' },
+  { fullName: 'mastra-ai/mastra', roles: ['fs', 'se'], why: 'TypeScript framework for agents, workflows, RAG and evals that fits next to a Node backend.' },
+  { fullName: 'langchain-ai/langchainjs', roles: ['fs', 'se'], why: 'LangChain for JS/TS: many integrations; compare its abstractions with the AI SDK before choosing.' },
+  { fullName: 'modelcontextprotocol/typescript-sdk', roles: ['fs', 'se', 'claude'], why: 'Official SDK for writing MCP servers and clients in TypeScript, e.g. to expose your API to Claude.' },
+  { fullName: 'pgvector/pgvector', roles: ['fs'], why: 'Vector search inside Postgres: RAG without adding a separate vector database.' },
+
   // Product management
   { fullName: 'phuryn/pm-skills', roles: ['pm'], why: '65+ PM skills and chained workflows (PRDs, discovery, OKRs, launch) as Claude plugins.' },
   { fullName: 'deanpeters/Product-Manager-Skills', roles: ['pm'], why: 'Skills that do PM work and coach you on the frameworks behind it.', note: 'CC BY-NC-SA 4.0: non-commercial use only' },

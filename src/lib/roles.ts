@@ -1,20 +1,22 @@
 import type { Role, TrustTier } from '../types'
 
-/** Display and grouping order: Claude first, then the reader's QA and PM lenses, then SE. */
-export const ROLE_ORDER: Role[] = ['claude', 'qa', 'pm', 'se']
+/** Display and grouping order: Claude first, then QA, PM, full-stack, and AI dev tools last. */
+export const ROLE_ORDER: Role[] = ['claude', 'qa', 'pm', 'fs', 'se']
 
 export const ROLE_LABEL: Record<Role, string> = {
   claude: 'Claude',
   se: 'SE',
   pm: 'PM',
   qa: 'QA',
+  fs: 'Full-stack',
 }
 
 export const ROLE_NAME: Record<Role, string> = {
   claude: 'Claude',
-  se: 'Software engineering',
+  se: 'AI dev tools & agents',
   pm: 'Product management',
   qa: 'QA and testing',
+  fs: 'Full-stack engineering',
 }
 
 export const TIER_LABEL: Record<TrustTier, string> = {

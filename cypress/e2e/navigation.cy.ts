@@ -31,11 +31,32 @@ describe('Navigation and page structure', () => {
     })
   })
 
+  it('hides "Why it matters" lines when the LLM step did not run', () => {
+    cy.fixture('items.json').then((items) => {
+      cy.visitHub({ itemsBody: { ...items, llmEnabled: false } })
+    })
+    cy.get('[data-cy=item-summary]').should('exist')
+    cy.get('[data-cy=item-why]').should('not.exist')
+  })
+
+  it('reopens the last tab when the address has no hash', () => {
+    cy.visitHub()
+    cy.get('[data-cy=tab-pm]').click()
+    cy.visitHub()
+    cy.get('[data-cy=tab-pm]').should('have.attr', 'aria-current', 'page')
+    // A hash in the address still wins over the remembered tab.
+    cy.window().then((win) => {
+      win.location.hash = 'qa'
+    })
+    cy.reload()
+    cy.get('[data-cy=tab-qa]').should('have.attr', 'aria-current', 'page')
+  })
+
   it('switches tabs, updates the URL hash and filters the feed by role', () => {
     cy.visitHub()
-    cy.feed().find('[data-cy=item]').should('have.length', 10)
+    cy.feed().find('[data-cy=item]').should('have.length', 13)
 
-    const expected: Record<string, number> = { claude: 2, se: 5, pm: 2, qa: 3 }
+    const expected: Record<string, number> = { claude: 2, fs: 2, se: 6, pm: 2, qa: 4 }
     for (const [tab, count] of Object.entries(expected)) {
       cy.get(`[data-cy=tab-${tab}]`).click()
       cy.location('hash').should('eq', `#${tab}`)
@@ -43,6 +64,18 @@ describe('Navigation and page structure', () => {
       cy.feed().find('[data-cy=item]').should('have.length', count)
       cy.get(`[data-cy=tab-count-${tab}]`).should('have.text', String(count))
     }
+  })
+
+  it('shows Today only on the All tab; other tabs start with their own section', () => {
+    cy.visitHub()
+    cy.get('[data-cy=today]').should('be.visible')
+    for (const tab of ['claude', 'fs', 'qa', 'repos', 'learn']) {
+      cy.get(`[data-cy=tab-${tab}]`).click()
+      cy.get('[data-cy=today]').should('not.exist')
+      cy.get(`[data-cy=panel-${tab}]`).should('be.visible')
+    }
+    cy.get('[data-cy=tab-all]').click()
+    cy.get('[data-cy=today]').should('be.visible')
   })
 
   it('opens the tab named in the hash on load, and shows the Claude timeline there', () => {
@@ -63,11 +96,12 @@ describe('Navigation and page structure', () => {
 
   it('tracks learning progress and keeps it after a reload', () => {
     cy.visitHub({ hash: 'learn' })
-    cy.get('[data-cy=track-qa] [data-cy=track-progress]').should('have.text', '0 of 9 done')
+    cy.get('[data-cy=track-pick-qa]').click()
+    cy.get('[data-cy=track-qa] [data-cy=track-progress]').should('have.text', '0 of 18 done')
     cy.get('#step-qa-cypress-ai').check()
-    cy.get('[data-cy=track-qa] [data-cy=track-progress]').should('have.text', '1 of 9 done')
+    cy.get('[data-cy=track-pick-qa]').should('contain', '1/18')
     cy.reload()
-    cy.get('[data-cy=track-qa] [data-cy=track-progress]').should('have.text', '1 of 9 done')
+    cy.get('[data-cy=track-qa] [data-cy=track-progress]').should('have.text', '1 of 18 done')
   })
 
   it('links out to the three model leaderboards and lists per-source fetch status', () => {

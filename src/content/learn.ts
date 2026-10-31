@@ -1,6 +1,8 @@
 // Hand-curated learning tracks. Every link was checked to respond on
 // 2026-10-31. Steps are in the order to do them.
 
+import type { Role } from '../types'
+
 export interface LearnStep {
   id: string
   title: string
@@ -9,11 +11,15 @@ export interface LearnStep {
   minutes: number
   why: string
   note?: string
+  /** Optional group heading inside a track; consecutive steps with the same section are shown together. */
+  section?: string
 }
 
 export interface LearnTrack {
   id: string
   name: string
+  /** The lens this track belongs to; sets its colour. */
+  role: Role
   for: string
   outcome: string
   steps: LearnStep[]
@@ -23,6 +29,7 @@ export const TRACKS: LearnTrack[] = [
   {
     id: 'producer',
     name: 'AI-enabled Producer',
+    role: 'pm',
     for: 'For a Producer or PM who wants to use Claude in day-to-day product work.',
     outcome: 'You can write prompts that hold up, run PM workflows as Claude skills, and judge an AI feature with evals.',
     steps: [
@@ -88,12 +95,78 @@ export const TRACKS: LearnTrack[] = [
   },
   {
     id: 'qa',
-    name: 'QA to AI testing',
-    for: 'For a Cypress-strong QA engineer moving into AI-assisted testing and testing AI features.',
-    outcome: 'You can use AI inside Cypress, drive a browser from an agent, and write evals for LLM features.',
+    name: 'QA in the AI era',
+    role: 'qa',
+    for: 'For manual, exploratory and automation testers: using AI in your testing, and testing the AI features your team ships.',
+    outcome: 'You can use an LLM for test ideas and charters, drive Playwright, Cypress or WebdriverIO with AI agents, and write evals for LLM features, while keeping your own judgment in charge.',
     steps: [
       {
+        id: 'qa-xray-exploratory',
+        section: 'AI for manual & exploratory testers',
+        title: 'AI in exploratory testing: from hype to practice',
+        url: 'https://www.getxray.app/blog/ai-in-exploratory-testing',
+        source: 'Xray blog',
+        minutes: 15,
+        why: 'Prompts for clarifying vague requirements, test ideas tied to risks, draft charters and bug reports, and why each still needs your review.',
+      },
+      {
+        id: 'qa-manning-exploratory',
+        section: 'AI for manual & exploratory testers',
+        title: 'Assisting exploratory testing with AI',
+        url: 'https://livebook.manning.com/book/software-testing-with-generative-ai/chapter-8',
+        source: 'Software Testing with Generative AI (Manning)',
+        minutes: 45,
+        why: 'A book chapter on using LLMs to shape richer charters and session notes without handing over the testing itself.',
+        note: 'Partly paywalled.',
+      },
+      {
+        id: 'qa-bach-humans',
+        section: 'AI for manual & exploratory testers',
+        title: 'Humans In The Way',
+        url: 'https://www.satisfice.com/blog/archives/488130',
+        source: 'Satisfice (James Bach)',
+        minutes: 10,
+        why: 'A critical voice from Rapid Software Testing on where AI use should stop. Read it to keep the track balanced.',
+      },
+      {
+        id: 'qa-bolton-paradox',
+        section: 'AI for manual & exploratory testers',
+        title: 'AI and the Productivity Paradox',
+        url: 'https://developsense.com/blog/2026/01/ai-and-the-productivity-paradox',
+        source: 'DevelopSense (Michael Bolton)',
+        minutes: 10,
+        why: 'Why faster output is not the same as better testing, and what to look at instead.',
+      },
+      {
+        id: 'qa-playwright-mcp',
+        section: 'Playwright + AI',
+        title: 'Playwright MCP',
+        url: 'https://github.com/microsoft/playwright-mcp',
+        source: 'Microsoft',
+        minutes: 45,
+        why: 'The standard way to give an agent a browser through the accessibility tree, not screenshots.',
+      },
+      {
+        id: 'qa-playwright-agents',
+        section: 'Playwright + AI',
+        title: 'Playwright test agents: planner, generator, healer',
+        url: 'https://playwright.dev/docs/test-agents',
+        source: 'Playwright docs',
+        minutes: 20,
+        why: 'Built-in agents that explore your app into a Markdown test plan, turn the plan into tests, and repair failing ones.',
+      },
+      {
+        id: 'qa-playwright-cli',
+        section: 'Playwright + AI',
+        title: 'Playwright CLI for coding agents',
+        url: 'https://github.com/microsoft/playwright-cli',
+        source: 'Microsoft',
+        minutes: 15,
+        why: 'Microsoft now recommends it over MCP for coding agents because it uses far fewer tokens.',
+      },
+      {
         id: 'qa-cypress-ai',
+        section: 'Cypress + AI',
         title: 'AI in Cypress overview',
         url: 'https://docs.cypress.io/app/ai/overview',
         source: 'Cypress docs',
@@ -102,38 +175,52 @@ export const TRACKS: LearnTrack[] = [
       },
       {
         id: 'qa-cy-prompt',
+        section: 'Cypress + AI',
         title: 'cy.prompt: write Cypress tests in plain English',
         url: 'https://www.cypress.io/blog/write-cypress-tests-in-plain-english-ai-powered-test-automation-is-now-in-beta',
         source: 'Cypress blog',
         minutes: 15,
-        why: 'Natural-language steps compile to real Cypress commands you can read and export. Try it on one existing spec.',
+        why: 'Natural-language steps compile to real Cypress commands you can read and export. A bridge from manual test cases to automation.',
       },
       {
         id: 'qa-cloud-mcp',
+        section: 'Cypress + AI',
         title: 'Cypress AI features and Cloud MCP',
         url: 'https://docs.cypress.io/cloud/features/cypress-ai-features',
         source: 'Cypress docs',
         minutes: 20,
-        why: 'Lets Claude Code read your Cypress Cloud runs, so it can triage a flaky test with real data.',
+        why: 'Lets an agent such as Claude Code read your Cypress Cloud runs, so it can triage a flaky test with real data.',
       },
       {
-        id: 'qa-playwright-mcp',
-        title: 'Playwright MCP and Playwright CLI',
-        url: 'https://github.com/microsoft/playwright-mcp',
-        source: 'Microsoft',
-        minutes: 45,
-        why: 'The standard way to give an agent a browser. Compare it with playwright-cli, which uses far fewer tokens.',
+        id: 'qa-wdio-v10',
+        section: 'Other frameworks',
+        title: 'WebdriverIO v10: Verification Loops for Coding Agents, on Every Platform',
+        url: 'https://webdriver.io/blog/2026/10/05/webdriverio-v10-release',
+        source: 'WebdriverIO blog',
+        minutes: 15,
+        why: 'Agents check their work in real browsers, mobile devices and desktop apps, then leave regular tests behind.',
+      },
+      {
+        id: 'qa-wdio-mcp',
+        section: 'Other frameworks',
+        title: 'Introducing WebdriverIO MCP',
+        url: 'https://webdriver.io/blog/2026/02/04/introducing-webdriverio-mcp',
+        source: 'WebdriverIO blog',
+        minutes: 10,
+        why: 'The WebdriverIO take on giving agents a browser and mobile app driver.',
       },
       {
         id: 'qa-stagehand',
+        section: 'Other frameworks',
         title: 'Stagehand: act, extract, observe in TypeScript',
         url: 'https://github.com/browserbase/stagehand',
         source: 'Browserbase',
         minutes: 45,
-        why: 'AI browser steps in TypeScript. Closest to how you already think in Cypress.',
+        why: 'AI browser steps in TypeScript, close to how you already think in Cypress or Playwright.',
       },
       {
         id: 'qa-evals',
+        section: 'Testing AI features',
         title: 'Demystifying evals for AI agents',
         url: 'https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents',
         source: 'Anthropic Engineering',
@@ -142,6 +229,7 @@ export const TRACKS: LearnTrack[] = [
       },
       {
         id: 'qa-promptfoo',
+        section: 'Testing AI features',
         title: 'promptfoo: evals and red-teaming for LLM apps',
         url: 'https://github.com/promptfoo/promptfoo',
         source: 'promptfoo',
@@ -149,7 +237,17 @@ export const TRACKS: LearnTrack[] = [
         why: 'YAML test cases for prompts and LLM features. Write one suite for a feature your team ships.',
       },
       {
+        id: 'qa-deepeval',
+        section: 'Testing AI features',
+        title: 'DeepEval: pytest-style LLM evaluation',
+        url: 'https://github.com/confident-ai/deepeval',
+        source: 'Confident AI',
+        minutes: 45,
+        why: '50+ metrics for LLM outputs; compare its approach with promptfoo before picking one.',
+      },
+      {
         id: 'qa-landscape',
+        section: 'Landscape',
         title: 'Awesome AI testing',
         url: 'https://github.com/tugkanboz/awesome-ai-testing',
         source: 'tugkanboz/awesome-ai-testing',
@@ -158,11 +256,104 @@ export const TRACKS: LearnTrack[] = [
       },
       {
         id: 'qa-state',
+        section: 'Landscape',
         title: 'State of AI in Software Testing 2026',
         url: 'https://www.browserstack.com/state-of-art-software-testing-report',
         source: 'BrowserStack',
         minutes: 20,
         why: 'Most teams use AI in testing, few have reached autonomy. Good framing for your own roadmap.',
+      },
+    ],
+  },
+  {
+    id: 'fullstack',
+    name: 'AI for full-stack engineers',
+    role: 'fs',
+    for: 'For a web developer who wants to code with an agent and ship AI features on both ends of the stack.',
+    outcome: 'You can build a streaming, tool-calling AI feature with RAG on Postgres, expose it over MCP, and test, cost and secure it.',
+    steps: [
+      {
+        id: 'fs-claude-code',
+        section: 'Your workflow',
+        title: 'Best practices for Claude Code',
+        url: 'https://code.claude.com/docs/en/best-practices',
+        source: 'Anthropic',
+        minutes: 30,
+        why: 'Plan first, give the agent a way to check its work, keep context small: the habits behind good AI-assisted code.',
+      },
+      {
+        id: 'fs-ai-sdk',
+        section: 'Frontend',
+        title: 'AI SDK: introduction',
+        url: 'https://ai-sdk.dev/docs/introduction',
+        source: 'Vercel',
+        minutes: 30,
+        why: 'One TypeScript API over many model providers, with streaming to React, Vue or Svelte built in.',
+      },
+      {
+        id: 'fs-generative-ui',
+        section: 'Frontend',
+        title: 'Generative user interfaces',
+        url: 'https://ai-sdk.dev/docs/ai-sdk-ui/generative-user-interfaces',
+        source: 'Vercel',
+        minutes: 30,
+        why: 'Let the model pick a component (a weather card, a chart) instead of replying with text.',
+      },
+      {
+        id: 'fs-tool-calling',
+        section: 'Backend',
+        title: 'Tool calling',
+        url: 'https://ai-sdk.dev/docs/ai-sdk-core/tools-and-tool-calling',
+        source: 'Vercel',
+        minutes: 40,
+        why: 'Give the model your own functions with typed inputs. Pair it with the structured data page for JSON you can trust.',
+        note: 'Next: ai-sdk.dev/docs/ai-sdk-core/generating-structured-data',
+      },
+      {
+        id: 'fs-rag',
+        section: 'Backend',
+        title: 'Build a RAG agent with Postgres and pgvector',
+        url: 'https://ai-sdk.dev/cookbook/guides/rag-chatbot',
+        source: 'Vercel',
+        minutes: 90,
+        why: 'Embeddings stored in Postgres, retrieved as a tool: the whole RAG loop in one project.',
+      },
+      {
+        id: 'fs-mcp',
+        section: 'Backend',
+        title: 'MCP TypeScript SDK',
+        url: 'https://github.com/modelcontextprotocol/typescript-sdk',
+        source: 'Model Context Protocol',
+        minutes: 60,
+        why: 'Wrap your API as an MCP server so Claude and other agents can use it.',
+      },
+      {
+        id: 'fs-evals',
+        section: 'Ship it',
+        title: 'Demystifying evals for AI agents',
+        url: 'https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents',
+        source: 'Anthropic',
+        minutes: 25,
+        why: 'How to test a feature whose output changes from run to run, before users find the regressions.',
+      },
+      {
+        id: 'fs-cost-latency',
+        section: 'Ship it',
+        title: 'Prompt caching',
+        url: 'https://platform.claude.com/docs/en/build-with-claude/prompt-caching',
+        source: 'Anthropic',
+        minutes: 25,
+        why: 'The biggest lever on cost and time-to-first-token for prompts that repeat a long prefix.',
+        note: 'Next: the "Reducing latency" guide in the same docs',
+      },
+      {
+        id: 'fs-owasp',
+        section: 'Ship it',
+        title: 'OWASP Top 10 for LLM Applications',
+        url: 'https://genai.owasp.org/llm-top-10/',
+        source: 'OWASP',
+        minutes: 45,
+        why: 'Prompt injection, improper output handling, excessive agency: the risks to check before an AI feature ships.',
       },
     ],
   },

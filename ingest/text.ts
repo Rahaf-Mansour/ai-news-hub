@@ -40,6 +40,11 @@ export function cleanText(value: string | undefined | null): string {
     .trim()
 }
 
+/** Drop emoji (and the spaces around them) at the start of a feed summary: "🎉 Claude Code…" → "Claude Code…". */
+export function stripLeadingEmoji(value: string): string {
+  return value.replace(/^(?:[\p{Extended_Pictographic}\p{Emoji_Modifier}\p{Regional_Indicator}\s]|\u200d|\ufe0f)+/u, '')
+}
+
 /** Cut at a word boundary and add an ellipsis. */
 export function truncate(value: string, max: number): string {
   if (value.length <= max) return value

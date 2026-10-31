@@ -1,6 +1,6 @@
 {
   "month": "2026-06",
-  "count": 4,
+  "count": 5,
   "items": [
     {
       "id": "177fcc411e07",
@@ -14,6 +14,7 @@
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "source",
@@ -35,6 +36,23 @@
       ],
       "tagMethod": "source",
       "summary": "Bug Fixes #41365 [Bug]: Expect.Extend matcher with same name as default matcher in same expect instance overrides default matchers implementation to custom matcher #41351 [Bug]…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "779ea720c224",
+      "title": "This WebDriver Went Tracing",
+      "url": "https://webdriver.io/blog/2026/06/18/webdriverio-tracing",
+      "sourceId": "webdriverio-blog",
+      "sourceName": "WebdriverIO blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-06-18T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "We've all been there. A test fails in CI. You open the logs, and all you get is:",
       "summaryBy": "feed"
     },
     {
@@ -67,6 +85,7 @@
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
         "qa",
+        "fs",
         "se"
       ],
       "tagMethod": "source",

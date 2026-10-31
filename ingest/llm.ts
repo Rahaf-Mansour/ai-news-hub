@@ -33,9 +33,9 @@ export type LlmOutput = z.infer<typeof EnrichmentSchema>['items'][number]
 
 export type Enricher = (batch: LlmInput[]) => Promise<LlmOutput[]>
 
-const SYSTEM = `You label AI news items for one reader's daily digest.
+const SYSTEM = `You label AI news items for a public daily digest.
 
-The reader is a Producer (a product role close to PM) at a restaurant-software company, with a QA automation background: strong Cypress and JavaScript/TypeScript, some React. They read for four lenses:
+Its readers are working software people (engineers, product managers and testers) who want to know what changed in AI for their role. The digest has four lenses:
 - claude: Claude models, Claude Code, Anthropic products and API changes
 - se: software engineering with AI (coding agents, SDKs, developer tooling)
 - pm: product management with AI (discovery, PRDs, strategy, adoption, AI product sense)
@@ -44,7 +44,7 @@ The reader is a Producer (a product role close to PM) at a restaurant-software c
 For each item you get a title, a source name and a short excerpt. Return, for every item, using its id:
 - roles: the lenses it is genuinely useful for (one or more; most items fit one or two).
 - summary: one plain sentence, at most 25 words, in your own words. Say what happened or what the piece argues. Don't copy phrases from the excerpt, and don't add facts that aren't in the title or excerpt.
-- why: one short sentence, at most 20 words, on why it matters to this reader specifically. If it barely matters, say so plainly.`
+- why: one short sentence, at most 20 words, on why it matters in practice to someone in the item's roles. If it barely matters, say so plainly.`
 
 /** Default enricher: one structured-output call to Claude Haiku 5.5 per batch. */
 export function createClaudeEnricher(client = new Anthropic()): Enricher {

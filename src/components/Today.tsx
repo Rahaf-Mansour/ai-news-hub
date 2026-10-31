@@ -1,4 +1,5 @@
 import { ROLE_NAME } from '../lib/roles'
+import { formatRunTime, nextRun } from '../lib/schedule'
 import type { TodayView } from '../lib/today'
 import { ItemCard, type ItemActions } from './ItemCard'
 
@@ -14,7 +15,7 @@ export function Today({ view, ...actions }: { view: TodayView } & ItemActions) {
           </p>
         </div>
         {!view.lead ? (
-          <p className="empty">Nothing new in the last week. The next run is at 05:30 UTC.</p>
+          <p className="empty">Nothing new in the last week. The next refresh is {formatRunTime(nextRun(actions.now))} your time.</p>
         ) : (
           <div className="today__grid">
             <ItemCard item={view.lead} variant="lead" {...actions} />
