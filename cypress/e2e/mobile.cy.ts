@@ -52,6 +52,12 @@ describe('Mobile layout', () => {
     })
   })
 
+  it('stacks Model watch under the content with no hide button, even if it was closed on a wide screen', () => {
+    cy.visitHub({ storage: { 'hub:rail': 'closed' } })
+    cy.get('[data-cy=rail-toggle]').should('not.be.visible')
+    cy.get('[data-cy=model-watch]').scrollIntoView().should('be.visible')
+  })
+
   it('stacks Today into a single column', () => {
     cy.get('.today__groups')
       .should('have.css', 'grid-template-columns')
