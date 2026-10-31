@@ -50,12 +50,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Same command as locally: start-server-and-test starts `vite preview`,
+      # retries until it answers, runs Cypress, then stops the server.
+      # (cypress-io/github-action@v6's wait-on fails at once on the Node 24
+      # runtime GitHub now forces it onto.)
       - name: Cypress E2E
-        uses: cypress-io/github-action@v6
-        with:
-          install: false
-          start: npm run preview
-          wait-on: 'http://127.0.0.1:4173'
+        run: npm run cy:run
 
       - name: Upload Cypress screenshots on failure
         if: failure()
