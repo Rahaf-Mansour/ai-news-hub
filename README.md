@@ -5,7 +5,7 @@ A daily, role-tagged digest of AI news, Claude releases and learning resources, 
 - **Today**: the 5–8 most important items from the last 48 hours, one lead story plus role groups.
 - **Tabs**: All · Claude · Full-stack · SE · PM · QA · Saved · Repos · Learn, with unread counts, search (matches highlighted in titles) and filters; with no hash in the address, the tab you used last reopens. QA splits into Manual & exploratory · Automation · Testing AI; Full-stack into Frontend · Backend.
 - **Claude**: a release timeline checked against Anthropic's own pages, plus the Claude feed.
-- **Repos**: 32 hand-picked repos (the list changes only when `ingest/repos.config.ts` does). Stars, last push, license and archived state are re-read from the GitHub API every day; if a lookup fails, the card keeps its last verified numbers marked "as of <date>", and a repo never verified shows "not verified".
+- **Repos**: 37 hand-picked repos (the list changes only when `ingest/repos.config.ts` does). Stars, last push, license and archived state are re-read from the GitHub API every day; if a lookup fails, the card keeps its last verified numbers marked "as of <date>", and a repo never verified shows "not verified".
 - **Learn**: four ordered tracks, *Learn Claude* (Claude Academy courses from Claude 101 to agents), *AI-enabled Producer*, *QA in the AI era* and *AI for full-stack engineers*, with progress you can tick off.
 - **Model watch**: links out to Arena, Artificial Analysis and Epoch AI (no scraped numbers).
 
@@ -35,7 +35,7 @@ Other scripts:
 
 `.github/workflows/daily.yml` runs at **05:30 UTC** every day (and on demand from the Actions tab):
 
-1. **Fetch.** `ingest/run.ts` fetches the 41 sources in `ingest/sources.ts`, six at a time, each with a 20-second timeout. A source that fails is logged, recorded in `public/data/sources-status.json` with its error and last success, and skipped. The run fails only if *every* source fails, and then it leaves the published data untouched.
+1. **Fetch.** `ingest/run.ts` fetches the 56 sources in `ingest/sources.ts`, six at a time, each with a 20-second timeout. A source that fails is logged, recorded in `public/data/sources-status.json` with its error and last success, and skipped. The run fails only if *every* source fails, and then it leaves the published data untouched.
 2. **Normalize.** URLs are canonicalized (https, no `www.`, tracking params removed, sorted query). Feed text is cut to a summary of at most 400 characters, shown as three lines (more fit when the side panel is hidden); article bodies are never stored.
 3. **Tag.** Keyword rules in `ingest/tagger.ts` assign Claude / QA / PM / Full-stack / SE, plus areas inside QA and Full-stack (a title match, or two different terms in the summary). Focused sources (the Cypress blog, Claude Code releases) always carry their own roles; general newsletters only fall back to a default role when no rule matches, and those items are marked for the LLM.
 4. **Dedupe.** The same canonical URL, or near-identical titles (token Jaccard ≥ 0.85) from different sources within three days, merge into one item. The higher trust tier wins; roles are combined and a Hacker News discussion link is kept.
@@ -155,7 +155,7 @@ Live GitHub star counts differed a lot from third-party trackers (for example op
 
 ```
 ingest/            daily pipeline (Node + tsx)
-  sources.ts       the 41 feed sources
+  sources.ts       the 56 feed sources
   repos.config.ts  the 27 watched repos
   adapters/        rss, github-releases, anthropic HTML, release notes, HN
   build.ts         raw → item, dedupe, score

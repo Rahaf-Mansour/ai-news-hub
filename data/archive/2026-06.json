@@ -1,6 +1,6 @@
 {
   "month": "2026-06",
-  "count": 5,
+  "count": 6,
   "items": [
     {
       "id": "177fcc411e07",
@@ -36,6 +36,23 @@
       ],
       "tagMethod": "source",
       "summary": "Bug Fixes #41365 [Bug]: Expect.Extend matcher with same name as default matcher in same expect instance overrides default matchers implementation to custom matcher #41351 [Bug]…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "256663348b94",
+      "title": "Patterns for Building Cybersecurity Evals",
+      "url": "https://eugeneyan.com//writing/cybersecurity-evals",
+      "sourceId": "eugene-yan",
+      "sourceName": "Eugene Yan",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-06-21T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T19:39:14.403Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "rules",
+      "summary": "A sandboxed target, inputs that influence task difficulty, tools, and a grader.",
       "summaryBy": "feed"
     },
     {

@@ -24,6 +24,13 @@ export const REPOS: RepoConfig[] = [
   { fullName: 'qodo-ai/qodo-cover', roles: ['qa', 'se'], why: 'AI unit-test generation aimed at raising coverage in CI.', note: 'AGPL-3.0 license' },
   { fullName: 'tugkanboz/awesome-ai-testing', roles: ['qa'], why: 'Best map of AI testing tools: NL authoring, self-healing, LLM-as-judge, visual AI.' },
 
+  // Backend: .NET and Java
+  { fullName: 'microsoft/semantic-kernel', roles: ['fs', 'se'], why: 'Microsoft’s SDK for adding LLMs to C#, Python and Java apps: plugins, planners and memory.' },
+  { fullName: 'microsoft/agent-framework', roles: ['fs', 'se'], why: 'Microsoft’s framework for single and multi-agent apps in .NET and Python; the successor path for Semantic Kernel agents.' },
+  { fullName: 'dotnet/extensions', roles: ['fs'], why: 'Home of Microsoft.Extensions.AI: one IChatClient abstraction over model providers for .NET.' },
+  { fullName: 'modelcontextprotocol/csharp-sdk', roles: ['fs', 'se', 'claude'], why: 'Official C# SDK for MCP servers and clients, maintained with Microsoft.' },
+  { fullName: 'spring-projects/spring-ai', roles: ['fs'], why: 'Spring’s framework for AI in Java: chat clients, embeddings, vector stores and tool calling.' },
+
   // Full-stack: AI features in web apps
   { fullName: 'vercel/ai', roles: ['fs', 'se'], why: 'The AI SDK: streaming, tool calling and structured output in TypeScript, with React hooks for the UI.' },
   { fullName: 'mastra-ai/mastra', roles: ['fs', 'se'], why: 'TypeScript framework for agents, workflows, RAG and evals that fits next to a Node backend.' },
