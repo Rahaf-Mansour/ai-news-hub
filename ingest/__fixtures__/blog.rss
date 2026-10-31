@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Fixture blog</title>
+    <link>https://blog.example.com/</link>
+    <item>
+      <title><![CDATA[Writing end-to-end tests in plain English]]></title>
+      <link>https://blog.example.com/plain-english-tests/?utm_source=rss&amp;utm_medium=rss</link>
+      <pubDate>Fri, 30 Oct 2026 14:00:00 GMT</pubDate>
+      <description><![CDATA[<p>Natural-language steps become real test commands, with <b>self-healing</b> selectors.</p>]]></description>
+    </item>
+    <item>
+      <title>Item without a link is skipped</title>
+      <pubDate>Thu, 29 Oct 2026 14:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
