@@ -80,15 +80,15 @@ The site builds and works without a key. With the LLM on, each run sends up to 6
 
 Items keep their LLM text in the archive, so each item is processed once. If a call fails or is declined, those items stay as they were. At Haiku 5.5's list price this is well under a cent a day.
 
-**Locally:**
+**In this public repo the LLM step is off.** The workflow sets `ENABLE_LLM: 'false'` and passes no API key, so no key is ever stored in or used by the repo. (Checked 2026-10-31: no provider publishes free shared keys. Anthropic gives only a small one-time credit on your own account, and GitHub Models, which once worked with the built-in Actions token, was retired on 2026-07-30.)
+
+**To try it locally** with your own key (nothing is committed unless you commit the data yourself):
 
 ```bash
 ENABLE_LLM=true ANTHROPIC_API_KEY=sk-ant-... npm run ingest
 ```
 
-**In GitHub Actions** (both are needed):
-1. Settings → Secrets and variables → Actions → *Secrets*: add `ANTHROPIC_API_KEY`.
-2. Same page → *Variables*: add `ENABLE_LLM` = `true`.
+**To turn it on in Actions later:** add an `ANTHROPIC_API_KEY` secret, then in `.github/workflows/daily.yml` replace `ENABLE_LLM: 'false'` with `ENABLE_LLM: 'true'` and add `ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}` under the same `env:`.
 
 ## Deploy to GitHub Pages
 
