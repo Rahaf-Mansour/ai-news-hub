@@ -1,0 +1,40 @@
+{
+  "month": "2024-08",
+  "count": 2,
+  "items": [
+    {
+      "id": "da2a13348f02",
+      "title": "WebdriverIO v9 Released",
+      "url": "https://webdriver.io/blog/2024/08/15/webdriverio-v9-release",
+      "sourceId": "webdriverio-blog",
+      "sourceName": "WebdriverIO blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2024-08-15T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "The whole Webdriverio development team is stoked and proud to release WebdriverIO v9 today!",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1b71365013ed",
+      "title": "Interacting with Chrome DevTools from WebDriverIO",
+      "url": "https://webdriver.io/blog/2024/08/12/manipulate-devtools",
+      "sourceId": "webdriverio-blog",
+      "sourceName": "WebdriverIO blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2024-08-12T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "WebdriverIO is build to test various types of applications, from web or mobile applications towards native desktop apps or even VS Code extensions. But what about Chrome DevTools…",
+      "summaryBy": "feed"
+    }
+  ]
+}

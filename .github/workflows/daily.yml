@@ -2,7 +2,7 @@ name: Daily update
 
 on:
   schedule:
-    - cron: '30 5 * * *' # 05:30 UTC every day
+    - cron: '30 5 * * *' # 05:30 UTC every day. Keep in sync with DAILY_RUN_UTC in src/lib/schedule.ts (a unit test checks).
   workflow_dispatch:
   push:
     branches: [main]

@@ -14,6 +14,23 @@ describe('Mobile layout', () => {
     })
   })
 
+  it('keeps the app bar short: search row on top, tabs beneath', () => {
+    cy.get('[data-cy=app-bar]').then(($bar) => expect($bar[0].getBoundingClientRect().height).to.be.at.most(112))
+    cy.get('[data-cy=search]').then(($s) => {
+      cy.get('[data-cy=tab-all]').then(($t) => expect($t[0].getBoundingClientRect().top).to.be.greaterThan($s[0].getBoundingClientRect().bottom))
+    })
+  })
+
+  it('keeps back-to-top reachable: on screen and at least 44px', () => {
+    cy.scrollTo(0, 1500)
+    cy.get('[data-cy=back-to-top]').should('be.visible').then(($b) => {
+      const r = $b[0].getBoundingClientRect()
+      expect(r.width).to.be.at.least(44)
+      expect(r.bottom).to.be.at.most(Cypress.config('viewportHeight'))
+      expect(r.right).to.be.at.most(Cypress.config('viewportWidth'))
+    })
+  })
+
   it('stacks Today into a single column', () => {
     cy.get('.today__groups')
       .should('have.css', 'grid-template-columns')

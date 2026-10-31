@@ -1,7 +1,7 @@
 // Shared data contracts between the ingest pipeline (Node) and the site (browser).
 
-export type Role = 'claude' | 'se' | 'pm' | 'qa'
-export const ROLES: readonly Role[] = ['claude', 'se', 'pm', 'qa'] as const
+export type Role = 'claude' | 'se' | 'pm' | 'qa' | 'fs'
+export const ROLES: readonly Role[] = ['claude', 'se', 'pm', 'qa', 'fs'] as const
 
 export type SourceType = 'news' | 'release' | 'article' | 'repo'
 
@@ -42,10 +42,14 @@ export interface SourceConfig {
   hrefPattern?: string
   /** For 'hn': Algolia query and point threshold. */
   hn?: { query: string; minPoints: number }
-  /** For 'github-releases': drop pre-release / nightly tags matching this pattern. */
+  /** For 'github-releases': drop titles matching this pattern, in addition to pre-release/nightly tags (always skipped). */
   skipTitlePattern?: string
   /** Keep only items whose title matches this pattern (case-insensitive). Used to keep HN searches on topic. */
   titleFilter?: string
+  /** For 'rss': keep only links matching this pattern (a feed that mixes a blog and a changelog). */
+  linkFilter?: string
+  /** Areas every item from this source gets, inside its roles (Node Weekly is always backend). */
+  areas?: Area[]
 }
 
 /** What an adapter returns before normalising, dedupe and tagging. */
@@ -56,6 +60,9 @@ export interface RawItem {
   excerpt?: string
   discussionUrl?: string
 }
+
+/** Sub-areas used for the facet toggles: QA (manual / automation / testing AI) and full-stack (frontend / backend). */
+export type Area = 'manual' | 'automation' | 'ai-testing' | 'frontend' | 'backend'
 
 export interface Item {
   id: string
@@ -68,6 +75,8 @@ export interface Item {
   publishedAt: string
   firstSeenAt: string
   roles: Role[]
+  /** Facets inside a role (keyword rules). Absent on items from before this field existed. */
+  areas?: Area[]
   /** How the roles were assigned: keyword rules, the source's defaults, or the LLM. */
   tagMethod: 'rules' | 'source' | 'llm'
   summary: string

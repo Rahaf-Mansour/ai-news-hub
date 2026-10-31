@@ -1,5 +1,5 @@
-const LIGHT_BG = 'rgb(243, 244, 239)'
-const DARK_BG = 'rgb(15, 18, 33)'
+const LIGHT_BG = 'rgb(246, 247, 251)'
+const DARK_BG = 'rgb(11, 16, 32)'
 
 /** Emulate the OS colour-scheme preference through the Chrome DevTools Protocol (Chromium browsers only). */
 const emulateScheme = (value: 'light' | 'dark' | '') =>

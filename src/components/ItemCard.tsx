@@ -1,16 +1,22 @@
 import type { CSSProperties } from 'react'
 import { fullDate, relativeDate } from '../lib/format'
-import { ROLE_LABEL, TIER_HELP, TIER_LABEL } from '../lib/roles'
+import { primaryRole, ROLE_LABEL, TIER_HELP, TIER_LABEL } from '../lib/roles'
 import type { Item } from '../types'
+import { Highlight } from './Highlight'
 
 export interface ItemActions {
   read: ReadonlySet<string>
   saved: ReadonlySet<string>
   newSince: string | null
   now: Date
+  /** The current search, highlighted in titles. */
+  highlight: string
+  /** "Why it matters" lines only exist when the LLM step ran; hide stale ones otherwise. */
+  showWhy: boolean
   onOpen: (id: string) => void
   onToggleRead: (id: string) => void
-  onToggleSave: (id: string) => void
+  /** Gets the whole item so a snapshot can be kept with the bookmark. */
+  onToggleSave: (item: Item) => void
 }
 
 interface Props extends ItemActions {
@@ -19,12 +25,12 @@ interface Props extends ItemActions {
   index?: number
 }
 
-export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSince, now, onOpen, onToggleRead, onToggleSave }: Props) {
+export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSince, now, highlight, showWhy, onOpen, onToggleRead, onToggleSave }: Props) {
   const isRead = read.has(item.id)
   const isSaved = saved.has(item.id)
   const isNew = !isRead && newSince !== null && item.firstSeenAt > newSince
   const Heading = variant === 'lead' ? 'h3' : 'h4'
-  const classes = ['item', variant === 'lead' ? 'lead' : '', isRead ? 'item--read' : ''].filter(Boolean).join(' ')
+  const classes = ['item', `role-${primaryRole(item.roles)}`, variant === 'lead' ? 'lead' : '', isRead ? 'item--read' : ''].filter(Boolean).join(' ')
 
   return (
     <article className={classes} style={{ '--i': index } as CSSProperties} data-cy="item" data-id={item.id} data-read={isRead}>
@@ -42,10 +48,15 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
             {relativeDate(item.publishedAt, now)}
           </time>
           {isNew && <span className="sr-only">New since your last visit</span>}
+          {isRead && (
+            <span className="pill pill--read" data-cy="read-pill">
+              Read
+            </span>
+          )}
         </div>
         <Heading className="item__title">
           <a href={item.url} target="_blank" rel="noopener noreferrer" onClick={() => onOpen(item.id)} data-cy="item-link">
-            {item.title}
+            <Highlight text={item.title} query={highlight} />
           </a>
         </Heading>
         {item.summary && (
@@ -53,7 +64,7 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
             {item.summary}
           </p>
         )}
-        {item.whyItMatters && (
+        {showWhy && item.whyItMatters && (
           <p className="item__why" data-cy="item-why">
             <b>Why it matters</b>
             {item.whyItMatters}
@@ -77,6 +88,7 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
               aria-pressed={isRead}
               onClick={() => onToggleRead(item.id)}
               data-cy="toggle-read"
+              title={isRead ? 'Mark as unread again' : 'Marks this as read and removes it from the unread counts'}
             >
               {isRead ? '✓ Read' : 'Mark read'}
             </button>
@@ -84,8 +96,9 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
               type="button"
               className="icon-btn"
               aria-pressed={isSaved}
-              onClick={() => onToggleSave(item.id)}
+              onClick={() => onToggleSave(item)}
               data-cy="toggle-save"
+              title={isSaved ? 'Remove from Saved' : 'Keep this in the Saved tab (stays in this browser)'}
               aria-label={isSaved ? `Remove bookmark: ${item.title}` : `Bookmark: ${item.title}`}
             >
               {isSaved ? '★ Saved' : '☆ Save'}

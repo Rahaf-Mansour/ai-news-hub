@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest'
 import type { SourceConfig } from '../../src/types'
 import { parseAnthropicCards, parseReleaseNotes } from './anthropic'
 import { buildHnUrl, parseHn } from './hn'
-import { fetchSource } from './index'
+import { fetchSource, releaseSkipPattern } from './index'
 import { labelRelease, parseFeed } from './rss'
 
 const fixture = (name: string) => readFileSync(new URL(`../__fixtures__/${name}`, import.meta.url), 'utf8')
@@ -132,6 +132,13 @@ describe('fetchSource', () => {
     expect(items.map((i) => i.title)).toEqual(['Tool v2.1.30'])
   })
 
+  it('adds a source skip pattern to the pre-release rule instead of replacing it', () => {
+    const re = new RegExp(releaseSkipPattern('^chore: release'), 'i')
+    expect(re.test('chore: release @cypress/webpack-dev-server')).toBe(true)
+    expect(re.test('v15.6.0-beta.1')).toBe(true)
+    expect(re.test('v15.6.0')).toBe(false)
+  })
+
   it('skips pre-releases by default when no pattern is configured', async () => {
     const items = await fetchSource({ ...source, skipTitlePattern: undefined }, async () => fixture('github-releases.atom'), new Date())
     expect(items.map((i) => i.title)).toEqual(['Tool v2.1.30'])
@@ -149,5 +156,18 @@ describe('fetchSource', () => {
     await expect(
       fetchSource({ ...source, kind: 'anthropic-cards', hrefPattern: '^/news/' }, async () => '<html></html>', new Date()),
     ).rejects.toThrow(/parsed 0 items/)
+  })
+
+  it('treats a release feed with only pre-releases as healthy but empty, not as a failure', async () => {
+    const canaries = fixture('github-releases.atom').replace('<title>v2.1.30</title>', '<title>v2.1.31-canary.1</title>')
+    expect(await fetchSource({ ...source, skipTitlePattern: undefined }, async () => canaries, new Date())).toEqual([])
+  })
+
+  it('keeps only links that match a link filter (a feed mixing blog and changelog)', async () => {
+    const feed = `<?xml version="1.0"?><feed xmlns="http://www.w3.org/2005/Atom"><title>V</title>
+      <entry><title>Post</title><link href="https://vercel.com/blog/post"/><updated>2026-10-30T00:00:00Z</updated></entry>
+      <entry><title>Change</title><link href="https://vercel.com/changelog/change"/><updated>2026-10-30T01:00:00Z</updated></entry></feed>`
+    const rss: SourceConfig = { ...source, kind: 'rss', type: 'article', linkFilter: String.raw`vercel\.com/blog/` }
+    expect((await fetchSource(rss, async () => feed, new Date())).map((i) => i.title)).toEqual(['Post'])
   })
 })

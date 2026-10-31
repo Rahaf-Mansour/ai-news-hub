@@ -6,7 +6,7 @@
 
 I built a separate pipeline instead, for four reasons:
 
-- **Language.** Horizon is Python. The owner of this hub works in JavaScript/TypeScript and Cypress every day, and the brief asked for something she can understand and maintain. A pipeline in the same language as the site and the tests means one toolchain, one test runner and one set of types (`src/types.ts`, shared by the ingest code and the UI).
+- **Language.** Horizon is Python. This hub is maintained by people who work in JavaScript/TypeScript and Cypress every day, and it should be easy for them, and for contributors from the same world, to understand and change. A pipeline in the same language as the site and the tests means one toolchain, one test runner and one set of types (`src/types.ts`, shared by the ingest code and the UI).
 - **The hard part is the curation, not the plumbing.** The value here is the role lens (Claude / SE / PM / QA), the trust tiers and the Claude-specific sources. Horizon scores general tech news on one scale and outputs English and Chinese. Adapting it would mean rewriting its prompts, its output and its site, which would leave little of the original.
 - **The pipeline is small.** Five adapters, a tagger, dedupe, the LLM step and a runner come to about 1,200 lines of TypeScript plus tests. Owning them costs less than tracking an upstream fork.
 - **Deterministic first.** Keyword rules place most items for free, and the brief asked for the LLM only as a fallback behind an environment variable. Horizon's design is LLM-first.
@@ -18,10 +18,10 @@ Borrowed from Horizon: dedupe before any LLM call, a cheap model for the bulk st
 Both would work. I chose Vite + React because:
 
 - **Every interactive requirement is client-side:** search, tier and type filters, tabs, read/bookmark state, unread counts and learning progress. In Astro all of that would be one large React island anyway, so Astro's static-first strength would barely be used.
-- **Familiarity.** The owner already knows React, and Vite also runs Vitest, so the app and the unit tests share a config.
+- **Familiarity.** React is the most widely known UI library for likely contributors, and Vite also runs Vitest, so the app and the unit tests share a config.
 - **Simple hosting.** The site is one static page that fetches `data/items.json`. Tabs are hash links (`#qa`), so GitHub Pages needs no 404 fallback, and `base: './'` makes the build work under any repo path.
 
-What we give up: no content in the HTML before JavaScript runs, which doesn't matter for a personal reader that nobody indexes.
+What we give up: no content in the HTML before JavaScript runs, so search engines and link previews see little of the feed. The page's `<meta>` description and Open Graph tags cover link previews; if search indexing ever matters, pre-rendering Today at build time would be the fix.
 
 ## 3. Trust tiers
 
@@ -46,4 +46,8 @@ Further rules:
 - **Scores are not archived.** They depend on "now", so they are computed fresh each run; otherwise every archive file would change daily.
 - **No RSS for Anthropic pages: parse the HTML.** The parser walks up from each article link to its card and stops once the container holds a second article, so it never borrows a neighbour's date. If parsing yields zero items, that counts as a failure, so markup changes show up in the run log instead of failing silently.
 - **Today caps.** At most one item per source and three per role while other roles have news, so a busy release feed or a Claude launch week can't take over the whole front page.
+- **Full-stack and SE are separate lenses.** SE is now "AI dev tools & agents" (coding agents, IDEs, MCP); Full-stack is building AI into web apps, frontend and backend. An item can carry both, so the two tabs overlap on purpose.
+- **Release feeds skip pre-releases, and a quiet feed is not a failure.** Alpha, beta, canary, rc and nightly tags are always dropped; patch releases of the same minor version collapse into one item. A release feed whose newest entries are all canaries (Next.js most days) returns 0 items and still counts as OK; only a feed that parses to nothing fails.
+- **Left out: vercel/ai releases.** Its Atom feed is one entry per package (`@ai-sdk/xai`, `@ai-sdk/vue`…) and lists only the newest 10, so the core `ai` release rarely shows. AI SDK news comes through the Vercel blog (blog posts only; its changelog posts 10+ entries a day), and the repo is in the Repos tab. Ministry of Testing was left out too: its `/feeds/` URLs return HTML, not a feed.
+- **Learn shows one track at a time.** With three tracks (one has 18 steps), three tall columns were hard to scan. A picker with progress per track replaces them; a search shows matches from every track.
 - **Design direction changed from the first plan.** The plan proposed warm paper with a serif display and a vermilion accent. Before building I moved away from it, because that combination is the most common look for generated editorial sites. The final look is cool paper, a variable grotesque, a reading serif and a dev mono, built on a "daily run report" concept.

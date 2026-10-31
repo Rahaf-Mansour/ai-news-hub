@@ -1,8 +1,52 @@
 {
-  "generatedAt": "2026-10-31T14:09:19.862Z",
+  "generatedAt": "2026-10-31T15:59:41.374Z",
   "llmEnabled": false,
   "windowDays": 30,
   "items": [
+    {
+      "id": "9d3720fd2e8f",
+      "title": "Playwright MCP v0.0.84",
+      "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.84",
+      "sourceId": "playwright-mcp-releases",
+      "sourceName": "Playwright MCP releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-10-31T15:20:06.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa",
+        "fs",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Highlights 👥 Separate sessions in one browser — work with multiple accounts without sharing their cookies or storage. browser_tabs with action: \"new\" now accepts…",
+      "summaryBy": "feed",
+      "score": 4.43,
+      "areas": [
+        "automation",
+        "frontend"
+      ]
+    },
+    {
+      "id": "77e4ed1a15be",
+      "title": "AI startup hacks Anthropic, gains access to employee details, internal messages",
+      "url": "https://indiatoday.in/technology/news/story/ai-startup-hacks-anthropic-in-12-hours-gains-access-to-employee-details-and-internal-messages-3025452-2026-10-26",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-10-31T13:25:10Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "68 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50315990",
+      "score": 6.22,
+      "areas": []
+    },
     {
       "id": "4505f5f4bd09",
       "title": "[AINews] Google admits AI Mode hurts Search revenue; -15% $500B drop worst since 2004 IPO. AI Bear Market coming?",
@@ -19,7 +63,8 @@
       "tagMethod": "source",
       "summary": "It turns out you cannot have your cake AND eat it",
       "summaryBy": "feed",
-      "score": 5.1
+      "score": 4.95,
+      "areas": []
     },
     {
       "id": "974417e7a49a",
@@ -33,13 +78,13 @@
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
         "claude",
-        "qa",
         "se"
       ],
       "tagMethod": "source",
-      "summary": "🎉 Claude Code GitHub Action v1.0 - Now Generally Available! We're excited to announce the v1.0 release of Claude Code GitHub Action! This major release brings significant…",
+      "summary": "Claude Code GitHub Action v1.0 - Now Generally Available! We're excited to announce the v1.0 release of Claude Code GitHub Action! This major release brings significant…",
       "summaryBy": "feed",
-      "score": 7.28
+      "score": 7.14,
+      "areas": []
     },
     {
       "id": "ef8717c59fcc",
@@ -53,13 +98,13 @@
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
         "claude",
-        "qa",
         "se"
       ],
       "tagMethod": "source",
-      "summary": "Full Changelog: v1.0.265...v1.0.266",
+      "summary": "Full Changelog: v1.0.265...v1.0.266 (+8 earlier patches)",
       "summaryBy": "feed",
-      "score": 4.78
+      "score": 4.64,
+      "areas": []
     },
     {
       "id": "1ac62f843edf",
@@ -76,9 +121,10 @@
         "se"
       ],
       "tagMethod": "source",
-      "summary": "What's changed Added CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off Added pooled group budgets to the Claude apps gateway: one monthly budget that a…",
+      "summary": "What's changed Added CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off Added pooled group budgets to the Claude apps gateway: one monthly budget that a… (+9 earlier patches)",
       "summaryBy": "feed",
-      "score": 4.78
+      "score": 4.64,
+      "areas": []
     },
     {
       "id": "1ad66cf690a9",
@@ -97,7 +143,8 @@
       "summary": "90 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50311311",
-      "score": 5.14
+      "score": 5,
+      "areas": []
     },
     {
       "id": "4e2c9c66b20a",
@@ -115,7 +162,8 @@
       "tagMethod": "source",
       "summary": "dbreunig/nesformer Inspired by qwenputer by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B…",
       "summaryBy": "feed",
-      "score": 4.55
+      "score": 4.43,
+      "areas": []
     },
     {
       "id": "1da35e307aba",
@@ -134,7 +182,8 @@
       "summary": "56 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50309534",
-      "score": 3.43
+      "score": 3.31,
+      "areas": []
     },
     {
       "id": "b329cc4aaa4c",
@@ -153,7 +202,27 @@
       "summary": "312 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50307219",
-      "score": 4.75
+      "score": 4.64,
+      "areas": []
+    },
+    {
+      "id": "8492851df22e",
+      "title": "The Pulse: Anthropic kills the coding interview",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-anthropic-kills-the-coding",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-30T16:37:51.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "AI is rendering the Leetcode-style interview pointless and now Anthropic has deleted it from its interview loop. Also: details of incident.io’s AI spend, Microsoft’s exit offer…",
+      "summaryBy": "feed",
+      "score": 5.59,
+      "areas": []
     },
     {
       "id": "9b894388109d",
@@ -172,7 +241,27 @@
       "summary": "110 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50304358",
-      "score": 4.57
+      "score": 4.46,
+      "areas": []
+    },
+    {
+      "id": "6db6c0a822f4",
+      "title": "Introducing Geist Serif",
+      "url": "https://vercel.com/blog/introducing-geist-serif",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-30T13:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Geist started as a monospace typeface for developers, built for the editors and terminals where they spend their day doing their work. From there it grew into Geist Sans for…",
+      "summaryBy": "feed",
+      "score": 5.89,
+      "areas": []
     },
     {
       "id": "16b93e4bcaff",
@@ -191,7 +280,8 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 8.43
+      "score": 8.34,
+      "areas": []
     },
     {
       "id": "7e2aaf184ac3",
@@ -210,7 +300,8 @@
       "summary": "655 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50302334",
-      "score": 4.39
+      "score": 4.29,
+      "areas": []
     },
     {
       "id": "a510883f6a1b",
@@ -230,7 +321,8 @@
       "summary": "399 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50301983",
-      "score": 5.35
+      "score": 5.26,
+      "areas": []
     },
     {
       "id": "371b1e06db16",
@@ -248,7 +340,8 @@
       "tagMethod": "rules",
       "summary": "Mistral’s open-weight release, frontier monitoring, and the day’s AI Twitter and Reddit recaps.",
       "summaryBy": "feed",
-      "score": 3.75
+      "score": 3.66,
+      "areas": []
     },
     {
       "id": "bf5aaab63512",
@@ -268,46 +361,27 @@
       "summary": "923 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50300683",
-      "score": 4.19
+      "score": 4.11,
+      "areas": []
     },
     {
-      "id": "746b667bc457",
-      "title": "Claude Code Action v1.0.265",
-      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.265",
-      "sourceId": "claude-code-action-releases",
-      "sourceName": "Claude Code Action releases",
+      "id": "50643e98e194",
+      "title": "Simplifying runtime caching on Vercel",
+      "url": "https://vercel.com/blog/simplifying-runtime-caching-on-vercel",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
       "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-30T01:10:03.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "type": "article",
+      "publishedAt": "2026-10-30T04:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
       "roles": [
-        "claude",
-        "qa",
-        "se"
+        "fs"
       ],
-      "tagMethod": "source",
-      "summary": "Full Changelog: v1.0.264...v1.0.265",
+      "tagMethod": "rules",
+      "summary": "Today, we’re bringing Data Cache into Runtime Cache, giving developers one product for data caching across frameworks and APIs. If you use Next.js caching or , you won’t need to…",
       "summaryBy": "feed",
-      "score": 3.43
-    },
-    {
-      "id": "d820d0beaa38",
-      "title": "Claude Code v2.1.314",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
-      "sourceId": "claude-code-releases",
-      "sourceName": "Claude Code releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-30T01:06:26.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "What's changed Added permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission mode Added an…",
-      "summaryBy": "feed",
-      "score": 3.43
+      "score": 4.47,
+      "areas": []
     },
     {
       "id": "bf60815ae1a8",
@@ -325,7 +399,8 @@
       "tagMethod": "source",
       "summary": "How to ace PM interview presentations and take-home homework in the AI era: who assigns it, two worked examples, the AI toolkit and the process.",
       "summaryBy": "feed",
-      "score": 3.42
+      "score": 3.35,
+      "areas": []
     },
     {
       "id": "a7c615ba377d",
@@ -343,7 +418,8 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 3.39
+      "score": 3.32,
+      "areas": []
     },
     {
       "id": "32e3919a0587",
@@ -361,7 +437,8 @@
       "tagMethod": "rules",
       "summary": "API credits benefit for eligible ChatGPT subscriptions Earlier this month Anthropic announced a generous new benefit for their Max and Team subscriptions: $100, $200, and $500…",
       "summaryBy": "feed",
-      "score": 3.34
+      "score": 3.27,
+      "areas": []
     },
     {
       "id": "849640f5ae5b",
@@ -380,7 +457,27 @@
       "summary": "52 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50294486",
-      "score": 3.72
+      "score": 3.66,
+      "areas": []
+    },
+    {
+      "id": "8aacc4f2867a",
+      "title": "In Praise of the Pause",
+      "url": "https://developsense.com/blog/2026/10/in-praise-of-the-pause",
+      "sourceId": "developsense",
+      "sourceName": "DevelopSense (Michael Bolton)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-29T19:09:08.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Something just happened that I think is worthy of note. On LinkedIn, a young tester asked to connect, and I accepted his request. (He actually has six years of experience, but…",
+      "summaryBy": "feed",
+      "score": 3.15,
+      "areas": []
     },
     {
       "id": "11ef932bb8b9",
@@ -399,7 +496,8 @@
       "summary": "124 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50292727",
-      "score": 3.65
+      "score": 3.6,
+      "areas": []
     },
     {
       "id": "a80dd20eaec8",
@@ -412,13 +510,13 @@
       "publishedAt": "2026-10-29T17:00:26.000Z",
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
-        "claude",
         "se"
       ],
       "tagMethod": "rules",
       "summary": "How I Built the Most AI-Pilled Company in the World Don't be put off by the clickbait headline, this piece by Jacob Sansbury describing how they are building Spawn is a…",
       "summaryBy": "feed",
-      "score": 4.64
+      "score": 3.08,
+      "areas": []
     },
     {
       "id": "e3d51db105fb",
@@ -436,7 +534,10 @@
       "tagMethod": "source",
       "summary": "Welcome back to another Ambassador Spotlight. Every post in this series introduces you to one of the people quietly holding up the Cypress community, including where they…",
       "summaryBy": "feed",
-      "score": 4.12
+      "score": 4.06,
+      "areas": [
+        "automation"
+      ]
     },
     {
       "id": "2df0e95472f6",
@@ -454,7 +555,47 @@
       "tagMethod": "source",
       "summary": "A new decoy counting benchmark exposes a gap between seeing and reasoning. Elorian’s Glimpse tries to bridge it by thinking with images.",
       "summaryBy": "feed",
-      "score": 3.11
+      "score": 3.05,
+      "areas": []
+    },
+    {
+      "id": "1d1b041f17bd",
+      "title": "I went to Mexico to test-drive the cars Americans can’t buy",
+      "url": "https://washingtonpost.com/climate-environment/2026/10/27/i-saw-future-driving-mexico-its-off-limits-americans",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-10-29T15:30:22Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "324 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50290668",
+      "score": 2.04,
+      "areas": []
+    },
+    {
+      "id": "739e0b5535e3",
+      "title": "Bliki: LLM Voice",
+      "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-29T14:28:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Sometimes when I read a post, I get the growing feeling that I'm reading the output of an LLM. I can't necessarily define why, although there are the common tells (it's not the…",
+      "summaryBy": "feed",
+      "score": 3.01,
+      "areas": []
     },
     {
       "id": "502de87809f2",
@@ -472,7 +613,8 @@
       "tagMethod": "source",
       "summary": "every product i use should just be a headless mcp, that feeds into an agent, where i never have to think about anything underneath. except for our product, of course. in our…",
       "summaryBy": "feed",
-      "score": 3.05
+      "score": 3,
+      "areas": []
     },
     {
       "id": "1db3248c2d10",
@@ -490,7 +632,67 @@
       "tagMethod": "source",
       "summary": "Let’s think about what we’re doing here",
       "summaryBy": "feed",
-      "score": 3.05
+      "score": 3,
+      "areas": []
+    },
+    {
+      "id": "e73b1e188559",
+      "title": "Why are good developers so wary of agentic development?",
+      "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-29T13:50:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "TL;DR Good developers’ caution about agentic development comes from knowing that built isn’t the same as working in production. I’ve been surprised by how many excellent…",
+      "summaryBy": "feed",
+      "score": 2.99,
+      "areas": []
+    },
+    {
+      "id": "22a42169ff91",
+      "title": "Software engineering at Google & CS education with Titus Winters",
+      "url": "https://newsletter.pragmaticengineer.com/p/software-engineering-at-google-and",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-29T13:37:13.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Titus Winters shares lessons from engineering at Google’s scale and explores how AI is reshaping developer productivity and computer science education.",
+      "summaryBy": "feed",
+      "score": 2.99,
+      "areas": []
+    },
+    {
+      "id": "62e1efde6de6",
+      "title": "Selenium 4.52.0",
+      "url": "https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.52.0",
+      "sourceId": "selenium-releases",
+      "sourceName": "Selenium releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-10-29T13:16:00.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Detailed Changelogs by Component Java | Python | DotNet | Ruby | JavaScript What's Changed [py] use local self-signed certificate for tests by @titusfortner in #18148 [build]…",
+      "summaryBy": "feed",
+      "score": 3.98,
+      "areas": [
+        "automation"
+      ]
     },
     {
       "id": "785566fd3377",
@@ -509,7 +711,8 @@
       "tagMethod": "source",
       "summary": "The Usage and Cost API is now a legacy API, and so are the usage_report, cost_report, user_usage_report, and user_cost_report endpoints of…",
       "summaryBy": "feed",
-      "score": 6.49
+      "score": 6.44,
+      "areas": []
     },
     {
       "id": "8266ea920e51",
@@ -527,7 +730,8 @@
       "tagMethod": "source",
       "summary": "Google’s new frontier model leads independent evals, with access initially limited to trusted defenders.",
       "summaryBy": "feed",
-      "score": 3.84
+      "score": 3.8,
+      "areas": []
     },
     {
       "id": "271134257c4a",
@@ -546,7 +750,8 @@
       "summary": "584 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50284255",
-      "score": 3.29
+      "score": 3.25,
+      "areas": []
     },
     {
       "id": "6c9d1ecb20b3",
@@ -564,7 +769,29 @@
       "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.71
+      "score": 2.68,
+      "areas": []
+    },
+    {
+      "id": "6fccf9ebb2ca",
+      "title": "Node security releases to fix a Brotli flaw",
+      "url": "https://nodeweekly.com/issues/645",
+      "sourceId": "node-weekly",
+      "sourceName": "Node Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​645 — October 29, 2026 Read on the Web Node.js 26 'Lithium' Is Now the Active LTS Line — Node.js 26.13.0 promotes Node 26 to long-term support, with updates through April 2029…",
+      "summaryBy": "feed",
+      "score": 2.68,
+      "areas": [
+        "backend"
+      ]
     },
     {
       "id": "52ced88a57d9",
@@ -582,7 +809,8 @@
       "tagMethod": "source",
       "summary": "In general, LLM performance is incredibly multidimensional. There's no guarantee of a fixed ordering where the model that is best at math is also the model that's best at jokes…",
       "summaryBy": "feed",
-      "score": 2.7
+      "score": 2.66,
+      "areas": []
     },
     {
       "id": "a075480e28a0",
@@ -600,7 +828,8 @@
       "tagMethod": "source",
       "summary": "Paul Copplestone and Ant Wilson on building the backend for AI agents",
       "summaryBy": "feed",
-      "score": 2.63
+      "score": 2.6,
+      "areas": []
     },
     {
       "id": "94bdedac0696",
@@ -618,7 +847,8 @@
       "tagMethod": "rules",
       "summary": "GitHub Octoverse 2026 I'm at GitHub Universe today (GitHub gave me a free ticket through their \"GitHub Stars\" program). EVP Jay Parikh just announced this year's Octoverse…",
       "summaryBy": "feed",
-      "score": 2.58
+      "score": 2.55,
+      "areas": []
     },
     {
       "id": "b270b12b1531",
@@ -634,9 +864,12 @@
         "qa"
       ],
       "tagMethod": "source",
-      "summary": "Changelog: https://docs.cypress.io/app/references/changelog#16-2-1",
+      "summary": "Changelog: https://docs.cypress.io/app/references/changelog#16-2-1 (+1 earlier patch)",
       "summaryBy": "feed",
-      "score": 1.08
+      "score": 1.05,
+      "areas": [
+        "automation"
+      ]
     },
     {
       "id": "d63165261460",
@@ -649,13 +882,32 @@
       "publishedAt": "2026-10-28T13:55:15.000Z",
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
-        "claude",
         "se"
       ],
       "tagMethod": "rules",
       "summary": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective…",
       "summaryBy": "feed",
-      "score": 4.04
+      "score": 2.51,
+      "areas": []
+    },
+    {
+      "id": "c9ff3900c5bd",
+      "title": "Fragments: October 28",
+      "url": "https://martinfowler.com/fragments/2026-10-28.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-28T12:55:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "Andrej Karpathy sees a widening gap in how people see LLM capabilities. The general public has mostly not interacted with these systems. When they have, it looks like a derpy…",
+      "summaryBy": "feed",
+      "score": 2.5,
+      "areas": []
     },
     {
       "id": "1bc68abe765f",
@@ -674,7 +926,8 @@
       "tagMethod": "rules",
       "summary": "Listen now | 🎙️ I ranked Grok Bot, Dot, Muse, and Claude Duet across 9 real tasks—and the scores told me which agent runs my work and which runs my life",
       "summaryBy": "feed",
-      "score": 4.01
+      "score": 3.99,
+      "areas": []
     },
     {
       "id": "c05b1aa80117",
@@ -693,7 +946,8 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 5.01
+      "score": 4.98,
+      "areas": []
     },
     {
       "id": "c517821d0281",
@@ -711,7 +965,8 @@
       "tagMethod": "source",
       "summary": "We’re highlighting 20 scientific foundations, institutions, and research groups around the world that we’ve partnered with in an expansion of our AI for Science program.",
       "summaryBy": "feed",
-      "score": 5.01
+      "score": 4.98,
+      "areas": []
     },
     {
       "id": "d957b57aa1e6",
@@ -729,7 +984,8 @@
       "tagMethod": "source",
       "summary": "If your work does not benefit from current AI tooling, that is a finding, not a failing. Document why, share it with your community of peers, bring it to your manager, and work…",
       "summaryBy": "feed",
-      "score": 2.48
+      "score": 2.46,
+      "areas": []
     },
     {
       "id": "625efce5713d",
@@ -747,7 +1003,47 @@
       "tagMethod": "rules",
       "summary": "Since coding is solved, why code for the job?",
       "summaryBy": "feed",
-      "score": 3.97
+      "score": 3.94,
+      "areas": []
+    },
+    {
+      "id": "4365c098a53f",
+      "title": "Introducing Virtual Models on AI Gateway",
+      "url": "https://vercel.com/blog/ai-gateway-virtual-models",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-28T07:25:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "Today, we are introducing on .Virtual ModelsAI Gateway Virtual Models are an abstraction of the model string and configurations your apps and developers use. With a single…",
+      "summaryBy": "feed",
+      "score": 4.43,
+      "areas": []
+    },
+    {
+      "id": "1cbf72ccb707",
+      "title": "Introducing Vercel CI",
+      "url": "https://vercel.com/blog/introducing-vercel-ci",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-28T07:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Coding agents are opening more pull requests than ever, and each one waits on CI before anyone can review or merge it. Most CI systems run the entire workflow on every push, even…",
+      "summaryBy": "feed",
+      "score": 4.42,
+      "areas": []
     },
     {
       "id": "8c63067a2b44",
@@ -765,46 +1061,29 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.37
+      "score": 2.35,
+      "areas": []
     },
     {
-      "id": "01ec56f9bfab",
-      "title": "Claude Code Action v1.0.264",
-      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.264",
-      "sourceId": "claude-code-action-releases",
-      "sourceName": "Claude Code Action releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-27T20:28:03.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "id": "f7a4aef484bd",
+      "title": "The spyware hiding in old script tags",
+      "url": "https://frontendfoc.us/issues/764",
+      "sourceId": "frontend-focus",
+      "sourceName": "Frontend Focus",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
       "roles": [
-        "claude",
-        "qa",
-        "se"
+        "fs"
       ],
-      "tagMethod": "source",
-      "summary": "What's Changed docs: use claude-plugins-official in plugin examples by @mhegazy in #1932 Full Changelog: v1.0.263...v1.0.264",
+      "tagMethod": "rules",
+      "summary": "Frontend Focus #​764 — October 28, 2026 | Read on the web 🖼️ HTML-in-Canvas: Interactive DOM Inside 2D, WebGL and WebGPU Canvases — Arriving in stable Chrome next week, this…",
       "summaryBy": "feed",
-      "score": 2.33
-    },
-    {
-      "id": "3fa83c67bd72",
-      "title": "Claude Code v2.1.312",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
-      "sourceId": "claude-code-releases",
-      "sourceName": "Claude Code releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-27T20:24:20.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "What's changed Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid Added click to send…",
-      "summaryBy": "feed",
-      "score": 2.33
+      "score": 2.35,
+      "areas": [
+        "frontend"
+      ]
     },
     {
       "id": "f376eece8b40",
@@ -822,7 +1101,8 @@
       "tagMethod": "source",
       "summary": "Game Boy Color on My Conference Badge I'm at GitHub Universe this week and, similar to last year , the conference badge is a full-blown color screen computer. I've been hacking…",
       "summaryBy": "feed",
-      "score": 2.32
+      "score": 2.31,
+      "areas": []
     },
     {
       "id": "80e5637a67e1",
@@ -840,7 +1120,8 @@
       "tagMethod": "rules",
       "summary": "Katelyn Lesse and Angela Jiang on Opus 5.5, the Claude Platform, and the engineering behind AI agents.",
       "summaryBy": "feed",
-      "score": 3.82
+      "score": 3.8,
+      "areas": []
     },
     {
       "id": "beb92a3cbb63",
@@ -853,13 +1134,51 @@
       "publishedAt": "2026-10-27T18:40:19.000Z",
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
-        "claude",
-        "se"
+        "claude"
       ],
       "tagMethod": "rules",
       "summary": "Katelyn Lesse and Angela Jiang join Latent Space to explain the engineering behind the Claude Platform: launching Opus 5.5, separating the model’s “brain” from the agent’s…",
       "summaryBy": "feed",
-      "score": 3.82
+      "score": 3.8,
+      "areas": []
+    },
+    {
+      "id": "996b44667d00",
+      "title": "Ed Zitron Reads My Mind",
+      "url": "https://developsense.com/blog/2026/10/ed-zitron-reads-my-mind",
+      "sourceId": "developsense",
+      "sourceName": "DevelopSense (Michael Bolton)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-27T18:10:43.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Something very much like this post originally appeared on LinkedIn. Ed Zitron is reading my mind. Well… maybe not reading it, but he’s for sure writing it. Here are the contents…",
+      "summaryBy": "feed",
+      "score": 2.3,
+      "areas": []
+    },
+    {
+      "id": "3bd3315ede2e",
+      "title": "AI SRE: what is it, how could it change on-call – and does it work?",
+      "url": "https://newsletter.pragmaticengineer.com/p/ai-sre",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-27T16:19:22.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "“AI SRE” is fast becoming a trending term fueled by flashy demos from vendors, but has an AI SRE ever really been on-call while engineers slept? Deepdive",
+      "summaryBy": "feed",
+      "score": 2.28,
+      "areas": []
     },
     {
       "id": "6dd70bb9a79d",
@@ -877,7 +1196,29 @@
       "tagMethod": "rules",
       "summary": "How to set up and run an offline coding agent using OpenCode, Ollama and Qwen.",
       "summaryBy": "feed",
-      "score": 2.28
+      "score": 2.27,
+      "areas": []
+    },
+    {
+      "id": "7b2d464ad22d",
+      "title": "Why Your AI Tests Pass When Your Features Fail with Donovan Brady",
+      "url": "https://testguild.com/podcast/a609-donovan",
+      "sourceId": "testguild",
+      "sourceName": "TestGuild",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-27T14:34:17.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "About This Episode: Why Your AI Tests Pass When Your Features Fail? Donovan Brady of Leapwork shows how to make […]",
+      "summaryBy": "feed",
+      "score": 2.27,
+      "areas": [
+        "ai-testing"
+      ]
     },
     {
       "id": "5708d0664828",
@@ -895,7 +1236,8 @@
       "tagMethod": "rules",
       "summary": "Lots of visuals to use and learn with.",
       "summaryBy": "feed",
-      "score": 3.78
+      "score": 3.77,
+      "areas": []
     },
     {
       "id": "31f854764086",
@@ -913,7 +1255,8 @@
       "tagMethod": "source",
       "summary": "We are expanding our partnership with the General Services Administration (GSA) through a new agreement that gives government partners a 40% discount on Claude Enterprise, Claude…",
       "summaryBy": "feed",
-      "score": 4.76
+      "score": 4.75,
+      "areas": []
     },
     {
       "id": "95af72b561e4",
@@ -931,7 +1274,69 @@
       "tagMethod": "rules",
       "summary": "The S-1, the numbers, and the reactions.",
       "summaryBy": "feed",
-      "score": 3.73
+      "score": 3.72,
+      "areas": []
+    },
+    {
+      "id": "a654f105f1b2",
+      "title": "ElevenLabs on AI Gateway",
+      "url": "https://vercel.com/blog/elevenlabs-on-ai-gateway",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-27T07:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "Vercel and are partnering to bring 14 ElevenLabs models to . To celebrate the launch, all ElevenLabs models are 50% off on AI Gateway for the first 14 days, through November…",
+      "summaryBy": "feed",
+      "score": 3.22,
+      "areas": []
+    },
+    {
+      "id": "1b61c80d904e",
+      "title": "appium@3.9.0",
+      "url": "https://github.com/appium/appium/releases/tag/appium%403.9.0",
+      "sourceId": "appium-releases",
+      "sourceName": "Appium releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-10-27T06:50:27.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "3.9.0 (2026-10-27) Features appium: fallback to latest compatible extension version for CLI `install` (#23013) (3c20d79) Bug Fixes appium: backport bidi close code validation…",
+      "summaryBy": "feed",
+      "score": 3.22,
+      "areas": [
+        "automation"
+      ]
+    },
+    {
+      "id": "a086393f049d",
+      "title": "@appium/universal-xml-plugin@3.0.2",
+      "url": "https://github.com/appium/appium/releases/tag/%40appium%2Funiversal-xml-plugin%403.0.2",
+      "sourceId": "appium-releases",
+      "sourceName": "Appium releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-10-27T06:50:27.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "3.0.2 (2026-10-27) Note: Version bump only for package @appium/universal-xml-plugin",
+      "summaryBy": "feed",
+      "score": 0.72,
+      "areas": [
+        "automation"
+      ]
     },
     {
       "id": "cf75839fee2f",
@@ -950,7 +1355,28 @@
       "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed",
-      "score": 3.69
+      "score": 3.68,
+      "areas": []
+    },
+    {
+      "id": "cc496bdee7e3",
+      "title": "Rebuilding the original GTA engine in JavaScript",
+      "url": "https://javascriptweekly.com/issues/808",
+      "sourceId": "javascript-weekly",
+      "sourceName": "JavaScript Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-27T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​808 — October 27, 2026 Read on the Web JavaScript Weekly TanStack AI 1.0: The Vendor-Neutral AI Toolkit Goes Stable — TanStack's framework-agnostic AI toolkit reaches 1.0, with…",
+      "summaryBy": "feed",
+      "score": 2.18,
+      "areas": []
     },
     {
       "id": "2812ff85caf0",
@@ -968,7 +1394,8 @@
       "tagMethod": "source",
       "summary": "GPT-6.1 Terra It's always interesting to note which aspects of a new model are emphasized in the release announcement. In the case of GPT-6.1 Terra, OpenAI went with visual…",
       "summaryBy": "feed",
-      "score": 2.19
+      "score": 2.18,
+      "areas": []
     },
     {
       "id": "54c187545eba",
@@ -986,46 +1413,29 @@
       "tagMethod": "source",
       "summary": "Zynga founder Mark Pincus teaches Proven Better New at the whiteboard: what to copy, how to tell better from new, and how to test demand before you build.",
       "summaryBy": "feed",
-      "score": 2.19
+      "score": 2.18,
+      "areas": []
     },
     {
-      "id": "08ab7b4860f0",
-      "title": "Claude Code Action v1.0.263",
-      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.263",
-      "sourceId": "claude-code-action-releases",
-      "sourceName": "Claude Code Action releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-26T21:55:05.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "id": "eec77663fb48",
+      "title": "VegaLoad, Leapwork Play, and the End of Untrustworthy AI Tests TGNS199",
+      "url": "https://testguild.com/podcast/n199-oct26",
+      "sourceId": "testguild",
+      "sourceName": "TestGuild",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-26T19:28:49.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
       "roles": [
-        "claude",
-        "qa",
-        "se"
+        "qa"
       ],
       "tagMethod": "source",
-      "summary": "Full Changelog: v1.0.262...v1.0.263",
+      "summary": "About This Episode: Can you actually trust the Playwright tests your AI generates? A new free tool says it can […]",
       "summaryBy": "feed",
-      "score": 2.18
-    },
-    {
-      "id": "38313c82af26",
-      "title": "Claude Code v2.1.311",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
-      "sourceId": "claude-code-releases",
-      "sourceName": "Claude Code releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-26T21:51:23.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "What's changed Added --hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running Added a tip for the…",
-      "summaryBy": "feed",
-      "score": 2.18
+      "score": 2.16,
+      "areas": [
+        "ai-testing"
+      ]
     },
     {
       "id": "b521cb6b48c6",
@@ -1043,7 +1453,8 @@
       "tagMethod": "source",
       "summary": "Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech…",
       "summaryBy": "feed",
-      "score": 2.16
+      "score": 2.16,
+      "areas": []
     },
     {
       "id": "a5c52806e2d7",
@@ -1061,7 +1472,8 @@
       "tagMethod": "source",
       "summary": "CypressConf 2026 is a wrap! Thank you to everyone who joined us for three days of talks and hands-on workshops. This year’s theme, The Signal Is Up, asked a question every team…",
       "summaryBy": "feed",
-      "score": 3.15
+      "score": 3.14,
+      "areas": []
     },
     {
       "id": "0821e0cfddae",
@@ -1074,13 +1486,13 @@
       "publishedAt": "2026-10-26T16:15:00.000Z",
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
-        "claude",
         "se"
       ],
       "tagMethod": "rules",
       "summary": "Research: webframe: evaluated as a scraper and a sandbox webframe is a neat little project from Jeff Lindsay which lets you \"run a web page like a program\" - you point it at a…",
       "summaryBy": "feed",
-      "score": 3.65
+      "score": 2.14,
+      "areas": []
     },
     {
       "id": "19a7287ac228",
@@ -1099,7 +1511,8 @@
       "tagMethod": "rules",
       "summary": "Your weekly listens from How I AI, part of the Lenny’s Podcast Network",
       "summaryBy": "feed",
-      "score": 3.65
+      "score": 3.64,
+      "areas": []
     },
     {
       "id": "6352bc5d9cf3",
@@ -1117,7 +1530,8 @@
       "tagMethod": "source",
       "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe…",
       "summaryBy": "feed",
-      "score": 2.14
+      "score": 2.13,
+      "areas": []
     },
     {
       "id": "57f3af44f1ef",
@@ -1136,7 +1550,8 @@
       "tagMethod": "rules",
       "summary": "Watch now (30 mins) | 🎙️ Reddit’s principal UX engineer shows how a custom Figma MCP and Cursor pipeline takes any designer from blank slate to shareable, production-shaped…",
       "summaryBy": "feed",
-      "score": 2.13
+      "score": 2.13,
+      "areas": []
     },
     {
       "id": "8a77e646571b",
@@ -1154,7 +1569,8 @@
       "tagMethod": "source",
       "summary": "Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A…",
       "summaryBy": "feed",
-      "score": 4.63
+      "score": 4.63,
+      "areas": []
     },
     {
       "id": "8b1ad81c7872",
@@ -1172,7 +1588,8 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.1
+      "score": 2.09,
+      "areas": []
     },
     {
       "id": "26fd38f53c39",
@@ -1190,7 +1607,8 @@
       "tagMethod": "source",
       "summary": "Tool: Seam Cutter I built this weird and very specific cropping tool - it lets you create a horizontal or vertical cut across an image, then slide the two sides relative to each…",
       "summaryBy": "feed",
-      "score": 2.08
+      "score": 2.07,
+      "areas": []
     },
     {
       "id": "a570925d769f",
@@ -1208,7 +1626,8 @@
       "tagMethod": "source",
       "summary": "Listen now (86 mins) | The founder who helped over 50 startups hit $1M ARR shares his PULL framework for finding real product-market fit",
       "summaryBy": "feed",
-      "score": 2.07
+      "score": 2.07,
+      "areas": []
     },
     {
       "id": "bcedd7877589",
@@ -1224,29 +1643,12 @@
         "qa"
       ],
       "tagMethod": "source",
-      "summary": "0.125.1 (2026-10-25) Bug Fixes restore the authentic Discord invite (#11967) (98000c4)",
+      "summary": "0.125.1 (2026-10-25) Bug Fixes restore the authentic Discord invite (#11967) (98000c4) (+1 earlier patch)",
       "summaryBy": "feed",
-      "score": 0.55
-    },
-    {
-      "id": "7580a7c21638",
-      "title": "Claude Code Action v1.0.262",
-      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.262",
-      "sourceId": "claude-code-action-releases",
-      "sourceName": "Claude Code Action releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-24T18:57:30.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "qa",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "What's Changed chore: bump Bun to 1.4.4 by @dylan-conway in #1916 New Contributors @dylan-conway made their first contribution in #1916 Full Changelog: v1.0.261...v1.0.262",
-      "summaryBy": "feed",
-      "score": 2.04
+      "score": 0.55,
+      "areas": [
+        "ai-testing"
+      ]
     },
     {
       "id": "22e4c193491e",
@@ -1265,7 +1667,8 @@
       "tagMethod": "rules",
       "summary": "Community Wisdom 303",
       "summaryBy": "feed",
-      "score": 2.04
+      "score": 2.04,
+      "areas": []
     },
     {
       "id": "c1ad71a16e1f",
@@ -1283,7 +1686,8 @@
       "tagMethod": "rules",
       "summary": "We have Fable at home... or so we are being told by paid shills",
       "summaryBy": "feed",
-      "score": 2.03
+      "score": 2.03,
+      "areas": []
     },
     {
       "id": "5699208333bf",
@@ -1296,51 +1700,13 @@
       "publishedAt": "2026-10-24T03:59:57.000Z",
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
-        "claude"
+        "se"
       ],
       "tagMethod": "rules",
       "summary": "Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used…",
       "summaryBy": "feed",
-      "score": 3.53
-    },
-    {
-      "id": "07b17713962e",
-      "title": "Claude Code Action v1.0.261",
-      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.261",
-      "sourceId": "claude-code-action-releases",
-      "sourceName": "Claude Code Action releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-23T23:48:45.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "qa",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "Full Changelog: v1.0.260...v1.0.261",
-      "summaryBy": "feed",
-      "score": 2.03
-    },
-    {
-      "id": "27b067f2e1fb",
-      "title": "Claude Code v2.1.310",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
-      "sourceId": "claude-code-releases",
-      "sourceName": "Claude Code releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-23T23:39:00.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "What's changed Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now…",
-      "summaryBy": "feed",
-      "score": 2.03
+      "score": 2.03,
+      "areas": []
     },
     {
       "id": "18216b018fb1",
@@ -1358,7 +1724,8 @@
       "tagMethod": "rules",
       "summary": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas…",
       "summaryBy": "feed",
-      "score": 3.52
+      "score": 3.52,
+      "areas": []
     },
     {
       "id": "9f2c2682eaaa",
@@ -1371,53 +1738,13 @@
       "publishedAt": "2026-10-23T18:09:00.000Z",
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
-        "qa",
-        "se"
+        "qa"
       ],
       "tagMethod": "rules",
       "summary": "What's Changed fix(v3): set additionalProperties false on nullable act action schema by @miguelg719 in #3150 fix(v3): honor CAPTCHA awareness options for local attachments by…",
       "summaryBy": "feed",
-      "score": 0.52
-    },
-    {
-      "id": "a6f9c1f9d5f6",
-      "title": "Claude Code Action v1.0.260",
-      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.260",
-      "sourceId": "claude-code-action-releases",
-      "sourceName": "Claude Code Action releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-23T17:02:49.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "qa",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "What's Changed Pin the PR version a run checks out by @OctavianGuzu in #1915 Full Changelog: v1.0.259...v1.0.260",
-      "summaryBy": "feed",
-      "score": 2.02
-    },
-    {
-      "id": "0bdd0b0e1710",
-      "title": "promptfoo 0.125.0",
-      "url": "https://github.com/promptfoo/promptfoo/releases/tag/0.125.0",
-      "sourceId": "promptfoo-releases",
-      "sourceName": "promptfoo releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-23T15:32:01.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "qa",
-        "se"
-      ],
-      "tagMethod": "rules",
-      "summary": "0.125.0 (2026-10-23) ⚠ BREAKING CHANGES deps: make jks-js an optional peer dependency (#11739) providers: make Claude Agent and Codex SDKs opt-in (#11134) Features add…",
-      "summaryBy": "feed",
-      "score": 4.52
+      "score": 0.52,
+      "areas": []
     },
     {
       "id": "619059630d1f",
@@ -1435,7 +1762,8 @@
       "tagMethod": "source",
       "summary": "AI models are solving more mathematical problems. A pattern is emerging in their successes that could help us predict which problems they’ll solve next.",
       "summaryBy": "feed",
-      "score": 2.02
+      "score": 2.02,
+      "areas": []
     },
     {
       "id": "cd594630bd1b",
@@ -1454,7 +1782,8 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 4.52
+      "score": 4.52,
+      "areas": []
     },
     {
       "id": "24a759e0d336",
@@ -1472,7 +1801,8 @@
       "tagMethod": "source",
       "summary": "the Cyber onslaught continues.",
       "summaryBy": "feed",
-      "score": 2.02
+      "score": 2.02,
+      "areas": []
     },
     {
       "id": "d29df66063b9",
@@ -1490,7 +1820,8 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.01
+      "score": 2.01,
+      "areas": []
     },
     {
       "id": "a93d0a55ad4f",
@@ -1508,46 +1839,8 @@
       "tagMethod": "source",
       "summary": "What product managers are paid in 2026 by level, country and company size, plus who is hiring. Levels.fyi data and a survey of 276 PMs.",
       "summaryBy": "feed",
-      "score": 2.01
-    },
-    {
-      "id": "2d7eff34dc27",
-      "title": "Claude Code Action v1.0.259",
-      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.259",
-      "sourceId": "claude-code-action-releases",
-      "sourceName": "Claude Code Action releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-22T22:27:34.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "qa",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "Full Changelog: v1.0.258...v1.0.259",
-      "summaryBy": "feed",
-      "score": 2.01
-    },
-    {
-      "id": "d85b259ea5bc",
-      "title": "Claude Code v2.1.309",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.309",
-      "sourceId": "claude-code-releases",
-      "sourceName": "Claude Code releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-22T22:18:57.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "What's changed Fixed sandboxed Bash commands on macOS and Linux running the shell's startup files outside the sandbox before each command Fixed macOS sandbox denyWrite glob…",
-      "summaryBy": "feed",
-      "score": 2.01
+      "score": 2.01,
+      "areas": []
     },
     {
       "id": "a4d3526d3b30",
@@ -1565,7 +1858,27 @@
       "tagMethod": "source",
       "summary": "Elastic GPUs, sandbox growth, and the economics of the agent cloud",
       "summaryBy": "feed",
-      "score": 2.01
+      "score": 2.01,
+      "areas": []
+    },
+    {
+      "id": "c4f0d40ba70c",
+      "title": "The Pulse: Time to rethink software security because of AI?",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-do-we-need-to-rethink-software",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-22T14:08:21.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "A month’s worth of security breaches in a single day – will things get worse before they improve? Also: Anthropic accused of version control “rip off”, and more",
+      "summaryBy": "feed",
+      "score": 2.01,
+      "areas": []
     },
     {
       "id": "d15a17ff1fda",
@@ -1583,7 +1896,8 @@
       "tagMethod": "source",
       "summary": "How Moshi turns market data into actionable insights, and why AI tools have to fit the trader’s workflow.",
       "summaryBy": "feed",
-      "score": 2.01
+      "score": 2.01,
+      "areas": []
     },
     {
       "id": "d6e8be46a89b",
@@ -1601,7 +1915,8 @@
       "tagMethod": "rules",
       "summary": "And how I run the newsletter with agents",
       "summaryBy": "feed",
-      "score": 3.51
+      "score": 3.51,
+      "areas": []
     },
     {
       "id": "bd9f9e7d0e21",
@@ -1620,7 +1935,8 @@
       "tagMethod": "source",
       "summary": "Fast mode is available for Claude Opus 5.5 on Claude Models on Google Cloud (Anthropic managed).",
       "summaryBy": "feed",
-      "score": 5.51
+      "score": 5.51,
+      "areas": []
     },
     {
       "id": "6eda137552a5",
@@ -1638,7 +1954,8 @@
       "tagMethod": "source",
       "summary": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects.",
       "summaryBy": "feed",
-      "score": 4.51
+      "score": 4.51,
+      "areas": []
     },
     {
       "id": "cc012b1e3b75",
@@ -1651,52 +1968,13 @@
       "publishedAt": "2026-10-22T12:00:00.000Z",
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
-        "claude",
-        "se"
+        "claude"
       ],
       "tagMethod": "rules",
       "summary": "We’re donating Agent Skills, the open standard that gives AI agents specialized knowledge and workflows, to the Agentic AI Foundation. More than 70 agent platforms, including…",
       "summaryBy": "feed",
-      "score": 4.51
-    },
-    {
-      "id": "87e021759fbb",
-      "title": "Claude Code Action v1.0.258",
-      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.258",
-      "sourceId": "claude-code-action-releases",
-      "sourceName": "Claude Code Action releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-22T04:37:34.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "qa",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "Full Changelog: v1.0.257...v1.0.258",
-      "summaryBy": "feed",
-      "score": 2.01
-    },
-    {
-      "id": "831ab4bfc776",
-      "title": "Claude Code v2.1.308",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.308",
-      "sourceId": "claude-code-releases",
-      "sourceName": "Claude Code releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-22T04:34:55.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "What's changed Bug fixes and reliability improvements",
-      "summaryBy": "feed",
-      "score": 2.01
+      "score": 4.51,
+      "areas": []
     },
     {
       "id": "bb49ad748aa9",
@@ -1715,26 +1993,8 @@
       "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed",
-      "score": 3.51
-    },
-    {
-      "id": "2a7200426574",
-      "title": "Claude Code v2.1.307",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.307",
-      "sourceId": "claude-code-releases",
-      "sourceName": "Claude Code releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-21T22:17:02.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "What's changed Added /claude-api api-version to move Claude API code to API version 2026-10-21 Added the claude_code.safety_event OpenTelemetry event for each tool call a…",
-      "summaryBy": "feed",
-      "score": 2.01
+      "score": 3.51,
+      "areas": []
     },
     {
       "id": "eaaea0312afe",
@@ -1750,9 +2010,12 @@
         "qa"
       ],
       "tagMethod": "source",
-      "summary": "[skip ci]",
+      "summary": "[skip ci] (+2 earlier patches)",
       "summaryBy": "feed",
-      "score": 1.51
+      "score": 1.51,
+      "areas": [
+        "automation"
+      ]
     },
     {
       "id": "2a3cfd9c6b47",
@@ -1771,25 +2034,46 @@
       "tagMethod": "rules",
       "summary": "Watch now (16 mins) | 🎙️ I tested Claude Duet, Anthropic's beautifully designed new personal agent, on real work to see if it can beat my personal agent fatigue and make the cut",
       "summaryBy": "feed",
-      "score": 3.51
+      "score": 3.51,
+      "areas": []
     },
     {
-      "id": "6157dba50759",
-      "title": "chore: release @cypress/webpack-dev-server-v6.1.1",
-      "url": "https://github.com/cypress-io/cypress/releases/tag/%40cypress%2Fwebpack-dev-server-v6.1.1",
-      "sourceId": "cypress-releases",
-      "sourceName": "Cypress releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-21T14:19:09.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "id": "28a12ec0950e",
+      "title": "The revised rules of engineering management with Will Larson",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-revised-rules-of-engineering",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-21T16:58:21.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
       "roles": [
-        "qa"
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Will Larson, CTO of Imprint, explores how AI and shifting industry expectations are changing engineering management, career ladders, and the path from engineer to CTO.",
+      "summaryBy": "feed",
+      "score": 2.01,
+      "areas": []
+    },
+    {
+      "id": "50744548848c",
+      "title": "Fragments: October 21",
+      "url": "https://martinfowler.com/fragments/2026-10-21.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-21T16:51:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
       ],
       "tagMethod": "source",
-      "summary": "[skip ci]",
+      "summary": "Gergely Orosz is frustrated at those that entered his explicitly “No AI” essay competition and used AI. He goes on to say: When I start to suspect some part is AI about someone I…",
       "summaryBy": "feed",
-      "score": 1.51
+      "score": 2.01,
+      "areas": []
     },
     {
       "id": "5f37ecbcd331",
@@ -1808,7 +2092,8 @@
       "tagMethod": "source",
       "summary": "We’ve released API version 2026-10-21. We’ve released new versions of the client SDKs and the ant CLI that send API version 2026-10-21 by default: Python SDK 2.0.0, TypeScript……",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
     },
     {
       "id": "fac04cd6a26e",
@@ -1826,26 +2111,8 @@
       "tagMethod": "source",
       "summary": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades…",
       "summaryBy": "feed",
-      "score": 4.5
-    },
-    {
-      "id": "e35546215de1",
-      "title": "Claude Code v2.1.306",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.306",
-      "sourceId": "claude-code-releases",
-      "sourceName": "Claude Code releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-21T03:16:31.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "What's changed Fixed claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables Fixed an API error being replaced by…",
-      "summaryBy": "feed",
-      "score": 2
+      "score": 4.5,
+      "areas": []
     },
     {
       "id": "cabe972b4740",
@@ -1863,7 +2130,29 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
+    },
+    {
+      "id": "b696f256588a",
+      "title": "Ten CSS features worth voting for",
+      "url": "https://frontendfoc.us/issues/763",
+      "sourceId": "frontend-focus",
+      "sourceName": "Frontend Focus",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "Frontend Focus #​763 — October 21, 2026 | Read on the web Everyone's Interop 2027 Wishlists Last week we shared that you can now rank the Interop web platform proposals for…",
+      "summaryBy": "feed",
+      "score": 2,
+      "areas": [
+        "frontend"
+      ]
     },
     {
       "id": "1bf27f5e7659",
@@ -1882,26 +2171,29 @@
       "tagMethod": "rules",
       "summary": "I got him to give away a free Operating System for Growth in Claude Code!",
       "summaryBy": "feed",
-      "score": 3.5
+      "score": 3.5,
+      "areas": []
     },
     {
-      "id": "d48a46ffc5b7",
-      "title": "Claude Code v2.1.305",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305",
-      "sourceId": "claude-code-releases",
-      "sourceName": "Claude Code releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-20T20:46:50.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "id": "08a28eb049f4",
+      "title": "Scary Test Automation POCs Made Easy: Halloween Special With Paul Grossman",
+      "url": "https://testguild.com/podcast/a608-paul",
+      "sourceId": "testguild",
+      "sourceName": "TestGuild",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-20T16:15:46.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
       "roles": [
-        "claude",
-        "se"
+        "qa"
       ],
       "tagMethod": "source",
-      "summary": "What's changed Added sandbox.allowNestedUserNamespaces so sandboxed commands on Linux can create user namespaces (Chromium, rootless podman); this lets them get around the…",
+      "summary": "About This Episode: Running a proof of concept on test automation tools can feel like a horror movie. Vendors promise […]",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": [
+        "automation"
+      ]
     },
     {
       "id": "3bc1b8aca540",
@@ -1919,7 +2211,8 @@
       "tagMethod": "source",
       "summary": "AI can customise your home devices, like your TV",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
     },
     {
       "id": "d9a023f7b486",
@@ -1938,7 +2231,8 @@
       "tagMethod": "source",
       "summary": "Inference hooks are out of beta for Claude Enterprise organizations. We’ve added organization webhooks to the Admin API, in beta with the webhooks-2026-10-07 beta header. (+3 more)",
       "summaryBy": "feed",
-      "score": 5.5
+      "score": 5.5,
+      "areas": []
     },
     {
       "id": "be22122a2a94",
@@ -1956,7 +2250,51 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
+    },
+    {
+      "id": "29771c08c7db",
+      "title": "The up to 8x faster Rust port of TypeScript",
+      "url": "https://javascriptweekly.com/issues/807",
+      "sourceId": "javascript-weekly",
+      "sourceName": "JavaScript Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​807 — October 20, 2026 Read on the Web JavaScript Weekly tsrs: Cloudflare and VoidZero's Rust Port of TypeScript — A Rust port of the Go-based TypeScript 7 compiler, built with…",
+      "summaryBy": "feed",
+      "score": 2,
+      "areas": []
+    },
+    {
+      "id": "d87b0ef6e7bc",
+      "title": "k6 MCP, SelectorsHub MCP, Cypress and the Rise of AI Test Agents TGNS198",
+      "url": "https://testguild.com/podcast/n198-oct19",
+      "sourceId": "testguild",
+      "sourceName": "TestGuild",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-19T17:25:46.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "About This Episode: Is your AI agent inventing locators that break on the next deploy? Can AI really write a […]",
+      "summaryBy": "feed",
+      "score": 2,
+      "areas": [
+        "automation",
+        "ai-testing"
+      ]
     },
     {
       "id": "6b3a0c68c5f8",
@@ -1974,7 +2312,8 @@
       "tagMethod": "source",
       "summary": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
     },
     {
       "id": "e1ae3822da34",
@@ -1992,7 +2331,8 @@
       "tagMethod": "source",
       "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe…",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
     },
     {
       "id": "a771b2004fc3",
@@ -2011,7 +2351,8 @@
       "tagMethod": "rules",
       "summary": "Watch now (37 mins) | 🎙️ Brooke Lacey shows live how Claude Code turns a raw phone video into a captioned, jump-cut TikTok in about 15 seconds",
       "summaryBy": "feed",
-      "score": 3.5
+      "score": 3.5,
+      "areas": []
     },
     {
       "id": "adaaf247aba1",
@@ -2029,7 +2370,8 @@
       "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed",
-      "score": 3.5
+      "score": 3.5,
+      "areas": []
     },
     {
       "id": "1cd96264f11a",
@@ -2048,7 +2390,8 @@
       "tagMethod": "rules",
       "summary": "Listen now (72 mins) | Emmanuel Ameisen of Anthropic explains what looking inside language models reveals about planning, consciousness, and AI safety",
       "summaryBy": "feed",
-      "score": 3.5
+      "score": 3.5,
+      "areas": []
     },
     {
       "id": "66d5720ec836",
@@ -2066,7 +2409,8 @@
       "tagMethod": "source",
       "summary": "Announcements",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
     },
     {
       "id": "9d21a6002d78",
@@ -2085,7 +2429,27 @@
       "tagMethod": "rules",
       "summary": "Community Wisdom 302",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
+    },
+    {
+      "id": "2b3bef51034d",
+      "title": "Is Your Organization Messing Up AI Adoption?",
+      "url": "https://smashingmagazine.com/2026/10/is-your-organization-messing-up-ai-adoption",
+      "sourceId": "smashing",
+      "sourceName": "Smashing Magazine",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-16T10:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "What can digital transformation teach us about AI adoption? Paul Boag revisits his book Digital Adaptation to show how lessons from the past can help organizations navigate the…",
+      "summaryBy": "feed",
+      "score": 2,
+      "areas": []
     },
     {
       "id": "5b818df8262a",
@@ -2103,7 +2467,53 @@
       "tagMethod": "source",
       "summary": "The highest-paying PM job in the world is the PM working on building AI models. So who is hiring, what do you need to do to become one, and succeed as one? That's today's guide.",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
+    },
+    {
+      "id": "9c1a6dc6cb5d",
+      "title": "Vitest v5.0.5",
+      "url": "https://github.com/vitest-dev/vitest/releases/tag/v5.0.5",
+      "sourceId": "vitest-releases",
+      "sourceName": "Vitest releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-10-15T14:37:01.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "claude",
+        "qa",
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "Bug Fixes Keep vite default fs.deny with api token file - by @hi-ogawa, Hiroshi Ogawa and Claude Opus 5.5 in #11578 (28dc1) Handle quoted file names in --changed - by… (+1 earlier patch)",
+      "summaryBy": "feed",
+      "score": 2,
+      "areas": [
+        "automation"
+      ]
+    },
+    {
+      "id": "cb763d239710",
+      "title": "Vitest v4.1.12",
+      "url": "https://github.com/vitest-dev/vitest/releases/tag/v4.1.12",
+      "sourceId": "vitest-releases",
+      "sourceName": "Vitest releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-10-15T14:36:29.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa",
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Bug Fixes mocker: Harden manual and redirect mocks [backport to v4] - by @sheremet-va in #11580 (b8253) View changes on GitHub",
+      "summaryBy": "feed",
+      "score": 0.5,
+      "areas": [
+        "automation"
+      ]
     },
     {
       "id": "144ff761be64",
@@ -2122,7 +2532,29 @@
       "tagMethod": "rules",
       "summary": "Claude Code writes better Cypress tests when it knows your conventions, can check its work in a live session, and can see your run history. Learn how to set up Cypress AI Skills…",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": [
+        "automation"
+      ]
+    },
+    {
+      "id": "b774389cd364",
+      "title": "When Software Meets Hardware",
+      "url": "https://martinfowler.com/articles/software-meets-hardware.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-15T13:25:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "When software meets hardware, engineering principles remain largely the same, but the sensible defaults often change. Kuldeep Singh describes our experience modernizing a large…",
+      "summaryBy": "feed",
+      "score": 2,
+      "areas": []
     },
     {
       "id": "ecb5c33c0499",
@@ -2140,7 +2572,8 @@
       "tagMethod": "rules",
       "summary": "Google’s new model isn’t for me on my first test, mixed reviews",
       "summaryBy": "feed",
-      "score": 3.5
+      "score": 3.5,
+      "areas": []
     },
     {
       "id": "d8b844095dff",
@@ -2159,7 +2592,8 @@
       "tagMethod": "source",
       "summary": "Fast mode is out of research preview for Claude Opus 5.5, and you no longer need to request access. We’ve added capabilities.thinking.types.between_tools to the Models API. (+1…",
       "summaryBy": "feed",
-      "score": 7.5
+      "score": 7.5,
+      "areas": []
     },
     {
       "id": "227d02ee5d04",
@@ -2177,7 +2611,29 @@
       "tagMethod": "source",
       "summary": "To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions…",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
+    },
+    {
+      "id": "4da7b2fec966",
+      "title": "The NodeConf EU 2026 talks are online",
+      "url": "https://nodeweekly.com/issues/644",
+      "sourceId": "node-weekly",
+      "sourceName": "Node Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​644 — October 15, 2026 Read on the Web 📝 We're taking next week off and will be back on Thursday, October 29. __ Peter Cooper, your editor Skia Canvas 4.0: A Fast Canvas…",
+      "summaryBy": "feed",
+      "score": 2,
+      "areas": [
+        "backend"
+      ]
     },
     {
       "id": "56539e8cf4e0",
@@ -2195,7 +2651,8 @@
       "tagMethod": "source",
       "summary": "Tim Herbig shows how to build a product strategy that helps you say no, using a made-up used-car marketplace.",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
     },
     {
       "id": "440ccb823227",
@@ -2213,25 +2670,27 @@
       "tagMethod": "source",
       "summary": "Cypress 16.2.0 adds cy.getByRole(), a built-in query that finds elements by role and accessible name. By default, it matches only native elements, so your tests catch a swapped…",
       "summaryBy": "feed",
-      "score": 3
+      "score": 3,
+      "areas": []
     },
     {
-      "id": "f59bad63631f",
-      "title": "Cypress v16.2.0",
-      "url": "https://github.com/cypress-io/cypress/releases/tag/v16.2.0",
-      "sourceId": "cypress-releases",
-      "sourceName": "Cypress releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-14T16:28:34.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "id": "11e5b2483303",
+      "title": "Do They Mean It?",
+      "url": "https://developsense.com/blog/2026/10/do-they-mean-it",
+      "sourceId": "developsense",
+      "sourceName": "DevelopSense (Michael Bolton)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-14T15:39:39.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
       "roles": [
         "qa"
       ],
       "tagMethod": "source",
-      "summary": "Changelog: https://docs.cypress.io/app/references/changelog#16-2-0",
+      "summary": "There are some simple tests to determine whether Amodei (and Altman, and Musk, and Zuckerberg, and Nadella, and Pichai) are serious about any commitment to safety, alignment…",
       "summaryBy": "feed",
-      "score": 3
+      "score": 2,
+      "areas": []
     },
     {
       "id": "10afc31e4e17",
@@ -2250,7 +2709,8 @@
       "tagMethod": "rules",
       "summary": "Watch now (24 mins) | 🎙️Meta launched Muse Wonder with claims of frontier agentic performance, so I ran it headlessly through Claude Code against nearly 20 tasks to find out if…",
       "summaryBy": "feed",
-      "score": 3.5
+      "score": 3.5,
+      "areas": []
     },
     {
       "id": "3cf3e8de5b10",
@@ -2269,7 +2729,8 @@
       "tagMethod": "source",
       "summary": "Claude Managed Agents scheduled deployments are now available on Claude Platform on AWS.",
       "summaryBy": "feed",
-      "score": 5.5
+      "score": 5.5,
+      "areas": []
     },
     {
       "id": "18177a36d835",
@@ -2287,7 +2748,8 @@
       "tagMethod": "source",
       "summary": "Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
     },
     {
       "id": "f2bde108f64c",
@@ -2305,7 +2767,8 @@
       "tagMethod": "source",
       "summary": "Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
     },
     {
       "id": "ef8ef71468f9",
@@ -2321,9 +2784,96 @@
         "qa"
       ],
       "tagMethod": "source",
-      "summary": "Bug Fixes #43247 [Bug]: _electron.launch intermittently loses a packaged app's first window since 1.64.0 #43242 [Regression]: Chromium 155+ aborts a preflighted cross-origin…",
+      "summary": "Bug Fixes #43247 [Bug]: _electron.launch intermittently loses a packaged app's first window since 1.64.0 #43242 [Regression]: Chromium 155+ aborts a preflighted cross-origin… (+1 earlier patch)",
       "summaryBy": "feed",
-      "score": 0.5
+      "score": 0.5,
+      "areas": [
+        "automation"
+      ]
+    },
+    {
+      "id": "dc4a9b520e4b",
+      "title": "Playwright Testing Framework: A Practitioner’s Guide for 2026",
+      "url": "https://testguild.com/playwright-testing",
+      "sourceId": "testguild",
+      "sourceName": "TestGuild",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-14T11:48:33.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Last updated: October 2026. Quick answer: Playwright is Microsoft’s open-source browser automation framework. One API drives Chromium, Firefox, and WebKit, […]",
+      "summaryBy": "feed",
+      "score": 2,
+      "areas": [
+        "automation"
+      ]
+    },
+    {
+      "id": "e5c13d7dd65d",
+      "title": "Selenium Testing: A Practitioner’s Guide for 2026",
+      "url": "https://testguild.com/selenium-testing",
+      "sourceId": "testguild",
+      "sourceName": "TestGuild",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-14T11:48:33.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Last updated: October 2026. Quick answer: Selenium testing means driving a real browser, Chrome, Firefox, Edge, Safari, through a standard […]",
+      "summaryBy": "feed",
+      "score": 2,
+      "areas": [
+        "automation"
+      ]
+    },
+    {
+      "id": "ebb5fa930afe",
+      "title": "Cypress Testing: A Practitioner’s Guide for 2026",
+      "url": "https://testguild.com/cypress-testing",
+      "sourceId": "testguild",
+      "sourceName": "TestGuild",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-14T11:48:33.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Last updated: October 2026. Quick answer: Cypress testing means end-to-end testing for the browser, written in JavaScript or TypeScript, where […]",
+      "summaryBy": "feed",
+      "score": 2,
+      "areas": [
+        "automation"
+      ]
+    },
+    {
+      "id": "f19f5dba36aa",
+      "title": "The best way to use icons in Web UIs",
+      "url": "https://frontendfoc.us/issues/762",
+      "sourceId": "frontend-focus",
+      "sourceName": "Frontend Focus",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "Frontend Focus #​762 — October 14, 2026 | Read on the web What the iPhone Duo Means for Web Development — The Duo is out next week, so Darius fired up the simulator to try the…",
+      "summaryBy": "feed",
+      "score": 2,
+      "areas": [
+        "frontend"
+      ]
     },
     {
       "id": "04fc0008b67a",
@@ -2341,7 +2891,8 @@
       "tagMethod": "source",
       "summary": "Is software dead, again?",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
     },
     {
       "id": "a7e3f6e88501",
@@ -2359,7 +2910,8 @@
       "tagMethod": "source",
       "summary": "A framework for assessing whether the company you’re considering joining is built to last",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
     },
     {
       "id": "d9a4007c6074",
@@ -2378,7 +2930,29 @@
       "tagMethod": "source",
       "summary": "Engineering",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
+    },
+    {
+      "id": "f6d938f73806",
+      "title": "Ryan Dahl: 'Why reimplement Node? It works.'",
+      "url": "https://javascriptweekly.com/issues/806",
+      "sourceId": "javascript-weekly",
+      "sourceName": "JavaScript Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-13T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​806 — October 13, 2026 Read on the Web JavaScript Weekly Deno is Joining Cloudflare (But…) — Maybe David Bushell saw the writing on the wall, as the Deno team isn't joining…",
+      "summaryBy": "feed",
+      "score": 2,
+      "areas": [
+        "backend"
+      ]
     },
     {
       "id": "ff0851cbe692",
@@ -2396,7 +2970,8 @@
       "tagMethod": "source",
       "summary": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
     },
     {
       "id": "8635d0995c1d",
@@ -2414,7 +2989,8 @@
       "tagMethod": "source",
       "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe…",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
     },
     {
       "id": "077e577e8a67",
@@ -2432,7 +3008,8 @@
       "tagMethod": "source",
       "summary": "Listen now | 🎙️Alex Cornell explains how Muse serves your mom and an engineer with the same interface, and demos a SkyMall-style catalog, golf recaps, and a blog turned podcast",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
     },
     {
       "id": "8441dda466a0",
@@ -2450,7 +3027,8 @@
       "tagMethod": "source",
       "summary": "Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of…",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
     },
     {
       "id": "cec883da7418",
@@ -2468,7 +3046,8 @@
       "tagMethod": "source",
       "summary": "Listen now (62 mins) | Josh Woodward of Google Labs on where great ideas come from, knowing when to kill them, and building for a world where what’s possible changes every week",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
     },
     {
       "id": "095bf3e315fd",
@@ -2487,7 +3066,29 @@
       "tagMethod": "rules",
       "summary": "One piece of software to create huge leverage",
       "summaryBy": "feed",
-      "score": 3.5
+      "score": 3.5,
+      "areas": []
+    },
+    {
+      "id": "e08f8fdbdbe3",
+      "title": "Selenium 4.51.0",
+      "url": "https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.51.0",
+      "sourceId": "selenium-releases",
+      "sourceName": "Selenium releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-10-09T19:18:18.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Detailed Changelogs by Component Java | Python | DotNet | Ruby | JavaScript What's Changed [py] Validate WebSocket response interval correctly by @cuishuang in #17984 [py][bidi]…",
+      "summaryBy": "feed",
+      "score": 3,
+      "areas": [
+        "automation"
+      ]
     },
     {
       "id": "d99e3d815425",
@@ -2506,7 +3107,8 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
     },
     {
       "id": "371493407773",
@@ -2524,7 +3126,8 @@
       "tagMethod": "source",
       "summary": "Listen now (68 mins) | My most popular guest analyzed 12,500 PM job posts and there’s a new role hiding in them. Here’s exactly how to land it.",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
     },
     {
       "id": "2449da076fb6",
@@ -2542,7 +3145,8 @@
       "tagMethod": "source",
       "summary": "0.2.2 (2026-10-08) Bug Fixes code-scan: mint OIDC after CLI installation (#11467) (9a404c8)",
       "summaryBy": "feed",
-      "score": 0.5
+      "score": 0.5,
+      "areas": []
     },
     {
       "id": "2358911388ba",
@@ -2560,7 +3164,10 @@
       "tagMethod": "source",
       "summary": "Welcome back to another Ambassador Spotlight! Each post in this series pulls back the curtain on the testers and builders driving the Cypress community forward, sharing how they…",
       "summaryBy": "feed",
-      "score": 3
+      "score": 3,
+      "areas": [
+        "automation"
+      ]
     },
     {
       "id": "0aa4cc11a63e",
@@ -2578,7 +3185,8 @@
       "tagMethod": "source",
       "summary": "Everyone wants an AI wife...not like that",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
     },
     {
       "id": "77b3f0b977bc",
@@ -2596,7 +3204,8 @@
       "tagMethod": "source",
       "summary": "We’re launching the Anthropic Cyber Mission, a long-term commitment to securing the systems everyone depends on.",
       "summaryBy": "feed",
-      "score": 5.5
+      "score": 5.5,
+      "areas": []
     },
     {
       "id": "0b2b6437e99d",
@@ -2615,7 +3224,8 @@
       "tagMethod": "source",
       "summary": "The Compliance API can now download Claude Docs documents as Word files, in beta.",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
     },
     {
       "id": "360a27564bca",
@@ -2633,7 +3243,8 @@
       "tagMethod": "source",
       "summary": "Anthropic is committing $150 million over three years to the Genesis Mission, a federal initiative to accelerate scientific and technological discovery through AI.",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
     },
     {
       "id": "d40aae393b58",
@@ -2651,26 +3262,29 @@
       "tagMethod": "source",
       "summary": "We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
     },
     {
-      "id": "3d34d7f1f226",
-      "title": "Playwright v1.64.0",
-      "url": "https://github.com/microsoft/playwright/releases/tag/v1.64.0",
-      "sourceId": "playwright-releases",
-      "sourceName": "Playwright releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-07T20:40:43.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "id": "51b78f5dfabd",
+      "title": "When worker threads beat processes for Node efficiency",
+      "url": "https://nodeweekly.com/issues/643",
+      "sourceId": "node-weekly",
+      "sourceName": "Node Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
       "roles": [
-        "qa",
-        "se"
+        "fs"
       ],
       "tagMethod": "rules",
-      "summary": "🧰 WebMCP New page.webmcp and frame.webmcp give access to the tools that a page registers through the experimental WebMCP browser API, so you can test them like any other part of…",
+      "summary": "#​643 — October 8, 2026 Read on the Web 📝 We're back after taking last week off – you didn't miss an issue :-) If you want one neat thing to check out today, look for the voice…",
       "summaryBy": "feed",
-      "score": 3
+      "score": 2,
+      "areas": [
+        "backend"
+      ]
     },
     {
       "id": "ab3e318fe39c",
@@ -2688,7 +3302,10 @@
       "tagMethod": "source",
       "summary": "Your Accessibility and UI Coverage reports already tell you a lot. The harder part is getting that information in front of the right people at the right time. Starting today…",
       "summaryBy": "feed",
-      "score": 3
+      "score": 3,
+      "areas": [
+        "automation"
+      ]
     },
     {
       "id": "1d78f09c640d",
@@ -2706,7 +3323,8 @@
       "tagMethod": "source",
       "summary": "Claude Haiku 5.5 is our fastest, most capable small model. Built for high-volume work like summarization, subagents, and browser use.",
       "summaryBy": "feed",
-      "score": 7.5
+      "score": 7.5,
+      "areas": []
     },
     {
       "id": "ac0f8f1c3064",
@@ -2725,25 +3343,69 @@
       "tagMethod": "source",
       "summary": "We’ve lowered the price of prompt cache reads on Claude Sonnet 5.5 from $0.20 USD to $0.10 USD per million tokens: 0.05x the base input… Code written for Claude Haiku 4.5 can…",
       "summaryBy": "feed",
-      "score": 7.5
+      "score": 7.5,
+      "areas": []
     },
     {
-      "id": "cb9c327c467c",
-      "title": "chore: release @cypress/webpack-dev-server-v6.1.0",
-      "url": "https://github.com/cypress-io/cypress/releases/tag/%40cypress%2Fwebpack-dev-server-v6.1.0",
-      "sourceId": "cypress-releases",
-      "sourceName": "Cypress releases",
+      "id": "479aaebbebb5",
+      "title": "What's New in WebGPU (Chrome 155-156)",
+      "url": "https://developer.chrome.com/blog/new-in-webgpu-155-156?hl=en",
+      "sourceId": "chrome-devs",
+      "sourceName": "Chrome for Developers",
       "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-06T19:46:24.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
+      "type": "article",
+      "publishedAt": "2026-10-07T07:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "WGSL fragment_depth extension, texture compression unaligned, srgb-linear and display-p3-linear color spaces, snorm10-10-10-2 vertex format, and more.",
+      "summaryBy": "feed",
+      "score": 3,
+      "areas": [
+        "frontend"
+      ]
+    },
+    {
+      "id": "4f9db2000bd3",
+      "title": "JPEG XL finally ships in Chrome",
+      "url": "https://frontendfoc.us/issues/761",
+      "sourceId": "frontend-focus",
+      "sourceName": "Frontend Focus",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-07T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "Frontend Focus #​761 — October 7, 2026 | Read on the web How Fast is the Web? Exploring Billions of Real-User Measurements — A new free BigQuery dataset of anonymized real…",
+      "summaryBy": "feed",
+      "score": 2,
+      "areas": [
+        "frontend"
+      ]
+    },
+    {
+      "id": "14f225601725",
+      "title": "Locust and Azure Load Testing: Create and Debug Load Tests with AI with Lars Holmberg and Abhinav Premsekhar",
+      "url": "https://testguild.com/podcast/a607-lars",
+      "sourceId": "testguild",
+      "sourceName": "TestGuild",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-06T15:15:50.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
       "roles": [
         "qa"
       ],
       "tagMethod": "source",
-      "summary": "[skip ci]",
+      "summary": "About This Episode: Performance testing has never been easier to start, or more important to get right. As teams ship […]",
       "summaryBy": "feed",
-      "score": 4
+      "score": 2,
+      "areas": []
     },
     {
       "id": "408eb36f4dea",
@@ -2761,7 +3423,8 @@
       "tagMethod": "source",
       "summary": "Agents.md in Google Docs",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
     },
     {
       "id": "59c0eca2c28f",
@@ -2780,7 +3443,8 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
     },
     {
       "id": "eb1569caa0b7",
@@ -2798,7 +3462,48 @@
       "tagMethod": "source",
       "summary": "We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying…",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
+    },
+    {
+      "id": "fdf357d360df",
+      "title": "Shipping JPEG XL in Chrome",
+      "url": "https://developer.chrome.com/blog/jpeg-xl-in-chrome?hl=en",
+      "sourceId": "chrome-devs",
+      "sourceName": "Chrome for Developers",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-06T07:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "JPEG XL offers better compression than JPEG, built-in HDR support, lossless JPEG transcoding, and more.",
+      "summaryBy": "feed",
+      "score": 3,
+      "areas": [
+        "frontend"
+      ]
+    },
+    {
+      "id": "029de2814874",
+      "title": "Why don't more developers 'use the platform'?",
+      "url": "https://javascriptweekly.com/issues/805",
+      "sourceId": "javascript-weekly",
+      "sourceName": "JavaScript Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-10-06T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​805 — October 6, 2026 Read on the Web JavaScript Weekly Why Don't More Developers 'Use the Platform'? — A thoughtful look at why we often rebuild what browsers already offer…",
+      "summaryBy": "feed",
+      "score": 2,
+      "areas": []
     },
     {
       "id": "63f5e2a286a5",
@@ -2816,7 +3521,30 @@
       "tagMethod": "source",
       "summary": "Do you even need n8n anymore?",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
+    },
+    {
+      "id": "5e68f901d65f",
+      "title": "WebdriverIO v10: Verification Loops for Coding Agents, on Every Platform",
+      "url": "https://webdriver.io/blog/2026/10/05/webdriverio-v10-release",
+      "sourceId": "webdriverio-blog",
+      "sourceName": "WebdriverIO blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-05T13:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "WebdriverIO v10 is out today, and it is built for agent verification loops. Your coding agent can open your app in a real browser, on an Android or iOS device, or as a desktop…",
+      "summaryBy": "feed",
+      "score": 3,
+      "areas": [
+        "automation"
+      ]
     },
     {
       "id": "ece62f0713c1",
@@ -2834,7 +3562,8 @@
       "tagMethod": "source",
       "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe…",
       "summaryBy": "feed",
-      "score": 2
+      "score": 2,
+      "areas": []
     },
     {
       "id": "17c8f09e932f",
@@ -2853,7 +3582,29 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
+    },
+    {
+      "id": "b14c04dba8be",
+      "title": "Email verification updates, October 2026",
+      "url": "https://developer.chrome.com/blog/email-verification-october-2026?hl=en",
+      "sourceId": "chrome-devs",
+      "sourceName": "Chrome for Developers",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-10-05T07:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:40:40.718Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Updates to the Email Verification origin trial, including Android support, third-party origin trials, optional kid handling, and Sec-Fetch-Dest header changes.",
+      "summaryBy": "feed",
+      "score": 3,
+      "areas": [
+        "frontend"
+      ]
     },
     {
       "id": "bc371631f4a4",
@@ -2871,7 +3622,8 @@
       "tagMethod": "source",
       "summary": "Anthropic is investing $100 million in Claude Frontier Academy to train 10,000 Frontier Deployed Engineers by the end of 2027, with cohorts from Accenture, Bain, CBA, Deloitte…",
       "summaryBy": "feed",
-      "score": 4.5
+      "score": 4.5,
+      "areas": []
     },
     {
       "id": "2cdc9c85e538",
@@ -2889,7 +3641,10 @@
       "tagMethod": "source",
       "summary": "When Cypress detects a CI rerun, it can now skip the work that already passed and run only what failed, so you get to green faster, burn fewer CI minutes, and record fewer…",
       "summaryBy": "feed",
-      "score": 3
+      "score": 3,
+      "areas": [
+        "automation"
+      ]
     }
   ]
 }
