@@ -47,7 +47,7 @@ export function Learn({ query, savedIds, onToggleSave }: Props) {
             <button
               key={track.id}
               type="button"
-              className="facet"
+              className={`facet facet--track role-${track.role}`}
               aria-pressed={track.id === active}
               onClick={() => pick(track.id)}
               data-cy={`track-pick-${track.id}`}
@@ -70,12 +70,17 @@ export function Learn({ query, savedIds, onToggleSave }: Props) {
           const completed = completedIn(track.steps)
           const hours = Math.round(track.steps.reduce((sum, s) => sum + s.minutes, 0) / 30) / 2
           return (
-            <article key={track.id} className="track" data-cy={`track-${track.id}`}>
-              <h2>{track.name}</h2>
-              <p className="track__for">{track.for}</p>
-              <p className="mono" style={{ color: 'var(--ink-3)', margin: 0 }}>
-                {track.steps.length} steps · about {hours} hours
-              </p>
+            <article key={track.id} className={`track role-${track.role}`} data-cy={`track-${track.id}`}>
+              <div className="track__head">
+                <div>
+                  <h2>{track.name}</h2>
+                  <p className="track__for">{track.for}</p>
+                  <p className="mono" style={{ color: 'var(--ink-3)', margin: 0 }}>
+                    {track.steps.length} steps · about {hours} hours
+                  </p>
+                </div>
+                <ProgressRing done={completed} total={track.steps.length} />
+              </div>
               <div className="progress" aria-hidden="true">
                 <span style={{ width: `${(completed / track.steps.length) * 100}%` }} />
               </div>
@@ -139,5 +144,27 @@ export function Learn({ query, savedIds, onToggleSave }: Props) {
         })}
       </div>
     </section>
+  )
+}
+
+function ProgressRing({ done, total }: { done: number; total: number }) {
+  const pct = total ? Math.round((done / total) * 100) : 0
+  const r = 22
+  const circumference = 2 * Math.PI * r
+  return (
+    <div className="ring" aria-hidden="true">
+      <svg viewBox="0 0 52 52" width="56" height="56">
+        <circle className="ring__track" cx="26" cy="26" r={r} />
+        <circle
+          className="ring__bar"
+          cx="26"
+          cy="26"
+          r={r}
+          strokeDasharray={circumference}
+          strokeDashoffset={circumference * (1 - pct / 100)}
+        />
+      </svg>
+      <span className="ring__pct mono">{pct}%</span>
+    </div>
   )
 }

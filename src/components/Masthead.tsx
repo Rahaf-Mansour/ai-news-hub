@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { AlertIcon, CheckCircleIcon, InboxIcon, SparkleIcon, StarIcon } from './Icons'
 import { fullDate, relativeDate } from '../lib/format'
 import type { ItemsFile, SourcesStatusFile } from '../types'
 
@@ -64,10 +65,17 @@ export function Masthead({ items, status, unread, newCount, savedCount, now, the
           </div>
           <div className="hero__side">
             <dl className="stats">
-              <Stat label="Unread" value={unread} cy="unread-total" tone="accent" />
-              <Stat label="New since last visit" short="New" value={newCount} cy="stat-new" tone="new" />
-              <Stat label="Saved" value={savedCount} cy="stat-saved" tone="gold" />
-              <Stat label="Sources OK" short="Sources" value={status ? `${ok}/${total}` : '–'} cy="stat-sources" tone={failed ? 'warn' : 'teal'} />
+              <Stat icon={<InboxIcon />} label="Unread" value={unread} cy="unread-total" tone="accent" />
+              <Stat icon={<SparkleIcon />} label="New since last visit" short="New" value={newCount} cy="stat-new" tone="new" />
+              <Stat icon={<StarIcon />} label="Saved" value={savedCount} cy="stat-saved" tone="gold" />
+              <Stat
+                icon={failed ? <AlertIcon /> : <CheckCircleIcon />}
+                label="Sources OK"
+                short="Sources"
+                value={status ? `${ok}/${total}` : '–'}
+                cy="stat-sources"
+                tone={failed ? 'warn' : 'teal'}
+              />
             </dl>
             <button
               type="button"
@@ -86,10 +94,20 @@ export function Masthead({ items, status, unread, newCount, savedCount, now, the
   )
 }
 
-function Stat({ label, short, value, cy, tone }: { label: string; short?: string; value: number | string; cy: string; tone: string }) {
+interface StatProps {
+  icon: ReactNode
+  label: string
+  short?: string
+  value: number | string
+  cy: string
+  tone: string
+}
+
+function Stat({ icon, label, short, value, cy, tone }: StatProps) {
   return (
     <div className={`stat stat--${tone}`} data-cy={cy} aria-live="polite">
       <dt>
+        {icon}
         {short ? (
           <>
             <span className="stat__long">{label}</span>

@@ -61,10 +61,10 @@ export function AppBar({ tabs, current, query, onQuery, placeholder, inputRef, b
           {tabs.map((t) => (
             <li key={t.id}>
               <a
-                className="tab"
+                className={t.color ? 'tab tab--role' : 'tab'}
                 href={`#${t.id}`}
                 aria-current={current === t.id ? 'page' : undefined}
-                style={t.color ? ({ '--tab-color': `var(--role-${t.color})` } as CSSProperties) : undefined}
+                style={t.color ? ({ '--tab-color': `var(--role-${t.color}-ink)`, '--tab-dot': `var(--role-${t.color})` } as CSSProperties) : undefined}
                 onClick={() => onTabClick(t.id)}
                 data-cy={`tab-${t.id}`}
               >

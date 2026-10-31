@@ -16,11 +16,16 @@ export function BackToTop({ focusTarget }: { focusTarget: RefObject<HTMLInputEle
   const goTop = () => {
     const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false
     window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' })
-    // Focus once the scroll has landed, without triggering another scroll.
+    // Focus once the scroll has landed, without triggering another scroll. On a slow
+    // device the smooth scroll may still be running after 1.5 s: finish it with a jump
+    // first, because moving focus would cancel it halfway down the page.
     const started = performance.now()
     const settle = () => {
-      if (window.scrollY <= 1 || performance.now() - started > 1500) focusTarget.current?.focus({ preventScroll: true })
-      else requestAnimationFrame(settle)
+      if (window.scrollY <= 1) focusTarget.current?.focus({ preventScroll: true })
+      else if (performance.now() - started > 1500) {
+        window.scrollTo({ top: 0, behavior: 'auto' })
+        focusTarget.current?.focus({ preventScroll: true })
+      } else requestAnimationFrame(settle)
     }
     requestAnimationFrame(settle)
   }
