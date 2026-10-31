@@ -885,9 +885,25 @@ body::before {
     max-width: none;
   }
 }
+/*
+  Narrow screens: one column, so the panel sits under the content. The toggle
+  stays an ordinary button above it (a fixed tab would cover text on a phone);
+  closing the panel leaves just that button.
+*/
 @media (max-width: 1020px) {
-  .rail .rail-toggle {
+  .rail--closed .rail__panels {
     display: none;
+  }
+  /* A comfortable touch target on phones. */
+  .rail .rail-toggle {
+    min-height: 44px;
+    padding-inline: 1rem;
+  }
+  /* A single column has no side panel to make room for: let text and tracks use it. */
+  .item__summary,
+  .item__why,
+  .tracks {
+    max-width: none;
   }
 }
 .rail-toggle {
