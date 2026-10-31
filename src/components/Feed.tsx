@@ -21,13 +21,16 @@ interface Props extends ItemActions {
   filter: FilterState
   setFilter: (f: FilterState) => void
   onMarkAllRead: (ids: string[]) => void
+  onMarkAllUnread: (ids: string[]) => void
   label: string
   /** Optional facet row above the filters (Frontend/Backend, Manual/Automation…). */
   facets?: ReactNode
 }
 
-export function Feed({ items, total, filter, setFilter, onMarkAllRead, label, facets, ...actions }: Props) {
+export function Feed({ items, total, filter, setFilter, onMarkAllRead, onMarkAllUnread, label, facets, ...actions }: Props) {
   const unreadHere = items.filter((i) => !actions.read.has(i.id))
+  const readHere = items.filter((i) => actions.read.has(i.id))
+  const showingAll = !filter.savedOnly && filter.tiers.length === 0 && filter.types.length === 0
   return (
     <section aria-label={`${label} feed`} data-cy="feed">
       {facets}
@@ -43,6 +46,16 @@ export function Feed({ items, total, filter, setFilter, onMarkAllRead, label, fa
           <span className="switch__track" aria-hidden="true" />
           Hide read
         </label>
+        <button
+          type="button"
+          className="toggle"
+          aria-pressed={showingAll}
+          onClick={() => setFilter({ ...filter, savedOnly: false, tiers: [], types: [] })}
+          data-cy="filter-all"
+          title="Clear the Saved, tier and type filters"
+        >
+          All
+        </button>
         <button
           type="button"
           className="toggle toggle--saved"
@@ -87,11 +100,18 @@ export function Feed({ items, total, filter, setFilter, onMarkAllRead, label, fa
         <span data-cy="result-count">
           {items.length} of {total} items
         </span>
-        {unreadHere.length > 0 && (
-          <button type="button" className="icon-btn" onClick={() => onMarkAllRead(unreadHere.map((i) => i.id))} data-cy="mark-all-read">
-            Mark {unreadHere.length} shown as read
-          </button>
-        )}
+        <span className="result-line__actions">
+          {readHere.length > 0 && (
+            <button type="button" className="icon-btn" onClick={() => onMarkAllUnread(readHere.map((i) => i.id))} data-cy="mark-all-unread">
+              Mark {readHere.length} shown as unread
+            </button>
+          )}
+          {unreadHere.length > 0 && (
+            <button type="button" className="icon-btn" onClick={() => onMarkAllRead(unreadHere.map((i) => i.id))} data-cy="mark-all-read">
+              Mark {unreadHere.length} shown as read
+            </button>
+          )}
+        </span>
       </div>
 
       {items.length === 0 ? (

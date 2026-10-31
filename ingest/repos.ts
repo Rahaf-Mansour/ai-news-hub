@@ -12,15 +12,19 @@ export type JsonFetcher = (url: string, headers: Record<string, string>) => Prom
 
 /**
  * Read stars, last push, license and archived state from the GitHub REST API.
- * A repo whose call fails gets nulls and no verifiedAt, so the site shows
- * "not verified" instead of a stale or guessed number.
+ * When a call fails (rate limit, outage), the repo keeps its last verified
+ * numbers with their original verifiedAt date, so the site can say when they
+ * were checked. A repo that was never verified gets nulls: "not verified",
+ * never a guessed number.
  */
 export async function fetchRepos(
   configs: RepoConfig[],
   now: Date,
   token = process.env.GITHUB_TOKEN,
   fetchJson: JsonFetcher = (url, headers) => fetch(url, { headers }),
+  previous: Repo[] = [],
 ): Promise<{ repos: Repo[]; failures: string[] }> {
+  const lastVerified = new Map(previous.filter((r) => r.verifiedAt && r.stars !== null).map((r) => [r.fullName, r]))
   const headers: Record<string, string> = {
     accept: 'application/vnd.github+json',
     'user-agent': 'ai-news-hub',
@@ -57,7 +61,10 @@ export async function fetchRepos(
         }
       } catch (err) {
         failures.push(`${config.fullName}: ${(err as Error).message}`)
-        return fallback
+        const last = lastVerified.get(config.fullName)
+        return last
+          ? { ...fallback, url: last.url, stars: last.stars, lastCommit: last.lastCommit, archived: last.archived, license: last.license, verifiedAt: last.verifiedAt }
+          : fallback
       }
     }),
   )

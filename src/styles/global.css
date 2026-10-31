@@ -360,12 +360,8 @@ button {
 .theme-toggle:hover {
   border-color: var(--ink-3);
 }
-.theme-toggle__dot {
-  width: 0.7rem;
-  height: 0.7rem;
-  border-radius: 50%;
-  border: 1.5px solid var(--ink);
-  background: linear-gradient(90deg, var(--ink) 50%, transparent 50%);
+.theme-toggle svg {
+  color: var(--gold);
 }
 
 /* ── Today ──────────────────────────────────────────────── */
@@ -682,9 +678,10 @@ button {
   padding-block: 0.45rem;
 }
 .appbar .search {
-  flex: 0 1 320px;
+  flex: 0 1 230px;
 }
-.appbar .tabs {
+.appbar .tabs-wrap {
+  position: relative;
   flex: 1 1 auto;
   min-width: 0;
 }
@@ -740,7 +737,7 @@ body::before {
 }
 .tabs {
   display: flex;
-  gap: 0.3rem;
+  gap: 0.2rem;
   overflow-x: auto;
   scrollbar-width: none;
   margin: 0;
@@ -750,11 +747,35 @@ body::before {
 .tabs::-webkit-scrollbar {
   display: none;
 }
+/* Saved · Repos · Learn sit after a thin divider, apart from the news lenses. */
+.tabs__sep {
+  flex: none;
+  width: 1px;
+  margin: 0.35rem 0.3rem;
+  background: var(--rule-strong);
+}
+.tab svg {
+  flex: none;
+  color: var(--ink-3);
+}
+.tab[aria-current='page'] svg {
+  color: currentColor;
+}
+.tabs-more {
+  display: none;
+}
+/* Wide screens: wrap instead of scrolling, so every section is visible. */
+@media (min-width: 761px) {
+  .tabs {
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+}
 .tab {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  padding: 0.42rem 0.8rem;
+  gap: 0.4rem;
+  padding: 0.42rem 0.65rem;
   border: 1px solid transparent;
   border-radius: 999px;
   background: none;
@@ -811,8 +832,35 @@ body::before {
 .rail {
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
+  gap: 0.75rem;
   min-width: 0;
+}
+.rail__panels {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.page--wide {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+.rail-toggle {
+  align-self: flex-end;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink-2);
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+.rail-toggle:hover {
+  color: var(--ink);
+  border-color: var(--ink-3);
 }
 .panel h2 {
   margin: 0 0 0.6rem;
@@ -881,6 +929,11 @@ body::before {
   border-color: var(--ink);
   background: var(--ink);
   color: var(--paper);
+}
+.result-line__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
 }
 .result-line {
   display: flex;
@@ -1075,6 +1128,9 @@ details.panel[open] summary::after {
 .repo-stats dd {
   margin: 0;
   font-variant-numeric: tabular-nums;
+}
+.repo-stats__asof {
+  color: var(--warn);
 }
 .repo-card__foot {
   display: flex;
@@ -1622,6 +1678,27 @@ details.panel[open] summary::after {
   }
   .appbar .search {
     flex: none;
+  }
+  /* Phones: the row scrolls; fade the edge and show an arrow while sections are hidden. */
+  .tabs-wrap--more .tabs {
+    -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 64px), transparent calc(100% - 8px));
+    mask-image: linear-gradient(90deg, #000 calc(100% - 64px), transparent calc(100% - 8px));
+  }
+  .tabs-more {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    translate: 0 -50%;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--rule-strong);
+    border-radius: 50%;
+    background: var(--surface);
+    color: var(--ink);
+    box-shadow: var(--shadow);
+    cursor: pointer;
   }
   .appbar__inner {
     padding-bottom: 0.35rem;

@@ -38,10 +38,12 @@ Further rules:
 - **Dedupe keeps the higher tier.** If HN and Anthropic both report a launch, the Anthropic item stays and gains the HN discussion link.
 - **Ranking weight.** Official 3, editorial 2, community 1, before recency and topic boosts. Tiers order items; they never hide any.
 - **Model leaderboards are link-only.** Arena, Artificial Analysis and Epoch AI change weekly and disagree with each other, so the site links out and never copies their numbers.
-- **Unverifiable numbers are not shown.** Repo stars come from the GitHub API at build time. If that call fails, the site shows "not verified", never a cached or third-party figure.
+- **Unverifiable numbers are not shown.** Repo stars come from the GitHub API at build time, never from a third-party tracker. If today's call fails, the repo keeps the numbers from its last successful check, labelled "as of <date>" (a rate-limited run once blanked 9 of 32 repos). A repo that was never verified shows "not verified".
 
 ## 4. Smaller choices
 
+- **Release notes add roles from the title only.** Changelog bodies are full of PR titles and co-author credits ("…and Claude Opus 5.5 in #11578"), which made Vitest a Claude item. Release items keep their source's roles plus whatever the title matches. The rules also stopped reading "v0.0.84" as Vercel's v0.
+- **Two-state theme.** A three-way System/Light/Dark toggle showed two identical looks to most readers. The site now follows the OS until the reader picks Light or Dark.
 - **Archive by month in git.** `data/archive/YYYY-MM.json` keeps the full history with readable diffs and no database. The site loads only the last 30 days.
 - **Scores are not archived.** They depend on "now", so they are computed fresh each run; otherwise every archive file would change daily.
 - **No RSS for Anthropic pages: parse the HTML.** The parser walks up from each article link to its card and stops once the container holds a second article, so it never borrows a neighbour's date. If parsing yields zero items, that counts as a failure, so markup changes show up in the run log instead of failing silently.
