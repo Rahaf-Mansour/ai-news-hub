@@ -39,10 +39,18 @@ describe('parseAnthropicCards', () => {
 
   it('handles the engineering layout where the first link is an image', () => {
     const eng = parseAnthropicCards(fixture('anthropic-engineering.html'), 'https://www.anthropic.com/engineering', '^/(engineering|research)/[a-z0-9-]+$')
-    expect(eng).toHaveLength(2)
+    expect(eng).toHaveLength(3)
     expect(eng.find((i) => i.url.endsWith('fixture-source-control'))).toMatchObject({
       title: 'Rethinking fixture source control',
       publishedAt: '2026-10-13T12:00:00.000Z',
+    })
+  })
+
+  it('handles list rows where the link sits inside the heading', () => {
+    const eng = parseAnthropicCards(fixture('anthropic-engineering.html'), 'https://www.anthropic.com/engineering', '^/(engineering|research)/[a-z0-9-]+$')
+    expect(eng.find((i) => i.url.endsWith('fixture-containment'))).toMatchObject({
+      title: 'How we contain a fixture across products',
+      publishedAt: '2026-05-25T12:00:00.000Z',
     })
   })
 })
@@ -89,8 +97,9 @@ describe('labelRelease', () => {
   it('prefixes the product name to bare version titles', () => {
     expect(labelRelease({ title: 'v2.1.30', url: 'u', publishedAt: null }, 'Claude Code')?.title).toBe('Claude Code v2.1.30')
   })
-  it('leaves titles that already name the product', () => {
+  it('leaves named releases alone', () => {
     expect(labelRelease({ title: 'Playwright v1.60.0', url: 'u', publishedAt: null }, 'Playwright')?.title).toBe('Playwright v1.60.0')
+    expect(labelRelease({ title: 'Claude Code GitHub Action v1.0', url: 'u', publishedAt: null }, 'Claude Code Action')?.title).toBe('Claude Code GitHub Action v1.0')
   })
   it('drops pre-releases that match the skip pattern', () => {
     expect(labelRelease({ title: 'v1.61.0-alpha', url: 'u', publishedAt: null }, 'Playwright', '(alpha|beta)')).toBeNull()
@@ -121,6 +130,19 @@ describe('fetchSource', () => {
   it('labels releases, drops skipped tags and sorts newest first', async () => {
     const items = await fetchSource(source, async () => fixture('github-releases.atom'), new Date())
     expect(items.map((i) => i.title)).toEqual(['Tool v2.1.30'])
+  })
+
+  it('skips pre-releases by default when no pattern is configured', async () => {
+    const items = await fetchSource({ ...source, skipTitlePattern: undefined }, async () => fixture('github-releases.atom'), new Date())
+    expect(items.map((i) => i.title)).toEqual(['Tool v2.1.30'])
+  })
+
+  it('applies a title filter (keeps HN searches on topic) and allows an empty HN result', async () => {
+    const hn: SourceConfig = { ...source, kind: 'hn', hn: { query: 'x', minPoints: 1 }, titleFilter: String.raw`\bplaywright\b` }
+    expect((await fetchSource(hn, async () => fixture('hn.json'), new Date())).map((i) => i.title)).toEqual([
+      'Show HN: A fixture tool that drives Playwright from Claude',
+    ])
+    expect(await fetchSource(hn, async () => '{"hits":[]}', new Date())).toEqual([])
   })
 
   it('throws when a page parses to zero items, so a markup change is visible', async () => {

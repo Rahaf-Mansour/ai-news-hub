@@ -15,8 +15,11 @@ export function parseAnthropicCards(html: string, baseUrl: string, hrefPattern: 
   const seen = new Map<string, RawItem>()
 
   const hrefOf = (el: AnyNode) => ($(el).attr('href') ?? '').split('#')[0]
+  // A card link wraps its headline (<a><h3>…</h3></a>); a list link sits inside one (<h3><a>…</a></h3>).
   const titleOf = (el: AnyNode) =>
-    cleanText($(el).find('h1,h2,h3,h4').first().text()) || cleanText($(el).find('img[alt]').attr('alt'))
+    cleanText($(el).find('h1,h2,h3,h4').first().text()) ||
+    cleanText($(el).find('img[alt]').attr('alt')) ||
+    ($(el).parent().is('h1,h2,h3,h4') ? cleanText($(el).text()) : '')
   // Article links carry a headline (or a titled image); category links like /news/product do not.
   const isArticleLink = (el: AnyNode) => allowed.test(hrefOf(el)) && titleOf(el).length >= 6
 

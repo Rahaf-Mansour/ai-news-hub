@@ -96,6 +96,7 @@ export function score(item: Item, now: Date): number {
   if (/\b(introducing|launch\w*|generally available|now available|public beta|released?)\b/i.test(item.title)) s += 1
   if (/\bclaude (opus|sonnet|haiku|fable|mythos) \d/i.test(item.title)) s += 2
   if (item.discussionUrl && item.tier !== 'community') s += 0.5
-  if (item.type === 'release' && /\bv?\d+\.\d+\.\d+\b/.test(item.title)) s -= 0.75 // routine point releases
+  // Routine patch releases (x.y.z with z > 0) are useful in their tab but should not crowd Today.
+  if (item.type === 'release' && /\bv?\d+\.\d+\.[1-9]\d*\b/.test(item.title)) s -= 2.5
   return Math.round(s * 100) / 100
 }
