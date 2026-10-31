@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react'
 import { fullDate, relativeDate } from '../lib/format'
-import { ROLE_LABEL, TIER_HELP, TIER_LABEL } from '../lib/roles'
+import { primaryRole, ROLE_LABEL, TIER_HELP, TIER_LABEL } from '../lib/roles'
 import type { Item } from '../types'
 
 export interface ItemActions {
@@ -25,7 +25,7 @@ export function ItemCard({ item, variant = 'row', index = 0, read, saved, newSin
   const isSaved = saved.has(item.id)
   const isNew = !isRead && newSince !== null && item.firstSeenAt > newSince
   const Heading = variant === 'lead' ? 'h3' : 'h4'
-  const classes = ['item', variant === 'lead' ? 'lead' : '', isRead ? 'item--read' : ''].filter(Boolean).join(' ')
+  const classes = ['item', `role-${primaryRole(item.roles)}`, variant === 'lead' ? 'lead' : '', isRead ? 'item--read' : ''].filter(Boolean).join(' ')
 
   return (
     <article className={classes} style={{ '--i': index } as CSSProperties} data-cy="item" data-id={item.id} data-read={isRead}>

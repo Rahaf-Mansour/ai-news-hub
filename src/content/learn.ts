@@ -1,6 +1,8 @@
 // Hand-curated learning tracks. Every link was checked to respond on
 // 2026-10-31. Steps are in the order to do them.
 
+import type { Role } from '../types'
+
 export interface LearnStep {
   id: string
   title: string
@@ -16,6 +18,8 @@ export interface LearnStep {
 export interface LearnTrack {
   id: string
   name: string
+  /** The lens this track belongs to; sets its colour. */
+  role: Role
   for: string
   outcome: string
   steps: LearnStep[]
@@ -25,6 +29,7 @@ export const TRACKS: LearnTrack[] = [
   {
     id: 'producer',
     name: 'AI-enabled Producer',
+    role: 'pm',
     for: 'For a Producer or PM who wants to use Claude in day-to-day product work.',
     outcome: 'You can write prompts that hold up, run PM workflows as Claude skills, and judge an AI feature with evals.',
     steps: [
@@ -91,6 +96,7 @@ export const TRACKS: LearnTrack[] = [
   {
     id: 'qa',
     name: 'QA in the AI era',
+    role: 'qa',
     for: 'For manual, exploratory and automation testers: using AI in your testing, and testing the AI features your team ships.',
     outcome: 'You can use an LLM for test ideas and charters, drive Playwright, Cypress or WebdriverIO with AI agents, and write evals for LLM features, while keeping your own judgment in charge.',
     steps: [
@@ -262,6 +268,7 @@ export const TRACKS: LearnTrack[] = [
   {
     id: 'fullstack',
     name: 'AI for full-stack engineers',
+    role: 'fs',
     for: 'For a web developer who wants to code with an agent and ship AI features on both ends of the stack.',
     outcome: 'You can build a streaming, tool-calling AI feature with RAG on Postgres, expose it over MCP, and test, cost and secure it.',
     steps: [

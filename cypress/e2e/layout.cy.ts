@@ -52,6 +52,14 @@ describe('Page layout: sticky app bar', () => {
     cy.get('[data-cy=next-refresh]').should('contain', 'Last refresh is late').find('a').should('contain', 'check the Actions tab')
   })
 
+  it('colours cards by their primary role and fills the active tab pill in that role', () => {
+    cy.visitHub({ hash: 'fs' })
+    // Full-stack: vivid #2563eb spine, darker #1d4ed8 pill so its white text passes AA.
+    cy.feed().find('[data-id=fx-react]').should('have.class', 'role-fs').and('have.css', 'border-left-color', 'rgb(37, 99, 235)')
+    cy.get('[data-cy=tab-fs]').should('have.css', 'background-color', 'rgb(29, 78, 216)').and('have.css', 'color', 'rgb(255, 255, 255)')
+    cy.get('[data-cy=tier]').first().should('have.css', 'border-radius', '999px')
+  })
+
   it('scrolls a clicked section to just below the sticky bar', () => {
     cy.visitHub()
     cy.get('[data-cy=tab-qa]').click()
