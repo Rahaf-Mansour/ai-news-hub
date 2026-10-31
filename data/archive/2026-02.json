@@ -1,6 +1,6 @@
 {
   "month": "2026-02",
-  "count": 3,
+  "count": 4,
   "items": [
     {
       "id": "0ba787c8704d",
@@ -54,6 +54,24 @@
       ],
       "tagMethod": "source",
       "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "54b1fcd44a53",
+      "title": "Introducing WebdriverIO MCP: We're Late, But We Brought Snacks",
+      "url": "https://webdriver.io/blog/2026/02/04/introducing-webdriverio-mcp",
+      "sourceId": "webdriverio-blog",
+      "sourceName": "WebdriverIO blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-02-04T00:00:00.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Yes, we know. Playwright has an MCP server. Appium has one too. We're not first to the party.",
       "summaryBy": "feed"
     }
   ]

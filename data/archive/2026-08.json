@@ -1,6 +1,6 @@
 {
   "month": "2026-08",
-  "count": 9,
+  "count": 10,
   "items": [
     {
       "id": "0df55c1135d3",
@@ -120,6 +120,23 @@
       ],
       "tagMethod": "rules",
       "summary": "**Agent harnesses** are becoming a key optimization focus, with NVIDIA research showing traditional skill checks poorly predict agent usefulness and proposing a new metric called…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "00a6029f3ca0",
+      "title": "This Fact About KPIs May Surprise You",
+      "url": "https://satisfice.com/blog/archives/488189",
+      "sourceId": "satisfice",
+      "sourceName": "Satisfice (James Bach)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-08-24T02:34:04.000Z",
+      "firstSeenAt": "2026-10-31T15:25:49.118Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Nobody who creates actual products or does actual useful work cares about KPIs. I’ve never heard of a KPI helping someone at the coal face do anything that matters. If you…",
       "summaryBy": "feed"
     },
     {
