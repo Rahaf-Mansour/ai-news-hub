@@ -133,7 +133,8 @@
       "publishedAt": "2026-08-24T05:44:39.000Z",
       "firstSeenAt": "2026-10-31T13:32:17.830Z",
       "roles": [
-        "claude"
+        "claude",
+        "se"
       ],
       "tagMethod": "rules",
       "summary": "**Agent harnesses** are becoming a key optimization focus, with NVIDIA research showing traditional skill checks poorly predict agent usefulness and proposing a new metric called…",

@@ -1,7 +1,78 @@
 {
   "month": "2026-10",
-  "count": 256,
+  "count": 262,
   "items": [
+    {
+      "id": "dd35d009aad6",
+      "title": "How We Took Over ChatGPT Accounts",
+      "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-31T23:15:22.000Z",
+      "firstSeenAt": "2026-11-01T11:56:48.320Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews ), where interactive custom HTML apps are displayed in a sandboxed iframe. It's important that HTML in these stays tightly sandboxed to avoid untrusted code interacting with OpenAI APIs and…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4c77a0dfd633",
+      "title": "datasette-llm 0.1a9",
+      "url": "https://simonwillison.net/2026/Oct/31/datasette-llm",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-10-31T22:10:01.000Z",
+      "firstSeenAt": "2026-11-01T11:56:48.320Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: datasette-llm 0.1a9 I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default model used by LLM , which means you can start using Datasette Agent without needing to explicitly configure a default model: uvx --with datasette-agent datasette content.db…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "71145972f162",
+      "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+      "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-10-31T21:07:58Z",
+      "firstSeenAt": "2026-11-01T11:56:48.320Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "150 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50320255"
+    },
+    {
+      "id": "e07ec5d69c95",
+      "title": "Anthropic blocks users for anything touching training larger models",
+      "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-10-31T19:39:19Z",
+      "firstSeenAt": "2026-11-01T11:56:48.320Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "380 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50319358"
+    },
     {
       "id": "9b666c8337f7",
       "title": "🧠 Community Wisdom: The biggest sources of interruptions for PMs, hiring junior PMs with case studies vs. behavioral interviews, building a product harness for AI-driven development, and more",
@@ -72,6 +143,43 @@
       "summary": "68 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50315990"
+    },
+    {
+      "id": "2b51d8c5bce7",
+      "title": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
+      "url": "https://tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-10-31T13:25:00Z",
+      "firstSeenAt": "2026-11-01T11:56:48.320Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "71 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50315987"
+    },
+    {
+      "id": "e2bc4a9d40fe",
+      "title": "Why Anthropic's filing crushed tech stocks",
+      "url": "https://thebignewsletter.com/p/why-anthropics-filing-crushed-tech",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-10-31T12:32:10Z",
+      "firstSeenAt": "2026-11-01T11:56:48.320Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "53 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50315574"
     },
     {
       "id": "4505f5f4bd09",
@@ -753,6 +861,7 @@
       "publishedAt": "2026-10-29T13:50:00.000Z",
       "firstSeenAt": "2026-10-31T15:40:40.718Z",
       "roles": [
+        "fs",
         "se"
       ],
       "tagMethod": "rules",
@@ -1080,6 +1189,7 @@
       "publishedAt": "2026-10-28T12:55:00.000Z",
       "firstSeenAt": "2026-10-31T15:40:40.718Z",
       "roles": [
+        "fs",
         "se"
       ],
       "tagMethod": "rules",
