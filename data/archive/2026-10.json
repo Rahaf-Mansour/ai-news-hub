@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "count": 262,
+  "count": 263,
   "items": [
     {
       "id": "dd35d009aad6",
@@ -197,6 +197,25 @@
       "tagMethod": "source",
       "summary": "It turns out you cannot have your cake AND eat it",
       "summaryBy": "feed"
+    },
+    {
+      "id": "33dc64193f5b",
+      "title": "Postgres 19 is late because so many more bugs are being found now",
+      "url": "https://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
+      "sourceId": "hn-fullstack",
+      "sourceName": "Hacker News · Full-stack",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-10-31T01:38:56Z",
+      "firstSeenAt": "2026-11-02T13:48:46.079Z",
+      "roles": [
+        "qa",
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "608 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50312408"
     },
     {
       "id": "974417e7a49a",

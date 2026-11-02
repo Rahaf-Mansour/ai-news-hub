@@ -1,0 +1,108 @@
+{
+  "month": "2026-11",
+  "count": 6,
+  "items": [
+    {
+      "id": "efcf00e7bea3",
+      "title": "The U.S. Census Bureau and “Super Intelligence”",
+      "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-02T13:31:26.000Z",
+      "firstSeenAt": "2026-11-02T13:48:46.079Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8e0ca3b2816d",
+      "title": "How Figma’s PMs actually use AI every day | Ezra Mechaber (PM, Figma)",
+      "url": "https://lennysnewsletter.com/p/how-figmas-pms-actually-use-ai-every",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-02T13:04:11.000Z",
+      "firstSeenAt": "2026-11-02T13:48:46.079Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Listen now | 🎙️ Figma growth PM Ezra Mechaber demos PM OS, a 31-skill repo used by 60+ PMs, and AutoXP, an agent that runs growth experiments with one human checkpoint",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2e7e35a38893",
+      "title": "Next.js v16.4.4",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.4",
+      "sourceId": "nextjs-releases",
+      "sourceName": "Next.js releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-02T10:14:37.000Z",
+      "firstSeenAt": "2026-11-02T13:48:46.079Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "v16.4.4",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7d7291538279",
+      "title": "If in doubt, delete the uv.lock file",
+      "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-01T23:24:22.000Z",
+      "firstSeenAt": "2026-11-02T13:48:46.079Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is: If in doubt, delete the uv.lock file Most of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for anything else that uses it. Running uv run pytest etc tends to leave uv.lock files…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7a06514023fd",
+      "title": "Quoting Kyle Kingsbury",
+      "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-01T16:49:04.000Z",
+      "firstSeenAt": "2026-11-02T13:48:46.079Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...] In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation?…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6c0605e7e5d5",
+      "title": "How a 19-year-old intern built the growth engine behind this $2B AI company | Hector Serrano",
+      "url": "https://lennysnewsletter.com/p/how-a-19-year-old-intern-built-the",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-01T13:31:36.000Z",
+      "firstSeenAt": "2026-11-02T13:48:46.079Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Listen now (88 mins) | Hector Serrano on building Wispr Flow’s paid-UGC machine, hiring young talent over polished resumes, and why the best marketers are “allergic to AI”",
+      "summaryBy": "feed"
+    }
+  ]
+}
