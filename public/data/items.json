@@ -1,8 +1,517 @@
 {
-  "generatedAt": "2026-11-02T13:48:46.079Z",
+  "generatedAt": "2026-11-03T12:56:28.571Z",
   "llmEnabled": false,
   "windowDays": 30,
   "items": [
+    {
+      "id": "69f8b5208138",
+      "title": "Understanding Lazy thread safety modes",
+      "url": "https://andrewlock.net/understanding-lazy-thread-safety-modes",
+      "sourceId": "andrew-lock",
+      "sourceName": ".NET Escapades (Andrew Lock)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T10:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "In this post I look at how the different `LazyThreadSafetyMode` values work with `Lazy`, and how exceptions are handled for each mode",
+      "summaryBy": "feed",
+      "score": 5.69,
+      "areas": [
+        "backend"
+      ]
+    },
+    {
+      "id": "08b710f1e780",
+      "title": "Heimstaden is changing residential real estate management with AI",
+      "url": "https://openai.com/index/heimstaden",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+      "summaryBy": "feed",
+      "score": 6.49,
+      "areas": []
+    },
+    {
+      "id": "360a3a5d8e13",
+      "title": "[AINews] LLMs can read & write neural network weights: \"Weight Space Programming\" cuts Autoresearch out of the RSI loop",
+      "url": "https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T05:35:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Editing Qwen’s weights to reduce reasoning loops, DeepSeek’s super-agent prototype, and the GDPx benchmark.",
+      "summaryBy": "feed",
+      "score": 5.26,
+      "areas": []
+    },
+    {
+      "id": "9b3ba0441179",
+      "title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
+      "url": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T05:32:25.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Genius piece of OSINT by Colsto, who demonstrates how you can take almost imperceptible background noise of planes from a video soundtrack, figure out their Doppler curves, then cross reference them against ADS-B data to find the exact location of the video based on their speed, distance, and gaps between different flights. Via Lobste.rs Tags: privacy , youtube",
+      "summaryBy": "feed",
+      "score": 5.26,
+      "areas": []
+    },
+    {
+      "id": "2147ac7bda8e",
+      "title": "October sponsors-only newsletter",
+      "url": "https://simonwillison.net/2026/Nov/3/october-newsletter",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T05:28:59.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "I sent out the October edition of my sponsors-only monthly newsletter . If you are a sponsor (or start a sponsorship now) you can access it here . This month: The October inflection point for vibe game development The vulnerability apocalypse gets hot LLM releases API credits for $100+/month subscriptions What I'm using right now My software releases My September newsletter can now be seen here…",
+      "summaryBy": "feed",
+      "score": 5.25,
+      "areas": []
+    },
+    {
+      "id": "cda55a6607ab",
+      "title": "Claude Code Action v1.0.267",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.267",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-03T01:33:23.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Full Changelog: v1.0.266...v1.0.267 (+9 earlier patches)",
+      "summaryBy": "feed",
+      "score": 4.92,
+      "areas": []
+    },
+    {
+      "id": "8491ebd6e665",
+      "title": "Claude Code v2.1.317",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-03T01:25:46.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Added a warning to /schedule when a new cloud scheduled task gets connectors you did not ask for, with how to remove them Added a check that asks before a web or shell tool call sends your account email address to the network Added onFailure: \"block\" for Agent SDK hook callbacks, so a callback that fails blocks the action instead of letting it run Added a notice in Claude… (+10 earlier patches)",
+      "summaryBy": "feed",
+      "score": 4.91,
+      "areas": []
+    },
+    {
+      "id": "fec0e46ceba4",
+      "title": "Transformers Model Integration Contracts",
+      "url": "https://huggingface.co/blog/transformers-mic",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed",
+      "score": 4.79,
+      "areas": []
+    },
+    {
+      "id": "db8b36c17fea",
+      "title": "llm 0.37",
+      "url": "https://simonwillison.net/2026/Nov/2/llm",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-02T23:49:30.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Release: llm 0.37 There's a lot of stuff in this new release of my LLM CLI tool and Python library, representing around two months of accumulated features and fixes. I added gpt-6.1-sol and gpt-6.1-terra , plus a new llm openai endpoint add command to make it easier to configure additional models that use OpenAI-compatible endpoints. I switched the default model (if you have not set your own…",
+      "summaryBy": "feed",
+      "score": 4.78,
+      "areas": []
+    },
+    {
+      "id": "69a46671059b",
+      "title": "Building AI for Lawyers - Jacob Lauritzen, CTO of Legora",
+      "url": "https://latent.space/p/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-02T23:01:02.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Evals without traces, million-cell tabular reviews, and cracks in the billable hour as a business model",
+      "summaryBy": "feed",
+      "score": 4.72,
+      "areas": []
+    },
+    {
+      "id": "e33216d0e243",
+      "title": "Building Legal Agents When You Can't See the Data - Jacob Lauritzen, CTO of Legora",
+      "url": "https://latent.space/p/building_legal_agents_when_you_can_t_see_the_data_-_jacob_lauritzen_cto_of_legora",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-02T22:54:03.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Legora can’t read a single trace of what its agent does for a lawyer. The data belongs to the law firm’s clients. How do you build and test an agent when you can’t see its work? Jacob Lauritzen is the CTO of Legora, one of the fastest-growing companies...",
+      "summaryBy": "feed",
+      "score": 4.71,
+      "areas": []
+    },
+    {
+      "id": "3a6efdada65a",
+      "title": "Anthropic's growth just flattened",
+      "url": "https://regenerator1.com/p/anthropics-growth-just-flattened",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-02T22:33:20Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "215 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50344958",
+      "score": 5.18,
+      "areas": []
+    },
+    {
+      "id": "150a24daa34d",
+      "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
+      "url": "https://techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-02T22:30:47Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "370 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50344919",
+      "score": 5.18,
+      "areas": []
+    },
+    {
+      "id": "2fd89ac160eb",
+      "title": "Anthropic reveals $900B AI spending commitments ahead of IPO",
+      "url": "https://ft.com/content/4d91dbab-6fe4-45ab-beee-d77e091cb37f",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-02T19:36:37Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "73 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50342424",
+      "score": 4.97,
+      "areas": []
+    },
+    {
+      "id": "6fd6ad7938fa",
+      "title": "Rewarding defenders with bigger bug bounties",
+      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-02T18:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "rules",
+      "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+      "summaryBy": "feed",
+      "score": 5.36,
+      "areas": []
+    },
+    {
+      "id": "262cfa35f430",
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-02T18:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+      "summaryBy": "feed",
+      "score": 5.36,
+      "areas": []
+    },
+    {
+      "id": "1802721ebc5f",
+      "title": "The latest AI news we announced in October 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026",
+      "sourceId": "google-ai-blog",
+      "sourceName": "Google AI blog",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-02T17:45:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Here are Google’s latest AI updates from October 2026",
+      "summaryBy": "feed",
+      "score": 5.35,
+      "areas": []
+    },
+    {
+      "id": "0ebf7291f797",
+      "title": "How to choose the right Cypress plugins for your project",
+      "url": "https://cypress.io/blog/how-to-choose-the-right-cypress-plugins-for-your-project",
+      "sourceId": "cypress-blog",
+      "sourceName": "Cypress blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-02T16:41:49.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Most Cypress plugins are npm packages you maintain separately from Cypress. Learn how to read the Cypress plugin directory, check a plugin against your project and security review, integrate it correctly, and fix the gotchas that show up in CI and during upgrades.",
+      "summaryBy": "feed",
+      "score": 5.28,
+      "areas": [
+        "automation"
+      ]
+    },
+    {
+      "id": "5464a863f83d",
+      "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+      "url": "https://businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-02T16:40:29Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "334 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50339494",
+      "score": 4.78,
+      "areas": []
+    },
+    {
+      "id": "fd613bbbc38c",
+      "title": "Claude Opus 5.5 Can Draw Permit-Level Architectural Drawings",
+      "url": "https://stephenjgallagher.substack.com/p/ai-can-draw-blueprints-now",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-02T16:25:33Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "100 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50339224",
+      "score": 6.76,
+      "areas": []
+    },
+    {
+      "id": "ec69bd6ee9ab",
+      "title": "Vitest v5.1.0",
+      "url": "https://github.com/vitest-dev/vitest/releases/tag/v5.1.0",
+      "sourceId": "vitest-releases",
+      "sourceName": "Vitest releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-02T16:03:20.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "qa",
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Features Add --last-failed to run only failed tests - by @sheremet-va in #11558 (82f63) Support Temporal.Instant and Temporal.ZonedDateTime in vi.setSystemTime() - by @Prajwal2246, Prajwal2246, Claude Opus 5.5 (1M context), @hi-ogawa and Codex (GPT-6) in #11321 (f150f) Introduce --since-last-run flag - by @sheremet-va in #11516 (08bd9) Expose per-retry/repeat attempt result - by @hi-ogawa, Codex…",
+      "summaryBy": "feed",
+      "score": 5.24,
+      "areas": [
+        "automation"
+      ]
+    },
+    {
+      "id": "8494259ac3bc",
+      "title": "🎙️ How I AI: Grok vs. Dot vs. Muse vs. Duet + How Figma’s PMs actually use AI every day",
+      "url": "https://lennysnewsletter.com/p/how-i-ai-grok-vs-dot-vs-muse-vs-duet",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-02T16:02:08.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
+      "summaryBy": "feed",
+      "score": 4.24,
+      "areas": []
+    },
+    {
+      "id": "de4cf53f9db9",
+      "title": "Scaling Git at OpenAI",
+      "url": "https://openai.com/index/scaling-git-at-openai",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-02T15:30:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
+      "summaryBy": "feed",
+      "score": 5.2,
+      "areas": []
+    },
+    {
+      "id": "19244c7aa206",
+      "title": "Introducing the Grid Protectors Program",
+      "url": "https://openai.com/index/grid-protectors-program",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-02T15:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
+      "summaryBy": "feed",
+      "score": 6.17,
+      "areas": []
+    },
+    {
+      "id": "fb9ff410aee0",
+      "title": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+      "url": "https://cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-02T14:38:45Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "233 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50337439",
+      "score": 4.65,
+      "areas": []
+    },
+    {
+      "id": "e5f6124c6872",
+      "title": "Import AI 479: Spacewar; low-latency tasks versus LLMs; Genie 4",
+      "url": "https://jack-clark.net/2026/11/02/import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4",
+      "sourceId": "import-ai",
+      "sourceName": "Import AI (Jack Clark)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-02T14:30:54.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now LLMs are very bad at low-latency tasks:…Realtime-Bench says it’ll be a while till AI systems can play games or do online auctions for you…Researchers have built […]",
+      "summaryBy": "feed",
+      "score": 4.15,
+      "areas": []
+    },
     {
       "id": "efcf00e7bea3",
       "title": "The U.S. Census Bureau and “Super Intelligence”",
@@ -19,7 +528,7 @@
       "tagMethod": "source",
       "summary": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to…",
       "summaryBy": "feed",
-      "score": 5.97,
+      "score": 4.09,
       "areas": []
     },
     {
@@ -38,7 +547,27 @@
       "tagMethod": "source",
       "summary": "Listen now | 🎙️ Figma growth PM Ezra Mechaber demos PM OS, a 31-skill repo used by 60+ PMs, and AutoXP, an agent that runs growth experiments with one human checkpoint",
       "summaryBy": "feed",
-      "score": 5.92,
+      "score": 4.06,
+      "areas": []
+    },
+    {
+      "id": "0e5396bc21b5",
+      "title": "Long conversations and agent loops on the Messages API can now send smaller requests and get a lower time to first token with message threads, in…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-2-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-02T12:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed",
+      "score": 6.5,
       "areas": []
     },
     {
@@ -57,10 +586,29 @@
       "tagMethod": "source",
       "summary": "v16.4.4",
       "summaryBy": "feed",
-      "score": 4.12,
+      "score": 2.41,
       "areas": [
         "frontend"
       ]
+    },
+    {
+      "id": "b969c6a36014",
+      "title": "DeepSeek super agent 🤖, GPT-6 Rosalind 🧬, Google orbital compute 🛰️",
+      "url": "https://tldr.tech/ai/2026-11-02",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed",
+      "score": 3.43,
+      "areas": []
     },
     {
       "id": "7d7291538279",
@@ -78,7 +626,7 @@
       "tagMethod": "source",
       "summary": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is: If in doubt, delete the uv.lock file Most of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for anything else that uses it. Running uv run pytest etc tends to leave uv.lock files…",
       "summaryBy": "feed",
-      "score": 4.68,
+      "score": 3.41,
       "areas": []
     },
     {
@@ -97,7 +645,7 @@
       "tagMethod": "source",
       "summary": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...] In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation?…",
       "summaryBy": "feed",
-      "score": 4.23,
+      "score": 3.17,
       "areas": []
     },
     {
@@ -116,7 +664,7 @@
       "tagMethod": "source",
       "summary": "Listen now (88 mins) | Hector Serrano on building Wispr Flow’s paid-UGC machine, hiring young talent over polished resumes, and why the best marketers are “allergic to AI”",
       "summaryBy": "feed",
-      "score": 4.04,
+      "score": 3.07,
       "areas": []
     },
     {
@@ -135,7 +683,7 @@
       "tagMethod": "source",
       "summary": "Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews ), where interactive custom HTML apps are displayed in a sandboxed iframe. It's important that HTML in these stays tightly sandboxed to avoid untrusted code interacting with OpenAI APIs and…",
       "summaryBy": "feed",
-      "score": 3.37,
+      "score": 2.72,
       "areas": []
     },
     {
@@ -154,7 +702,7 @@
       "tagMethod": "source",
       "summary": "Release: datasette-llm 0.1a9 I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default model used by LLM , which means you can start using Datasette Agent without needing to explicitly configure a default model: uvx --with datasette-agent datasette content.db…",
       "summaryBy": "feed",
-      "score": 3.33,
+      "score": 2.7,
       "areas": []
     },
     {
@@ -175,7 +723,7 @@
       "summary": "150 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50320255",
-      "score": 3.79,
+      "score": 3.18,
       "areas": []
     },
     {
@@ -195,7 +743,7 @@
       "summary": "380 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50319358",
-      "score": 3.74,
+      "score": 3.15,
       "areas": []
     },
     {
@@ -214,7 +762,7 @@
       "tagMethod": "source",
       "summary": "Community Wisdom 304",
       "summaryBy": "feed",
-      "score": 3.13,
+      "score": 2.59,
       "areas": []
     },
     {
@@ -233,7 +781,7 @@
       "tagMethod": "source",
       "summary": "Arca's head of AI discusses persistent memory, the benefits of a custom harness, and agentic workflows that span days.",
       "summaryBy": "feed",
-      "score": 3.12,
+      "score": 2.59,
       "areas": []
     },
     {
@@ -253,7 +801,7 @@
       "tagMethod": "source",
       "summary": "Highlights 👥 Separate sessions in one browser — work with multiple accounts without sharing their cookies or storage. browser_tabs with action: \"new\" now accepts…",
       "summaryBy": "feed",
-      "score": 1.6,
+      "score": 1.08,
       "areas": [
         "automation"
       ]
@@ -275,7 +823,7 @@
       "summary": "68 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50315990",
-      "score": 3.54,
+      "score": 3.05,
       "areas": []
     },
     {
@@ -296,7 +844,7 @@
       "summary": "71 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50315987",
-      "score": 3.54,
+      "score": 3.05,
       "areas": []
     },
     {
@@ -316,7 +864,7 @@
       "summary": "53 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50315574",
-      "score": 3.52,
+      "score": 3.04,
       "areas": []
     },
     {
@@ -335,7 +883,7 @@
       "tagMethod": "source",
       "summary": "It turns out you cannot have your cake AND eat it",
       "summaryBy": "feed",
-      "score": 2.83,
+      "score": 2.43,
       "areas": []
     },
     {
@@ -356,7 +904,7 @@
       "summary": "608 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50312408",
-      "score": 1.75,
+      "score": 1.4,
       "areas": [
         "backend"
       ]
@@ -378,47 +926,7 @@
       "tagMethod": "source",
       "summary": "Now Generally Available! We're excited to announce the v1.0 release of Claude Code GitHub Action! This major release brings significant…",
       "summaryBy": "feed",
-      "score": 5.24,
-      "areas": []
-    },
-    {
-      "id": "ef8717c59fcc",
-      "title": "Claude Code Action v1.0.266",
-      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.266",
-      "sourceId": "claude-code-action-releases",
-      "sourceName": "Claude Code Action releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-31T01:05:37.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "Full Changelog: v1.0.265...v1.0.266 (+8 earlier patches)",
-      "summaryBy": "feed",
-      "score": 2.74,
-      "areas": []
-    },
-    {
-      "id": "1ac62f843edf",
-      "title": "Claude Code v2.1.316",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
-      "sourceId": "claude-code-releases",
-      "sourceName": "Claude Code releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-10-31T01:01:35.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "What's changed Added CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off Added pooled group budgets to the Claude apps gateway: one monthly budget that a… (+9 earlier patches)",
-      "summaryBy": "feed",
-      "score": 2.74,
+      "score": 4.89,
       "areas": []
     },
     {
@@ -438,7 +946,7 @@
       "summary": "90 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50311311",
-      "score": 3.2,
+      "score": 2.87,
       "areas": []
     },
     {
@@ -457,7 +965,7 @@
       "tagMethod": "source",
       "summary": "Inspired by qwenputer by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B…",
       "summaryBy": "feed",
-      "score": 2.68,
+      "score": 2.36,
       "areas": []
     },
     {
@@ -477,7 +985,7 @@
       "summary": "56 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50309534",
-      "score": 1.65,
+      "score": 1.34,
       "areas": []
     },
     {
@@ -496,7 +1004,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.61,
+      "score": 2.32,
       "areas": []
     },
     {
@@ -516,7 +1024,7 @@
       "summary": "312 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50307219",
-      "score": 3.1,
+      "score": 2.82,
       "areas": []
     },
     {
@@ -535,7 +1043,7 @@
       "tagMethod": "rules",
       "summary": "AI is rendering the Leetcode-style interview pointless and now Anthropic has deleted it from its interview loop. Also: details of incident.io’s AI spend, Microsoft’s exit offer…",
       "summaryBy": "feed",
-      "score": 4.09,
+      "score": 3.81,
       "areas": []
     },
     {
@@ -555,7 +1063,7 @@
       "summary": "110 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50304358",
-      "score": 3.05,
+      "score": 2.79,
       "areas": []
     },
     {
@@ -574,7 +1082,7 @@
       "tagMethod": "source",
       "summary": "Geist started as a monospace typeface for developers, built for the editors and terminals where they spend their day doing their work. From there it grew into Geist Sans for…",
       "summaryBy": "feed",
-      "score": 4.53,
+      "score": 4.28,
       "areas": []
     },
     {
@@ -594,7 +1102,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 7.01,
+      "score": 6.77,
       "areas": []
     },
     {
@@ -614,7 +1122,7 @@
       "summary": "655 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50302334",
-      "score": 3,
+      "score": 2.76,
       "areas": []
     },
     {
@@ -635,7 +1143,7 @@
       "summary": "399 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50301983",
-      "score": 3.99,
+      "score": 3.76,
       "areas": []
     },
     {
@@ -654,7 +1162,7 @@
       "tagMethod": "rules",
       "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
       "summaryBy": "feed",
-      "score": 3.48,
+      "score": 3.25,
       "areas": [
         "backend"
       ]
@@ -675,7 +1183,7 @@
       "tagMethod": "source",
       "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
       "summaryBy": "feed",
-      "score": 3.47,
+      "score": 3.25,
       "areas": []
     },
     {
@@ -694,7 +1202,7 @@
       "tagMethod": "rules",
       "summary": "Mistral’s open-weight release, frontier monitoring, and the day’s AI Twitter and Reddit recaps.",
       "summaryBy": "feed",
-      "score": 2.47,
+      "score": 2.25,
       "areas": []
     },
     {
@@ -715,7 +1223,7 @@
       "summary": "923 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50300683",
-      "score": 2.95,
+      "score": 2.74,
       "areas": []
     },
     {
@@ -734,7 +1242,7 @@
       "tagMethod": "rules",
       "summary": "Today, we’re bringing Data Cache into Runtime Cache, giving developers one product for data caching across frameworks and APIs. If you use Next.js caching or , you won’t need to…",
       "summaryBy": "feed",
-      "score": 3.41,
+      "score": 3.22,
       "areas": []
     },
     {
@@ -753,7 +1261,7 @@
       "tagMethod": "source",
       "summary": "How to ace PM interview presentations and take-home homework in the AI era: who assigns it, two worked examples, the AI toolkit and the process.",
       "summaryBy": "feed",
-      "score": 2.38,
+      "score": 2.2,
       "areas": []
     },
     {
@@ -772,7 +1280,7 @@
       "tagMethod": "source",
       "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.",
       "summaryBy": "feed",
-      "score": 3.37,
+      "score": 3.19,
       "areas": []
     },
     {
@@ -791,7 +1299,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.37,
+      "score": 2.19,
       "areas": []
     },
     {
@@ -810,7 +1318,7 @@
       "tagMethod": "rules",
       "summary": "Earlier this month Anthropic announced a generous new benefit for their Max and Team subscriptions: $100, $200, and $500…",
       "summaryBy": "feed",
-      "score": 2.36,
+      "score": 2.19,
       "areas": []
     },
     {
@@ -830,7 +1338,7 @@
       "summary": "52 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50294486",
-      "score": 2.82,
+      "score": 2.67,
       "areas": []
     },
     {
@@ -849,7 +1357,7 @@
       "tagMethod": "source",
       "summary": "Something just happened that I think is worthy of note. On LinkedIn, a young tester asked to connect, and I accepted his request. (He actually has six years of experience, but…",
       "summaryBy": "feed",
-      "score": 2.32,
+      "score": 2.17,
       "areas": []
     },
     {
@@ -869,7 +1377,7 @@
       "summary": "124 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50292727",
-      "score": 2.81,
+      "score": 2.66,
       "areas": []
     },
     {
@@ -888,7 +1396,7 @@
       "tagMethod": "rules",
       "summary": "How I Built the Most AI-Pilled Company in the World Don't be put off by the clickbait headline, this piece by Jacob Sansbury describing how they are building Spawn is a…",
       "summaryBy": "feed",
-      "score": 2.3,
+      "score": 2.16,
       "areas": []
     },
     {
@@ -907,7 +1415,7 @@
       "tagMethod": "source",
       "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
       "summaryBy": "feed",
-      "score": 3.3,
+      "score": 3.16,
       "areas": []
     },
     {
@@ -926,7 +1434,7 @@
       "tagMethod": "source",
       "summary": "Welcome back to another Ambassador Spotlight. Every post in this series introduces you to one of the people quietly holding up the Cypress community, including where they…",
       "summaryBy": "feed",
-      "score": 3.3,
+      "score": 3.16,
       "areas": [
         "automation"
       ]
@@ -947,7 +1455,7 @@
       "tagMethod": "source",
       "summary": "A new decoy counting benchmark exposes a gap between seeing and reasoning. Elorian’s Glimpse tries to bridge it by thinking with images.",
       "summaryBy": "feed",
-      "score": 2.3,
+      "score": 2.16,
       "areas": []
     },
     {
@@ -967,7 +1475,7 @@
       "summary": "324 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50290668",
-      "score": 1.29,
+      "score": 1.15,
       "areas": []
     },
     {
@@ -986,7 +1494,7 @@
       "tagMethod": "source",
       "summary": "Microsoft and Syncfusion are collaborating on Blazor through a free, open-source component toolkit, framework contributions, and developer tooling. The post Blazor Welcomes Open-Source Contributions from Syncfusion appeared first on .NET Blog.",
       "summaryBy": "feed",
-      "score": 3.29,
+      "score": 3.15,
       "areas": [
         "frontend",
         "backend"
@@ -1008,7 +1516,7 @@
       "tagMethod": "source",
       "summary": "Sometimes when I read a post, I get the growing feeling that I'm reading the output of an LLM. I can't necessarily define why, although there are the common tells (it's not the…",
       "summaryBy": "feed",
-      "score": 2.28,
+      "score": 2.15,
       "areas": []
     },
     {
@@ -1027,7 +1535,7 @@
       "tagMethod": "source",
       "summary": "every product i use should just be a headless mcp, that feeds into an agent, where i never have to think about anything underneath. except for our product, of course. in our…",
       "summaryBy": "feed",
-      "score": 2.28,
+      "score": 2.15,
       "areas": []
     },
     {
@@ -1046,7 +1554,7 @@
       "tagMethod": "source",
       "summary": "Let’s think about what we’re doing here",
       "summaryBy": "feed",
-      "score": 2.28,
+      "score": 2.15,
       "areas": []
     },
     {
@@ -1065,7 +1573,7 @@
       "tagMethod": "rules",
       "summary": "TL;DR Good developers’ caution about agentic development comes from knowing that built isn’t the same as working in production. I’ve been surprised by how many excellent…",
       "summaryBy": "feed",
-      "score": 2.28,
+      "score": 2.15,
       "areas": []
     },
     {
@@ -1084,7 +1592,7 @@
       "tagMethod": "rules",
       "summary": "Titus Winters shares lessons from engineering at Google’s scale and explores how AI is reshaping developer productivity and computer science education.",
       "summaryBy": "feed",
-      "score": 2.28,
+      "score": 2.15,
       "areas": []
     },
     {
@@ -1103,7 +1611,7 @@
       "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.28,
+      "score": 2.15,
       "areas": []
     },
     {
@@ -1122,7 +1630,7 @@
       "tagMethod": "source",
       "summary": "Detailed Changelogs by Component Java | Python | DotNet | Ruby | JavaScript What's Changed [py] use local self-signed certificate for tests by @titusfortner in #18148 [build]…",
       "summaryBy": "feed",
-      "score": 3.27,
+      "score": 3.14,
       "areas": [
         "automation"
       ]
@@ -1144,7 +1652,7 @@
       "tagMethod": "source",
       "summary": "The Usage and Cost API is now a legacy API, and so are the usage_report, cost_report, user_usage_report, and user_cost_report endpoints of…",
       "summaryBy": "feed",
-      "score": 5.76,
+      "score": 5.64,
       "areas": []
     },
     {
@@ -1163,7 +1671,7 @@
       "tagMethod": "source",
       "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
       "summaryBy": "feed",
-      "score": 3.24,
+      "score": 3.13,
       "areas": []
     },
     {
@@ -1182,7 +1690,7 @@
       "tagMethod": "source",
       "summary": "Google’s new frontier model leads independent evals, with access initially limited to trusted defenders.",
       "summaryBy": "feed",
-      "score": 3.22,
+      "score": 3.12,
       "areas": []
     },
     {
@@ -1202,7 +1710,7 @@
       "summary": "584 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50284255",
-      "score": 2.71,
+      "score": 2.61,
       "areas": []
     },
     {
@@ -1221,7 +1729,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 3.19,
+      "score": 3.1,
       "areas": []
     },
     {
@@ -1240,7 +1748,7 @@
       "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.19,
+      "score": 2.1,
       "areas": []
     },
     {
@@ -1259,7 +1767,7 @@
       "tagMethod": "rules",
       "summary": "#​645 — October 29, 2026 Read on the Web Node.js 26 'Lithium' Is Now the Active LTS Line — Node.js 26.13.0 promotes Node 26 to long-term support, with updates through April 2029…",
       "summaryBy": "feed",
-      "score": 2.19,
+      "score": 2.1,
       "areas": [
         "backend"
       ]
@@ -1280,7 +1788,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.19,
+      "score": 2.1,
       "areas": []
     },
     {
@@ -1299,7 +1807,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.19,
+      "score": 2.1,
       "areas": []
     },
     {
@@ -1318,7 +1826,7 @@
       "tagMethod": "source",
       "summary": "In general, LLM performance is incredibly multidimensional. There's no guarantee of a fixed ordering where the model that is best at math is also the model that's best at jokes…",
       "summaryBy": "feed",
-      "score": 2.19,
+      "score": 2.1,
       "areas": []
     },
     {
@@ -1337,7 +1845,7 @@
       "tagMethod": "source",
       "summary": "Paul Copplestone and Ant Wilson on building the backend for AI agents",
       "summaryBy": "feed",
-      "score": 2.17,
+      "score": 2.09,
       "areas": []
     },
     {
@@ -1356,7 +1864,7 @@
       "tagMethod": "rules",
       "summary": "I'm at GitHub Universe today (GitHub gave me a free ticket through their \"GitHub Stars\" program). EVP Jay Parikh just announced this year's Octoverse…",
       "summaryBy": "feed",
-      "score": 2.15,
+      "score": 2.08,
       "areas": []
     },
     {
@@ -1375,7 +1883,7 @@
       "tagMethod": "source",
       "summary": "Changelog: https://docs.cypress.io/app/references/changelog#16-2-1 (+1 earlier patch)",
       "summaryBy": "feed",
-      "score": 0.65,
+      "score": 0.58,
       "areas": [
         "automation"
       ]
@@ -1396,7 +1904,7 @@
       "tagMethod": "source",
       "summary": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report. The post Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents appeared first on The GitHub Blog.",
       "summaryBy": "feed",
-      "score": 3.15,
+      "score": 3.08,
       "areas": []
     },
     {
@@ -1415,7 +1923,7 @@
       "tagMethod": "rules",
       "summary": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective…",
       "summaryBy": "feed",
-      "score": 2.14,
+      "score": 2.08,
       "areas": []
     },
     {
@@ -1434,7 +1942,7 @@
       "tagMethod": "rules",
       "summary": "Andrej Karpathy sees a widening gap in how people see LLM capabilities. The general public has mostly not interacted with these systems. When they have, it looks like a derpy…",
       "summaryBy": "feed",
-      "score": 2.14,
+      "score": 2.07,
       "areas": []
     },
     {
@@ -1454,7 +1962,7 @@
       "tagMethod": "rules",
       "summary": "Listen now | 🎙️ I ranked Grok Bot, Dot, Muse, and Claude Duet across 9 real tasks—and the scores told me which agent runs my work and which runs my life",
       "summaryBy": "feed",
-      "score": 3.64,
+      "score": 3.57,
       "areas": []
     },
     {
@@ -1474,7 +1982,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 4.64,
+      "score": 4.57,
       "areas": []
     },
     {
@@ -1493,7 +2001,7 @@
       "tagMethod": "source",
       "summary": "We’re highlighting 20 scientific foundations, institutions, and research groups around the world that we’ve partnered with in an expansion of our AI for Science program.",
       "summaryBy": "feed",
-      "score": 4.64,
+      "score": 4.57,
       "areas": []
     },
     {
@@ -1512,7 +2020,7 @@
       "tagMethod": "source",
       "summary": "If your work does not benefit from current AI tooling, that is a finding, not a failing. Document why, share it with your community of peers, bring it to your manager, and work…",
       "summaryBy": "feed",
-      "score": 2.13,
+      "score": 2.07,
       "areas": []
     },
     {
@@ -1531,7 +2039,7 @@
       "tagMethod": "rules",
       "summary": "Since coding is solved, why code for the job?",
       "summaryBy": "feed",
-      "score": 3.62,
+      "score": 3.57,
       "areas": []
     },
     {
@@ -1550,7 +2058,7 @@
       "tagMethod": "rules",
       "summary": "Today, we are introducing on .Virtual ModelsAI Gateway Virtual Models are an abstraction of the model string and configurations your apps and developers use. With a single…",
       "summaryBy": "feed",
-      "score": 4.12,
+      "score": 4.06,
       "areas": []
     },
     {
@@ -1570,7 +2078,7 @@
       "tagMethod": "rules",
       "summary": "Coding agents are opening more pull requests than ever, and each one waits on CI before anyone can review or merge it. Most CI systems run the entire workflow on every push, even…",
       "summaryBy": "feed",
-      "score": 4.12,
+      "score": 4.06,
       "areas": []
     },
     {
@@ -1589,7 +2097,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 3.1,
+      "score": 3.05,
       "areas": [
         "backend"
       ]
@@ -1610,7 +2118,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 3.1,
+      "score": 3.05,
       "areas": [
         "backend"
       ]
@@ -1631,7 +2139,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.1,
+      "score": 2.05,
       "areas": []
     },
     {
@@ -1650,7 +2158,7 @@
       "tagMethod": "rules",
       "summary": "Frontend Focus #​764 — October 28, 2026 | Read on the web 🖼️ HTML-in-Canvas: Interactive DOM Inside 2D, WebGL and WebGPU Canvases — Arriving in stable Chrome next week, this…",
       "summaryBy": "feed",
-      "score": 2.1,
+      "score": 2.05,
       "areas": [
         "frontend"
       ]
@@ -1671,7 +2179,7 @@
       "tagMethod": "source",
       "summary": "I'm at GitHub Universe this week and, similar to last year , the conference badge is a full-blown color screen computer. I've been hacking…",
       "summaryBy": "feed",
-      "score": 2.09,
+      "score": 2.05,
       "areas": []
     },
     {
@@ -1690,7 +2198,7 @@
       "tagMethod": "rules",
       "summary": "Katelyn Lesse and Angela Jiang on Opus 5.5, the Claude Platform, and the engineering behind AI agents.",
       "summaryBy": "feed",
-      "score": 3.58,
+      "score": 3.54,
       "areas": []
     },
     {
@@ -1709,7 +2217,7 @@
       "tagMethod": "rules",
       "summary": "Katelyn Lesse and Angela Jiang join Latent Space to explain the engineering behind the Claude Platform: launching Opus 5.5, separating the model’s “brain” from the agent’s…",
       "summaryBy": "feed",
-      "score": 3.58,
+      "score": 3.54,
       "areas": []
     },
     {
@@ -1728,7 +2236,7 @@
       "tagMethod": "source",
       "summary": "Something very much like this post originally appeared on LinkedIn. Ed Zitron is reading my mind. Well… maybe not reading it, but he’s for sure writing it. Here are the contents…",
       "summaryBy": "feed",
-      "score": 2.08,
+      "score": 2.04,
       "areas": []
     },
     {
@@ -1747,7 +2255,7 @@
       "tagMethod": "source",
       "summary": "“AI SRE” is fast becoming a trending term fueled by flashy demos from vendors, but has an AI SRE ever really been on-call while engineers slept? Deepdive",
       "summaryBy": "feed",
-      "score": 2.08,
+      "score": 2.04,
       "areas": []
     },
     {
@@ -1766,7 +2274,7 @@
       "tagMethod": "source",
       "summary": "Microsoft and Infragistics are collaborating on Blazor through free, open-source components, new .NET 11 analyzers, and developer tooling. The post Blazor Welcomes Open-Source Contributions from Infragistics appeared first on .NET Blog.",
       "summaryBy": "feed",
-      "score": 3.08,
+      "score": 3.04,
       "areas": [
         "frontend",
         "backend"
@@ -1788,7 +2296,7 @@
       "tagMethod": "rules",
       "summary": "How to set up and run an offline coding agent using OpenCode, Ollama and Qwen.",
       "summaryBy": "feed",
-      "score": 2.08,
+      "score": 2.04,
       "areas": []
     },
     {
@@ -1807,7 +2315,7 @@
       "tagMethod": "source",
       "summary": "About This Episode: Why Your AI Tests Pass When Your Features Fail? Donovan Brady of Leapwork shows how to make […]",
       "summaryBy": "feed",
-      "score": 2.07,
+      "score": 2.04,
       "areas": [
         "ai-testing"
       ]
@@ -1828,7 +2336,7 @@
       "tagMethod": "rules",
       "summary": "Lots of visuals to use and learn with.",
       "summaryBy": "feed",
-      "score": 3.57,
+      "score": 3.54,
       "areas": []
     },
     {
@@ -1847,7 +2355,7 @@
       "tagMethod": "source",
       "summary": "Listen to this episode on: Spotify | Apple Podcasts AI evals feel like a brand-new skill — but the hardest part is a question product teams have always had to answer: what does \"good\" actually look like? Petra Wille and Teresa Torres dig into Teresa's recent",
       "summaryBy": "feed",
-      "score": 2.07,
+      "score": 2.04,
       "areas": []
     },
     {
@@ -1866,7 +2374,7 @@
       "tagMethod": "source",
       "summary": "We are expanding our partnership with the General Services Administration (GSA) through a new agreement that gives government partners a 40% discount on Claude Enterprise, Claude…",
       "summaryBy": "feed",
-      "score": 4.57,
+      "score": 4.54,
       "areas": []
     },
     {
@@ -1885,7 +2393,7 @@
       "tagMethod": "rules",
       "summary": "The S-1, the numbers, and the reactions.",
       "summaryBy": "feed",
-      "score": 3.56,
+      "score": 3.53,
       "areas": []
     },
     {
@@ -1904,7 +2412,7 @@
       "tagMethod": "rules",
       "summary": "Vercel and are partnering to bring 14 ElevenLabs models to . To celebrate the launch, all ElevenLabs models are 50% off on AI Gateway for the first 14 days, through November…",
       "summaryBy": "feed",
-      "score": 3.06,
+      "score": 3.03,
       "areas": []
     },
     {
@@ -1923,7 +2431,7 @@
       "tagMethod": "source",
       "summary": "Supabase Compute is in private alpha and runs your agents and background jobs inside your Supabase project.",
       "summaryBy": "feed",
-      "score": 3.06,
+      "score": 3.03,
       "areas": [
         "backend"
       ]
@@ -1944,7 +2452,7 @@
       "tagMethod": "source",
       "summary": "3.9.0 (2026-10-27) Features appium: fallback to latest compatible extension version for CLI `install` (#23013) (3c20d79) Bug Fixes appium: backport bidi close code validation…",
       "summaryBy": "feed",
-      "score": 3.06,
+      "score": 3.03,
       "areas": [
         "automation"
       ]
@@ -1965,7 +2473,7 @@
       "tagMethod": "source",
       "summary": "3.0.2 (2026-10-27) Note: Version bump only for package @appium/universal-xml-plugin",
       "summaryBy": "feed",
-      "score": 0.56,
+      "score": 0.53,
       "areas": [
         "automation"
       ]
@@ -1987,7 +2495,7 @@
       "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed",
-      "score": 3.55,
+      "score": 3.53,
       "areas": []
     },
     {
@@ -2007,7 +2515,7 @@
       "tagMethod": "rules",
       "summary": "#​808 — October 27, 2026 Read on the Web JavaScript Weekly TanStack AI 1.0: The Vendor-Neutral AI Toolkit Goes Stable — TanStack's framework-agnostic AI toolkit reaches 1.0, with…",
       "summaryBy": "feed",
-      "score": 2.05,
+      "score": 2.03,
       "areas": []
     },
     {
@@ -2026,7 +2534,7 @@
       "tagMethod": "source",
       "summary": "It's always interesting to note which aspects of a new model are emphasized in the release announcement. In the case of GPT-6.1 Terra, OpenAI went with visual…",
       "summaryBy": "feed",
-      "score": 2.05,
+      "score": 2.03,
       "areas": []
     },
     {
@@ -2045,7 +2553,7 @@
       "tagMethod": "source",
       "summary": "Zynga founder Mark Pincus teaches Proven Better New at the whiteboard: what to copy, how to tell better from new, and how to test demand before you build.",
       "summaryBy": "feed",
-      "score": 2.05,
+      "score": 2.03,
       "areas": []
     },
     {
@@ -2064,7 +2572,7 @@
       "tagMethod": "source",
       "summary": "A configuration mismatch in GLM 5.3 on Workers AI triggered an SGLang bug that exposed KV cache pages across requests. Here is how we addressed the issue.",
       "summaryBy": "feed",
-      "score": 3.05,
+      "score": 3.02,
       "areas": [
         "backend"
       ]
@@ -2085,7 +2593,7 @@
       "tagMethod": "source",
       "summary": "About This Episode: Can you actually trust the Playwright tests your AI generates? A new free tool says it can […]",
       "summaryBy": "feed",
-      "score": 2.04,
+      "score": 2.02,
       "areas": [
         "ai-testing"
       ]
@@ -2106,7 +2614,7 @@
       "tagMethod": "source",
       "summary": "Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech…",
       "summaryBy": "feed",
-      "score": 2.04,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2125,7 +2633,7 @@
       "tagMethod": "source",
       "summary": "CypressConf 2026 is a wrap! Thank you to everyone who joined us for three days of talks and hands-on workshops. This year’s theme, The Signal Is Up, asked a question every team…",
       "summaryBy": "feed",
-      "score": 3.04,
+      "score": 3.02,
       "areas": []
     },
     {
@@ -2144,7 +2652,7 @@
       "tagMethod": "rules",
       "summary": "Research: webframe: evaluated as a scraper and a sandbox webframe is a neat little project from Jeff Lindsay which lets you \"run a web page like a program\" - you point it at a…",
       "summaryBy": "feed",
-      "score": 2.04,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2163,7 +2671,7 @@
       "tagMethod": "source",
       "summary": "Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”",
       "summaryBy": "feed",
-      "score": 3.04,
+      "score": 3.02,
       "areas": []
     },
     {
@@ -2183,7 +2691,7 @@
       "tagMethod": "rules",
       "summary": "Your weekly listens from How I AI, part of the Lenny’s Podcast Network",
       "summaryBy": "feed",
-      "score": 3.54,
+      "score": 3.52,
       "areas": []
     },
     {
@@ -2202,7 +2710,7 @@
       "tagMethod": "source",
       "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe…",
       "summaryBy": "feed",
-      "score": 2.04,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2222,7 +2730,7 @@
       "tagMethod": "rules",
       "summary": "Watch now (30 mins) | 🎙️ Reddit’s principal UX engineer shows how a custom Figma MCP and Cursor pipeline takes any designer from blank slate to shareable, production-shaped…",
       "summaryBy": "feed",
-      "score": 2.04,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2241,7 +2749,7 @@
       "tagMethod": "source",
       "summary": "Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A…",
       "summaryBy": "feed",
-      "score": 4.54,
+      "score": 4.52,
       "areas": []
     },
     {
@@ -2260,7 +2768,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.03,
+      "score": 2.01,
       "areas": []
     },
     {
@@ -2279,7 +2787,7 @@
       "tagMethod": "source",
       "summary": "Out-of-band security updates for .NET address the Brotli decoder vulnerability and tarball ownership vulnerability. The post .NET October 2026 Out-of-Band Security Updates appeared first on .NET Blog.",
       "summaryBy": "feed",
-      "score": 3.02,
+      "score": 3.01,
       "areas": [
         "backend"
       ]
@@ -2300,7 +2808,7 @@
       "tagMethod": "source",
       "summary": "Tool: Seam Cutter I built this weird and very specific cropping tool - it lets you create a horizontal or vertical cut across an image, then slide the two sides relative to each…",
       "summaryBy": "feed",
-      "score": 2.02,
+      "score": 2.01,
       "areas": []
     },
     {
@@ -2319,7 +2827,7 @@
       "tagMethod": "source",
       "summary": "Listen now (86 mins) | The founder who helped over 50 startups hit $1M ARR shares his PULL framework for finding real product-market fit",
       "summaryBy": "feed",
-      "score": 2.02,
+      "score": 2.01,
       "areas": []
     },
     {
@@ -2379,7 +2887,7 @@
       "tagMethod": "rules",
       "summary": "We have Fable at home... or so we are being told by paid shills",
       "summaryBy": "feed",
-      "score": 2.01,
+      "score": 2,
       "areas": []
     },
     {
@@ -2398,7 +2906,7 @@
       "tagMethod": "rules",
       "summary": "Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used…",
       "summaryBy": "feed",
-      "score": 2.01,
+      "score": 2,
       "areas": []
     },
     {
@@ -2417,7 +2925,7 @@
       "tagMethod": "rules",
       "summary": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas…",
       "summaryBy": "feed",
-      "score": 3.51,
+      "score": 3.5,
       "areas": []
     },
     {
@@ -2436,7 +2944,7 @@
       "tagMethod": "rules",
       "summary": "What's Changed fix(v3): set additionalProperties false on nullable act action schema by @miguelg719 in #3150 fix(v3): honor CAPTCHA awareness options for local attachments by…",
       "summaryBy": "feed",
-      "score": 0.51,
+      "score": 0.5,
       "areas": []
     },
     {
@@ -2455,7 +2963,7 @@
       "tagMethod": "source",
       "summary": "AI models are solving more mathematical problems. A pattern is emerging in their successes that could help us predict which problems they’ll solve next.",
       "summaryBy": "feed",
-      "score": 2.01,
+      "score": 2,
       "areas": []
     },
     {

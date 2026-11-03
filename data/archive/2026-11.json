@@ -1,7 +1,458 @@
 {
   "month": "2026-11",
-  "count": 6,
+  "count": 34,
   "items": [
+    {
+      "id": "69f8b5208138",
+      "title": "Understanding Lazy thread safety modes",
+      "url": "https://andrewlock.net/understanding-lazy-thread-safety-modes",
+      "sourceId": "andrew-lock",
+      "sourceName": ".NET Escapades (Andrew Lock)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T10:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "In this post I look at how the different `LazyThreadSafetyMode` values work with `Lazy`, and how exceptions are handled for each mode",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "08b710f1e780",
+      "title": "Heimstaden is changing residential real estate management with AI",
+      "url": "https://openai.com/index/heimstaden",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "360a3a5d8e13",
+      "title": "[AINews] LLMs can read & write neural network weights: \"Weight Space Programming\" cuts Autoresearch out of the RSI loop",
+      "url": "https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T05:35:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Editing Qwen’s weights to reduce reasoning loops, DeepSeek’s super-agent prototype, and the GDPx benchmark.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "9b3ba0441179",
+      "title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
+      "url": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T05:32:25.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Genius piece of OSINT by Colsto, who demonstrates how you can take almost imperceptible background noise of planes from a video soundtrack, figure out their Doppler curves, then cross reference them against ADS-B data to find the exact location of the video based on their speed, distance, and gaps between different flights. Via Lobste.rs Tags: privacy , youtube",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2147ac7bda8e",
+      "title": "October sponsors-only newsletter",
+      "url": "https://simonwillison.net/2026/Nov/3/october-newsletter",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T05:28:59.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "I sent out the October edition of my sponsors-only monthly newsletter . If you are a sponsor (or start a sponsorship now) you can access it here . This month: The October inflection point for vibe game development The vulnerability apocalypse gets hot LLM releases API credits for $100+/month subscriptions What I'm using right now My software releases My September newsletter can now be seen here…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "cda55a6607ab",
+      "title": "Claude Code Action v1.0.267",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.267",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-03T01:33:23.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Full Changelog: v1.0.266...v1.0.267",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8491ebd6e665",
+      "title": "Claude Code v2.1.317",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-03T01:25:46.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Added a warning to /schedule when a new cloud scheduled task gets connectors you did not ask for, with how to remove them Added a check that asks before a web or shell tool call sends your account email address to the network Added onFailure: \"block\" for Agent SDK hook callbacks, so a callback that fails blocks the action instead of letting it run Added a notice in Claude…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "fec0e46ceba4",
+      "title": "Transformers Model Integration Contracts",
+      "url": "https://huggingface.co/blog/transformers-mic",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "db8b36c17fea",
+      "title": "llm 0.37",
+      "url": "https://simonwillison.net/2026/Nov/2/llm",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-02T23:49:30.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Release: llm 0.37 There's a lot of stuff in this new release of my LLM CLI tool and Python library, representing around two months of accumulated features and fixes. I added gpt-6.1-sol and gpt-6.1-terra , plus a new llm openai endpoint add command to make it easier to configure additional models that use OpenAI-compatible endpoints. I switched the default model (if you have not set your own…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "69a46671059b",
+      "title": "Building AI for Lawyers - Jacob Lauritzen, CTO of Legora",
+      "url": "https://latent.space/p/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-02T23:01:02.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Evals without traces, million-cell tabular reviews, and cracks in the billable hour as a business model",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e33216d0e243",
+      "title": "Building Legal Agents When You Can't See the Data - Jacob Lauritzen, CTO of Legora",
+      "url": "https://latent.space/p/building_legal_agents_when_you_can_t_see_the_data_-_jacob_lauritzen_cto_of_legora",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-02T22:54:03.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Legora can’t read a single trace of what its agent does for a lawyer. The data belongs to the law firm’s clients. How do you build and test an agent when you can’t see its work? Jacob Lauritzen is the CTO of Legora, one of the fastest-growing companies...",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "3a6efdada65a",
+      "title": "Anthropic's growth just flattened",
+      "url": "https://regenerator1.com/p/anthropics-growth-just-flattened",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-02T22:33:20Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "215 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50344958"
+    },
+    {
+      "id": "150a24daa34d",
+      "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
+      "url": "https://techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-02T22:30:47Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "370 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50344919"
+    },
+    {
+      "id": "2fd89ac160eb",
+      "title": "Anthropic reveals $900B AI spending commitments ahead of IPO",
+      "url": "https://ft.com/content/4d91dbab-6fe4-45ab-beee-d77e091cb37f",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-02T19:36:37Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "73 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50342424"
+    },
+    {
+      "id": "262cfa35f430",
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-02T18:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6fd6ad7938fa",
+      "title": "Rewarding defenders with bigger bug bounties",
+      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-02T18:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "rules",
+      "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1802721ebc5f",
+      "title": "The latest AI news we announced in October 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026",
+      "sourceId": "google-ai-blog",
+      "sourceName": "Google AI blog",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-02T17:45:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Here are Google’s latest AI updates from October 2026",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0ebf7291f797",
+      "title": "How to choose the right Cypress plugins for your project",
+      "url": "https://cypress.io/blog/how-to-choose-the-right-cypress-plugins-for-your-project",
+      "sourceId": "cypress-blog",
+      "sourceName": "Cypress blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-02T16:41:49.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Most Cypress plugins are npm packages you maintain separately from Cypress. Learn how to read the Cypress plugin directory, check a plugin against your project and security review, integrate it correctly, and fix the gotchas that show up in CI and during upgrades.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "5464a863f83d",
+      "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+      "url": "https://businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-02T16:40:29Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "334 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50339494"
+    },
+    {
+      "id": "fd613bbbc38c",
+      "title": "Claude Opus 5.5 Can Draw Permit-Level Architectural Drawings",
+      "url": "https://stephenjgallagher.substack.com/p/ai-can-draw-blueprints-now",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-02T16:25:33Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "100 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50339224"
+    },
+    {
+      "id": "ec69bd6ee9ab",
+      "title": "Vitest v5.1.0",
+      "url": "https://github.com/vitest-dev/vitest/releases/tag/v5.1.0",
+      "sourceId": "vitest-releases",
+      "sourceName": "Vitest releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-02T16:03:20.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "qa",
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Features Add --last-failed to run only failed tests - by @sheremet-va in #11558 (82f63) Support Temporal.Instant and Temporal.ZonedDateTime in vi.setSystemTime() - by @Prajwal2246, Prajwal2246, Claude Opus 5.5 (1M context), @hi-ogawa and Codex (GPT-6) in #11321 (f150f) Introduce --since-last-run flag - by @sheremet-va in #11516 (08bd9) Expose per-retry/repeat attempt result - by @hi-ogawa, Codex…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8494259ac3bc",
+      "title": "🎙️ How I AI: Grok vs. Dot vs. Muse vs. Duet + How Figma’s PMs actually use AI every day",
+      "url": "https://lennysnewsletter.com/p/how-i-ai-grok-vs-dot-vs-muse-vs-duet",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-02T16:02:08.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "de4cf53f9db9",
+      "title": "Scaling Git at OpenAI",
+      "url": "https://openai.com/index/scaling-git-at-openai",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-02T15:30:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "19244c7aa206",
+      "title": "Introducing the Grid Protectors Program",
+      "url": "https://openai.com/index/grid-protectors-program",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-02T15:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "fb9ff410aee0",
+      "title": "Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1",
+      "url": "https://cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-02T14:38:45Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "233 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50337439"
+    },
+    {
+      "id": "e5f6124c6872",
+      "title": "Import AI 479: Spacewar; low-latency tasks versus LLMs; Genie 4",
+      "url": "https://jack-clark.net/2026/11/02/import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4",
+      "sourceId": "import-ai",
+      "sourceName": "Import AI (Jack Clark)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-02T14:30:54.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now LLMs are very bad at low-latency tasks:…Realtime-Bench says it’ll be a while till AI systems can play games or do online auctions for you…Researchers have built […]",
+      "summaryBy": "feed"
+    },
     {
       "id": "efcf00e7bea3",
       "title": "The U.S. Census Bureau and “Super Intelligence”",
@@ -37,6 +488,24 @@
       "summaryBy": "feed"
     },
     {
+      "id": "0e5396bc21b5",
+      "title": "Long conversations and agent loops on the Messages API can now send smaller requests and get a lower time to first token with message threads, in…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-2-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-02T12:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
       "id": "2e7e35a38893",
       "title": "Next.js v16.4.4",
       "url": "https://github.com/vercel/next.js/releases/tag/v16.4.4",
@@ -51,6 +520,23 @@
       ],
       "tagMethod": "source",
       "summary": "v16.4.4",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b969c6a36014",
+      "title": "DeepSeek super agent 🤖, GPT-6 Rosalind 🧬, Google orbital compute 🛰️",
+      "url": "https://tldr.tech/ai/2026-11-02",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "firstSeenAt": "2026-11-03T12:56:28.571Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
       "summaryBy": "feed"
     },
     {
