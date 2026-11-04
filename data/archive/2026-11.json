@@ -1,7 +1,352 @@
 {
   "month": "2026-11",
-  "count": 34,
+  "count": 64,
   "items": [
+    {
+      "id": "90baf66d39cc",
+      "title": "Claude Code Action v1.0.268",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.268",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-04T00:05:32.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Full Changelog: v1.0.267...v1.0.268",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6385d8e47a02",
+      "title": "Claude Code v2.1.318",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-04T00:01:03.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Added a record of your answer when Claude Code asks to turn on the mods it writes in a session Added assume_role on mantle upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution Added an effort option to a mod's $.model.fork, so a quick side job can run at low whatever effort the session uses; the result reports the…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "90b77a3e6d00",
+      "title": "What an AI-Native Product Team Actually Looks Like at Salesforce",
+      "url": "https://news.aakashg.com/p/salesforce-ai-native-product-team",
+      "sourceId": "product-growth",
+      "sourceName": "Product Growth (Aakash Gupta)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T23:44:37.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Salesforce AI's Jayesh Govindarajan, who runs the Agentforce org, on the ADLC behind an AI-native product team and what Salesforce looks for when hiring PMs.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "46eec3e6fd72",
+      "title": "Yeah, I Know. Stop Bugging Me.",
+      "url": "https://developsense.com/blog/2026/11/yeah-i-know-stop-bugging-me",
+      "sourceId": "developsense",
+      "sourceName": "DevelopSense (Michael Bolton)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T22:13:22.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "I have an observation: people all over the world are cranky and short-tempered these days. Of course, much of that is due to big, serious things: the economy, and politics, and looming climate catastrophe; people feeling like they haven’t been heard; that their time and effort and freedom and privacy are being undermined. Severity 1 bugs, as it were. A lot of people think about bugs as coding…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f8e28c27ae3e",
+      "title": "Delivering Skills in NuGet packages",
+      "url": "https://devblogs.microsoft.com/dotnet/delivering-skills-in-nuget-packages",
+      "sourceId": "dotnet-blog",
+      "sourceName": ".NET Blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-03T19:00:14.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Agent skills can be delivered in NuGet packages as a way to deliver up-to-date library documentation to models. The post Delivering Skills in NuGet packages appeared first on .NET Blog.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "014d49577a9f",
+      "title": "Next.js v16.4.5",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.5",
+      "sourceId": "nextjs-releases",
+      "sourceName": "Next.js releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-03T18:38:39.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "This release contains security fixes for the following advisories: Moderate Cross-tenant sensitive information disclosure in Next.js 'use cache' when called through unstable_cache Cache leak across root param values in nested 'use cache' functions (follow-up) Cache poisoning of shared fallback shells in Cache Components via request-supplied placeholder route params Cross-user cache disclosure…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7eec6eebddbc",
+      "title": "Next.js v15.5.29",
+      "url": "https://github.com/vercel/next.js/releases/tag/v15.5.29",
+      "sourceId": "nextjs-releases",
+      "sourceName": "Next.js releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-03T18:38:27.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "This release contains security fixes for the following advisories: Moderate Cross-client response injection and disclosure in self-hosted Next.js applications forwarding fetched responses SVG rejection bypass in Next.js image optimization HttpOnly cookie exposure through internal response header on Next.js Edge runtime routes",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "331b82bc98c6",
+      "title": "Get Ready for .NET Conf 2026!",
+      "url": "https://devblogs.microsoft.com/dotnet/get-ready-for-dotnet-conf-2026",
+      "sourceId": "dotnet-blog",
+      "sourceName": ".NET Blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-03T17:30:00.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": ".NET Conf is one week away! Join us November 10-13 for the launch of .NET 11, two days of Microsoft sessions, and two days of Community Days. The post Get Ready for .NET Conf 2026! appeared first on .NET Blog.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a55665cf4895",
+      "title": "StateBench: Testing how language models track state changes over long documents",
+      "url": "https://huggingface.co/blog/allenai/statebench",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T17:15:21.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "626d3932ded8",
+      "title": "How software engineering is changing: a tale of two eras",
+      "url": "https://newsletter.pragmaticengineer.com/p/how-software-engineering-is-changing",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T16:58:22.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "We invited readers to write about how building software changed, in an essay challenge. Many of you took part, and today we’re sharing the winning piece from a strong set of entries",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "bc4177032a04",
+      "title": "Palette: teaching a small model to build decks in your design language",
+      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T16:35:36.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "9b0f1b3870f8",
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T16:29:48.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4b34d08fc9c1",
+      "title": "Show HN: Interactive notes on RLHF, attention, LoRA and LLM evals",
+      "url": "https://concepts.laxmena.com/",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-03T15:48:35Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "41 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50353468"
+    },
+    {
+      "id": "867a35d248ea",
+      "title": "Lenny’s Newsletter holiday gift guide 2026",
+      "url": "https://lennysnewsletter.com/p/lennys-newsletter-holiday-gift-guide-057",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T14:45:33.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "100+ gift ideas—all things I actually use, love, and recommend",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d2f123f70dcd",
+      "title": "Finding my thing",
+      "url": "https://bensbites.com/p/if-you-feel-behind-right-now-dont",
+      "sourceId": "bens-bites",
+      "sourceName": "Ben's Bites",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-03T14:03:32.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Nobody knows anything",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b9868941df7f",
+      "title": "What AI Changes - All Things Product Podcast with Teresa Torres & Petra Wille",
+      "url": "https://producttalk.org/what-ai-changes-all-things-product-podcast-with-teresa-torres-petra-wille",
+      "sourceId": "product-talk",
+      "sourceName": "Product Talk (Teresa Torres)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T14:00:00.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Listen to this episode on: Spotify | Apple Podcasts Everyone’s shouting that AI changes everything. Teresa Torres wrote a LinkedIn “screed” arguing the opposite — and this episode is the debate she and Petra wanted to have about it. Petra Wille and Teresa Torres work through the",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "093a19d0e8fb",
+      "title": "How to Prove Your Release Is Ready When AI Writes the Code",
+      "url": "https://testguild.com/podcast/a610-ashwin",
+      "sourceId": "testguild",
+      "sourceName": "TestGuild",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T13:07:49.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "About This Episode: How to Prove Your Release Is Ready When AI Writes the Code? Can you prove your software is ready to ship, or does that answer still depend on a meeting and a spreadsheet? Want to see if your team can prove a release is ready? Book a custom LoopIQ demo with Ashwin: https://testgld.link/loopiqdemo In this episode, […]",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "26c6032e1d26",
+      "title": "Accelerating engineering for the physical world",
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-03T12:00:00.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "79425518a8e4",
+      "title": "Text generated by Claude Mythos 5, Claude Opus 4.7, and Claude Sonnet 4.6 carries Anthropic’s text watermark on the platforms listed in How Claude…",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-3-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-03T12:00:00.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "5a3345f135c4",
+      "title": "Anthropic IPO filing: $1.7B quarterly payroll, about $107K per employee monthly",
+      "url": "https://techspot.com/news/114428-anthropic-ipo-filing-reveals-17-billion-quarterly-personnel.html",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-03T11:16:07Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "84 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50350560"
+    },
     {
       "id": "69f8b5208138",
       "title": "Understanding Lazy thread safety modes",
@@ -34,6 +379,42 @@
       ],
       "tagMethod": "source",
       "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a2357e701f02",
+      "title": "How Cisco defends at machine speed with OpenAI",
+      "url": "https://openai.com/index/cisco-cyber",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2479059235a0",
+      "title": "Enterprise-managed auth for MCP: Claude can now issue the identity assertion",
+      "url": "https://supabase.com/blog/claude-issued-enterprise-managed-auth-for-mcp",
+      "sourceId": "supabase-blog",
+      "sourceName": "Supabase blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-03T07:00:00.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "claude",
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Claude can now issue the identity assertion for enterprise-managed auth on the Supabase MCP server when your identity provider can't.",
       "summaryBy": "feed"
     },
     {
@@ -88,6 +469,41 @@
       "summaryBy": "feed"
     },
     {
+      "id": "4782b364a7f8",
+      "title": "How Zapier turns ideas into working software in hours with Vercel",
+      "url": "https://vercel.com/blog/how-zapier-turns-ideas-into-working-software-in-hours-with-vercel",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-03T04:00:00.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Zapier on Vercel From weeks of prototype work to a demo in under two hours Sharing sensitive internal data securely Internal apps for marketing and sales Model access and isolated code execution What's next Interactive partner demos in under two hours with v0, replacing a process that could take weeks First versions of three internal applications, each built in one day A shared daily briefing…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c5a365340932",
+      "title": "How Mercor ships internal apps and billions of production tokens on one platform",
+      "url": "https://vercel.com/blog/how-mercor-ships-internal-apps-and-billions-of-production-tokens-on-one-platform",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-03T04:00:00.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Mercor on Vercel Batch jobs cut from 12 hours to 2 hours 18M requests and 63B tokens routed through AI Gateway in 10 days Expert access provisioned in seconds via Vercel Passport Over 2,000 projects created by hundreds of internal builders connects hundreds of thousands of domain experts with frontier AI labs, helping those labs generate the human data they need to train and evaluate leading…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "cda55a6607ab",
       "title": "Claude Code Action v1.0.267",
       "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.267",
@@ -121,6 +537,93 @@
       ],
       "tagMethod": "source",
       "summary": "What's changed Added a warning to /schedule when a new cloud scheduled task gets connectors you did not ask for, with how to remove them Added a check that asks before a web or shell tool call sends your account email address to the network Added onFailure: \"block\" for Agent SDK hook callbacks, so a callback that fails blocks the action instead of letting it run Added a notice in Claude…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "20954e3ac0ff",
+      "title": "CWE-bench v2: More coverage, quality, and transparency",
+      "url": "https://huggingface.co/blog/cwe-bench",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "3d509e27bae2",
+      "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+      "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "43dd043ed1e2",
+      "title": "How OpenEvidence scales medical search for 650K doctors",
+      "url": "https://vercel.com/blog/how-openevidence-scales-medical-search-for-doctors",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenEvidence on Vercel Serves 650,000 doctors with medical search Completes production deployments in about five minutes Absorbs traffic spikes without additional capacity provisioning Reduced serverless spend by 90% with Fluid compute Updates doctor- and patient-facing applications independently helps physicians find medical evidence during care, whether they’re checking a dosage on intensive…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a5a7127aaba9",
+      "title": "Claude Message Threads 🧵, Astra 6.2 spotted 👀, Anthropic nears RSI 🔄",
+      "url": "https://tldr.tech/ai/2026-11-03",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e7f25f857679",
+      "title": "What Claude spends building with 12 JavaScript stacks",
+      "url": "https://javascriptweekly.com/issues/809",
+      "sourceId": "javascript-weekly",
+      "sourceName": "JavaScript Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "claude",
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​809 — November 3, 2026 Read on the Web JavaScript Weekly The AI Cost of JavaScript Frameworks Nolan Lawson had Claude build the same app five times in each of twelve JS stacks to test common \"X is better for agents\" claims. Costs varied significantly between runs, and Gautam Parab found that the observed cost ranges overlapped or touched for most pairs of frameworks. But a clearer difference…",
       "summaryBy": "feed"
     },
     {
@@ -485,6 +988,24 @@
       ],
       "tagMethod": "source",
       "summary": "Listen now | 🎙️ Figma growth PM Ezra Mechaber demos PM OS, a 31-skill repo used by 60+ PMs, and AutoXP, an agent that runs growth experiments with one human checkpoint",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "42299793b678",
+      "title": "Introducing Vercel Security Review",
+      "url": "https://vercel.com/blog/vercel-security-review",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-02T13:00:00.000Z",
+      "firstSeenAt": "2026-11-04T13:09:48.196Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Today, we are launching in public beta.Vercel Security Review Security Review is a new capability in , alongside Code Review and Investigation. Once enabled, it scans for vulnerabilities on every push to a team's connected GitHub repositories.Vercel Agent Findings appear as comments on pull requests, are listed in the Security dashboard, and are available via CLI. With your permission, Vercel…",
       "summaryBy": "feed"
     },
     {
