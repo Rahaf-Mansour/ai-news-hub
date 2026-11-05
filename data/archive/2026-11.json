@@ -1,7 +1,264 @@
 {
   "month": "2026-11",
-  "count": 64,
+  "count": 84,
   "items": [
+    {
+      "id": "5e468467bd2e",
+      "title": "[AINews] It's Swapping Season",
+      "url": "https://latent.space/p/ainews-it-s-swapping-season",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-05T06:24:09.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "November 4, 2026 — OpenAI’s Linux kernel security work, Kimi K3.1 Pro’s open weights, and Ricursive’s Ripple-65B.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f93567576105",
+      "title": "Setting a new standard for responsible AI infrastructure",
+      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-05T02:00:00.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "89209ab642b1",
+      "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
+      "url": "https://huggingface.co/blog/phonon-tts",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e9efb1446d7a",
+      "title": "[AINews] Behind Latent Space: Kill My SaaS, Jev & AI in 2026 | AIEi Shanghai",
+      "url": "https://latent.space/p/ainews-behind-latent-space-kill-my-saas-jev-ai-in-2026-aiei-shanghai",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-04T19:17:30.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "November 3, 2026 — A quiet day lets us share some behind the senes.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "5afc49da7bd4",
+      "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+      "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-04T17:50:10.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a955e1cffb99",
+      "title": "@browserbasehq/eve@0.2.3",
+      "url": "https://github.com/browserbase/stagehand/releases/tag/%40browserbasehq%2Feve%400.2.3",
+      "sourceId": "stagehand-releases",
+      "sourceName": "Stagehand releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-04T17:04:27.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d560ddeac040",
+      "title": "@browserbasehq/stagehand@4.4.0",
+      "url": "https://github.com/browserbase/stagehand/releases/tag/%40browserbasehq%2Fstagehand%404.4.0",
+      "sourceId": "stagehand-releases",
+      "sourceName": "Stagehand releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-04T17:04:27.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f9e9fc3defc3",
+      "title": "stagehand-python@4.4.0: Release Stagehand packages (#3332)",
+      "url": "https://github.com/browserbase/stagehand/releases/tag/stagehand-python%404.4.0",
+      "sourceId": "stagehand-releases",
+      "sourceName": "Stagehand releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-04T17:01:05.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "This PR was opened by the Changesets GitHub action. When Releases @browserbasehq/stagehand@4.4.0 Minor Changes #3305 aeb1ba0 @miguelg719! - add browser.disconnect(), which closes an attached Stagehand instance and keepAlive browser.close() after disconnect() now throws Browser.close before it is terminated, browser handles expose cdpUrl cdp_url in Python) for local browsers, and connected…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "20bcfe950afe",
+      "title": "Give your coding agent a head start with Microsoft Agent Framework skills for .NET and Python",
+      "url": "https://devblogs.microsoft.com/agent-framework/give-your-coding-agent-a-head-start-with-microsoft-agent-framework-skills-for-net-and-python",
+      "sourceId": "semantic-kernel-blog",
+      "sourceName": "Semantic Kernel & Agent Framework",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-04T15:35:49.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "We have added installable Microsoft Agent Framework builder skills for .NET and Python. They give coding agents Microsoft-maintained guidance for building and modifying Agent Framework applications, from choosing the right pattern to wiring tools, sessions, workflows, and hosting. These are development-time skills for your coding assistant, not runtime skills loaded by the application you ship…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1d83ea98ce0c",
+      "title": "datasette-llm 0.1a10",
+      "url": "https://simonwillison.net/2026/Nov/4/datasette-llm",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-04T15:26:02.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: datasette-llm 0.1a10 Fixes a bug that affected my agent.datasette.io demo site, where the set of available LLM models was not correctly restricted to just those in the configuration. Tags: datasette , llm",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "3a06f84c0f51",
+      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+      "url": "https://openai.com/index/openai-to-acquire-pierre",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-04T14:30:00.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "19361844fc32",
+      "title": "See the agents, set the terms: new visibility and control for personal agents",
+      "url": "https://blog.cloudflare.com/personal-agents-visibility-control",
+      "sourceId": "cloudflare-blog",
+      "sourceName": "Cloudflare blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-04T14:00:00.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a4f4c423c542",
+      "title": "A thousand fewer paths to root",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-04T08:00:00.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "75679f5aa60b",
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "url": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-04T07:00:00.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "42f4810ce572",
+      "title": "datasette-apps 0.3a0",
+      "url": "https://simonwillison.net/2026/Nov/4/datasette-apps",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-04T00:29:36.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: datasette-apps 0.3a0 Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette. These can be created by hand, but it's easier to create them using LLMs via Datasette Agent . This release improves that integration: Apps can now be tagged in Datasette Agent chat messages by typing # , which autocompletes from the apps the user has permission to view…",
+      "summaryBy": "feed"
+    },
     {
       "id": "90baf66d39cc",
       "title": "Claude Code Action v1.0.268",
@@ -39,6 +296,57 @@
       "summaryBy": "feed"
     },
     {
+      "id": "084a69c4c2ad",
+      "title": "Safari will 'dark mode' your site for you",
+      "url": "https://frontendfoc.us/issues/765",
+      "sourceId": "frontend-focus",
+      "sourceName": "Frontend Focus",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Frontend Focus #​765 — November 4, 2026 | Read on the web Safari Introduces Adaptive Dark Mode — A new (opt-in) feature added to the Safari 27.3 beta that automatically adapts light sites to dark ones. It's here because although around 40% of pages are loaded by users using dark mode, only 10% of page loads directly support it. WebKit Agents Didn’t Clear Your Plate. They Dumped Reviews on It —…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0a437d67f2ef",
+      "title": "Introducing Images 2.6",
+      "url": "https://openai.com/index/introducing-images-2-6",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d2d956e4261a",
+      "title": "Siri AI developer 🍎, Gemini Notebook API 👨‍💻, provable inference ⚡",
+      "url": "https://tldr.tech/ai/2026-11-04",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
       "id": "90b77a3e6d00",
       "title": "What an AI-Native Product Team Actually Looks Like at Salesforce",
       "url": "https://news.aakashg.com/p/salesforce-ai-native-product-team",
@@ -56,6 +364,23 @@
       "summaryBy": "feed"
     },
     {
+      "id": "7c1041935d0b",
+      "title": "datasette-agent 0.5a0",
+      "url": "https://simonwillison.net/2026/Nov/3/datasette-agent",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T23:13:45.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: datasette-agent 0.5a0 This is a significant release of Datasette Agent . The most notable new feature is called the panel - it lets the agent chat open and then sit next to pages from Datasette, for example a table or query page. When combined with datasette-apps this means you can prompt a database-backed app into existence and then modify it from the chat that sits next to that app…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "46eec3e6fd72",
       "title": "Yeah, I Know. Stop Bugging Me.",
       "url": "https://developsense.com/blog/2026/11/yeah-i-know-stop-bugging-me",
@@ -70,6 +395,23 @@
       ],
       "tagMethod": "source",
       "summary": "I have an observation: people all over the world are cranky and short-tempered these days. Of course, much of that is due to big, serious things: the economy, and politics, and looming climate catastrophe; people feeling like they haven’t been heard; that their time and effort and freedom and privacy are being undermined. Severity 1 bugs, as it were. A lot of people think about bugs as coding…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "dc5e1e6807a1",
+      "title": "llm 0.37.1",
+      "url": "https://simonwillison.net/2026/Nov/3/llm",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T21:41:42.000Z",
+      "firstSeenAt": "2026-11-05T13:24:32.928Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: llm 0.37.1 A bugfix release for LLM , with contributions from Steven Huang , Tao An , Arjan Mossel , and XQ . Tags: llm",
       "summaryBy": "feed"
     },
     {
