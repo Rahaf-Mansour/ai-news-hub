@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "count": 61,
+  "count": 62,
   "items": [
     {
       "id": "2d180c745903",
@@ -757,6 +757,23 @@
       ],
       "tagMethod": "source",
       "summary": "plus what’s new in AI this week",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c3eef50e9010",
+      "title": "Introducing Claude Mythos and Fable 5.1",
+      "url": "https://anthropic.com/claude-fable-and-mythos-5-1",
+      "sourceId": "anthropic-news",
+      "sourceName": "Anthropic News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-09-15T12:00:00.000Z",
+      "firstSeenAt": "2026-11-06T13:07:13.728Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "They’re the world’s most advanced models for coding and knowledge work—and their research capabilities offer an early glimpse of how AI models will contribute to scientific progress.",
       "summaryBy": "feed"
     },
     {
