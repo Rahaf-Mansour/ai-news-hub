@@ -1,7 +1,216 @@
 {
   "month": "2026-11",
-  "count": 108,
+  "count": 125,
   "items": [
+    {
+      "id": "d62fbfe2fc04",
+      "title": "[AINews] Anthropic IPO: Whither Now?",
+      "url": "https://latent.space/p/ainews-anthropic-ipo-whither-now",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-07T03:04:53.000Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "November 6, 2026 — ARC Prize tests Inkling 2 Small, and Thinking Machines explains how it caught early checkpoints bypassing guardrails.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d8993e81f2cf",
+      "title": "The Ultimate Guide to Product Leadership Interviews",
+      "url": "https://news.aakashg.com/p/product-leadership-interview",
+      "sourceId": "product-growth",
+      "sourceName": "Product Growth (Aakash Gupta)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-06T22:55:37.000Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "The 10 toughest Director, VP and CPO interview questions, with example answers, real company loops, pay data and AI practice tools.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "5cecc12e376b",
+      "title": "Beyond code generation: A developer’s guide to agentic engineering",
+      "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering",
+      "sourceId": "github-blog",
+      "sourceName": "GitHub blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-06T22:15:59.000Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment. The post Beyond code generation: A developer’s guide to agentic engineering appeared first on The GitHub Blog.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d09844d43af4",
+      "title": "The Pragmatic Summit 2027",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-summit-2027",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-06T19:39:15.000Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "The Summit is back in San Francisco, for the second year, and registrations are open for February 10, 2027",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "60a18250dfd4",
+      "title": "Anthropic IPO valuation talks drop to $1.3T",
+      "url": "https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3-trillion-as-major-investors",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-06T17:21:15Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "93 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50395318"
+    },
+    {
+      "id": "f90dfea2fa01",
+      "title": "Quoting Nilay Patel",
+      "url": "https://simonwillison.net/2026/Nov/6/nilay-patel",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-06T17:13:12.000Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just isn't worth it to anyone. And agents aren't real and they might not be being used the way that anyone wants them to yet. All these companies…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c15041da80b9",
+      "title": "Claude Code Action v1.0.269",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.269",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-06T17:07:25.000Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Full Changelog: v1.0.268...v1.0.269",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "df1346203ff0",
+      "title": "Claude Code v2.1.319",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-06T17:04:01.000Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Changed auto mode with telemetry or feature flags off, including behind LLM gateways: calls the server can't check are asked about or denied, with no fallback to the built-in classifier; set CLAUDE_CODE_AUTO_MODE_SERVER=0 to keep using it (Bedrock, Vertex and Foundry are unchanged) Changed auto mode behind an LLM gateway: CLAUDE_CODE_AUTO_MODE_SERVER=1 turns on the server-side…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a16bf7a4548e",
+      "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+      "url": "https://bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-06T16:54:36Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "283 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50394906"
+    },
+    {
+      "id": "b18e8924e9aa",
+      "title": "Controlling Biology - Fabian Theis, Helmholtz Munich",
+      "url": "https://latent.space/p/controlling-biology-fabian-theis-helmholtz-munich",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-06T15:10:53.000Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "As systems biology efforts heat up to map biology at higher resolution, greater breadth and more modalities, Fabian Theis is pushing the frontier from mapping to predicting to controlling biology",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "be1ba71e55b7",
+      "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+      "url": "https://huggingface.co/blog/allenai/toyblocks",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-06T14:00:48.000Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d8887a09bc5e",
+      "title": "The components of agent memory",
+      "url": "https://anthropic.com/research/components-of-agent-memory",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-06T12:00:00.000Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
     {
       "id": "47595e2862bb",
       "title": "[AINews] Inkling 2 Small: 17A-594B trained in 68 hours on 12T tokens, beating Muse Spark",
@@ -17,6 +226,41 @@
       ],
       "tagMethod": "source",
       "summary": "November 5, 2026 — Inside Inkling 2 Small’s training run and METR’s study of AI research at Anthropic.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "13f4910530cc",
+      "title": "AI for scientific discovery: How researchers use Claude",
+      "url": "https://anthropic.com/research/how-researchers-use-claude",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-06T09:13:30Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "94 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50389990"
+    },
+    {
+      "id": "bc8f9eac1966",
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-06T08:00:00.000Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
       "summaryBy": "feed"
     },
     {
@@ -68,6 +312,40 @@
         "se"
       ],
       "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "cfd4354afa14",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "dcba37722e6c",
+      "title": "Anthropic R&D accelerates 📈, GPT-6 Cyber 🔐, Inkling 2 Small 🧠",
+      "url": "https://tldr.tech/ai/2026-11-06",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed"
     },
@@ -465,6 +743,24 @@
       "tagMethod": "source",
       "summary": "November 3, 2026 — A quiet day lets us share some behind the senes.",
       "summaryBy": "feed"
+    },
+    {
+      "id": "4614b59d1d4d",
+      "title": "People say they want small smartphones–Enough Phone will put that to the test",
+      "url": "https://arstechnica.com/gadgets/2026/11/people-say-they-want-small-smartphones-the-enough-phone-will-put-that-to-the-test",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-04T19:06:42Z",
+      "firstSeenAt": "2026-11-07T11:51:22.594Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "32 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50370084"
     },
     {
       "id": "5afc49da7bd4",
