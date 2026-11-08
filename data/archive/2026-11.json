@@ -1,7 +1,61 @@
 {
   "month": "2026-11",
-  "count": 125,
+  "count": 128,
   "items": [
+    {
+      "id": "e66f4eeac8f3",
+      "title": "Goodbye Claude, Hello Pi",
+      "url": "https://caleb.software/posts/claude-to-pi.html",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-08T03:11:48Z",
+      "firstSeenAt": "2026-11-08T12:04:29.187Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "367 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50410107"
+    },
+    {
+      "id": "f5913b377964",
+      "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+      "url": "https://simonwillison.net/2026/Nov/7/link-rel-next",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-07T23:57:46.000Z",
+      "firstSeenAt": "2026-11-08T12:04:29.187Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. This was happening because Datasette pages serve an HTTP link header like this: link: &lt;https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2Cd%2Cv&gt;; rel=\"next\" This is bad. A tiny fraction of…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "5186d80b7eef",
+      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-07T20:45:32Z",
+      "firstSeenAt": "2026-11-08T12:04:29.187Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "434 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50407882"
+    },
     {
       "id": "d62fbfe2fc04",
       "title": "[AINews] Anthropic IPO: Whither Now?",
