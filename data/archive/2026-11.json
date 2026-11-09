@@ -1,7 +1,198 @@
 {
   "month": "2026-11",
-  "count": 128,
+  "count": 141,
   "items": [
+    {
+      "id": "08f9983ae92b",
+      "title": "Import AI 480: Self-sustaining space economies; AI for science progress, and Meta builds perfect hands for a superintelligence",
+      "url": "https://jack-clark.net/2026/11/09/import-ai-480-self-sustaining-space-economies-ai-for-science-progress-and-meta-builds-perfect-hands-for-a-superintelligence",
+      "sourceId": "import-ai",
+      "sourceName": "Import AI (Jack Clark)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-09T13:31:34.000Z",
+      "firstSeenAt": "2026-11-09T14:09:35.300Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now AI Science startup converts a quantum conjecture into a theorem:…An evocative taste of the singularity…In the same way a few years ago it went from remarkable […]",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4e8190527691",
+      "title": "How this founder built a better Duolingo with Codex | William Imoh",
+      "url": "https://lennysnewsletter.com/p/how-this-founder-built-a-better-duolingo",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-09T13:04:17.000Z",
+      "firstSeenAt": "2026-11-09T14:09:35.300Z",
+      "roles": [
+        "pm",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Watch now (39 mins) | 🎙️ Hackmamba founder William Imoh shows the native app he built with Codex to learn Norwegian, and the Lord of the Rings Grok bot fellowship that helps run his company",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7b1451fc786c",
+      "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
+      "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-09T12:34:29.000Z",
+      "firstSeenAt": "2026-11-09T14:09:35.300Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2382673acb37",
+      "title": "The Web Is More Than Enough, by Paul Ford",
+      "url": "https://simonwillison.net/2026/Nov/9/hn-50421091",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-09T04:32:33.000Z",
+      "firstSeenAt": "2026-11-09T14:09:35.300Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "My comment on The Web Is More Than Enough, by Paul Ford &mdash; Hacker News. OK, this comment convinced me to give that a shot. Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef-Egg... (77KB) I just asked Claude (Opus 5.5 Medium running in regular Claude Chat) to port that to Vanilla JS, in the same thread…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6ee1dee33e4b",
+      "title": "Hide your slop PR descriptions behind",
+      "url": "https://simonwillison.net/2026/Nov/9/details-summary",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-09T04:25:05.000Z",
+      "firstSeenAt": "2026-11-09T14:09:35.300Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0021230a4ff4",
+      "title": "Spring AI 2.1.0-RC2 Available Now",
+      "url": "https://spring.io/blog/2026/11/09/spring-ai-2-1-0-RC2-available-now",
+      "sourceId": "spring-blog",
+      "sourceName": "Spring blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-09T00:00:00.000Z",
+      "firstSeenAt": "2026-11-09T14:09:35.300Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "3e62264ffb8e",
+      "title": "parse_number() as a SQLite extension: C vs Rust",
+      "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-08T22:26:00.000Z",
+      "firstSeenAt": "2026-11-09T14:09:35.300Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Research: parse_number() as a SQLite extension: C vs Rust I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into numeric values that could be summed and sorted. I fired up regular Claude chat (Opus 5.5) and prompted : I'm thinking about a SQLite custom…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "9c7e75a27e82",
+      "title": "How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+      "url": "https://latent.space/p/cs146s",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-08T21:41:44.000Z",
+      "firstSeenAt": "2026-11-09T14:09:35.300Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "What happens when students can one-shot last year’s homework? Inside CS146S and the engineering team at Monaco.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6b30b3347296",
+      "title": "[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+      "url": "https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-08T21:23:29.000Z",
+      "firstSeenAt": "2026-11-09T14:09:35.300Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "What do you assign when a coding agent can finish last year’s homework in one prompt? In the second run of Stanford’s CS146S, Mihail Eric brought open-source maintainers into the course. Students have to learn an unfamiliar repo, propose a change, and ...",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "68ff5ed661ee",
+      "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+      "url": "https://thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-08T18:16:07Z",
+      "firstSeenAt": "2026-11-09T14:09:35.300Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "818 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50415628"
+    },
+    {
+      "id": "ea2c57144025",
+      "title": "Why PMs are suddenly valuable again | Tulsee Doshi (Head of Product, Gemini)",
+      "url": "https://lennysnewsletter.com/p/what-it-actually-takes-to-build-frontier",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-08T13:31:32.000Z",
+      "firstSeenAt": "2026-11-09T14:09:35.300Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Listen now (59 mins) | Tulsee Doshi on building Google’s frontier models, why evals and vibes both matter, and her 60-20-20 framework for shipping ahead of the curve",
+      "summaryBy": "feed"
+    },
     {
       "id": "e66f4eeac8f3",
       "title": "Goodbye Claude, Hello Pi",
@@ -55,6 +246,23 @@
       "summary": "434 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50407882"
+    },
+    {
+      "id": "bc157a9bec5b",
+      "title": "Terry Pratchett's Study",
+      "url": "https://simonwillison.net/2026/Nov/7/hn-50407316",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-07T19:34:24.000Z",
+      "firstSeenAt": "2026-11-09T14:09:35.300Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "My comment on Terry Pratchett's Study &mdash; Hacker News. Terry Pratchett once wrote about the concept of \"horizontal wealth\". Vertical wealth is where you spend money on rich people stuff - yachts and suchlike. Horizontal wealth is where you spend more money on the things you liked before you got rich: https://chibuikeani.blogspot.com/2017/02/the-price-of-happin... But horizontal wealth means…",
+      "summaryBy": "feed"
     },
     {
       "id": "d62fbfe2fc04",
@@ -1277,6 +1485,23 @@
       ],
       "tagMethod": "rules",
       "summary": "We invited readers to write about how building software changed, in an essay challenge. Many of you took part, and today we’re sharing the winning piece from a strong set of entries",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "98f5a7b6d654",
+      "title": "AI is destroying my CS degree",
+      "url": "https://simonwillison.net/2026/Nov/3/hn-50354278",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-03T16:42:02.000Z",
+      "firstSeenAt": "2026-11-09T14:09:35.300Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "My comment on AI is destroying my CS degree &mdash; Hacker News. I don't envy educators right now. AI clearly means you need to change how you teach and evaluate students. We are only a few years in though, and it's still extremely unclear what effective teaching with these tools looks like. The worst part is that the evaluation loop is measured in multiple years! If you start trying some new…",
       "summaryBy": "feed"
     },
     {
