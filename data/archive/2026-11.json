@@ -1,7 +1,426 @@
 {
   "month": "2026-11",
-  "count": 141,
+  "count": 170,
   "items": [
+    {
+      "id": "02e4a20d191a",
+      "title": "Google Cloud launches Gemini for healthcare.",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare",
+      "sourceId": "google-ai-blog",
+      "sourceName": "Google AI blog",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-10T13:00:00.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "26b496ffaa34",
+      "title": "Anthropic launches roadshow for proposed initial public offering",
+      "url": "https://anthropic.com/news/roadshow-launch",
+      "sourceId": "anthropic-news",
+      "sourceName": "Anthropic News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-10T12:00:00.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "46ecb159c153",
+      "title": "Helping caregivers use AI in everyday life",
+      "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-10T12:00:00.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "01a8528fa117",
+      "title": "Closing the AI guidance gap in education",
+      "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-10T09:00:00.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1afd9e573768",
+      "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+      "url": "https://simonwillison.net/2026/Nov/10/muse-ember",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-10T07:28:21.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model designed for complex reasoning execution and the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long document parsing. For shorter prompts it's priced the same as GPT-6 Luna and Claude Haiku 5.5 - both are…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "62d6b023e1f9",
+      "title": "[AINews] Fable 5.2 retakes World #1 LLM spot as $ANT IPO roadshow begins",
+      "url": "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-10T06:34:44.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "November 9, 2026 — Claude Fable 5.2 and Mythos 5.2 arrive on Anthropic’s IPO roadshow day. How much thinking is worth paying for?",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6f6fff482120",
+      "title": "Quoting Prompting Claude Fable 5.2",
+      "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-10T05:34:14.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the existing structure, even when that repeated existing code. [...] If you want the model to improve the structure as it works, say that the…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "aa9d06fdcfe1",
+      "title": "Yonkers Rises",
+      "url": "https://simonwillison.net/2026/Nov/10/yonkers-rises",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-10T03:53:04.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "Tool: Yonkers Rises I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed its location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I prompted Fable 5.2 Medium to: Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and átomos around manhattan and queens and Brooklyn…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "75b43b82e52f",
+      "title": "Claude Code Action v1.0.271",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.271",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-10T02:32:58.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Full Changelog: v1.0.270...v1.0.271",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f7d3d2f1a893",
+      "title": "Claude Code v2.1.322",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-10T02:29:43.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "ac841c16ab1a",
+      "title": "llm-anthropic 0.31",
+      "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-09T23:58:46.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it \"solved two open problems in the physics of black holes\", so clearly their internal benchmarks have become more ambitious! I've added the new models to llm-anthropic , so you can now run prompts through Fable 5.2 like this: uv tool install…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "baaf713b11e3",
+      "title": "Locating the source of a mysterious beep with Claude",
+      "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-09T23:57:21.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f9419f0d8f8d",
+      "title": "Claude Fable 5.2 review: fast, creative, and finally not annoying",
+      "url": "https://lennysnewsletter.com/p/claude-fable-52-review-fast-creative",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-09T20:37:49.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude",
+        "pm"
+      ],
+      "tagMethod": "rules",
+      "summary": "Watch now (25 mins) | 🎙️ My first-look at Fable 5.2: what it built for me, where it fell down, and whether it belongs in your daily AI stack",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "33c2792a70b1",
+      "title": "Next.js v16.4.6",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.6",
+      "sourceId": "nextjs-releases",
+      "sourceName": "Next.js releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-09T20:27:17.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Note This release is backporting bug fixes. It does not include all pending features/changes on canary. Core Changes [lts-active] Pin Tailwind to 4.3.3 in create-next-app and tests (#101061, #101176) (#101307) [lts-active] Automatically compress route handler responses if not already compressed (#101280) [lts-active] Turbopack GC fixes for dev (#100279, #100370) (#101308) Credits Huge thanks to…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "255b56db4a4a",
+      "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+      "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-09T20:04:55Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "355 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50431144"
+    },
+    {
+      "id": "6c0cf8cd4352",
+      "title": "Claude Code Action v1.0.270",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.270",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-09T19:25:00.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's Changed release: push tags with the release deploy key (enables tag-ruleset enforcement) by @chrnorm in #1650 New Contributors @chrnorm made their first contribution in #1650 Full Changelog: v1.0.269...v1.0.270",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "13932435604d",
+      "title": "Claude Code v2.1.321",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-09T19:22:30.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Added Claude Fable 5.2 (claude-fable-5-2), now the default Fable model — 1M context, $8/$40 per Mtok with $0.20/Mtok cache reads Added --settings to claude remote-control, which applies a settings file to every session it starts; if the file changes, no new session starts until you restart claude remote-control Fixed MCP OAuth requests sending secrets such as refresh tokens to…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "9c331579e229",
+      "title": "ChatGPT Enterprise now available in AWS Marketplace",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-09T19:00:00.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c4ba76b538d8",
+      "title": "Testing Claude on real-world electronics design",
+      "url": "https://anthropic.com/research/claude-electronics-design",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-09T18:58:48Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude",
+        "qa"
+      ],
+      "tagMethod": "rules",
+      "summary": "31 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50429952"
+    },
+    {
+      "id": "ffe8a09e969f",
+      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "url": "https://anthropic.com/claude-fable-and-mythos-5-2",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-09T18:56:29Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "980 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50429906"
+    },
+    {
+      "id": "34530e4cd700",
+      "title": "Playwright MCP v0.0.85",
+      "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.85",
+      "sourceId": "playwright-mcp-releases",
+      "sourceName": "Playwright MCP releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-09T18:28:53.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Highlights 🌙 Keep the browser in the background (microsoft/playwright#42973) — connecting through the extension activated the tab and focused the browser window, taking the screen from the app you were working in. Pass --background alongside --extension (config background: true, env PLAYWRIGHT_MCP_BACKGROUND=1) to leave the connected tab inactive and its window unfocused, and to open the…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8433ae49482a",
+      "title": "What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team",
+      "url": "https://latent.space/p/handshake",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-09T17:15:53.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Handshake went from launch to $1B in one year pushing the envelope of specialized data for frontier labs. Our first deep dive into a data lab with specific examples across Finance, Bio, and Alignment",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "df7b2496f434",
+      "title": "🎙️ How I AI: How this founder built a better Duolingo with Codex",
+      "url": "https://lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-09T16:01:20.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "pm",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "057e22ab69c0",
+      "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-09T15:05:57.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
     {
       "id": "08f9983ae92b",
       "title": "Import AI 480: Self-sustaining space economies; AI for science progress, and Meta builds perfect hands for a superintelligence",
@@ -38,6 +457,23 @@
       "summaryBy": "feed"
     },
     {
+      "id": "f37b680abcf7",
+      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+      "url": "https://openai.com/index/control-room",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-09T13:00:00.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+      "summaryBy": "feed"
+    },
+    {
       "id": "7b1451fc786c",
       "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
       "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
@@ -52,6 +488,59 @@
       ],
       "tagMethod": "source",
       "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f643da20d56a",
+      "title": "We’ve launched Claude Fable 5.2 (claude-fable-5-2), built for demanding reasoning and long-horizon agentic work.",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-9-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-09T12:00:00.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "We’ve launched fast mode for Claude Fable 5.2 in Messages API requests on the Claude API. Claude Fable 5.2 and Claude Mythos 5.2 enforce the prefix check for every account, whatever its age. (+5 more)",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "23b94c697622",
+      "title": "CodeRabbit scales agentic software development and ships 20x more",
+      "url": "https://openai.com/index/coderabbit-codex-daybreak",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-09T08:00:00.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "ff1e884cda73",
+      "title": "Decision models take 26% of requests; Anthropic now wins new teams 2:1",
+      "url": "https://vercel.com/blog/ai-gateway-production-index-november-2026",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-09T05:00:00.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude",
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "AI Gateway Production Index — November 2026 Every month, routes more than 100 trillion tokens between production applications and AI labs. That traffic gives us a view of what AI usage looks like in today’s enterprise and startup landscape across language, decision, voice, image, and video models. We publish it here monthly. See the Production Index reports from , , and .AI…",
       "summaryBy": "feed"
     },
     {
@@ -103,6 +592,23 @@
         "fs"
       ],
       "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b259dc101021",
+      "title": "AI R&D accelerates 📈, OpenAI at $1.25T 💰, GitHub’s multiplayer harness 🤖",
+      "url": "https://tldr.tech/ai/2026-11-09",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-09T00:00:00.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed"
     },

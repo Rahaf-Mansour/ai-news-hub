@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T14:09:35.300Z",
+  "generatedAt": "2026-11-10T13:40:21.212Z",
   "sources": [
     {
       "id": "anthropic-news",
@@ -8,9 +8,9 @@
       "tier": "official",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:35.300Z",
-      "lastSuccess": "2026-11-09T14:09:35.300Z",
-      "count": 23
+      "lastFetched": "2026-11-10T13:40:21.213Z",
+      "lastSuccess": "2026-11-10T13:40:21.213Z",
+      "count": 22
     },
     {
       "id": "anthropic-engineering",
@@ -19,8 +19,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:35.311Z",
-      "lastSuccess": "2026-11-09T14:09:35.311Z",
+      "lastFetched": "2026-11-10T13:40:21.223Z",
+      "lastSuccess": "2026-11-10T13:40:21.223Z",
       "count": 20
     },
     {
@@ -30,8 +30,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:35.312Z",
-      "lastSuccess": "2026-11-09T14:09:35.312Z",
+      "lastFetched": "2026-11-10T13:40:21.224Z",
+      "lastSuccess": "2026-11-10T13:40:21.224Z",
       "count": 20
     },
     {
@@ -41,8 +41,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:35.313Z",
-      "lastSuccess": "2026-11-09T14:09:35.313Z",
+      "lastFetched": "2026-11-10T13:40:21.224Z",
+      "lastSuccess": "2026-11-10T13:40:21.224Z",
       "count": 10
     },
     {
@@ -52,8 +52,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:35.313Z",
-      "lastSuccess": "2026-11-09T14:09:35.313Z",
+      "lastFetched": "2026-11-10T13:40:21.225Z",
+      "lastSuccess": "2026-11-10T13:40:21.225Z",
       "count": 3
     },
     {
@@ -63,8 +63,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:35.314Z",
-      "lastSuccess": "2026-11-09T14:09:35.314Z",
+      "lastFetched": "2026-11-10T13:40:21.226Z",
+      "lastSuccess": "2026-11-10T13:40:21.226Z",
       "count": 15
     },
     {
@@ -74,8 +74,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:35.602Z",
-      "lastSuccess": "2026-11-09T14:09:35.602Z",
+      "lastFetched": "2026-11-10T13:40:21.458Z",
+      "lastSuccess": "2026-11-10T13:40:21.458Z",
       "count": 3
     },
     {
@@ -85,8 +85,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:35.652Z",
-      "lastSuccess": "2026-11-09T14:09:35.652Z",
+      "lastFetched": "2026-11-10T13:40:21.519Z",
+      "lastSuccess": "2026-11-10T13:40:21.519Z",
       "count": 10
     },
     {
@@ -96,8 +96,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:35.702Z",
-      "lastSuccess": "2026-11-09T14:09:35.702Z",
+      "lastFetched": "2026-11-10T13:40:21.545Z",
+      "lastSuccess": "2026-11-10T13:40:21.545Z",
       "count": 10
     },
     {
@@ -107,8 +107,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:35.759Z",
-      "lastSuccess": "2026-11-09T14:09:35.759Z",
+      "lastFetched": "2026-11-10T13:40:21.577Z",
+      "lastSuccess": "2026-11-10T13:40:21.577Z",
       "count": 15
     },
     {
@@ -118,8 +118,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:35.907Z",
-      "lastSuccess": "2026-11-09T14:09:35.907Z",
+      "lastFetched": "2026-11-10T13:40:21.643Z",
+      "lastSuccess": "2026-11-10T13:40:21.643Z",
       "count": 3
     },
     {
@@ -129,8 +129,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:35.919Z",
-      "lastSuccess": "2026-11-09T14:09:35.919Z",
+      "lastFetched": "2026-11-10T13:40:21.788Z",
+      "lastSuccess": "2026-11-10T13:40:21.788Z",
       "count": 3
     },
     {
@@ -140,8 +140,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:36.119Z",
-      "lastSuccess": "2026-11-09T14:09:36.119Z",
+      "lastFetched": "2026-11-10T13:40:21.855Z",
+      "lastSuccess": "2026-11-10T13:40:21.855Z",
       "count": 5
     },
     {
@@ -151,8 +151,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:36.180Z",
-      "lastSuccess": "2026-11-09T14:09:36.180Z",
+      "lastFetched": "2026-11-10T13:40:21.929Z",
+      "lastSuccess": "2026-11-10T13:40:21.929Z",
       "count": 2
     },
     {
@@ -162,8 +162,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:36.347Z",
-      "lastSuccess": "2026-11-09T14:09:36.347Z",
+      "lastFetched": "2026-11-10T13:40:22.042Z",
+      "lastSuccess": "2026-11-10T13:40:22.042Z",
       "count": 3
     },
     {
@@ -173,8 +173,8 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:36.388Z",
-      "lastSuccess": "2026-11-09T14:09:36.388Z",
+      "lastFetched": "2026-11-10T13:40:22.145Z",
+      "lastSuccess": "2026-11-10T13:40:22.145Z",
       "count": 0
     },
     {
@@ -184,8 +184,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:36.581Z",
-      "lastSuccess": "2026-11-09T14:09:36.581Z",
+      "lastFetched": "2026-11-10T13:40:22.249Z",
+      "lastSuccess": "2026-11-10T13:40:22.249Z",
       "count": 8
     },
     {
@@ -195,8 +195,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:36.831Z",
-      "lastSuccess": "2026-11-09T14:09:36.831Z",
+      "lastFetched": "2026-11-10T13:40:22.337Z",
+      "lastSuccess": "2026-11-10T13:40:22.337Z",
       "count": 5
     },
     {
@@ -206,8 +206,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:36.993Z",
-      "lastSuccess": "2026-11-09T14:09:36.993Z",
+      "lastFetched": "2026-11-10T13:40:22.537Z",
+      "lastSuccess": "2026-11-10T13:40:22.537Z",
       "count": 5
     },
     {
@@ -217,8 +217,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:37.156Z",
-      "lastSuccess": "2026-11-09T14:09:37.156Z",
+      "lastFetched": "2026-11-10T13:40:22.539Z",
+      "lastSuccess": "2026-11-10T13:40:22.539Z",
       "count": 5
     },
     {
@@ -228,8 +228,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:37.319Z",
-      "lastSuccess": "2026-11-09T14:09:37.319Z",
+      "lastFetched": "2026-11-10T13:40:22.721Z",
+      "lastSuccess": "2026-11-10T13:40:22.721Z",
       "count": 5
     },
     {
@@ -239,8 +239,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:37.341Z",
-      "lastSuccess": "2026-11-09T14:09:37.341Z",
+      "lastFetched": "2026-11-10T13:40:22.880Z",
+      "lastSuccess": "2026-11-10T13:40:22.880Z",
       "count": 5
     },
     {
@@ -250,9 +250,9 @@
       "tier": "official",
       "type": "release",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:37.378Z",
-      "lastSuccess": "2026-11-09T14:09:37.378Z",
-      "count": 2
+      "lastFetched": "2026-11-10T13:40:22.986Z",
+      "lastSuccess": "2026-11-10T13:40:22.986Z",
+      "count": 1
     },
     {
       "id": "javascript-weekly",
@@ -261,8 +261,8 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:37.935Z",
-      "lastSuccess": "2026-11-09T14:09:37.935Z",
+      "lastFetched": "2026-11-10T13:40:23.157Z",
+      "lastSuccess": "2026-11-10T13:40:23.157Z",
       "count": 4
     },
     {
@@ -272,8 +272,8 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:37.940Z",
-      "lastSuccess": "2026-11-09T14:09:37.940Z",
+      "lastFetched": "2026-11-10T13:40:23.160Z",
+      "lastSuccess": "2026-11-10T13:40:23.160Z",
       "count": 4
     },
     {
@@ -283,8 +283,8 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:37.945Z",
-      "lastSuccess": "2026-11-09T14:09:37.945Z",
+      "lastFetched": "2026-11-10T13:40:23.176Z",
+      "lastSuccess": "2026-11-10T13:40:23.176Z",
       "count": 4
     },
     {
@@ -294,8 +294,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:37.947Z",
-      "lastSuccess": "2026-11-09T14:09:37.947Z",
+      "lastFetched": "2026-11-10T13:40:23.415Z",
+      "lastSuccess": "2026-11-10T13:40:23.415Z",
       "count": 5
     },
     {
@@ -305,8 +305,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.056Z",
-      "lastSuccess": "2026-11-09T14:09:38.056Z",
+      "lastFetched": "2026-11-10T13:40:23.462Z",
+      "lastSuccess": "2026-11-10T13:40:23.462Z",
       "count": 5
     },
     {
@@ -316,8 +316,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.308Z",
-      "lastSuccess": "2026-11-09T14:09:38.308Z",
+      "lastFetched": "2026-11-10T13:40:23.494Z",
+      "lastSuccess": "2026-11-10T13:40:23.494Z",
       "count": 5
     },
     {
@@ -327,8 +327,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.329Z",
-      "lastSuccess": "2026-11-09T14:09:38.329Z",
+      "lastFetched": "2026-11-10T13:40:23.660Z",
+      "lastSuccess": "2026-11-10T13:40:23.660Z",
       "count": 15
     },
     {
@@ -338,8 +338,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.367Z",
-      "lastSuccess": "2026-11-09T14:09:38.367Z",
+      "lastFetched": "2026-11-10T13:40:23.712Z",
+      "lastSuccess": "2026-11-10T13:40:23.712Z",
       "count": 15
     },
     {
@@ -349,8 +349,8 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.422Z",
-      "lastSuccess": "2026-11-09T14:09:38.422Z",
+      "lastFetched": "2026-11-10T13:40:23.724Z",
+      "lastSuccess": "2026-11-10T13:40:23.724Z",
       "count": 10
     },
     {
@@ -360,8 +360,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.439Z",
-      "lastSuccess": "2026-11-09T14:09:38.439Z",
+      "lastFetched": "2026-11-10T13:40:23.744Z",
+      "lastSuccess": "2026-11-10T13:40:23.744Z",
       "count": 15
     },
     {
@@ -371,8 +371,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.510Z",
-      "lastSuccess": "2026-11-09T14:09:38.510Z",
+      "lastFetched": "2026-11-10T13:40:23.755Z",
+      "lastSuccess": "2026-11-10T13:40:23.755Z",
       "count": 15
     },
     {
@@ -382,8 +382,8 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.579Z",
-      "lastSuccess": "2026-11-09T14:09:38.579Z",
+      "lastFetched": "2026-11-10T13:40:23.769Z",
+      "lastSuccess": "2026-11-10T13:40:23.769Z",
       "count": 15
     },
     {
@@ -393,8 +393,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.600Z",
-      "lastSuccess": "2026-11-09T14:09:38.600Z",
+      "lastFetched": "2026-11-10T13:40:23.888Z",
+      "lastSuccess": "2026-11-10T13:40:23.888Z",
       "count": 10
     },
     {
@@ -404,8 +404,8 @@
       "tier": "editorial",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.693Z",
-      "lastSuccess": "2026-11-09T14:09:38.693Z",
+      "lastFetched": "2026-11-10T13:40:23.991Z",
+      "lastSuccess": "2026-11-10T13:40:23.991Z",
       "count": 10
     },
     {
@@ -415,8 +415,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.710Z",
-      "lastSuccess": "2026-11-09T14:09:38.710Z",
+      "lastFetched": "2026-11-10T13:40:24.039Z",
+      "lastSuccess": "2026-11-10T13:40:24.039Z",
       "count": 5
     },
     {
@@ -426,8 +426,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.733Z",
-      "lastSuccess": "2026-11-09T14:09:38.733Z",
+      "lastFetched": "2026-11-10T13:40:24.142Z",
+      "lastSuccess": "2026-11-10T13:40:24.142Z",
       "count": 3
     },
     {
@@ -437,8 +437,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.826Z",
-      "lastSuccess": "2026-11-09T14:09:38.826Z",
+      "lastFetched": "2026-11-10T13:40:24.198Z",
+      "lastSuccess": "2026-11-10T13:40:24.198Z",
       "count": 3
     },
     {
@@ -448,8 +448,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.863Z",
-      "lastSuccess": "2026-11-09T14:09:38.863Z",
+      "lastFetched": "2026-11-10T13:40:24.244Z",
+      "lastSuccess": "2026-11-10T13:40:24.244Z",
       "count": 1
     },
     {
@@ -459,8 +459,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.893Z",
-      "lastSuccess": "2026-11-09T14:09:38.893Z",
+      "lastFetched": "2026-11-10T13:40:24.250Z",
+      "lastSuccess": "2026-11-10T13:40:24.250Z",
       "count": 3
     },
     {
@@ -470,8 +470,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.920Z",
-      "lastSuccess": "2026-11-09T14:09:38.920Z",
+      "lastFetched": "2026-11-10T13:40:24.314Z",
+      "lastSuccess": "2026-11-10T13:40:24.314Z",
       "count": 3
     },
     {
@@ -481,8 +481,8 @@
       "tier": "official",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.976Z",
-      "lastSuccess": "2026-11-09T14:09:38.976Z",
+      "lastFetched": "2026-11-10T13:40:24.337Z",
+      "lastSuccess": "2026-11-10T13:40:24.337Z",
       "count": 5
     },
     {
@@ -492,8 +492,8 @@
       "tier": "official",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.982Z",
-      "lastSuccess": "2026-11-09T14:09:38.982Z",
+      "lastFetched": "2026-11-10T13:40:24.395Z",
+      "lastSuccess": "2026-11-10T13:40:24.395Z",
       "count": 5
     },
     {
@@ -503,8 +503,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.996Z",
-      "lastSuccess": "2026-11-09T14:09:38.996Z",
+      "lastFetched": "2026-11-10T13:40:24.411Z",
+      "lastSuccess": "2026-11-10T13:40:24.411Z",
       "count": 5
     },
     {
@@ -514,8 +514,8 @@
       "tier": "official",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:38.998Z",
-      "lastSuccess": "2026-11-09T14:09:38.998Z",
+      "lastFetched": "2026-11-10T13:40:24.419Z",
+      "lastSuccess": "2026-11-10T13:40:24.419Z",
       "count": 3
     },
     {
@@ -525,8 +525,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:39.026Z",
-      "lastSuccess": "2026-11-09T14:09:39.026Z",
+      "lastFetched": "2026-11-10T13:40:24.433Z",
+      "lastSuccess": "2026-11-10T13:40:24.433Z",
       "count": 3
     },
     {
@@ -536,8 +536,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:39.061Z",
-      "lastSuccess": "2026-11-09T14:09:39.061Z",
+      "lastFetched": "2026-11-10T13:40:24.548Z",
+      "lastSuccess": "2026-11-10T13:40:24.548Z",
       "count": 3
     },
     {
@@ -547,8 +547,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:39.129Z",
-      "lastSuccess": "2026-11-09T14:09:39.129Z",
+      "lastFetched": "2026-11-10T13:40:24.570Z",
+      "lastSuccess": "2026-11-10T13:40:24.570Z",
       "count": 3
     },
     {
@@ -558,8 +558,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:39.179Z",
-      "lastSuccess": "2026-11-09T14:09:39.179Z",
+      "lastFetched": "2026-11-10T13:40:24.576Z",
+      "lastSuccess": "2026-11-10T13:40:24.576Z",
       "count": 3
     },
     {
@@ -569,8 +569,8 @@
       "tier": "editorial",
       "type": "article",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:39.213Z",
-      "lastSuccess": "2026-11-09T14:09:39.213Z",
+      "lastFetched": "2026-11-10T13:40:24.633Z",
+      "lastSuccess": "2026-11-10T13:40:24.633Z",
       "count": 3
     },
     {
@@ -580,9 +580,9 @@
       "tier": "community",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:39.270Z",
-      "lastSuccess": "2026-11-09T14:09:39.270Z",
-      "count": 5
+      "lastFetched": "2026-11-10T13:40:24.684Z",
+      "lastSuccess": "2026-11-10T13:40:24.684Z",
+      "count": 6
     },
     {
       "id": "hn-testing",
@@ -591,9 +591,9 @@
       "tier": "community",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:39.276Z",
-      "lastSuccess": "2026-11-09T14:09:39.276Z",
-      "count": 0
+      "lastFetched": "2026-11-10T13:40:24.724Z",
+      "lastSuccess": "2026-11-10T13:40:24.724Z",
+      "count": 1
     },
     {
       "id": "hn-product",
@@ -602,8 +602,8 @@
       "tier": "community",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:39.318Z",
-      "lastSuccess": "2026-11-09T14:09:39.318Z",
+      "lastFetched": "2026-11-10T13:40:24.727Z",
+      "lastSuccess": "2026-11-10T13:40:24.727Z",
       "count": 0
     },
     {
@@ -613,8 +613,8 @@
       "tier": "community",
       "type": "news",
       "ok": true,
-      "lastFetched": "2026-11-09T14:09:39.357Z",
-      "lastSuccess": "2026-11-09T14:09:39.357Z",
+      "lastFetched": "2026-11-10T13:40:24.742Z",
+      "lastSuccess": "2026-11-10T13:40:24.742Z",
       "count": 0
     }
   ]
