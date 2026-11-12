@@ -1,7 +1,317 @@
 {
   "month": "2026-11",
-  "count": 201,
+  "count": 223,
   "items": [
+    {
+      "id": "f101ffad2bb3",
+      "title": "Anthropic IPO",
+      "url": "https://ipo.anthropic.com/us",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-12T11:46:41Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "208 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50465829"
+    },
+    {
+      "id": "ebb2101084be",
+      "title": "Should You Actually Add AI To That? A Four-Question Audit For Product Teams",
+      "url": "https://smashingmagazine.com/2026/11/should-you-add-ai-audit-product-teams",
+      "sourceId": "smashing",
+      "sourceName": "Smashing Magazine",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-12T10:00:00.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "rules",
+      "summary": "An AI feature can save users time on a task, only for them to spend it checking the results. This practical audit helps product teams decide where AI earns its place and what users need to verify its output.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0990939c7d6e",
+      "title": "Holiday Extras is rethinking what it can build with Codex",
+      "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-12T09:30:00.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e10b6b9196df",
+      "title": "[AINews] D-Day (Decision Models Day)",
+      "url": "https://latent.space/p/ainews-d-day-decision-models-day",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-12T05:26:54.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "November 11, 2026 — Google enters the decision model market. At AI Engineer, Cloudflare showed which parts of a build failure a classifier could handle. TypeSafe AI showed off their production customers.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "adb66fa1efb1",
+      "title": "The Jev Revolution: What Engineers Are Already Building with System One Models",
+      "url": "https://latent.space/p/jev-revolution",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-12T05:08:20.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "At AI Engineer Code Summit, lead Jev creator Diogo Almeida called on developers to automate everything. Also, Glean and others showed how they’re using Jev.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b06379671ede",
+      "title": "Supporting research on AI and children’s safety",
+      "url": "https://openai.com/index/children-first-declaration",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-12T00:00:00.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d9b28a38d57e",
+      "title": "22 Node, Bun and Deno stacks benchmarked",
+      "url": "https://nodeweekly.com/issues/647",
+      "sourceId": "node-weekly",
+      "sourceName": "Node Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-12T00:00:00.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "#​647 — November 12, 2026 Read on the Web An Experimental 'Green Threads' Implementation for Node — James has opened a PR that adds a new, lightweight kind of worker that shares a small pool of OS threads, with each worker getting its own V8 isolate (but no Node APIs). His numbers show a thousand of them using about 1GB of memory vs 6.7GB for regular worker threads. Early days, but a promising…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "624a305adfa4",
+      "title": "Gemini Decisions API",
+      "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-11T22:03:25.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question. It's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "53d5cdba12be",
+      "title": "aws-emulator",
+      "url": "https://simonwillison.net/2026/Nov/11/aws-emulator",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-11T21:18:30.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about how it came to be in a guest post on Werner Vogels' blog. It currently requires…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c5d1a9eb3383",
+      "title": "Browse tools.simonwillison.net by tag",
+      "url": "https://simonwillison.net/2026/Nov/11/tools-tags",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-11T18:42:50.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "I've been wanting a better way to browse my collection of vibe-coded tools (244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using tree-sitter to analyze the code for JavaScript APIs, libraries, and web API hosts used by each tool. The homepage now features tag clouds for browsing by each of those categories of tag: Tags…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "cce714811b51",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
+      "sourceId": "google-ai-blog",
+      "sourceName": "Google AI blog",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-11T18:00:00.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "ac992cc25d49",
+      "title": "llm 0.37.2",
+      "url": "https://simonwillison.net/2026/Nov/11/llm",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-11T17:19:52.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w . LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai endpoint add command - for using LLM with OpenAI-compatible API endpoints from other providers. Daniel reported two ways this could accidentally send your configured OpenAI API key…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7a69c1b89eda",
+      "title": "Faster Retrieval for Better, More Efficient RAG",
+      "url": "https://machinelearning.apple.com/research/faster-retrieval",
+      "sourceId": "hn-fullstack",
+      "sourceName": "Hacker News · Full-stack",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-11T16:57:45Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "220 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50455633"
+    },
+    {
+      "id": "bad6ee94c356",
+      "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop",
+      "sourceId": "google-ai-blog",
+      "sourceName": "Google AI blog",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-11T16:00:00.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "18d4d40cfb35",
+      "title": "Tests as data: ensuring AI-generated code does what we want",
+      "url": "https://martinfowler.com/articles/tests-as-data.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-11T15:17:00.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Automated testing in the age of AI coding assistants is problematic: when AI agents write both production and test code, developers risk losing the assurance that automated tests protect against functional errors. Matteo Vaccari makes three claims: (1) when AI writes the code, developers become its customers; (2) therefore customer tests, not developer tests, become the primary contract between…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6734a79295b9",
+      "title": "Anthropic's IPO roadshow video",
+      "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-11T15:11:59.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "Anthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works. The section on \"Approach to compute\" with co-founder Tom Brown is particularly interesting, describing how Anthropic train and serve Claude across AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs. I'm not sure why there's no official video…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c101175c67db",
+      "title": "2027 Product Conferences",
+      "url": "https://producttalk.org/2027-product-conferences",
+      "sourceId": "product-talk",
+      "sourceName": "Product Talk (Teresa Torres)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-11T14:00:00.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "We are starting to pull together our list of 2027 product conferences. This list is by no means exhaustive. If you know of product conferences that are not on the list and you think they should be, please send an email to conferences@producttalk.org. We’ll also keep",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2cac4253f10e",
+      "title": "Claude Code + Obsidian: My family’s AI brain | Scott Farrar",
+      "url": "https://lennysnewsletter.com/p/claude-code-obsidian-my-familys-ai",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-11T13:04:09.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "claude",
+        "pm"
+      ],
+      "tagMethod": "rules",
+      "summary": "Watch now (34 mins) | 🎙️ Scott Farrar walks through the Claude Code and Obsidian system he built to track appliances, chase insurance quotes, and keep household projects moving",
+      "summaryBy": "feed"
+    },
     {
       "id": "f28f90d2895a",
       "title": "Gilbert + Tobin rethinks the business of law with AI",
@@ -102,6 +412,74 @@
       ],
       "tagMethod": "rules",
       "summary": "On the first day of AIE Code Summit, OpenAI showed how developers can steer Codex by voice, hand off work to the cloud, and make use of dots.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1eda73746aab",
+      "title": "Responsive design is more than resizing a window",
+      "url": "https://frontendfoc.us/issues/766",
+      "sourceId": "frontend-focus",
+      "sourceName": "Frontend Focus",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-11T00:00:00.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Frontend Focus #​766 — November 11, 2026 | Read on the web Beyond the Viewport: Introducing Site Seeing — Making a design responsive means tackling more than just resizing, with real users often having on-screen keyboards, split views, docked DevTools, and other things open, or even using oddly sized in-app browsers. Ahmad's new, free browser-based tool is designed to preview your layouts in…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "517097296b9a",
+      "title": "Gemini 4 Carbon ⚡, Claude Sheets 📊, Antigravity Swarm 🤖",
+      "url": "https://tldr.tech/ai/2026-11-11",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-11T00:00:00.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8c999d6885d2",
+      "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+      "url": "https://openai.com/index/jiostar-vijay-seshadri",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-11T00:00:00.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d2296a64c0dc",
+      "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+      "url": "https://huggingface.co/blog/token-pooling",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-11T00:00:00.000Z",
+      "firstSeenAt": "2026-11-12T13:54:40.897Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
       "summaryBy": "feed"
     },
     {
