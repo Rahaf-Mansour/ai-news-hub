@@ -1,7 +1,406 @@
 {
   "month": "2026-11",
-  "count": 223,
+  "count": 248,
   "items": [
+    {
+      "id": "22bcd83804c6",
+      "title": "Claude Is Down",
+      "url": "https://status.claude.com/history",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-13T10:20:09Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "147 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50481220"
+    },
+    {
+      "id": "44da454e7900",
+      "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+      "url": "https://status.claude.com/incidents/nn11wk485zfn",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-13T10:18:13Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "292 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50481187"
+    },
+    {
+      "id": "12f357dd3921",
+      "title": "[AINews] Jensen Huang resigns after 33 years leading NVIDIA",
+      "url": "https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-13T09:04:13.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "November 12, 2026 — Colette Kress takes over as interim CEO. What happens to open source/American AI leadership?",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "984c9f755ae5",
+      "title": "I spent months building you an automated job search agent",
+      "url": "https://news.aakashg.com/p/job-search-agent",
+      "sourceId": "product-growth",
+      "sourceName": "Product Growth (Aakash Gupta)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-13T05:54:52.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "It finds your best roles every morning and applies on your go.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0f77776f7c50",
+      "title": "AI Ambition: ArtCraft Cloned Photoshop and Now Wants to \"Rebuild Everything\"",
+      "url": "https://latent.space/p/artcraft",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-13T04:17:25.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "ArtCraft used AI to rewrite Photoshop as open source software. For CEO Brandon Thomas, the vision is even bigger: to take back the internet!",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "ee4d77d519e0",
+      "title": "Cypress v15.21.2",
+      "url": "https://github.com/cypress-io/cypress/releases/tag/v15.21.2",
+      "sourceId": "cypress-releases",
+      "sourceName": "Cypress releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-13T01:18:15.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Changelog: https://docs.cypress.io/app/references/changelog#15-21-2",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b3e04b79dc49",
+      "title": "browse@0.11.4",
+      "url": "https://github.com/browserbase/stagehand/releases/tag/browse%400.11.4",
+      "sourceId": "stagehand-releases",
+      "sourceName": "Stagehand releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-13T00:33:01.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1c623d10ae18",
+      "title": "Claude Code Action v1.0.275",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.275",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-12T23:14:27.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's Changed Other changes Make the git wrappers independent of the session's environment by @mhegazy in #2018 Full Changelog: v1.0.274...v1.0.275",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "9f0b516152c1",
+      "title": "llm-gemini 0.37",
+      "url": "https://simonwillison.net/2026/Nov/12/llm-gemini",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-12T22:55:19.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: llm-gemini 0.37 Google launched Gemini 4 Hydrogen today - the lowest cost member of the Gemini 4 family. It's actually not too far off the price of its much bigger siblings, Carbon and Argon. I'm finding Gemini 4's pricing really confusing. Here's the pricing scheme: Model Dates Input ($/M) Cached input Output Gemini 4 Carbon Through Nov 30, 2026 $2.00 $0.10 $10.00 From Dec 1, 2026…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "01b49a7c7dde",
+      "title": "Build once, run on any agent: A practical guide to agent skills",
+      "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills",
+      "sourceId": "github-blog",
+      "sourceName": "GitHub blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-12T22:54:52.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Agent skills capture repeatable engineering work in files teams can review and reuse, while tools, project context, and permissions remain specific to the host that runs them. The post Build once, run on any agent: A practical guide to agent skills appeared first on The GitHub Blog.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "17288fd9b5d0",
+      "title": "Claude Code Action v1.0.274",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.274",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-12T22:15:12.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's Changed Other changes Let Claude read CI results on outside pull requests by @qing-ant in #2009 Full Changelog: v1.0.273...v1.0.274",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1e1f91e95e92",
+      "title": "Claude Code v2.1.323",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-12T22:12:13.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools; see https://code.claude.com/docs/en/code-mode to turn it on, or to turn it off for an organization Added engines[\"claude-code\"] to plugin.json: plugins outside their stated Claude Code version range are not installed, updated or loaded, and install and update pick the newest version that…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "642fc9537045",
+      "title": "Multi-tab testing in Cypress: @cypress/puppeteer 1.0 is generally available",
+      "url": "https://cypress.io/blog/cypress-puppeteer-ga",
+      "sourceId": "cypress-blog",
+      "sourceName": "Cypress blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-12T20:55:15.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Cypress runs each test in one tab, so flows that open a new tab or popup have been hard to test. @cypress/puppeteer 1.0 is now generally available, with a stable API, Puppeteer v24, and a new multi-tab testing guide. See what changed and how to upgrade from 0.1.x.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "5b0f73df89a6",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "url": "https://openai.com/business/customer-stories/amplitude",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-12T20:00:00.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a88bddb17214",
+      "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-12T19:07:35.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2583bd8fdfdb",
+      "title": "The Pulse: What can we learn from the Railway hack?",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-what-can-we-learn-from-114",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-12T18:53:19.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Also: native mobile and frontend jobs are disappearing, how trust helps an “AI-native” engineering team to succeed, Carta starts selling a coding harness, and more",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "5b3e85fd4334",
+      "title": "Turning a 22-year-old Postgres type-confusion primitive into RCE",
+      "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460",
+      "sourceId": "hn-fullstack",
+      "sourceName": "Hacker News · Full-stack",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-12T18:22:22Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "212 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50471761"
+    },
+    {
+      "id": "ad614f81e42f",
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade",
+      "sourceId": "google-ai-blog",
+      "sourceName": "Google AI blog",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-12T18:00:00.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "86e46ef0461a",
+      "title": "Cypress Ambassador Spotlight: Cuong Le",
+      "url": "https://cypress.io/blog/cypress-ambassador-spotlight-cuong-le",
+      "sourceId": "cypress-blog",
+      "sourceName": "Cypress blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-12T17:08:46.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Welcome back to our Ambassador Spotlight series! With every blog, we sit down with one of the people who make the Cypress community what it is. We ask where they started, how they think about testing, and what they've learned along the way. Want to know more about the Ambassador program? Learn more here. This time we're talking with Cuong Le, who writes about test automation on Medium to help QA…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1cc122a11d0f",
+      "title": "Bliki: Generated Glossary",
+      "url": "https://martinfowler.com/bliki/GeneratedGlossary.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-12T14:15:00.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "When we use LLMs in a specialized domain, such as the operations of any reasonably-large organization, there is a lot of specialized vocabulary. Such words and specialized meanings will be foreign to an LLM because they aren't in its training set, making it harder for the LLM to be effective when doing tasks in that domain. One technique to aid this is to use an LLM to generate a glossary of the…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6acc9950244c",
+      "title": "To the man with AI, everything looks like a task",
+      "url": "https://bensbites.com/p/to-the-man-with-ai-everything-looks",
+      "sourceId": "bens-bites",
+      "sourceName": "Ben's Bites",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-12T14:03:11.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Real* quote from Charlie Munger - lightly modernised :)",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1740b6afcf63",
+      "title": "We’ve launched self-hosted Claude Managed Agents.",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-12-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-12T12:00:00.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "90d79223706e",
+      "title": "Gondola doubles revenue as its team builds more with Codex",
+      "url": "https://openai.com/business/customer-stories/gondola",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-12T12:00:00.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
+      "summaryBy": "feed"
+    },
     {
       "id": "f101ffad2bb3",
       "title": "Anthropic IPO",
@@ -86,6 +485,40 @@
       ],
       "tagMethod": "source",
       "summary": "At AI Engineer Code Summit, lead Jev creator Diogo Almeida called on developers to automate everything. Also, Glean and others showed how they’re using Jev.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "56dac742ff29",
+      "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
+      "url": "https://huggingface.co/blog/3d-lora-finetuning",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-12T00:00:00.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7b7d1f77c266",
+      "title": "Grok Bot 1.0 🤖, AlphaGenome 2 🧬, Gemini Decisions 🧠",
+      "url": "https://tldr.tech/ai/2026-11-12",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-12T00:00:00.000Z",
+      "firstSeenAt": "2026-11-13T13:18:02.466Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
       "summaryBy": "feed"
     },
     {
@@ -1243,24 +1676,6 @@
       "discussionUrl": "https://news.ycombinator.com/item?id=50429952"
     },
     {
-      "id": "ffe8a09e969f",
-      "title": "Claude Fable 5.2 and Mythos 5.2",
-      "url": "https://anthropic.com/claude-fable-and-mythos-5-2",
-      "sourceId": "hn-claude",
-      "sourceName": "Hacker News · Claude",
-      "tier": "community",
-      "type": "news",
-      "publishedAt": "2026-11-09T18:56:29Z",
-      "firstSeenAt": "2026-11-10T13:40:21.212Z",
-      "roles": [
-        "claude"
-      ],
-      "tagMethod": "source",
-      "summary": "980 points on Hacker News.",
-      "summaryBy": "feed",
-      "discussionUrl": "https://news.ycombinator.com/item?id=50429906"
-    },
-    {
       "id": "34530e4cd700",
       "title": "Playwright MCP v0.0.85",
       "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.85",
@@ -1416,6 +1831,24 @@
       "tagMethod": "source",
       "summary": "We’ve launched fast mode for Claude Fable 5.2 in Messages API requests on the Claude API. Claude Fable 5.2 and Claude Mythos 5.2 enforce the prefix check for every account, whatever its age. (+5 more)",
       "summaryBy": "feed"
+    },
+    {
+      "id": "ffe8a09e969f",
+      "title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2",
+      "url": "https://anthropic.com/claude-fable-and-mythos-5-2",
+      "sourceId": "anthropic-news",
+      "sourceName": "Anthropic News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-09T12:00:00.000Z",
+      "firstSeenAt": "2026-11-10T13:40:21.212Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "Our most capable models for daunting technical work, Claude Fable 5.2 and Claude Mythos 5.2 set a new bar in coding, finance, and the sciences.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50429906"
     },
     {
       "id": "23b94c697622",
