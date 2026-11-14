@@ -1,6 +1,6 @@
 {
   "month": "2026-05",
-  "count": 6,
+  "count": 7,
   "items": [
     {
       "id": "0f53c3741b1b",
@@ -12,6 +12,23 @@
       "type": "article",
       "publishedAt": "2026-05-27T00:00:00.000Z",
       "firstSeenAt": "2026-10-31T19:39:14.403Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Build a threat model, discover vulnerabilities, verify, triage, and patch.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6e0ba6d6a0d8",
+      "title": "Using LLMs to Secure Source Code",
+      "url": "https://eugeneyan.com/writing/secure-source-code",
+      "sourceId": "eugene-yan",
+      "sourceName": "Eugene Yan",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-05-27T00:00:00.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
       "roles": [
         "se"
       ],

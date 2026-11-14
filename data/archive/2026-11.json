@@ -1,7 +1,306 @@
 {
   "month": "2026-11",
-  "count": 248,
+  "count": 268,
   "items": [
+    {
+      "id": "be54405e42bc",
+      "title": "[AINews] The No AI Slop Manifesto",
+      "url": "https://latent.space/p/ainews-the-no-ai-slop-manifesto",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-14T08:31:02.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "November 13, 2026 — AIE speakers unite to lay out how to fight slop.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a9dc79e6aa5b",
+      "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
+      "url": "https://claude.com/resources/articles/projects-redesigned",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-14T00:28:11Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "90 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50492141"
+    },
+    {
+      "id": "200093c89c8b",
+      "title": "How to Build an AI Customer Research Agent in Claude Code",
+      "url": "https://news.aakashg.com/p/ai-customer-research",
+      "sourceId": "product-growth",
+      "sourceName": "Product Growth (Aakash Gupta)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-13T23:56:59.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "claude",
+        "pm"
+      ],
+      "tagMethod": "rules",
+      "summary": "Build an AI agent in Claude Code that emails every customer who drops off, plus the eval loop that keeps it safe. The free GitHub project is included.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "fde4e161df12",
+      "title": "datasette-cluster-map 0.19",
+      "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-13T23:02:45.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: datasette-cluster-map 0.19 One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on the new datasette-leaflet to ensure OpenStreetMap tiles are requested with a referrer header. Here's a map of power plants owned by California's PG&E , also demonstrating Datasette's recently redesigned facets : Tags: datasette , geospatial…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "21ab7432dba4",
+      "title": "Claude Meetings",
+      "url": "https://claude.com/resources/articles/claude-meetings",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-13T22:39:15Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "102 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50491097"
+    },
+    {
+      "id": "673d8bd62405",
+      "title": "datasette-leaflet 0.3",
+      "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-13T22:30:54.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from OpenStreetMap to violate that policy. datasette-leaflet is the plugin that loads a bundled Leaflet so other Datasette plugins can depend on…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "5a79fd6153f2",
+      "title": "Playwright v1.65.1",
+      "url": "https://github.com/microsoft/playwright/releases/tag/v1.65.1",
+      "sourceId": "playwright-releases",
+      "sourceName": "Playwright releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-13T21:46:58.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Bug Fixes #43936 [Regression]: decorated class with a static field fails to load in 1.65 (\"_initClass is not a function\") with useDefineForClassFields: false #43934 [Bug]: Test locations are one column off under Bun 1.4.4+ Browser Versions Chromium 159.0.8154.6 Mozilla Firefox 159.0 WebKit 27.2",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8fa72b7d21bf",
+      "title": "Claude Code Action v1.0.276",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.276",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-13T20:47:21.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Full Changelog: v1.0.275...v1.0.276",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "3578b3def025",
+      "title": "Claude Code v2.1.325",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-13T20:40:01.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Fixed a security issue in how zstd-compressed responses are decoded Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4766c254790f",
+      "title": "Adapting to AI penetration testing orchestrators: The Modern Security Model",
+      "url": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators",
+      "sourceId": "cloudflare-blog",
+      "sourceName": "Cloudflare blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-13T19:26:07.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "qa",
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "AI-orchestrated penetration testing platforms like ARTEX have become increasingly powerful tools enabling effective attacks on exposed infrastructure. Here we share Cloudflare’s observations and recommended countermeasures.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "79d48ebc633b",
+      "title": "Perplexity Decider v1.3: Training, eval, and use cases",
+      "url": "https://perplexity.ai/hub/blog/perplexity-decider",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-13T19:24:47Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "135 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50488464"
+    },
+    {
+      "id": "2427bacb74a9",
+      "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+      "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-13T18:00:39.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8400bdfe1e2a",
+      "title": "XYBench: Helping with the problem behind the question",
+      "url": "https://huggingface.co/blog/allenai/xybench",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-13T17:02:35.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "5bf4951adbe9",
+      "title": "Introducing ChatGPT Wallet",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-13T15:00:00.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "40e78db6601d",
+      "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-13T14:05:22.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "973687234f0b",
+      "title": "US test reactor cleared for operations",
+      "url": "https://world-nuclear-news.org/articles/us-test-reactor-cleared-for-operations",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-13T13:54:49Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "80 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50483533"
+    },
+    {
+      "id": "914024328dfe",
+      "title": "Building strong safety evaluations",
+      "url": "https://anthropic.com/research/building-strong-safety-evaluations",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-13T12:00:00.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "claude",
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
     {
       "id": "22bcd83804c6",
       "title": "Claude Is Down",
@@ -53,6 +352,23 @@
       ],
       "tagMethod": "source",
       "summary": "November 12, 2026 — Colette Kress takes over as interim CEO. What happens to open source/American AI leadership?",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d1318183fe17",
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "url": "https://openai.com/business/customer-stories/shield",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-13T08:00:00.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
       "summaryBy": "feed"
     },
     {
@@ -120,6 +436,23 @@
         "qa"
       ],
       "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a49fd02deff5",
+      "title": "Gemini 4 Hydrogen 🚀, self-hosted Claude agents 🔒, Replit agent commerce 🛒",
+      "url": "https://tldr.tech/ai/2026-11-13",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-13T00:00:00.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed"
     },
@@ -364,6 +697,24 @@
       ],
       "tagMethod": "source",
       "summary": "Real* quote from Charlie Munger - lightly modernised :)",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2bfaf4838ec5",
+      "title": "Workflow SDK 5: built for production",
+      "url": "https://vercel.com/blog/workflow-sdk-5",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-12T13:00:00.000Z",
+      "firstSeenAt": "2026-11-14T12:23:20.907Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "When we first launched Workflow SDK, the goal was simple: write regular async JavaScript, and let the SDK keep it running through crashes, deployments, and long waits. Last year, , with the world-class developer experience Vercel is known for. Then we watched what our customers built with it.we shipped just that More than 4 billion steps and 700 million runs later, two clear patterns have…",
       "summaryBy": "feed"
     },
     {
