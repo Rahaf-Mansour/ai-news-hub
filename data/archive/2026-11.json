@@ -1,7 +1,110 @@
 {
   "month": "2026-11",
-  "count": 268,
+  "count": 276,
   "items": [
+    {
+      "id": "f9a3c449e598",
+      "title": "datasette-llm 0.1a11",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-llm",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-14T23:59:28.000Z",
+      "firstSeenAt": "2026-11-15T12:53:31.401Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol. This means that if you're running local models with LM Studio or Ollama…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "43a3cf413336",
+      "title": "appium@3.9.1",
+      "url": "https://github.com/appium/appium/releases/tag/appium%403.9.1",
+      "sourceId": "appium-releases",
+      "sourceName": "Appium releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-14T21:46:58.000Z",
+      "firstSeenAt": "2026-11-15T12:53:31.401Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "3.9.1 (2026-11-14) Bug Fixes execute-driver-plugin: wrap non-configurable property descriptors via shadow target (#23126) (b2ce3a0)",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "934d5c4bd909",
+      "title": "@appium/universal-xml-plugin@3.0.3",
+      "url": "https://github.com/appium/appium/releases/tag/%40appium%2Funiversal-xml-plugin%403.0.3",
+      "sourceId": "appium-releases",
+      "sourceName": "Appium releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-14T21:46:58.000Z",
+      "firstSeenAt": "2026-11-15T12:53:31.401Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "3.0.3 (2026-11-14) Note: Version bump only for package @appium/universal-xml-plugin",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6eef34634779",
+      "title": "🧠 Community Wisdom: When you become the bottleneck for your AI agents, the PULL framework for PMs, product growth vs. growth marketing, boosting feedback response rates, and more",
+      "url": "https://lennysnewsletter.com/p/community-wisdom-when-you-become",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-14T21:15:46.000Z",
+      "firstSeenAt": "2026-11-15T12:53:31.401Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Community Wisdom 305",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "5acb9d3d7e18",
+      "title": "datasette-vega 0.7",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-vega",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-14T17:09:09.000Z",
+      "firstSeenAt": "2026-11-15T12:53:31.401Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: datasette-vega 0.7 A new release of Datasette's longest untouched plugin, for rendering charts (using Vega-Lite ) against data in a table or custom query. The last release was in July 2018! I finally bumped it for compatibility with the latest Datasette alphas, plus some cosmetic tweaks to make it work better with Datasette Lite . (Datasette Lite just gained the ability to run…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1cd6c3ec19d7",
+      "title": "The Claude Delusion",
+      "url": "https://netmeister.org/blog/claude-delusion.html",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-14T13:36:17Z",
+      "firstSeenAt": "2026-11-15T12:53:31.401Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "148 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50496921"
+    },
     {
       "id": "be54405e42bc",
       "title": "[AINews] The No AI Slop Manifesto",
@@ -262,6 +365,23 @@
       ],
       "tagMethod": "source",
       "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "eedacb8ee23b",
+      "title": "12 BEST AI Test Automation Tools for 2026 The Third Wave",
+      "url": "https://testguild.com/7-innovative-ai-test-automation-tools-future-third-wave",
+      "sourceId": "testguild",
+      "sourceName": "TestGuild",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-13T13:57:20.000Z",
+      "firstSeenAt": "2026-11-15T12:53:31.401Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "The Bottom Line for 2026: The best AI test automation tools for 2026, by category: agentic testing with no script […]",
       "summaryBy": "feed"
     },
     {
@@ -681,6 +801,24 @@
       "tagMethod": "source",
       "summary": "When we use LLMs in a specialized domain, such as the operations of any reasonably-large organization, there is a lot of specialized vocabulary. Such words and specialized meanings will be foreign to an LLM because they aren't in its training set, making it harder for the LLM to be effective when doing tasks in that domain. One technique to aid this is to use an LLM to generate a glossary of the…",
       "summaryBy": "feed"
+    },
+    {
+      "id": "f3f2e904e66d",
+      "title": "Testing a trash can Faraday cage",
+      "url": "https://jefftk.com/p/testing-a-trash-can-faraday-cage",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-12T14:04:27Z",
+      "firstSeenAt": "2026-11-15T12:53:31.401Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "82 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50467278"
     },
     {
       "id": "6acc9950244c",
