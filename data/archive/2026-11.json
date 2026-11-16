@@ -1,7 +1,263 @@
 {
   "month": "2026-11",
-  "count": 276,
+  "count": 292,
   "items": [
+    {
+      "id": "bb1032f7c486",
+      "title": "Software engineering after code becomes cheap with Satya Nadella",
+      "url": "https://newsletter.pragmaticengineer.com/p/software-engineering-after-code-becomes",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-16T13:33:48.000Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Microsoft CEO Satya Nadella on AI’s impact on software engineering, code verification, and engineers’ careers.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2c82738cbe42",
+      "title": "How I fight token fraud as a solo founder",
+      "url": "https://lennysnewsletter.com/p/how-i-fight-token-fraud-as-a-solo",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-16T13:04:09.000Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Watch now (40 mins) | 🎙️ After losing tens of thousands of dollars to token fraud, I walk through six attack patterns, the defenses I built, and why I killed free trials",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "91e58e2ea930",
+      "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+      "url": "https://openai.com/index/lvmh-media-division-partnership",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-16T09:00:00.000Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e3915f7e4cf0",
+      "title": "The King’s Trust and OpenAI launch £1m partnership",
+      "url": "https://openai.com/index/the-kings-trust-and-openai",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-16T00:00:00.000Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4b4d48f19f03",
+      "title": "datasette-maplibre 0.1a0",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-15T23:58:36.000Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "Release: datasette-maplibre 0.1a0 The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub .) I built most of this with a single prompt to Claude Fable 5.2: Look at datasette-cluster-map and datasette-leaflet-geojson plugins, then look at…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "3bc6cdb34c17",
+      "title": "datasette 1.0a43",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-15T23:20:27.000Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "Release: datasette 1.0a43 I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone , which is now 53% complete. The biggest 1.0 item in this release is streaming support for output renderers - the built-in TSV and CSV export mechanisms now use this as well, and plugins can register themselves as capable of streaming every row in a table in one go via the new…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7c04761a4076",
+      "title": "datasette 0.65.6",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-2",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-15T23:18:17.000Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: datasette 0.65.6 I backported a minor security fix from 1.0a43: Fixed a security issue where a database registered using add_database(db, name=..., route=...) with a route that differs from its name could be downloaded from /&lt;route&gt;.db by actors who were denied access to it. [...] Tags: security , datasette",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "87d7014c15ee",
+      "title": "A step toward defining the Standard Model on a lattice",
+      "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-15T22:00:01.000Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4b0fc5b701ff",
+      "title": "Our new blog for science",
+      "url": "https://openai.com/index/our-new-blog-for-science",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-15T22:00:00.000Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "363403846a59",
+      "title": "Do House members' stock trades beat the market? A test of 8,900 trades",
+      "url": "https://arkanumdata.com/research/house-trades",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-15T19:46:02Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "119 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50510005"
+    },
+    {
+      "id": "0317ba3c1f23",
+      "title": "@appium/universal-xml-plugin@4.0.0",
+      "url": "https://github.com/appium/appium/releases/tag/%40appium%2Funiversal-xml-plugin%404.0.0",
+      "sourceId": "appium-releases",
+      "sourceName": "Appium releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-15T13:56:48.000Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "4.0.0 (2026-11-15) ⚠ BREAKING CHANGES @appium/tsconfig now sets noImplicitOverride: true. Extensions extending this config must mark overriding members with override, otherwise tsc fails with TS4114. the minimum supported Node.js engine is set to ^22.22.2 || ^24.15.0 || >=26.0.0 Features bump minimum supported Node.js engine to ^22.22.2 || ^24.15.0 || >=26.0.0 (#22685) (8ad9193) enable…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "dfebde79cc97",
+      "title": "appium@4.0.0",
+      "url": "https://github.com/appium/appium/releases/tag/appium%404.0.0",
+      "sourceId": "appium-releases",
+      "sourceName": "Appium releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-15T13:56:48.000Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "4.0.0 (2026-11-15) ⚠ BREAKING CHANGES base-driver: a command result shaped like {protocol, value} is no longer unwrapped. It is returned as the command value. {protocol, error} is still thrown when error is an Error and protocol is W3C or MJSONWP. @appium/tsconfig now sets noImplicitOverride: true. Extensions extending this config must mark overriding members with override, otherwise tsc fails…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c1b0abbf1a9c",
+      "title": "Meta’s Muse: How we launched the most successful consumer product this year | Mona Sarantakos",
+      "url": "https://lennysnewsletter.com/p/metas-muse-how-we-launched-the-most",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-15T13:31:28.000Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Listen now | Mona Sarantakos on going from a weekend with OpenClaw to shipping the fastest-growing consumer AI product in history",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "9ae934d441da",
+      "title": "datasette-apps 0.4a0",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-apps",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-15T04:02:45.000Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "Release: datasette-apps 0.4a0 Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data. 0.4a0 adds support for linking: you can link to an app with #fragments in the URL and the app can see and use those, plus supported URL schemes are reported back to Datasette Agent so it can help…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "16b4b3a7aa40",
+      "title": "datasette-agent 0.6a0",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-agent",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-15T03:49:47.000Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: datasette-agent 0.6a0 Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions of tables and queries: Tags: datasette-agent , llm , datasette , llms , ai , generative-ai",
+      "summaryBy": "feed"
+    },
     {
       "id": "f9a3c449e598",
       "title": "datasette-llm 0.1a11",
@@ -69,6 +325,24 @@
       "tagMethod": "source",
       "summary": "Community Wisdom 305",
       "summaryBy": "feed"
+    },
+    {
+      "id": "b6f34700b44a",
+      "title": "Claude asked to renumber pages deletes professor's syllabus, year of notes",
+      "url": "https://tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-14T17:51:13Z",
+      "firstSeenAt": "2026-11-16T13:53:13.938Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "50 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50499114"
     },
     {
       "id": "5acb9d3d7e18",
