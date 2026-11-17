@@ -1,7 +1,460 @@
 {
   "month": "2026-11",
-  "count": 292,
+  "count": 324,
   "items": [
+    {
+      "id": "890c57ba47bf",
+      "title": "Deterministic Simulation Testing",
+      "url": "https://martinfowler.com/articles/deterministic-simulation-testing.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-17T14:33:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "rules",
+      "summary": "Distributed systems are hard to test because partial failures overlap with live traffic and the same fault can produce different execution traces on different runs. Unmesh Joshi describes how deterministic simulation testing addresses this by replacing real clocks, networks, and storage with simulated components driven by a single-threaded execution loop. This allows simulating both hard…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c23e385993f8",
+      "title": "Productiv-icky",
+      "url": "https://bensbites.com/p/productiv-icky",
+      "sourceId": "bens-bites",
+      "sourceName": "Ben's Bites",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-17T14:14:18.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Digging holes on the beach",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8009c36c0458",
+      "title": "The Sharing Gap - All Things Product Podcast with Teresa Torres & Petra Wille",
+      "url": "https://producttalk.org/the-sharing-gap-all-things-product-podcast-with-teresa-torres-petra-wille",
+      "sourceId": "product-talk",
+      "sourceName": "Product Talk (Teresa Torres)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-17T14:00:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Listen to this episode on: Spotify | Apple Podcasts Why has everyone stopped sharing their real product work — and what do we lose when the field goes quiet? Petra Wille and Teresa Torres return to the never-ending social-media question, this time from a trend angle: the genuinely useful",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8c5b4e01285e",
+      "title": "Regulatory Capture by Anthropic Through METR",
+      "url": "https://nitter.cf/kevinnbass/status/2099621874279817638",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-17T12:21:57Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "125 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50530450"
+    },
+    {
+      "id": "a589afa528f0",
+      "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+      "url": "https://nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-17T11:45:51Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "391 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50530163"
+    },
+    {
+      "id": "069078b2b4e3",
+      "title": "How the Claude Code team thinks about verification",
+      "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-17T10:20:40Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "90 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50529612"
+    },
+    {
+      "id": "a909c419b8fa",
+      "title": "[AINews] Perplexity hits a $1B revenue run rate, up 4x in 2026",
+      "url": "https://latent.space/p/ainews-perplexity-hits-a-1b-revenue-run-rate-up-4x-in-2026",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-17T09:24:56.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "November 16, 2026 — Computer gets Teammates, Perplexity ships Monitor API, and a new research lab launches.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f0c70df868e9",
+      "title": "AI Sped Up The Build: How Can Accessibility Testing Keep Up?",
+      "url": "https://smashingmagazine.com/2026/11/ai-sped-up-build-how-can-accessibility-testing-keep-up",
+      "sourceId": "smashing",
+      "sourceName": "Smashing Magazine",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-17T08:00:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "rules",
+      "summary": "AI has sped up how teams design and build, but quality assurance (QA) testing hasn’t kept pace, and the web may be getting less accessible. Drawing on new research, Andrew Chung explains what separates the teams whose accessibility efforts are keeping up, and how to embed human judgment into AI-enabled workflows without slowing delivery.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "ae3ee0f483ed",
+      "title": "Quoting Go Proverbs",
+      "url": "https://simonwillison.net/2026/Nov/17/go-proverbs",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-17T06:16:26.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "A little copying is better than a little dependency. &mdash; Go Proverbs , via Tags: go , programming",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d4875a92aea8",
+      "title": "Claude Mythos slashed software work to onboard AMD GPUs to around three days",
+      "url": "https://tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-17T01:35:16Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "50 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50526264"
+    },
+    {
+      "id": "58da9c66b145",
+      "title": "Introducing OpenAI for Chile",
+      "url": "https://openai.com/index/introducing-openai-for-chile",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-17T00:00:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "590cb0b9c5dd",
+      "title": "Strengthening NATO and allied cyber defenses with AI",
+      "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-17T00:00:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a4592d1417f2",
+      "title": "Perplexity Research 🧪, NVIDIA Rubin HPC 🖥️, OpenAI safety assessments 👨‍💻",
+      "url": "https://tldr.tech/ai/2026-11-17",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-17T00:00:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "764198fc49a3",
+      "title": "llm 0.37.3",
+      "url": "https://simonwillison.net/2026/Nov/16/llm",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-16T23:57:26.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: llm 0.37.3 A bug fix release for LLM , mainly to cover a problem with the most recent Homebrew package of the software. Homebrew now ships the latest SQLite, 3.54.1 , which includes a fix that broke LLM's logging code . Short version: in SQLite 3.54.0 the following SQL: select json_object('a', (select json_array(1))) Returns this: {\"a\":[1]} But in 3.54.1 the same query returns this…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4513c1bf6132",
+      "title": "Interview on “Software Testing Unleashed” Podcast",
+      "url": "https://developsense.com/blog/2026/11/interview-on-software-testing-unleashed-podcast",
+      "sourceId": "developsense",
+      "sourceName": "DevelopSense (Michael Bolton)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-16T23:41:59.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Richard Seidl hosts interview and podcasts on Software Testing Unleashed. This one happened at EuroSTAR 2026, on June 18, and was released on November 2, 2026. Testing AI Models as Magic Boxes: Why Checks FailA language model is a box that nobody controls or fully understands.Testing AI models therefore means exploring, experimenting and weighing the risk. Watch the interview here. And if you’re…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7d10e6ada522",
+      "title": "Claude Code Action v1.0.278",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.278",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-16T22:14:53.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's Changed Other changes Read the run step's script whole and turn off Bun's transpiler cache by @mhegazy in #2060 Full Changelog: v1.0.277...v1.0.278",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "328f5dc06ab4",
+      "title": "Claude Code v2.1.326",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-16T22:11:05.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode Added a startup warning when an --allowedTools, --disallowedTools or --tools value has an entry that doesn't look like a complete rule Added a message explaining why MCP servers stop loading when an administrator adds managed-mcp.json…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "735df09c2ed1",
+      "title": "Building Visual Intelligence — Andreas Blattmann & Dustin Podell, Black Forest Labs",
+      "url": "https://latent.space/p/bfl",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-16T21:38:03.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Black Forest Labs’ case for learning AGI from pixels, motion and sound.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "5792192d52b3",
+      "title": "AI Tests You Can’t Trust? Flaky Agents, Playwright MCP, Google EGM TGNS",
+      "url": "https://testguild.com/podcast/n200-nov16",
+      "sourceId": "testguild",
+      "sourceName": "TestGuild",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-16T19:36:18.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "About This Episode: What’s new with Playwright MCP? Can you trust tests that AI keeps rewriting? Have you seen the […]",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "97d3976e8dcc",
+      "title": "v1.0.277 (breaking changes)",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.277",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-16T19:05:07.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's Changed ⚠️ Breaking changes Use the base branch's AGENTS.md on pull requests by @mhegazy in #2059 Other changes Use the base branch's npm and Bun config on outside pull requests by @mhegazy in #2020 Start Bun with the action's own tsconfig again by @mhegazy in #2058 Close gaps in using the base branch's npm and Bun config by @mhegazy in #2026 Keep deny rules that hold commas or…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b1c71d07875a",
+      "title": "Strengthening the fight against online child sexual abuse with new tools and support",
+      "url": "https://openai.com/index/strengthening-online-child-safety",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-16T17:00:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f26f2a4dfd6b",
+      "title": "Broadening access to AI for scientists",
+      "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-16T17:00:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "35612161c8c9",
+      "title": "🎙️ How I AI: Fable 5.2 Review + How I fight token fraud as a solo founder + Building a Claude Code family OS",
+      "url": "https://lennysnewsletter.com/p/how-i-ai-fable-52-review-how-i-fight",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-16T16:02:55.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "claude",
+        "pm"
+      ],
+      "tagMethod": "rules",
+      "summary": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "41b364560b32",
+      "title": "Import AI 481: AI sub-contractors; a wet lab for AI; and subterfuge during development",
+      "url": "https://jack-clark.net/2026/11/16/import-ai-481-ai-sub-contractors-a-wet-lab-for-ai-and-subterfuge-during-development",
+      "sourceId": "import-ai",
+      "sourceName": "Import AI (Jack Clark)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-16T14:01:15.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now AI systems are getting good at sub-contracting to make themselves better:…AI can now productively spend money to improve itself…Researchers have developed FrontierML, a benchmark “that measures […]",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0bc322583e6f",
+      "title": "New Ask Maps features to help with holiday travel and prep",
+      "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026",
+      "sourceId": "google-ai-blog",
+      "sourceName": "Google AI blog",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-16T14:00:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d1354f5802c5",
+      "title": "Ch. 11: Measuring Impact",
+      "url": "https://producttalk.org/ch-11-measuring-impact",
+      "sourceId": "product-talk",
+      "sourceName": "Product Talk (Teresa Torres)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-16T14:00:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Continuous Discovery Habits turns five this year. And to celebrate we are reading the book together. Each month, I am releasing an in-depth reading guide that includes: The chapters we will be reading A preview of the most important concepts we'll be learning about Short videos you",
+      "summaryBy": "feed"
+    },
     {
       "id": "bb1032f7c486",
       "title": "Software engineering after code becomes cheap with Satya Nadella",
@@ -37,6 +490,41 @@
       "summaryBy": "feed"
     },
     {
+      "id": "a9336fd0752a",
+      "title": "Text generated by Claude Opus 4.6, Claude Opus 4.5, Claude Sonnet 4.5, and Claude Haiku 4.5 carries Anthropic’s text watermark on supported platforms.",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-16-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-16T12:00:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f891bd93f3d2",
+      "title": "Science at the Frontier: How scientists use ChatGPT",
+      "url": "https://openai.com/index/science-at-the-frontier",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-16T12:00:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
+      "summaryBy": "feed"
+    },
+    {
       "id": "91e58e2ea930",
       "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
       "url": "https://openai.com/index/lvmh-media-division-partnership",
@@ -51,6 +539,77 @@
       ],
       "tagMethod": "source",
       "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a8f500d1761f",
+      "title": "Test/verification technique effectiveness with Astra",
+      "url": "https://danluu.com/astra-testing",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-16T07:33:51Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "75 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50515035"
+    },
+    {
+      "id": "65e8ce365625",
+      "title": "Agents are users, so your software needs evals",
+      "url": "https://vercel.com/blog/agent-evals",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "qa",
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Agents are now users of software, doing work on people's behalf. Whether you're building the agent or the software it uses (API, CLI, MCP server, SDK), evals give you a way to measure how well that work gets done. Agents probably missed your launch video and billboard on Highway 101, but they still go through the same funnel a human does to find and use a product: , , , and…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1c554e76f9ec",
+      "title": "ChatGPT Wallet 💳, Devin Apps 🛠️, always-on agents ⚡",
+      "url": "https://tldr.tech/ai/2026-11-16",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-16T00:00:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "853b24ff0d6e",
+      "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+      "url": "https://huggingface.co/blog/openrouter",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-16T00:00:00.000Z",
+      "firstSeenAt": "2026-11-17T14:45:31.107Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
       "summaryBy": "feed"
     },
     {
