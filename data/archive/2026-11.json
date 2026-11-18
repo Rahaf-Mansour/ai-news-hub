@@ -1,7 +1,425 @@
 {
   "month": "2026-11",
-  "count": 324,
+  "count": 354,
   "items": [
+    {
+      "id": "19d24449de7d",
+      "title": "Grab My Personal Annual Review Claude Code Plugin",
+      "url": "https://producttalk.org/personal-annual-review-claude-code-plugin",
+      "sourceId": "product-talk",
+      "sourceName": "Product Talk (Teresa Torres)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-18T14:05:00.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "claude",
+        "pm"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1e6b15e0e845",
+      "title": "Data Contracts",
+      "url": "https://martinfowler.com/articles/data-contracts.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-18T14:02:00.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "are a way to describe the contents and guarantees of datasets. Simon Harrer and Arif Wider describe in detail what they are and how to use them. They apply practices from API design to data by treating them as data-providing services - such as data products - whose interfaces we want to define as clearly as possible. This approach significantly increases the robustness of large-scale data…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a7919d7e054b",
+      "title": "My Personal Annual Review Process (Now a Claude Code Plugin)",
+      "url": "https://producttalk.org/personal-annual-review",
+      "sourceId": "product-talk",
+      "sourceName": "Product Talk (Teresa Torres)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-18T14:00:00.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "claude",
+        "pm"
+      ],
+      "tagMethod": "rules",
+      "summary": "Every December, I reflect on my year and plan the next. I share 4 exercises in my personal annual review, plus a Claude Code plugin.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7c37480e5f49",
+      "title": "[AINews] GPT-6.2 Astra, the #2 Frontier Model is better and 20%-600% cheaper, but has mixed reviews; 6.2 Sol likely main workhorse",
+      "url": "https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-18T10:19:04.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "November 17, 2026 — GPT-6.2 Astra and Sol lower benchmark costs. Early testers disagree on what Astra is like to work with.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "fe0161e36e7a",
+      "title": "Claude Code Action v1.0.281",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.281",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-18T05:13:31.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's Changed Other changes Apply the session's git settings to the action's own commands by @mhegazy in #2093 Skip fork pull requests in claude.yml by @mhegazy in #2092 Add an allow_fork_prs input to skip pull requests from forks by @mhegazy in #2094 Full Changelog: v1.0.280...v1.0.281",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d021019fd830",
+      "title": "Claude was trained on protein sequences at scale",
+      "url": "https://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-18T03:47:43Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "108 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50541619"
+    },
+    {
+      "id": "6cab9c8cd383",
+      "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+      "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "fa817e5f2d39",
+      "title": "Claude Code Action v1.0.280",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.280",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-17T23:20:15.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Full Changelog: v1.0.279...v1.0.280",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1560056f3e5d",
+      "title": "Claude Code v2.1.327",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-17T23:17:45.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Added a confirmation before /install-github-app changes a repository Added claude mcp add-json - to read the server's JSON from stdin, so tokens can stay off the command line; not available inside a Claude Code session Added a line when a resumed session's earlier messages can't be loaded Added a list in /status of broken agent, skill, command and output style files, keybinding…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c60558e98558",
+      "title": "External sandboxes for coding agents",
+      "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-17T22:52:29.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine. I worked on this project with Prime Radiant , the AI research lab behind Superpowers and other projects . My post on the Prime Radiant blog introduces the…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "5cbc55e1b429",
+      "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+      "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-17T22:38:52.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "OpenAI: We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work. They're available in the API as gpt-6.2-astra and gpt-6.2-sol . I shipped LLM 0.38 with support for the new models. 6.2 Astra is 80% of the price of 6 Astra - $8/MTok input and $40/MTok output, the same price as Claude Fable 5.2 (which was…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "46c2ced4d175",
+      "title": "Introducing staged publishing on NuGet.org",
+      "url": "https://devblogs.microsoft.com/dotnet/nuget-staged-publishing",
+      "sourceId": "dotnet-blog",
+      "sourceName": ".NET Blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-17T21:00:00.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Stage and validate packages privately on NuGet.org, then approve their release when you are ready. The post Introducing staged publishing on NuGet.org appeared first on .NET Blog.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a6c7c2ca104f",
+      "title": "Anthropic Paid Rubio's Ex-Chief of Staff's Firm $740k.it Lobbied His NSC",
+      "url": "https://zerohedge.com/political/anthropic-paid-rubios-ex-chief-staffs-firm-740000-after-jensen-memo-it-lobbied-his-nsc",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-17T19:08:45Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "97 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50536565"
+    },
+    {
+      "id": "dfa52e89374f",
+      "title": "Maintainers don’t need more AI bug reports. They need fixes.",
+      "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes",
+      "sourceId": "github-blog",
+      "sourceName": "GitHub blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-17T18:29:29.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "In the Codename MDASH pilot, GitHub and Microsoft turned thousands of raw AI findings into 99 checked, private reports with suggested fixes for six widely used open source projects. Maintainers have already fixed more than half. The post Maintainers don’t need more AI bug reports. They need fixes. appeared first on The GitHub Blog.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "001520fb3104",
+      "title": "Selenium 4.53.0",
+      "url": "https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.53.0",
+      "sourceId": "selenium-releases",
+      "sourceName": "Selenium releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-17T18:23:19.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Detailed Changelogs by Component Java | Python | DotNet | Ruby | JavaScript What's Changed [rb] download the Server jar with Selenium Manager instead of the GitHub API by @titusfortner in #18245 [java] Escape quotes and backslashes in name locators sent to the driver by @Mochxd in #18151 [dotnet] [test] Unify assembly names for testing by @nvborisenko in #18261 [rb] Allocate websocket command…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "964aca3f2d3b",
+      "title": "Building the Agent Host Protocol for sessions that continue across devices",
+      "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices",
+      "sourceId": "github-blog",
+      "sourceName": "GitHub blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-17T18:20:40.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Discover how we built the open Agent Host Protocol to keep your agent sessions accessible across editors, apps, phones, and the cloud. The post Building the Agent Host Protocol for sessions that continue across devices appeared first on The GitHub Blog.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "84256b4008a0",
+      "title": "35 premium tools free for a year—now with OpenRouter, LangChain, Sentry, TextExpander, and Ploy 💥",
+      "url": "https://lennysnewsletter.com/p/35-premium-tools-free-for-a-yearnow",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-17T18:02:02.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "pm",
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "Over $40,000 in value, exclusively for Lenny’s Newsletter subscribers",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "549a77347d5e",
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-17T17:45:00.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6110c4557dce",
+      "title": "Vitest v5.1.1",
+      "url": "https://github.com/vitest-dev/vitest/releases/tag/v5.1.1",
+      "sourceId": "vitest-releases",
+      "sourceName": "Vitest releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-17T17:03:02.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "qa",
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Features cache: Add fs module cache env variables - by @sheremet-va in #11859 (708c0) 🐞 Bug Fixes Rerun on file changes after a config restart - by @magurotuna in #11772 and #11829 (289ca) Avoid leaking the context expect - by @sheremet-va in #11845 (3c967) Report fixture teardown errors once - by @sheremet-va in #11857 (6b167) Improve diffs for asymmetric matchers - by @sheremet-va in #11855…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "cb1d8f8bc84f",
+      "title": "Put Gemini to work for you",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features",
+      "sourceId": "google-ai-blog",
+      "sourceName": "Google AI blog",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-17T17:00:00.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things done on your behalf.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "5b158888670a",
+      "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+      "url": "https://simonwillison.net/2026/Nov/17/datasette-lite",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-17T16:48:33.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers, and it's now almost indistinguishable from the real server-side application. You can now do all of the following, using a carefully crafted URL to lite.datasette.io : Load client-side Datasette to…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6c265f6b8d49",
+      "title": "Inference engineering for software engineers",
+      "url": "https://newsletter.pragmaticengineer.com/p/inference-engineering-for-software-engineers",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-17T16:11:23.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "When is the right time to drop APIs provided by the frontier AI labs, and what about choosing models & providers, caching, dedicated GPUs, KV cache concerns, and more? A practical deepdive",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2f3399df0559",
+      "title": "Robot Framework Test Automation: Automate Web, Desktop, Mobile, and Embedded Systems",
+      "url": "https://testguild.com/podcast/a612-robocon2027",
+      "sourceId": "testguild",
+      "sourceName": "TestGuild",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-17T15:43:23.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "About This Episode: What makes Robot Framework flexible enough to test medical devices, low code bots, monitoring systems, and embedded […]",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "af19957a97c2",
+      "title": "Cloudflare Joins the Jevolution and Labels Itself a Neolab",
+      "url": "https://latent.space/p/cloudflare",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-17T15:00:00.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Cloudflare made its name speeding up the web. Now it's building System One models to make decisions and pull data in milliseconds.",
+      "summaryBy": "feed"
+    },
     {
       "id": "890c57ba47bf",
       "title": "Deterministic Simulation Testing",
@@ -72,6 +490,41 @@
       "discussionUrl": "https://news.ycombinator.com/item?id=50530450"
     },
     {
+      "id": "5726e06c3e6c",
+      "title": "We’ve launched Linked billing in beta with the user-profiles-billing-2026-10-01 beta header.",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-17-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-17T12:00:00.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "ea1bd15d2eac",
+      "title": "Meet AI 2027 Conference (Dec 1)",
+      "url": "https://smashingmagazine.com/2026/11/online-smashingconf-ai-2027",
+      "sourceId": "smashing",
+      "sourceName": "Smashing Magazine",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-17T12:00:00.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Roll up your sleeves! Meet shiny new [AI 2027 Conference](https://smashingconf.com/ai-2027-conference), a friendly online conference on AI-ready design systems, AI + Figma and AI design patterns. What to expect in 2027 and where teams are getting AI right. [Jump to tickets.](https://smashingconf.com/ai-2027-conference/registration)",
+      "summaryBy": "feed"
+    },
+    {
       "id": "a589afa528f0",
       "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
       "url": "https://nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
@@ -122,6 +575,23 @@
       ],
       "tagMethod": "source",
       "summary": "November 16, 2026 — Computer gets Teammates, Perplexity ships Monitor API, and a new research lab launches.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c6c361c53bc4",
+      "title": "Introducing ChatGPT for Sales",
+      "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-17T08:00:00.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
       "summaryBy": "feed"
     },
     {
@@ -178,6 +648,40 @@
       "discussionUrl": "https://news.ycombinator.com/item?id=50526264"
     },
     {
+      "id": "0604bc2b50fc",
+      "title": "Astra for Law leads in legal intelligence",
+      "url": "https://openai.com/index/astra-law-6-2",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-17T00:00:00.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "12bf433ac2f9",
+      "title": "The top 10 things AI gets wrong in web development",
+      "url": "https://javascriptweekly.com/issues/811",
+      "sourceId": "javascript-weekly",
+      "sourceName": "JavaScript Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-17T00:00:00.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "#​811 — November 17, 2026 Read on the Web JavaScript Weekly npkill 1.0: Not Just for node_modules Anymore — npx npkill has long offered a way to find and remove waste from node_modules folders. Its first release in two years now also hunts down caches and build outputs like .next and .turbo, with 'profiles' for 20 ecosystems. If you're new to the tool, its homepage provides a good introduction…",
+      "summaryBy": "feed"
+    },
+    {
       "id": "58da9c66b145",
       "title": "Introducing OpenAI for Chile",
       "url": "https://openai.com/index/introducing-openai-for-chile",
@@ -226,6 +730,23 @@
       ],
       "tagMethod": "source",
       "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e91d533d7276",
+      "title": "Introducing eve 1.0",
+      "url": "https://vercel.com/blog/eve-is-now-generally-available",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-17T00:00:00.000Z",
+      "firstSeenAt": "2026-11-18T14:25:12.039Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Today we're announcing , the open-source framework for building production-ready agents.eve 1.0 Since the , we've worked with early adopters to prepare eve for 1.0, shipping 230+ releases and merging thousands of pull requests. With this release, eve is now generally available.public preview in June We've made eve faster, expanded integrations, and improved observability. Security controls let…",
       "summaryBy": "feed"
     },
     {
