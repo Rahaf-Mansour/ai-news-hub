@@ -1,7 +1,440 @@
 {
   "month": "2026-11",
-  "count": 354,
+  "count": 391,
   "items": [
+    {
+      "id": "3241cc096e6e",
+      "title": "My wife thinks AI is a person",
+      "url": "https://bensbites.com/p/my-wife-thinks-ai-is-a-person",
+      "sourceId": "bens-bites",
+      "sourceName": "Ben's Bites",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-19T14:08:21.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "which isn’t as nuts as it sounds...",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f0a746966ded",
+      "title": "[AINews] Gemini 4 Neon: GDM's Opus/Sol Contender",
+      "url": "https://latent.space/p/ainews-gemini-4-neon-gdm-s-opus-sol-contender",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-19T07:07:43.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "November 18, 2026 — Google’s middle tier scores 61 on the Intelligence Index. Plus, Anthropic prices its IPO at $83.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a1765df9d1dd",
+      "title": "Claude Code Action v1.0.283",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.283",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-19T01:17:29.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Full Changelog: v1.0.282...v1.0.283",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "249cf944c137",
+      "title": "Claude Code v2.1.328",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.328",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-19T01:14:04.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Added auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude apps gateway; interactive sessions with no permission mode start in it Added \"onFailure\": \"block\" for mcp_tool hooks, as for command and HTTP hooks: a hook whose call fails blocks the action Added a warning when a message from a session that skips…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "48cd8de2ceff",
+      "title": "Fable: Written, painted and directed by Claude Fable 5.2",
+      "url": "https://claudia.gallery/fable",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-19T00:18:18Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "60 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50554269"
+    },
+    {
+      "id": "72e9a6084382",
+      "title": "Gemini 4 Neon 🚀, Genie 4 worlds 🌍, AI designs chips 🔬",
+      "url": "https://tldr.tech/ai/2026-11-19",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-19T00:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7e3b7280c9c8",
+      "title": "Time-travel debugging for Node",
+      "url": "https://nodeweekly.com/issues/648",
+      "sourceId": "node-weekly",
+      "sourceName": "Node Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-19T00:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "#​648 — November 19, 2026 Read on the Web 🤖 node-skills: Teach Your Coding Agent About Modern Node.js — LLMs can fail to use features that Node has recently added unless you provide a little extra guidance. James's agent skills augment your harness with the likes of node:sqlite, node:ffi, the permission model and new test runner features. James M Snell Build AI Agents That Don’t Burn Your Token…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c3c7756f62d4",
+      "title": "llm-gemini 0.38",
+      "url": "https://simonwillison.net/2026/Nov/18/llm-gemini",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-18T23:59:20.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: llm-gemini 0.38 Today Google introduced Gemini 4 Neon . I wrote recently about how confusing the pricing for the Gemini 4 series was - Neon has somehow made this even worse. Previously the Gemini 4 lineup was Hydrogen, Argon, and Carbon - where Argon and Carbon were the same price , and Hydrogen was 3/4 of that price now but will be 1/4 of that price when the other two double an 1st…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "95ad30a55a7c",
+      "title": "@browserbasehq/stagehand@3.7.4",
+      "url": "https://github.com/browserbase/stagehand/releases/tag/%40browserbasehq%2Fstagehand%403.7.4",
+      "sourceId": "stagehand-releases",
+      "sourceName": "Stagehand releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-18T23:19:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Patch Changes #3150 69c2440 Thanks @miguelg719! - Fix OpenAI strict-schema rejection of the nullable act action while still stripping unknown keys when parsing. #3114 f6b3d85 Thanks @miguelg719! - Fix CAPTCHA awareness options for local Browserbase attachments and forward them through the API. #3491 57b905e Thanks @seanmcguire12! - Fix clicks on partially occluded elements #3132 09063f6 Thanks…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "79b71893e69d",
+      "title": "An updated Clairic and Clairic-flash are now open-weight, from the new Workers AI Superintelligence team",
+      "url": "https://blog.cloudflare.com/open-clairic",
+      "sourceId": "cloudflare-blog",
+      "sourceName": "Cloudflare blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-18T22:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Clairic graduates from preview, while Clairic-flash joins the repertoire on Workers AI. We’re doing an open-weight release for both extraction models.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "635f9c47ae26",
+      "title": "promptfoo 0.126.0",
+      "url": "https://github.com/promptfoo/promptfoo/releases/tag/0.126.0",
+      "sourceId": "promptfoo-releases",
+      "sourceName": "promptfoo releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-18T20:59:28.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "0.126.0 (2026-11-18) Before upgrading Derived metrics. Check string formulas in derivedMetrics. Arithmetic, comparisons, ternaries and score names such as __count still work. Function calls, property access, assignments and formulas longer than 1,024 characters now stop the evaluation before any test cases run. For example, replace max(a, b) with a > b ? a : b. For more complex logic, use a…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f689168723dc",
+      "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+      "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-18T19:54:56.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "496fe2ce2e5b",
+      "title": "code-scan-action: 0.2.3",
+      "url": "https://github.com/promptfoo/promptfoo/releases/tag/code-scan-action-0.2.3",
+      "sourceId": "promptfoo-releases",
+      "sourceName": "promptfoo releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-18T19:00:08.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "0.2.3 (2026-11-18) Changes Full-repository scans use the patched filesystem MCP server 2.3.0 and can share eligible committed text files from the compared revision with the hosted scanner. Working-tree changes and untracked files stay outside that snapshot. Set diffsOnly: true in the scan configuration to share only the Git diff. The action runs the scanner with its bundled Node.js 24 runtime…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "75623b38e68b",
+      "title": "Why your fine-tuning job takes longer than the FLOPs say",
+      "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-18T18:53:43.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7271802c8576",
+      "title": "Playwright MCP v0.0.86",
+      "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.86",
+      "sourceId": "playwright-mcp-releases",
+      "sourceName": "Playwright MCP releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-18T18:50:38.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Highlights 🗂️ Resume extension tab groups — the connection page now lets you select a whole tab group or several individual tabs, rather than one tab at a time. When a client disconnects, its group stays open and turns gray; select that group on the next connection to continue with the same tabs. The new Manage clients page replaces the status page and lists connected clients and their tabs…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f7bfd04d6028",
+      "title": "Software factories and code reviews with Harjot Gill",
+      "url": "https://newsletter.pragmaticengineer.com/p/software-factories-and-code-reviews",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-18T18:08:52.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "CodeRabbit CEO Harjot Gill explains how he shipped over 5,000 pull requests in a month, why he believes human code review is dead, and what he gets from spending $250,000 a month on AI.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "630b41be4a2b",
+      "title": "datasette-arrows 0.1a0",
+      "url": "https://simonwillison.net/2026/Nov/18/datasette-arrows",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-18T17:09:59.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: datasette-arrows 0.1a0 Datasette 1.0a43 added the ability for plugins to implement streaming export formats. Datasette core supports streaming CSV and TSV - you can export millions of lines of data from a table without needing to load it all into memory, because those two file formats support streaming data in chunks. The register_output_renderer() plugin hook can now be used to…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8e6075d168e0",
+      "title": "The Gemini app is now available on lower-memory Android devices.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices",
+      "sourceId": "google-ai-blog",
+      "sourceName": "Google AI blog",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-18T17:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7e06b1181660",
+      "title": "Claude Code Action v1.0.282",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.282",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-18T16:50:35.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's Changed Other changes Send Bun commands in claude.yml to the safety review by @mhegazy in #2096 Remove the unused prepare entrypoint by @mhegazy in #2097 Keep prompt runs to the actor's own comments and the step's output files in place by @mhegazy in #2098 Full Changelog: v1.0.281...v1.0.282",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0bd7a28301d2",
+      "title": "\"Anthropic Is Not a Safe AI Company\" – Coalition Challenges Anthropic Safety",
+      "url": "https://businesswire.com/news/home/20261118974464/en/Anthropic-is-Not-a-Safe-AI-Company---Broad-Coalition-of-Scientists-Legal-Scholars-and-Tech-Leaders-Challenge-Anthropics-Safety-Branding-Ahead-of-IPO",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-18T16:41:22Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "135 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50548485"
+    },
+    {
+      "id": "b397f013e77f",
+      "title": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
+      "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-18T15:59:04Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "51 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50547901"
+    },
+    {
+      "id": "569017a70fd8",
+      "title": "Quoting Daniel Stenberg",
+      "url": "https://simonwillison.net/2026/Nov/18/daniel-stenberg",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-18T15:58:27.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "During the time these agents converted 185,000 lines of C code into 340,000 lines of Rust code (I counted), we merged over 300 commits in the actual curl project. We actually improved curl during these a little more than three weeks. A little over 200 bugfixes actually. 200 bugfixes that none of those rust rewrites have. We also fixed a few vulnerabilities. In another month we have done another…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4510621dd9db",
+      "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+      "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-18T15:09:16Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "57 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50547236"
+    },
+    {
+      "id": "bf1424b145e4",
+      "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
+      "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-18T15:00:23.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "358ebcd58de3",
+      "title": "The PSF end-of-year fundraiser",
+      "url": "https://simonwillison.net/2026/Nov/18/psf-end-of-year-fundraiser",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-18T14:44:48.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "With my Python Software Foundation board director hat on: we've launched our end-of-year fundraiser for the non-profit that supports Python development and the Python community. If your company or your work benefits from Python, please consider donating this year! The PSF looks after the IP behind Python, operates PyPI, sponsors core developer sprints, supports community events (including…",
+      "summaryBy": "feed"
+    },
     {
       "id": "19d24449de7d",
       "title": "Grab My Personal Annual Review Claude Code Plugin",
@@ -56,6 +489,24 @@
       "summaryBy": "feed"
     },
     {
+      "id": "25c96fa5a216",
+      "title": "Anthropic prices initial public offering",
+      "url": "https://anthropic.com/news/anthropic-prices-initial-public-offering",
+      "sourceId": "anthropic-news",
+      "sourceName": "Anthropic News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-18T12:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "Today Anthropic, PBC priced its initial public offering of its Class A common stock.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50553843"
+    },
+    {
       "id": "7c37480e5f49",
       "title": "[AINews] GPT-6.2 Astra, the #2 Frontier Model is better and 20%-600% cheaper, but has mixed reviews; 6.2 Sol likely main workhorse",
       "url": "https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol",
@@ -70,6 +521,108 @@
       ],
       "tagMethod": "source",
       "summary": "November 17, 2026 — GPT-6.2 Astra and Sol lower benchmark costs. Early testers disagree on what Astra is like to work with.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e683d40fba10",
+      "title": "The Silent Consensus",
+      "url": "https://openai.com/index/the-silent-consensus",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-18T10:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "53f2a14376dd",
+      "title": "Inside the Codex sandbox",
+      "url": "https://openai.com/index/inside-the-codex-sandbox",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-18T08:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "9fa731b0ef6c",
+      "title": "Research acceleration: The jagged frontier",
+      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-18T08:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b0d1e4ff5d55",
+      "title": "Introducing Vercel Board",
+      "url": "https://vercel.com/blog/introducing-vercel-board",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-18T08:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Software development is moving from individual agents completing tasks to teams of agents working on more complex projects. A single agent can track its work in a Markdown file, but there isn't a purpose-built primitive for tracking tasks, delegation, statuses, logs, and completed work across many agents and subagents. We ran into this coordination problem internally and started experimenting…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b527b6f0ddce",
+      "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
+      "url": "https://openai.com/business/customer-stories/sumitomo-life",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-18T08:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8b6ac2940fdc",
+      "title": "Managing frontier AI risk: From training to deployment",
+      "url": "https://openai.com/index/managing-frontier-ai-risk",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-18T06:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
       "summaryBy": "feed"
     },
     {
@@ -109,6 +662,58 @@
       "discussionUrl": "https://news.ycombinator.com/item?id=50541619"
     },
     {
+      "id": "28be48dfcbbd",
+      "title": "Introducing Vercel X",
+      "url": "https://vercel.com/blog/vercel-x",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "pm",
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "Today we’re launching , a six-week accelerator for AI founders at the idea and pre-seed stages.Vercel X Join a cohort of 40 teams at our San Francisco HQ and build alongside Vercel’s product leaders, designers, and engineers. The program takes no equity for participation and offers access to a program-wide pool of more than $9M in credits from Vercel, AWS, Anthropic, OpenAI, and other partners…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "3e97af5b8fc3",
+      "title": "What developers think of HTML right now",
+      "url": "https://frontendfoc.us/issues/767",
+      "sourceId": "frontend-focus",
+      "sourceName": "Frontend Focus",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Frontend Focus #​767 — November 18, 2026 | Read on the web 🗳️ The State of HTML 2026 Results The State of HTML 2026 results are now out covering what developers are using, loving and struggling with, plus how much they use AI. Declarative, element-based features are winners, while form controls remain difficult. Some highlights: / (72.5%) and (67.8%) are the most used interactivity features…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "679cee5ea146",
+      "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
+      "url": "https://huggingface.co/blog/rumble-2-flash",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
       "id": "6cab9c8cd383",
       "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
       "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
@@ -123,6 +728,40 @@
       ],
       "tagMethod": "source",
       "summary": "Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "81d28d103b78",
+      "title": "GPT-6.2 Astra 🧠, Microsoft’s seven models 🚀, Replit Missions 🤖",
+      "url": "https://tldr.tech/ai/2026-11-18",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "af1852b4c46d",
+      "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+      "url": "https://huggingface.co/blog/moe-expert-streaming",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "firstSeenAt": "2026-11-19T14:36:32.287Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
       "summaryBy": "feed"
     },
     {
