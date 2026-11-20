@@ -1,7 +1,267 @@
 {
   "month": "2026-11",
-  "count": 391,
+  "count": 411,
   "items": [
+    {
+      "id": "e7354365dbd8",
+      "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
+      "url": "https://anthropic.com/news/ipo-close",
+      "sourceId": "anthropic-news",
+      "sourceName": "Anthropic News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-20T12:00:00.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1177dfbd92c1",
+      "title": "[AINews] Anthropic successfully completes largest IPO in history, valued at $1.5T",
+      "url": "https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-20T07:12:24.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "November 19, 2026 — ANT went from $83 at pricing to $111.50 at the open and $97.17 at the close. Plus, Google opens Genie 4 to developers.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7cbbfe203b12",
+      "title": "Crash Course in Design for PMs",
+      "url": "https://news.aakashg.com/p/design-sense",
+      "sourceId": "product-growth",
+      "sourceName": "Product Growth (Aakash Gupta)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-20T03:01:38.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "A design school crash course for PMs: the 12 concepts designers learn first, 5 drills to train your eye, and how to get AI to design well.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e486efe85b2a",
+      "title": "Token fraud is here and it’s BAD (YouTube)",
+      "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-20T02:49:57.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Claire Vo runs ChatPRD , an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time. In this YouTube video (see also the accompanying Twitter post ) Claire describes the flood of token fraud she has seen from groups abusing the product's free trial, sometimes just to get…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "29fc9a19e60f",
+      "title": "Postgres 19 Repack: Faster, Built-In Table Bloat Cleanup",
+      "url": "https://snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat",
+      "sourceId": "hn-fullstack",
+      "sourceName": "Hacker News · Full-stack",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-20T02:43:49Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "141 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50569516"
+    },
+    {
+      "id": "211fbe8009a4",
+      "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+      "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "222a3317cded",
+      "title": "Scaling Linear’s GTM to $100M ARR — Cristina Cordova, COO",
+      "url": "https://latent.space/p/linear-scaling",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-19T23:58:21.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "rules",
+      "summary": ">50% of tickets written by agents, the AI budgets behind $100M-in-months ARR, and selling without SDRs or FDEs",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "227aaf8048f5",
+      "title": "Claude Code Action v1.0.284",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.284",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-19T22:17:34.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Full Changelog: v1.0.283...v1.0.284",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "9166064c2f31",
+      "title": "Claude Code v2.1.329",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.329",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-19T22:14:41.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Added a trust dialog warning that says where a folder's hooks are declared Added a warning in the conversation, in Claude Desktop and other non-interactive hosts, when hooks in managed settings fail to load Added this session's scheduled tasks, /loop wakeups, the goal and this conversation's forks to /tasks; x stops one after asking Added a \"Server message\" row to a server's page…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4ba1303d2ee2",
+      "title": "PostgreSQL 19 Released",
+      "url": "https://simonwillison.net/2026/Nov/19/postgresql-19",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-19T20:43:57.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "rules",
+      "summary": "Most years PostgreSQL ships a new release in September, but this year's release came two months later thanks mainly to the flurry of issues that the PostgreSQL team needed to address as part of the ongoing AI-reported vulnerability apocalypse. This release was definitely worth the wait. My favorite new feature is this one: For applications that send reads to standbys, PostgreSQL 19 adds…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b00f82b6db94",
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval",
+      "sourceId": "google-ai-blog",
+      "sourceName": "Google AI blog",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-19T18:00:00.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "be373132dcb8",
+      "title": "Claude solves two open problems in the physics of black holes",
+      "url": "https://anthropic.com/research/claude-black-hole-physics",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-19T17:30:44Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "518 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50563148"
+    },
+    {
+      "id": "04da227b0cee",
+      "title": "The Pulse: Is Amazon’s writing culture collapsing because of AI?",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-is-amazons-writing-culture",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-19T17:08:59.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Also: Anthropic goes public with the largest-ever IPO, Meta frantically reverses shutdown of popular AI coding harness Conductor, and more",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "bab1a902faa1",
+      "title": "Anthropic’s Nasdaq debut",
+      "url": "https://reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-19T17:02:40Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "1104 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50562754"
+    },
+    {
+      "id": "2adef6bfeca0",
+      "title": "Walter Isaacson on curiosity and creativity in the AI age.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson",
+      "sourceId": "google-ai-blog",
+      "sourceName": "Google AI blog",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-19T17:00:00.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode.",
+      "summaryBy": "feed"
+    },
     {
       "id": "3241cc096e6e",
       "title": "My wife thinks AI is a person",
@@ -17,6 +277,23 @@
       ],
       "tagMethod": "source",
       "summary": "which isn’t as nuts as it sounds...",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6687f7be62c3",
+      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
       "summaryBy": "feed"
     },
     {
@@ -91,6 +368,23 @@
       "discussionUrl": "https://news.ycombinator.com/item?id=50554269"
     },
     {
+      "id": "4b08ec50268e",
+      "title": "Deploying Daybreak Red",
+      "url": "https://openai.com/business/learn/deploying-daybreak-red",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-19T00:00:00.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
+      "summaryBy": "feed"
+    },
+    {
       "id": "72e9a6084382",
       "title": "Gemini 4 Neon 🚀, Genie 4 worlds 🌍, AI designs chips 🔬",
       "url": "https://tldr.tech/ai/2026-11-19",
@@ -122,6 +416,57 @@
       ],
       "tagMethod": "source",
       "summary": "#​648 — November 19, 2026 Read on the Web 🤖 node-skills: Teach Your Coding Agent About Modern Node.js — LLMs can fail to use features that Node has recently added unless you provide a little extra guidance. James's agent skills augment your harness with the likes of node:sqlite, node:ffi, the permission model and new test runner features. James M Snell Build AI Agents That Don’t Burn Your Token…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a2fb00344062",
+      "title": "Get started with Daybreak Blue",
+      "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-19T00:00:00.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "cb99e2baa62e",
+      "title": "See PR scans in action",
+      "url": "https://openai.com/business/learn/pr-scans-demo",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-19T00:00:00.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e29ac258c013",
+      "title": "Explore the Codex Security Plugin",
+      "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-19T00:00:00.000Z",
+      "firstSeenAt": "2026-11-20T14:14:54.037Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
       "summaryBy": "feed"
     },
     {
