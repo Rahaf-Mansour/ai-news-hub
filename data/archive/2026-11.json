@@ -1,7 +1,286 @@
 {
   "month": "2026-11",
-  "count": 411,
+  "count": 437,
   "items": [
+    {
+      "id": "38c61351fe0d",
+      "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-22T08:57:34Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "252 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50597612"
+    },
+    {
+      "id": "21bd1d482ae2",
+      "title": "Muru",
+      "url": "https://simonwillison.net/2026/Nov/21/muru",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-21T23:56:28.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and WSGI Python apps both in development and production. As he did with wrapture , he's been publishing an extraordinarily detailed account…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0d3333ef9d9b",
+      "title": "🧠 Community Wisdom: Handling context switching with multiple agents, giving feedback on AI-generated designs, getting AI to write less like AI, why PMs don’t share what they’re really working on",
+      "url": "https://lennysnewsletter.com/p/community-wisdom-handling-context",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-21T16:49:56.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Community Wisdom 306",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2b32d4b379bc",
+      "title": "[AINews] Riemann Hypothesis proved...twice independently",
+      "url": "https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-21T05:02:13.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "November 20 2026 —",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d4bda1d65d79",
+      "title": "Claude Code Action v1.0.286",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.286",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-20T22:41:08.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Full Changelog: v1.0.285...v1.0.286",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "af8a417bf8a5",
+      "title": "Claude Code Action v1.0.285",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.285",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-20T22:39:22.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's Changed Other changes Use the base branch's version of files that the workflow's inputs name by @mhegazy in #2099 Full Changelog: v1.0.284...v1.0.285",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c180aada27bd",
+      "title": "How to Ship to Production with AI Agents",
+      "url": "https://news.aakashg.com/p/ai-agents-ship-to-production",
+      "sourceId": "product-growth",
+      "sourceName": "Product Growth (Aakash Gupta)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-20T22:34:58.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "TinyFish went from 100K to 300K users in 28 days. CPO Shuhao Zhang shows the agent pipeline behind how they ship, from AI code review to a 1% rollout.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7ce40af71312",
+      "title": "Claude Code v2.1.330",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-20T22:32:56.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f65661a30841",
+      "title": "Anthropic's IPO Bust Deepens $4T AI Wipeout on Wall Street",
+      "url": "https://wsj.com/finance/stocks/anthropics-ipo-bust-punctuates-4-trillion-ai-wipeout-on-wall-street-f1f1ec90",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-20T21:18:46Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "66 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50582280"
+    },
+    {
+      "id": "c989db0d32fd",
+      "title": "The War Against Slop and an Emerging Weapon to Fight it: Formal Verification",
+      "url": "https://latent.space/p/formal-verification",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-20T21:18:41.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Proving software correct with math has traditionally required specialist work. Now AI and Lean are helping automate the process.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "81ce5b24dd89",
+      "title": "Quoting Ravi Vakil",
+      "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-20T19:21:49.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hope was to bring Alessandro to Stanford for a year to polish the writing and then announce it after running it by enough people. Now it…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7c0fb66e7725",
+      "title": "Fragments: November 20",
+      "url": "https://martinfowler.com/fragments/2026-11-20.html",
+      "sourceId": "martin-fowler",
+      "sourceName": "Martin Fowler",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-20T18:38:00.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Marcus Borg recounts an experiment to investigate if healthy code was cheaper for agents to review. Between a typical unhealthy pull request (CodeHealth 2.8) and a typical healthy one (9.7), that adds up to 22 to 35%. The measures of health come from CodeScene. The experiment looked at three LLMs, 465 pull requests on 246 open source repositories. Each pull request was put through a review and…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1fa64136a1e4",
+      "title": "AI is Changing the Cross-Platform Decision Matrix",
+      "url": "https://devblogs.microsoft.com/dotnet/ai-cross-platform-decision-matrix",
+      "sourceId": "dotnet-blog",
+      "sourceName": ".NET Blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-20T18:00:00.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "AI agents rebuilt a .NET MAUI app with platform UI in days. See what that cost to build, what it costs to maintain, and what changed at runtime, so you can weigh the same choice for your app. The post AI is Changing the Cross-Platform Decision Matrix appeared first on .NET Blog.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b8e1839046bc",
+      "title": "Quoting Levent Alpöge",
+      "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-20T16:30:48.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Claude and I have also formalized the arguments without assumptions. It is natural to feel that this is an end, in my case a loss of a…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "fda5004e845f",
+      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+      "url": "https://theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-20T13:29:59Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "514 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50574383"
+    },
+    {
+      "id": "9e4ce01edc37",
+      "title": "Deterministic Simulation Testing Is for Everyone",
+      "url": "https://outdata.net/blog/261120",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-20T13:19:48Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "81 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50574264"
+    },
     {
       "id": "e7354365dbd8",
       "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
@@ -20,6 +299,23 @@
       "summaryBy": "feed"
     },
     {
+      "id": "3ea993db7e3c",
+      "title": "Combatting adversarial distillation",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-20T10:00:00.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
+      "summaryBy": "feed"
+    },
+    {
       "id": "1177dfbd92c1",
       "title": "[AINews] Anthropic successfully completes largest IPO in history, valued at $1.5T",
       "url": "https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t",
@@ -34,6 +330,40 @@
       ],
       "tagMethod": "rules",
       "summary": "November 19, 2026 — ANT went from $83 at pricing to $111.50 at the open and $97.17 at the close. Plus, Google opens Genie 4 to developers.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "36ed53299827",
+      "title": "Vercel completes ISO/IEC 42001:2023 certification",
+      "url": "https://vercel.com/blog/vercel-completes-iso-iec-42001-2023-certification",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Vercel has completed its ISO/IEC 42001:2023 certification, meeting the international standard for AI management systems. This certification gives our customers confidence to ship fast with agents on Vercel, demonstrating how Vercel designs, builds, operates, and governs our AI products. Our AI management system covers Vercel’s underlying infrastructure and core AI products, including AI Gateway…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "480c7f59bbc9",
+      "title": "llm-gemini 0.38.1",
+      "url": "https://simonwillison.net/2026/Nov/20/llm-gemini",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-20T03:01:57.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: llm-gemini 0.38.1 Gemini 4 Carbon only supports low , medium and high reasoning levels - but Gemini 4 Hydrogen and Gemini 4 Neon both have an extra xhigh level. I missed that when I added those models to the llm-gemini plugin, which is now fixed in this dot release. The xhigh setting for Hydrogen makes a significant difference. I updated my Gemini 4 comparison grid - note how Hydrogen…",
       "summaryBy": "feed"
     },
     {
@@ -106,6 +436,91 @@
       "summaryBy": "feed"
     },
     {
+      "id": "80d31a6dee29",
+      "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+      "url": "https://huggingface.co/blog/inkling2mini",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "913a0c1689ff",
+      "title": "Spring AI 2.1.0 GA and 2.0.3 GA Available Now",
+      "url": "https://spring.io/blog/2026/11/20/spring-ai-2-1-0-GA-available-now",
+      "sourceId": "spring-blog",
+      "sourceName": "Spring blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "afb95c970652",
+      "title": "Gemini tool retrieval 🔧, Stripe evals methods 👨‍💻, agent swarms 🐝",
+      "url": "https://tldr.tech/ai/2026-11-20",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d15c45643214",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "url": "https://openai.com/business/customer-stories/hebbia",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f4784c304003",
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "url": "https://openai.com/index/introducing-medchembench",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
+      "summaryBy": "feed"
+    },
+    {
       "id": "222a3317cded",
       "title": "Scaling Linear’s GTM to $100M ARR — Cristina Cordova, COO",
       "url": "https://latent.space/p/linear-scaling",
@@ -174,6 +589,24 @@
       "tagMethod": "rules",
       "summary": "Most years PostgreSQL ships a new release in September, but this year's release came two months later thanks mainly to the flurry of issues that the PostgreSQL team needed to address as part of the ongoing AI-reported vulnerability apocalypse. This release was definitely worth the wait. My favorite new feature is this one: For applications that send reads to standbys, PostgreSQL 19 adds…",
       "summaryBy": "feed"
+    },
+    {
+      "id": "561f788dfcc0",
+      "title": "No Bailout for the AI Bubble, Anthropic IPO Protesters Say",
+      "url": "https://techpolicy.press/no-bailout-for-the-ai-bubble-anthropic-ipo-protesters-say",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-19T18:42:13Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "51 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50564282"
     },
     {
       "id": "b00f82b6db94",
@@ -433,6 +866,23 @@
       ],
       "tagMethod": "source",
       "summary": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "a4ea85254a88",
+      "title": "How Public Evals Work and Fail, and What Should Change",
+      "url": "https://eugeneyan.com/writing/public-evals",
+      "sourceId": "eugene-yan",
+      "sourceName": "Eugene Yan",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-19T00:00:00.000Z",
+      "firstSeenAt": "2026-11-22T13:30:33.982Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "rules",
+      "summary": "How to read eval scores and what to question, from a teardown of 12 benchmarks.",
       "summaryBy": "feed"
     },
     {
