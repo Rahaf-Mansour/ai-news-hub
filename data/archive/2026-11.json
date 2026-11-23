@@ -1,7 +1,178 @@
 {
   "month": "2026-11",
-  "count": 437,
+  "count": 450,
   "items": [
+    {
+      "id": "2bb834ddd999",
+      "title": "🎙️ How I AI: OpenClaw for executives: Automate every 1% annoyance",
+      "url": "https://lennysnewsletter.com/p/how-i-ai-openclaw-for-executives",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-23T16:01:48.000Z",
+      "firstSeenAt": "2026-11-23T16:18:27.603Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Your weekly listens from How I AI, part of the Lenny’s Podcast Network",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d8dc47c5b8f3",
+      "title": "Import AI 482: Huawei kernel benchmarks; airborne drone detection; and a national lab’s AI science benchmark",
+      "url": "https://jack-clark.net/2026/11/23/import-ai-482-huawei-kernel-benchmarks-airborne-drone-detection-and-a-national-labs-ai-science-benchmark",
+      "sourceId": "import-ai",
+      "sourceName": "Import AI (Jack Clark)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-23T14:11:17.000Z",
+      "firstSeenAt": "2026-11-23T16:18:27.603Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. Subscribe now Chinese researchers optimize Huawei chips with a kernel improvement benchmark:…AscendGYM will help China do its own form of RSI…Researchers with the Shenzhen Loop Area Institute, a Chinese research organization, have built and released AscendGYM, […]",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "df9acd756c94",
+      "title": "OpenClaw for executives: Automate every 1% annoyance | Ankit Maheshwari (Innovaccer)",
+      "url": "https://lennysnewsletter.com/p/openclaw-for-executives-automate",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-23T13:04:43.000Z",
+      "firstSeenAt": "2026-11-23T16:18:27.603Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Watch now (31 mins) | 🎙️ Ankit Maheshwari (CTO, Innovaccer) walks me through the OpenClaw Jarvis he runs on a Mac Mini to clear every 1% annoyance in his life",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "563f2de83f69",
+      "title": "Selenium 4.54.0",
+      "url": "https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.54.0",
+      "sourceId": "selenium-releases",
+      "sourceName": "Selenium releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-23T09:13:57.000Z",
+      "firstSeenAt": "2026-11-23T16:18:27.603Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Detailed Changelogs by Component Java | Python | DotNet | Ruby | JavaScript What's Changed [dotnet] [bidi] Add missing userContexts in Subscribe command by @nvborisenko in #18330 [build] extend the EngFlow cache for GHA to all bindings by @titusfortner in #18331 [build] extend the EngFlow cache for GHA to Rust by @titusfortner in #18332 [rb] stop the driver service when starting a session fails…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "28c4d4a7a2db",
+      "title": "Introducing Audited ZDR on AI Gateway",
+      "url": "https://vercel.com/blog/introducing-audited-zdr-on-ai-gateway",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "firstSeenAt": "2026-11-23T16:18:27.603Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "AI is now used in every part of a business, and as a result, companies send source code, customer records, and regulated data through inference providers. The assurance that no data is retained after processing is still publicly unverified. Payment platforms, cloud infrastructure, and most other layers that handle data this sensitive have a way to prove their controls to outside parties, and…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6a33865deb84",
+      "title": "OpenAI publishes progress 🧠, Inkling 2 Mini 💧, Riemann proof 📐",
+      "url": "https://tldr.tech/ai/2026-11-23",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-23T00:00:00.000Z",
+      "firstSeenAt": "2026-11-23T16:18:27.603Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6fd4c32fe34a",
+      "title": "How to build and maintain an agentic evaluation",
+      "url": "https://huggingface.co/blog/agentic-evals",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-23T00:00:00.000Z",
+      "firstSeenAt": "2026-11-23T16:18:27.603Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8cc270b18470",
+      "title": "Select Styling Specimens",
+      "url": "https://simonwillison.net/2026/Nov/22/select-styling",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-22T19:45:06.000Z",
+      "firstSeenAt": "2026-11-23T16:18:27.603Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "rules",
+      "summary": "Tool: Select Styling Specimens I got frustrated at how HTML &lt;select&gt; boxes default to looking different in different browsers, and are (I think) quite ugly in Chrome: So I had Claude Fable 5.2 build me this page showing all of the ways they can be styled: Build an HTML page that shows all of the ways a select box can be styled, I plan to take screenshots in every desktop and mobile browser…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0045010b29f8",
+      "title": "First principles: What it takes to be a great product manager in the AI era | Sherif Mansour",
+      "url": "https://lennysnewsletter.com/p/first-principles-what-it-takes-to",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-22T13:31:53.000Z",
+      "firstSeenAt": "2026-11-23T16:18:27.603Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "source",
+      "summary": "Sherif Mansour on why PMs are thriving in the AI era, the artist PM advantage, and why juniors are your secret weapon now",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "abe4c1951f79",
+      "title": "Testing Terraform with AWS Emulator",
+      "url": "https://notes.hatedabamboo.me/terraform-tests-with-aws-emulator",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-22T13:00:36Z",
+      "firstSeenAt": "2026-11-23T16:18:27.603Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "78 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50599309"
+    },
     {
       "id": "38c61351fe0d",
       "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
@@ -21,6 +192,41 @@
       "discussionUrl": "https://news.ycombinator.com/item?id=50597612"
     },
     {
+      "id": "604c32380442",
+      "title": "A Slinky on an Escalator Is a Weirdly Good Test of LLM Intelligence",
+      "url": "https://morethanamachine.com/posts/slinky-escalator-benchmark",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-22T07:31:41Z",
+      "firstSeenAt": "2026-11-23T16:18:27.603Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "30 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50597156"
+    },
+    {
+      "id": "de5cd1a6d51d",
+      "title": "Perplexity and Intelligence",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-22T00:00:00.000Z",
+      "firstSeenAt": "2026-11-23T16:18:27.603Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+      "summaryBy": "feed"
+    },
+    {
       "id": "21bd1d482ae2",
       "title": "Muru",
       "url": "https://simonwillison.net/2026/Nov/21/muru",
@@ -36,6 +242,24 @@
       "tagMethod": "source",
       "summary": "Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and WSGI Python apps both in development and production. As he did with wrapture , he's been publishing an extraordinarily detailed account…",
       "summaryBy": "feed"
+    },
+    {
+      "id": "c1675fe83fc0",
+      "title": "A Better Vocabulary for Testing",
+      "url": "https://alperenkeles.com/posts/vocab-for-testing",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-21T22:15:39Z",
+      "firstSeenAt": "2026-11-23T16:18:27.603Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "139 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50594182"
     },
     {
       "id": "0d3333ef9d9b",
