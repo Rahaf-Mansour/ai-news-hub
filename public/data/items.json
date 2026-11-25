@@ -1,8 +1,388 @@
 {
-  "generatedAt": "2026-11-24T16:05:20.142Z",
+  "generatedAt": "2026-11-25T15:53:54.694Z",
   "llmEnabled": false,
   "windowDays": 30,
   "items": [
+    {
+      "id": "170ba12c1bad",
+      "title": "Introducing Search for Agents",
+      "url": "https://blog.cloudflare.com/search-for-agents",
+      "sourceId": "cloudflare-blog",
+      "sourceName": "Cloudflare blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-25T14:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Flip one toggle to make your site searchable by AI agents — complete with automatic content indexing, a discoverable search API, and native HTTP QUERY support.",
+      "summaryBy": "feed",
+      "score": 7.79,
+      "areas": [
+        "backend"
+      ]
+    },
+    {
+      "id": "fa9827167ead",
+      "title": "Gemini 4 Neon beat GPT-6.2 and Claude in my 25-task AI benchmark",
+      "url": "https://lennysnewsletter.com/p/gemini-4-neon-beat-gpt-62-and-claude",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-25T13:04:21.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude",
+        "pm",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Watch now (32 mins) | 🎙️ My late-2026 How I AI bench: GPT-6.2 disappointed me, Opus 5.5 is my least annoying daily driver, and Gemini 4 Neon is now my top pick",
+      "summaryBy": "feed",
+      "score": 7.2,
+      "areas": []
+    },
+    {
+      "id": "c22a751951e5",
+      "title": "Vitest v5.1.2",
+      "url": "https://github.com/vitest-dev/vitest/releases/tag/v5.1.2",
+      "sourceId": "vitest-releases",
+      "sourceName": "Vitest releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-25T11:42:58.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "qa",
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Bug Fixes Report global setup errors instead of \"no test files\" - by @jszumski and Claude Opus 5.5 in #12031 (b7572) Warn when projects attach the same file - by @sheremet-va in #12043 (5f884) browser: Don't fail trace when locator has no match for non-playwright providers - by @hi-ogawa and Claude Opus 5.5 in #11975 (f0500) Save failure screenshots per instance - by @sheremet-va in #12042… (+2 earlier patches)",
+      "summaryBy": "feed",
+      "score": 4.06,
+      "areas": [
+        "automation"
+      ]
+    },
+    {
+      "id": "d0a3a7f662b5",
+      "title": "An Indic Voice Agent with CUGA",
+      "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-25T10:22:09.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed",
+      "score": 5.43,
+      "areas": []
+    },
+    {
+      "id": "190619a69a1b",
+      "title": "[AINews] Gemini 4 Neon marks GDM's full return as a Frontier Lab",
+      "url": "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-25T04:29:07.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "November 24, 2026 — Neon beats Astra and Fable on LiveBench and cuts Theo’s TS Rust benchmark runtime by 48.6%.",
+      "summaryBy": "feed",
+      "score": 4.91,
+      "areas": []
+    },
+    {
+      "id": "4e211ed17270",
+      "title": "Claude Code Action v1.0.290",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.290",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-25T01:35:12.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's Changed Other changes Restore GITHUB_OUTPUT when the session ends by @mhegazy in #2121 Full Changelog: v1.0.289...v1.0.290 (+23 earlier patches)",
+      "summaryBy": "feed",
+      "score": 4.69,
+      "areas": []
+    },
+    {
+      "id": "15aa96a95483",
+      "title": "Claude Code v2.1.332",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-25T01:32:14.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names Added a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start Added \"Always deliver\" to the prompt for held messages from other sessions Added a footer… (+17 earlier patches)",
+      "summaryBy": "feed",
+      "score": 4.68,
+      "areas": []
+    },
+    {
+      "id": "4e090e84d5a0",
+      "title": "OpenAI solves matrix math 🔢, SWE-2.1 💻, swarm limitations 🐝",
+      "url": "https://tldr.tech/ai/2026-11-25",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-25T00:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed",
+      "score": 4.57,
+      "areas": []
+    },
+    {
+      "id": "6ff348e652c9",
+      "title": "Three LLM inflection points in twelve months",
+      "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-24T23:02:07.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today…",
+      "summaryBy": "feed",
+      "score": 4.5,
+      "areas": []
+    },
+    {
+      "id": "b5ea74ac42de",
+      "title": "Anthropic CEO Dario Amodei and Sister Daniela Sold $561M in Stock During IPO",
+      "url": "https://forbes.com/sites/siladityaray/2026/11/24/anthropic-ceo-dario-amodei-sold-280-million-in-shares-as-part-of-record-ipo",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-24T22:27:19Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "50 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50635706",
+      "score": 4.96,
+      "areas": []
+    },
+    {
+      "id": "0ecfdb617e7d",
+      "title": "Your Coding Agent Wrote the Test. Who Checks It? with Donovan Brady",
+      "url": "https://testguild.com/podcast/a613-donovan",
+      "sourceId": "testguild",
+      "sourceName": "TestGuild",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-24T21:17:30.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "About This Episode: Your coding agent just wrote the test. Who checks it? Donovan Brady of Leapwork is back on […]",
+      "summaryBy": "feed",
+      "score": 4.39,
+      "areas": []
+    },
+    {
+      "id": "e1da16352396",
+      "title": "The Pragmatic Engineer Essay Challenge: Category Winners (Part 1)",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-essay-challenge",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-24T19:16:38.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "How is AI changing the way we build software? Excerpts from three category winners of our recent essay contest, with links to 40 more by software engineers and experts",
+      "summaryBy": "feed",
+      "score": 4.26,
+      "areas": []
+    },
+    {
+      "id": "d2963dce727b",
+      "title": "OpenAI reveals they solved VP ≠ VNP before Anthropic",
+      "url": "https://github.com/openai/math/tree/main/preprints/VP-and-VNP-are-different-November-23-2026",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-24T18:55:12Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "96 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50632756",
+      "score": 4.73,
+      "areas": []
+    },
+    {
+      "id": "2a31448f04ed",
+      "title": "Introducing DocumentExtractionClient (preview): Extract documents in .NET",
+      "url": "https://devblogs.microsoft.com/dotnet/document-extraction-dotnet-preview",
+      "sourceId": "dotnet-blog",
+      "sourceName": ".NET Blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-24T18:05:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Meet DocumentExtractionClient, a preview .NET API that turns PDFs, images, and other documents into structured content, with a set of starter providers to choose from. The post Introducing DocumentExtractionClient (preview): Extract documents in .NET appeared first on .NET Blog.",
+      "summaryBy": "feed",
+      "score": 6.18,
+      "areas": [
+        "backend"
+      ]
+    },
+    {
+      "id": "002bc4ff2409",
+      "title": "Anthropic Staff Openly Talk About ‘Taking Over the World’, Claims Max Tegmark",
+      "url": "https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-24T17:10:45Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "220 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50631210",
+      "score": 4.63,
+      "areas": []
+    },
+    {
+      "id": "f796e127a00b",
+      "title": "GPT 6.2 Astra Solves a Historical Mystery",
+      "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-24T16:53:59.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an anonymous 1808 sketchbook held at Yale’s Beinecke Library . It did so extremely quickly (in just 22 minutes), using publicly available primary and secondary sources. To do so, it…",
+      "summaryBy": "feed",
+      "score": 4.11,
+      "areas": []
+    },
+    {
+      "id": "bbef1e94d167",
+      "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+      "url": "https://news.ycombinator.com/item?id=50630809",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-24T16:45:44Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "396 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50630809",
+      "score": 4.6,
+      "areas": []
+    },
+    {
+      "id": "16565a3f5dc0",
+      "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+      "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-24T16:34:13.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed",
+      "score": 4.09,
+      "areas": []
+    },
+    {
+      "id": "8e9b94fee057",
+      "title": "Show HN: Mason – A lightweight Postgres read-replica, built on columnar storage",
+      "url": "https://masondata.ai/",
+      "sourceId": "hn-fullstack",
+      "sourceName": "Hacker News · Full-stack",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-24T16:11:52Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "99 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50630294",
+      "score": 3.07,
+      "areas": [
+        "backend"
+      ]
+    },
     {
       "id": "e2544bc1aeb2",
       "title": "How Gemini is changing the game for Golden State's organization and fans.",
@@ -19,7 +399,7 @@
       "tagMethod": "source",
       "summary": "Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.",
       "summaryBy": "feed",
-      "score": 6.99,
+      "score": 5.06,
       "areas": []
     },
     {
@@ -39,7 +419,7 @@
       "summary": "90 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50628932",
-      "score": 6.35,
+      "score": 4.49,
       "areas": []
     },
     {
@@ -58,7 +438,7 @@
       "tagMethod": "source",
       "summary": "It’s not me, it’s you",
       "summaryBy": "feed",
-      "score": 5.78,
+      "score": 3.95,
       "areas": []
     },
     {
@@ -78,7 +458,7 @@
       "tagMethod": "rules",
       "summary": "Listen to this episode on: Spotify | Apple Podcasts In a world of AI products, what even counts as a “bug” — and can you still promise to fix it? Petra Wille and Teresa Torres take on a word that’s quietly breaking down in the age of",
       "summaryBy": "feed",
-      "score": 5.77,
+      "score": 3.95,
       "areas": []
     },
     {
@@ -98,7 +478,45 @@
       "summary": "136 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50627836",
-      "score": 6.21,
+      "score": 4.42,
+      "areas": []
+    },
+    {
+      "id": "3c6728c1bfd1",
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-24T13:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+      "summaryBy": "feed",
+      "score": 4.89,
+      "areas": []
+    },
+    {
+      "id": "f3aa9260f109",
+      "title": "Searching for distant planets with Astra",
+      "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-24T11:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.",
+      "summaryBy": "feed",
+      "score": 4.79,
       "areas": []
     },
     {
@@ -117,7 +535,7 @@
       "tagMethod": "source",
       "summary": "In this post I show how you can use a custom [InterpolatedStringHandler] to ensure string interpolation formats values using the invariant culture",
       "summaryBy": "feed",
-      "score": 5.38,
+      "score": 3.74,
       "areas": [
         "backend"
       ]
@@ -138,7 +556,7 @@
       "tagMethod": "source",
       "summary": "Release: datasette-charts 0.2a0 I introduced this new charting plugin for Datasette yesterday . Today it's gained integration with Datasette Agent , so now you can ask chat for a chart and it will create one for you using the same underlying chart suggestion and generation tools. Here's a demo video, recorded on agent.datasette.io where you can sign in with GitHub to try the plugin yourself…",
       "summaryBy": "feed",
-      "score": 4.89,
+      "score": 3.49,
       "areas": []
     },
     {
@@ -157,7 +575,7 @@
       "tagMethod": "source",
       "summary": "November 23, 2026 — Nvidia reinstates its founder, and OpenAI publishes its internal loss curve and proposes a shared training limit.",
       "summaryBy": "feed",
-      "score": 4.88,
+      "score": 3.49,
       "areas": []
     },
     {
@@ -176,7 +594,7 @@
       "tagMethod": "source",
       "summary": "Release: datasette-agent 0.7a1 A small improvement to Datasette Agent : chat sessions could already open an iframe side panel that could then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Datasette plugins that update fragment hashes when the user interacts with the plugin in a way that changes state. I built this in order to…",
       "summaryBy": "feed",
-      "score": 4.84,
+      "score": 3.47,
       "areas": []
     },
     {
@@ -196,7 +614,7 @@
       "tagMethod": "rules",
       "summary": "Former Google, Amazon, Meta and Microsoft AI PM Mahesh Yadav shows how to build practical AI evals in 4 steps, using Microsoft Foundry.",
       "summaryBy": "feed",
-      "score": 4.6,
+      "score": 3.34,
       "areas": [
         "ai-testing"
       ]
@@ -217,7 +635,7 @@
       "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed",
-      "score": 6.06,
+      "score": 4.82,
       "areas": []
     },
     {
@@ -236,10 +654,67 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 5.56,
+      "score": 4.32,
       "areas": [
         "backend"
       ]
+    },
+    {
+      "id": "ec442b764e04",
+      "title": "How Intentful uses dots to make more time for growth",
+      "url": "https://openai.com/business/customer-stories/intentful-dots",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-24T00:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.",
+      "summaryBy": "feed",
+      "score": 4.32,
+      "areas": []
+    },
+    {
+      "id": "7a6462e387eb",
+      "title": "How iFood scales coding agents across 15,000 repositories",
+      "url": "https://openai.com/business/customer-stories/ifood",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-24T00:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed",
+      "score": 4.32,
+      "areas": []
+    },
+    {
+      "id": "99b93f3e1098",
+      "title": "Clay helps sales teams win with Codex and ChatGPT",
+      "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-24T00:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
+      "summaryBy": "feed",
+      "score": 4.32,
+      "areas": []
     },
     {
       "id": "a52fdc1f4250",
@@ -257,27 +732,7 @@
       "tagMethod": "source",
       "summary": "#​812 — November 24, 2026 Read on the Web JavaScript Weekly Nudeps: Bundler-Like Imports, None of the Baggage — What if you could npm install a package and import it by name in the browser without a bundler? Lea and Dmitry Sharabin's new tool makes this easier than ever using import maps (which it keeps up to date). Run npx nudeps install and add the import map script to your HTML. There are…",
       "summaryBy": "feed",
-      "score": 4.56,
-      "areas": []
-    },
-    {
-      "id": "2db19895234f",
-      "title": "Claude Code Action v1.0.289",
-      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.289",
-      "sourceId": "claude-code-action-releases",
-      "sourceName": "Claude Code Action releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-11-23T23:54:14.000Z",
-      "firstSeenAt": "2026-11-24T16:05:20.142Z",
-      "roles": [
-        "claude",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "What's Changed Other changes Log text as plain text, and post buffered comments in the run step by @mhegazy in #2122 Full Changelog: v1.0.288...v1.0.289 (+22 earlier patches)",
-      "summaryBy": "feed",
-      "score": 4.55,
+      "score": 3.32,
       "areas": []
     },
     {
@@ -296,7 +751,7 @@
       "tagMethod": "source",
       "summary": "GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they describe like this: In a standard Transformer, each layer runs once per forward pass. In a Loop Transformer, a group of weight-shared layers runs for multiple iterations, refining the hidden states from the previous pass. This gives us a deeper network without increasing…",
       "summaryBy": "feed",
-      "score": 4.54,
+      "score": 3.31,
       "areas": []
     },
     {
@@ -315,27 +770,7 @@
       "tagMethod": "source",
       "summary": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of…",
       "summaryBy": "feed",
-      "score": 5.41,
-      "areas": []
-    },
-    {
-      "id": "800aeca2d315",
-      "title": "Claude Code v2.1.331",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
-      "sourceId": "claude-code-releases",
-      "sourceName": "Claude Code releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-11-23T21:34:41.000Z",
-      "firstSeenAt": "2026-11-24T16:05:20.142Z",
-      "roles": [
-        "claude",
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "What's changed Added Code Mode support in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude Platform on AWS Added oidc.groups_jsonpath to the Claude apps gateway, to read groups from the matching entries of a list of objects with a small subset of JSONPath (RFC 9535) Added an API connectivity section to claude doctor that reports whether the API can… (+16 earlier patches)",
-      "summaryBy": "feed",
-      "score": 4.39,
+      "score": 4.24,
       "areas": []
     },
     {
@@ -354,7 +789,7 @@
       "tagMethod": "source",
       "summary": "an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
       "summaryBy": "feed",
-      "score": 5.38,
+      "score": 4.23,
       "areas": []
     },
     {
@@ -374,7 +809,7 @@
       "summary": "76 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50618513",
-      "score": 4.8,
+      "score": 3.69,
       "areas": []
     },
     {
@@ -393,7 +828,7 @@
       "tagMethod": "source",
       "summary": "4.0.1 (2026-11-23) Bug Fixes appium: give each createSession call its own plugin instances (#23214) (a7fbe25) appium: release the manifest lock while a driver/plugin script runs (#23204) (bca2398) appium: remove a session before its driver finishes deleting it (#23215) (43ffd5f) base-driver: bound the state of the BiDi subscriptions (#23198) (db8a588) (+3 earlier patches)",
       "summaryBy": "feed",
-      "score": 2.68,
+      "score": 1.62,
       "areas": [
         "automation"
       ]
@@ -414,7 +849,7 @@
       "tagMethod": "source",
       "summary": "Install Llama on Windows from Hugging Face and the llama.cpp team, download an open model, and call it from a .NET 11 C# file-based app. The post Run local models in your .NET apps with Llama on Windows appeared first on .NET Blog.",
       "summaryBy": "feed",
-      "score": 5.17,
+      "score": 4.12,
       "areas": [
         "backend"
       ]
@@ -435,7 +870,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 4.13,
+      "score": 3.1,
       "areas": []
     },
     {
@@ -454,7 +889,7 @@
       "tagMethod": "source",
       "summary": "Get more helpful Search responses by securely opting in to connect Google Wallet, Drive, and the Gemini app to Personal Intelligence in AI Mode.",
       "summaryBy": "feed",
-      "score": 5.11,
+      "score": 4.09,
       "areas": []
     },
     {
@@ -473,7 +908,7 @@
       "tagMethod": "source",
       "summary": "Your weekly listens from How I AI, part of the Lenny’s Podcast Network",
       "summaryBy": "feed",
-      "score": 4.05,
+      "score": 3.06,
       "areas": []
     },
     {
@@ -492,7 +927,7 @@
       "tagMethod": "rules",
       "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. Subscribe now Chinese researchers optimize Huawei chips with a kernel improvement benchmark:…AscendGYM will help China do its own form of RSI…Researchers with the Shenzhen Loop Area Institute, a Chinese research organization, have built and released AscendGYM, […]",
       "summaryBy": "feed",
-      "score": 3.95,
+      "score": 3.01,
       "areas": []
     },
     {
@@ -511,7 +946,7 @@
       "tagMethod": "source",
       "summary": "Watch now (31 mins) | 🎙️ Ankit Maheshwari (CTO, Innovaccer) walks me through the OpenClaw Jarvis he runs on a Mac Mini to clear every 1% annoyance in his life",
       "summaryBy": "feed",
-      "score": 3.89,
+      "score": 2.97,
       "areas": []
     },
     {
@@ -531,7 +966,7 @@
       "tagMethod": "source",
       "summary": "We’ve launched Enterprise Frontier Safeguards (EFS) in beta on Claude Platform, Claude Platform on AWS, and Claude Models on Google Cloud… We’ve added two event types to organization webhooks, which are in beta.",
       "summaryBy": "feed",
-      "score": 8.33,
+      "score": 7.45,
       "areas": []
     },
     {
@@ -550,29 +985,10 @@
       "tagMethod": "source",
       "summary": "Detailed Changelogs by Component Java | Python | DotNet | Ruby | JavaScript What's Changed [dotnet] [bidi] Add missing userContexts in Subscribe command by @nvborisenko in #18330 [build] extend the EngFlow cache for GHA to all bindings by @titusfortner in #18331 [build] extend the EngFlow cache for GHA to Rust by @titusfortner in #18332 [rb] stop the driver service when starting a session fails…",
       "summaryBy": "feed",
-      "score": 4.7,
+      "score": 3.88,
       "areas": [
         "automation"
       ]
-    },
-    {
-      "id": "f8a4e02f4212",
-      "title": "Connected intelligence for in-house legal",
-      "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
-      "sourceId": "openai-news",
-      "sourceName": "OpenAI News",
-      "tier": "official",
-      "type": "news",
-      "publishedAt": "2026-11-23T08:00:00.000Z",
-      "firstSeenAt": "2026-11-24T16:05:20.142Z",
-      "roles": [
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.",
-      "summaryBy": "feed",
-      "score": 4.64,
-      "areas": []
     },
     {
       "id": "680b35173b97",
@@ -590,7 +1006,26 @@
       "tagMethod": "source",
       "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
       "summaryBy": "feed",
-      "score": 4.64,
+      "score": 3.85,
+      "areas": []
+    },
+    {
+      "id": "f8a4e02f4212",
+      "title": "Connected intelligence for in-house legal",
+      "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "firstSeenAt": "2026-11-24T16:05:20.142Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.",
+      "summaryBy": "feed",
+      "score": 3.85,
       "areas": []
     },
     {
@@ -609,7 +1044,7 @@
       "tagMethod": "source",
       "summary": "AI is now used in every part of a business, and as a result, companies send source code, customer records, and regulated data through inference providers. The assurance that no data is retained after processing is still publicly unverified. Payment platforms, cloud infrastructure, and most other layers that handle data this sensitive have a way to prove their controls to outside parties, and…",
       "summaryBy": "feed",
-      "score": 5.51,
+      "score": 4.78,
       "areas": []
     },
     {
@@ -628,7 +1063,7 @@
       "tagMethod": "source",
       "summary": "日本語版はこちら：Vercel日本法人の代表に花尾和成が就任いたしました has joined Vercel as Country Manager for Japan, based in Tokyo. His appointment is part of our continued investment in the Japanese market, including plans to expand our local team.Kazunari Hanao Japanese developers were early adopters of Next.js. And today, Vercel's customers in Japan include Mitsubishi Corporation, Fujitsu Limited, U-NEXT CO., Ltd., and…",
       "summaryBy": "feed",
-      "score": 4.51,
+      "score": 3.78,
       "areas": []
     },
     {
@@ -647,7 +1082,7 @@
       "tagMethod": "source",
       "summary": "（本記事は、の日本語訳に、花尾本人の就任のご挨拶を加えたものです。）英語版の就任発表 Vercel日本法人の代表に、が就任いたしました（東京拠点）。今後、Vercelは花尾とともに国内のチームを拡充し、日本市場への投資をさらに進めていきます。花尾和成 弊社が10年以上前に公開したNext.jsを、日本の開発者の皆さまはいち早く使い始めてくださいました。そして現在、日本では三菱商事、富士通、U-NEXT、ディー・エヌ・エーといった大企業から、SANUや令和トラベルといったスタートアップまで、幅広い企業にVercelをご利用いただいています。 花尾はこの10年間、日本でソフトウェア企業の運営にリーダーシップを発揮してきました。前職ではPendoの日本法人社長を務め、それ以前にはHashiCorpの日本事業を立ち上げ、Pivotalの東京オフィスで営業部門を統括しました。…",
       "summaryBy": "feed",
-      "score": 4.51,
+      "score": 3.78,
       "areas": []
     },
     {
@@ -666,7 +1101,7 @@
       "tagMethod": "rules",
       "summary": "Release: datasette-charts 0.1a0 I've been thinking about this problem for over a year now, but on Sunday I finally fired up Claude Fable 5.2 to build an initial prototype. The prototype went so well that this is now a full plugin. You can try it out in Datasette Lite here . It looks like this: The new charts plugin works against any table or arbitrary SQL query in Datasette. It defines several…",
       "summaryBy": "feed",
-      "score": 4.84,
+      "score": 4.19,
       "areas": []
     },
     {
@@ -685,7 +1120,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 3.31,
+      "score": 2.68,
       "areas": []
     },
     {
@@ -704,7 +1139,7 @@
       "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed",
-      "score": 3.31,
+      "score": 2.68,
       "areas": []
     },
     {
@@ -723,7 +1158,7 @@
       "tagMethod": "rules",
       "summary": "Tool: Select Styling Specimens I got frustrated at how HTML &lt;select&gt; boxes default to looking different in different browsers, and are (I think) quite ugly in Chrome: So I had Claude Fable 5.2 build me this page showing all of the ways they can be styled: Build an HTML page that shows all of the ways a select box can be styled, I plan to take screenshots in every desktop and mobile browser…",
       "summaryBy": "feed",
-      "score": 4.67,
+      "score": 4.1,
       "areas": []
     },
     {
@@ -742,7 +1177,7 @@
       "tagMethod": "source",
       "summary": "Sherif Mansour on why PMs are thriving in the AI era, the artist PM advantage, and why juniors are your secret weapon now",
       "summaryBy": "feed",
-      "score": 2.98,
+      "score": 2.51,
       "areas": []
     },
     {
@@ -762,7 +1197,7 @@
       "summary": "78 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50599309",
-      "score": 1.97,
+      "score": 1.5,
       "areas": []
     },
     {
@@ -782,7 +1217,7 @@
       "summary": "252 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50597612",
-      "score": 3.36,
+      "score": 2.95,
       "areas": []
     },
     {
@@ -802,7 +1237,7 @@
       "summary": "30 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50597156",
-      "score": 1.83,
+      "score": 1.43,
       "areas": []
     },
     {
@@ -821,7 +1256,7 @@
       "tagMethod": "source",
       "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
       "summaryBy": "feed",
-      "score": 3.67,
+      "score": 3.35,
       "areas": []
     },
     {
@@ -840,7 +1275,7 @@
       "tagMethod": "source",
       "summary": "Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and WSGI Python apps both in development and production. As he did with wrapture , he's been publishing an extraordinarily detailed account…",
       "summaryBy": "feed",
-      "score": 2.67,
+      "score": 2.35,
       "areas": []
     },
     {
@@ -860,7 +1295,7 @@
       "summary": "139 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50594182",
-      "score": 1.64,
+      "score": 1.33,
       "areas": []
     },
     {
@@ -879,7 +1314,7 @@
       "tagMethod": "source",
       "summary": "Community Wisdom 306",
       "summaryBy": "feed",
-      "score": 2.55,
+      "score": 2.29,
       "areas": []
     },
     {
@@ -898,7 +1333,7 @@
       "tagMethod": "source",
       "summary": "November 20 2026 —",
       "summaryBy": "feed",
-      "score": 2.4,
+      "score": 2.21,
       "areas": []
     },
     {
@@ -917,7 +1352,7 @@
       "tagMethod": "source",
       "summary": "TinyFish went from 100K to 300K users in 28 days. CPO Shuhao Zhang shows the agent pipeline behind how they ship, from AI code review to a 1% rollout.",
       "summaryBy": "feed",
-      "score": 2.33,
+      "score": 2.17,
       "areas": []
     },
     {
@@ -937,7 +1372,7 @@
       "summary": "66 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50582280",
-      "score": 2.82,
+      "score": 2.67,
       "areas": []
     },
     {
@@ -956,7 +1391,7 @@
       "tagMethod": "source",
       "summary": "Proving software correct with math has traditionally required specialist work. Now AI and Lean are helping automate the process.",
       "summaryBy": "feed",
-      "score": 2.32,
+      "score": 2.17,
       "areas": []
     },
     {
@@ -975,7 +1410,7 @@
       "tagMethod": "source",
       "summary": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hope was to bring Alessandro to Stanford for a year to polish the writing and then announce it after running it by enough people. Now it…",
       "summaryBy": "feed",
-      "score": 2.3,
+      "score": 2.16,
       "areas": []
     },
     {
@@ -994,7 +1429,7 @@
       "tagMethod": "source",
       "summary": "Marcus Borg recounts an experiment to investigate if healthy code was cheaper for agents to review. Between a typical unhealthy pull request (CodeHealth 2.8) and a typical healthy one (9.7), that adds up to 22 to 35%. The measures of health come from CodeScene. The experiment looked at three LLMs, 465 pull requests on 246 open source repositories. Each pull request was put through a review and…",
       "summaryBy": "feed",
-      "score": 2.3,
+      "score": 2.15,
       "areas": []
     },
     {
@@ -1013,7 +1448,7 @@
       "tagMethod": "source",
       "summary": "AI agents rebuilt a .NET MAUI app with platform UI in days. See what that cost to build, what it costs to maintain, and what changed at runtime, so you can weigh the same choice for your app. The post AI is Changing the Cross-Platform Decision Matrix appeared first on .NET Blog.",
       "summaryBy": "feed",
-      "score": 3.29,
+      "score": 3.15,
       "areas": [
         "backend"
       ]
@@ -1034,7 +1469,7 @@
       "tagMethod": "source",
       "summary": "I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Claude and I have also formalized the arguments without assumptions. It is natural to feel that this is an end, in my case a loss of a…",
       "summaryBy": "feed",
-      "score": 2.28,
+      "score": 2.15,
       "areas": []
     },
     {
@@ -1054,7 +1489,7 @@
       "summary": "514 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50574383",
-      "score": 2.76,
+      "score": 2.63,
       "areas": []
     },
     {
@@ -1074,7 +1509,7 @@
       "summary": "81 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50574264",
-      "score": 1.26,
+      "score": 1.13,
       "areas": []
     },
     {
@@ -1093,7 +1528,27 @@
       "tagMethod": "source",
       "summary": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price.",
       "summaryBy": "feed",
-      "score": 4.75,
+      "score": 4.63,
+      "areas": []
+    },
+    {
+      "id": "7c0d7ede45bc",
+      "title": "The Claude Enterprise Analytics API has a new rule for when a chat in Chat and Cowork unified counts as a session.",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-20-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-20T12:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "In List User ActivityPreview with links to the API reference available — press Tab until focus enters the card, Escape to return., these… For chats that the change reached, the API does not get the names of some skills and plugins that Anthropic did not make, such as your own. (+2 more)",
+      "summaryBy": "feed",
+      "score": 4.63,
       "areas": []
     },
     {
@@ -1112,7 +1567,7 @@
       "tagMethod": "source",
       "summary": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
       "summaryBy": "feed",
-      "score": 3.23,
+      "score": 3.12,
       "areas": []
     },
     {
@@ -1131,7 +1586,7 @@
       "tagMethod": "rules",
       "summary": "November 19, 2026 — ANT went from $83 at pricing to $111.50 at the open and $97.17 at the close. Plus, Google opens Genie 4 to developers.",
       "summaryBy": "feed",
-      "score": 3.72,
+      "score": 3.61,
       "areas": []
     },
     {
@@ -1150,7 +1605,7 @@
       "tagMethod": "source",
       "summary": "Vercel has completed its ISO/IEC 42001:2023 certification, meeting the international standard for AI management systems. This certification gives our customers confidence to ship fast with agents on Vercel, demonstrating how Vercel designs, builds, operates, and governs our AI products. Our AI management system covers Vercel’s underlying infrastructure and core AI products, including AI Gateway…",
       "summaryBy": "feed",
-      "score": 3.2,
+      "score": 3.11,
       "areas": []
     },
     {
@@ -1169,7 +1624,7 @@
       "tagMethod": "source",
       "summary": "Release: llm-gemini 0.38.1 Gemini 4 Carbon only supports low , medium and high reasoning levels - but Gemini 4 Hydrogen and Gemini 4 Neon both have an extra xhigh level. I missed that when I added those models to the llm-gemini plugin, which is now fixed in this dot release. The xhigh setting for Hydrogen makes a significant difference. I updated my Gemini 4 comparison grid - note how Hydrogen…",
       "summaryBy": "feed",
-      "score": 2.19,
+      "score": 2.1,
       "areas": []
     },
     {
@@ -1188,7 +1643,7 @@
       "tagMethod": "source",
       "summary": "A design school crash course for PMs: the 12 concepts designers learn first, 5 drills to train your eye, and how to get AI to design well.",
       "summaryBy": "feed",
-      "score": 2.19,
+      "score": 2.1,
       "areas": []
     },
     {
@@ -1207,7 +1662,7 @@
       "tagMethod": "source",
       "summary": "Claire Vo runs ChatPRD , an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time. In this YouTube video (see also the accompanying Twitter post ) Claire describes the flood of token fraud she has seen from groups abusing the product's free trial, sometimes just to get…",
       "summaryBy": "feed",
-      "score": 2.19,
+      "score": 2.1,
       "areas": []
     },
     {
@@ -1227,7 +1682,7 @@
       "summary": "141 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50569516",
-      "score": 1.19,
+      "score": 1.1,
       "areas": [
         "backend"
       ]
@@ -1248,7 +1703,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 3.18,
+      "score": 3.09,
       "areas": [
         "backend"
       ]
@@ -1269,7 +1724,7 @@
       "tagMethod": "source",
       "summary": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
       "summaryBy": "feed",
-      "score": 3.18,
+      "score": 3.09,
       "areas": []
     },
     {
@@ -1288,7 +1743,7 @@
       "tagMethod": "source",
       "summary": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
       "summaryBy": "feed",
-      "score": 3.18,
+      "score": 3.09,
       "areas": []
     },
     {
@@ -1307,7 +1762,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 3.18,
+      "score": 3.09,
       "areas": []
     },
     {
@@ -1326,7 +1781,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.18,
+      "score": 2.09,
       "areas": []
     },
     {
@@ -1345,7 +1800,7 @@
       "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.18,
+      "score": 2.09,
       "areas": [
         "ai-testing"
       ]
@@ -1366,7 +1821,7 @@
       "tagMethod": "rules",
       "summary": ">50% of tickets written by agents, the AI budgets behind $100M-in-months ARR, and selling without SDRs or FDEs",
       "summaryBy": "feed",
-      "score": 2.18,
+      "score": 2.09,
       "areas": []
     },
     {
@@ -1385,7 +1840,7 @@
       "tagMethod": "rules",
       "summary": "Most years PostgreSQL ships a new release in September, but this year's release came two months later thanks mainly to the flurry of issues that the PostgreSQL team needed to address as part of the ongoing AI-reported vulnerability apocalypse. This release was definitely worth the wait. My favorite new feature is this one: For applications that send reads to standbys, PostgreSQL 19 adds…",
       "summaryBy": "feed",
-      "score": 3.16,
+      "score": 3.08,
       "areas": [
         "backend"
       ]
@@ -1407,7 +1862,7 @@
       "summary": "51 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50564282",
-      "score": 2.65,
+      "score": 2.58,
       "areas": []
     },
     {
@@ -1426,7 +1881,7 @@
       "tagMethod": "rules",
       "summary": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
       "summaryBy": "feed",
-      "score": 4.15,
+      "score": 4.08,
       "areas": []
     },
     {
@@ -1446,7 +1901,7 @@
       "summary": "518 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50563148",
-      "score": 2.65,
+      "score": 2.58,
       "areas": []
     },
     {
@@ -1465,7 +1920,7 @@
       "tagMethod": "source",
       "summary": "Also: Anthropic goes public with the largest-ever IPO, Meta frantically reverses shutdown of popular AI coding harness Conductor, and more",
       "summaryBy": "feed",
-      "score": 2.15,
+      "score": 2.08,
       "areas": []
     },
     {
@@ -1485,7 +1940,7 @@
       "summary": "1104 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50562754",
-      "score": 2.65,
+      "score": 2.58,
       "areas": []
     },
     {
@@ -1504,7 +1959,7 @@
       "tagMethod": "source",
       "summary": "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode.",
       "summaryBy": "feed",
-      "score": 3.15,
+      "score": 3.08,
       "areas": []
     },
     {
@@ -1523,7 +1978,7 @@
       "tagMethod": "source",
       "summary": "which isn’t as nuts as it sounds...",
       "summaryBy": "feed",
-      "score": 2.14,
+      "score": 2.07,
       "areas": []
     },
     {
@@ -1542,7 +1997,7 @@
       "tagMethod": "source",
       "summary": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
       "summaryBy": "feed",
-      "score": 3.11,
+      "score": 3.06,
       "areas": []
     },
     {
@@ -1561,7 +2016,7 @@
       "tagMethod": "source",
       "summary": "November 18, 2026 — Google’s middle tier scores 61 on the Intelligence Index. Plus, Anthropic prices its IPO at $83.",
       "summaryBy": "feed",
-      "score": 2.11,
+      "score": 2.06,
       "areas": []
     },
     {
@@ -1581,7 +2036,7 @@
       "summary": "60 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50554269",
-      "score": 4.59,
+      "score": 4.55,
       "areas": []
     },
     {
@@ -1600,7 +2055,7 @@
       "tagMethod": "source",
       "summary": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
       "summaryBy": "feed",
-      "score": 3.09,
+      "score": 3.05,
       "areas": []
     },
     {
@@ -1619,7 +2074,7 @@
       "tagMethod": "source",
       "summary": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
       "summaryBy": "feed",
-      "score": 3.09,
+      "score": 3.05,
       "areas": []
     },
     {
@@ -1638,7 +2093,7 @@
       "tagMethod": "source",
       "summary": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
       "summaryBy": "feed",
-      "score": 3.09,
+      "score": 3.05,
       "areas": []
     },
     {
@@ -1657,7 +2112,7 @@
       "tagMethod": "rules",
       "summary": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
       "summaryBy": "feed",
-      "score": 3.09,
+      "score": 3.05,
       "areas": []
     },
     {
@@ -1676,7 +2131,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.09,
+      "score": 2.05,
       "areas": []
     },
     {
@@ -1695,7 +2150,7 @@
       "tagMethod": "source",
       "summary": "#​648 — November 19, 2026 Read on the Web 🤖 node-skills: Teach Your Coding Agent About Modern Node.js — LLMs can fail to use features that Node has recently added unless you provide a little extra guidance. James's agent skills augment your harness with the likes of node:sqlite, node:ffi, the permission model and new test runner features. James M Snell Build AI Agents That Don’t Burn Your Token…",
       "summaryBy": "feed",
-      "score": 2.09,
+      "score": 2.05,
       "areas": [
         "backend"
       ]
@@ -1716,7 +2171,7 @@
       "tagMethod": "rules",
       "summary": "How to read eval scores and what to question, from a teardown of 12 benchmarks.",
       "summaryBy": "feed",
-      "score": 2.09,
+      "score": 2.05,
       "areas": [
         "ai-testing"
       ]
@@ -1737,7 +2192,7 @@
       "tagMethod": "source",
       "summary": "Release: llm-gemini 0.38 Today Google introduced Gemini 4 Neon . I wrote recently about how confusing the pricing for the Gemini 4 series was - Neon has somehow made this even worse. Previously the Gemini 4 lineup was Hydrogen, Argon, and Carbon - where Argon and Carbon were the same price , and Hydrogen was 3/4 of that price now but will be 1/4 of that price when the other two double an 1st…",
       "summaryBy": "feed",
-      "score": 2.09,
+      "score": 2.05,
       "areas": []
     },
     {
@@ -1756,7 +2211,7 @@
       "tagMethod": "source",
       "summary": "Patch Changes #3150 69c2440 Thanks @miguelg719! - Fix OpenAI strict-schema rejection of the nullable act action while still stripping unknown keys when parsing. #3114 f6b3d85 Thanks @miguelg719! - Fix CAPTCHA awareness options for local Browserbase attachments and forward them through the API. #3491 57b905e Thanks @seanmcguire12! - Fix clicks on partially occluded elements #3132 09063f6 Thanks…",
       "summaryBy": "feed",
-      "score": 0.59,
+      "score": 0.55,
       "areas": []
     },
     {
@@ -1775,7 +2230,7 @@
       "tagMethod": "source",
       "summary": "Clairic graduates from preview, while Clairic-flash joins the repertoire on Workers AI. We’re doing an open-weight release for both extraction models.",
       "summaryBy": "feed",
-      "score": 3.09,
+      "score": 3.04,
       "areas": [
         "backend"
       ]
@@ -1796,7 +2251,7 @@
       "tagMethod": "source",
       "summary": "0.126.0 (2026-11-18) Before upgrading Derived metrics. Check string formulas in derivedMetrics. Arithmetic, comparisons, ternaries and score names such as __count still work. Function calls, property access, assignments and formulas longer than 1,024 characters now stop the evaluation before any test cases run. For example, replace max(a, b) with a > b ? a : b. For more complex logic, use a…",
       "summaryBy": "feed",
-      "score": 3.08,
+      "score": 3.04,
       "areas": [
         "ai-testing"
       ]
@@ -1817,7 +2272,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.08,
+      "score": 2.04,
       "areas": []
     },
     {
@@ -1836,7 +2291,7 @@
       "tagMethod": "source",
       "summary": "0.2.3 (2026-11-18) Changes Full-repository scans use the patched filesystem MCP server 2.3.0 and can share eligible committed text files from the compared revision with the hosted scanner. Working-tree changes and untracked files stay outside that snapshot. Set diffsOnly: true in the scan configuration to share only the Git diff. The action runs the scanner with its bundled Node.js 24 runtime…",
       "summaryBy": "feed",
-      "score": 0.58,
+      "score": 0.54,
       "areas": []
     },
     {
@@ -1855,7 +2310,7 @@
       "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.08,
+      "score": 2.04,
       "areas": []
     },
     {
@@ -1875,7 +2330,7 @@
       "tagMethod": "source",
       "summary": "Highlights 🗂️ Resume extension tab groups — the connection page now lets you select a whole tab group or several individual tabs, rather than one tab at a time. When a client disconnects, its group stays open and turns gray; select that group on the next connection to continue with the same tabs. The new Manage clients page replaces the status page and lists connected clients and their tabs… (+2 earlier patches)",
       "summaryBy": "feed",
-      "score": 0.58,
+      "score": 0.54,
       "areas": [
         "automation"
       ]
@@ -1896,7 +2351,7 @@
       "tagMethod": "rules",
       "summary": "CodeRabbit CEO Harjot Gill explains how he shipped over 5,000 pull requests in a month, why he believes human code review is dead, and what he gets from spending $250,000 a month on AI.",
       "summaryBy": "feed",
-      "score": 2.08,
+      "score": 2.04,
       "areas": []
     },
     {
@@ -1915,7 +2370,7 @@
       "tagMethod": "source",
       "summary": "Release: datasette-arrows 0.1a0 Datasette 1.0a43 added the ability for plugins to implement streaming export formats. Datasette core supports streaming CSV and TSV - you can export millions of lines of data from a table without needing to load it all into memory, because those two file formats support streaming data in chunks. The register_output_renderer() plugin hook can now be used to…",
       "summaryBy": "feed",
-      "score": 2.08,
+      "score": 2.04,
       "areas": []
     },
     {
@@ -1934,7 +2389,7 @@
       "tagMethod": "source",
       "summary": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.",
       "summaryBy": "feed",
-      "score": 4.08,
+      "score": 4.04,
       "areas": []
     },
     {
@@ -1954,7 +2409,7 @@
       "summary": "135 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50548485",
-      "score": 2.57,
+      "score": 2.54,
       "areas": []
     },
     {
@@ -1974,7 +2429,7 @@
       "summary": "51 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50547901",
-      "score": 2.57,
+      "score": 2.54,
       "areas": []
     },
     {
@@ -1993,7 +2448,7 @@
       "tagMethod": "source",
       "summary": "During the time these agents converted 185,000 lines of C code into 340,000 lines of Rust code (I counted), we merged over 300 commits in the actual curl project. We actually improved curl during these a little more than three weeks. A little over 200 bugfixes actually. 200 bugfixes that none of those rust rewrites have. We also fixed a few vulnerabilities. In another month we have done another…",
       "summaryBy": "feed",
-      "score": 2.07,
+      "score": 2.04,
       "areas": []
     },
     {
@@ -2013,7 +2468,7 @@
       "summary": "57 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50547236",
-      "score": 1.07,
+      "score": 1.04,
       "areas": []
     },
     {
@@ -2032,7 +2487,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.07,
+      "score": 2.04,
       "areas": []
     },
     {
@@ -2051,7 +2506,7 @@
       "tagMethod": "rules",
       "summary": "With my Python Software Foundation board director hat on: we've launched our end-of-year fundraiser for the non-profit that supports Python development and the Python community. If your company or your work benefits from Python, please consider donating this year! The PSF looks after the IP behind Python, operates PyPI, sponsors core developer sprints, supports community events (including…",
       "summaryBy": "feed",
-      "score": 2.07,
+      "score": 2.04,
       "areas": []
     },
     {
@@ -2071,7 +2526,7 @@
       "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed",
-      "score": 3.57,
+      "score": 3.54,
       "areas": []
     },
     {
@@ -2090,7 +2545,7 @@
       "tagMethod": "source",
       "summary": "are a way to describe the contents and guarantees of datasets. Simon Harrer and Arif Wider describe in detail what they are and how to use them. They apply practices from API design to data by treating them as data-providing services - such as data products - whose interfaces we want to define as clearly as possible. This approach significantly increases the robustness of large-scale data…",
       "summaryBy": "feed",
-      "score": 2.07,
+      "score": 2.04,
       "areas": []
     },
     {
@@ -2110,7 +2565,7 @@
       "tagMethod": "rules",
       "summary": "Every December, I reflect on my year and plan the next. I share 4 exercises in my personal annual review, plus a Claude Code plugin.",
       "summaryBy": "feed",
-      "score": 3.57,
+      "score": 3.54,
       "areas": []
     },
     {
@@ -2130,7 +2585,7 @@
       "summary": "Today Anthropic, PBC priced its initial public offering of its Class A common stock.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50553843",
-      "score": 5.07,
+      "score": 5.03,
       "areas": []
     },
     {
@@ -2149,7 +2604,7 @@
       "tagMethod": "source",
       "summary": "November 17, 2026 — GPT-6.2 Astra and Sol lower benchmark costs. Early testers disagree on what Astra is like to work with.",
       "summaryBy": "feed",
-      "score": 2.06,
+      "score": 2.03,
       "areas": []
     },
     {
@@ -2168,7 +2623,7 @@
       "tagMethod": "source",
       "summary": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
       "summaryBy": "feed",
-      "score": 3.06,
+      "score": 3.03,
       "areas": []
     },
     {
@@ -2187,7 +2642,7 @@
       "tagMethod": "source",
       "summary": "Software development is moving from individual agents completing tasks to teams of agents working on more complex projects. A single agent can track its work in a Markdown file, but there isn't a purpose-built primitive for tracking tasks, delegation, statuses, logs, and completed work across many agents and subagents. We ran into this coordination problem internally and started experimenting…",
       "summaryBy": "feed",
-      "score": 4.06,
+      "score": 4.03,
       "areas": []
     },
     {
@@ -2206,7 +2661,7 @@
       "tagMethod": "rules",
       "summary": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
       "summaryBy": "feed",
-      "score": 3.06,
+      "score": 3.03,
       "areas": []
     },
     {
@@ -2225,7 +2680,7 @@
       "tagMethod": "source",
       "summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
       "summaryBy": "feed",
-      "score": 3.06,
+      "score": 3.03,
       "areas": []
     },
     {
@@ -2244,7 +2699,7 @@
       "tagMethod": "source",
       "summary": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
       "summaryBy": "feed",
-      "score": 3.06,
+      "score": 3.03,
       "areas": []
     },
     {
@@ -2263,7 +2718,7 @@
       "tagMethod": "source",
       "summary": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
       "summaryBy": "feed",
-      "score": 3.06,
+      "score": 3.03,
       "areas": []
     },
     {
@@ -2283,7 +2738,7 @@
       "summary": "108 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50541619",
-      "score": 2.55,
+      "score": 2.53,
       "areas": []
     },
     {
@@ -2303,7 +2758,7 @@
       "tagMethod": "rules",
       "summary": "Today we’re launching , a six-week accelerator for AI founders at the idea and pre-seed stages.Vercel X Join a cohort of 40 teams at our San Francisco HQ and build alongside Vercel’s product leaders, designers, and engineers. The program takes no equity for participation and offers access to a program-wide pool of more than $9M in credits from Vercel, AWS, Anthropic, OpenAI, and other partners…",
       "summaryBy": "feed",
-      "score": 4.05,
+      "score": 4.02,
       "areas": []
     },
     {
@@ -2322,7 +2777,7 @@
       "tagMethod": "source",
       "summary": "Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
       "summaryBy": "feed",
-      "score": 3.05,
+      "score": 3.02,
       "areas": []
     },
     {
@@ -2341,7 +2796,7 @@
       "tagMethod": "source",
       "summary": "Frontend Focus #​767 — November 18, 2026 | Read on the web 🗳️ The State of HTML 2026 Results The State of HTML 2026 results are now out covering what developers are using, loving and struggling with, plus how much they use AI. Declarative, element-based features are winners, while form controls remain difficult. Some highlights: / (72.5%) and (67.8%) are the most used interactivity features…",
       "summaryBy": "feed",
-      "score": 2.05,
+      "score": 2.02,
       "areas": [
         "frontend"
       ]
@@ -2362,7 +2817,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.05,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2381,7 +2836,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.05,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2400,7 +2855,7 @@
       "tagMethod": "rules",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.05,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2419,7 +2874,7 @@
       "tagMethod": "rules",
       "summary": "I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine. I worked on this project with Prime Radiant , the AI research lab behind Superpowers and other projects . My post on the Prime Radiant blog introduces the…",
       "summaryBy": "feed",
-      "score": 2.05,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2438,7 +2893,7 @@
       "tagMethod": "rules",
       "summary": "OpenAI: We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work. They're available in the API as gpt-6.2-astra and gpt-6.2-sol . I shipped LLM 0.38 with support for the new models. 6.2 Astra is 80% of the price of 6 Astra - $8/MTok input and $40/MTok output, the same price as Claude Fable 5.2 (which was…",
       "summaryBy": "feed",
-      "score": 3.55,
+      "score": 3.52,
       "areas": []
     },
     {
@@ -2457,7 +2912,7 @@
       "tagMethod": "source",
       "summary": "Stage and validate packages privately on NuGet.org, then approve their release when you are ready. The post Introducing staged publishing on NuGet.org appeared first on .NET Blog.",
       "summaryBy": "feed",
-      "score": 4.04,
+      "score": 4.02,
       "areas": [
         "backend"
       ]
@@ -2479,7 +2934,7 @@
       "summary": "97 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50536565",
-      "score": 2.54,
+      "score": 2.52,
       "areas": []
     },
     {
@@ -2499,7 +2954,7 @@
       "tagMethod": "rules",
       "summary": "In the Codename MDASH pilot, GitHub and Microsoft turned thousands of raw AI findings into 99 checked, private reports with suggested fixes for six widely used open source projects. Maintainers have already fixed more than half. The post Maintainers don’t need more AI bug reports. They need fixes. appeared first on The GitHub Blog.",
       "summaryBy": "feed",
-      "score": 3.04,
+      "score": 3.02,
       "areas": [
         "manual"
       ]
@@ -2520,7 +2975,7 @@
       "tagMethod": "source",
       "summary": "Detailed Changelogs by Component Java | Python | DotNet | Ruby | JavaScript What's Changed [rb] download the Server jar with Selenium Manager instead of the GitHub API by @titusfortner in #18245 [java] Escape quotes and backslashes in name locators sent to the driver by @Mochxd in #18151 [dotnet] [test] Unify assembly names for testing by @nvborisenko in #18261 [rb] Allocate websocket command…",
       "summaryBy": "feed",
-      "score": 3.04,
+      "score": 3.02,
       "areas": [
         "automation"
       ]
@@ -2541,7 +2996,7 @@
       "tagMethod": "source",
       "summary": "Discover how we built the open Agent Host Protocol to keep your agent sessions accessible across editors, apps, phones, and the cloud. The post Building the Agent Host Protocol for sessions that continue across devices appeared first on The GitHub Blog.",
       "summaryBy": "feed",
-      "score": 3.04,
+      "score": 3.02,
       "areas": []
     },
     {
@@ -2561,7 +3016,7 @@
       "tagMethod": "rules",
       "summary": "Over $40,000 in value, exclusively for Lenny’s Newsletter subscribers",
       "summaryBy": "feed",
-      "score": 2.04,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2580,30 +3035,8 @@
       "tagMethod": "rules",
       "summary": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
       "summaryBy": "feed",
-      "score": 4.04,
+      "score": 4.02,
       "areas": []
-    },
-    {
-      "id": "6110c4557dce",
-      "title": "Vitest v5.1.1",
-      "url": "https://github.com/vitest-dev/vitest/releases/tag/v5.1.1",
-      "sourceId": "vitest-releases",
-      "sourceName": "Vitest releases",
-      "tier": "official",
-      "type": "release",
-      "publishedAt": "2026-11-17T17:03:02.000Z",
-      "firstSeenAt": "2026-11-18T14:25:12.039Z",
-      "roles": [
-        "qa",
-        "fs"
-      ],
-      "tagMethod": "source",
-      "summary": "Features cache: Add fs module cache env variables - by @sheremet-va in #11859 (708c0) 🐞 Bug Fixes Rerun on file changes after a config restart - by @magurotuna in #11772 and #11829 (289ca) Avoid leaking the context expect - by @sheremet-va in #11845 (3c967) Report fixture teardown errors once - by @sheremet-va in #11857 (6b167) Improve diffs for asymmetric matchers - by @sheremet-va in #11855… (+1 earlier patch)",
-      "summaryBy": "feed",
-      "score": 0.54,
-      "areas": [
-        "automation"
-      ]
     },
     {
       "id": "cb1d8f8bc84f",
@@ -2621,7 +3054,7 @@
       "tagMethod": "source",
       "summary": "Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things done on your behalf.",
       "summaryBy": "feed",
-      "score": 3.04,
+      "score": 3.02,
       "areas": []
     },
     {
@@ -2640,7 +3073,7 @@
       "tagMethod": "rules",
       "summary": "Datasette Lite is my port of the Datasette Python application to run directly in the browser using WebAssembly and Pyodide . I've released a complete rewrite of Datasette Lite using service workers, and it's now almost indistinguishable from the real server-side application. You can now do all of the following, using a carefully crafted URL to lite.datasette.io : Load client-side Datasette to…",
       "summaryBy": "feed",
-      "score": 2.04,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2659,7 +3092,7 @@
       "tagMethod": "rules",
       "summary": "When is the right time to drop APIs provided by the frontier AI labs, and what about choosing models & providers, caching, dedicated GPUs, KV cache concerns, and more? A practical deepdive",
       "summaryBy": "feed",
-      "score": 2.04,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2678,7 +3111,7 @@
       "tagMethod": "source",
       "summary": "About This Episode: What makes Robot Framework flexible enough to test medical devices, low code bots, monitoring systems, and embedded […]",
       "summaryBy": "feed",
-      "score": 2.04,
+      "score": 2.02,
       "areas": [
         "automation"
       ]
@@ -2699,7 +3132,7 @@
       "tagMethod": "source",
       "summary": "Cloudflare made its name speeding up the web. Now it's building System One models to make decisions and pull data in milliseconds.",
       "summaryBy": "feed",
-      "score": 2.04,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2718,7 +3151,7 @@
       "tagMethod": "rules",
       "summary": "Distributed systems are hard to test because partial failures overlap with live traffic and the same fault can produce different execution traces on different runs. Unmesh Joshi describes how deterministic simulation testing addresses this by replacing real clocks, networks, and storage with simulated components driven by a single-threaded execution loop. This allows simulating both hard…",
       "summaryBy": "feed",
-      "score": 2.04,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2737,7 +3170,7 @@
       "tagMethod": "source",
       "summary": "Digging holes on the beach",
       "summaryBy": "feed",
-      "score": 2.04,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2756,7 +3189,7 @@
       "tagMethod": "source",
       "summary": "Listen to this episode on: Spotify | Apple Podcasts Why has everyone stopped sharing their real product work — and what do we lose when the field goes quiet? Petra Wille and Teresa Torres return to the never-ending social-media question, this time from a trend angle: the genuinely useful",
       "summaryBy": "feed",
-      "score": 2.04,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2776,7 +3209,7 @@
       "summary": "125 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50530450",
-      "score": 2.53,
+      "score": 2.52,
       "areas": []
     },
     {
@@ -2796,7 +3229,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 5.53,
+      "score": 5.52,
       "areas": []
     },
     {
@@ -2815,7 +3248,7 @@
       "tagMethod": "source",
       "summary": "Roll up your sleeves! Meet shiny new [AI 2027 Conference](https://smashingconf.com/ai-2027-conference), a friendly online conference on AI-ready design systems, AI + Figma and AI design patterns. What to expect in 2027 and where teams are getting AI right. [Jump to tickets.](https://smashingconf.com/ai-2027-conference/registration)",
       "summaryBy": "feed",
-      "score": 2.03,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2835,7 +3268,7 @@
       "summary": "391 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50530163",
-      "score": 1.03,
+      "score": 1.02,
       "areas": []
     },
     {
@@ -2855,7 +3288,7 @@
       "summary": "90 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50529612",
-      "score": 2.53,
+      "score": 2.52,
       "areas": []
     },
     {
@@ -2874,7 +3307,7 @@
       "tagMethod": "source",
       "summary": "November 16, 2026 — Computer gets Teammates, Perplexity ships Monitor API, and a new research lab launches.",
       "summaryBy": "feed",
-      "score": 2.03,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2893,7 +3326,7 @@
       "tagMethod": "source",
       "summary": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
       "summaryBy": "feed",
-      "score": 4.03,
+      "score": 4.02,
       "areas": []
     },
     {
@@ -2912,7 +3345,7 @@
       "tagMethod": "rules",
       "summary": "AI has sped up how teams design and build, but quality assurance (QA) testing hasn’t kept pace, and the web may be getting less accessible. Drawing on new research, Andrew Chung explains what separates the teams whose accessibility efforts are keeping up, and how to embed human judgment into AI-enabled workflows without slowing delivery.",
       "summaryBy": "feed",
-      "score": 2.03,
+      "score": 2.02,
       "areas": []
     },
     {
@@ -2931,7 +3364,7 @@
       "tagMethod": "source",
       "summary": "A little copying is better than a little dependency. &mdash; Go Proverbs , via Tags: go , programming",
       "summaryBy": "feed",
-      "score": 2.03,
+      "score": 2.01,
       "areas": []
     },
     {
@@ -2952,7 +3385,7 @@
       "summary": "50 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50526264",
-      "score": 2.53,
+      "score": 2.51,
       "areas": []
     },
     {
@@ -2971,7 +3404,7 @@
       "tagMethod": "source",
       "summary": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
       "summaryBy": "feed",
-      "score": 4.02,
+      "score": 4.01,
       "areas": []
     },
     {
@@ -2990,7 +3423,7 @@
       "tagMethod": "source",
       "summary": "Today we're announcing , the open-source framework for building production-ready agents.eve 1.0 Since the , we've worked with early adopters to prepare eve for 1.0, shipping 230+ releases and merging thousands of pull requests. With this release, eve is now generally available.public preview in June We've made eve faster, expanded integrations, and improved observability. Security controls let…",
       "summaryBy": "feed",
-      "score": 4.02,
+      "score": 4.01,
       "areas": []
     },
     {
@@ -3009,7 +3442,7 @@
       "tagMethod": "source",
       "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
       "summaryBy": "feed",
-      "score": 3.02,
+      "score": 3.01,
       "areas": []
     },
     {
@@ -3028,7 +3461,7 @@
       "tagMethod": "source",
       "summary": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
       "summaryBy": "feed",
-      "score": 3.02,
+      "score": 3.01,
       "areas": []
     },
     {
@@ -3047,7 +3480,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 2.02,
+      "score": 2.01,
       "areas": []
     },
     {
@@ -3066,7 +3499,7 @@
       "tagMethod": "source",
       "summary": "#​811 — November 17, 2026 Read on the Web JavaScript Weekly npkill 1.0: Not Just for node_modules Anymore — npx npkill has long offered a way to find and remove waste from node_modules folders. Its first release in two years now also hunts down caches and build outputs like .next and .turbo, with 'profiles' for 20 ecosystems. If you're new to the tool, its homepage provides a good introduction…",
       "summaryBy": "feed",
-      "score": 2.02,
+      "score": 2.01,
       "areas": []
     },
     {
@@ -3085,7 +3518,7 @@
       "tagMethod": "source",
       "summary": "Release: llm 0.37.3 A bug fix release for LLM , mainly to cover a problem with the most recent Homebrew package of the software. Homebrew now ships the latest SQLite, 3.54.1 , which includes a fix that broke LLM's logging code . Short version: in SQLite 3.54.0 the following SQL: select json_object('a', (select json_array(1))) Returns this: {\"a\":[1]} But in 3.54.1 the same query returns this…",
       "summaryBy": "feed",
-      "score": 2.02,
+      "score": 2.01,
       "areas": []
     },
     {
@@ -3105,7 +3538,7 @@
       "tagMethod": "rules",
       "summary": "Richard Seidl hosts interview and podcasts on Software Testing Unleashed. This one happened at EuroSTAR 2026, on June 18, and was released on November 2, 2026. Testing AI Models as Magic Boxes: Why Checks FailA language model is a box that nobody controls or fully understands.Testing AI models therefore means exploring, experimenting and weighing the risk. Watch the interview here. And if you’re…",
       "summaryBy": "feed",
-      "score": 2.02,
+      "score": 2.01,
       "areas": []
     },
     {
@@ -3124,7 +3557,7 @@
       "tagMethod": "source",
       "summary": "Black Forest Labs’ case for learning AGI from pixels, motion and sound.",
       "summaryBy": "feed",
-      "score": 2.02,
+      "score": 2.01,
       "areas": []
     },
     {
@@ -3144,7 +3577,7 @@
       "tagMethod": "rules",
       "summary": "About This Episode: What’s new with Playwright MCP? Can you trust tests that AI keeps rewriting? Have you seen the […]",
       "summaryBy": "feed",
-      "score": 2.02,
+      "score": 2.01,
       "areas": [
         "automation",
         "ai-testing"
@@ -3166,7 +3599,7 @@
       "tagMethod": "source",
       "summary": "New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.",
       "summaryBy": "feed",
-      "score": 3.02,
+      "score": 3.01,
       "areas": []
     },
     {
@@ -3185,7 +3618,7 @@
       "tagMethod": "source",
       "summary": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
       "summaryBy": "feed",
-      "score": 3.02,
+      "score": 3.01,
       "areas": []
     },
     {
@@ -3205,7 +3638,7 @@
       "tagMethod": "rules",
       "summary": "Your weekly listens from How I AI, part of the Lenny's Podcast Network",
       "summaryBy": "feed",
-      "score": 3.52,
+      "score": 3.51,
       "areas": []
     },
     {
@@ -3224,7 +3657,7 @@
       "tagMethod": "source",
       "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now AI systems are getting good at sub-contracting to make themselves better:…AI can now productively spend money to improve itself…Researchers have developed FrontierML, a benchmark “that measures […]",
       "summaryBy": "feed",
-      "score": 2.02,
+      "score": 2.01,
       "areas": []
     },
     {
@@ -3243,7 +3676,7 @@
       "tagMethod": "source",
       "summary": "Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features.",
       "summaryBy": "feed",
-      "score": 3.02,
+      "score": 3.01,
       "areas": []
     },
     {
@@ -3262,7 +3695,7 @@
       "tagMethod": "source",
       "summary": "Continuous Discovery Habits turns five this year. And to celebrate we are reading the book together. Each month, I am releasing an in-depth reading guide that includes: The chapters we will be reading A preview of the most important concepts we'll be learning about Short videos you",
       "summaryBy": "feed",
-      "score": 2.02,
+      "score": 2.01,
       "areas": []
     },
     {
@@ -3281,7 +3714,7 @@
       "tagMethod": "rules",
       "summary": "Microsoft CEO Satya Nadella on AI’s impact on software engineering, code verification, and engineers’ careers.",
       "summaryBy": "feed",
-      "score": 2.02,
+      "score": 2.01,
       "areas": []
     },
     {
@@ -3300,7 +3733,7 @@
       "tagMethod": "source",
       "summary": "Watch now (40 mins) | 🎙️ After losing tens of thousands of dollars to token fraud, I walk through six attack patterns, the defenses I built, and why I killed free trials",
       "summaryBy": "feed",
-      "score": 2.02,
+      "score": 2.01,
       "areas": []
     },
     {
@@ -3320,7 +3753,7 @@
       "tagMethod": "source",
       "summary": "",
       "summaryBy": "feed",
-      "score": 6.52,
+      "score": 6.51,
       "areas": []
     },
     {
@@ -3339,7 +3772,7 @@
       "tagMethod": "source",
       "summary": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
       "summaryBy": "feed",
-      "score": 3.02,
+      "score": 3.01,
       "areas": []
     },
     {
@@ -3358,7 +3791,7 @@
       "tagMethod": "source",
       "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
       "summaryBy": "feed",
-      "score": 3.02,
+      "score": 3.01,
       "areas": []
     },
     {
@@ -3378,7 +3811,7 @@
       "summary": "75 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50515035",
-      "score": 1.02,
+      "score": 1.01,
       "areas": []
     },
     {
@@ -3592,7 +4025,7 @@
       "tagMethod": "source",
       "summary": "Listen now | Mona Sarantakos on going from a weekend with OpenClaw to shipping the fastest-growing consumer AI product in history",
       "summaryBy": "feed",
-      "score": 3.01,
+      "score": 3,
       "areas": []
     },
     {
@@ -3611,7 +4044,7 @@
       "tagMethod": "rules",
       "summary": "Release: datasette-apps 0.4a0 Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data. 0.4a0 adds support for linking: you can link to an app with #fragments in the URL and the app can see and use those, plus supported URL schemes are reported back to Datasette Agent so it can help…",
       "summaryBy": "feed",
-      "score": 2.01,
+      "score": 2,
       "areas": []
     },
     {
@@ -3630,7 +4063,7 @@
       "tagMethod": "source",
       "summary": "Release: datasette-agent 0.6a0 Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions of tables and queries: Tags: datasette-agent , llm , datasette , llms , ai , generative-ai",
       "summaryBy": "feed",
-      "score": 2.01,
+      "score": 2,
       "areas": []
     },
     {
@@ -3649,7 +4082,7 @@
       "tagMethod": "source",
       "summary": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol. This means that if you're running local models with LM Studio or Ollama…",
       "summaryBy": "feed",
-      "score": 2.01,
+      "score": 2,
       "areas": []
     },
     {
@@ -3668,7 +4101,7 @@
       "tagMethod": "source",
       "summary": "3.9.1 (2026-11-14) Bug Fixes execute-driver-plugin: wrap non-configurable property descriptors via shadow target (#23126) (b2ce3a0) (+1 earlier patch)",
       "summaryBy": "feed",
-      "score": 0.51,
+      "score": 0.5,
       "areas": [
         "automation"
       ]
@@ -3689,7 +4122,7 @@
       "tagMethod": "source",
       "summary": "3.0.3 (2026-11-14) Note: Version bump only for package @appium/universal-xml-plugin (+1 earlier patch)",
       "summaryBy": "feed",
-      "score": 0.51,
+      "score": 0.5,
       "areas": [
         "automation"
       ]
@@ -3710,7 +4143,7 @@
       "tagMethod": "source",
       "summary": "Community Wisdom 305",
       "summaryBy": "feed",
-      "score": 2.01,
+      "score": 2,
       "areas": []
     },
     {
@@ -3730,7 +4163,7 @@
       "summary": "50 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50499114",
-      "score": 2.51,
+      "score": 2.5,
       "areas": []
     },
     {
@@ -3749,7 +4182,7 @@
       "tagMethod": "source",
       "summary": "Release: datasette-vega 0.7 A new release of Datasette's longest untouched plugin, for rendering charts (using Vega-Lite ) against data in a table or custom query. The last release was in July 2018! I finally bumped it for compatibility with the latest Datasette alphas, plus some cosmetic tweaks to make it work better with Datasette Lite . (Datasette Lite just gained the ability to run…",
       "summaryBy": "feed",
-      "score": 2.01,
+      "score": 2,
       "areas": []
     },
     {
@@ -7351,6 +7784,26 @@
       "areas": []
     },
     {
+      "id": "82bbedc49940",
+      "title": "We’ve added error codes to the SDK so you can handle one cause of an error without parsing the response body.",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-4-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-04T12:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed",
+      "score": 4.5,
+      "areas": []
+    },
+    {
       "id": "a4f4c423c542",
       "title": "A thousand fewer paths to root",
       "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
@@ -10578,124 +11031,6 @@
       "summaryBy": "feed",
       "score": 3,
       "areas": []
-    },
-    {
-      "id": "19a7287ac228",
-      "title": "🎙️ How I AI: Claude Duet honest review + Why Reddit built its own AI prototyping tool",
-      "url": "https://lennysnewsletter.com/p/how-i-ai-claude-duet-honest-review",
-      "sourceId": "lennys-newsletter",
-      "sourceName": "Lenny's Newsletter",
-      "tier": "editorial",
-      "type": "article",
-      "publishedAt": "2026-10-26T15:00:53.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude",
-        "pm"
-      ],
-      "tagMethod": "rules",
-      "summary": "Your weekly listens from How I AI, part of the Lenny’s Podcast Network",
-      "summaryBy": "feed",
-      "score": 3.5,
-      "areas": []
-    },
-    {
-      "id": "6352bc5d9cf3",
-      "title": "Import AI 478: Math for alignment; ProgramBench; and Mirendil shows what RSI means",
-      "url": "https://jack-clark.net/2026/10/26/import-ai-478-math-for-alignment-programbench-and-mirendil-shows-what-rsi-means",
-      "sourceId": "import-ai",
-      "sourceName": "Import AI (Jack Clark)",
-      "tier": "editorial",
-      "type": "article",
-      "publishedAt": "2026-10-26T12:31:52.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "pm"
-      ],
-      "tagMethod": "source",
-      "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe…",
-      "summaryBy": "feed",
-      "score": 2,
-      "areas": []
-    },
-    {
-      "id": "57f3af44f1ef",
-      "title": "Why Reddit built its own AI prototyping tool | Blair Metcalf",
-      "url": "https://lennysnewsletter.com/p/why-reddit-built-its-own-ai-prototyping",
-      "sourceId": "lennys-newsletter",
-      "sourceName": "Lenny's Newsletter",
-      "tier": "editorial",
-      "type": "article",
-      "publishedAt": "2026-10-26T12:04:20.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "pm",
-        "se"
-      ],
-      "tagMethod": "rules",
-      "summary": "Watch now (30 mins) | 🎙️ Reddit’s principal UX engineer shows how a custom Figma MCP and Cursor pipeline takes any designer from blank slate to shareable, production-shaped…",
-      "summaryBy": "feed",
-      "score": 2,
-      "areas": []
-    },
-    {
-      "id": "8a77e646571b",
-      "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-      "url": "https://anthropic.com/news/s1-sec",
-      "sourceId": "anthropic-news",
-      "sourceName": "Anthropic News",
-      "tier": "official",
-      "type": "news",
-      "publishedAt": "2026-10-26T12:00:00.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "claude"
-      ],
-      "tagMethod": "source",
-      "summary": "Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A…",
-      "summaryBy": "feed",
-      "score": 4.5,
-      "areas": []
-    },
-    {
-      "id": "8b1ad81c7872",
-      "title": "Apple’s 20B model 📱, Kimi K3.1 Pro 🧠, Block Dessa 🗣️, frontier training security 🔐",
-      "url": "https://tldr.tech/ai/2026-10-26",
-      "sourceId": "tldr-ai",
-      "sourceName": "TLDR AI",
-      "tier": "editorial",
-      "type": "news",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "firstSeenAt": "2026-10-31T13:32:17.830Z",
-      "roles": [
-        "se"
-      ],
-      "tagMethod": "source",
-      "summary": "",
-      "summaryBy": "feed",
-      "score": 2,
-      "areas": []
-    },
-    {
-      "id": "31641e2f6e91",
-      "title": ".NET October 2026 Out-of-Band Security Updates",
-      "url": "https://devblogs.microsoft.com/dotnet/dotnet-october-2026-oob-security-updates",
-      "sourceId": "dotnet-blog",
-      "sourceName": ".NET Blog",
-      "tier": "official",
-      "type": "article",
-      "publishedAt": "2026-10-25T18:45:00.000Z",
-      "firstSeenAt": "2026-10-31T19:39:14.403Z",
-      "roles": [
-        "fs"
-      ],
-      "tagMethod": "source",
-      "summary": "Out-of-band security updates for .NET address the Brotli decoder vulnerability and tarball ownership vulnerability. The post .NET October 2026 Out-of-Band Security Updates appeared first on .NET Blog.",
-      "summaryBy": "feed",
-      "score": 3,
-      "areas": [
-        "backend"
-      ]
     }
   ]
 }

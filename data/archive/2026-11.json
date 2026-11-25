@@ -1,7 +1,341 @@
 {
   "month": "2026-11",
-  "count": 481,
+  "count": 507,
   "items": [
+    {
+      "id": "170ba12c1bad",
+      "title": "Introducing Search for Agents",
+      "url": "https://blog.cloudflare.com/search-for-agents",
+      "sourceId": "cloudflare-blog",
+      "sourceName": "Cloudflare blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-25T14:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Flip one toggle to make your site searchable by AI agents — complete with automatic content indexing, a discoverable search API, and native HTTP QUERY support.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "fa9827167ead",
+      "title": "Gemini 4 Neon beat GPT-6.2 and Claude in my 25-task AI benchmark",
+      "url": "https://lennysnewsletter.com/p/gemini-4-neon-beat-gpt-62-and-claude",
+      "sourceId": "lennys-newsletter",
+      "sourceName": "Lenny's Newsletter",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-25T13:04:21.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude",
+        "pm",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Watch now (32 mins) | 🎙️ My late-2026 How I AI bench: GPT-6.2 disappointed me, Opus 5.5 is my least annoying daily driver, and Gemini 4 Neon is now my top pick",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c22a751951e5",
+      "title": "Vitest v5.1.2",
+      "url": "https://github.com/vitest-dev/vitest/releases/tag/v5.1.2",
+      "sourceId": "vitest-releases",
+      "sourceName": "Vitest releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-25T11:42:58.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "qa",
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Bug Fixes Report global setup errors instead of \"no test files\" - by @jszumski and Claude Opus 5.5 in #12031 (b7572) Warn when projects attach the same file - by @sheremet-va in #12043 (5f884) browser: Don't fail trace when locator has no match for non-playwright providers - by @hi-ogawa and Claude Opus 5.5 in #11975 (f0500) Save failure screenshots per instance - by @sheremet-va in #12042…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d0a3a7f662b5",
+      "title": "An Indic Voice Agent with CUGA",
+      "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-25T10:22:09.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "190619a69a1b",
+      "title": "[AINews] Gemini 4 Neon marks GDM's full return as a Frontier Lab",
+      "url": "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-25T04:29:07.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "November 24, 2026 — Neon beats Astra and Fable on LiveBench and cuts Theo’s TS Rust benchmark runtime by 48.6%.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4e211ed17270",
+      "title": "Claude Code Action v1.0.290",
+      "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1.0.290",
+      "sourceId": "claude-code-action-releases",
+      "sourceName": "Claude Code Action releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-25T01:35:12.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's Changed Other changes Restore GITHUB_OUTPUT when the session ends by @mhegazy in #2121 Full Changelog: v1.0.289...v1.0.290",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "15aa96a95483",
+      "title": "Claude Code v2.1.332",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "sourceId": "claude-code-releases",
+      "sourceName": "Claude Code releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-25T01:32:14.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "What's changed Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names Added a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start Added \"Always deliver\" to the prompt for held messages from other sessions Added a footer…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4e090e84d5a0",
+      "title": "OpenAI solves matrix math 🔢, SWE-2.1 💻, swarm limitations 🐝",
+      "url": "https://tldr.tech/ai/2026-11-25",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-25T00:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6ff348e652c9",
+      "title": "Three LLM inflection points in twelve months",
+      "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-24T23:02:07.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "b5ea74ac42de",
+      "title": "Anthropic CEO Dario Amodei and Sister Daniela Sold $561M in Stock During IPO",
+      "url": "https://forbes.com/sites/siladityaray/2026/11/24/anthropic-ceo-dario-amodei-sold-280-million-in-shares-as-part-of-record-ipo",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-24T22:27:19Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "50 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50635706"
+    },
+    {
+      "id": "0ecfdb617e7d",
+      "title": "Your Coding Agent Wrote the Test. Who Checks It? with Donovan Brady",
+      "url": "https://testguild.com/podcast/a613-donovan",
+      "sourceId": "testguild",
+      "sourceName": "TestGuild",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-24T21:17:30.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "About This Episode: Your coding agent just wrote the test. Who checks it? Donovan Brady of Leapwork is back on […]",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e1da16352396",
+      "title": "The Pragmatic Engineer Essay Challenge: Category Winners (Part 1)",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-essay-challenge",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-24T19:16:38.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "How is AI changing the way we build software? Excerpts from three category winners of our recent essay contest, with links to 40 more by software engineers and experts",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d2963dce727b",
+      "title": "OpenAI reveals they solved VP ≠ VNP before Anthropic",
+      "url": "https://github.com/openai/math/tree/main/preprints/VP-and-VNP-are-different-November-23-2026",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-24T18:55:12Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "96 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50632756"
+    },
+    {
+      "id": "2a31448f04ed",
+      "title": "Introducing DocumentExtractionClient (preview): Extract documents in .NET",
+      "url": "https://devblogs.microsoft.com/dotnet/document-extraction-dotnet-preview",
+      "sourceId": "dotnet-blog",
+      "sourceName": ".NET Blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-24T18:05:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Meet DocumentExtractionClient, a preview .NET API that turns PDFs, images, and other documents into structured content, with a set of starter providers to choose from. The post Introducing DocumentExtractionClient (preview): Extract documents in .NET appeared first on .NET Blog.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "002bc4ff2409",
+      "title": "Anthropic Staff Openly Talk About ‘Taking Over the World’, Claims Max Tegmark",
+      "url": "https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-24T17:10:45Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "220 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50631210"
+    },
+    {
+      "id": "f796e127a00b",
+      "title": "GPT 6.2 Astra Solves a Historical Mystery",
+      "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-24T16:53:59.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an anonymous 1808 sketchbook held at Yale’s Beinecke Library . It did so extremely quickly (in just 22 minutes), using publicly available primary and secondary sources. To do so, it…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "bbef1e94d167",
+      "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+      "url": "https://news.ycombinator.com/item?id=50630809",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-24T16:45:44Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "396 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50630809"
+    },
+    {
+      "id": "16565a3f5dc0",
+      "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+      "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-24T16:34:13.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8e9b94fee057",
+      "title": "Show HN: Mason – A lightweight Postgres read-replica, built on columnar storage",
+      "url": "https://masondata.ai/",
+      "sourceId": "hn-fullstack",
+      "sourceName": "Hacker News · Full-stack",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-24T16:11:52Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "99 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50630294"
+    },
     {
       "id": "e2544bc1aeb2",
       "title": "How Gemini is changing the game for Golden State's organization and fans.",
@@ -89,6 +423,40 @@
       "summary": "136 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50627836"
+    },
+    {
+      "id": "3c6728c1bfd1",
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-24T13:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f3aa9260f109",
+      "title": "Searching for distant planets with Astra",
+      "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-24T11:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.",
+      "summaryBy": "feed"
     },
     {
       "id": "a540294e78cc",
@@ -194,6 +562,40 @@
       "summaryBy": "feed"
     },
     {
+      "id": "7a6462e387eb",
+      "title": "How iFood scales coding agents across 15,000 repositories",
+      "url": "https://openai.com/business/customer-stories/ifood",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-24T00:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "99b93f3e1098",
+      "title": "Clay helps sales teams win with Codex and ChatGPT",
+      "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-24T00:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
+      "summaryBy": "feed"
+    },
+    {
       "id": "a283193da833",
       "title": "Human in the Loop with Spring AI 2.1: Tool Calls That Survive a Restart",
       "url": "https://spring.io/blog/2026/11/24/spring-ai-tool-call-confirmation-park-resume",
@@ -225,6 +627,23 @@
       ],
       "tagMethod": "source",
       "summary": "#​812 — November 24, 2026 Read on the Web JavaScript Weekly Nudeps: Bundler-Like Imports, None of the Baggage — What if you could npm install a package and import it by name in the browser without a bundler? Lea and Dmitry Sharabin's new tool makes this easier than ever using import maps (which it keeps up to date). Run npx nudeps install and add the import map script to your HTML. There are…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "ec442b764e04",
+      "title": "How Intentful uses dots to make more time for growth",
+      "url": "https://openai.com/business/customer-stories/intentful-dots",
+      "sourceId": "openai-news",
+      "sourceName": "OpenAI News",
+      "tier": "official",
+      "type": "news",
+      "publishedAt": "2026-11-24T00:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.",
       "summaryBy": "feed"
     },
     {
@@ -1040,6 +1459,24 @@
       "summary": "81 points on Hacker News.",
       "summaryBy": "feed",
       "discussionUrl": "https://news.ycombinator.com/item?id=50574264"
+    },
+    {
+      "id": "7c0d7ede45bc",
+      "title": "The Claude Enterprise Analytics API has a new rule for when a chat in Chat and Cowork unified counts as a session.",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-20-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-20T12:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "In List User ActivityPreview with links to the API reference available — press Tab until focus enters the card, Escape to return., these… For chats that the change reached, the API does not get the names of some skills and plugins that Anthropic did not make, such as your own. (+2 more)",
+      "summaryBy": "feed"
     },
     {
       "id": "e7354365dbd8",
@@ -7062,6 +7499,24 @@
       ],
       "tagMethod": "source",
       "summary": "Cron jobs are useful for work that needs to happen regularly. You can use them to do things such as back up your database on a schedule, or keep data in sync between two systems. You define them once in code and then can update them by editing their config and redeploying. But today, agents interact with users as work evolves, and schedules need to be updated in real time. We built Vercel…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "82bbedc49940",
+      "title": "We’ve added error codes to the SDK so you can handle one cause of an error without parsing the response body.",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-4-2026",
+      "sourceId": "claude-release-notes",
+      "sourceName": "Claude Platform release notes",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-04T12:00:00.000Z",
+      "firstSeenAt": "2026-11-25T15:53:54.694Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
       "summaryBy": "feed"
     },
     {
