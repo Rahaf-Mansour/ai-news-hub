@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T15:53:54.694Z",
+  "generatedAt": "2026-11-26T15:33:09.739Z",
   "repos": [
     {
       "fullName": "anthropics/claude-code",
@@ -9,11 +9,11 @@
       ],
       "why": "Watch the CHANGELOG and issues: the fastest signal of Claude Code feature changes.",
       "url": "https://github.com/anthropics/claude-code",
-      "stars": 157031,
-      "lastCommit": "2026-11-25T15:46:13Z",
+      "stars": 157179,
+      "lastCommit": "2026-11-26T14:34:10Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "anthropics/skills",
@@ -24,11 +24,11 @@
       ],
       "why": "Official Agent Skills, including docx/pdf/pptx/xlsx: the template for writing your own.",
       "url": "https://github.com/anthropics/skills",
-      "stars": 200340,
+      "stars": 200866,
       "lastCommit": "2026-11-16T14:22:50Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "anthropics/claude-cookbooks",
@@ -38,11 +38,11 @@
       ],
       "why": "Official notebooks for tool use, caching, sub-agents, skills and memory.",
       "url": "https://github.com/anthropics/claude-cookbooks",
-      "stars": 55209,
+      "stars": 55267,
       "lastCommit": "2026-11-20T22:16:45Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "anthropics/claude-code-action",
@@ -53,11 +53,11 @@
       ],
       "why": "Official GitHub Action: mention @claude on a PR or issue for reviews and fixes.",
       "url": "https://github.com/anthropics/claude-code-action",
-      "stars": 10080,
+      "stars": 10092,
       "lastCommit": "2026-11-25T01:35:24Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "anthropics/prompt-eng-interactive-tutorial",
@@ -68,11 +68,11 @@
       ],
       "why": "Hands-on prompt engineering course from Anthropic; a good first week.",
       "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
-      "stars": 39734,
+      "stars": 39818,
       "lastCommit": "2026-08-28T05:31:39Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "anthropics/courses",
@@ -82,11 +82,11 @@
       ],
       "why": "API fundamentals through prompt evaluation. Still useful as reference.",
       "url": "https://github.com/anthropics/courses",
-      "stars": 23193,
+      "stars": 23205,
       "lastCommit": "2026-08-28T09:37:03Z",
       "archived": true,
       "license": null,
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "hesreallyhim/awesome-claude-code",
@@ -96,11 +96,11 @@
       ],
       "why": "The main Claude Code resource list: skills, hooks, agents and tooling.",
       "url": "https://github.com/hesreallyhim/awesome-claude-code",
-      "stars": 58781,
-      "lastCommit": "2026-11-25T15:07:03Z",
+      "stars": 58846,
+      "lastCommit": "2026-11-26T15:06:38Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "dair-ai/Prompt-Engineering-Guide",
@@ -111,11 +111,11 @@
       ],
       "why": "Neutral encyclopedia of prompting, context engineering, RAG and agents.",
       "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
-      "stars": 80364,
+      "stars": 80393,
       "lastCommit": "2026-03-11T20:09:13Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "microsoft/playwright-mcp",
@@ -125,11 +125,11 @@
       ],
       "why": "De facto way to give an agent a browser through the accessibility tree, not screenshots.",
       "url": "https://github.com/microsoft/playwright-mcp",
-      "stars": 40130,
+      "stars": 40171,
       "lastCommit": "2026-11-18T18:50:37Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "microsoft/playwright-cli",
@@ -139,11 +139,11 @@
       ],
       "why": "Microsoft now recommends it over MCP for coding agents: far fewer tokens per session.",
       "url": "https://github.com/microsoft/playwright-cli",
-      "stars": 15452,
+      "stars": 15486,
       "lastCommit": "2026-11-24T20:31:25Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "browserbase/stagehand",
@@ -152,11 +152,11 @@
       ],
       "why": "TypeScript act() / extract() / observe() on a CDP driver; closest to a Cypress mindset.",
       "url": "https://github.com/browserbase/stagehand",
-      "stars": 26140,
-      "lastCommit": "2026-11-25T15:48:05Z",
+      "stars": 26155,
+      "lastCommit": "2026-11-25T23:41:09Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "browser-use/browser-use",
@@ -165,11 +165,11 @@
       ],
       "why": "Most-starred AI browser agent (Python). An autonomous loop, not deterministic tests.",
       "url": "https://github.com/browser-use/browser-use",
-      "stars": 122034,
-      "lastCommit": "2026-11-24T22:48:14Z",
+      "stars": 122129,
+      "lastCommit": "2026-11-26T07:03:58Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "promptfoo/promptfoo",
@@ -179,11 +179,11 @@
       ],
       "why": "YAML evals and red-teaming for LLM features: QA for the AI you ship.",
       "url": "https://github.com/promptfoo/promptfoo",
-      "stars": 27671,
-      "lastCommit": "2026-11-25T15:33:20Z",
+      "stars": 27710,
+      "lastCommit": "2026-11-26T06:11:30Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "confident-ai/deepeval",
@@ -192,11 +192,11 @@
       ],
       "why": "pytest-style LLM evaluation with 50+ metrics; compare with promptfoo.",
       "url": "https://github.com/confident-ai/deepeval",
-      "stars": 19663,
-      "lastCommit": "2026-11-25T15:38:27Z",
+      "stars": 19684,
+      "lastCommit": "2026-11-26T07:58:35Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "qodo-ai/qodo-cover",
@@ -207,11 +207,11 @@
       "why": "AI unit-test generation aimed at raising coverage in CI.",
       "note": "AGPL-3.0 license",
       "url": "https://github.com/qodo-ai/qodo-cover",
-      "stars": 5691,
+      "stars": 5693,
       "lastCommit": "2026-04-05T12:27:16Z",
       "archived": false,
       "license": "AGPL-3.0",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "tugkanboz/awesome-ai-testing",
@@ -220,11 +220,11 @@
       ],
       "why": "Best map of AI testing tools: NL authoring, self-healing, LLM-as-judge, visual AI.",
       "url": "https://github.com/tugkanboz/awesome-ai-testing",
-      "stars": 202,
+      "stars": 206,
       "lastCommit": "2026-11-25T08:55:50Z",
       "archived": false,
       "license": "CC0-1.0",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "microsoft/semantic-kernel",
@@ -234,11 +234,11 @@
       ],
       "why": "Microsoft’s SDK for adding LLMs to C#, Python and Java apps: plugins, planners and memory.",
       "url": "https://github.com/microsoft/semantic-kernel",
-      "stars": 28807,
-      "lastCommit": "2026-11-23T22:28:29Z",
+      "stars": 28808,
+      "lastCommit": "2026-11-26T14:40:00Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "microsoft/agent-framework",
@@ -265,7 +265,7 @@
       "lastCommit": "2026-11-24T18:31:32Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "modelcontextprotocol/csharp-sdk",
@@ -276,11 +276,11 @@
       ],
       "why": "Official C# SDK for MCP servers and clients, maintained with Microsoft.",
       "url": "https://github.com/modelcontextprotocol/csharp-sdk",
-      "stars": 4650,
+      "stars": 4656,
       "lastCommit": "2026-11-24T16:13:18Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "spring-projects/spring-ai",
@@ -289,11 +289,11 @@
       ],
       "why": "Spring’s framework for AI in Java: chat clients, embeddings, vector stores and tool calling.",
       "url": "https://github.com/spring-projects/spring-ai",
-      "stars": 9684,
-      "lastCommit": "2026-11-25T08:41:54Z",
+      "stars": 9687,
+      "lastCommit": "2026-11-26T10:49:21Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "vercel/ai",
@@ -303,11 +303,11 @@
       ],
       "why": "The AI SDK: streaming, tool calling and structured output in TypeScript, with React hooks for the UI.",
       "url": "https://github.com/vercel/ai",
-      "stars": 28197,
-      "lastCommit": "2026-11-25T15:48:25Z",
+      "stars": 28231,
+      "lastCommit": "2026-11-26T14:42:46Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "mastra-ai/mastra",
@@ -317,11 +317,11 @@
       ],
       "why": "TypeScript framework for agents, workflows, RAG and evals that fits next to a Node backend.",
       "url": "https://github.com/mastra-ai/mastra",
-      "stars": 29813,
-      "lastCommit": "2026-11-25T15:50:07Z",
+      "stars": 29835,
+      "lastCommit": "2026-11-26T15:31:54Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "langchain-ai/langchainjs",
@@ -331,11 +331,11 @@
       ],
       "why": "LangChain for JS/TS: many integrations; compare its abstractions with the AI SDK before choosing.",
       "url": "https://github.com/langchain-ai/langchainjs",
-      "stars": 18366,
-      "lastCommit": "2026-11-25T00:28:32Z",
+      "stars": 18372,
+      "lastCommit": "2026-11-26T10:37:15Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "modelcontextprotocol/typescript-sdk",
@@ -346,11 +346,11 @@
       ],
       "why": "Official SDK for writing MCP servers and clients in TypeScript, e.g. to expose your API to Claude.",
       "url": "https://github.com/modelcontextprotocol/typescript-sdk",
-      "stars": 13820,
-      "lastCommit": "2026-11-25T13:35:44Z",
+      "stars": 13824,
+      "lastCommit": "2026-11-26T14:01:05Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "pgvector/pgvector",
@@ -359,11 +359,11 @@
       ],
       "why": "Vector search inside Postgres: RAG without adding a separate vector database.",
       "url": "https://github.com/pgvector/pgvector",
-      "stars": 23816,
+      "stars": 23830,
       "lastCommit": "2026-11-24T20:39:26Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "phuryn/pm-skills",
@@ -372,11 +372,11 @@
       ],
       "why": "65+ PM skills and chained workflows (PRDs, discovery, OKRs, launch) as Claude plugins.",
       "url": "https://github.com/phuryn/pm-skills",
-      "stars": 28311,
+      "stars": 28340,
       "lastCommit": "2026-11-08T23:10:04Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "deanpeters/Product-Manager-Skills",
@@ -386,11 +386,11 @@
       "why": "Skills that do PM work and coach you on the frameworks behind it.",
       "note": "CC BY-NC-SA 4.0: non-commercial use only",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
-      "stars": 8155,
+      "stars": 8168,
       "lastCommit": "2026-11-13T15:19:58Z",
       "archived": false,
       "license": null,
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "dend/awesome-product-management",
@@ -399,11 +399,11 @@
       ],
       "why": "Solid general PM reading list to pair with the AI-specific ones.",
       "url": "https://github.com/dend/awesome-product-management",
-      "stars": 2478,
+      "stars": 2481,
       "lastCommit": "2026-11-07T22:12:37Z",
       "archived": false,
       "license": "CC0-1.0",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "The-PR-Agent/pr-agent",
@@ -413,11 +413,11 @@
       ],
       "why": "Open-source AI PR reviewer for GitHub, GitLab, Bitbucket and Azure DevOps.",
       "url": "https://github.com/The-PR-Agent/pr-agent",
-      "stars": 16660,
-      "lastCommit": "2026-11-25T10:10:32Z",
+      "stars": 16684,
+      "lastCommit": "2026-11-26T08:19:37Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "anomalyco/opencode",
@@ -426,11 +426,11 @@
       ],
       "why": "Most-starred open terminal agent; model-agnostic, a reference for multi-provider design.",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 229122,
-      "lastCommit": "2026-11-25T15:48:29Z",
+      "stars": 229343,
+      "lastCommit": "2026-11-26T15:14:23Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "openai/codex",
@@ -439,11 +439,11 @@
       ],
       "why": "OpenAI's terminal agent; its sandboxing approach is worth comparing.",
       "url": "https://github.com/openai/codex",
-      "stars": 136426,
-      "lastCommit": "2026-11-25T15:38:57Z",
+      "stars": 136555,
+      "lastCommit": "2026-11-26T15:23:35Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "google-gemini/gemini-cli",
@@ -452,11 +452,11 @@
       ],
       "why": "Free tier makes it easy to compare against Claude Code.",
       "url": "https://github.com/google-gemini/gemini-cli",
-      "stars": 109104,
-      "lastCommit": "2026-11-25T15:47:07Z",
+      "stars": 109178,
+      "lastCommit": "2026-11-26T01:12:06Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "cline/cline",
@@ -465,11 +465,11 @@
       ],
       "why": "VS Code-native agent that asks permission at each step.",
       "url": "https://github.com/cline/cline",
-      "stars": 71890,
-      "lastCommit": "2026-11-23T23:35:30Z",
+      "stars": 71914,
+      "lastCommit": "2026-11-26T09:57:48Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "Aider-AI/aider",
@@ -478,11 +478,11 @@
       ],
       "why": "Best git hygiene: every AI change is its own reviewable commit.",
       "url": "https://github.com/Aider-AI/aider",
-      "stars": 50255,
+      "stars": 50267,
       "lastCommit": "2026-05-22T14:02:20Z",
       "archived": false,
       "license": "Apache-2.0",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "OpenHands/OpenHands",
@@ -492,11 +492,11 @@
       ],
       "why": "Autonomous issue-to-PR agent in a Docker sandbox: the \"agent in CI\" pattern.",
       "url": "https://github.com/OpenHands/OpenHands",
-      "stars": 94318,
-      "lastCommit": "2026-11-25T15:32:45Z",
+      "stars": 94399,
+      "lastCommit": "2026-11-26T15:13:01Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     },
     {
       "fullName": "Thysrael/Horizon",
@@ -505,11 +505,11 @@
       ],
       "why": "The open-source news pipeline that inspired this hub (fetch, dedupe, LLM score).",
       "url": "https://github.com/Thysrael/Horizon",
-      "stars": 15137,
-      "lastCommit": "2026-11-25T10:47:02Z",
+      "stars": 15156,
+      "lastCommit": "2026-11-26T00:02:47Z",
       "archived": false,
       "license": "MIT",
-      "verifiedAt": "2026-11-25T15:53:54.694Z"
+      "verifiedAt": "2026-11-26T15:33:09.739Z"
     }
   ]
 }

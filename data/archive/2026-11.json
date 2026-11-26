@@ -1,7 +1,440 @@
 {
   "month": "2026-11",
-  "count": 507,
+  "count": 537,
   "items": [
+    {
+      "id": "069f94445fa0",
+      "title": "Quoting Jack Despain Zhou",
+      "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-26T15:09:31.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find pitches and articles from ostensibly serious people with ostensibly serious credentials attached to ostensibly serious institutions who want to publish things attached to their…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "02a088434703",
+      "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+      "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-26T11:37:17.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "1d7134bfdd52",
+      "title": "Next.js v16.5.0-preview.0",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-preview.0",
+      "sourceId": "nextjs-releases",
+      "sourceName": "Next.js releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-26T10:36:43.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "v16.5.0-preview.0",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7fcbebbe6634",
+      "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+      "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-26T06:08:25.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 . It was only today that I understood one of its most attractive characteristics. Normally, if you want to grab a snapshot copy of a SQLite database, you need to use either the backup API or VACUUM INTO . In both cases you need…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4faaa3acd738",
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "url": "https://simonwillison.net/2026/Nov/26/hn-50651685",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-26T05:08:46.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "My comment on The New York Times warns photographers not to update Photoshop over AI features &mdash; Hacker News. I had a NYT photographer take my picture at my home earlier this year (for a story about Moltbook, oddly enough). At one point I asked if they could fix things up if I had a stain on my shirt and they said absolutely not - they present photographs as they were taken, with cropping…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d3aa48daa62d",
+      "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+      "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-26T05:05:36.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "e0f082ca4fd4",
+      "title": "I made my entire podcast available to your AI",
+      "url": "https://news.aakashg.com/p/pod-transcripts-github",
+      "sourceId": "product-growth",
+      "sourceName": "Product Growth (Aakash Gupta)",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-26T00:11:53.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "claude",
+        "pm",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Every Growth Podcast transcript, free on GitHub and ready for Claude Code, plus the podcast MCP and a $1,200 build contest.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "042b5f16218f",
+      "title": "Opus 5.6 testing 🤖, OpenAI private Inference 🔒, Jev is probably Qwen 📝",
+      "url": "https://tldr.tech/ai/2026-11-26",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-26T00:00:00.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "claude",
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7cd96d64dde1",
+      "title": "node:sqlite marked stable",
+      "url": "https://nodeweekly.com/issues/649",
+      "sourceId": "node-weekly",
+      "sourceName": "Node Weekly",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-26T00:00:00.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "#​649 — November 26, 2026 Read on the Web Your Tools Are Hiding npm Audits From You — Running npm audit over a fresh Next.js app can show zero vulnerabilities, but a separate audit of its bundled dependencies tells a different story. Zach shows how Next.js can 'sweep audits under the rug' by vendoring dependencies, and has built 📊 Prototype Pollution Report to rank popular frameworks' packages…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c01600d41603",
+      "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+      "url": "https://huggingface.co/blog/training-swarms",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-26T00:00:00.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "d8fe47121776",
+      "title": "Decision Models in Spring AI 2.1: Yes, No, and How Sure",
+      "url": "https://spring.io/blog/2026/11/26/spring-ai-decision-models-guardrails-judges",
+      "sourceId": "spring-blog",
+      "sourceName": "Spring blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-26T00:00:00.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "04a9805dfa55",
+      "title": "Quoting Scott Aaronson",
+      "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-25T23:26:32.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "It’s now obvious that we’ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we’d previously only glimpsed through fog. Picture van Leeuwenhoek first training a microscope on pondwater, or Galileo first training his telescope on the stars. That might give you some idea of how our resolution into the…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c7e5de5fee49",
+      "title": "The Revolution vs The Renaissance — Thariq Shihipar, OpenAI",
+      "url": "https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-25T22:28:01.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "AI can make software cheap enough to produce by the thousand and still give you more time to make one thing feel right. At AI Engineer CODE, Thariq Shihipar shows how those two futures can coexist. In his fighting game, he edits the size of a rock in t...",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c7c801f91e25",
+      "title": "[AINews] Math Proofs Are Landing Faster Than We Can Read Them",
+      "url": "https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-25T22:23:41.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "November 25, 2026 — From Erdős problems to new bounds for matrix multiplication and Fourier transforms.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "f63f4cad1468",
+      "title": "Much shorter version of GRH Lean verification from Anthropic",
+      "url": "https://github.com/lsernau/grh-lean",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-25T21:48:10Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "502 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50648050"
+    },
+    {
+      "id": "70a22f01b7ff",
+      "title": "Cypress v16.4.0",
+      "url": "https://github.com/cypress-io/cypress/releases/tag/v16.4.0",
+      "sourceId": "cypress-releases",
+      "sourceName": "Cypress releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-25T20:57:36.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Changelog: https://docs.cypress.io/app/references/changelog#16-4-0",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "384f8477cc50",
+      "title": "Microsoft Agent Framework repository update",
+      "url": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-repository-update",
+      "sourceId": "semantic-kernel-blog",
+      "sourceName": "Semantic Kernel & Agent Framework",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-25T20:14:50.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "We apologize for the disruption caused by the Microsoft Agent Framework repository’s temporary unavailability. This is a necessary precaution. We’re working to restore access as soon as possible, but don’t yet have a confirmed timeline. The repository will remain unavailable until we can confidently determine it is safe to re-enable. On November 17, 2026, two […] The post Microsoft Agent…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0604df287e63",
+      "title": "@browserbasehq/stagehand@4.5.0",
+      "url": "https://github.com/browserbase/stagehand/releases/tag/%40browserbasehq%2Fstagehand%404.5.0",
+      "sourceId": "stagehand-releases",
+      "sourceName": "Stagehand releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-25T18:55:13.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "6723834247c0",
+      "title": "@browserbasehq/eve@0.3.0",
+      "url": "https://github.com/browserbase/stagehand/releases/tag/%40browserbasehq%2Feve%400.3.0",
+      "sourceId": "stagehand-releases",
+      "sourceName": "Stagehand releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-25T18:55:13.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "37b5c9ba9326",
+      "title": "Where scientists draw the line on AI agents",
+      "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-25T18:52:55.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "5fa95dd80bbb",
+      "title": "stagehand-python@4.5.0",
+      "url": "https://github.com/browserbase/stagehand/releases/tag/stagehand-python%404.5.0",
+      "sourceId": "stagehand-releases",
+      "sourceName": "Stagehand releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-25T18:49:46.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Release Stagehand packages (#3438)",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "9527dd371e58",
+      "title": "datasette-charts 0.3a0",
+      "url": "https://simonwillison.net/2026/Nov/25/datasette-charts",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-25T18:16:50.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations looks like this: Here's that same chart in Datasette Lite , where you can tweak the annotations using the chart builder UI: If you also install Datasette Agent the agent can build…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "8bc07deb0c8a",
+      "title": "How Anthropic builds software in 2026 with Katelyn Lesse",
+      "url": "https://newsletter.pragmaticengineer.com/p/how-anthropic-builds-software-in",
+      "sourceId": "pragmatic-engineer",
+      "sourceName": "The Pragmatic Engineer",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-25T17:31:32.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Katelyn Lesse explains how Anthropic rewrote Claude’s API in Rust and how AI agents are changing engineering at the company.",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "2a34064c0ddd",
+      "title": "Cypress Ambassador Spotlight: Saran Kumar",
+      "url": "https://cypress.io/blog/cypress-ambassador-spotlight-saran-kumar",
+      "sourceId": "cypress-blog",
+      "sourceName": "Cypress blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-25T17:10:48.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "Every strong community has people who show up for others. They answer the question in the channel, review the flaky test, and walk a new teammate through their first spec. The Cypress Ambassador program recognizes those people, and our Ambassador Spotlight series introduces you to them: how they got into testing, what it has taught them, and what they’d tell someone writing their first test…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "49ee48d5da3d",
+      "title": "Art of play in the age of AI",
+      "url": "https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai",
+      "sourceId": "github-blog",
+      "sourceName": "GitHub blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-25T16:00:00.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Now that code ships faster than ever, you have more time to spend on projects just for the fun of it. Here's what we can learn through that process as developers. The post Art of play in the age of AI appeared first on The GitHub Blog.",
+      "summaryBy": "feed"
+    },
     {
       "id": "170ba12c1bad",
       "title": "Introducing Search for Agents",
@@ -39,6 +472,24 @@
       "summaryBy": "feed"
     },
     {
+      "id": "07e4d185180e",
+      "title": "Migrating our Messages API to Rust",
+      "url": "https://anthropic.com/research/migrating-api-to-rust",
+      "sourceId": "anthropic-engineering",
+      "sourceName": "Anthropic Engineering",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-25T12:00:00.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "claude",
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
       "id": "c22a751951e5",
       "title": "Vitest v5.1.2",
       "url": "https://github.com/vitest-dev/vitest/releases/tag/v5.1.2",
@@ -71,6 +522,24 @@
       ],
       "tagMethod": "source",
       "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "09c5623a3d74",
+      "title": "How Cozey turns its operators into software builders on Vercel",
+      "url": "https://vercel.com/blog/how-cozey-turns-its-operators-into-software-builders-on-vercel",
+      "sourceId": "vercel-blog",
+      "sourceName": "Vercel blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "fs",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "Employees outside engineering, including warehouse, finance, and support staff, are now building applications and deploying them to Vercel Finance uses an app it built to review profit and loss weekly instead of monthly Adopting allowed Cozey to retire a separate tool that cost approximately $80,000 annuallyVercel Flags Six projects, including the storefront, use AI Gateway is a Canadian…",
       "summaryBy": "feed"
     },
     {
@@ -124,6 +593,23 @@
       ],
       "tagMethod": "source",
       "summary": "What's changed Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names Added a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start Added \"Always deliver\" to the prompt for held messages from other sessions Added a footer…",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "39e1e413774b",
+      "title": "The things you can now do directly in the browser",
+      "url": "https://frontendfoc.us/issues/768",
+      "sourceId": "frontend-focus",
+      "sourceName": "Frontend Focus",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-25T00:00:00.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "fs"
+      ],
+      "tagMethod": "source",
+      "summary": "Frontend Focus #​768 — November 25, 2026 | Read on the web Things You Can Do With a Browser in 2027 — Luigi returns with a sequel to the popular browser-2020 list, highlighting some of the lesser-known things browsers can do today, including HTML-in-Canvas, the element, HDR, on-device AI, hardware APIs, and more. Each feature is quickly explained alongside a browser support table. Luigi De Rosa…",
       "summaryBy": "feed"
     },
     {
@@ -473,6 +959,23 @@
       ],
       "tagMethod": "source",
       "summary": "In this post I show how you can use a custom [InterpolatedStringHandler] to ensure string interpolation formats values using the invariant culture",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "7dbb1baace41",
+      "title": "datasette-charts 0.2a1",
+      "url": "https://simonwillison.net/2026/Nov/24/datasette-charts-2",
+      "sourceId": "simon-willison",
+      "sourceName": "Simon Willison",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-24T06:07:19.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Release: datasette-charts 0.2a1 Minor UI improvements: Collapsing the suggested charts section now leaves the chart visible. Following a link to a chart opens it with the suggestions collapsed for that visit. On table pages the panel now sits below the \"4,235 rows where country = CHN\" line. The \"Data\" table under each chart has been replaced by Copy TSV and Copy CSV buttons. Removed the \"Chart…",
       "summaryBy": "feed"
     },
     {
@@ -1732,6 +2235,23 @@
       ],
       "tagMethod": "rules",
       "summary": ">50% of tickets written by agents, the AI budgets behind $100M-in-months ARR, and selling without SDRs or FDEs",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "9926f8a4697f",
+      "title": "Why Linear says Issue Tracking is Dead — Cristina Cordova, COO",
+      "url": "https://latent.space/p/why_linear_says_issue_tracking_is_dead_cristina_cordova_coo",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-19T23:38:57.000Z",
+      "firstSeenAt": "2026-11-26T15:33:09.739Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "Linear was founded to build a better issue tracker. Seven years and $134 million in funding later, its CEO Karri Saarinen published a post titled \"Issue tracking is dead.\" ( https://linear.app/next ) In this episode, we chat with Cristina Cordova ( htt...",
       "summaryBy": "feed"
     },
     {
