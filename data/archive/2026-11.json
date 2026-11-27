@@ -1,7 +1,164 @@
 {
   "month": "2026-11",
-  "count": 537,
+  "count": 548,
   "items": [
+    {
+      "id": "138e1e18872d",
+      "title": "Claude sabotaging SOTA ML research tasks",
+      "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-27T08:28:08Z",
+      "firstSeenAt": "2026-11-27T15:26:09.497Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "182 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50664325"
+    },
+    {
+      "id": "f97ba7ee0bd5",
+      "title": "Indie web browser Ladybird enters alpha testing",
+      "url": "https://theregister.com/software/2026/11/26/indie-web-browser-ladybird-enters-alpha-testing/5311914",
+      "sourceId": "hn-testing",
+      "sourceName": "Hacker News · Testing",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-27T07:58:37Z",
+      "firstSeenAt": "2026-11-27T15:26:09.497Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "84 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50664104"
+    },
+    {
+      "id": "0edde790d42a",
+      "title": "appium@4.0.2",
+      "url": "https://github.com/appium/appium/releases/tag/appium%404.0.2",
+      "sourceId": "appium-releases",
+      "sourceName": "Appium releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-27T07:31:48.000Z",
+      "firstSeenAt": "2026-11-27T15:26:09.497Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "4.0.2 (2026-11-27) Bug Fixes appium: clean up sessions when a createSession plugin fails (#23217) (a68b15f)",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "c3e114ff6e83",
+      "title": "@appium/universal-xml-plugin@4.0.2",
+      "url": "https://github.com/appium/appium/releases/tag/%40appium%2Funiversal-xml-plugin%404.0.2",
+      "sourceId": "appium-releases",
+      "sourceName": "Appium releases",
+      "tier": "official",
+      "type": "release",
+      "publishedAt": "2026-11-27T07:31:48.000Z",
+      "firstSeenAt": "2026-11-27T15:26:09.497Z",
+      "roles": [
+        "qa"
+      ],
+      "tagMethod": "source",
+      "summary": "4.0.2 (2026-11-27) Note: Version bump only for package @appium/universal-xml-plugin",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "0256b11e8366",
+      "title": "\"What's Claude's Fursona?\" and Other Questions",
+      "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-27T04:56:18Z",
+      "firstSeenAt": "2026-11-27T15:26:09.497Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "102 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50662933"
+    },
+    {
+      "id": "2d7f8b4f8454",
+      "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
+      "url": "https://huggingface.co/blog/video-trainium3",
+      "sourceId": "huggingface-blog",
+      "sourceName": "Hugging Face blog",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-27T00:00:00.000Z",
+      "firstSeenAt": "2026-11-27T15:26:09.497Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "dda121ef52bc",
+      "title": "OpenAI cost controls 💰, measuring RSI 📈, looped transformers ➰",
+      "url": "https://tldr.tech/ai/2026-11-27",
+      "sourceId": "tldr-ai",
+      "sourceName": "TLDR AI",
+      "tier": "editorial",
+      "type": "news",
+      "publishedAt": "2026-11-27T00:00:00.000Z",
+      "firstSeenAt": "2026-11-27T15:26:09.497Z",
+      "roles": [
+        "se"
+      ],
+      "tagMethod": "source",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "00bb51c293be",
+      "title": "How Clay Builds GTM Agents — Jeff Barg, Head of AI",
+      "url": "https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai",
+      "sourceId": "latent-space",
+      "sourceName": "Latent Space",
+      "tier": "editorial",
+      "type": "article",
+      "publishedAt": "2026-11-26T23:02:48.000Z",
+      "firstSeenAt": "2026-11-27T15:26:09.497Z",
+      "roles": [
+        "pm"
+      ],
+      "tagMethod": "rules",
+      "summary": "How $1,500 could qualify every company in the world, why customers hate the model selector, and how Clay is building go-to-market infrastructure for every agent",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "4fdce5f029af",
+      "title": "One guy is doing a hunger strike outside Anthropic, currently in his 3rd day",
+      "url": "https://twitter.com/ElliotC1/status/2125689373337489419",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-26T16:55:15Z",
+      "firstSeenAt": "2026-11-27T15:26:09.497Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "60 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50657110"
+    },
     {
       "id": "069f94445fa0",
       "title": "Quoting Jack Despain Zhou",
@@ -105,6 +262,24 @@
       "summaryBy": "feed"
     },
     {
+      "id": "85176c594a4a",
+      "title": "Claude tries to sabotage research work at every stage",
+      "url": "https://twitter.com/skirano/status/2125371115979641188",
+      "sourceId": "hn-claude",
+      "sourceName": "Hacker News · Claude",
+      "tier": "community",
+      "type": "news",
+      "publishedAt": "2026-11-26T04:49:21Z",
+      "firstSeenAt": "2026-11-27T15:26:09.497Z",
+      "roles": [
+        "claude"
+      ],
+      "tagMethod": "source",
+      "summary": "69 points on Hacker News.",
+      "summaryBy": "feed",
+      "discussionUrl": "https://news.ycombinator.com/item?id=50651552"
+    },
+    {
       "id": "e0f082ca4fd4",
       "title": "I made my entire podcast available to your AI",
       "url": "https://news.aakashg.com/p/pod-transcripts-github",
@@ -136,6 +311,24 @@
       "roles": [
         "claude",
         "qa",
+        "se"
+      ],
+      "tagMethod": "rules",
+      "summary": "",
+      "summaryBy": "feed"
+    },
+    {
+      "id": "11501138b0a2",
+      "title": "A Bootiful Podcast: Cora Iberkleid on AI, Microservices, and the Future of Software Upgrades",
+      "url": "https://spring.io/blog/2026/11/26/a-bootiful-podcast-cora-iberkleid",
+      "sourceId": "spring-blog",
+      "sourceName": "Spring blog",
+      "tier": "official",
+      "type": "article",
+      "publishedAt": "2026-11-26T00:00:00.000Z",
+      "firstSeenAt": "2026-11-27T15:26:09.497Z",
+      "roles": [
+        "fs",
         "se"
       ],
       "tagMethod": "rules",
